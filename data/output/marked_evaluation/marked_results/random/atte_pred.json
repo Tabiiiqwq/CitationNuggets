@@ -1,0 +1,34 @@
+{
+  "paper_id": "atte",
+  "pred_citations": [],
+  "gt_citations": [
+    [
+      "NIPS"
+    ],
+    [
+      "Neural machine translation in linear time"
+    ],
+    [
+      "Dauphin"
+    ],
+    [
+      "Gradient flow in recurrent nets: the difficulty of learning long-term dependencies, 2001."
+    ],
+    [
+      "Long short-term memory-networks for machine reading",
+      "A decomposable attention model",
+      "A deep reinforced model for abstractive summarization",
+      "A structured self-attentive sentence embedding"
+    ],
+    [
+      "End-to-end memory networks"
+    ],
+    [
+      "Neural GPUs learn algorithms",
+      "Neural machine translation in linear time"
+    ],
+    [
+      "Dauphin"
+    ]
+  ]
+}

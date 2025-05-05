@@ -1,0 +1,66 @@
+Approaches for unsupervised segmentation tasks have been
+significantly influenced by the literature on self-supervised
+learning (SSL) and low-level vision tasks (e.g., optical flow
+estimation), which we review first.
+Self-supervised representation learning focuses on learn-
+ing generic feature extractors from unlabeled data, aiming
+for expressive features that facilitate a broad range of down-
+stream tasks ++ref++[ (Hospedales) ]++ref++. To that end, various self-supervised pre-
+text tasks have been proposed ++ref++[ (Survey on self-supervised learning: Auxil- iary pretext tasks and contrastive learning methods in imag- ing), (Hospedales) ]++ref++. The development
+of Vision Transformers (ViTs) ++ref++[ (An image is worth 16×16 words: Transformers for image recognition at scale) ]++ref++ shaped current pretext
+tasks while allowing for data-scalable training ++ref++[ (for two epochs on ImageNet), (Masked autoencoders are scalable vision learners) ]++ref++.
+Current approaches typically train ViTs on contrastive ++ref++[ (Devon Hjelm, and William Buchwalter), (For both pseudo-label training and self-training, we uti- lize four NVIDIA A100 GPUs (40 GB) with a batch size of 16 per GPU), (An empiri- cal study of training self-supervised vision transformers), (Momentum contrast for unsupervised visual rep- resentation learning) ]++ref++, negative-free ++ref++[ (VICRegL: Self-supervised learning of local visual features), (for two epochs on ImageNet), (Exploring simple Siamese In CVPR, pages 15750–15758, representation learning), (Bootstrap your own latent: A new approach to self-supervised learning), (Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Mido Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes, 10 et al) ]++ref++, clustering-
+based ++ref++[ (Self-labelling via simultaneous clustering and rep- resentation learning), (Deep clustering for unsupervised learning of visual features), (Unsupervised learn- ing of visual features by contrasting cluster assignments) ]++ref++, or masked modeling ++ref++[ (Siamese In NeurIPS, pages 40676–40693, masked autoencoders), (Masked autoencoders are scalable vision learners), (Oswald, Alexander Kirillov, Cees G) ]++ref++ pretext
+tasks. Recent state-of-the-art models (e.g., DINO ++ref++[ (for two epochs on ImageNet) ]++ref++) of-
+fer semantically rich and dense features suitable for unsu-
+pervised scene understanding ++ref++[ (Freeman), (and U2Seg) ]++ref++.
+
+Unsupervised optical flow is concerned with learning op-
+tical flow estimation without the need for ground-truth data.
+While early deep networks relied on synthetic ground-truth
+flow for supervision ++ref++[ (d), (A large dataset to train convolutional networks for disparity, In CVPR, pages optical flow, and scene flow estimation), (PWC-Net: CNNs for optical flow using pyramid, warping, and cost volume), ((a supervised ana- log of SMURF) ]++ref++, the domain gap to real
+videos, among other factors, has prompted the development
+of unsupervised deep optical flow pipelines ++ref++[ (Barron, Ariel Gordon, Kurt Konolige, and Anelia Angelova), (Cost function unrolling in un- IEEE Trans), (BrightFlow: Brightness-change-aware un- supervised learning of optical flow), (UnFlow: Un- supervised learning of optical flow with a bidirectional cen- sus loss), (Yu, Adam W) ]++ref++. Current unsupervised optical flow methods (e.g.,
+SMURF ++ref++[ ((unsupervised) SEA-RAFT) ]++ref++) offer accurate flow estimates, fast inference,
+and generalization to various real-world domains.
+
+Unsupervised instance segmentation aims to discover and
+segment object instances in images ++ref++[ (Unsupervised object localization in the era of self-supervised ViTs: A survey) ]++ref++. Recent work
+++ref++[ (Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Renaud Mar- let, and Jean Ponce), (Discovering object masks with transformers for unsupervised semantic segmentation), (Álvarez), (and U2Seg), (Segment In NeurIPS, pages 138731– anything without supervision) ]++ref++ bootstraps class-agnostic instance segmen-
+tation networks using pseudo labels extracted from SSL fea-
+tures on object-centric data. TokenCut ++ref++[ (Crowley, and Dominique Vaufrey- daz) ]++ref++ applies normal-
+ized cuts [N-Cut, 61] to DINO features, providing a fore-
+ground pseudo mask. CutLER ++ref++[ (and U2Seg) ]++ref++ proposes MaskCut by
+iteratively applying N-Cuts, retrieving up to three pseudo
+masks per image. A second stream of works uses motion
+cues to obtain an unsupervised signal for object discov-
+ery ++ref++[ (Guess What Moves: Unsupervised video and image segmentation by anticipating motion), (Unsupervised multi- object segmentation by predicting probable motion patterns), (The emergence of objectness: Learning zero-shot segmentation from videos), (Multi-object discovery by low-dimensional object motion), (MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos), (DyStaB: Unsupervised object segmentation via dynamic-static boot- strapping) ]++ref++. SF2SE3 ++ref++[ (SF2SE3: Clustering scene flow into SE(3)-motions via pro- posal and selection) ]++ref++ clusters scene
+flow from consecutive stereo frames into independent rigid
+object motions in SE (3) space, improving object segmen-
+tation and motion accuracy. MOD-UV ++ref++[ (MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos) ]++ref++ uses motion
+segmentation for pseudo labeling and multi-stage training.
+
+Unsupervised semantic segmentation is approached by
+early deep learning methods via representation learning
+++ref++[ (PiCIE: Unsupervised semantic segmentation us- In CVPR, ing invariance and equivariance in clustering), (InfoSeg: Unsuper- vised semantic image segmentation with mutual information maximization), (Henriques, and Andrea Vedaldi) ]++ref++. STEGO ++ref++[ (Freeman) ]++ref++ leverages the self-supervised
+DINO features as an inductive prior and distills the fea-
+tures into a lower-dimensional space before unsupervised
+probing. Later, ++ref++[ (EAGLE: Eigen aggregation learning for object- In CVPR, centric unsupervised semantic segmentation), (Leveraging hidden positives for unsupervised semantic segmentation), (+ CutLER) ]++ref++ proposed improvements to the
+feature distillation or probing ++ref++[ (Boosting unsupervised semantic segmentation with principal mask proposals) ]++ref++. DepthG ++ref++[ (+ CutLER) ]++ref++ extends
+STEGO by spatially correlating the feature maps with depth
+maps and furthest point sampling in the contrastive loss.
+DiffSeg ++ref++[ (Diffuse, attend, and segment:) ]++ref++ utilizes Stable Diffusion ++ref++[ (High-resolution image syn- thesis with latent diffusion models) ]++ref++ and iterative at-
+tention merging for unsupervised semantic segmentation.
+
+Unsupervised panoptic segmentation is a nascent re-
+search avenue following recent advancements in unsuper-
+vised semantic and instance segmentation. To the best of
+our knowledge, U2Seg ++ref++[ (7) ]++ref++ is the only method to date to approach unsupervised panoptic segmentation. U2Seg
+leverages STEGO ++ref++[ (Freeman) ]++ref++ and CutLER ++ref++[ (and U2Seg) ]++ref++ to create panoptic
+pseudo labels for training a panoptic network. However, its
+dependence on CutLER’s MaskCut approach significantly
+In contrast, we
+limits its accuracy on scene-centric data.
+present the first unsupervised panoptic approach that learns
+directly from scene-centric data, addressing key limitations
+of U2Seg and MaskCut.

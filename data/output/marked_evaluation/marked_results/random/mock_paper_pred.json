@@ -1,0 +1,27 @@
+{
+  "paper_id": "mock_paper",
+  "pred_citations": [
+    "[6]",
+    "[2]",
+    "[Brown et al., 2016]",
+    "[10, 11]",
+    "[7, 8]",
+    "[Patel, 2021]",
+    "[3, 4, 5]",
+    "[10, 11]",
+    "[1]",
+    "[6]"
+  ],
+  "gt_citations": [
+    "[Smith et al., 2020]",
+    "[1, 2, 3]",
+    "(Johnson and Williams, 2019)",
+    "[4]",
+    "[Chen et al., 2018]",
+    "[Wang et al., 2017]",
+    "[Patel, 2021]",
+    "[Kumar and Lee, 2022]",
+    "[7, 8]",
+    "[Brown et al., 2016]"
+  ]
+}

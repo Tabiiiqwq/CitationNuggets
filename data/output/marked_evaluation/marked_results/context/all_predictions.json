@@ -1,0 +1,662 @@
+[
+  {
+    "paper_id": "fireplace",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Matterport3d: Learning arXiv preprint from rgb-d data in indoor environments",
+        "3d-front: 3d furnished rooms with layouts In Proceedings of the IEEE/CVF Interna- and semantics",
+        "In- finigen indoors: Photorealistic indoor scenes using procedu- ral generation",
+        "Susskind",
+        "Sun rgb-d: A rgb-d scene understanding benchmark suite",
+        "Semantic scene com- In Proceedings of the pletion from a single depth image"
+      ],
+      [
+        "Example-based synthesis of 3d object arrangements",
+        "Language-driven synthe- sis of 3d scenes from scene databases",
+        "Atiss: Autoregres- sive transformers for indoor scene synthesis",
+        "Fast and flex- ible indoor scene synthesis via deep convolutional genera- In Proceedings of the IEEE/CVF Conference tive models",
+        "Planit: Planning and in- stantiating indoor scenes with relation graph and spatial prior networks",
+        "Sceneformer: Indoor scene generation with transformers",
+        "Lego-net: Learning regular rearrangements of ob- jects in rooms",
+        "Llplace: The 3d in- door scene layout generation and editing via large language model"
+      ],
+      [
+        "Scalinggaus- sian: Enhancing 3d content creation with generative gaussian splatting",
+        "Scene- dreamer: Unbounded 3d scene generation from 2d image collections",
+        "Luciddreamer: Domain-free gen- arXiv preprint eration of 3d gaussian splatting scenes",
+        "Scenescape: Text-driven consistent scene generation",
+        "in seconds with latent diffusion models",
+        "Text2room: Extracting textured 3d In Proceedings of meshes from 2d text-to-image models",
+        "Dreamwaltz-g: Expressive 3d gaussian avatars from skeleton-guided 2d diffusion",
+        "Diffindscene: Diffusion-based 9 high-quality 3d indoor scene generation",
+        "Semcity: Semantic scene genera- tion with triplane diffusion",
+        "Art3d: 3d gaussian splatting for text-guided artistic scenes generation",
+        "Infinite na- ture: Perpetual view generation of natural scenes from a sin- In Proceedings of the IEEE/CVF International gle image",
+        "Compositional 3d scene generation using locally conditioned diffusion",
+        "Citydreamer: Compositional generative model of unbounded In Proceedings of the IEEE/CVF Conference 3d cities",
+        "Gaussiandreamer: Fast generation from text to 3d gaussians by bridging 2d and 3d diffusion models",
+        "Wonderjourney: In Proceedings of Going from anywhere to everywhere",
+        "Dreamscape: 3d scene creation via gaussian splatting joint arXiv preprint arXiv:2404.09227, correlation modeling"
+      ],
+      [
+        "Fatahalian",
+        "Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions",
+        "Blender- alchemy: Editing 3d graphics with vision-language models",
+        "Re-thinking inverse graphics with large language models",
+        "Any- home: Open-vocabulary generation of structured and tex- tured 3d homes"
+      ],
+      [
+        "Blender- alchemy: Editing 3d graphics with vision-language models"
+      ],
+      [
+        "Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions"
+      ],
+      [
+        "Fatahalian"
+      ],
+      [
+        "Layoutgpt: Compositional visual plan- ning and generation with large language models"
+      ],
+      [
+        "Open-universe indoor scene generation using llm program synthesis and uncurated object databases",
+        "Scenecraft: An llm agent for synthesizing 3d scenes as blender code",
+        "Scenemotifcoder: Example-driven visual program learning for generating 3d arXiv preprint arXiv:2408.02211, object arrangements",
+        "Holodeck: Language guided genera- tion of 3d embodied ai environments"
+      ]
+    ]
+  },
+  {
+    "paper_id": "GENMO",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "HP-GAN: Probabilistic 3D human motion prediction via GAN",
+        "Implicit neural representations for variable length human motion generation",
+        "Chopin, N",
+        "Flexible motion in-betweening with diffusion models",
+        "Motionlcm: Real-time controllable motion generation via latent consistency model",
+        "Momask: Generative masked mod- eling of 3d human motions",
+        "A recurrent variational autoen- coder for human motion synthesis",
+        "Nemf: Neural motion fields for kinematic ani- mation",
+        "MoGlow: Probabilistic and controllable motion synthesis using normalising flows",
+        "Mmm: Generative masked motion model",
+        "Mmm: Generative masked motion model",
+        "Guibas",
+        "Human motion gen- eration using wasserstein GAN",
+        "Human motion dif- fusion model",
+        "Transflower: probabilistic autoregressive dance gen- eration with multimodal attention",
+        "ActFormer: A gan-based transformer towards general action-conditioned 3d human motion generation",
+        "Motiondif- fuse: Text-driven human motion generation with diffusion model",
+        "Re- modiffuse: Retrieval-augmented motion diffusion model",
+        "Human motion generation: A survey"
+      ],
+      [
+        "Executing your commands via motion diffusion in latent space",
+        "Synthesis of compositional animations from textual descriptions",
+        "TM2T: Stochastic and tokenized modeling for the reciprocal gener- ation of 3d human motions and texts",
+        "Act as you wish: Fine-grained control of mo- tion diffusion model with hierarchical semantic graphs"
+      ],
+      [
+        "Ac- tion2Motion: Conditioned generation of 3D human mo- In ACM International Conference on Multimedia tions"
+      ],
+      [
+        "Listen, denoise, action! audio-driven motion synthesis with diffusion models",
+        "Taming diffusion models for audio-driven co-speech gesture generation"
+      ],
+      [
+        "Ai choreographer: Music conditioned 3d dance generation with aist++",
+        "Bailando: 3d dance generation by actor-critic gpt with choreographic In Proceedings of the IEEE/CVF Conference on memory",
+        "You never stop dancing: Non- freezing dance generation via bank-constrained manifold projection",
+        "Dance with melody: An LSTM-autoencoder approach to music-oriented dance synthesis",
+        "Edge: In Proceedings of Editable dance generation from music",
+        "Transflower: probabilistic autoregressive dance gen- eration with multimodal attention"
+      ],
+      [
+        "Stochastic scene-aware motion prediction",
+        "NIFTY: Neural object interaction fields for guided human motion synthesis",
+        "HUMANISE: Language-conditioned hu- man motion generation in 3d scenes",
+        "Generating human interaction motions in scenes with text control",
+        "Petrov, Vladimir Guzov, Helisa Dhamo, Eduardo P\u00b4erez Pellitero, and Gerard Pons-Moll"
+      ],
+      [
+        "Motioncraft: Crafting whole-body motion with plug-and-play multimodal controls",
+        "M3gpt: An ad- vanced multimodal, multitask framework for motion com- prehension and generation",
+        "Large motion model for unified multi-modal motion generation",
+        "Ude: A unified driving engine for human motion generation"
+      ],
+      [
+        "Large motion model for unified multi-modal motion generation"
+      ],
+      [
+        "Black, and G\u00a8ul Varol",
+        "Black, G\u00a8ul Varol, Xue Bin Peng, and Davis Rempe",
+        "Hauptmann, and Jungdam Won",
+        "Diffcollage: Parallel generation of large content with diffusion models"
+      ],
+      [
+        "Troje, Ger- ard Pons-Moll, and Michael J"
+      ],
+      [
+        "Motion-x: A large- scale 3d expressive whole-body human motion dataset"
+      ],
+      [
+        "Mo- tionbank: A large-scale video motion benchmark with disen- tangled rule-based annotations, 2024"
+      ],
+      [
+        "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+        "Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras"
+      ],
+      [
+        "Black, David W",
+        "Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation",
+        "Neural localizer fields for continuous 3d human pose and shape estimation"
+      ],
+      [
+        "Be- yond static features for temporally consistent 3d human pose and shape from a video",
+        "Humans in 4d: Re- In constructing and tracking humans with transformers",
+        "VIBE: Video inference for human body pose and shape estimation"
+      ],
+      [
+        "Mocap everyone everywhere: Lightweight motion capture with smartwatches and a head- mounted camera",
+        "Sparseposer: Real-time full- body motion reconstruction from sparse data",
+        "Transpose: Real-time 3d human translation and pose estimation with six inertial sensors"
+      ],
+      [
+        "Black, Otmar Hilliges, Jan Kautz, and Umar Iqbal",
+        "Coin: Control-inpainting diffusion prior for human and camera In ECCV, pages 426\u2013446",
+        "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+        "Tram: Global trajectory and motion of 3d humans from in- the-wild videos",
+        "Decoupling human and camera motion from videos in the wild",
+        "Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras"
+      ],
+      [
+        "World-grounded human motion recovery via gravity-view coordinates",
+        "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+        "Tram: Global trajectory and motion of 3d humans from in- the-wild videos",
+        "Rohm: Robust human motion reconstruction via diffusion"
+      ]
+    ]
+  },
+  {
+    "paper_id": "SceneCentric",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Hospedales"
+      ],
+      [
+        "Survey on self-supervised learning: Auxil- iary pretext tasks and contrastive learning methods in imag- ing",
+        "Hospedales"
+      ],
+      [
+        "An image is worth 16\u00d716 words: Transformers for image recognition at scale"
+      ],
+      [
+        "for two epochs on ImageNet",
+        "Masked autoencoders are scalable vision learners"
+      ],
+      [
+        "Devon Hjelm, and William Buchwalter",
+        "40 GB",
+        "An empiri- cal study of training self-supervised vision transformers",
+        "Momentum contrast for unsupervised visual rep- resentation learning"
+      ],
+      [
+        "VICRegL: Self-supervised learning of local visual features",
+        "for two epochs on ImageNet",
+        "Exploring simple Siamese In CVPR, pages 15750\u201315758, representation learning",
+        "Bootstrap your own latent: A new approach to self-supervised learning",
+        "Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Mido Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes, 10 et al"
+      ],
+      [
+        "Self-labelling via simultaneous clustering and rep- resentation learning",
+        "Deep clustering for unsupervised learning of visual features",
+        "Unsupervised learn- ing of visual features by contrasting cluster assignments"
+      ],
+      [
+        "Siamese In NeurIPS, pages 40676\u201340693, masked autoencoders",
+        "Masked autoencoders are scalable vision learners",
+        "Oswald, Alexander Kirillov, Cees G"
+      ],
+      [
+        "for two epochs on ImageNet"
+      ],
+      [
+        "Freeman",
+        "and U2Seg"
+      ],
+      [
+        "d",
+        "A large dataset to train convolutional networks for disparity, In CVPR, pages optical flow, and scene flow estimation",
+        "PWC-Net: CNNs for optical flow using pyramid, warping, and cost volume",
+        "a supervised ana- log of SMURF"
+      ],
+      [
+        "Barron, Ariel Gordon, Kurt Konolige, and Anelia Angelova",
+        "Cost function unrolling in un- IEEE Trans",
+        "BrightFlow: Brightness-change-aware un- supervised learning of optical flow",
+        "UnFlow: Un- supervised learning of optical flow with a bidirectional cen- sus loss",
+        "Yu, Adam W"
+      ],
+      [
+        "unsupervised"
+      ],
+      [
+        "Unsupervised object localization in the era of self-supervised ViTs: A survey"
+      ],
+      [
+        "Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick P\u00e9rez, Renaud Mar- let, and Jean Ponce",
+        "Discovering object masks with transformers for unsupervised semantic segmentation",
+        "\u00c1lvarez",
+        "and U2Seg",
+        "Segment In NeurIPS, pages 138731\u2013 anything without supervision"
+      ],
+      [
+        "Crowley, and Dominique Vaufrey- daz"
+      ],
+      [
+        "and U2Seg"
+      ],
+      [
+        "Guess What Moves: Unsupervised video and image segmentation by anticipating motion",
+        "Unsupervised multi- object segmentation by predicting probable motion patterns",
+        "The emergence of objectness: Learning zero-shot segmentation from videos",
+        "Multi-object discovery by low-dimensional object motion",
+        "MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos",
+        "DyStaB: Unsupervised object segmentation via dynamic-static boot- strapping"
+      ],
+      [
+        "3"
+      ],
+      [
+        "MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos"
+      ],
+      [
+        "PiCIE: Unsupervised semantic segmentation us- In CVPR, ing invariance and equivariance in clustering",
+        "InfoSeg: Unsuper- vised semantic image segmentation with mutual information maximization",
+        "Henriques, and Andrea Vedaldi"
+      ],
+      [
+        "Freeman"
+      ],
+      [
+        "EAGLE: Eigen aggregation learning for object- In CVPR, centric unsupervised semantic segmentation",
+        "Leveraging hidden positives for unsupervised semantic segmentation",
+        "+ CutLER"
+      ],
+      [
+        "Boosting unsupervised semantic segmentation with principal mask proposals"
+      ],
+      [
+        "+ CutLER"
+      ],
+      [
+        "Diffuse, attend, and segment:"
+      ],
+      [
+        "High-resolution image syn- thesis with latent diffusion models"
+      ],
+      [
+        "7"
+      ],
+      [
+        "Freeman"
+      ],
+      [
+        "and U2Seg"
+      ]
+    ]
+  },
+  {
+    "paper_id": "sugar",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Light Field Rendering"
+      ],
+      [
+        "Seitz, and Richard Szeliski"
+      ],
+      [
+        "Multi-View Stereo for Community Photo Collections"
+      ],
+      [
+        "Unstructured Lumigraph Ren- dering",
+        "Deep Blending for Free-Viewpoint Image-Based Rendering",
+        "Wood, Daniel I"
+      ],
+      [
+        "Free View Synthesis",
+        "Stable View Synthesis"
+      ],
+      [
+        "Srinivasan, Matthew Tancik, Jonathan T"
+      ],
+      [
+        "TensoRF: Tensorial Radiance Fields",
+        "ReLU Fields: The Little Non-Linearity That Could",
+        "Instant Neural Graphics Primitives with a Mul- tiresolution Hash Encoding",
+        "Direct Voxel Grid Optimization: Super-Fast Convergence for Radiance In Conference on Computer Vision Fields Reconstruction",
+        "Plenoxels: In Conference Radiance Fields Without Neural Networks"
+      ],
+      [
+        "Barron",
+        "Srinivasan",
+        "KiloNeRF: Speeding Up Neural Radiance Fields with Thousands of Tiny MLPs",
+        "PlenOctrees For Real-Time Rendering of Neural Radiance Fields"
+      ],
+      [
+        "TensoRF: Tensorial Radiance Fields"
+      ],
+      [
+        "Barron, and Pratul P"
+      ],
+      [
+        "Bar- ron, Ce Liu, and Hendrik P",
+        "NeROIC: Neural Rendering of Objects from Online Image Collections",
+        "Srinivasan, Boyang Deng, Xiuming Zhang, Matthew Tancik, Ben Mildenhall, and Jonathan T",
+        "PhySG: Inverse Rendering with Spherical Gaussians for Physics-Based Material Editing and Relight- ing"
+      ],
+      [
+        "NeuMesh: Learning Disentangled Neural Mesh-Based Im- plicit Field for Geometry and Texture Editing",
+        "Improving Neural Im- plicit Surfaces Geometry with Patch Warping",
+        "Tay- lor, Mathias Unberath, Ming-Yu Liu, and Chen-Hsuan Lin",
+        "UNISURF: Unifying Neural Implicit Surfaces and Radiance Fields for Multi-View Reconstruction",
+        "NeuS: Learning Neural Im- plicit Surfaces by Volume Rendering for Multi-View Recon- In Advances in Neural Information Processing struction",
+        "Vol- ume Rendering of Neural Implicit Surfaces"
+      ],
+      [
+        "Lorensen and Harvey E"
+      ],
+      [
+        "MobileNeRF: Exploiting the Polygon Rasterization Pipeline for Efficient Neural Field Rendering on Mobile Architectures"
+      ],
+      [
+        "Srinivasan, Richard Szeliski, and Jonathan T"
+      ],
+      [
+        "Barron"
+      ],
+      [
+        "NeRFMeshing: Distilling Neural Radiance Fields into Geometrically-Accurate 3D Meshes"
+      ],
+      [
+        "Point-Based Neural Rendering with Per- View Optimization",
+        "ADOP: Approximate Differentiable One-Pixel Point Ren- dering"
+      ],
+      [
+        "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
+      ]
+    ]
+  },
+  {
+    "paper_id": "atte",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "NIPS"
+      ],
+      [
+        "Neural machine translation in linear time"
+      ],
+      [
+        "Dauphin"
+      ],
+      [
+        "Gradient flow in recurrent nets: the difficulty of learning long-term dependencies, 2001."
+      ],
+      [
+        "Long short-term memory-networks for machine reading",
+        "A decomposable attention model",
+        "A deep reinforced model for abstractive summarization",
+        "A structured self-attentive sentence embedding"
+      ],
+      [
+        "End-to-end memory networks"
+      ],
+      [
+        "Neural GPUs learn algorithms",
+        "Neural machine translation in linear time"
+      ],
+      [
+        "Dauphin"
+      ]
+    ]
+  },
+  {
+    "paper_id": "InsightV",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Qwen-vl: A versatile vision-language model for understand- ing, localization, text reading, and beyond",
+        "Llava-onevision: Easy visual task transfer",
+        "Vila: On pre-training for visual language models, 2023",
+        "Improved baselines with visual instruction tuning",
+        "Llava-next: Improved reason- ing, ocr, and world knowledge, 2024",
+        "Visual instruction tuning",
+        "Oryx mllm: On-demand spatial- temporal understanding at arbitrary resolution",
+        "Deepseek-vl: towards real-world vision-language understanding",
+        "Qwen2-vl: To see the world more clearly"
+      ],
+      [
+        "Vila: On pre-training for visual language models, 2023",
+        "Qwen2-vl: To see the world more clearly"
+      ],
+      [
+        "Unimath: A foundational and multimodal mathe- matical reasoner"
+      ],
+      [
+        "Internvl: Scaling up vision foundation mod- els and aligning for generic visual-linguistic tasks"
+      ],
+      [
+        "Mon- key: Image resolution and text label are important things for large multi-modal models",
+        "Llava-next: Improved reason- ing, ocr, and world knowledge, 2024",
+        "Chain-of-spot: Interactive reasoning improves large vision-language models",
+        "Cambrian-1: A fully open, vision-centric exploration of multimodal llms",
+        "Llava-uhd: an lmm perceiving any aspect ratio and high-resolution images"
+      ],
+      [
+        "G-llava: Solving geometric prob- lem with multi-modal large language model",
+        "Mavis: Mathematical visual in- struction tuning",
+        "Improve vision language model chain-of-thought reasoning"
+      ],
+      [
+        "Chain-of- thought prompting elicits reasoning in large language models"
+      ],
+      [
+        "Training a helpful and harmless assistant with reinforcement learning from human feedback"
+      ],
+      [
+        "Direct prefer- ence optimization: Your language model is secretly a reward model"
+      ],
+      [
+        "Self-play fine-tuning converts weak lan- guage models to strong language models"
+      ]
+    ]
+  },
+  {
+    "paper_id": "3dmvp",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Unsupervised learning of In Euro- visual representations by solving jigsaw puzzles"
+      ],
+      [
+        "A simple framework for contrastive learning of visual representations",
+        "Momentum contrast for unsupervised visual rep- resentation learning"
+      ],
+      [
+        "Masked siamese networks for label-efficient learning",
+        "Self-supervised learning from images with a joint-embedding predictive architecture",
+        "Unsupervised learning of visual features by contrasting cluster assignments",
+        "Emerg- ing properties in self-supervised vision transformers",
+        "Bootstrap your own latent-a new approach to self-supervised learning",
+        "ibot: Image bert pre-training arXiv preprint arXiv:2111.07832, with online tokenizer"
+      ],
+      [
+        "Masked autoencoders are scalable vision learners"
+      ],
+      [
+        "Multimae: Multi-modal multi-task masked autoen- coders"
+      ],
+      [
+        "Scaling egocentric vision: The epic-kitchens dataset",
+        "Ego4d: Around the world in 3,000 hours of egocentric video",
+        "Understanding human hands in contact at internet scale"
+      ],
+      [
+        "An unbiased look at datasets for visuo-motor pre-training",
+        "Vip: Towards universal visual reward and representation via value-implicit pre-training",
+        "Where are we in the search for an artificial visual cortex for embodied intelli- gence? Advances in Neural Information Processing Systems, 36, 2024.",
+        "representation for robot manipulation",
+        "Real-world robot learn- ing with masked visual pre-training",
+        "Multi-view masked world In International models for visual robotic manipulation",
+        "Masked visual pre-training for motor control"
+      ],
+      [
+        "Deep residual learning for image recognition"
+      ],
+      [
+        "An image is worth 16x16 words: Trans- arXiv preprint formers for image recognition at scale"
+      ],
+      [
+        "Rvt: Robotic view transformer for 3d object manipulation"
+      ],
+      [
+        "Act3d: Infinite resolution action detec- tion transformer for robotic manipulation"
+      ],
+      [
+        "Instruction-driven history-aware policies for robotic manip- ulations",
+        "Instruction-following agents with jointly pre-trained vision- language models",
+        "Behavior transformers: Cloning k modes with one stone",
+        "Perceiver- actor: A multi-task transformer for robotic manipulation",
+        "Shelving, stacking, hanging: Relational pose arXiv preprint diffusion for multi-modal rearrangement"
+      ],
+      [
+        "Rt-1: Robotics transformer for real-world control at scale"
+      ],
+      [
+        "A generalist agent"
+      ],
+      [
+        "Instruction-following agents with jointly pre-trained vision- language models"
+      ],
+      [
+        "Perceiver- actor: A multi-task transformer for robotic manipulation"
+      ],
+      [
+        "Coarse-to-fine q-attention: Efficient learn- ing for visual robotic manipulation via discretisation"
+      ],
+      [
+        "Rvt: Robotic view transformer for 3d object manipulation"
+      ],
+      [
+        "Act3d: Infinite resolution action detec- tion transformer for robotic manipulation"
+      ],
+      [
+        "Gnfactor: Multi-task real robot learning In Conference on with generalizable neural feature fields"
+      ]
+    ]
+  },
+  {
+    "paper_id": "AnyCam",
+    "pred_citations": [],
+    "gt_citations": [
+      [
+        "Flownet: Learning optical flow with convolutional networks",
+        "Unsupervised monocular depth estimation with left- In Proceedings of the IEEE conference right consistency",
+        "Digging into self-supervised monocular In Proceedings of the IEEE/CVF inter- depth estimation"
+      ],
+      [
+        "Depth anything: Unleashing the power of large-scale unlabeled data"
+      ],
+      [
+        "Depth any- thing v2"
+      ],
+      [
+        "Metric3d: Towards zero-shot metric 3d prediction from a single image"
+      ],
+      [
+        "Metric3d v2: A versatile monocular geomet- ric foundation model for zero-shot metric depth and surface normal estimation"
+      ],
+      [
+        "Depth pro: Sharp monocular metric depth in less than a second"
+      ],
+      [
+        "Depthcrafter: Generating consistent long depth sequences for open-world videos"
+      ],
+      [
+        "Unidepth: Universal monocular metric depth estimation"
+      ],
+      [
+        "Raft: Recurrent all-pairs field In Computer Vision\u2013ECCV transforms for optical flow"
+      ],
+      [
+        "Gmflow: Learning optical flow via global matching"
+      ],
+      [
+        "Unifying flow, stereo and depth estimation"
+      ],
+      [
+        "Multiple view ge- ometry in computer vision",
+        "A critique of structure-from-motion algo- rithms",
+        "A survey of structure from motion*"
+      ],
+      [
+        "Structure- In Proceedings of the IEEE con- from-motion revisited"
+      ],
+      [
+        "Lsd- slam: Large-scale direct monocular slam",
+        "Direct sparse odometry",
+        "Orb-slam2: An open- source slam system for monocular, stereo, and rgb-d cam- eras",
+        "5"
+      ],
+      [
+        "Dsac-differentiable ransac for camera localization",
+        "Superpoint: Self-supervised interest point detection and description",
+        "Ground- arXiv preprint ing image matching in 3d with mast3r",
+        "Learning correspondence uncer- tainty via differentiable nonlinear least squares",
+        "Deep fundamental matrix estimation",
+        "In Proceedings of matching with graph neural networks",
+        "Back to the feature: Learning robust camera localization from pixels to pose",
+        "Deep virtual stereo odometry: Leveraging deep depth predic- tion for monocular direct sparse odometry"
+      ],
+      [
+        "In defense of the eight-point algorithm"
+      ],
+      [
+        "Direct sparse odometry"
+      ],
+      [
+        "nuscenes: A multi- In Proceedings of modal dataset for autonomous driving",
+        "Vision meets robotics: The kitti dataset",
+        "Scalability in perception for autonomous driving: Waymo open dataset"
+      ],
+      [
+        "Droid-slam: Deep visual slam for monocular, stereo, and rgb-d cameras"
+      ],
+      [
+        "Raft: Recurrent all-pairs field In Computer Vision\u2013ECCV transforms for optical flow"
+      ],
+      [
+        "Particlesfm: Exploiting dense point trajecto- ries for localizing moving cameras in the wild"
+      ],
+      [
+        "Structure and motion from casual videos"
+      ],
+      [
+        "Dust3r: Geometric 3d vi- sion made easy"
+      ],
+      [
+        "Flowmap: High-quality camera poses, in- arXiv preprint trinsics, and depth via gradient descent"
+      ],
+      [
+        "Leap-vo: Long-term effective any point tracking for visual In Proceedings of the IEEE/CVF Conference odometry"
+      ],
+      [
+        "Monst3r: A simple approach for estimat- arXiv preprint ing geometry in the presence of motion"
+      ]
+    ]
+  }
+]

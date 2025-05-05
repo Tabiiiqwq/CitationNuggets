@@ -1,0 +1,23 @@
+The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU
+++ref++[ (Can active memory replace attention? In Advances in Neural Information Processing Systems, (NIPS), 2016.) ]++ref++, ByteNet ++ref++[ (Neural machine translation in linear time) ]++ref++ and ConvS2S ++ref++[ (Dauphin) ]++ref++, all of which use convolutional neural networks as basic building
+block, computing hidden representations in parallel for all input and output positions. In these models,
+the number of operations required to relate signals from two arbitrary input or output positions grows
+in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes
+it more difficult to learn dependencies between distant positions ++ref++[ (Gradient flow in recurrent nets: the difficulty of learning long-term dependencies, 2001.) ]++ref++. In the Transformer this is
+reduced to a constant number of operations, albeit at the cost of reduced effective resolution due
+to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as
+described in section 3.2.
+
+Self-attention, sometimes called intra-attention is an attention mechanism relating different positions
+of a single sequence in order to compute a representation of the sequence. Self-attention has been
+used successfully in a variety of tasks including reading comprehension, abstractive summarization,
+textual entailment and learning task-independent sentence representations ++ref++[ (Long short-term memory-networks for machine reading), (A decomposable attention model), (A deep reinforced model for abstractive summarization), (A structured self-attentive sentence embedding) ]++ref++.
+
+End-to-end memory networks are based on a recurrent attention mechanism instead of sequence-
+aligned recurrence and have been shown to perform well on simple-language question answering and
+language modeling tasks ++ref++[ (End-to-end memory networks) ]++ref++.
+
+To the best of our knowledge, however, the Transformer is the first transduction model relying
+entirely on self-attention to compute representations of its input and output without using sequence-
+aligned RNNs or convolution. In the following sections, we will describe the Transformer, motivate
+self-attention and discuss its advantages over models such as ++ref++[ (Neural GPUs learn algorithms), (Neural machine translation in linear time) ]++ref++ and ++ref++[ (Dauphin) ]++ref++.

@@ -1,0 +1,113 @@
+Image-based rendering (IBR) methods rely on a set of two-
+dimensional images of a scene to generate a representation
+of the scene and render novel views. The very first novel-
+view synthesis approaches were based on light fields ++ref++[ (Light Field Rendering) ]++ref++,
+and developed the concept of volume rendering for novel
+views. Their work emphasized the importance of efficiently
+traversing volumetric data to produce realistic images.
+
+Various scene representations have been proposed since,
+such as triangle meshes, point clouds, voxel grids, multi-
+plane images, or neural implicit functions.
+
+Traditional mesh-based IBR methods. Structure-from-
+motion (SfM)
+++ref++[ (Seitz, and Richard Szeliski) ]++ref++ and subsequent multi-view stereo
+(MVS) ++ref++[ (Multi-View Stereo for Community Photo Collections) ]++ref++ allow for 3D reconstruction of surfaces, lead-
+ing to the development of several view synthesis algorithms
+relying on triangle meshes as the primary 3D representa-
+tion of scenes. Such algorithms consider textured triangles
+or warp and blend captured images on the mesh surface to
+generate novel views ++ref++[ (Unstructured Lumigraph Ren- dering), (Deep Blending for Free-Viewpoint Image-Based Rendering), (Wood, Daniel I) ]++ref++.
+++ref++[ (Free View Synthesis), (Stable View Synthesis) ]++ref++ consider deep
+learning-based mesh representations for better view synthe-
+sis, bridging the gap between traditional graphics and mod-
+ern machine learning techniques. While these mesh-based
+methods take advantage of existing graphics hardware and
+software for efficient rendering, they struggle with the cap-
+ture of accurate geometry and appearance in complex re-
+gions.
+
+Volumetric IBR methods. Volumetric methods use voxel
+grids, multiplane images, or neural networks to represent
+scenes as continuous volumetric functions of density and
+color. Recently, Neural Radiance Fields (NeRF) ++ref++[ (Srinivasan, Matthew Tancik, Jonathan T) ]++ref++ intro-
+duced a novel scene representation based on a continuous
+volumetric function parameterized by a multilayer percep-
+tron (MLP). NeRF produces photorealistic renderings with
+fine details and view-dependent effects, achieved through
+volumetric ray tracing. However, the original NeRF is com-
+putationally expensive and memory intensive.
+
+To address these challenges, several works have im-
+proved NeRF’s performance and scalability. These meth-
+ods leverage discretized or sparse volumetric representa-
+tions like voxel grids and hash tables as ways to store
+learnable features acting as positional encodings for 3D
+points ++ref++[ (TensoRF: Tensorial Radiance Fields), (ReLU Fields: The Little Non-Linearity That Could), (Instant Neural Graphics Primitives with a Mul- tiresolution Hash Encoding), (Direct Voxel Grid Optimization: Super-Fast Convergence for Radiance In Conference on Computer Vision Fields Reconstruction), (Plenoxels: In Conference Radiance Fields Without Neural Networks) ]++ref++, hierarchical sampling strate-
+gies ++ref++[ (Barron), (Srinivasan), (KiloNeRF: Speeding Up Neural Radiance Fields with Thousands of Tiny MLPs), (PlenOctrees For Real-Time Rendering of Neural Radiance Fields) ]++ref++, or low-rank approximations ++ref++[ (TensoRF: Tensorial Radiance Fields) ]++ref++. How-
+ever, they still rely on volumetric ray marching, which
+is incompatible with standard graphics hardware and soft-
+ware designed for rendering polygonal surfaces. Recent
+works have proposed modifying the NeRF’s representation
+of geometry and emitted radiance to allow for better recon-
+struction of specular materials ++ref++[ (Barron, and Pratul P) ]++ref++ or relighting the scene
+through an explicit decomposition into material and lighting
+properties ++ref++[ (Bar- ron, Ce Liu, and Hendrik P), (NeROIC: Neural Rendering of Objects from Online Image Collections), (Srinivasan, Boyang Deng, Xiuming Zhang, Matthew Tancik, Ben Mildenhall, and Jonathan T), (PhySG: Inverse Rendering with Spherical Gaussians for Physics-Based Material Editing and Relight- ing) ]++ref++.
+
+Hybrid IBR methods. Some methods build on differen-
+tiable rendering to combine the advantages of mesh-based
+and volumetric methods, and allow for surface reconstruc-
+tion as well as better editability. They use a hybrid volume-
+surface representation, which enables high-quality meshes
+suitable for downstream graphics applications while effi-
+ciently modeling view-dependent appearance.
+In partic-
+ular, some works optimize neural signed distance func-
+tions (SDF) by training neural radiance fields in which the
+density is derived as a differentiable transformation of the
+SDF ++ref++[ (NeuMesh: Learning Disentangled Neural Mesh-Based Im- plicit Field for Geometry and Texture Editing), (Improving Neural Im- plicit Surfaces Geometry with Patch Warping), (Tay- lor, Mathias Unberath, Ming-Yu Liu, and Chen-Hsuan Lin), (UNISURF: Unifying Neural Implicit Surfaces and Radiance Fields for Multi-View Reconstruction), (NeuS: Learning Neural Im- plicit Surfaces by Volume Rendering for Multi-View Recon- In Advances in Neural Information Processing struction), (Vol- ume Rendering of Neural Implicit Surfaces) ]++ref++. A triangle mesh can finally
+be reconstructed from the SDF by applying the Marching
+Cubes algorithm ++ref++[ (Lorensen and Harvey E) ]++ref++. However, most of these methods do
+not target real-time rendering.
+
+Alternatively, other approaches “bake” the rendering ca-
+pacity of an optimized NeRF or neural SDF into a much ef-
+ficient structure relying on an underlying triangle mesh ++ref++[ (MobileNeRF: Exploiting the Polygon Rasterization Pipeline for Efficient Neural Field Rendering on Mobile Architectures) ]++ref++
+that could benefit from the traditional triangle rasteriza-
+tion pipeline. In particular, the recent BakedSDF ++ref++[ (Srinivasan, Richard Szeliski, and Jonathan T) ]++ref++ re-
+constructs high quality meshes by optimizing a full neural
+SDF model, baking it into a high-resolution triangle mesh
+that combines mesh rendering for interpolating features and
+deep learning to translate these features into images, and
+finally optimizes a view-dependent appearance model.
+
+However, even though it achieves real-time rendering
+and produces impressive meshes of the surface of the scene,
+this model demands training a full neural SDF with an ar-
+chitecture identical to Mip-NeRF360 ++ref++[ (Barron) ]++ref++, which necessi-
+tates 48 hours of training.
+
+Similarly, the recent method NeRFMeshing ++ref++[ (NeRFMeshing: Distilling Neural Radiance Fields into Geometrically-Accurate 3D Meshes) ]++ref++ pro-
+poses to also bake any NeRF model into a mesh structure,
+achieving real-time rendering. However, the meshing per-
+formed in this method lowers the quality of the rendering
+and results in a PSNR much lower than our method. Ad-
+ditionally, this method still requires training a full NeRF
+model beforehand, and needs approximately an hour of
+training on 8 V100 NVIDIA GPUs to allow for mesh train-
+ing and extraction.
+
+Our method is much faster at retrieveing a 3D mesh from
+3D Gaussian Splatting, which is itself much faster than
+NeRFs. As our experiments show, our rendering done by
+bounding Gaussians to the mesh results in higher quality
+than previous solutions based on meshes.
+
+Point-based IBR methods. Alternatively, point-based
+representations for radiance field excel at modeling thin ge-
+ometry and leverage fast point rasterization pipelines to ren-
+der images using α-blending rather than ray-marching ++ref++[ (Point-Based Neural Rendering with Per- View Optimization), (ADOP: Approximate Differentiable One-Pixel Point Ren- dering) ]++ref++.
+In particular, the very recent 3D Gaussian Splatting.
+model ++ref++[ (3D Gaussian Splatting for Real-Time Radiance Field Rendering) ]++ref++ allows for optimizing and rendering scenes with
+speed and quality never seen before.

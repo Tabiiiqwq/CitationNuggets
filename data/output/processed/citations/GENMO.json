@@ -1,0 +1,130 @@
+{
+  "content": [
+    [
+      "HP-GAN: Probabilistic 3D human motion prediction via GAN",
+      "Implicit neural representations for variable length human motion generation",
+      "Chopin, N",
+      "Flexible motion in-betweening with diffusion models",
+      "Motionlcm: Real-time controllable motion generation via latent consistency model",
+      "Momask: Generative masked mod- eling of 3d human motions",
+      "A recurrent variational autoen- coder for human motion synthesis",
+      "Nemf: Neural motion fields for kinematic ani- mation",
+      "MoGlow: Probabilistic and controllable motion synthesis using normalising flows",
+      "Mmm: Generative masked motion model",
+      "Mmm: Generative masked motion model",
+      "Guibas",
+      "Human motion gen- eration using wasserstein GAN",
+      "Human motion dif- fusion model",
+      "Transflower: probabilistic autoregressive dance gen- eration with multimodal attention",
+      "ActFormer: A gan-based transformer towards general action-conditioned 3d human motion generation",
+      "Motiondif- fuse: Text-driven human motion generation with diffusion model",
+      "Re- modiffuse: Retrieval-augmented motion diffusion model",
+      "Human motion generation: A survey"
+    ],
+    [
+      "Executing your commands via motion diffusion in latent space",
+      "Synthesis of compositional animations from textual descriptions",
+      "TM2T: Stochastic and tokenized modeling for the reciprocal gener- ation of 3d human motions and texts",
+      "Act as you wish: Fine-grained control of mo- tion diffusion model with hierarchical semantic graphs"
+    ],
+    [
+      "Ac- tion2Motion: Conditioned generation of 3D human mo- In ACM International Conference on Multimedia tions"
+    ],
+    [
+      "Listen, denoise, action! audio-driven motion synthesis with diffusion models",
+      "Taming diffusion models for audio-driven co-speech gesture generation"
+    ],
+    [
+      "Ai choreographer: Music conditioned 3d dance generation with aist++",
+      "Bailando: 3d dance generation by actor-critic gpt with choreographic In Proceedings of the IEEE/CVF Conference on memory",
+      "You never stop dancing: Non- freezing dance generation via bank-constrained manifold projection",
+      "Dance with melody: An LSTM-autoencoder approach to music-oriented dance synthesis",
+      "Edge: In Proceedings of Editable dance generation from music",
+      "Transflower: probabilistic autoregressive dance gen- eration with multimodal attention"
+    ],
+    [
+      "Stochastic scene-aware motion prediction",
+      "NIFTY: Neural object interaction fields for guided human motion synthesis",
+      "HUMANISE: Language-conditioned hu- man motion generation in 3d scenes",
+      "Generating human interaction motions in scenes with text control",
+      "Petrov, Vladimir Guzov, Helisa Dhamo, Eduardo P\u00b4erez Pellitero, and Gerard Pons-Moll"
+    ],
+    [
+      "Motioncraft: Crafting whole-body motion with plug-and-play multimodal controls",
+      "M3gpt: An ad- vanced multimodal, multitask framework for motion com- prehension and generation",
+      "Large motion model for unified multi-modal motion generation",
+      "Ude: A unified driving engine for human motion generation"
+    ],
+    [
+      "Large motion model for unified multi-modal motion generation"
+    ],
+    [
+      "Black, and G\u00a8ul Varol",
+      "Black, G\u00a8ul Varol, Xue Bin Peng, and Davis Rempe",
+      "Hauptmann, and Jungdam Won",
+      "Diffcollage: Parallel generation of large content with diffusion models"
+    ],
+    [
+      "Troje, Ger- ard Pons-Moll, and Michael J"
+    ],
+    [
+      "Motion-x: A large- scale 3d expressive whole-body human motion dataset"
+    ],
+    [
+      "Mo- tionbank: A large-scale video motion benchmark with disen- tangled rule-based annotations, 2024"
+    ],
+    [
+      "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+      "Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras"
+    ],
+    [
+      "Black, David W",
+      "Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation",
+      "Neural localizer fields for continuous 3d human pose and shape estimation"
+    ],
+    [
+      "Be- yond static features for temporally consistent 3d human pose and shape from a video",
+      "Humans in 4d: Re- In constructing and tracking humans with transformers",
+      "VIBE: Video inference for human body pose and shape estimation"
+    ],
+    [
+      "Mocap everyone everywhere: Lightweight motion capture with smartwatches and a head- mounted camera",
+      "Sparseposer: Real-time full- body motion reconstruction from sparse data",
+      "Transpose: Real-time 3d human translation and pose estimation with six inertial sensors"
+    ],
+    [
+      "Black, Otmar Hilliges, Jan Kautz, and Umar Iqbal",
+      "Coin: Control-inpainting diffusion prior for human and camera In ECCV, pages 426\u2013446",
+      "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+      "Tram: Global trajectory and motion of 3d humans from in- the-wild videos",
+      "Decoupling human and camera motion from videos in the wild",
+      "Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras"
+    ],
+    [
+      "World-grounded human motion recovery via gravity-view coordinates",
+      "Wham: Reconstructing world-grounded humans with accu- rate 3d motion",
+      "Tram: Global trajectory and motion of 3d humans from in- the-wild videos",
+      "Rohm: Robust human motion reconstruction via diffusion"
+    ]
+  ],
+  "positions": [
+    99,
+    160,
+    170,
+    179,
+    187,
+    208,
+    275,
+    434,
+    859,
+    1096,
+    1178,
+    1194,
+    1260,
+    1570,
+    1579,
+    1608,
+    1749,
+    2111
+  ]
+}

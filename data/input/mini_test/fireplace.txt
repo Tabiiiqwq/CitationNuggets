@@ -1,0 +1,41 @@
+3D scene generation and object placement. Significant
+efforts have been made towards collecting 3D scene datasets
+++ref++[ (Matterport3d: Learning arXiv preprint from rgb-d data in indoor environments), (3d-front: 3d furnished rooms with layouts In Proceedings of the IEEE/CVF Interna- and semantics), (In- finigen indoors: Photorealistic indoor scenes using procedu- ral generation), (Susskind), (Sun rgb-d: A rgb-d scene understanding benchmark suite), (Semantic scene com- In Proceedings of the pletion from a single depth image) ]++ref++, enabling the community to train
+and develop systems that generate and/or position elements
+within indoor scenes ++ref++[ (Example-based synthesis of 3d object arrangements), (Language-driven synthe- sis of 3d scenes from scene databases), (Atiss: Autoregres- sive transformers for indoor scene synthesis), (Fast and flex- ible indoor scene synthesis via deep convolutional genera- In Proceedings of the IEEE/CVF Conference tive models), (Planit: Planning and in- stantiating indoor scenes with relation graph and spatial prior networks), (Sceneformer: Indoor scene generation with transformers), (Lego-net: Learning regular rearrangements of ob- jects in rooms), (Llplace: The 3d in- door scene layout generation and editing via large language model) ]++ref++. While
+they demonstrate that object placement rules can be dis-
+tilled from scene databases, these were not designed to han-
+dle open vocabularies of objects, and even less so to take
+into account the level of common sense reasoning that un-
+derlies human decisions to place objects where they are
+placed within our living environments. FirePlace intro-
+duces a method to leverage the knowledge of MLLMs to
+do this in a training-free manner. While other works ++ref++[ (Scalinggaus- sian: Enhancing 3d content creation with generative gaussian splatting), (Scene- dreamer: Unbounded 3d scene generation from 2d image collections), (Luciddreamer: Domain-free gen- arXiv preprint eration of 3d gaussian splatting scenes), (Scenescape: Text-driven consistent scene generation), (in seconds with latent diffusion models), (Text2room: Extracting textured 3d In Proceedings of meshes from 2d text-to-image models), (Dreamwaltz-g: Expressive 3d gaussian avatars from skeleton-guided 2d diffusion), (Diffindscene: Diffusion-based 9 high-quality 3d indoor scene generation), (Semcity: Semantic scene genera- tion with triplane diffusion), (Art3d: 3d gaussian splatting for text-guided artistic scenes generation), (Infinite na- ture: Perpetual view generation of natural scenes from a sin- In Proceedings of the IEEE/CVF International gle image), (Compositional 3d scene generation using locally conditioned diffusion), (Citydreamer: Compositional generative model of unbounded In Proceedings of the IEEE/CVF Conference 3d cities), (Gaussiandreamer: Fast generation from text to 3d gaussians by bridging 2d and 3d diffusion models), (Wonderjourney: In Proceedings of Going from anywhere to everywhere), (Dreamscape: 3d scene creation via gaussian splatting joint arXiv preprint arXiv:2404.09227, correlation modeling) ]++ref++ use
+2D image priors to generate scenes and objects, they often
+have issues preserving object identity and physical plausi-
+bility of the final object arrangement. In contrast, FirePlace
+works with an explicit 3D scene representation, where ex-
+plicit geometric constraints are enforced.
+Foundation models for 3D graphics. More recent
+works ++ref++[ (Fatahalian), (Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions), (Blender- alchemy: Editing 3d graphics with vision-language models), (Re-thinking inverse graphics with large language models), (Any- home: Open-vocabulary generation of structured and tex- tured 3d homes) ]++ref++ have demonstrated the potential
+of involving large pretrained models for different stages of
+the 3D graphical design process. While they demonstrate
+capabilities in editing materials ++ref++[ (Blender- alchemy: Editing 3d graphics with vision-language models) ]++ref++, texture ++ref++[ (Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions) ]++ref++, and con-
+trolling animation ++ref++[ (Fatahalian) ]++ref++, they struggle with tasks that require
+complex spatial reasoning, like object placement. Existing
+works like ++ref++[ (Layoutgpt: Compositional visual plan- ning and generation with large language models) ]++ref++ have attempted to position objects in a scene
+
+by directly using LLMs through predicting the position and
+orientation of objects as LLM outputs. More recent works
+++ref++[ (Open-universe indoor scene generation using llm program synthesis and uncurated object databases), (Scenecraft: An llm agent for synthesizing 3d scenes as blender code), (Scenemotifcoder: Example-driven visual program learning for generating 3d arXiv preprint arXiv:2408.02211, object arrangements), (Holodeck: Language guided genera- tion of 3d embodied ai environments) ]++ref++ have demonstrated the benefit of using LLMs
+to predict constraints instead, before using a solver to solve
+for final object placements. However, despite being able
+to create large-scale scenes, they represent each object us-
+ing bounding boxes, making it impossible to express fine-
+grained constraints between parts of objects, leading to con-
+straints that can only explain placements of box-like objects
+(as opposed to putting a book on a shelf, or a stuffed toy on
+a chair with a backrest and armrests). This design choice is
+understandable, since parts of objects become increasingly
+hard for LLMs to reason about. FirePlace introduces a way
+to overcome this limitation.

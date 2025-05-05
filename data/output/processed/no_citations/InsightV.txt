@@ -1,0 +1,50 @@
+2.1. Vision-Language Reasoning
+
+Recent advancements in MLLMs 
+have equipped these models with robust capabilities across
+diverse domains, including visual understanding ,
+mathematics , college-level questions , and scien-
+tific inquiries. In visual understanding, most research  emphasizes fine-grained detail analysis
+and localization, training models to perform visual reason-
+ing with tailored datasets to enhance interpretive capabili-
+ties. For mathematics and expert-level reasoning, existing
+methods  predominantly derive from Chain-of-
+Thought  approaches, training MLLMs to generate step-
+by-step reasoning across various subjects. However, these
+approaches often focus primarily on improving dataset qual-
+ity through Chain-of-Thought, overlooking the importance
+of structured reasoning paths and extended reasoning chains
+in advancing model reasoning capabilities. Additionally,
+significant challenges arise when relying on a single model
+to manage the entire reasoning process for complex tasks,
+underscoring the need for a multi-agent system to decom-
+pose and enhance this process. In this work, we tackle these
+challenges by introducing a scalable reasoning data gener-
+ation pipeline and implementing a multi-agent system for
+reasoning and summarization decomposition, enhancing the
+overall reasoning capabilities of existing MLLMs.
+
+2.2. Vision-Language Alignment
+
+To align the model more closely with human preferences,
+several alignment techniques are employed for MLLMs. A
+widely used approach is Reinforcement Learning from Hu-
+man Feedback  (RLHF), which iteratively refines the
+model’s responses based on human feedback, enhancing
+both response quality and interpretability. To further improve
+MLLM capabilities, Direct Preference Optimization 
+(DPO) is introduced to simplify the alignment process. By di-
+rectly training on human preference data, DPO optimizes the
+model’s outputs to better match human-selected responses.
+However, traditional DPO is primarily focused on offline
+scenarios, and as the model evolves, the effectiveness of
+this approach may significantly diminish. To address this,
+Iterative DPO  has been proposed, which optimizes pref-
+
+2
+
+erence pairs through DPO at each iteration. It then generates
+new preference pairs for the next iteration using the updated
+model and evaluates them with a reward model. In this pa-
+per, we use iterative DPO to achieve stronger alignment and
+enhance the model’s reasoning capabilities.

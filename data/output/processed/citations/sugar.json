@@ -1,0 +1,101 @@
+{
+  "content": [
+    [
+      "Light Field Rendering"
+    ],
+    [
+      "Seitz, and Richard Szeliski"
+    ],
+    [
+      "Multi-View Stereo for Community Photo Collections"
+    ],
+    [
+      "Unstructured Lumigraph Ren- dering",
+      "Deep Blending for Free-Viewpoint Image-Based Rendering",
+      "Wood, Daniel I"
+    ],
+    [
+      "Free View Synthesis",
+      "Stable View Synthesis"
+    ],
+    [
+      "Srinivasan, Matthew Tancik, Jonathan T"
+    ],
+    [
+      "TensoRF: Tensorial Radiance Fields",
+      "ReLU Fields: The Little Non-Linearity That Could",
+      "Instant Neural Graphics Primitives with a Mul- tiresolution Hash Encoding",
+      "Direct Voxel Grid Optimization: Super-Fast Convergence for Radiance In Conference on Computer Vision Fields Reconstruction",
+      "Plenoxels: In Conference Radiance Fields Without Neural Networks"
+    ],
+    [
+      "Barron",
+      "Srinivasan",
+      "KiloNeRF: Speeding Up Neural Radiance Fields with Thousands of Tiny MLPs",
+      "PlenOctrees For Real-Time Rendering of Neural Radiance Fields"
+    ],
+    [
+      "TensoRF: Tensorial Radiance Fields"
+    ],
+    [
+      "Barron, and Pratul P"
+    ],
+    [
+      "Bar- ron, Ce Liu, and Hendrik P",
+      "NeROIC: Neural Rendering of Objects from Online Image Collections",
+      "Srinivasan, Boyang Deng, Xiuming Zhang, Matthew Tancik, Ben Mildenhall, and Jonathan T",
+      "PhySG: Inverse Rendering with Spherical Gaussians for Physics-Based Material Editing and Relight- ing"
+    ],
+    [
+      "NeuMesh: Learning Disentangled Neural Mesh-Based Im- plicit Field for Geometry and Texture Editing",
+      "Improving Neural Im- plicit Surfaces Geometry with Patch Warping",
+      "Tay- lor, Mathias Unberath, Ming-Yu Liu, and Chen-Hsuan Lin",
+      "UNISURF: Unifying Neural Implicit Surfaces and Radiance Fields for Multi-View Reconstruction",
+      "NeuS: Learning Neural Im- plicit Surfaces by Volume Rendering for Multi-View Recon- In Advances in Neural Information Processing struction",
+      "Vol- ume Rendering of Neural Implicit Surfaces"
+    ],
+    [
+      "Lorensen and Harvey E"
+    ],
+    [
+      "MobileNeRF: Exploiting the Polygon Rasterization Pipeline for Efficient Neural Field Rendering on Mobile Architectures"
+    ],
+    [
+      "Srinivasan, Richard Szeliski, and Jonathan T"
+    ],
+    [
+      "Barron"
+    ],
+    [
+      "NeRFMeshing: Distilling Neural Radiance Fields into Geometrically-Accurate 3D Meshes"
+    ],
+    [
+      "Point-Based Neural Rendering with Per- View Optimization",
+      "ADOP: Approximate Differentiable One-Pixel Point Ren- dering"
+    ],
+    [
+      "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
+    ]
+  ],
+  "positions": [
+    229,
+    628,
+    668,
+    971,
+    973,
+    1562,
+    2190,
+    2227,
+    2256,
+    2580,
+    2677,
+    3260,
+    3361,
+    3602,
+    3713,
+    4215,
+    4302,
+    5219,
+    5281
+  ]
+}

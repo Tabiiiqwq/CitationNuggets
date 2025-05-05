@@ -1,0 +1,27 @@
+# Core dependencies
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# PDF processing
+PyPDF2
+pdfplumber
+pdf2image
+pytesseract
+Pillow
+
+# NLP tools
+nltk
+spacy
+transformers
+sentence-transformers
+langchain
+openai
+
+# Utility
+tqdm
+rich
+fire
+pyyaml

@@ -1,0 +1,50 @@
+2.1. Vision-Language Reasoning
+
+Recent advancements in MLLMs ++ref++[ (Qwen-vl: A versatile vision-language model for understand- ing, localization, text reading, and beyond), (Llava-onevision: Easy visual task transfer), (Vila: On pre-training for visual language models, 2023), (Improved baselines with visual instruction tuning), (Llava-next: Improved reason- ing, ocr, and world knowledge, 2024), (Visual instruction tuning), (Oryx mllm: On-demand spatial- temporal understanding at arbitrary resolution), (Deepseek-vl: towards real-world vision-language understanding), (Qwen2-vl: To see the world more clearly) ]++ref++
+have equipped these models with robust capabilities across
+diverse domains, including visual understanding ++ref++[ (Vila: On pre-training for visual language models, 2023), (Qwen2-vl: To see the world more clearly) ]++ref++,
+mathematics ++ref++[ (Unimath: A foundational and multimodal mathe- matical reasoner) ]++ref++, college-level questions ++ref++[ (Internvl: Scaling up vision foundation mod- els and aligning for generic visual-linguistic tasks) ]++ref++, and scien-
+tific inquiries. In visual understanding, most research ++ref++[ (Mon- key: Image resolution and text label are important things for large multi-modal models), (Llava-next: Improved reason- ing, ocr, and world knowledge, 2024), (Chain-of-spot: Interactive reasoning improves large vision-language models), (Cambrian-1: A fully open, vision-centric exploration of multimodal llms), (Llava-uhd: an lmm perceiving any aspect ratio and high-resolution images) ]++ref++ emphasizes fine-grained detail analysis
+and localization, training models to perform visual reason-
+ing with tailored datasets to enhance interpretive capabili-
+ties. For mathematics and expert-level reasoning, existing
+methods ++ref++[ (G-llava: Solving geometric prob- lem with multi-modal large language model), (Mavis: Mathematical visual in- struction tuning), (Improve vision language model chain-of-thought reasoning) ]++ref++ predominantly derive from Chain-of-
+Thought ++ref++[ (Chain-of- thought prompting elicits reasoning in large language models) ]++ref++ approaches, training MLLMs to generate step-
+by-step reasoning across various subjects. However, these
+approaches often focus primarily on improving dataset qual-
+ity through Chain-of-Thought, overlooking the importance
+of structured reasoning paths and extended reasoning chains
+in advancing model reasoning capabilities. Additionally,
+significant challenges arise when relying on a single model
+to manage the entire reasoning process for complex tasks,
+underscoring the need for a multi-agent system to decom-
+pose and enhance this process. In this work, we tackle these
+challenges by introducing a scalable reasoning data gener-
+ation pipeline and implementing a multi-agent system for
+reasoning and summarization decomposition, enhancing the
+overall reasoning capabilities of existing MLLMs.
+
+2.2. Vision-Language Alignment
+
+To align the model more closely with human preferences,
+several alignment techniques are employed for MLLMs. A
+widely used approach is Reinforcement Learning from Hu-
+man Feedback ++ref++[ (Training a helpful and harmless assistant with reinforcement learning from human feedback) ]++ref++ (RLHF), which iteratively refines the
+model’s responses based on human feedback, enhancing
+both response quality and interpretability. To further improve
+MLLM capabilities, Direct Preference Optimization ++ref++[ (Direct prefer- ence optimization: Your language model is secretly a reward model) ]++ref++
+(DPO) is introduced to simplify the alignment process. By di-
+rectly training on human preference data, DPO optimizes the
+model’s outputs to better match human-selected responses.
+However, traditional DPO is primarily focused on offline
+scenarios, and as the model evolves, the effectiveness of
+this approach may significantly diminish. To address this,
+Iterative DPO ++ref++[ (Self-play fine-tuning converts weak lan- guage models to strong language models) ]++ref++ has been proposed, which optimizes pref-
+
+2
+
+erence pairs through DPO at each iteration. It then generates
+new preference pairs for the next iteration using the updated
+model and evaluates them with a reward model. In this pa-
+per, we use iterative DPO to achieve stronger alignment and
+enhance the model’s reasoning capabilities.

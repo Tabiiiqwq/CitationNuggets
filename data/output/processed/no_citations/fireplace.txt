@@ -1,0 +1,41 @@
+3D scene generation and object placement. Significant
+efforts have been made towards collecting 3D scene datasets
+, enabling the community to train
+and develop systems that generate and/or position elements
+within indoor scenes . While
+they demonstrate that object placement rules can be dis-
+tilled from scene databases, these were not designed to han-
+dle open vocabularies of objects, and even less so to take
+into account the level of common sense reasoning that un-
+derlies human decisions to place objects where they are
+placed within our living environments. FirePlace intro-
+duces a method to leverage the knowledge of MLLMs to
+do this in a training-free manner. While other works  use
+2D image priors to generate scenes and objects, they often
+have issues preserving object identity and physical plausi-
+bility of the final object arrangement. In contrast, FirePlace
+works with an explicit 3D scene representation, where ex-
+plicit geometric constraints are enforced.
+Foundation models for 3D graphics. More recent
+works  have demonstrated the potential
+of involving large pretrained models for different stages of
+the 3D graphical design process. While they demonstrate
+capabilities in editing materials , texture , and con-
+trolling animation , they struggle with tasks that require
+complex spatial reasoning, like object placement. Existing
+works like  have attempted to position objects in a scene
+
+by directly using LLMs through predicting the position and
+orientation of objects as LLM outputs. More recent works
+ have demonstrated the benefit of using LLMs
+to predict constraints instead, before using a solver to solve
+for final object placements. However, despite being able
+to create large-scale scenes, they represent each object us-
+ing bounding boxes, making it impossible to express fine-
+grained constraints between parts of objects, leading to con-
+straints that can only explain placements of box-like objects
+(as opposed to putting a book on a shelf, or a stuffed toy on
+a chair with a backrest and armrests). This design choice is
+understandable, since parts of objects become increasingly
+hard for LLMs to reason about. FirePlace introduces a way
+to overcome this limitation.

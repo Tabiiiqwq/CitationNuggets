@@ -1,0 +1,76 @@
+Our work builds upon several active areas of research,
+including self-supervised learning, visual pretraining for
+robotics, and learning robotic manipulation from demon-
+strations.
+
+Self-supervised learning. Self-supervised learning aims to
+learn useful representations from unlabeled data by solving
+pretext tasks that do not require manual annotation. Early
+work in this area focused on designing pretext tasks for 2D
+images, such as solving jagsaw puzzles ++ref++[ (Unsupervised learning of In Euro- visual representations by solving jigsaw puzzles) ]++ref++, constrastive
+learning ++ref++[ (A simple framework for contrastive learning of visual representations), (Momentum contrast for unsupervised visual rep- resentation learning) ]++ref++ or joint embedding approaches ++ref++[ (Masked siamese networks for label-efficient learning), (Self-supervised learning from images with a joint-embedding predictive architecture), (Unsupervised learning of visual features by contrasting cluster assignments), (Emerg- ing properties in self-supervised vision transformers), (Bootstrap your own latent-a new approach to self-supervised learning), (ibot: Image bert pre-training arXiv preprint arXiv:2111.07832, with online tokenizer) ]++ref++. Most related to our work is the masked autoencoder
+(MAE) approach proposed by He et al. ++ref++[ (Masked autoencoders are scalable vision learners) ]++ref++, which learns
+to reconstruct randomly masked patches in an image. MAE
+has been shown to learn transferable representations for ob-
+ject detection and segmentation tasks. Furthermore, Bach-
+mann et al demonstrates MAE pretraining can be extended
+to different modalities such as semantics and depth ++ref++[ (Multimae: Multi-modal multi-task masked autoen- coders) ]++ref++. In
+this work, we extend the MAE approach to multi-view 3D
+scenes, enabling us to learn 3D-aware representations that
+are useful for robotic manipulation tasks. Unlike Multi-
+MAE which learns semantics and depth through direct su-
+pervision, 3D-MVP aims to learn a 3D-aware representa-
+tion from multi view images.
+
+Visual pretraining for Robotics. Visual pretraining has
+demonstrated impressive generalization ability on computer
+vision tasks. Therefore, prior works have explored whether
+it works for robotics tasks as well. Specifically, the robotics
+community has trended towards learning representations us-
+ing state-of-the-art self-supervised vision algorithms on di-
+verse interaction datasets ++ref++[ (Scaling egocentric vision: The epic-kitchens dataset), (Ego4d: Around the world in 3,000 hours of egocentric video), (Understanding human hands in contact at internet scale) ]++ref++, and finetune the net-
+work on robotics tasks ++ref++[ (An unbiased look at datasets for visuo-motor pre-training), (Vip: Towards universal visual reward and representation via value-implicit pre-training), (Where are we in the search for an artificial visual cortex for embodied intelli- gence? Advances in Neural Information Processing Systems, 36, 2024.), (representation for robot manipulation), (Real-world robot learn- ing with masked visual pre-training), (Multi-view masked world In International models for visual robotic manipulation), (Masked visual pre-training for motor control) ]++ref++. 3D-MVP
+follows the same procedure. However, existing robotics
+pretraining approaches typically learn a 2D visual encoder
+(e.g. ResNet ++ref++[ (Deep residual learning for image recognition) ]++ref++ or ViT ++ref++[ (An image is worth 16x16 words: Trans- arXiv preprint formers for image recognition at scale) ]++ref++), we find they are inferior than
+manipulation policies which do explicit 3D modeling (e.g.
+RVT ++ref++[ (Rvt: Robotic view transformer for 3d object manipulation) ]++ref++, Act3D ++ref++[ (Act3d: Infinite resolution action detec- tion transformer for robotic manipulation) ]++ref++). Migrating a pretrained ViT to 3D
+manipulation policies is nontrivial since they do not have
+a 2D visual encoder. In this paper, we propose 3D-MVP,
+which does 3D-aware pretraining on 3D manipulation poli-
+cies, to fill the gap.
+
+Learning manipulation from demonstrations. Recent
+work has explored using transformers for multi-task ma-
+nipulation policies that predict robot actions from visual
+and language inputs ++ref++[ (Instruction-driven history-aware policies for robotic manip- ulations), (Instruction-following agents with jointly pre-trained vision- language models), (Behavior transformers: Cloning k modes with one stone), (Perceiver- actor: A multi-task transformer for robotic manipulation), (Shelving, stacking, hanging: Relational pose arXiv preprint diffusion for multi-modal rearrangement) ]++ref++. End-to-end mod-
+els like RT-1 ++ref++[ (Rt-1: Robotics transformer for real-world control at scale) ]++ref++, GATO ++ref++[ (A generalist agent) ]++ref++, and InstructRL ++ref++[ (Instruction-following agents with jointly pre-trained vision- language models) ]++ref++ directly
+predict 6-DoF end-effector poses but require many demon-
+
+2
+
+strations to learn spatial reasoning and generalize to new
+scenes. To better handle 3D scenes, PerAct ++ref++[ (Perceiver- actor: A multi-task transformer for robotic manipulation) ]++ref++ and C2F-
+ARM ++ref++[ (Coarse-to-fine q-attention: Efficient learn- ing for visual robotic manipulation via discretisation) ]++ref++ voxelize the workspace and detect the 3D voxel
+containing the next end-effector pose. However, precise
+pose prediction requires high-resolution voxels which are
+computationally expensive. Recently, RVT ++ref++[ (Rvt: Robotic view transformer for 3d object manipulation) ]++ref++ proposes
+a multi-view transformer that attends over point cloud fea-
+tures from multiple camera views to predict actions. This
+avoids explicit voxelization and enables faster training and
+inference than PerAct. Act3D ++ref++[ (Act3d: Infinite resolution action detec- tion transformer for robotic manipulation) ]++ref++ represents the scene as a
+continuous 3D feature field and samples points to featurize
+with attention, allowing adaptive resolution. GNFactor ++ref++[ (Gnfactor: Multi-task real robot learning In Conference on with generalizable neural feature fields) ]++ref++
+jointly optimizes a generalizable neural field for reconstruc-
+tion and a Perceiver for decision-making. In contrast, our
+proposed 3D-MVP learns 3D scene representations through
+masked autoencoding pretraining on a large dataset of 3D
+object models. This pretraining enables 3D-MVP to build
+a rich understanding of 3D geometry and semantics prior
+to finetuning on downstream manipulation tasks. Com-
+pared to RVT and Act3D which train from scratch on tar-
+get tasks, 3D-MVP’s pretraining leads to improved perfor-
+mance, sample efficiency and generalization. Unlike GN-
+Factor which relies on a pretrained VLM to inject seman-
+tics, 3D-MVP directly learns 3D semantic features from ob-
+ject models.
