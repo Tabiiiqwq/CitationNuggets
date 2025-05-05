@@ -180,42 +180,103 @@ class MarkedCitationEvaluator:
             Dictionary containing metrics
         """
         # Aggregated metrics
-        total_citations = 0
-        total_correct = 0
-        total_matching_length = 0
+        total_citation_positions = 0  # Number of citation positions
+        total_gt_papers = 0  # Total number of cited papers in ground truth
+        total_pred_papers = 0  # Total number of cited papers in predictions
+        total_correct_papers = 0  # Total number of correctly cited papers
+        total_positions_with_matches = 0  # Number of positions with at least one correct citation
+        
+        # Set of all unique papers cited
+        all_gt_papers = set()
+        all_pred_papers = set()
+        all_correct_papers = set()
         
         for pred in predictions:
             gt_citations = pred.get("gt_citations", [])
             pred_citations = pred.get("pred_citations", [])
             
+            # Ensure gt_citations is a list of lists
+            if gt_citations and not isinstance(gt_citations[0], list):
+                gt_citations = [[citation] for citation in gt_citations]
+            
+            # Ensure pred_citations is a list of lists
+            if pred_citations and not isinstance(pred_citations[0], list):
+                pred_citations = [[citation] for citation in pred_citations]
+            
             # Count the minimum length to avoid index errors
             min_length = min(len(gt_citations), len(pred_citations))
-            total_matching_length += min_length
             
             # If predicted fewer or more citations than ground truth, count as error
             if len(pred_citations) != len(gt_citations):
                 logger.warning(
-                    f"Number of citations mismatch for paper {pred['paper_id']}: "
+                    f"Number of citation positions mismatch for paper {pred['paper_id']}: "
                     f"predicted {len(pred_citations)}, ground truth {len(gt_citations)}"
                 )
             
-            # Count total citations
-            total_citations += len(gt_citations)
+            # Count total citation positions
+            total_citation_positions += len(gt_citations)
             
-            # Count correct predictions
+            # Process each citation position
             for i in range(min_length):
-                if self._citations_match(gt_citations[i], pred_citations[i]):
-                    total_correct += 1
+                position_gt_citations = gt_citations[i]
+                position_pred_citations = pred_citations[i]
+                
+                # Count papers at this position
+                total_gt_papers += len(position_gt_citations)
+                total_pred_papers += len(position_pred_citations)
+                
+                # Add to sets of all papers
+                for citation in position_gt_citations:
+                    all_gt_papers.add(citation)
+                for citation in position_pred_citations:
+                    all_pred_papers.add(citation)
+                
+                # Check if any prediction matches any ground truth for this position
+                position_has_match = False
+                position_correct_count = 0
+                
+                for pred_citation in position_pred_citations:
+                    for gt_citation in position_gt_citations:
+                        if self._citations_match(gt_citation, pred_citation):
+                            position_correct_count += 1
+                            all_correct_papers.add(pred_citation)
+                            position_has_match = True
+                            break
+                
+                # Count correctly cited papers at this position
+                total_correct_papers += position_correct_count
+                
+                # Count positions with at least one correct citation
+                if position_has_match:
+                    total_positions_with_matches += 1
         
         # Calculate metrics
-        citation_accuracy = total_correct / max(1, total_citations)
-        length_match_rate = total_matching_length / max(1, total_citations)
+        position_accuracy = total_positions_with_matches / max(1, total_citation_positions)
+        paper_precision = total_correct_papers / max(1, total_pred_papers)
+        paper_recall = total_correct_papers / max(1, total_gt_papers)
+        paper_f1 = 2 * paper_precision * paper_recall / max(1e-6, (paper_precision + paper_recall))
+        
+        # Calculate overall corpus-level metrics
+        corpus_precision = len(all_correct_papers) / max(1, len(all_pred_papers))
+        corpus_recall = len(all_correct_papers) / max(1, len(all_gt_papers))
+        corpus_f1 = 2 * corpus_precision * corpus_recall / max(1e-6, (corpus_precision + corpus_recall))
         
         return {
-            "citation_accuracy": citation_accuracy,
-            "length_match_rate": length_match_rate,
-            "total_citations": total_citations,
-            "total_correct": total_correct
+            "position_accuracy": position_accuracy,  # Percentage of positions with at least one correct citation
+            "paper_precision": paper_precision,  # Precision at the individual citation level
+            "paper_recall": paper_recall,  # Recall at the individual citation level
+            "paper_f1": paper_f1,  # F1 at the individual citation level
+            "corpus_precision": corpus_precision,  # Precision at the corpus level
+            "corpus_recall": corpus_recall,  # Recall at the corpus level
+            "corpus_f1": corpus_f1,  # F1 at the corpus level
+            "total_citation_positions": total_citation_positions,
+            "total_gt_papers": total_gt_papers,
+            "total_pred_papers": total_pred_papers,
+            "total_correct_papers": total_correct_papers,
+            "total_positions_with_matches": total_positions_with_matches,
+            "unique_gt_papers": len(all_gt_papers),
+            "unique_pred_papers": len(all_pred_papers),
+            "unique_correct_papers": len(all_correct_papers)
         }
     
     def _citations_match(self, citation1: str, citation2: str) -> bool:
@@ -235,7 +296,7 @@ class MarkedCitationEvaluator:
         # or use a more advanced matching algorithm
         return citation1.strip() == citation2.strip()
     
-    def _extract_citation_content(self, data: Dict[str, Any]) -> List[str]:
+    def _extract_citation_content(self, data: Dict[str, Any]) -> List[List[str]]:
         """
         Extract citation content from data.
         
@@ -243,14 +304,26 @@ class MarkedCitationEvaluator:
             data: Dictionary containing citation data
             
         Returns:
-            List of citation content strings
+            List of lists of citation content strings, where each inner list
+            contains citations for a specific citation position
         """
+        # Try to get citations in the expected list of lists format
         if "citations" in data and "content" in data["citations"]:
-            return data["citations"]["content"]
+            content = data["citations"]["content"]
+            # Check if content is already in the expected format (list of lists)
+            if content and isinstance(content[0], list):
+                return content
+            # Convert flat list to list of single-item lists
+            return [[citation] for citation in content]
         
         # Handle different formats
         if "citation_info" in data and "content" in data["citation_info"]:
-            return data["citation_info"]["content"]
+            content = data["citation_info"]["content"]
+            # Check if content is already in the expected format (list of lists)
+            if content and isinstance(content[0], list):
+                return content
+            # Convert flat list to list of single-item lists
+            return [[citation] for citation in content]
         
         # Default: empty list if no citations found
         return []
@@ -280,10 +353,17 @@ class MarkedCitationEvaluator:
         for method_name, metrics in methods_metrics.items():
             comparison_data.append({
                 "Method": method_name,
-                "Citation Accuracy": metrics["citation_accuracy"],
-                "Length Match Rate": metrics["length_match_rate"],
-                "Total Citations": metrics["total_citations"],
-                "Total Correct": metrics["total_correct"]
+                "Position Accuracy": metrics.get("position_accuracy", 0),
+                "Paper F1": metrics.get("paper_f1", 0),
+                "Corpus F1": metrics.get("corpus_f1", 0),
+                "Paper Precision": metrics.get("paper_precision", 0),
+                "Paper Recall": metrics.get("paper_recall", 0),
+                "Corpus Precision": metrics.get("corpus_precision", 0),
+                "Corpus Recall": metrics.get("corpus_recall", 0),
+                "Total Positions": metrics.get("total_citation_positions", 0),
+                "Total GT Papers": metrics.get("total_gt_papers", 0),
+                "Total Pred Papers": metrics.get("total_pred_papers", 0),
+                "Total Correct Papers": metrics.get("total_correct_papers", 0)
             })
         
         comparison_df = pd.DataFrame(comparison_data)
@@ -305,16 +385,75 @@ class MarkedCitationEvaluator:
         sns.set_style("whitegrid")
         sns.set_context("paper", font_scale=1.2)
         
-        # Accuracy Comparison
-        plt.figure(figsize=(10, 6))
+        # Accuracy Metrics Comparison
+        plt.figure(figsize=(12, 8))
         
-        # Create bar chart
-        sns.barplot(x="Method", y="Citation Accuracy", data=comparison_df)
+        # Select metrics to plot
+        metrics = ["Position Accuracy", "Paper F1", "Corpus F1"]
         
-        plt.title("Citation Accuracy Comparison")
+        # Reshape the dataframe for plotting
+        plot_data = []
+        for _, row in comparison_df.iterrows():
+            for metric in metrics:
+                plot_data.append({
+                    "Method": row["Method"],
+                    "Value": row[metric],
+                    "Metric": metric
+                })
+        
+        plot_df = pd.DataFrame(plot_data)
+        
+        # Create grouped bar chart
+        sns.barplot(x="Method", y="Value", hue="Metric", data=plot_df)
+        
+        plt.title("Citation Accuracy Metrics Comparison")
         plt.xlabel("Method")
-        plt.ylabel("Citation Accuracy")
+        plt.ylabel("Score")
         plt.xticks(rotation=45)
         plt.tight_layout()
-        plt.savefig(self.plots_dir / "accuracy_comparison.png", dpi=300)
+        plt.savefig(self.plots_dir / "accuracy_metrics_comparison.png", dpi=300)
+        plt.close()
+        
+        # Precision-Recall Comparison (Paper Level)
+        plt.figure(figsize=(10, 6))
+        
+        for _, row in comparison_df.iterrows():
+            plt.scatter(
+                row["Paper Recall"], 
+                row["Paper Precision"], 
+                s=100, 
+                label=row["Method"]
+            )
+        
+        plt.xlim(0, 1)
+        plt.ylim(0, 1)
+        plt.xlabel("Paper Recall")
+        plt.ylabel("Paper Precision")
+        plt.title("Paper-Level Precision-Recall")
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(self.plots_dir / "paper_pr_comparison.png", dpi=300)
+        plt.close()
+        
+        # Precision-Recall Comparison (Corpus Level)
+        plt.figure(figsize=(10, 6))
+        
+        for _, row in comparison_df.iterrows():
+            plt.scatter(
+                row["Corpus Recall"], 
+                row["Corpus Precision"], 
+                s=100, 
+                label=row["Method"]
+            )
+        
+        plt.xlim(0, 1)
+        plt.ylim(0, 1)
+        plt.xlabel("Corpus Recall")
+        plt.ylabel("Corpus Precision")
+        plt.title("Corpus-Level Precision-Recall")
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(self.plots_dir / "corpus_pr_comparison.png", dpi=300)
         plt.close()

@@ -85,7 +85,7 @@ class RandomMarkedCitationPredictor:
             logger.error(f"Error loading citations corpus: {str(e)}")
             return self._load_citations_corpus(None)
     
-    def predict(self, marked_text: str) -> List[str]:
+    def predict(self, marked_text: str) -> List[List[str]]:
         """
         Predict citations for the input text with [CITATION] markers.
         
@@ -93,7 +93,8 @@ class RandomMarkedCitationPredictor:
             marked_text: Text with [CITATION] markers
             
         Returns:
-            List of predicted citations in the same order as the markers
+            List of lists of predicted citations in the same order as the markers.
+            Each inner list contains one or more citations for a specific marker.
         """
         # Count number of [CITATION] markers
         citation_markers = re.findall(r'\[CITATION\]', marked_text)
@@ -102,8 +103,16 @@ class RandomMarkedCitationPredictor:
         # Select random citations
         predictions = []
         for _ in range(num_citations):
-            citation = random.choice(self.citations_corpus)
-            predictions.append(citation)
+            # Randomly decide how many citations to include (1-3)
+            num_citations_at_position = random.randint(1, min(3, len(self.citations_corpus)))
+            
+            # Select random citations for this position (without duplicates)
+            position_citations = random.sample(
+                self.citations_corpus, 
+                num_citations_at_position
+            )
+            
+            predictions.append(position_citations)
         
         return predictions
 
@@ -231,7 +240,7 @@ class ContextBasedMarkedCitationPredictor:
         words = re.findall(r'\b[a-zA-Z]{4,}\b', text)
         return list(set(word.lower() for word in words))
     
-    def predict(self, marked_text: str) -> List[str]:
+    def predict(self, marked_text: str) -> List[List[str]]:
         """
         Predict citations for the input text with [CITATION] markers.
         
@@ -239,7 +248,8 @@ class ContextBasedMarkedCitationPredictor:
             marked_text: Text with [CITATION] markers
             
         Returns:
-            List of predicted citations in the same order as the markers
+            List of lists of predicted citations in the same order as the markers
+            Each inner list contains one or more citations for a specific marker
         """
         # Find all citation markers with their surrounding context
         citation_contexts = []
@@ -254,28 +264,27 @@ class ContextBasedMarkedCitationPredictor:
         # Match citations to contexts
         predictions = []
         for context in citation_contexts:
-            # Find best matching citation
-            best_citation = self._match_citation_to_context(context)
-            predictions.append(best_citation)
+            # Find the top matching citations for this context
+            top_citations = self._match_citations_to_context(context)
+            predictions.append(top_citations)
         
         return predictions
     
-    def _match_citation_to_context(self, context: str) -> str:
+    def _match_citations_to_context(self, context: str) -> List[str]:
         """
-        Find the best matching citation for a context.
+        Find multiple matching citations for a context.
         
         Args:
             context: Context text
             
         Returns:
-            Best matching citation
+            List of best matching citations
         """
         # Extract keywords from context
         context_keywords = self._extract_keywords(context)
         
         # Score each citation based on keyword overlap
-        best_score = -1
-        best_citation = None
+        scored_citations = []
         
         for citation_entry in self.citations_corpus:
             citation = citation_entry['citation']
@@ -285,21 +294,24 @@ class ContextBasedMarkedCitationPredictor:
             matching_keywords = set(context_keywords).intersection(keywords)
             score = len(matching_keywords)
             
-            if score > best_score:
-                best_score = score
-                best_citation = citation
+            scored_citations.append((citation, score))
         
-        # Return best citation if score is above threshold
-        if best_score > 0 and best_citation:
-            return best_citation
+        # Sort by score in descending order
+        scored_citations.sort(key=lambda x: x[1], reverse=True)
         
-        # If no good match, return a random citation
-        if self.citations_corpus:
-            return random.choice(self.citations_corpus)['citation']
+        # Return top 1-3 citations based on score
+        num_citations = min(3, len(scored_citations))
         
-        return "[Default Citation]"
+        # Only return citations with a positive score, or at least one random citation if none match
+        matching_citations = [cit for cit, score in scored_citations[:num_citations] if score > 0]
+        
+        if not matching_citations and self.citations_corpus:
+            # If no good matches, return a single random citation
+            return [random.choice(self.citations_corpus)['citation']]
+        
+        return matching_citations
 
-def predict_random_marked_citations(marked_text: str) -> List[str]:
+def predict_random_marked_citations(marked_text: str) -> List[List[str]]:
     """
     Simple function wrapper for RandomMarkedCitationPredictor.
     
@@ -307,12 +319,12 @@ def predict_random_marked_citations(marked_text: str) -> List[str]:
         marked_text: Text with [CITATION] markers
         
     Returns:
-        List of predicted citations
+        List of lists of predicted citations, one list per citation marker
     """
     predictor = RandomMarkedCitationPredictor()
     return predictor.predict(marked_text)
 
-def predict_context_marked_citations(marked_text: str) -> List[str]:
+def predict_context_marked_citations(marked_text: str) -> List[List[str]]:
     """
     Simple function wrapper for ContextBasedMarkedCitationPredictor.
     Generates a default corpus internally.
@@ -321,7 +333,7 @@ def predict_context_marked_citations(marked_text: str) -> List[str]:
         marked_text: Text with [CITATION] markers
         
     Returns:
-        List of predicted citations
+        List of lists of predicted citations, one list per citation marker
     """
     # Create with default corpus by passing a dummy path that doesn't exist
     dummy_path = Path("nonexistent_path.json")
