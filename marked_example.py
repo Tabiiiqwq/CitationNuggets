@@ -12,6 +12,7 @@ from pathlib import Path
 
 from src.evaluation.marked_evaluator import MarkedCitationEvaluator
 from src.methods.marked_baseline import predict_random_marked_citations, predict_context_marked_citations
+from src.methods.marked_ours import predict_graph_citations
 
 # Configure logging
 logging.basicConfig(
@@ -39,6 +40,7 @@ def example_marked_evaluation():
     methods = {
         "random": predict_random_marked_citations,
         "context": predict_context_marked_citations,
+        "ours": predict_graph_citations
     }
     
     # Initialize evaluator
