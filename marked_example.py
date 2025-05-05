@@ -56,9 +56,9 @@ def example_marked_evaluation():
         
         method_metrics[method_name] = metrics
         
-        logger.info("Results for %s:", method_name)
-        logger.info("  Citation Accuracy: %.4f", metrics["citation_accuracy"])
-        logger.info("  Length Match Rate: %.4f", metrics["length_match_rate"])
+        # logger.info("Results for %s:", method_name)
+        # logger.info("  Citation Accuracy: %.4f", metrics["citation_accuracy"])
+        # logger.info("  Length Match Rate: %.4f", metrics["length_match_rate"])
     
     # Compare methods
     evaluator.compare_methods(list(methods.keys()))
