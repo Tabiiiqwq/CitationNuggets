@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Union, Any, Callable
 from concurrent.futures import ProcessPoolExecutor
 from tqdm import tqdm
+import openai
 
 # Configure logging
 logging.basicConfig(
@@ -291,10 +292,40 @@ class MarkedCitationEvaluator:
         Returns:
             True if citations match, False otherwise
         """
-        # Simple string comparison for now
-        # In a more sophisticated implementation, you could normalize the citations
-        # or use a more advanced matching algorithm
-        return citation1.strip() == citation2.strip()
+        if citation1.strip() == citation2.strip():
+            return True
+            
+        try:
+
+            
+            # Initialize OpenAI client
+            client = openai.OpenAI()
+            
+            # Prompt for GPT to compare the citations
+            prompt = f"""
+            Determine if these two citations refer to the same paper. Focus on the paper title.
+            Return only "YES" if they likely refer to the same paper or "NO" if they're different papers.
+            
+            Citation 1: {citation1}
+            Citation 2: {citation2}
+            """
+            
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a precise academic citation comparison tool."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.0,
+                max_tokens=10
+            )
+            
+            result = response.choices[0].message.content.strip().upper()
+            return "YES" in result
+        except Exception as e:
+            logger.warning(f"Error in GPT citation comparison: {str(e)}")
+            # Fall back to simple string comparison if API call fails
+            return citation1.strip() == citation2.strip()
     
     def _extract_citation_content(self, data: Dict[str, Any]) -> List[List[str]]:
         """
