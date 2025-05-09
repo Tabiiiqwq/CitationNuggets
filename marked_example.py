@@ -26,8 +26,8 @@ def example_marked_evaluation():
     logger.info("Running example: Marked Citation Evaluation")
     
     # Setup paths
-    test_data_path = Path("data/output/dataset")
-    results_dir = Path("data/output/marked_evaluation")
+    test_data_path = Path("data/output/dataset_full_citation")
+    results_dir = Path("data/output/marked_evaluation_full_citation")
     results_dir.mkdir(parents=True, exist_ok=True)
     
     # Verify test data exists
