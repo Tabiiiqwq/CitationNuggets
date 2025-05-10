@@ -4,13 +4,29 @@ import re
 
 CITATION_PATTERNS = [
         r'\+\+ref\+\+\[[\s\S]*?\]\+\+ref\+\+',
-        r'\[\s*\d+(?:\s*,\s*\d+)*\s*\]',  # [1] or [1,2,3]
-        r'\[\s*[A-Za-z]+\s*(?:et al\.)?\s*,?\s*\d{4}(?:[a-z])?\s*\]',  # [Smith et al., 2020]
-        r'\(\s*[A-Za-z]+\s*(?:et al\.)?\s*,?\s*\d{4}(?:[a-z])?\s*\)',  # (Smith et al., 2020)
-        r'\(\s*[A-Za-z]+\s*and\s*[A-Za-z]+\s*,?\s*\d{4}(?:[a-z])?\s*\)',  # (Smith and Jones, 2020)
-        r'\[\s*[A-Za-z]+\s*and\s*[A-Za-z]+\s*,?\s*\d{4}(?:[a-z])?\s*\]',  # [Smith and Jones, 2020]
+        # r'\[\s*\d+(?:\s*,\s*\d+)*\s*\]',  # [1] or [1,2,3]
+        # r'\[\s*[A-Za-z]+\s*(?:et al\.)?\s*,?\s*\d{4}(?:[a-z])?\s*\]',  # [Smith et al., 2020]
+        # r'\(\s*[A-Za-z]+\s*(?:et al\.)?\s*,?\s*\d{4}(?:[a-z])?\s*\)',  # (Smith et al., 2020)
+        # r'\(\s*[A-Za-z]+\s*and\s*[A-Za-z]+\s*,?\s*\d{4}(?:[a-z])?\s*\)',  # (Smith and Jones, 2020)
+        # r'\[\s*[A-Za-z]+\s*and\s*[A-Za-z]+\s*,?\s*\d{4}(?:[a-z])?\s*\]',  # [Smith and Jones, 2020]
     ]
 
+# def parse_tokenized_titles(citation_text):
+#     """
+#     Parse a special tokenized citation block like:
+#     ++ref++[ (Title1), (Title2), ... ]++ref++
+#     and return a list of clean titles.
+#     """
+#     pattern = r'\+\+ref\+\+\[([\s\S]*?)\]\+\+ref\+\+'
+#     match = re.match(pattern, citation_text)
+#     if not match:
+#         return []
+
+#     content = match.group(1)
+#     # Extract individual titles wrapped in parentheses
+#     titles = re.findall(r'\(([^()]+)\)', content)
+#     # Strip whitespace from each title
+#     return [title.strip() for title in titles]
 def parse_tokenized_titles(citation_text):
     """
     Parse a special tokenized citation block like:
@@ -18,15 +34,28 @@ def parse_tokenized_titles(citation_text):
     and return a list of clean titles.
     """
     pattern = r'\+\+ref\+\+\[([\s\S]*?)\]\+\+ref\+\+'
-    match = re.match(pattern, citation_text)
+    match = re.search(pattern, citation_text)
     if not match:
         return []
 
     content = match.group(1)
-    # Extract individual titles wrapped in parentheses
-    titles = re.findall(r'\(([^()]+)\)', content)
-    # Strip whitespace from each title
-    return [title.strip() for title in titles]
+
+    results = []
+    start_idx = -1
+    nesting_level = 0
+    
+    for i, char in enumerate(content):
+        if char == '(' and (i == 0 or content[i-1] != '\\'):
+            if nesting_level == 0:
+                start_idx = i + 1
+            nesting_level += 1
+        elif char == ')' and (i == 0 or content[i-1] != '\\'):
+            nesting_level -= 1
+            if nesting_level == 0 and start_idx != -1:
+                results.append(content[start_idx:i].strip())
+                start_idx = -1
+    
+    return results
 
 def extract_citations(text: str) -> Tuple[List[str], List[int]]:
         """
