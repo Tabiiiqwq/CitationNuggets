@@ -181,9 +181,9 @@ class MarkedCitationEvaluator:
             Dictionary containing metrics
         """
         # Aggregated metrics
-        total_citation_positions = 0  # Number of citation positions
-        total_gt_papers = 0  # Total number of cited papers in ground truth
-        total_pred_papers = 0  # Total number of cited papers in predictions
+        total_citation_positions = 0  # Number of citation positions (slot), in gt
+        total_gt_papers = 0  # Total number of cited papers in ground truth, can repeat
+        total_pred_papers = 0  # Total number of cited papers in predictions, can repeat
         total_correct_papers = 0  # Total number of correctly cited papers
         total_positions_with_matches = 0  # Number of positions with at least one correct citation
         
@@ -240,7 +240,7 @@ class MarkedCitationEvaluator:
                     for gt_citation in position_gt_citations:
                         if self._citations_match(gt_citation, pred_citation):
                             position_correct_count += 1
-                            all_correct_papers.add(pred_citation)
+                            all_correct_papers.add(gt_citation)
                             position_has_match = True
                             break
                 
@@ -264,7 +264,7 @@ class MarkedCitationEvaluator:
         
         return {
             "position_accuracy": position_accuracy,  # Percentage of positions with at least one correct citation
-            "paper_precision": paper_precision,  # Precision at the individual citation level
+            "paper_precision": paper_precision,  # Precision at the individual citation level. In all predicted papers, how many are correct?
             "paper_recall": paper_recall,  # Recall at the individual citation level
             "paper_f1": paper_f1,  # F1 at the individual citation level
             "corpus_precision": corpus_precision,  # Precision at the corpus level

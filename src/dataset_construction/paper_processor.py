@@ -261,7 +261,7 @@ class PaperProcessor:
 
 if __name__ == "__main__":
     # Example usage
-    processor = PaperProcessor(output_dir="data/output/processed")
+    processor = PaperProcessor(output_dir="data/output/processed_full_citation")
     # results = processor.process_pdf("data\input\mini_test\GENMO.txt")
-    results = processor.process_directory("data/input/mini_test")
+    results = processor.process_directory("data/input/mini_test_full_citation")
     print(json.dumps(results, indent=2))

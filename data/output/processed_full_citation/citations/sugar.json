@@ -1,0 +1,101 @@
+{
+  "content": [
+    [
+      "Marc Levoy and Pat Hanrahan. Light Field Rendering. In ACM SIGGRAPH, 1996. 3"
+    ],
+    [
+      "Noah Snavely, Steven M. Seitz, and Richard Szeliski. Photo Tourism: Exploring Photo Collections in 3D. In ACM SIG- GRAPH, 2006. 3, 4"
+    ],
+    [
+      "Michael Goesele, Noah Snavely, Brian Curless, Hugues Hoppe, and Steven Seitz. Multi-View Stereo for Community Photo Collections. In International Conference on Computer Vision, 2007. 3"
+    ],
+    [
+      "Chris Buehler, Michael Bosse, Leonard Mcmillan, Steven Gortler, and Michael Cohen. Unstructured Lumigraph Ren- dering. In ACM SIGGRAPH, 2001. 3",
+      "Peter Hedman, Julien Philip, True Price, Jan-Michael Frahm, George Drettakis, and Gabriel Brostow. Deep Blending for Free-Viewpoint Image-Based Rendering. In ACM SIG- GRAPH, 2018. 3, 7, 2, 4",
+      "Daniel N. Wood, Daniel I. Azuma, Ken Aldinger, Brian Cur- less, Tom Duchamp, David H. Salesin, and Werner Stuet- zle. Surface Light Fields for 3D Photography. In ACM SIG- GRAPH, 2000. 3"
+    ],
+    [
+      "Gernot Riegler and Vladlen Koltun. Free View Synthesis. In European Conference on Computer Vision, 2020. 3",
+      "Gernot Riegler and Vladlen Koltun. Stable View Synthesis. In Conference on Computer Vision and Pattern Recognition, 2021. 3"
+    ],
+    [
+      "Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. NeRF: Representing Scenes as Neural Radiance Fields for View In European Conference on Computer Vision, Synthesis. 2020. 1, 3"
+    ],
+    [
+      "Anpei Chen, Zexiang Xu, Andreas Geiger, Jingyi Yu, and Hao Su. TensoRF: Tensorial Radiance Fields. In European Conference on Computer Vision, 2022. 3",
+      "Animesh Karnewar, Tobias Ritschel, Oliver Wang, and Niloy Mitra. ReLU Fields: The Little Non-Linearity That Could. In ACM SIGGRAPH, 2022. 3",
+      "Thomas M\u00a8uller, Alex Evans, Christoph Schied, and Alexan- der Keller. Instant Neural Graphics Primitives with a Mul- tiresolution Hash Encoding. In ACM SIGGRAPH, 2022. 3, 7, 8, 2",
+      "Cheng Sun, Min Sun, and Hwann-Tzong Chen. Direct Voxel Grid Optimization: Super-Fast Convergence for Radiance In Conference on Computer Vision Fields Reconstruction. and Pattern Recognition, 2022. 3",
+      "Alex Yu, Sara Fridovich-Keil, Matthew Tancik, Qinhong Chen, Benjamin Recht, and Angjoo Kanazawa. Plenoxels: In Conference Radiance Fields Without Neural Networks. on Computer Vision and Pattern Recognition, 2022. 3, 7, 8"
+    ],
+    [
+      "Jonathan T. Barron. Mip-NeRF 360: Unbounded Anti- Aliased Neural Radiance Fields. In Conference on Computer Vision and Pattern Recognition, 2022. 3, 7, 8, 2, 4",
+      "Peter Hedman and Pratul P. Srinivasan. Baking Neural Radi- ance Fields for Real-Time View Synthesis. In International Conference on Computer Vision, 2021. 3",
+      "Christian Reiser, Songyou Peng, Yiyi Liao, and Andreas Geiger. KiloNeRF: Speeding Up Neural Radiance Fields with Thousands of Tiny MLPs. In International Conference on Computer Vision, 2021. 3",
+      "Alex Yu, Ruilong Li, Matthew Tancik, Hao Li, Ren Ng, and Angjoo Kanazawa. PlenOctrees For Real-Time Rendering of Neural Radiance Fields. In International Conference on Computer Vision, 2021. 3"
+    ],
+    [
+      "Anpei Chen, Zexiang Xu, Andreas Geiger, Jingyi Yu, and Hao Su. TensoRF: Tensorial Radiance Fields. In European Conference on Computer Vision, 2022. 3"
+    ],
+    [
+      "Dor Verbin, Peter Hedman, Ben Mildenhall, Todd Zickler, Jonathan T. Barron, and Pratul P. Srinivasan. Ref-NeRF: 10 SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering"
+    ],
+    [
+      "Mark Boss, Raphael Braun, Varun Jampani, Jonathan T. Bar- ron, Ce Liu, and Hendrik P. A. Lensch. NeRD: Neural Re- flectance Decomposition from Image Collections. In Inter- national Conference on Computer Vision, 2021. 3",
+      "Zhengfei Kuang, Kyle Olszewski, Menglei Chai, Zeng Huang, Panos Achlioptas, and Sergey Tulyakov. NeROIC: Neural Rendering of Objects from Online Image Collections. In ACM SIGGRAPH, 2022. 3",
+      "Pratul P. Srinivasan, Boyang Deng, Xiuming Zhang, Matthew Tancik, Ben Mildenhall, and Jonathan T. Barron. NeRV: Neural Reflectance and Visibility Fields for Relight- ing and View Synthesis. In Conference on Computer Vision and Pattern Recognition, 2021. 3",
+      "Kai Zhang, Fujun Luan, Qianqian Wang, Kavita Bala, and Noah Snavely. PhySG: Inverse Rendering with Spherical Gaussians for Physics-Based Material Editing and Relight- ing. In Conference on Computer Vision and Pattern Recog- nition, 2021. 3"
+    ],
+    [
+      "Chong Bao and Bangbang Yang, Zeng Junyi, Bao Hu- jun, Zhang Yinda, Cui Zhaopeng, and Zhang Guofeng. NeuMesh: Learning Disentangled Neural Mesh-Based Im- plicit Field for Geometry and Texture Editing. In European Conference on Computer Vision, 2022. 4",
+      "Franc\u00b8ois Darmon, B\u00b4en\u00b4edicte Bascle, Jean-Cl\u00b4ement Devaux, Pascal Monasse, and Mathieu Aubry. Improving Neural Im- plicit Surfaces Geometry with Patch Warping. In Conference on Computer Vision and Pattern Recognition, 2022. 4",
+      "Zhaoshuo Li, Thomas M\u00a8uller, Alex Evans, Russell H. Tay- lor, Mathias Unberath, Ming-Yu Liu, and Chen-Hsuan Lin. Neuralangelo: High-Fidelity Neural Surface Reconstruction. In Conference on Computer Vision and Pattern Recognition, 2023. 2, 4",
+      "Michael Oechsle, Songyou Peng, and Andreas Geiger. UNISURF: Unifying Neural Implicit Surfaces and Radiance Fields for Multi-View Reconstruction. In International Con- ference on Computer Vision, 2021. 4",
+      "Peng Wang, Lingjie Liu, Yuan Liu, Christian Theobalt, Taku Komura, and Wenping Wang. NeuS: Learning Neural Im- plicit Surfaces by Volume Rendering for Multi-View Recon- In Advances in Neural Information Processing struction. Systems, 2021. 2, 4",
+      "Lior Yariv, Jiatao Gu, Yoni Kasten, and Yaron Lipman. Vol- ume Rendering of Neural Implicit Surfaces. In Advances in Neural Information Processing Systems, 2021. 2, 4"
+    ],
+    [
+      "William E. Lorensen and Harvey E. Cline. Marching Cubes: A High Resolution 3D Surface Construction Algorithm. In ACM SIGGRAPH, 1987. 2, 4, 8 9 Structured View-Dependent Appearance for Neural Radi- ance Fields. In Conference on Computer Vision and Pattern Recognition, 2022. 3"
+    ],
+    [
+      "Zhiqin Chen, Thomas Funkhouser, Peter Hedman, and An- drea Tagliasacchi. MobileNeRF: Exploiting the Polygon Rasterization Pipeline for Efficient Neural Field Rendering on Mobile Architectures. In Conference on Computer Vision and Pattern Recognition, 2023. 3, 4, 7, 8"
+    ],
+    [
+      "Lior Yariv, Peter Hedman, Christian Reiser, Dor Verbin, Pratul P. Srinivasan, Richard Szeliski, and Jonathan T. Bar- ron. BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis. In ACM SIGGRAPH, 2023. 2, 3, 4, 7, 8"
+    ],
+    [
+      "Jonathan T. Barron. Mip-NeRF: A Multiscale Representa- tion for Anti-Aliasing Neural Radiance Fields. In Interna- tional Conference on Computer Vision, 2021. 4, 7"
+    ],
+    [
+      "Marie-Julie Rakotosaona, Fabian Manhardt, Diego Martin Arroyo, Michael Niemeyer, Abhijit Kundu, and Federico Tombari. NeRFMeshing: Distilling Neural Radiance Fields into Geometrically-Accurate 3D Meshes. In DV, 2023. 2, 3, 4, 7, 8"
+    ],
+    [
+      "Georgios Kopanas, Julien Philip, Thomas Leimk\u00a8uhler, and George Drettakis. Point-Based Neural Rendering with Per- View Optimization. In Computer Graphics Forum, 2021. 4",
+      "Darius R\u00a8uckert, Linus Franke, and Marc Stamminger. ADOP: Approximate Differentiable One-Pixel Point Ren- dering. In ACM SIGGRAPH, 2022. 4"
+    ],
+    [
+      "Bernhard Kerbl, Georgios Kopanas, Thomas Leimk\u00a8uhler, and George Drettakis. 3D Gaussian Splatting for Real-Time Radiance Field Rendering. In ACM SIGGRAPH, 2023. 1, 2, 4, 7, 8"
+    ]
+  ],
+  "positions": [
+    229,
+    628,
+    668,
+    971,
+    973,
+    1562,
+    2190,
+    2227,
+    2256,
+    2580,
+    2677,
+    3260,
+    3361,
+    3602,
+    3713,
+    4215,
+    4302,
+    5219,
+    5281
+  ]
+}
