@@ -5,7 +5,7 @@
       "Hainan Cui, Xiang Gao, Shuhan Shen, and Zhanyi Hu. Hsfm: Hybrid structure-from-motion. In Proceedings of the IEEE conference on computer vision and pattern recog- nition, 2017. 3",
       "Richard Hartley and Andrew Zisserman. Multiple View Geometry in Computer Vision. Cambridge University Press, 2004. 3, 5",
       "Nianjuan Jiang, Zhaopeng Cui, and Ping Tan. A global linear method for camera pose registration. In ICCV, 2013. 3",
-      "CVPR"
+      "Johannes Lutz Sch\u00a8onberger and Jan-Michael Frahm. Structure-from-motion revisited. In Conference on Com- puter Vision and Pattern Recognition (CVPR), 2016. 2, 3, 8, 9"
     ],
     [
       "Axel Barroso-Laguna, Edgar Riba, Daniel Ponsa, and Krys- tian Mikolajczyk. Key. net: Keypoint detection by hand- crafted and learned cnn filters. In ICCV, pages 5836\u20135844, 2019. 3",
@@ -29,7 +29,7 @@
       "Paul-Edouard Sarlin, Daniel DeTone, Tomasz Malisiewicz, and Andrew Rabinovich. Superglue: Learning feature match- ing with graph neural networks. In CVPR, pages 4937\u20134946, 2020. 2, 3, 7, 8",
       "Jiaming Sun, Zehong Shen, Yuang Wang, Hujun Bao, and Xiaowei Zhou. LoFTR: Detector-free local feature matching with transformers. CVPR, 2021. 2, 3",
       "Shitao Tang, Jiahui Zhang, Siyu Zhu, and Ping Tan. ICLR, 2022. Quadtree attention for vision transformers. 3",
-      "ICCV"
+      "Shuzhe Wang, Juho Kannala, Marc Pollefeys, and Daniel Barath. Guiding local feature matching with surface curva- ture. In Proceedings of the IEEE/CVF International Con- ference on Computer Vision (ICCV), pages 17981\u201317991, October 2023. 3"
     ],
     [
       "Philipp Lindenberger, Paul-Edouard Sarlin, Viktor Larsson, and Marc Pollefeys. Pixel-perfect structure-from-motion with featuremetric refinement. In ICCV, 2021. 2, 3, 7, 8"
@@ -68,11 +68,11 @@
       "Henrik Aan\u00e6s, Rasmus Ramsb\u00f8l Jensen, George Vogiatzis, Engin Tola, and Anders Bjorholm Dahl. Large-scale data for multiple-view stereopsis. IJCV, 2016. 1, 3, 8",
       "Angela Dai, Angel X. Chang, Manolis Savva, Maciej Halber, Thomas Funkhouser, and Matthias Nie\u00dfner. Scannet: Richly- annotated 3d reconstructions of indoor scenes. In CVPR, 2017. 3, 8",
       "Thomas Sch\u00a8ops, Johannes L. Sch\u00a8onberger, Silvano Gal- liani, Torsten Sattler, Konrad Schindler, Marc Pollefeys, and Andreas Geiger. A multi-view stereo benchmark with high- resolution images and multi-camera videos. In CVPR, 2017. 2, 3, 8, 14",
-      "ICCV"
+      "Chandan Yeshwanth, Yueh-Cheng Liu, Matthias Nie\u00dfner, and Angela Dai. Scannet++: A high-fidelity dataset of 3d in- door scenes. In Proceedings of the International Conference on Computer Vision (ICCV), 2023. 2, 3, 6, 16, 17"
     ],
     [
       "Nianjuan Jiang, Zhaopeng Cui, and Ping Tan. A global linear method for camera pose registration. In ICCV, 2013. 3",
-      "CVPR"
+      "Johannes Lutz Sch\u00a8onberger and Jan-Michael Frahm. Structure-from-motion revisited. In Conference on Com- puter Vision and Pattern Recognition (CVPR), 2016. 2, 3, 8, 9"
     ],
     [
       "Dario Pavllo, Jonas Kohler, Thomas Hofmann, and Aur\u00b4elien Lucchi. Learning generative models of textured 3d meshes from real-world images. In ICCV, 2021. 3",
@@ -80,7 +80,7 @@
       "Dario Pavllo, David Joseph Tan, Marie-Julie Rakotosaona, and Federico Tombari. Shape, pose, and appearance from a single image via bootstrapped radiance field inversion. In CVPR, 2023. 3"
     ],
     [
-      "12",
+      "Jia-Wang Bian, Huangying Zhan, Naiyan Wang, Tat-Jun Chin, Chunhua Shen, and Ian D. Reid. Auto-rectify net- work for unsupervised indoor depth estimation. IEEE Trans. Pattern Anal. Mach. Intell., 44(12):9802\u20139813, 2022. 3, 7, 8",
       "Ren\u00b4e Ranftl, Alexey Bochkovskiy, and Vladlen Koltun. Vi- sion transformers for dense prediction. In ICCV, 2021. 3, 6, 7, 8, 17",
       "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Si- mon Chen, Yifan Liu, and Chunhua Shen. Towards accurate reconstruction of 3d scene shape from a single monocular image, 2022. 3",
       "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Long Mai, Simon Chen, and Chunhua Shen. Learning to recover 3d scene shape from a single image. In CVPR, 2020. 3"
@@ -97,16 +97,16 @@
     ],
     [
       "Wei Yin, Chi Zhang, Hao Chen, Zhipeng Cai, Gang Yu, Kaixuan Wang, Xiaozhi Chen, and Chunhua Shen. Metric3d: Towards zero-shot metric 3d prediction from a single image. In ICCV, 2023. 3",
-      "TPAMI"
+      "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Si- mon Chen, Yifan Liu, and Chunhua Shen. Towards accurate reconstruction of 3d scene shape from a single monocular image. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022. 3"
     ],
     [
       "Zachary Teed and Jia Deng. Deepv2d: Video to depth with differentiable structure from motion. In ICLR, 2020. 3, 9, 15",
       "Benjamin Ummenhofer, Huizhong Zhou, Jonas Uhrig, Niko- laus Mayer, Eddy Ilg, Alexey Dosovitskiy, and Thomas Brox. DeMoN: Depth and motion network for learning monocular stereo. In CVPR, pages 5622\u20135631, 2017. 3, 9, 14, 15",
-      "3"
+      "Huizhong Zhou, Benjamin Ummenhofer, and Thomas Brox. DeepTAM: Deep tracking and mapping with convolutional neural networks. Int. J. Comput. Vis., 128(3):756\u2013769, 2020. 3, 14"
     ],
     [
       "Benjamin Ummenhofer, Huizhong Zhou, Jonas Uhrig, Niko- laus Mayer, Eddy Ilg, Alexey Dosovitskiy, and Thomas Brox. DeMoN: Depth and motion network for learning monocular stereo. In CVPR, pages 5622\u20135631, 2017. 3, 9, 14, 15",
-      "3"
+      "Huizhong Zhou, Benjamin Ummenhofer, and Thomas Brox. DeepTAM: Deep tracking and mapping with convolutional neural networks. Int. J. Comput. Vis., 128(3):756\u2013769, 2020. 3, 14"
     ],
     [
       "Eric Brachmann, Alexander Krull, Sebastian Nowozin, Jamie Shotton, Frank Michel, Stefan Gumhold, and Carsten Rother. DSAC - differentiable RANSAC for camera local- ization. In CVPR, 2017. 3",

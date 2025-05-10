@@ -14,13 +14,13 @@
           "Chuan Guo, Yuxuan Mu, Muhammad Gohar Javed, Sen Wang, and Li Cheng. Momask: Generative masked mod- eling of 3d human motions. 2023. 2",
           "Ikhsanul Habibie, Daniel Holden, Jonathan Schwarz, Joe Yearsley, and Taku Komura. A recurrent variational autoen- coder for human motion synthesis. In BMVC, 2017. 2",
           "Chengan He, Jun Saito, James Zachary, Holly Rushmeier, and Yi Zhou. Nemf: Neural motion fields for kinematic ani- mation. In NeurIPS, 2022. 2",
-          "TOG",
+          "Gustav Eje Henter, Simon Alexanderson, and Jonas Beskow. MoGlow: Probabilistic and controllable motion synthesis using normalising flows. ACM Transactions on Graphics (TOG), 2020. 2",
           "Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, and Chen Chen. Mmm: Generative masked motion model. In CVPR, 2024. 2",
           "Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, and Chen Chen. Mmm: Generative masked motion model. In CVPR, 2024. 2",
           "Davis Rempe, Tolga Birdal, Aaron Hertzmann, Jimei Yang, Srinath Sridhar, and Leonidas J. Guibas. Humor: 3d human motion model for robust pose estimation. In ICCV, 2021. 2, 5 10",
-          "ICDSP",
+          "Ayumi Shiobara and Makoto Murakami. Human motion gen- eration using wasserstein GAN. In International Conference on Digital Signal Processing (ICDSP), 2021. 2",
           "Guy Tevet, Sigal Raab, Brian Gordon, Yonatan Shafir, Daniel Cohen-Or, and Amit H Bermano. Human motion dif- fusion model. In ICLR, 2023. 2, 5, 6, 7, 8, 13",
-          "TOG",
+          "Guillermo Valle-P\u00b4erez, Gustav Eje Henter, Jonas Beskow, Andr\u00b4e Holzapfel, Pierre-Yves Oudeyer, and Simon Alexan- derson. Transflower: probabilistic autoregressive dance gen- eration with multimodal attention. ACM Transactions on Graphics (TOG), 2021. 2",
           "Liang Xu, Ziyang Song, Dongliang Wang, Jing Su, Zhicheng Fang, Chenjing Ding, Weihao Gan, Yichao Yan, Xin Jin, Xiaokang Yang, Wenjun Zeng, and Wei Wu. ActFormer: A gan-based transformer towards general action-conditioned 3d human motion generation. In ICCV, 2023. 2",
           "Mingyuan Zhang, Zhongang Cai, Liang Pan, Fangzhou Hong, Xinying Guo, Lei Yang, and Ziwei Liu. Motiondif- fuse: Text-driven human motion generation with diffusion model. arXiv preprint arXiv:2208.15001, 2022. 2",
           "Mingyuan Zhang, Xinying Guo, Liang Pan, Zhongang Cai, Fangzhou Hong, Huirong Li, Lei Yang, and Ziwei Liu. Re- modiffuse: Retrieval-augmented motion diffusion model. In arXiv preprint arXiv:2304.01116, 2023. 2",
@@ -33,26 +33,26 @@
           "Peng Jin, Yang Wu, Yanbo Fan, Zhongqian Sun, Yang Wei, and Li Yuan. Act as you wish: Fine-grained control of mo- tion diffusion model with hierarchical semantic graphs. In NeurIPs, 2023. 2"
         ],
         [
-          "ACMMM"
+          "Chuan Guo, Xinxin Zuo, Sen Wang, Shihao Zou, Qingyao Sun, Annan Deng, Minglun Gong, and Li Cheng. Ac- tion2Motion: Conditioned generation of 3D human mo- In ACM International Conference on Multimedia tions. (ACMMM), 2020. 2"
         ],
         [
-          "TOG",
+          "Simon Alexanderson, Rajmund Nagy, Jonas Beskow, and Gustav Eje Henter. Listen, denoise, action! audio-driven motion synthesis with diffusion models. ACM Transactions on Graphics (TOG), 2023. 2",
           "Lingting Zhu, Xian Liu, Xuanyu Liu, Rui Qian, Ziwei Liu, and Lequan Yu. Taming diffusion models for audio-driven co-speech gesture generation. In CVPR, 2023. 2"
         ],
         [
           "Ruilong Li, Shan Yang, David A Ross, and Angjoo Kanazawa. Ai choreographer: Music conditioned 3d dance generation with aist++. In ICCV, 2021. 2, 6, 7, 12, 13",
           "Li Siyao, Weijiang Yu, Tianpei Gu, Chunze Lin, Quan Wang, Chen Qian, Chen Change Loy, and Ziwei Liu. Bailando: 3d dance generation by actor-critic gpt with choreographic In Proceedings of the IEEE\/CVF Conference on memory. Computer Vision and Pattern Recognition, pages 11050\u2013 11059, 2022. 2, 7, 13",
           "Jiangxin Sun, Chunyu Wang, Huang Hu, Hanjiang Lai, Zhi Jin, and Jian-Fang Hu. You never stop dancing: Non- freezing dance generation via bank-constrained manifold projection. In NeurIPS, 2022. 2",
-          "ACMMM",
+          "Taoran Tang, Jia Jia, and Hanyang Mao. Dance with melody: An LSTM-autoencoder approach to music-oriented dance synthesis. In ACM International Conference on Multimedia (ACMMM), 2018. 2",
           "Jonathan Tseng, Rodrigo Castellon, and Karen Liu. Edge: In Proceedings of Editable dance generation from music. the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 448\u2013458, 2023. 2, 6, 7, 12, 13",
-          "TOG"
+          "Guillermo Valle-P\u00b4erez, Gustav Eje Henter, Jonas Beskow, Andr\u00b4e Holzapfel, Pierre-Yves Oudeyer, and Simon Alexan- derson. Transflower: probabilistic autoregressive dance gen- eration with multimodal attention. ACM Transactions on Graphics (TOG), 2021. 2"
         ],
         [
           "Mohamed Hassan, Duygu Ceylan, Ruben Villegas, Jun Saito, Jimei Yang, Yi Zhou, and Michael J Black. Stochastic scene-aware motion prediction. In ICCV, 2021. 2",
           "Nilesh Kulkarni, Davis Rempe, Kyle Genova, Abhijit Kundu, Justin Johnson, David Fouhey, and Leonidas Guibas. NIFTY: Neural object interaction fields for guided human motion synthesis. arXiv:2307.07511, 2023. 2",
-          "NeurIPS",
+          "Zan Wang, Yixin Chen, Tengyu Liu, Yixin Zhu, Wei Liang, and Siyuan Huang. HUMANISE: Language-conditioned hu- man motion generation in 3d scenes. In Neural Information Processing Systems (NeurIPS), 2022. 3",
           "Hongwei Yi, Justus Thies, Michael J Black, Xue Bin Peng, and Davis Rempe. Generating human interaction motions in scenes with text control. In European Conference on Com- puter Vision, pages 246\u2013263. Springer, 2024. 3",
-          "3DV"
+          "Xiaohan Zhang, Bharat Lal Bhatnagar, Sebastian Starke, Ilya A. Petrov, Vladimir Guzov, Helisa Dhamo, Eduardo P\u00b4erez Pellitero, and Gerard Pons-Moll. Force: Dataset and method for intuitive physics guided human-object interac- tion. In International Conference on 3D Vision (3DV), 2025. 3"
         ],
         [
           "Yuxuan Bian, Ailing Zeng, Xuan Ju, Xian Liu, Zhaoyang Zhang, Wei Liu, and Qiang Xu. Motioncraft: Crafting whole-body motion with plug-and-play multimodal controls. arXiv preprint arXiv:2407.21136, 2024. 3",
@@ -64,7 +64,7 @@
           "Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, et al. Large motion model for unified multi-modal motion generation. In ECCV, 2024. 3"
         ],
         [
-          "3DV",
+          "Nikos Athanasiou, Mathis Petrovich, Michael J. Black, and G\u00a8ul Varol. TEACH: Temporal action composition for 3D humans. In International Conference on 3D Vision (3DV), 2022. 3",
           "Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, G\u00a8ul Varol, Xue Bin Peng, and Davis Rempe. Multi-track timeline control for text-driven 3d human motion generation. In CVPR Workshop on Human Motion Generation, 2024. 3",
           "Yijun Qian, Jack Urbanek, Alexander G. Hauptmann, and Jungdam Won. Breaking the limits of text-conditioned 3D In ICCV, motion synthesis with elaborative descriptions. 2023. 3",
           "Qinsheng Zhang, Jiaming Song, Xun Huang, Yongxin Chen, and Ming yu Liu. Diffcollage: Parallel generation of large content with diffusion models. In CVPR, 2023. 3"
@@ -93,7 +93,7 @@
           "Muhammed Kocabas, Nikos Athanasiou, and Michael J Black. VIBE: Video inference for human body pose and shape estimation. In CVPR, 2020. 3, 7, 13"
         ],
         [
-          "CVPR",
+          "Jiye Lee and Hanbyul Joo. Mocap everyone everywhere: Lightweight motion capture with smartwatches and a head- mounted camera. In Proceedings of the IEEE\/CVF Confer- ence on Computer Vision and Pattern Recognition (CVPR), 2024. 3",
           "Jose Luis Ponton, Haoran Yun, Andreas Aristidou, Carlos Andujar, and Nuria Pelechano. Sparseposer: Real-time full- body motion reconstruction from sparse data. ACM Trans- actions on Graphics, 2023. 3",
           "Xinyu Yi, Yuxiao Zhou, and Feng Xu. Transpose: Real-time 3d human translation and pose estimation with six inertial sensors. ACM Transactions on Graphics, 2021. 3"
         ],
@@ -207,11 +207,11 @@
     "citations":{
       "content":[
         [
-          "3"
+          "Linus Ericsson, Henry Gouk, Chen Change Loy, and Timo- thy M. Hospedales. Self-supervised representation learning: Introduction, advances, and challenges. IEEE Trans. Signal Process., 39(3):42\u201362, 2022. 2"
         ],
         [
-          "4",
-          "3"
+          "Saleh Albelwi. Survey on self-supervised learning: Auxil- iary pretext tasks and contrastive learning methods in imag- ing. Entropy, 24(4):551, 2022. 2",
+          "Linus Ericsson, Henry Gouk, Chen Change Loy, and Timo- thy M. Hospedales. Self-supervised representation learning: Introduction, advances, and challenges. IEEE Trans. Signal Process., 39(3):42\u201362, 2022. 2"
         ],
         [
           "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Syl- vain Gelly, Jakob Uszkoreit, and Neil Houlsby. An image is worth 16\u00d716 words: Transformers for image recognition at scale. In ICLR, 2021. 2"
@@ -258,7 +258,7 @@
         ],
         [
           "Rico Jonschkowski, Austin Stone, Jonathan T. Barron, Ariel Gordon, Kurt Konolige, and Anelia Angelova. What mat- ters in unsupervised optical flow. In ECCV, pages 557\u2013572, 2020. 3",
-          "2",
+          "Gal Lifshitz and Dan Raviv. Cost function unrolling in un- IEEE Trans. Pattern Anal. Mach. supervised optical flow. Intell., 46(2):869\u2013880, 2024. 3",
           "R\u00e9mi Marsal, Florian Chabot, Ang\u00e9lique Loesch, and Hichem Sahbi. BrightFlow: Brightness-change-aware un- supervised learning of optical flow. In WACV, pages 2061\u2013 2070, 2023. 3",
           "Simon Meister, Junhwa Hur, and Stefan Roth. UnFlow: Un- supervised learning of optical flow with a bidirectional cen- sus loss. In AAAI, pages 7251\u20137259, 2018. 3",
           "Jason J. Yu, Adam W. Harley, and Konstantinos G. Derpa- nis. Back to basics: Unsupervised learning of optical flow via brightness constancy and motion smoothness. In ECCV Workshops, pages 3\u201310, 2016. 3"
@@ -267,7 +267,7 @@
           "Austin Stone, Daniel Maurer, Alper Ayvaci, Anelia An- gelova, and Rico Jonschkowski. SMURF: Self-teaching multi-frame unsupervised RAFT with full-image warping. In CVPR, pages 3887\u20133896, 2021. 3, i, iii, iv"
         ],
         [
-          "2"
+          "Oriane Sim\u00e9oni, \u00c9loi Zablocki, Spyros Gidaris, Gilles Puy, and Patrick P\u00e9rez. Unsupervised object localization in the era of self-supervised ViTs: A survey. Int. J. Comput. Vis., 133(2):781\u2013808, 2025. 3"
         ],
         [
           "Oriane Sim\u00e9oni, Gilles Puy, Huy V. Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick P\u00e9rez, Renaud Mar- let, and Jean Ponce. Localizing objects with self-supervised transformers and no labels. In BMVC, 2021. 2, 3",
@@ -277,7 +277,7 @@
           "XuDong Wang, Jingfeng Yang, and Trevor Darrell. Segment In NeurIPS, pages 138731\u2013 anything without supervision. 138755, 2024. 3, ix"
         ],
         [
-          "12"
+          "Yangtao Wang, Xi Shen, Yuan Yuan, Yuming Du, Maomao Li, Shell Xu Hu, James L. Crowley, and Dominique Vaufrey- daz. TokenCut: Segmenting objects in images and videos with self-supervised transformer and normalized cut. IEEE Trans. Pattern Anal. Mach. Intell., 45(12):15790\u201315801, 2023. 2, 3"
         ],
         [
           "Xudong Wang, Rohit Girdhar, Stella X. Yu, and Ishan Misra. Cut and learn for unsupervised object detection and instance segmentation. In CVPR, pages 3124\u20133134, 2023. 2, 3, 5, 6, 7, iv, v, vi"
@@ -291,7 +291,7 @@
           "Yanchao Yang, Brian Lai, and Stefano Soatto. DyStaB: Unsupervised object segmentation via dynamic-static boot- strapping. In CVPR, pages 2826\u20132836, 2021. 3"
         ],
         [
-          "3"
+          "Leonhard Sommer, Philipp Schr\u00f6ppel, and Thomas Brox. SF2SE3: Clustering scene flow into SE(3)-motions via pro- posal and selection. In GCPR, pages 215\u2013229, 2022. 3, 4, i"
         ],
         [
           "Yihong Sun and Bharath Hariharan. MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos. pages 289\u2013307, 2024. 3, 6, 7"
@@ -376,7 +376,7 @@
           "Hainan Cui, Xiang Gao, Shuhan Shen, and Zhanyi Hu. Hsfm: Hybrid structure-from-motion. In Proceedings of the IEEE conference on computer vision and pattern recog- nition, 2017. 3",
           "Richard Hartley and Andrew Zisserman. Multiple View Geometry in Computer Vision. Cambridge University Press, 2004. 3, 5",
           "Nianjuan Jiang, Zhaopeng Cui, and Ping Tan. A global linear method for camera pose registration. In ICCV, 2013. 3",
-          "CVPR"
+          "Johannes Lutz Sch\u00a8onberger and Jan-Michael Frahm. Structure-from-motion revisited. In Conference on Com- puter Vision and Pattern Recognition (CVPR), 2016. 2, 3, 8, 9"
         ],
         [
           "Axel Barroso-Laguna, Edgar Riba, Daniel Ponsa, and Krys- tian Mikolajczyk. Key. net: Keypoint detection by hand- crafted and learned cnn filters. In ICCV, pages 5836\u20135844, 2019. 3",
@@ -400,7 +400,7 @@
           "Paul-Edouard Sarlin, Daniel DeTone, Tomasz Malisiewicz, and Andrew Rabinovich. Superglue: Learning feature match- ing with graph neural networks. In CVPR, pages 4937\u20134946, 2020. 2, 3, 7, 8",
           "Jiaming Sun, Zehong Shen, Yuang Wang, Hujun Bao, and Xiaowei Zhou. LoFTR: Detector-free local feature matching with transformers. CVPR, 2021. 2, 3",
           "Shitao Tang, Jiahui Zhang, Siyu Zhu, and Ping Tan. ICLR, 2022. Quadtree attention for vision transformers. 3",
-          "ICCV"
+          "Shuzhe Wang, Juho Kannala, Marc Pollefeys, and Daniel Barath. Guiding local feature matching with surface curva- ture. In Proceedings of the IEEE\/CVF International Con- ference on Computer Vision (ICCV), pages 17981\u201317991, October 2023. 3"
         ],
         [
           "Philipp Lindenberger, Paul-Edouard Sarlin, Viktor Larsson, and Marc Pollefeys. Pixel-perfect structure-from-motion with featuremetric refinement. In ICCV, 2021. 2, 3, 7, 8"
@@ -439,11 +439,11 @@
           "Henrik Aan\u00e6s, Rasmus Ramsb\u00f8l Jensen, George Vogiatzis, Engin Tola, and Anders Bjorholm Dahl. Large-scale data for multiple-view stereopsis. IJCV, 2016. 1, 3, 8",
           "Angela Dai, Angel X. Chang, Manolis Savva, Maciej Halber, Thomas Funkhouser, and Matthias Nie\u00dfner. Scannet: Richly- annotated 3d reconstructions of indoor scenes. In CVPR, 2017. 3, 8",
           "Thomas Sch\u00a8ops, Johannes L. Sch\u00a8onberger, Silvano Gal- liani, Torsten Sattler, Konrad Schindler, Marc Pollefeys, and Andreas Geiger. A multi-view stereo benchmark with high- resolution images and multi-camera videos. In CVPR, 2017. 2, 3, 8, 14",
-          "ICCV"
+          "Chandan Yeshwanth, Yueh-Cheng Liu, Matthias Nie\u00dfner, and Angela Dai. Scannet++: A high-fidelity dataset of 3d in- door scenes. In Proceedings of the International Conference on Computer Vision (ICCV), 2023. 2, 3, 6, 16, 17"
         ],
         [
           "Nianjuan Jiang, Zhaopeng Cui, and Ping Tan. A global linear method for camera pose registration. In ICCV, 2013. 3",
-          "CVPR"
+          "Johannes Lutz Sch\u00a8onberger and Jan-Michael Frahm. Structure-from-motion revisited. In Conference on Com- puter Vision and Pattern Recognition (CVPR), 2016. 2, 3, 8, 9"
         ],
         [
           "Dario Pavllo, Jonas Kohler, Thomas Hofmann, and Aur\u00b4elien Lucchi. Learning generative models of textured 3d meshes from real-world images. In ICCV, 2021. 3",
@@ -451,7 +451,7 @@
           "Dario Pavllo, David Joseph Tan, Marie-Julie Rakotosaona, and Federico Tombari. Shape, pose, and appearance from a single image via bootstrapped radiance field inversion. In CVPR, 2023. 3"
         ],
         [
-          "12",
+          "Jia-Wang Bian, Huangying Zhan, Naiyan Wang, Tat-Jun Chin, Chunhua Shen, and Ian D. Reid. Auto-rectify net- work for unsupervised indoor depth estimation. IEEE Trans. Pattern Anal. Mach. Intell., 44(12):9802\u20139813, 2022. 3, 7, 8",
           "Ren\u00b4e Ranftl, Alexey Bochkovskiy, and Vladlen Koltun. Vi- sion transformers for dense prediction. In ICCV, 2021. 3, 6, 7, 8, 17",
           "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Si- mon Chen, Yifan Liu, and Chunhua Shen. Towards accurate reconstruction of 3d scene shape from a single monocular image, 2022. 3",
           "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Long Mai, Simon Chen, and Chunhua Shen. Learning to recover 3d scene shape from a single image. In CVPR, 2020. 3"
@@ -468,16 +468,16 @@
         ],
         [
           "Wei Yin, Chi Zhang, Hao Chen, Zhipeng Cai, Gang Yu, Kaixuan Wang, Xiaozhi Chen, and Chunhua Shen. Metric3d: Towards zero-shot metric 3d prediction from a single image. In ICCV, 2023. 3",
-          "TPAMI"
+          "Wei Yin, Jianming Zhang, Oliver Wang, Simon Niklaus, Si- mon Chen, Yifan Liu, and Chunhua Shen. Towards accurate reconstruction of 3d scene shape from a single monocular image. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022. 3"
         ],
         [
           "Zachary Teed and Jia Deng. Deepv2d: Video to depth with differentiable structure from motion. In ICLR, 2020. 3, 9, 15",
           "Benjamin Ummenhofer, Huizhong Zhou, Jonas Uhrig, Niko- laus Mayer, Eddy Ilg, Alexey Dosovitskiy, and Thomas Brox. DeMoN: Depth and motion network for learning monocular stereo. In CVPR, pages 5622\u20135631, 2017. 3, 9, 14, 15",
-          "3"
+          "Huizhong Zhou, Benjamin Ummenhofer, and Thomas Brox. DeepTAM: Deep tracking and mapping with convolutional neural networks. Int. J. Comput. Vis., 128(3):756\u2013769, 2020. 3, 14"
         ],
         [
           "Benjamin Ummenhofer, Huizhong Zhou, Jonas Uhrig, Niko- laus Mayer, Eddy Ilg, Alexey Dosovitskiy, and Thomas Brox. DeMoN: Depth and motion network for learning monocular stereo. In CVPR, pages 5622\u20135631, 2017. 3, 9, 14, 15",
-          "3"
+          "Huizhong Zhou, Benjamin Ummenhofer, and Thomas Brox. DeepTAM: Deep tracking and mapping with convolutional neural networks. Int. J. Comput. Vis., 128(3):756\u2013769, 2020. 3, 14"
         ],
         [
           "Eric Brachmann, Alexander Krull, Sebastian Nowozin, Jamie Shotton, Frank Michel, Stefan Gumhold, and Carsten Rother. DSAC - differentiable RANSAC for camera local- ization. In CVPR, 2017. 3",
@@ -639,7 +639,7 @@
     "citations":{
       "content":[
         [
-          "NIPS"
+          "\u0141ukasz Kaiser and Samy Bengio. Can active memory replace attention? In Advances in Neural Information Processing Systems, (NIPS), 2016."
         ],
         [
           "Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko- ray Kavukcuoglu. Neural machine translation in linear time. arXiv preprint arXiv:1610.10099v2, 2017."
@@ -660,7 +660,7 @@
           "Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus. End-to-end memory networks. In C. Cortes, N. D. Lawrence, D. D. Lee, M. Sugiyama, and R. Garnett, editors, Advances in Neural Information Processing Systems 28, pages 2440\u20132448. Curran Associates, Inc., 2015."
         ],
         [
-          "ICLR",
+          "\u0141ukasz Kaiser and Ilya Sutskever. Neural GPUs learn algorithms. In International Conference on Learning Representations (ICLR), 2016.",
           "Nal Kalchbrenner, Lasse Espeholt, Karen Simonyan, Aaron van den Oord, Alex Graves, and Ko- ray Kavukcuoglu. Neural machine translation in linear time. arXiv preprint arXiv:1610.10099v2, 2017."
         ],
         [
@@ -682,27 +682,24 @@
   {
     "paper_id":"fireplace",
     "no_citations_text":"3D scene generation and object placement. Significant\nefforts have been made towards collecting 3D scene datasets\n, enabling the community to train\nand develop systems that generate and\/or position elements\nwithin indoor scenes . While\nthey demonstrate that object placement rules can be dis-\ntilled from scene databases, these were not designed to han-\ndle open vocabularies of objects, and even less so to take\ninto account the level of common sense reasoning that un-\nderlies human decisions to place objects where they are\nplaced within our living environments. FirePlace intro-\nduces a method to leverage the knowledge of MLLMs to\ndo this in a training-free manner. While other works  use\n2D image priors to generate scenes and objects, they often\nhave issues preserving object identity and physical plausi-\nbility of the final object arrangement. In contrast, FirePlace\nworks with an explicit 3D scene representation, where ex-\nplicit geometric constraints are enforced.\nFoundation models for 3D graphics. More recent\nworks  have demonstrated the potential\nof involving large pretrained models for different stages of\nthe 3D graphical design process. While they demonstrate\ncapabilities in editing materials , texture , and con-\ntrolling animation , they struggle with tasks that require\ncomplex spatial reasoning, like object placement. Existing\nworks like  have attempted to position objects in a scene\n\nby directly using LLMs through predicting the position and\norientation of objects as LLM outputs. More recent works\n have demonstrated the benefit of using LLMs\nto predict constraints instead, before using a solver to solve\nfor final object placements. However, despite being able\nto create large-scale scenes, they represent each object us-\ning bounding boxes, making it impossible to express fine-\ngrained constraints between parts of objects, leading to con-\nstraints that can only explain placements of box-like objects\n(as opposed to putting a book on a shelf, or a stuffed toy on\na chair with a backrest and armrests). This design choice is\nunderstandable, since parts of objects become increasingly\nhard for LLMs to reason about. FirePlace introduces a way\nto overcome this limitation.\n\n",
-    "marked_citations_text":"3D scene generation and object placement. Significant\nefforts have been made towards collecting 3D scene datasets\n[CITATION_0], enabling the community to train\nand develop systems that generate and\/or position elements\nwithin indoor scenes [CITATION_1]. While\nthey demonstrate that object placement rules can be dis-\ntilled from scene databases, these were not designed to han-\ndle open vocabularies of objects, and even less so to take\ninto account the level of common sense reasoning that un-\nderlies human decisions to place objects where they are\nplaced within our living environments. FirePlace intro-\nduces a method to leverage the knowledge of MLLMs to\ndo this in a training-free manner. While other works [CITATION_2] use\n2D image priors to generate scenes and objects, they often\nhave issues preserving object identity and physical plausi-\nbility of the final object arrangement. In contrast, FirePlace\nworks with an explicit 3D scene representation, where ex-\nplicit geometric constraints are enforced.\nFoundation models for 3D graphics. More recent\nworks [CITATION_3] have demonstrated the potential\nof involving large pretrained models for different stages of\nthe 3D graphical design process. While they demonstrate\ncapabilities in editing materials [CITATION_4], texture [CITATION_5], and con-\ntrolling animation [CITATION_6], they struggle with tasks that require\ncomplex spatial reasoning, like object placement. Existing\nworks like [CITATION_7] have attempted to position objects in a scene\n\nby directly using LLMs through predicting the position and\norienta[CITATION_9]tion of objects as LLM outputs. More recent works\n[CITATION_8] have demonstrated the benefit of using LLMs\nto predict constraints instead, before using a solver to solve\nfor final object placements. However, despite being able\nto create large-scale scenes, they represent each object us-\ning bounding boxes, making it impossible to express fine-\ngrained constraints between parts of objects, leading to con-\nstraints that can only explain placements of box-like objects\n(as opposed to putting a book on a shelf, or a stuffed toy on\na chair with a backrest and armrests). This design choice is\nunderstandable, since parts of objects become increasingly\nhard for LLMs to reason about. FirePlace introduces a way\nto overcome this limitation.\n\n",
+    "marked_citations_text":"3D scene generation and object placement. Significant\nefforts have been made towards collecting 3D scene datasets\n[CITATION_0], enabling the community to train\nand develop systems that generate and\/or position elements\nwithin indoor scenes [CITATION_1]. While\nthey demonstrate that object placement rules can be dis-\ntilled from scene databases, these were not designed to han-\ndle open vocabularies of objects, and even less so to take\ninto account the level of common sense reasoning that un-\nderlies human decisions to place objects where they are\nplaced within our living environments. FirePlace intro-\nduces a method to leverage the knowledge of MLLMs to\ndo this in a training-free manner. While other works [CITATION_2] use\n2D image priors to generate scenes and objects, they often\nhave issues preserving object identity and physical plausi-\nbility of the final object arrangement. In contrast, FirePlace\nworks with an explicit 3D scene representation, where ex-\nplicit geometric constraints are enforced.\nFoundation models for 3D graphics. More recent\nworks [CITATION_3] have demonstrated the potential\nof involving large pretrained models for different stages of\nthe 3D graphical design process. While they demonstrate\ncapabilities in editing materials [CITATION_4], texture [CITATION_5], and con-\ntrolling animation [CITATION_6], they struggle with tasks that require\ncomplex spatial reasoning, like object placement. Existing\nworks like [CITATION_7] have attempted to position objects in a scene\n\nby directly using LLMs through predicting the position and\norientation of objects as LLM outputs. More recent works\n[CITATION_8] have demonstrated the benefit of using LLMs\nto predict constraints instead, before using a solver to solve\nfor final object placements. However, despite being able\nto create large-scale scenes, they represent each object us-\ning bounding boxes, making it impossible to express fine-\ngrained constraints between parts of objects, leading to con-\nstraints that can only explain placements of box-like objects\n(as opposed to putting a book on a shelf, or a stuffed toy on\na chair with a backrest and armrests). This design choice is\nunderstandable, since parts of objects become increasingly\nhard for LLMs to reason about. FirePlace introduces a way\nto overcome this limitation.\n\n",
     "citations":{
       "content":[
         [
           "Angel Chang, Angela Dai, Thomas Funkhouser, Maciej Halber, Matthias Niessner, Manolis Savva, Shuran Song, Andy Zeng, and Yinda Zhang. Matterport3d: Learning arXiv preprint from rgb-d data in indoor environments. arXiv:1709.06158, 2017. 3",
           "Huan Fu, Bowen Cai, Lin Gao, Ling-Xiao Zhang, Jiaming Wang, Cao Li, Qixun Zeng, Chengyue Sun, Rongfei Jia, Bin- qiang Zhao, et al. 3d-front: 3d furnished rooms with layouts In Proceedings of the IEEE\/CVF Interna- and semantics. tional Conference on Computer Vision, pages 10933\u201310942, 2021. 3",
           "Alexander Raistrick, Lingjie Mei, Karhan Kayan, David Yan, Yiming Zuo, Beining Han, Hongyu Wen, Meenal Parakh, Stamatis Alexandropoulos, Lahav Lipson, et al. In- finigen indoors: Photorealistic indoor scenes using procedu- ral generation. In Proceedings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 21783\u2013 21794, 2024. 3, 5",
-          "ICCV",
+          "Mike Roberts, Jason Ramapuram, Anurag Ranjan, Atulit Kumar, Miguel Angel Bautista, Nathan Paczan, Russ Webb, and Joshua M. Susskind. Hypersim: A photorealistic syn- thetic dataset for holistic indoor scene understanding. In International Conference on Computer Vision (ICCV) 2021, 2021. 3",
           "Shuran Song, Samuel P Lichtenberg, and Jianxiong Xiao. Sun rgb-d: A rgb-d scene understanding benchmark suite. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 567\u2013576, 2015. 3",
           "Shuran Song, Fisher Yu, Andy Zeng, Angel X Chang, Mano- lis Savva, and Thomas Funkhouser. Semantic scene com- In Proceedings of the pletion from a single depth image. IEEE conference on computer vision and pattern recogni- tion, pages 1746\u20131754, 2017. 3"
         ],
         [
-          "TOG",
-          "6",
-          "TOG",
-          "6",
+          "Matthew Fisher, Daniel Ritchie, Manolis Savva, Thomas Funkhouser, and Pat Hanrahan. Example-based synthesis of 3d object arrangements. ACM Transactions on Graphics (TOG), 31(6):1\u201311, 2012. 3",
+          "Rui Ma, Akshay Gadi Patil, Matthew Fisher, Manyi Li, S\u00a8oren Pirk, Binh-Son Hua, Sai-Kit Yeung, Xin Tong, Leonidas Guibas, and Hao Zhang. Language-driven synthe- sis of 3d scenes from scene databases. ACM Transactions on Graphics (TOG), 37(6):1\u201316, 2018. 3",
           "Despoina Paschalidou, Amlan Kar, Maria Shugrina, Karsten Kreis, Andreas Geiger, and Sanja Fidler. Atiss: Autoregres- sive transformers for indoor scene synthesis. Advances in Neural Information Processing Systems, 34:12013\u201312026, 2021. 2, 3",
           "Daniel Ritchie, Kai Wang, and Yu-an Lin. Fast and flex- ible indoor scene synthesis via deep convolutional genera- In Proceedings of the IEEE\/CVF Conference tive models. on Computer Vision and Pattern Recognition, pages 6182\u2013 6190, 2019. 3",
-          "TOG",
-          "4",
-          "3DV",
+          "Kai Wang, Yu-An Lin, Ben Weissmann, Manolis Savva, An- gel X Chang, and Daniel Ritchie. Planit: Planning and in- stantiating indoor scenes with relation graph and spatial prior networks. ACM Transactions on Graphics (TOG), 38(4):1\u2013 15, 2019. 3",
+          "Xinpeng Wang, Chandan Yeshwanth, and Matthias Nie\u00dfner. Sceneformer: Indoor scene generation with transformers. In 2021 International Conference on 3D Vision (3DV), pages 106\u2013115. IEEE, 2021.",
           "Qiuhong Anna Wei, Sijie Ding, Jeong Joon Park, Rahul Sajnani, Adrien Poulenard, Srinath Sridhar, and Leonidas Guibas. Lego-net: Learning regular rearrangements of ob- jects in rooms. In Proceedings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 19037\u2013 19047, 2023. 2, 3",
           "Yixuan Yang, Junru Lu, Zixiang Zhao, Zhen Luo, James JQ Yu, Victor Sanchez, and Feng Zheng. Llplace: The 3d in- door scene layout generation and editing via large language model. arXiv preprint arXiv:2406.03866, 2024. 2, 3"
         ],
@@ -718,7 +715,7 @@
           "Jumin Lee, Sebin Lee, Changho Jo, Woobin Im, Juhyeong Seon, and Sung-Eui Yoon. Semcity: Semantic scene genera- tion with triplane diffusion. In Proceedings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 28337\u201328347, 2024. 3",
           "Pengzhi Li, Chengshuai Tang, Qinxuan Huang, and Zhi- heng Li. Art3d: 3d gaussian splatting for text-guided artistic scenes generation. arXiv preprint arXiv:2405.10508, 2024. 3",
           "Andrew Liu, Richard Tucker, Varun Jampani, Ameesh Makadia, Noah Snavely, and Angjoo Kanazawa. Infinite na- ture: Perpetual view generation of natural scenes from a sin- In Proceedings of the IEEE\/CVF International gle image. Conference on Computer Vision, pages 14458\u201314467, 2021. 3",
-          "3DV",
+          "Ryan Po and Gordon Wetzstein. Compositional 3d scene generation using locally conditioned diffusion. In 2024 In- ternational Conference on 3D Vision (3DV), pages 651\u2013663. IEEE, 2024. 3",
           "Haozhe Xie, Zhaoxi Chen, Fangzhou Hong, and Ziwei Liu. Citydreamer: Compositional generative model of unbounded In Proceedings of the IEEE\/CVF Conference 3d cities. on Computer Vision and Pattern Recognition, pages 9666\u2013 9675, 2024. 3",
           "Taoran Yi, Jiemin Fang, Junjie Wang, Guanjun Wu, Lingxi Xie, Xiaopeng Zhang, Wenyu Liu, Qi Tian, and Xinggang Wang. Gaussiandreamer: Fast generation from text to 3d gaussians by bridging 2d and 3d diffusion models. In Pro- ceedings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 6796\u20136807, 2024. 3",
           "Hong-Xing Yu, Haoyi Duan, Junhwa Hur, Kyle Sargent, Michael Rubinstein, William T Freeman, Forrester Cole, De- qing Sun, Noah Snavely, Jiajun Wu, et al. Wonderjourney: In Proceedings of Going from anywhere to everywhere. the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 6658\u20136667, 2024. 3",
@@ -747,9 +744,8 @@
           "Rio Aguina-Kang, Maxim Gumin, Do Heon Han, Stew- art Morris, Seung Jean Yoo, Aditya Ganeshan, R Kenny Jones, Qiuhong Anna Wei, Kailiang Fu, and Daniel Ritchie. Open-universe indoor scene generation using llm program synthesis and uncurated object databases. arXiv preprint arXiv:2403.09675, 2024. 2, 3",
           "Ziniu Hu, Ahmet Iscen, Aashi Jain, Thomas Kipf, Yisong Yue, David A Ross, Cordelia Schmid, and Alireza Fathi. Scenecraft: An llm agent for synthesizing 3d scenes as blender code. In Forty-first International Conference on Ma- chine Learning, 2024. 2, 3, 5",
           "Hou In Ivan Tam, Hou In Derek Pun, Austin T Wang, Angel X Chang, and Manolis Savva. Scenemotifcoder: Example-driven visual program learning for generating 3d arXiv preprint arXiv:2408.02211, object arrangements. 2024. 2, 3",
-          "CVPR 2024"
-        ],
-        "(CVPR 2024)"
+          "Yue Yang, Fan-Yun Sun, Luca Weihs, Eli VanderBilt, Alvaro Herrasti, Winson Han, Jiajun Wu, Nick Haber, Ranjay Kr- ishna, Lingjie Liu, et al. Holodeck: Language guided genera- tion of 3d embodied ai environments. In The IEEE\/CVF Con- ference on Computer Vision and Pattern Recognition (CVPR 2024), pages 20\u201325. IEEE\/CVF, 2024. 2, 3, 5, 6"
+        ]
       ],
       "positions":[
         114,
@@ -760,8 +756,7 @@
         1224,
         1254,
         1364,
-        1528,
-        1466
+        1528
       ]
     }
   },
@@ -917,7 +912,7 @@
         ],
         [
           "Richard Hartley and Andrew Zisserman. Multiple view ge- ometry in computer vision. Cambridge university press, 2003. 2",
-          "2",
+          "John Oliensis. A critique of structure-from-motion algo- rithms. Computer Vision and Image Understanding, 80(2): 172\u2013214, 2000. 2",
           "Onur \u00a8Ozyes\u00b8il, Vladislav Voroninski, Ronen Basri, and Amit Singer. A survey of structure from motion*. Acta Numerica, 26:305\u2013364, 2017. 2 9"
         ],
         [
@@ -925,29 +920,29 @@
         ],
         [
           "Jakob Engel, Thomas Sch\u00a8ops, and Daniel Cremers. Lsd- slam: Large-scale direct monocular slam. In European con- ference on computer vision, pages 834\u2013849. Springer, 2014. 2",
-          "3",
-          "5",
-          "5"
+          "Jakob Engel, Vladlen Koltun, and Daniel Cremers. Direct sparse odometry. IEEE transactions on pattern analysis and machine intelligence, 40(3):611\u2013625, 2017. 2",
+          "Raul Mur-Artal and Juan D Tard\u00b4os. Orb-slam2: An open- source slam system for monocular, stereo, and rgb-d cam- eras. IEEE transactions on robotics, 33(5):1255\u20131262, 2017. 2",
+          "Raul Mur-Artal, Jose Maria Martinez Montiel, and Juan D Tardos. Orb-slam: a versatile and accurate monocular slam IEEE transactions on robotics, 31(5):1147\u20131163, system. 2015. 2"
         ],
         [
           "Eric Brachmann, Alexander Krull, Sebastian Nowozin, Jamie Shotton, Frank Michel, Stefan Gumhold, and Carsten Rother. Dsac-differentiable ransac for camera localization. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 6684\u20136692, 2017. 2",
           "Daniel DeTone, Tomasz Malisiewicz, and Andrew Rabi- novich. Superpoint: Self-supervised interest point detection and description. In Proceedings of the IEEE conference on computer vision and pattern recognition workshops, pages 224\u2013236, 2018. 2",
           "Vincent Leroy, Yohann Cabon, and J\u00b4er\u02c6ome Revaud. Ground- arXiv preprint ing image matching in 3d with mast3r. arXiv:2406.09756, 2024. 2",
           "Dominik Muhle, Lukas Koestler, Krishna Murthy Jatavallab- hula, and Daniel Cremers. Learning correspondence uncer- tainty via differentiable nonlinear least squares. In Proceed- ings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition, pages 13102\u201313112, 2023. 2",
-          "ECCV",
+          "Ren\u00b4e Ranftl and Vladlen Koltun. Deep fundamental matrix estimation. In Proceedings of the European conference on computer vision (ECCV), pages 284\u2013299, 2018. 2",
           "Paul-Edouard Sarlin, Daniel DeTone, Tomasz Malisiewicz, Superglue: Learning feature and Andrew Rabinovich. In Proceedings of matching with graph neural networks. the IEEE\/CVF conference on computer vision and pattern recognition, pages 4938\u20134947, 2020.",
           "Paul-Edouard Sarlin, Ajaykumar Unagar, Mans Larsson, Hugo Germain, Carl Toft, Viktor Larsson, Marc Pollefeys, Vincent Lepetit, Lars Hammarstrand, Fredrik Kahl, et al. Back to the feature: Learning robust camera localization from pixels to pose. In Proceedings of the IEEE\/CVF con- ference on computer vision and pattern recognition, pages 3247\u20133257, 2021. 2",
-          "ECCV"
+          "Nan Yang, Rui Wang, Jorg Stuckler, and Daniel Cremers. Deep virtual stereo odometry: Leveraging deep depth predic- tion for monocular direct sparse odometry. In Proceedings of the European conference on computer vision (ECCV), pages 817\u2013833, 2018. 2"
         ],
         [
-          "6"
+          "Richard I Hartley. In defense of the eight-point algorithm. IEEE Transactions on pattern analysis and machine intelli- gence, 19(6):580\u2013593, 1997. 2"
         ],
         [
-          "3"
+          "Jakob Engel, Vladlen Koltun, and Daniel Cremers. Direct sparse odometry. IEEE transactions on pattern analysis and machine intelligence, 40(3):611\u2013625, 2017. 2"
         ],
         [
           "Holger Caesar, Varun Bankiti, Alex H Lang, Sourabh Vora, Venice Erin Liong, Qiang Xu, Anush Krishnan, Yu Pan, Gi- ancarlo Baldan, and Oscar Beijbom. nuscenes: A multi- In Proceedings of modal dataset for autonomous driving. the IEEE\/CVF conference on computer vision and pattern recognition, pages 11621\u201311631, 2020. 2",
-          "11",
+          "Andreas Geiger, Philip Lenz, Christoph Stiller, and Raquel Urtasun. Vision meets robotics: The kitti dataset. The Inter- national Journal of Robotics Research, 32(11):1231\u20131237, 2013. 2",
           "Pei Sun, Henrik Kretzschmar, Xerxes Dotiwalla, Aurelien Chouard, Vijaysai Patnaik, Paul Tsui, James Guo, Yin Zhou, Yuning Chai, Benjamin Caine, et al. Scalability in perception for autonomous driving: Waymo open dataset. In Proceed- ings of the IEEE\/CVF conference on computer vision and pattern recognition, pages 2446\u20132454, 2020. 2"
         ],
         [
@@ -963,7 +958,7 @@
           "Zhoutong Zhang, Forrester Cole, Zhengqi Li, Michael Ru- binstein, Noah Snavely, and William T Freeman. Structure and motion from casual videos. In European Conference on Computer Vision, pages 20\u201337. Springer, 2022. 2, 6"
         ],
         [
-          "CVPR"
+          "Shuzhe Wang, Vincent Leroy, Yohann Cabon, Boris Chidlovskii, and Jerome Revaud. Dust3r: Geometric 3d vi- sion made easy. In Proceedings of the IEEE\/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 20697\u201320709, 2024. 1, 2"
         ],
         [
           "Cameron Smith, David Charatan, Ayush Tewari, and Vin- cent Sitzmann. Flowmap: High-quality camera poses, in- arXiv preprint trinsics, and depth via gradient descent. arXiv:2404.15259, 2024. 2, 3, 4"

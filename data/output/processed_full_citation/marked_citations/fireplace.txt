@@ -26,7 +26,7 @@ complex spatial reasoning, like object placement. Existing
 works like [CITATION_7] have attempted to position objects in a scene
 
 by directly using LLMs through predicting the position and
-orienta[CITATION_9]tion of objects as LLM outputs. More recent works
+orientation of objects as LLM outputs. More recent works
 [CITATION_8] have demonstrated the benefit of using LLMs
 to predict constraints instead, before using a solver to solve
 for final object placements. However, despite being able

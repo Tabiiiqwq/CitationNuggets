@@ -1,11 +1,11 @@
 {
   "content": [
     [
-      "3"
+      "Linus Ericsson, Henry Gouk, Chen Change Loy, and Timo- thy M. Hospedales. Self-supervised representation learning: Introduction, advances, and challenges. IEEE Trans. Signal Process., 39(3):42\u201362, 2022. 2"
     ],
     [
-      "4",
-      "3"
+      "Saleh Albelwi. Survey on self-supervised learning: Auxil- iary pretext tasks and contrastive learning methods in imag- ing. Entropy, 24(4):551, 2022. 2",
+      "Linus Ericsson, Henry Gouk, Chen Change Loy, and Timo- thy M. Hospedales. Self-supervised representation learning: Introduction, advances, and challenges. IEEE Trans. Signal Process., 39(3):42\u201362, 2022. 2"
     ],
     [
       "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Syl- vain Gelly, Jakob Uszkoreit, and Neil Houlsby. An image is worth 16\u00d716 words: Transformers for image recognition at scale. In ICLR, 2021. 2"
@@ -52,7 +52,7 @@
     ],
     [
       "Rico Jonschkowski, Austin Stone, Jonathan T. Barron, Ariel Gordon, Kurt Konolige, and Anelia Angelova. What mat- ters in unsupervised optical flow. In ECCV, pages 557\u2013572, 2020. 3",
-      "2",
+      "Gal Lifshitz and Dan Raviv. Cost function unrolling in un- IEEE Trans. Pattern Anal. Mach. supervised optical flow. Intell., 46(2):869\u2013880, 2024. 3",
       "R\u00e9mi Marsal, Florian Chabot, Ang\u00e9lique Loesch, and Hichem Sahbi. BrightFlow: Brightness-change-aware un- supervised learning of optical flow. In WACV, pages 2061\u2013 2070, 2023. 3",
       "Simon Meister, Junhwa Hur, and Stefan Roth. UnFlow: Un- supervised learning of optical flow with a bidirectional cen- sus loss. In AAAI, pages 7251\u20137259, 2018. 3",
       "Jason J. Yu, Adam W. Harley, and Konstantinos G. Derpa- nis. Back to basics: Unsupervised learning of optical flow via brightness constancy and motion smoothness. In ECCV Workshops, pages 3\u201310, 2016. 3"
@@ -61,7 +61,7 @@
       "Austin Stone, Daniel Maurer, Alper Ayvaci, Anelia An- gelova, and Rico Jonschkowski. SMURF: Self-teaching multi-frame unsupervised RAFT with full-image warping. In CVPR, pages 3887\u20133896, 2021. 3, i, iii, iv"
     ],
     [
-      "2"
+      "Oriane Sim\u00e9oni, \u00c9loi Zablocki, Spyros Gidaris, Gilles Puy, and Patrick P\u00e9rez. Unsupervised object localization in the era of self-supervised ViTs: A survey. Int. J. Comput. Vis., 133(2):781\u2013808, 2025. 3"
     ],
     [
       "Oriane Sim\u00e9oni, Gilles Puy, Huy V. Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick P\u00e9rez, Renaud Mar- let, and Jean Ponce. Localizing objects with self-supervised transformers and no labels. In BMVC, 2021. 2, 3",
@@ -71,7 +71,7 @@
       "XuDong Wang, Jingfeng Yang, and Trevor Darrell. Segment In NeurIPS, pages 138731\u2013 anything without supervision. 138755, 2024. 3, ix"
     ],
     [
-      "12"
+      "Yangtao Wang, Xi Shen, Yuan Yuan, Yuming Du, Maomao Li, Shell Xu Hu, James L. Crowley, and Dominique Vaufrey- daz. TokenCut: Segmenting objects in images and videos with self-supervised transformer and normalized cut. IEEE Trans. Pattern Anal. Mach. Intell., 45(12):15790\u201315801, 2023. 2, 3"
     ],
     [
       "Xudong Wang, Rohit Girdhar, Stella X. Yu, and Ishan Misra. Cut and learn for unsupervised object detection and instance segmentation. In CVPR, pages 3124\u20133134, 2023. 2, 3, 5, 6, 7, iv, v, vi"
@@ -85,7 +85,7 @@
       "Yanchao Yang, Brian Lai, and Stefano Soatto. DyStaB: Unsupervised object segmentation via dynamic-static boot- strapping. In CVPR, pages 2826\u20132836, 2021. 3"
     ],
     [
-      "3"
+      "Leonhard Sommer, Philipp Schr\u00f6ppel, and Thomas Brox. SF2SE3: Clustering scene flow into SE(3)-motions via pro- posal and selection. In GCPR, pages 215\u2013229, 2022. 3, 4, i"
     ],
     [
       "Yihong Sun and Bharath Hariharan. MOD-UV: Learning In ECCV, mobile object detectors from unlabeled videos. pages 289\u2013307, 2024. 3, 6, 7"
