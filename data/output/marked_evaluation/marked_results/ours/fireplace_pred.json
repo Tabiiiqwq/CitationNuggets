@@ -1,0 +1,109 @@
+{
+  "paper_id": "fireplace",
+  "pred_citations": [
+    [
+      "Arkitscenes: A diverse real-world dataset for 3d indoor scene understanding using mobile rgb-d data",
+      "Scenenn: A scene meshes dataset with annotations"
+    ],
+    [
+      "Learning guidelines for automatic indoor scene design: \u2026 objects from a given database, and placing the objects with a group of pre-defined criteria. We formulate both object selection and placement problems as probabilistic models.",
+      "Learning Object Placement Programs for Indoor Scene Synthesis with Iterative Self Training: \u2026 system to explain object placements with logical rules and semantically \u2026 indoor scene synthesis systems overfit to object placements seen during training, producing incomplete location \u2026",
+      "Scene-context-aware indoor object selection and movement in VR: \u2026 the virtual indoor scene manipulation task in terms of object \u2026 accurate placement rather than tedious adjustment of the object \u2026",
+      "Adaptive synthesis of indoor scenes via activity-associated object relation graphs: \u2026 leverage interior design guidelines \u2026 guidelines but also the reasonable rate of occupancy and the activity-related priors such as anti-backlight when placing TV set, optimizing the indoor \u2026"
+    ],
+    [
+      "Learning 3d scene priors with 2d supervision: \u2026  ",
+      "Magic123: One image to high-quality 3d object generation using both 2d and 3d diffusion priors  ",
+      "Scenedreamer: Unbounded 3d scene generation from 2d image collections  ",
+      "Lay-a-scene: Personalized 3d object arrangement using text-to-image priors  "
+    ],
+    [
+      "Ponderv2: Pave the way for 3d foundation model with a universal pre-training paradigm",
+      "Meshxl: Neural coordinate field for generative 3d foundation models"
+    ],
+    [
+      "Blenderalchemy: Editing 3d graphics with vision-language models",
+      "GG-Editor: Locally Editing 3D Avatars with Multimodal Large Language Model Guidance",
+      "Material editing using a physically based rendering network",
+      "Image-based material editing"
+    ],
+    [
+      "Clipface: Text-guided editing of textured 3d morphable models",
+      "Fine detailed texture learning for 3d meshes with generative models"
+    ],
+    [
+      "Research on role modeling and behavior control of virtual reality animation interactive system in Internet of Things",
+      "Vision-based control of 3 D facial animation",
+      "Deep learning of biomimetic sensorimotor control for biomechanical human animation"
+    ],
+    [
+      "Can an Embodied Agent Find Your \u201cCat-shaped Mug\u201d? LLM-Based Zero-Shot Object Navigation"
+    ],
+    [
+      "Building 3D Foundation Models for the Embodied Minds"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "Matterport3d: Learning arXiv preprint from rgb-d data in indoor environments",
+      "3d-front: 3d furnished rooms with layouts In Proceedings of the IEEE/CVF Interna- and semantics",
+      "In- finigen indoors: Photorealistic indoor scenes using procedu- ral generation",
+      "Susskind",
+      "Sun rgb-d: A rgb-d scene understanding benchmark suite",
+      "Semantic scene com- In Proceedings of the pletion from a single depth image"
+    ],
+    [
+      "Example-based synthesis of 3d object arrangements",
+      "Language-driven synthe- sis of 3d scenes from scene databases",
+      "Atiss: Autoregres- sive transformers for indoor scene synthesis",
+      "Fast and flex- ible indoor scene synthesis via deep convolutional genera- In Proceedings of the IEEE/CVF Conference tive models",
+      "Planit: Planning and in- stantiating indoor scenes with relation graph and spatial prior networks",
+      "Sceneformer: Indoor scene generation with transformers",
+      "Lego-net: Learning regular rearrangements of ob- jects in rooms",
+      "Llplace: The 3d in- door scene layout generation and editing via large language model"
+    ],
+    [
+      "Scalinggaus- sian: Enhancing 3d content creation with generative gaussian splatting",
+      "Scene- dreamer: Unbounded 3d scene generation from 2d image collections",
+      "Luciddreamer: Domain-free gen- arXiv preprint eration of 3d gaussian splatting scenes",
+      "Scenescape: Text-driven consistent scene generation",
+      "in seconds with latent diffusion models",
+      "Text2room: Extracting textured 3d In Proceedings of meshes from 2d text-to-image models",
+      "Dreamwaltz-g: Expressive 3d gaussian avatars from skeleton-guided 2d diffusion",
+      "Diffindscene: Diffusion-based 9 high-quality 3d indoor scene generation",
+      "Semcity: Semantic scene genera- tion with triplane diffusion",
+      "Art3d: 3d gaussian splatting for text-guided artistic scenes generation",
+      "Infinite na- ture: Perpetual view generation of natural scenes from a sin- In Proceedings of the IEEE/CVF International gle image",
+      "Compositional 3d scene generation using locally conditioned diffusion",
+      "Citydreamer: Compositional generative model of unbounded In Proceedings of the IEEE/CVF Conference 3d cities",
+      "Gaussiandreamer: Fast generation from text to 3d gaussians by bridging 2d and 3d diffusion models",
+      "Wonderjourney: In Proceedings of Going from anywhere to everywhere",
+      "Dreamscape: 3d scene creation via gaussian splatting joint arXiv preprint arXiv:2404.09227, correlation modeling"
+    ],
+    [
+      "Fatahalian",
+      "Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions",
+      "Blender- alchemy: Editing 3d graphics with vision-language models",
+      "Re-thinking inverse graphics with large language models",
+      "Any- home: Open-vocabulary generation of structured and tex- tured 3d homes"
+    ],
+    [
+      "Blender- alchemy: Editing 3d graphics with vision-language models"
+    ],
+    [
+      "Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions"
+    ],
+    [
+      "Fatahalian"
+    ],
+    [
+      "Layoutgpt: Compositional visual plan- ning and generation with large language models"
+    ],
+    [
+      "Open-universe indoor scene generation using llm program synthesis and uncurated object databases",
+      "Scenecraft: An llm agent for synthesizing 3d scenes as blender code",
+      "Scenemotifcoder: Example-driven visual program learning for generating 3d arXiv preprint arXiv:2408.02211, object arrangements",
+      "Holodeck: Language guided genera- tion of 3d embodied ai environments"
+    ]
+  ]
+}

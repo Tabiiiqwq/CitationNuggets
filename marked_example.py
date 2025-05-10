@@ -38,8 +38,6 @@ def example_marked_evaluation():
     
     # Define methods to evaluate
     methods = {
-        "random": predict_random_marked_citations,
-        "context": predict_context_marked_citations,
         "ours": predict_graph_citations
     }
     

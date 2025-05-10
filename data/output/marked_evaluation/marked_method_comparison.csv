@@ -1,3 +1,2 @@
-Method,Citation Accuracy,Length Match Rate,Total Citations,Total Correct
-random,0.0,0.0,140,0
-context,0.0,0.0,140,0
+Method,Position Accuracy,Paper F1,Corpus F1,Paper Precision,Paper Recall,Corpus Precision,Corpus Recall,Total Positions,Total GT Papers,Total Pred Papers,Total Correct Papers
+ours,0.24561403508771928,0.09133858267716535,0.09605488850771869,0.08405797101449275,0.1,0.0856269113149847,0.109375,114,290,345,29

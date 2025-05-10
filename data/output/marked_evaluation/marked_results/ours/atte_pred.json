@@ -1,0 +1,63 @@
+{
+  "paper_id": "atte",
+  "pred_citations": [
+    [
+      "Can active memory replace attention?"
+    ],
+    [
+      "Neural machine translation in linear time: \u2026 We apply the ByteNet model to strings of characters for character-level language modelling and character-tocharacter machine translation."
+    ],
+    [
+      "Convolutional sequence to sequence learning: The prevalent approach to sequence to sequence learning maps an input sequence to a variable length output sequence via recurrent neural networks. We introduce an architecture \u2026"
+    ],
+    [
+      "Topicrnn: A recurrent neural network with long-range semantic dependency",
+      "Online learning of long-range dependencies",
+      "Long distance relationships without time travel: Boosting the performance of a sparse predictive autoencoder in sequence modeling",
+      "Dealing with distant relationships in natural language modelling for automatic speech recognition"
+    ],
+    [
+      "Atnet: Answering cloze-style questions via intra-attention and inter-attention"
+    ],
+    [
+      "End-to-end memory networks: \u2026 We will show experimentally that the multiple hops over the long-term memory are \u2026 memory representation can be integrated in a scalable manner into our end-to-end neural network \u2026"
+    ],
+    [
+      "Sequence to sequence learning with neural networks: \u2026 of the Long Short-Term Memory (LSTM) architecture [16] can solve general sequence to sequence problems."
+    ],
+    [
+      "Hard non-monotonic attention for character-level transduction",
+      "Sequence to sequence transduction with hard monotonic attention"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "NIPS"
+    ],
+    [
+      "Neural machine translation in linear time"
+    ],
+    [
+      "Dauphin"
+    ],
+    [
+      "Gradient flow in recurrent nets: the difficulty of learning long-term dependencies, 2001."
+    ],
+    [
+      "Long short-term memory-networks for machine reading",
+      "A decomposable attention model",
+      "A deep reinforced model for abstractive summarization",
+      "A structured self-attentive sentence embedding"
+    ],
+    [
+      "End-to-end memory networks"
+    ],
+    [
+      "Neural GPUs learn algorithms",
+      "Neural machine translation in linear time"
+    ],
+    [
+      "Dauphin"
+    ]
+  ]
+}

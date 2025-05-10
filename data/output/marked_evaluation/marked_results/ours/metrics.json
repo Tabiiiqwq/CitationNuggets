@@ -1,0 +1,17 @@
+{
+  "position_accuracy": 0.24561403508771928,
+  "paper_precision": 0.08405797101449275,
+  "paper_recall": 0.1,
+  "paper_f1": 0.09133858267716535,
+  "corpus_precision": 0.0856269113149847,
+  "corpus_recall": 0.109375,
+  "corpus_f1": 0.09605488850771869,
+  "total_citation_positions": 114,
+  "total_gt_papers": 290,
+  "total_pred_papers": 345,
+  "total_correct_papers": 29,
+  "total_positions_with_matches": 28,
+  "unique_gt_papers": 256,
+  "unique_pred_papers": 327,
+  "unique_correct_papers": 28
+}

@@ -76,7 +76,7 @@ Here is your masked version of related work:
 You should strictly follow the function args input format.
 """
 
-prompt_get_most_relevant = """
+prompt_get_most_relevant_single = """
 Task:
 You are given a related works section where all citation placeholders are masked. 
 Your goal is to select the single most appropriate paper to fill the placeholder <<<citation_mask_num>>>.
@@ -90,6 +90,24 @@ Input:
 Instruction:
 Choose exactly one paper from the candidates that best fits the masked citation <<<citation_mask_num>>> in the context above.
 Only output the title of the selected paper. Do not explain your choice.
+"""
+
+
+prompt_get_most_relevant_group = """
+Task:
+You are given a related works section where all citation placeholders are masked.
+Your goal is to identify candidate papers that are relevant to filling the placeholder <<<citation_mask_num>>>.
+
+Input:
+- Masked related works context:
+  <<<masked_related_work>>>
+- Candidate papers for <<<citation_mask_num>>>:
+  <<<papers_for_masked_related_work>>>
+
+Instruction:
+Select papers from the candidate list that you consider relevant for the masked citation <<<citation_mask_num>>> in the context above.
+You are free to select any number of papers that you think fits this position.
+Output a list of titles, one paper title per line. Do not provide any additional commentary or explanation.
 """
 
 
@@ -160,7 +178,8 @@ def parse_and_process_query_related_works(query: str) -> Dict[str, List[str]]:
     return result
 
 
-def fill_related_works(masked_related_work: str) -> Dict[str, List[str]]:
+def fill_related_works(masked_related_work: str, 
+                       only_one_paper_per_slot: bool = False) -> List[List[str]]:
     temp_prompt = prompt_get_query.replace("<<<masked_related_work>>>", masked_related_work)
     query_text = temp_query_openai(temp_prompt, model="o3-mini")
 
@@ -168,23 +187,28 @@ def fill_related_works(masked_related_work: str) -> Dict[str, List[str]]:
 
     related_all_papers = parse_and_process_query_related_works(query_text)
 
-    output = {
-        "citations": {
-            "content": [], 
-            "positions": []
-        }
-    }
+    output = []
 
     for mask_num, related_paper in tqdm(related_all_papers.items(), desc="selecting papers..."):
-        temp_prompt = prompt_get_most_relevant.replace("<<<masked_related_work>>>", masked_related_work)
+        logger.info(mask_num)
+        if only_one_paper_per_slot:
+            temp_prompt = prompt_get_most_relevant_single
+        else:
+            temp_prompt = prompt_get_most_relevant_group
+        temp_prompt = temp_prompt.replace("<<<masked_related_work>>>", masked_related_work)
         temp_prompt = temp_prompt.replace("<<<papers_for_masked_related_work>>>", "\n".join(related_paper))
         temp_prompt = temp_prompt.replace("<<<citation_mask_num>>>", mask_num)
-        most_relevant_paper_title = temp_query_openai(temp_prompt, model="o3-mini")
-        output["citations"]["content"].append(most_relevant_paper_title)
+        relevant_paper = temp_query_openai(temp_prompt, model="o3-mini")
+        relevant_paper_list = relevant_paper.splitlines()
+        logger.info(relevant_paper_list)
+        output.append(relevant_paper_list)
     
     return output
 
 
 def predict_graph_citations(marked_text: str) -> List[List[str]]:
-    result = fill_related_works(marked_text)
-    return [result["citations"]["content"]]
+    return fill_related_works(marked_text)
+
+
+if __name__ == "__main__":
+    print(SERPAPI_KEY)
