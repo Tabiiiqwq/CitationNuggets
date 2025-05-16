@@ -1,0 +1,2 @@
+Method,Paper Coverage,Section Coverage,Paragraph Coverage,Paper GT Citations,Paper Pred Citations,Paper Covered Count,Section GT Citations,Section Pred Citations,Section Covered Count,Paragraph GT Citations,Paragraph Pred Citations,Paragraph Covered Count,Paper Count,Section Count,Paragraph Count
+search_based,0.015945102648731682,0,0,834,86,9,0,0,0,0,0,0,16,0,0

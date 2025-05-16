@@ -13,6 +13,7 @@ from pathlib import Path
 from src.evaluation.marked_evaluator import MarkedCitationEvaluator
 from src.methods.marked_baseline import predict_random_marked_citations, predict_context_marked_citations
 from src.methods.marked_ours import predict_graph_citations
+from src.methods.search_based import predict_search_based_marked_citations_sync
 
 # Configure logging
 logging.basicConfig(
@@ -27,7 +28,7 @@ def example_marked_evaluation():
     
     # Setup paths
     test_data_path = Path("data/output/dataset_full_citation")
-    results_dir = Path("data/output/marked_evaluation_full_citation")
+    results_dir = Path("data/output/marked_evaluation_full_citation_search")
     results_dir.mkdir(parents=True, exist_ok=True)
     
     # Verify test data exists
@@ -38,7 +39,8 @@ def example_marked_evaluation():
     
     # Define methods to evaluate
     methods = {
-        "ours": predict_graph_citations
+        "search_based": predict_search_based_marked_citations_sync,
+        # "ours": predict_graph_citations
     }
     
     # Initialize evaluator
@@ -51,14 +53,9 @@ def example_marked_evaluation():
         metrics = evaluator.evaluate_method(
             method_name=method_name,
             method_func=method_func,
-            parallel=False  # Set to True for faster evaluation
         )
         
         method_metrics[method_name] = metrics
-        
-        # logger.info("Results for %s:", method_name)
-        # logger.info("  Citation Accuracy: %.4f", metrics["citation_accuracy"])
-        # logger.info("  Length Match Rate: %.4f", metrics["length_match_rate"])
     
     # Compare methods
     evaluator.compare_methods(list(methods.keys()))

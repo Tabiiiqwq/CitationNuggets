@@ -97,7 +97,6 @@ class MarkedCitationEvaluator:
     def evaluate_method(self, 
                        method_name: str, 
                        method_func: Callable[[str], List[str]],
-                       parallel: bool = True,
                        n_workers: int = 4) -> Dict[str, Any]:
         """
         Evaluate a citation prediction method on the test set.
@@ -203,6 +202,12 @@ class MarkedCitationEvaluator:
             # Ensure pred_citations is a list of lists
             if pred_citations and not isinstance(pred_citations[0], list):
                 pred_citations = [[citation] for citation in pred_citations]
+                
+            for i in range(len(gt_citations)):
+                position_gt_citations = gt_citations[i]
+                total_gt_papers += len(position_gt_citations)
+                for citation in position_gt_citations:
+                    all_gt_papers.add(citation)
             
             # Count the minimum length to avoid index errors
             min_length = min(len(gt_citations), len(pred_citations))
@@ -223,12 +228,9 @@ class MarkedCitationEvaluator:
                 position_pred_citations = pred_citations[i]
                 
                 # Count papers at this position
-                total_gt_papers += len(position_gt_citations)
                 total_pred_papers += len(position_pred_citations)
                 
                 # Add to sets of all papers
-                for citation in position_gt_citations:
-                    all_gt_papers.add(citation)
                 for citation in position_pred_citations:
                     all_pred_papers.add(citation)
                 

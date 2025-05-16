@@ -1,0 +1,263 @@
+{
+  "paper_id": "Multimodal Situation",
+  "meta": {
+    "title": "Multimodal Situational Safety",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "Mutual Reinforcement of Multimodal Comprehension and Vision Perception",
+      "Visual Perception Token into Multimodal Large Language Model",
+      "Versatile Vision Encoders for Multimodal Large Language Models"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Luo et\u00a0al. (2024)",
+        "title": "Jailbreakv-28k: A benchmark for assessing the robustness of multimodal large language models against jailbreak attacks.",
+        "authors": "Weidi Luo, Siyuan Ma, Xiaogeng Liu, Xiaoyu Guo, and Chaowei Xiao.",
+        "journal": "arXiv preprint arXiv:2404.03027, 2024."
+      },
+      {
+        "tag": "Li et\u00a0al. (2024b)",
+        "title": "Manipllm: Embodied multimodal large language model for object-centric robotic manipulation.",
+        "authors": "Xiaoqi Li, Mingxu Zhang, Yiran Geng, Haoran Geng, Yuxing Long, Yan Shen, Renrui Zhang, Jiaming Liu, and Hao Dong.",
+        "journal": "InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp.\u00a0 18061\u201318070, 2024b."
+      },
+      {
+        "tag": "Shi et\u00a0al. (2024)",
+        "title": "Assessment of multimodal large language models in alignment with human values.",
+        "authors": "Zhelun Shi, Zhipin Wang, Hongxing Fan, Zaibin Zhang, Lijun Li, Yongting Zhang, Zhenfei Yin, Lu\u00a0Sheng, Yu\u00a0Qiao, and Jing Shao.",
+        "journal": "arXiv preprint arXiv:2403.17830, 2024."
+      },
+      {
+        "tag": "Zhu et\u00a0al. (2023)",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv preprint arXiv:2304.10592, 2023."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2023)",
+        "title": "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou.",
+        "journal": "2023."
+      },
+      {
+        "tag": "Li et\u00a0al. (2024a)",
+        "title": "Salad-bench: A hierarchical and comprehensive safety benchmark for large language models.",
+        "authors": "Lijun Li, Bowen Dong, Ruohui Wang, Xuhao Hu, Wangmeng Zuo, Dahua Lin, Yu\u00a0Qiao, and Jing Shao.",
+        "journal": "arXiv preprint arXiv:2402.05044, 2024a."
+      },
+      {
+        "tag": "Driess et\u00a0al. (2023)",
+        "title": "Palm-e: An embodied multimodal language model.",
+        "authors": "Danny Driess, Fei Xia, Mehdi\u00a0SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2303.03378, 2023."
+      },
+      {
+        "tag": "Yang et\u00a0al. (2024)",
+        "title": "Embodied multi-modal agent trained by an llm from a parallel textworld.",
+        "authors": "Yijun Yang, Tianyi Zhou, Kanxue Li, Dapeng Tao, Lusong Li, Li\u00a0Shen, Xiaodong He, Jing Jiang, and Yuhui Shi.",
+        "journal": "InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp.\u00a0 26275\u201326285, 2024."
+      },
+      {
+        "tag": "Dai et\u00a0al. (2023)",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Marino et\u00a0al. (2019)",
+        "title": "Ok-vqa: A visual question answering benchmark requiring external knowledge.",
+        "authors": "Kenneth Marino, Mohammad Rastegari, Ali Farhadi, and Roozbeh Mottaghi.",
+        "journal": "InProceedings of the IEEE/cvf conference on computer vision and pattern recognition, pp.\u00a0 3195\u20133204, 2019."
+      },
+      {
+        "tag": "OpenAI (2023a)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI.",
+        "journal": "Technical report., 2023a."
+      },
+      {
+        "tag": "Shayegani et\u00a0al. (2023)",
+        "title": "Jailbreak in pieces: Compositional adversarial attacks on multi-modal language models.",
+        "authors": "Erfan Shayegani, Yue Dong, and Nael Abu-Ghazaleh.",
+        "journal": "InThe Twelfth International Conference on Learning Representations, 2023."
+      },
+      {
+        "tag": "Lu et\u00a0al. (2024)",
+        "title": "Deepseek-vl: towards real-world vision-language understanding.",
+        "authors": "Haoyu Lu, Wen Liu, Bo\u00a0Zhang, Bingxuan Wang, Kai Dong, Bo\u00a0Liu, Jingxiang Sun, Tongzheng Ren, Zhuoshu Li, Yaofeng Sun, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2403.05525, 2024."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "arXiv preprint arXiv:2301.12597, 2023."
+      },
+      {
+        "tag": "Alayrac et\u00a0al. (2022)",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, et\u00a0al.",
+        "journal": "Advances in Neural Information Processing Systems, 35:23716\u201323736, 2022."
+      },
+      {
+        "tag": "Shridhar et\u00a0al. (2020)",
+        "title": "Alfred: A benchmark for interpreting grounded instructions for everyday tasks.",
+        "authors": "Mohit Shridhar, Jesse Thomason, Daniel Gordon, Yonatan Bisk, Winson Han, Roozbeh Mottaghi, Luke Zettlemoyer, and Dieter Fox.",
+        "journal": "InProceedings of the IEEE/CVF conference on computer vision and pattern recognition, pp.\u00a0 10740\u201310749, 2020."
+      },
+      {
+        "tag": "Antol et\u00a0al. (2015)",
+        "title": "Vqa: Visual question answering.",
+        "authors": "Stanislaw Antol, Aishwarya Agrawal, Jiasen Lu, Margaret Mitchell, Dhruv Batra, C\u00a0Lawrence Zitnick, and Devi Parikh.",
+        "journal": "InProceedings of the IEEE international conference on computer vision, pp.\u00a0 2425\u20132433, 2015."
+      },
+      {
+        "tag": "Zhou et\u00a0al. (2023)",
+        "title": "Vicor: Bridging visual understanding and commonsense reasoning with large language models.",
+        "authors": "Kaiwen Zhou, Kwonjoon Lee, Teruhisa Misu, and Xin\u00a0Eric Wang.",
+        "journal": "ACL, 2023."
+      },
+      {
+        "tag": "Chen et\u00a0al. (2023)",
+        "title": "Minigpt-v2: Large language model as a unified interface for vision-language multi-task learning.",
+        "authors": "Jun Chen, Deyao Zhu, Xiaoqian Shen, Xiang Li, Zechun Liu, Pengchuan Zhang, Raghuraman Krishnamoorthi, Vikas Chandra, Yunyang Xiong, and Mohamed Elhoseiny.",
+        "journal": "arXiv:2310.09478, 2023."
+      },
+      {
+        "tag": "OpenAI (2023b)",
+        "title": "Gpt-4v(ision) technical work and authors.",
+        "authors": "OpenAI.",
+        "journal": "Technical report., 2023b."
+      },
+      {
+        "tag": "OpenAI (2023c)",
+        "title": "Gpt-4 technical report, 2023c.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Reid et\u00a0al. (2024)",
+        "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context.",
+        "authors": "Machel Reid, Nikolay Savinov, Denis Teplyashin, Dmitry Lepikhin, Timothy Lillicrap, Jean-baptiste Alayrac, Radu Soricut, Angeliki Lazaridou, Orhan Firat, Julian Schrittwieser, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2403.05530, 2024."
+      },
+      {
+        "tag": "Zheng et\u00a0al. (2022)",
+        "title": "Jarvis: A neuro-symbolic commonsense reasoning framework for conversational embodied agents.",
+        "authors": "Kaizhi Zheng, Kaiwen Zhou, Jing Gu, Yue Fan, Jialu Wang, Zonglin Di, Xuehai He, and Xin\u00a0Eric Wang.",
+        "journal": "arXiv preprint arXiv:2208.13266, 2022."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023c)",
+        "title": "Mm-safetybench: A benchmark for safety evaluation of multimodal large language models.",
+        "authors": "X\u00a0Liu, Y\u00a0Zhu, J\u00a0Gu, Y\u00a0Lan, C\u00a0Yang, and Y\u00a0Qiao.",
+        "journal": "arXiv preprint arXiv:2311.17600, 2023c."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2024a)",
+        "title": "Large language models for robotics: Opportunities, challenges, and perspectives.",
+        "authors": "Jiaqi Wang, Zihao Wu, Yiwei Li, Hanqi Jiang, Peng Shu, Enze Shi, Huawen Hu, Chong Ma, Yiheng Liu, Xuhui Wang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2401.04334, 2024a."
+      },
+      {
+        "tag": "Ye et\u00a0al. (2024)",
+        "title": "mplug-owl2: Revolutionizing multi-modal large language model with modality collaboration.",
+        "authors": "Qinghao Ye, Haiyang Xu, Jiabo Ye, Ming Yan, Anwen Hu, Haowei Liu, Qi\u00a0Qian, Ji\u00a0Zhang, and Fei Huang.",
+        "journal": "InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pp.\u00a0 13040\u201313051, 2024."
+      },
+      {
+        "tag": "Szot et\u00a0al. (2024)",
+        "title": "Large language models as generalizable policies for embodied tasks.",
+        "authors": "Andrew Szot, Max Schwarzer, Harsh Agrawal, Bogdan Mazoure, Rin Metcalf, Walter Talbott, Natalie Mackraz, R\u00a0Devon Hjelm, and Alexander\u00a0T Toshev.",
+        "journal": "InThe Twelfth International Conference on Learning Representations, 2024."
+      },
+      {
+        "tag": "(4)",
+        "title": "Improving image generation with better captions.",
+        "authors": "James Betker, Gabriel Goh, Li\u00a0Jing, \u2020 TimBrooks, Jianfeng Wang, Linjie Li, \u2020 LongOuyang, \u2020 JuntangZhuang, \u2020 JoyceLee, \u2020 YufeiGuo, \u2020 WesamManassra, \u2020 PrafullaDhariwal, \u2020 CaseyChu, \u2020 YunxinJiao, and Aditya Ramesh.",
+        "journal": "URLhttps://api.semanticscholar.org/CorpusID:264403242."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2024b)",
+        "title": "Cross-modality safety alignment.",
+        "authors": "Siyin Wang, Xingsong Ye, Qinyuan Cheng, Junwen Duan, Shimin Li, Jinlan Fu, Xipeng Qiu, and Xuanjing Huang.",
+        "journal": "arXiv preprint arXiv:2406.15279, 2024b."
+      },
+      {
+        "tag": "Yang et\u00a0al. (2023)",
+        "title": "Set-of-mark prompting unleashes extraordinary visual grounding in gpt-4v.",
+        "authors": "Jianwei Yang, Hao Zhang, Feng Li, Xueyan Zou, Chunyuan Li, and Jianfeng Gao.",
+        "journal": "arXiv preprint arXiv:2310.11441, 2023."
+      },
+      {
+        "tag": "Qi et\u00a0al. (2024)",
+        "title": "Visual adversarial examples jailbreak aligned large language models.",
+        "authors": "Xiangyu Qi, Kaixuan Huang, Ashwinee Panda, Peter Henderson, Mengdi Wang, and Prateek Mittal.",
+        "journal": "InProceedings of the AAAI Conference on Artificial Intelligence, volume\u00a038, pp.\u00a0 21527\u201321536, 2024."
+      },
+      {
+        "tag": "Lin et\u00a0al. (2014)",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll\u00e1r, and C\u00a0Lawrence Zitnick.",
+        "journal": "InEuropean conference on computer vision, 2014."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "InNeurIPS, 2023a."
+      },
+      {
+        "tag": "Shen et\u00a0al. (2023)",
+        "title": "\u201d do anything now\u201d: Characterizing and evaluating in-the-wild jailbreak prompts on large language models.",
+        "authors": "Xinyue Shen, Zeyuan Chen, Michael Backes, Yun Shen, and Yang Zhang.",
+        "journal": "arXiv preprint arXiv:2308.03825, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023b."
+      },
+      {
+        "tag": "Schwenk et\u00a0al. (2022)",
+        "title": "A-okvqa: A benchmark for visual question answering using world knowledge.",
+        "authors": "Dustin Schwenk, Apoorv Khandelwal, Christopher Clark, Kenneth Marino, and Roozbeh Mottaghi.",
+        "journal": "InEuropean conference on computer vision, pp.\u00a0 146\u2013162. Springer, 2022."
+      },
+      {
+        "tag": "Fan et\u00a0al. (2024)",
+        "title": "Muffin or chihuahua? challenging large vision-language models with multipanel vqa.",
+        "authors": "Yue Fan, Jing Gu, Kaiwen Zhou, Qianqi Yan, Shan Jiang, Ching-Chen Kuo, Xinze Guan, and Xin\u00a0Eric Wang.",
+        "journal": "ACL, 2024."
+      },
+      {
+        "tag": "Gong et\u00a0al. (2023)",
+        "title": "Figstep: Jailbreaking large vision-language models via typographic visual prompts.",
+        "authors": "Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, and Xiaoyun Wang.",
+        "journal": "arXiv preprint arXiv:2311.05608, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. (2024c)",
+        "title": "Mossbench: Is your multimodal language model oversensitive to safe queries?",
+        "authors": "Xirui Li, Hengguang Zhou, Ruochen Wang, Tianyi Zhou, Minhao Cheng, and Cho-Jui Hsieh.",
+        "journal": "arXiv preprint arXiv:2406.17806, 2024c."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2024c)",
+        "title": "Do-not-answer: Evaluating safeguards in LLMs.",
+        "authors": "Yuxia Wang, Haonan Li, Xudong Han, Preslav Nakov, and Timothy Baldwin.",
+        "journal": "In Yvette Graham and Matthew Purver (eds.),Findings of the Association for Computational Linguistics: EACL 2024, pp.\u00a0 896\u2013911, St. Julian\u2019s, Malta, March 2024c. Association for Computational Linguistics."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

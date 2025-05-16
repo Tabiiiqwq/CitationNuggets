@@ -1,0 +1,852 @@
+{
+  "S1.p1": {
+    "text": "The emergence of Large Language Models (LLMs) (Geng and Liu, 2023 ; OpenAI, 2023 ; Touvron et\u00a0al., 2023 ; Scao et\u00a0al., 2022 ; Chowdhery et\u00a0al., 2022 ; Taori et\u00a0al., 2023 ; Chiang et\u00a0al., 2023 ) has marked a significant milestone in the field of AI, revolutionizing natural language processing and understanding. These models, trained on vast text corpus datasets, excel in generating coherent and contextually relevant text, making them powerful tools for many downstream applications.\nBuilding on this progress, Multimodal Large Language Models (MLLMs) (Liu et\u00a0al., 2023a ; Zhu et\u00a0al., 2023 ; Su et\u00a0al., 2023 ; Dai et\u00a0al., 2023b ; Li et\u00a0al., 2023 ; OpenAI, 2023 ; Bai et\u00a0al., 2023 ) have also seen rapid improvements, extending the capabilities of LLMs to engage in conversations with image inputs, which enables more potential applications. Report issue for preceding element",
+    "masked_text": "The emergence of Large Language Models (LLMs) [CITATION] has marked a significant milestone in the field of AI, revolutionizing natural language processing and understanding. These models, trained on vast text corpus datasets, excel in generating coherent and contextually relevant text, making them powerful tools for many downstream applications. Building on this progress, Multimodal Large Language Models (MLLMs) [CITATION] have also seen rapid improvements, extending the capabilities of LLMs to engage in conversations with image inputs, which enables more potential applications.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Scao et\u00a0al. (2022)",
+        "title": "Bloom: A 176b-parameter open-access multilingual language model.",
+        "authors": "Teven\u00a0Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilic, Daniel Hesslow, Roman Castagne, Alexandra\u00a0Sasha Luccioni, Fran\u00e7ois Yvon, Matthias Galle, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2211.05100."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2023)",
+        "title": "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "OpenAI (2023)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhu et\u00a0al. (2023)",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2302.13971."
+      },
+      {
+        "tag": "Su et\u00a0al. (2023)",
+        "title": "Pandagpt: One model to instruction-follow them all.",
+        "authors": "Yixuan Su, Tian Lan, Huayang Li, Jialu Xu, Yan Wang, and Deng Cai. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Taori et\u00a0al. (2023)",
+        "title": "Stanford alpaca: An instruction-following llama model.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B. Hashimoto. 2023.",
+        "journal": "https://github.com/tatsu-lab/stanford_alpaca."
+      },
+      {
+        "tag": "Dai et\u00a0al. (2023b)",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi. 2023b.",
+        "journal": ""
+      },
+      {
+        "tag": "Geng and Liu (2023)",
+        "title": "Openllama: An open reproduction of llama.",
+        "authors": "Xinyang Geng and Hao Liu. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Chowdhery et\u00a0al. (2022)",
+        "title": "Palm: Scaling language modeling with pathways.",
+        "authors": "Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung\u00a0Won Chung, Charles Sutton, Sebastian Gehrmann, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2204.02311."
+      },
+      {
+        "tag": "Chiang et\u00a0al. (2023)",
+        "title": "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality.",
+        "authors": "Wei-Lin Chiang, Zhuohan Li, Zi\u00a0Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph\u00a0E. Gonzalez, Ion Stoica, and Eric\u00a0P. Xing. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "S1.p2": {
+    "text": "Meanwhile, both LLMs and MLLMs are prone to malicious user queries. In text-based LLMs, malicious attacks typically involve meticulously crafted queries that induces the model to generate inappropriate or harmful content Yao et\u00a0al. ( 2024 ); Kang et\u00a0al. ( 2023 ); Shayegani et\u00a0al. ( 2023 ); Perez and Ribeiro ( 2022 ); Liu et\u00a0al. ( 2023c ) .\nResearch in defending against such attacks has led to various strategies, including input detection (Robey et\u00a0al., 2023 ; Xie et\u00a0al., 2024 ) , in-context learning (Xie et\u00a0al., 2023 ) , and explicit alignment with adversarial examples (Ouyang et\u00a0al., 2022 ; Stiennon et\u00a0al., 2020 ; Nakano et\u00a0al., 2021 ; Bai et\u00a0al., 2022a , b ; Glaese et\u00a0al., 2022 ; Ziegler et\u00a0al., 2019 ; Wu et\u00a0al., 2021 ; Scheurer et\u00a0al., 2023 ) . Report issue for preceding element",
+    "masked_text": "Meanwhile, both LLMs and MLLMs are prone to malicious user queries. In text-based LLMs, malicious attacks typically involve meticulously crafted queries that induces the model to generate inappropriate or harmful content [CITATION]. Research in defending against such attacks has led to various strategies, including input detection [CITATION], in-context learning [CITATION], and explicit alignment with adversarial examples [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023c)",
+        "title": "Prompt injection attack against llm-integrated applications.",
+        "authors": "Yi\u00a0Liu, Gelei Deng, Yuekang Li, Kailong Wang, Tianwei Zhang, Yepang Liu, Haoyu Wang, Yan Zheng, and Yang Liu. 2023c.",
+        "journal": "arXiv preprint arXiv:2306.05499."
+      },
+      {
+        "tag": "Wu et\u00a0al. (2021)",
+        "title": "Recursively summarizing books with human feedback.",
+        "authors": "Jeff Wu, Long Ouyang, Daniel\u00a0M Ziegler, Nisan Stiennon, Ryan Lowe, Jan Leike, and Paul Christiano. 2021.",
+        "journal": "arXiv preprint arXiv:2109.10862."
+      },
+      {
+        "tag": "Xie et\u00a0al. (2023)",
+        "title": "Defending chatgpt against jailbreak attack via self-reminders.",
+        "authors": "Yueqi Xie, Jingwei Yi, Jiawei Shao, Justin Curl, Lingjuan Lyu, Qifeng Chen, Xing Xie, and Fangzhao Wu. 2023.",
+        "journal": "Nature Machine Intelligence, pages 1\u201311."
+      },
+      {
+        "tag": "Ziegler et\u00a0al. (2019)",
+        "title": "Fine-tuning language models from human preferences.",
+        "authors": "Daniel\u00a0M Ziegler, Nisan Stiennon, Jeffrey Wu, Tom\u00a0B Brown, Alec Radford, Dario Amodei, Paul Christiano, and Geoffrey Irving. 2019.",
+        "journal": "arXiv preprint arXiv:1909.08593."
+      },
+      {
+        "tag": "Shayegani et\u00a0al. (2023)",
+        "title": "Jailbreak in pieces: Compositional adversarial attacks on multi-modal language models.",
+        "authors": "Erfan Shayegani, Yue Dong, and Nael\u00a0B. Abu-Ghazaleh. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Stiennon et\u00a0al. (2020)",
+        "title": "Learning to summarize with human feedback.",
+        "authors": "Nisan Stiennon, Long Ouyang, Jeffrey Wu, Daniel Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, and Paul\u00a0F Christiano. 2020.",
+        "journal": "Advances in Neural Information Processing Systems, 33:3008\u20133021."
+      },
+      {
+        "tag": "Nakano et\u00a0al. (2021)",
+        "title": "Webgpt: Browser-assisted question-answering with human feedback.",
+        "authors": "Reiichiro Nakano, Jacob Hilton, Suchir Balaji, Jeff Wu, Long Ouyang, Christina Kim, Christopher Hesse, Shantanu Jain, Vineet Kosaraju, William Saunders, et\u00a0al. 2021.",
+        "journal": "arXiv preprint arXiv:2112.09332."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022a)",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al. 2022a.",
+        "journal": "arXiv preprint arXiv:2204.05862."
+      },
+      {
+        "tag": "Scheurer et\u00a0al. (2023)",
+        "title": "Training language models with language feedback at scale.",
+        "authors": "Jeremy Scheurer, Jon\u00a0Ander Campos, Tomasz Korbak, Jun\u00a0Shern Chan, Angelica Chen, Kyunghyun Cho, and Ethan Perez. 2023.",
+        "journal": "arXiv preprint arXiv:2303.16755."
+      },
+      {
+        "tag": "Glaese et\u00a0al. (2022)",
+        "title": "Improving alignment of dialogue agents via targeted human judgements.",
+        "authors": "Amelia Glaese, Nat McAleese, Maja Tr\u0119bacz, John Aslanides, Vlad Firoiu, Timo Ewalds, Maribeth Rauh, Laura Weidinger, Martin Chadwick, Phoebe Thacker, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2209.14375."
+      },
+      {
+        "tag": "Yao et\u00a0al. (2024)",
+        "title": "Fuzzllm: A novel and universal fuzzing framework for proactively discovering jailbreak vulnerabilities in large language models.",
+        "authors": "Dongyu Yao, Jianshu Zhang, Ian\u00a0G Harris, and Marcel Carlsson. 2024.",
+        "journal": "InICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 4485\u20134489. IEEE."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022b)",
+        "title": "Constitutional ai: Harmlessness from ai feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al. 2022b.",
+        "journal": "arXiv preprint arXiv:2212.08073."
+      },
+      {
+        "tag": "Perez and Ribeiro (2022)",
+        "title": "Ignore previous prompt: Attack techniques for language models.",
+        "authors": "F\u00e1bio Perez and Ian Ribeiro. 2022.",
+        "journal": "arXiv preprint arXiv:2211.09527."
+      },
+      {
+        "tag": "Xie et\u00a0al. (2024)",
+        "title": "Gradsafe: Detecting jailbreak prompts for llms via safety-critical gradient analysis.",
+        "authors": "Yueqi Xie, Minghong Fang, Renjie Pi, and Neil Gong. 2024.",
+        "journal": "arXiv preprint arXiv:2402.13494."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. (2022)",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu\u00a0Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al. 2022.",
+        "journal": "Advances in Neural Information Processing Systems, 35:27730\u201327744."
+      },
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Kang et\u00a0al. (2023)",
+        "title": "Exploiting programmatic behavior of llms: Dual-use through standard security attacks.",
+        "authors": "Daniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin, Matei Zaharia, and Tatsunori Hashimoto. 2023.",
+        "journal": "arXiv preprint arXiv:2302.05733."
+      }
+    ]
+  },
+  "S1.p3": {
+    "text": "However, in the realm of MLLMs, defending strategies are still underdeveloped.\nA new observation has been made: images can inadvertently induce these models to produce malicious content (Liu et\u00a0al., 2023b ; Gong et\u00a0al., 2023 ) , as illustrated in Figure 1 .\nThis could lead to serious consequences, as attackers might use images as triggers for malicious queries. Report issue for preceding element",
+    "masked_text": "However, in the realm of MLLMs, defending strategies are still underdeveloped. A new observation has been made: images can inadvertently induce these models to produce malicious content [CITATION], as illustrated in Figure 1. This could lead to serious consequences, as attackers might use images as triggers for malicious queries.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Gong et\u00a0al. (2023)",
+        "title": "Figstep: Jailbreaking large vision-language models via typographic visual prompts.",
+        "authors": "Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, and Xiaoyun Wang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Query-relevant images jailbreak large multi-modal models.",
+        "authors": "Xin Liu, Yichen Zhu, Yunshi Lan, Chao Yang, and Yu\u00a0Qiao. 2023b.",
+        "journal": ""
+      }
+    ]
+  },
+  "S1.p4": {
+    "text": "To gain a deeper understanding of this issue, we experimentally find that the likelihood of generating harmful responses is significantly higher given image inputs than text input, as show in Table 2 .\nAdditionally, recent research (Kotha et\u00a0al., 2023 ) indicates that LLMs aligned for safety using the English language do not perform well in defending against attacks in other languages. Inspired by this, we point out that images, in the context of MLLMs, may also act as a \u201cforeign language\", which have related or similar semantics with malicious textual queries, but are able to bypass the model\u2019s safety awareness and trick it into a generating harmful content. Report issue for preceding element",
+    "masked_text": "To gain a deeper understanding of this issue, we experimentally find that the likelihood of generating harmful responses is significantly higher given image inputs than text input, as show in Table 2. Additionally, recent research [CITATION] indicates that LLMs aligned for safety using the English language do not perform well in defending against attacks in other languages. Inspired by this, we point out that images, in the context of MLLMs, may also act as a \u201cforeign language\", which have related or similar semantics with malicious textual queries, but are able to bypass the model\u2019s safety awareness and trick it into a generating harmful content.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Kotha et\u00a0al. (2023)",
+        "title": "Understanding catastrophic forgetting in language models via implicit inference.",
+        "authors": "Suhas Kotha, Jacob\u00a0Mitchell Springer, and Aditi Raghunathan. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10105."
+      }
+    ]
+  },
+  "S1.p5": {
+    "text": "However, the commonly used safety approaches for text-based LLMs, such as Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), become more challenging when applied to MLLMs that involve images as inputs.\nThe continuous nature of images result in vastly more variation compared to the discrete text tokens. This increased variation in images results in a much larger input space to consider and align, making the tuning process more intricate and demanding in terms of capturing a diverse range of human preferences and interpretations. Especially given that during the incorporation of image modality into MLLMs, the models are trained with much fewer image-text data than pre-training textual corpus, this exhaustive alignment could further result in catastrophic forgetting of the MLLM\u2019s original capability Lin et\u00a0al. ( 2024 ) . Report issue for preceding element",
+    "masked_text": "However, the commonly used safety approaches for text-based LLMs, such as Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), become more challenging when applied to MLLMs that involve images as inputs. The continuous nature of images result in vastly more variation compared to the discrete text tokens. This increased variation in images results in a much larger input space to consider and align, making the tuning process more intricate and demanding in terms of capturing a diverse range of human preferences and interpretations. Especially given that during the incorporation of image modality into MLLMs, the models are trained with much fewer image-text data than pre-training textual corpus, this exhaustive alignment could further result in catastrophic forgetting of the MLLM\u2019s original capability [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Lin et\u00a0al. (2024)",
+        "title": "Mitigating the alignment tax of rlhf.",
+        "authors": "Yong Lin, Hangyu Lin, Wei Xiong, Shizhe Diao, Jianmeng Liu, Jipeng Zhang, Rui Pan, Haoxiang Wang, Wenbin Hu, Hanning Zhang, Hanze Dong, Renjie Pi, Han Zhao, Nan Jiang, Heng Ji, Yuan Yao, and Tong Zhang. 2024.",
+        "journal": ""
+      }
+    ]
+  },
+  "S1.p6": {
+    "text": "In response, we present MLLM-Protector , a novel paradigm aimed at mitigating the impact of malicious queries on MLLMs. Specifically, we recognize the inherent difficulty of generating aligned responses directly due to the continuous nature of images. However, by taking the fact that identification and modification is much easier than direct generation, we reformulate the task into two subtasks and employing a divide-and-conquer strategy. Specifically, our approach incorporates a lightweight harm detector , which evaluates the harmfulness of responses generated by the MLLM. If the output is identified as potentially harmful, a response detoxifier is activated to modify the response, ensuring compliance with safety standards. The plug-and-play nature of our MLLM-Protector enables it to be easily trained independently and seamlessly integrated with any MLLMs, effectively countering the risk of harmful outputs resulting from malicious image inputs, all while maintaining the overall performance of the MLLM intact. Report issue for preceding element",
+    "masked_text": "In response, we present MLLM-Protector, a novel paradigm aimed at mitigating the impact of malicious queries on MLLMs. Specifically, we recognize the inherent difficulty of generating aligned responses directly due to the continuous nature of images. However, by taking the fact that identification and modification is much easier than direct generation, we reformulate the task into two subtasks and employing a divide-and-conquer strategy. Specifically, our approach incorporates a lightweight harm detector, which evaluates the harmfulness of responses generated by the MLLM. If the output is identified as potentially harmful, a response detoxifier is activated to modify the response, ensuring compliance with safety standards. The plug-and-play nature of our MLLM-Protector enables it to be easily trained independently and seamlessly integrated with any MLLMs, effectively countering the risk of harmful outputs resulting from malicious image inputs, all while maintaining the overall performance of the MLLM intact.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p7": {
+    "text": "To train the harm detector and response detoxifier, we leverage the powerful ChatGPT to synthesize a dataset termed Safe-Harm-10K, which consists of a safe response and a harmful response for each question belonging to a variety of topics. With the synthesized dataset, the harm detector is trained to identify safe and harmful responses, while the detoxifier is trained to generate the safe responses when provided with a harmful one. Report issue for preceding element",
+    "masked_text": "To train the harm detector and response detoxifier, we leverage the powerful ChatGPT to synthesize a dataset termed Safe-Harm-10K, which consists of a safe response and a harmful response for each question belonging to a variety of topics. With the synthesized dataset, the harm detector is trained to identify safe and harmful responses, while the detoxifier is trained to generate the safe responses when provided with a harmful one.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p8": {
+    "text": "Our contribution through this paper is threefold. Report issue for preceding element \u2022 Firstly, we analyze the previously under-explored vulnerability in MLLMs related to malicious image inputs, and point out the difficulty of addressing this issue using SFT. Report issue for preceding element \u2022 Secondly, we introduce MLLM-Protector, a novel defense paradigm that solves the alignment task via a divide-and-conquer approach, which serves as a plug-and-play component and can be applid to any MLLMs. Report issue for preceding element \u2022 Thirdly, we curate Safe-Harm-10K, a dataset for training the harm detector and detoxifier, which will be released to serve the research community. Report issue for preceding element \u2022 Lastly, we demonstrate through empirical evidence that our approach effectively mitigates the risk of harmful outputs in response to malicious image inputs, while maintaining the model\u2019s original performance. Report issue for preceding element",
+    "masked_text": "Our contribution through this paper is threefold.Report issue for preceding element \u2022 Firstly, we analyze the previously under-explored vulnerability in MLLMs related to malicious image inputs, and point out the difficulty of addressing this issue using SFT.Report issue for preceding element \u2022 Secondly, we introduce MLLM-Protector, a novel defense paradigm that solves the alignment task via a divide-and-conquer approach, which serves as a plug-and-play component and can be applid to any MLLMs.Report issue for preceding element \u2022 Thirdly, we curate Safe-Harm-10K, a dataset for training the harm detector and detoxifier, which will be released to serve the research community.Report issue for preceding element \u2022 Lastly, we demonstrate through empirical evidence that our approach effectively mitigates the risk of harmful outputs in response to malicious image inputs, while maintaining the model\u2019s original performance.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.I1.i1.p1": {
+    "text": "Firstly, we analyze the previously under-explored vulnerability in MLLMs related to malicious image inputs, and point out the difficulty of addressing this issue using SFT. Report issue for preceding element",
+    "masked_text": "Firstly, we analyze the previously under-explored vulnerability in MLLMs related to malicious image inputs, and point out the difficulty of addressing this issue using SFT.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.I1.i2.p1": {
+    "text": "Secondly, we introduce MLLM-Protector, a novel defense paradigm that solves the alignment task via a divide-and-conquer approach, which serves as a plug-and-play component and can be applid to any MLLMs. Report issue for preceding element",
+    "masked_text": "Secondly, we introduce MLLM-Protector, a novel defense paradigm that solves the alignment task via a divide-and-conquer approach, which serves as a plug-and-play component and can be applid to any MLLMs.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.I1.i3.p1": {
+    "text": "Thirdly, we curate Safe-Harm-10K, a dataset for training the harm detector and detoxifier, which will be released to serve the research community. Report issue for preceding element",
+    "masked_text": "Thirdly, we curate Safe-Harm-10K, a dataset for training the harm detector and detoxifier, which will be released to serve the research community.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.I1.i4.p1": {
+    "text": "Lastly, we demonstrate through empirical evidence that our approach effectively mitigates the risk of harmful outputs in response to malicious image inputs, while maintaining the model\u2019s original performance. Report issue for preceding element",
+    "masked_text": "Lastly, we demonstrate through empirical evidence that our approach effectively mitigates the risk of harmful outputs in response to malicious image inputs, while maintaining the model\u2019s original performance.Report issue for preceding element",
+    "citations": []
+  },
+  "S2.SS0.SSS0.Px1.p1": {
+    "text": "Recent years have witnessed transformative advancements in the development of large language models (LLMs), characterized by a series of pioneering studies (Brown et\u00a0al., 2020 ; Scao et\u00a0al., 2022 ; Chowdhery et\u00a0al., 2022 ; Smith et\u00a0al., 2022 ; Hoffmann et\u00a0al., 2022 ; Ouyang et\u00a0al., 2022 ; Touvron et\u00a0al., 2023 ; Bai et\u00a0al., 2022a ) . These breakthroughs have significantly elevated the capabilities of language understanding and generation, showcasing near-human proficiency across diverse tasks. Concurrently, the success of LLMs has inspired explorations into vision-language interaction, leading to the emergence of multi-modal large language models (MLLMs) (Liu et\u00a0al., 2023a ; Li et\u00a0al., 2023 ; Dai et\u00a0al., 2023b ; Zhu et\u00a0al., 2023 ; Dai et\u00a0al., 2023b ; OpenAI, 2023 ; Bai et\u00a0al., 2023 ; Su et\u00a0al., 2023 ; Gao et\u00a0al., 2023 ; Pi et\u00a0al., 2023 ) . These models have shown great abilities in engaging in dialogue based on visual inputs. However, we observe that current state-of-the-art MLLMs become more prone to be affected by malicious visual inputs. Report issue for preceding element",
+    "masked_text": "Recent years have witnessed transformative advancements in the development of large language models (LLMs), characterized by a series of pioneering studies [CITATION]. These breakthroughs have significantly elevated the capabilities of language understanding and generation, showcasing near-human proficiency across diverse tasks. Concurrently, the success of LLMs has inspired explorations into vision-language interaction, leading to the emergence of multi-modal large language models (MLLMs) [CITATION]. These models have shown great abilities in engaging in dialogue based on visual inputs. However, we observe that current state-of-the-art MLLMs become more prone to be affected by malicious visual inputs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Gao et\u00a0al. (2023)",
+        "title": "Llama-adapter v2: Parameter-efficient visual instruction model.",
+        "authors": "Peng Gao, Jiaming Han, Renrui Zhang, Ziyi Lin, Shijie Geng, Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, Hongsheng Li, and Yu\u00a0Qiao. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Pi et\u00a0al. (2023)",
+        "title": "Detgpt: Detect what you need via reasoning.",
+        "authors": "Renjie Pi, Jiahui Gao, Shizhe Diao, Rui Pan, Hanze Dong, Jipeng Zhang, Lewei Yao, Jianhua Han, Hang Xu, Lingpeng Kong, and Tong Zhang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Scao et\u00a0al. (2022)",
+        "title": "Bloom: A 176b-parameter open-access multilingual language model.",
+        "authors": "Teven\u00a0Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilic, Daniel Hesslow, Roman Castagne, Alexandra\u00a0Sasha Luccioni, Fran\u00e7ois Yvon, Matthias Galle, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2211.05100."
+      },
+      {
+        "tag": "Dai et\u00a0al. (2023b)",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi. 2023b.",
+        "journal": ""
+      },
+      {
+        "tag": "Bai et\u00a0al. (2023)",
+        "title": "Qwen-vl: A versatile vision-language model for understanding, localization, text reading, and beyond.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "OpenAI (2023)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022a)",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al. 2022a.",
+        "journal": "arXiv preprint arXiv:2204.05862."
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2302.13971."
+      },
+      {
+        "tag": "Zhu et\u00a0al. (2023)",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Su et\u00a0al. (2023)",
+        "title": "Pandagpt: One model to instruction-follow them all.",
+        "authors": "Yixuan Su, Tian Lan, Huayang Li, Jialu Xu, Yan Wang, and Deng Cai. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Brown et\u00a0al. (2020)",
+        "title": "Language models are few-shot learners.",
+        "authors": "Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared\u00a0D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et\u00a0al. 2020.",
+        "journal": "Advances in neural information processing systems, 33:1877\u20131901."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Smith et\u00a0al. (2022)",
+        "title": "Using deepspeed and megatron to train megatron-turing nlg 530b, a large-scale generative language model.",
+        "authors": "Shaden Smith, Mostofa Patwary, Brandon Norick, Patrick LeGresley, Samyam Rajbhandari, Jared Casper, Zhun Liu, Shrimai Prabhumoye, George Zerveas, Vijay Korthikanti, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2201.11990."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. (2022)",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu\u00a0Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al. 2022.",
+        "journal": "Advances in Neural Information Processing Systems, 35:27730\u201327744."
+      },
+      {
+        "tag": "Chowdhery et\u00a0al. (2022)",
+        "title": "Palm: Scaling language modeling with pathways.",
+        "authors": "Aakanksha Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Paul Barham, Hyung\u00a0Won Chung, Charles Sutton, Sebastian Gehrmann, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2204.02311."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Hoffmann et\u00a0al. (2022)",
+        "title": "Training compute-optimal large language models.",
+        "authors": "Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor Cai, Eliza Rutherford, Diego de\u00a0Las Casas, Lisa\u00a0Anne Hendricks, Johannes Welbl, Aidan Clark, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2203.15556."
+      }
+    ]
+  },
+  "S2.SS0.SSS0.Px2.p1": {
+    "text": "Jailbreaks on LLMs can be categorized into two primary categories: malicious utilization by users and attacks by third parties targeting regular users.\nMalicious utilization by users encompasses various techniques, such as jailbreak attacks Kang et\u00a0al. ( 2023 ); Xie et\u00a0al. ( 2023 ); Shayegani et\u00a0al. ( 2023 ); Yao et\u00a0al. ( 2024 ) , prompt leakage attacks Perez and Ribeiro ( 2022 ) , and prompt injection attacks Perez and Ribeiro ( 2022 ); Liu et\u00a0al. ( 2023c ) . These attacks exploit the LLMs by providing malicious inputs to produce outputs that deviate from ethical alignment.\nIn response, defense mechanisms have been proposed, particularly for LLMs. These defense strategies include self-reminders Xie et\u00a0al. ( 2023 ) , input detection Robey et\u00a0al. ( 2023 ) , and in-context learning Wei et\u00a0al. ( 2023 ) , which aim to mitigate the impact of malicious user utilization.\nOn the other hand, attacks by third parties targeting regular users are another category, typified by indirect prompt injection attacks Yi et\u00a0al. ( 2023 ); Greshake et\u00a0al. ( 2023 ); Liu et\u00a0al. ( 2023c ) .\nThis work focuses on addressing the former category of attacks for MLLMs to defend against malicious image inputs. Report issue for preceding element",
+    "masked_text": "Jailbreaks on LLMs can be categorized into two primary categories: malicious utilization by users and attacks by third parties targeting regular users. Malicious utilization by users encompasses various techniques, such as jailbreak attacks [CITATION], prompt leakage attacks [CITATION], and prompt injection attacks [CITATION]. These attacks exploit the LLMs by providing malicious inputs to produce outputs that deviate from ethical alignment. In response, defense mechanisms have been proposed, particularly for LLMs. These defense strategies include self-reminders [CITATION], input detection [CITATION], and in-context learning [CITATION], which aim to mitigate the impact of malicious user utilization. On the other hand, attacks by third parties targeting regular users are another category, typified by indirect prompt injection attacks [CITATION]. This work focuses on addressing the former category of attacks for MLLMs to defend against malicious image inputs. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023c)",
+        "title": "Prompt injection attack against llm-integrated applications.",
+        "authors": "Yi\u00a0Liu, Gelei Deng, Yuekang Li, Kailong Wang, Tianwei Zhang, Yepang Liu, Haoyu Wang, Yan Zheng, and Yang Liu. 2023c.",
+        "journal": "arXiv preprint arXiv:2306.05499."
+      },
+      {
+        "tag": "Wei et\u00a0al. (2023)",
+        "title": "Jailbreak and guard aligned language models with only few in-context demonstrations.",
+        "authors": "Zeming Wei, Yifei Wang, and Yisen Wang. 2023.",
+        "journal": "arXiv preprint arXiv:2310.06387."
+      },
+      {
+        "tag": "Xie et\u00a0al. (2023)",
+        "title": "Defending chatgpt against jailbreak attack via self-reminders.",
+        "authors": "Yueqi Xie, Jingwei Yi, Jiawei Shao, Justin Curl, Lingjuan Lyu, Qifeng Chen, Xing Xie, and Fangzhao Wu. 2023.",
+        "journal": "Nature Machine Intelligence, pages 1\u201311."
+      },
+      {
+        "tag": "Shayegani et\u00a0al. (2023)",
+        "title": "Jailbreak in pieces: Compositional adversarial attacks on multi-modal language models.",
+        "authors": "Erfan Shayegani, Yue Dong, and Nael\u00a0B. Abu-Ghazaleh. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Yi et\u00a0al. (2023)",
+        "title": "Benchmarking and defending against indirect prompt injection attacks on large language models.",
+        "authors": "Jingwei Yi, Yueqi Xie, Bin Zhu, Keegan Hines, Emre Kiciman, Guangzhong Sun, Xing Xie, and Fangzhao Wu. 2023.",
+        "journal": "arXiv preprint arXiv:2312.14197."
+      },
+      {
+        "tag": "Greshake et\u00a0al. (2023)",
+        "title": "More than you\u2019ve asked for: A comprehensive analysis of novel prompt injection threats to application-integrated large language models.",
+        "authors": "Kai Greshake, Sahar Abdelnabi, Shailesh Mishra, Christoph Endres, Thorsten Holz, and Mario Fritz. 2023.",
+        "journal": "arXiv preprint arXiv:2302.12173."
+      },
+      {
+        "tag": "Yao et\u00a0al. (2024)",
+        "title": "Fuzzllm: A novel and universal fuzzing framework for proactively discovering jailbreak vulnerabilities in large language models.",
+        "authors": "Dongyu Yao, Jianshu Zhang, Ian\u00a0G Harris, and Marcel Carlsson. 2024.",
+        "journal": "InICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 4485\u20134489. IEEE."
+      },
+      {
+        "tag": "Perez and Ribeiro (2022)",
+        "title": "Ignore previous prompt: Attack techniques for language models.",
+        "authors": "F\u00e1bio Perez and Ian Ribeiro. 2022.",
+        "journal": "arXiv preprint arXiv:2211.09527."
+      },
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Kang et\u00a0al. (2023)",
+        "title": "Exploiting programmatic behavior of llms: Dual-use through standard security attacks.",
+        "authors": "Daniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin, Matei Zaharia, and Tatsunori Hashimoto. 2023.",
+        "journal": "arXiv preprint arXiv:2302.05733."
+      }
+    ]
+  },
+  "S2.SS0.SSS0.Px3.p1": {
+    "text": "Alignment in agent behavior, initially proposed in Leike et\u00a0al. ( 2018 ) , ensures actions conform to human intentions.\nReinforcement Learning from Human Feedback (RLHF) (Ouyang et\u00a0al., 2022 ; Stiennon et\u00a0al., 2020 ; Nakano et\u00a0al., 2021 ; Bai et\u00a0al., 2022a , b ; Glaese et\u00a0al., 2022 ; Ziegler et\u00a0al., 2019 ; Wu et\u00a0al., 2021 ; Scheurer et\u00a0al., 2023 ) employs methods like proximal policy optimization (PPO) (Schulman et\u00a0al., 2017 ) to maximize the outputs\u2019 reward. InstructGPT\u2019s successful alignment in GPT-3 (Brown et\u00a0al., 2020 ) also involves supervised finetuning (SFT). In visual models, alignment studies (Hao et\u00a0al., 2022 ; Lee et\u00a0al., 2023 ; Wu et\u00a0al., 2023 ) focus on interpreting specific visual signals (Lee et\u00a0al., 2023 ) , with ongoing challenges in balancing human preferences and image fidelity. RRHF (Yuan et\u00a0al., 2023 ) and RAFT (Dong et\u00a0al., 2023 ; Diao et\u00a0al., 2023 ) leverage the LLM to bootstrap responses, and then finetune the model on the high-reward subset of these collected samples. Rafailov et\u00a0al. ( 2023 ) propose direct preference optimization (DPO), which directly utilizes the human preference as sample weights during fine-tuning. Report issue for preceding element",
+    "masked_text": "Alignment in agent behavior, initially proposed in [CITATION], ensures actions conform to human intentions. Reinforcement Learning from Human Feedback (RLHF) [CITATION] employs methods like proximal policy optimization (PPO) [CITATION] to maximize the outputs\u2019 reward. InstructGPT\u2019s successful alignment in GPT-3 [CITATION] also involves supervised finetuning (SFT). In visual models, alignment studies [CITATION] focus on interpreting specific visual signals [CITATION], with ongoing challenges in balancing human preferences and image fidelity. RRHF [CITATION] and RAFT [CITATION] leverage the LLM to bootstrap responses, and then finetune the model on the high-reward subset of these collected samples. [CITATION] propose direct preference optimization (DPO), which directly utilizes the human preference as sample weights during fine-tuning. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Nakano et\u00a0al. (2021)",
+        "title": "Webgpt: Browser-assisted question-answering with human feedback.",
+        "authors": "Reiichiro Nakano, Jacob Hilton, Suchir Balaji, Jeff Wu, Long Ouyang, Christina Kim, Christopher Hesse, Shantanu Jain, Vineet Kosaraju, William Saunders, et\u00a0al. 2021.",
+        "journal": "arXiv preprint arXiv:2112.09332."
+      },
+      {
+        "tag": "Schulman et\u00a0al. (2017)",
+        "title": "Proximal policy optimization algorithms.",
+        "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. 2017.",
+        "journal": "arXiv preprint arXiv:1707.06347."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022b)",
+        "title": "Constitutional ai: Harmlessness from ai feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al. 2022b.",
+        "journal": "arXiv preprint arXiv:2212.08073."
+      },
+      {
+        "tag": "Dong et\u00a0al. (2023)",
+        "title": "Raft: Reward ranked finetuning for generative foundation model alignment.",
+        "authors": "Hanze Dong, Wei Xiong, Deepanshu Goyal, Yihan Zhang, Winnie Chow, Rui Pan, Shizhe Diao, Jipeng Zhang, Kashun Shum, and Tong Zhang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Wu et\u00a0al. (2021)",
+        "title": "Recursively summarizing books with human feedback.",
+        "authors": "Jeff Wu, Long Ouyang, Daniel\u00a0M Ziegler, Nisan Stiennon, Ryan Lowe, Jan Leike, and Paul Christiano. 2021.",
+        "journal": "arXiv preprint arXiv:2109.10862."
+      },
+      {
+        "tag": "Diao et\u00a0al. (2023)",
+        "title": "Lmflow: An extensible toolkit for finetuning and inference of large foundation models.",
+        "authors": "Shizhe Diao, Rui Pan, Hanze Dong, Ka\u00a0Shun Shum, Jipeng Zhang, Wei Xiong, and Tong Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2306.12420."
+      },
+      {
+        "tag": "Stiennon et\u00a0al. (2020)",
+        "title": "Learning to summarize with human feedback.",
+        "authors": "Nisan Stiennon, Long Ouyang, Jeffrey Wu, Daniel Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, and Paul\u00a0F Christiano. 2020.",
+        "journal": "Advances in Neural Information Processing Systems, 33:3008\u20133021."
+      },
+      {
+        "tag": "Wu et\u00a0al. (2023)",
+        "title": "Better aligning text-to-image models with human preference.",
+        "authors": "Xiaoshi Wu, Keqiang Sun, Feng Zhu, Rui Zhao, and Hongsheng Li. 2023.",
+        "journal": "arXiv preprint arXiv:2303.14420."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022a)",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al. 2022a.",
+        "journal": "arXiv preprint arXiv:2204.05862."
+      },
+      {
+        "tag": "Scheurer et\u00a0al. (2023)",
+        "title": "Training language models with language feedback at scale.",
+        "authors": "Jeremy Scheurer, Jon\u00a0Ander Campos, Tomasz Korbak, Jun\u00a0Shern Chan, Angelica Chen, Kyunghyun Cho, and Ethan Perez. 2023.",
+        "journal": "arXiv preprint arXiv:2303.16755."
+      },
+      {
+        "tag": "Brown et\u00a0al. (2020)",
+        "title": "Language models are few-shot learners.",
+        "authors": "Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared\u00a0D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, et\u00a0al. 2020.",
+        "journal": "Advances in neural information processing systems, 33:1877\u20131901."
+      },
+      {
+        "tag": "Lee et\u00a0al. (2023)",
+        "title": "Aligning text-to-image models using human feedback.",
+        "authors": "Kimin Lee, Hao Liu, Moonkyung Ryu, Olivia Watkins, Yuqing Du, Craig Boutilier, Pieter Abbeel, Mohammad Ghavamzadeh, and Shixiang\u00a0Shane Gu. 2023.",
+        "journal": "arXiv preprint arXiv:2302.12192."
+      },
+      {
+        "tag": "Leike et\u00a0al. (2018)",
+        "title": "Scalable agent alignment via reward modeling: a research direction.",
+        "authors": "Jan Leike, David Krueger, Tom Everitt, Miljan Martic, Vishal Maini, and Shane Legg. 2018.",
+        "journal": "arXiv preprint arXiv:1811.07871."
+      },
+      {
+        "tag": "Ziegler et\u00a0al. (2019)",
+        "title": "Fine-tuning language models from human preferences.",
+        "authors": "Daniel\u00a0M Ziegler, Nisan Stiennon, Jeffrey Wu, Tom\u00a0B Brown, Alec Radford, Dario Amodei, Paul Christiano, and Geoffrey Irving. 2019.",
+        "journal": "arXiv preprint arXiv:1909.08593."
+      },
+      {
+        "tag": "Hao et\u00a0al. (2022)",
+        "title": "Optimizing prompts for text-to-image generation.",
+        "authors": "Yaru Hao, Zewen Chi, Li\u00a0Dong, and Furu Wei. 2022.",
+        "journal": "arXiv preprint arXiv:2212.09611."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. (2022)",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu\u00a0Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al. 2022.",
+        "journal": "Advances in Neural Information Processing Systems, 35:27730\u201327744."
+      },
+      {
+        "tag": "Rafailov et\u00a0al. (2023)",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D. Manning, and Chelsea Finn. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Glaese et\u00a0al. (2022)",
+        "title": "Improving alignment of dialogue agents via targeted human judgements.",
+        "authors": "Amelia Glaese, Nat McAleese, Maja Tr\u0119bacz, John Aslanides, Vlad Firoiu, Timo Ewalds, Maribeth Rauh, Laura Weidinger, Martin Chadwick, Phoebe Thacker, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2209.14375."
+      },
+      {
+        "tag": "Yuan et\u00a0al. (2023)",
+        "title": "Rrhf: Rank responses to align language models with human feedback without tears.",
+        "authors": "Zheng Yuan, Hongyi Yuan, Chuanqi Tan, Wei Wang, Songfang Huang, and Fei Huang. 2023.",
+        "journal": "arXiv preprint arXiv:2304.05302."
+      }
+    ]
+  },
+  "S3.p1": {
+    "text": "As shown in Figure 1 , we discover state-of-the-art open-source multi-modal large language models (MLLMs), such as LLaVA (Liu et\u00a0al., 2023a ) , are presented with relevant input images that have malicious content, they become prone to generating sensitive or potentially harmful responses, despite the model\u2019s ability to recognize and refuse to provide advice on such topics when the input is purely text-based.\nA recent study Liu et\u00a0al. ( 2023b ) also point out that both related natural images, and OCR images containing the relevant phrase, can mislead the model into generating harmful content. Report issue for preceding element",
+    "masked_text": "As shown in Figure 1, we discover state-of-the-art open-source multi-modal large language models (MLLMs), such as LLaVA [CITATION], are presented with relevant input images that have malicious content, they become prone to generating sensitive or potentially harmful responses, despite the model\u2019s ability to recognize and refuse to provide advice on such topics when the input is purely text-based. A recent study [CITATION] also point out that both related natural images, and OCR images containing the relevant phrase, can mislead the model into generating harmful content.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Query-relevant images jailbreak large multi-modal models.",
+        "authors": "Xin Liu, Yichen Zhu, Yunshi Lan, Chao Yang, and Yu\u00a0Qiao. 2023b.",
+        "journal": ""
+      }
+    ]
+  },
+  "S3.p2": {
+    "text": "Therefore, we make further analysis on the MLLM\u2019s outputs, and observe the following: For MLLMs that are based on instruction-tuned LLMs (e.g., Vicuna-based LLaVA), given related images that contain malicious content as inputs, the likelihood for generating harmful responses becomes markedly higher compared with text-only inputs.\nSpecifically, we select six most common scenarios from MMSafetyBench (Liu et\u00a0al., 2023b ) as specified in Table 1 , and create a safe response and a harmful one for each query.\nAs demonstrated in Table 2 , the perplexity of harmful responses is significantly higher than that for harmless ones for text-only inputs, but this pattern does not hold for image inputs. Report issue for preceding element",
+    "masked_text": "Therefore, we make further analysis on the MLLM\u2019s outputs, and observe the following: For MLLMs that are based on instruction-tuned LLMs (e.g., Vicuna-based LLaVA), given related images that contain malicious content as inputs, the likelihood for generating harmful responses becomes markedly higher compared with text-only inputs. Specifically, we select six most common scenarios from MMSafetyBench [CITATION] as specified in Table 1, and create a safe response and a harmful one for each query. As demonstrated in Table 2, the perplexity of harmful responses is significantly higher than that for harmless ones for text-only inputs, but this pattern does not hold for image inputs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Query-relevant images jailbreak large multi-modal models.",
+        "authors": "Xin Liu, Yichen Zhu, Yunshi Lan, Chao Yang, and Yu\u00a0Qiao. 2023b.",
+        "journal": ""
+      }
+    ]
+  },
+  "S3.p3": {
+    "text": "Recent research (Kotha et\u00a0al., 2023 ) indicates that LLMs aligned for safety using the English language do not perform well in defending against attacks in other languages. Hence, we hypothesize that for image-text aligned MLLMs, images act as a \u201cforeign language\", offering semantic parallels to textual inputs. However, unlike their textual counterparts, image-based inputs have not been subject to the same level of instruction tuning or alignment. This discrepancy appears to be a contributing factor to the models\u2019 increased susceptibility to generating harmful content in response to image inputs. Report issue for preceding element",
+    "masked_text": "Recent research [CITATION] indicates that LLMs aligned for safety using the English language do not perform well in defending against attacks in other languages. Hence, we hypothesize that for image-text aligned MLLMs, images act as a \u201cforeign language\", offering semantic parallels to textual inputs. However, unlike their textual counterparts, image-based inputs have not been subject to the same level of instruction tuning or alignment. This discrepancy appears to be a contributing factor to the models\u2019 increased susceptibility to generating harmful content in response to image inputs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Kotha et\u00a0al. (2023)",
+        "title": "Understanding catastrophic forgetting in language models via implicit inference.",
+        "authors": "Suhas Kotha, Jacob\u00a0Mitchell Springer, and Aditi Raghunathan. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10105."
+      }
+    ]
+  },
+  "S4.p1": {
+    "text": "In our preliminary investigation, we adopted the supervised fine-tuning (SFT) strategy, which is the conventional approach for aligning text-based LLMs. To construct our image-text paired dataset and perform SFT, we follow subsequent steps. Report issue for preceding element",
+    "masked_text": "In our preliminary investigation, we adopted the supervised fine-tuning (SFT) strategy, which is the conventional approach for aligning text-based LLMs. To construct our image-text paired dataset and perform SFT, we follow subsequent steps.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.p2": {
+    "text": "We first leverage an existing text-based dataset SafeRLHF Dai et\u00a0al. ( 2023a ) that comprises malicious user queries, each paired with two responses generated by the LLM. These responses are accompanied by annotations indicating their harmfulness. Inspired by Liu et\u00a0al. ( 2023b ) , for each query, we generated two types of images. Firstly, we created stable-diffusion-generated images, which visually represent the content associated with the user query. Secondly, we produced OCR images that contain the keywords present in the user query. For SFT, we retain the harmless responses as ground truths. Consequently, we curated a collection of approximately 60,000 image-text pairs. Detailed curation procedure is given in the Section A . Report issue for preceding element",
+    "masked_text": "We first leverage an existing text-based dataset SafeRLHF [CITATION] that comprises malicious user queries, each paired with two responses generated by the LLM. These responses are accompanied by annotations indicating their harmfulness. Inspired by [CITATION], for each query, we generated two types of images. Firstly, we created stable-diffusion-generated images, which visually represent the content associated with the user query. Secondly, we produced OCR images that contain the keywords present in the user query. For SFT, we retain the harmless responses as ground truths. Consequently, we curated a collection of approximately 60,000 image-text pairs. Detailed curation procedure is given in the Section A.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Dai et\u00a0al. (2023a)",
+        "title": "Safe rlhf: Safe reinforcement learning from human feedback.",
+        "authors": "Josef Dai, Xuehai Pan, Ruiyang Sun, Jiaming Ji, Xinbo Xu, Mickel Liu, Yizhou Wang, and Yaodong Yang. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Query-relevant images jailbreak large multi-modal models.",
+        "authors": "Xin Liu, Yichen Zhu, Yunshi Lan, Chao Yang, and Yu\u00a0Qiao. 2023b.",
+        "journal": ""
+      }
+    ]
+  },
+  "S4.p3": {
+    "text": "Subsequently, we employ this image-text paired dataset to perform supervised fine-tuning on the LLaVA-7B model (Liu et\u00a0al., 2023a ) . We demonstrate the results evaluated on MMSafetyBench (Liu et\u00a0al., 2023b ) in Table 3 , which shows that the performance gain achieved by the SFT approach is marginal. In addition, in some scenarios, SFT even elevates the attack success rate (ASR). We assume this is due to the continuous nature of image inputs, which makes alignment more difficult. Furthermore, we observe that alignment tuning also severely deteriorates the original capability possessed by the MLLM (detailed in Table 6 ). Report issue for preceding element",
+    "masked_text": "Subsequently, we employ this image-text paired dataset to perform supervised fine-tuning on the LLaVA-7B model [CITATION]. We demonstrate the results evaluated on MMSafetyBench [CITATION] in Table 3, which shows that the performance gain achieved by the SFT approach is marginal. In addition, in some scenarios, SFT even elevates the attack success rate (ASR). We assume this is due to the continuous nature of image inputs, which makes alignment more difficult. Furthermore, we observe that alignment tuning also severely deteriorates the original capability possessed by the MLLM (detailed in Table 6).Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Query-relevant images jailbreak large multi-modal models.",
+        "authors": "Xin Liu, Yichen Zhu, Yunshi Lan, Chao Yang, and Yu\u00a0Qiao. 2023b.",
+        "journal": ""
+      }
+    ]
+  },
+  "S4.p4": {
+    "text": "We summarize the disadvantages of safety fine-tuning in the context of MLLMs as follows: Report issue for preceding element",
+    "masked_text": "We summarize the disadvantages of safety fine-tuning in the context of MLLMs as follows:Report issue for preceding element",
+    "citations": []
+  },
+  "S4.p5": {
+    "text": "\u2022 The continuous nature of image as opposed to the discrete nature of text, poses a substantial challenge for alignment tuning. Achieving a comprehensive range of input images that can cover all potential scenarios is considerably more complex. Report issue for preceding element \u2022 Most MLLMs are not as robust as text-based LLMs, since the image modality is only introduced during the fine-tuning stage, using substantially less training data and shorter training durations compared to the extensive text-based pre-training processes. The conventional method of aligning based of supervised fine-tuning (SFT) or RLHF may lead to catastrophic forgetting, compromising the model\u2019s efficacy in executing standard tasks. Report issue for preceding element \u2022 The safety standard should often be customized to different scenarios and be agnostic to MLLMs: in some scenarios, the model should be able to provide certain content, which are prohibited in other scenarious, e.g., advice on sexual-related topics should be allowed for medical purposes, but should be prohibited for children. Therefore, a plug-and-play approach could be more desirable. Report issue for preceding element",
+    "masked_text": "\u2022 The continuous nature of image as opposed to the discrete nature of text, poses a substantial challenge for alignment tuning. Achieving a comprehensive range of input images that can cover all potential scenarios is considerably more complex.Report issue for preceding element \u2022 Most MLLMs are not as robust as text-based LLMs, since the image modality is only introduced during the fine-tuning stage, using substantially less training data and shorter training durations compared to the extensive text-based pre-training processes. The conventional method of aligning based of supervised fine-tuning (SFT) or RLHF may lead to catastrophic forgetting, compromising the model\u2019s efficacy in executing standard tasks.Report issue for preceding element \u2022 The safety standard should often be customized to different scenarios and be agnostic to MLLMs: in some scenarios, the model should be able to provide certain content, which are prohibited in other scenarious, e.g., advice on sexual-related topics should be allowed for medical purposes, but should be prohibited for children. Therefore, a plug-and-play approach could be more desirable.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.I1.i1.p1": {
+    "text": "The continuous nature of image as opposed to the discrete nature of text, poses a substantial challenge for alignment tuning. Achieving a comprehensive range of input images that can cover all potential scenarios is considerably more complex. Report issue for preceding element",
+    "masked_text": "The continuous nature of image as opposed to the discrete nature of text, poses a substantial challenge for alignment tuning. Achieving a comprehensive range of input images that can cover all potential scenarios is considerably more complex.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.I1.i2.p1": {
+    "text": "Most MLLMs are not as robust as text-based LLMs, since the image modality is only introduced during the fine-tuning stage, using substantially less training data and shorter training durations compared to the extensive text-based pre-training processes. The conventional method of aligning based of supervised fine-tuning (SFT) or RLHF may lead to catastrophic forgetting, compromising the model\u2019s efficacy in executing standard tasks. Report issue for preceding element",
+    "masked_text": "Most MLLMs are not as robust as text-based LLMs, since the image modality is only introduced during the fine-tuning stage, using substantially less training data and shorter training durations compared to the extensive text-based pre-training processes. The conventional method of aligning based of supervised fine-tuning (SFT) or RLHF may lead to catastrophic forgetting, compromising the model\u2019s efficacy in executing standard tasks.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.I1.i3.p1": {
+    "text": "The safety standard should often be customized to different scenarios and be agnostic to MLLMs: in some scenarios, the model should be able to provide certain content, which are prohibited in other scenarious, e.g., advice on sexual-related topics should be allowed for medical purposes, but should be prohibited for children. Therefore, a plug-and-play approach could be more desirable. Report issue for preceding element",
+    "masked_text": "The safety standard should often be customized to different scenarios and be agnostic to MLLMs: in some scenarios, the model should be able to provide certain content, which are prohibited in other scenarious, e.g., advice on sexual-related topics should be allowed for medical purposes, but should be prohibited for children. Therefore, a plug-and-play approach could be more desirable.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.p1": {
+    "text": "In this section, we introduce our novel defense paradigm termed MLLM-Protector , which addresses the challenges in defending MLLMs against malicious image inputs via a divide-and-conquer strategy. Specifically, we introduce a lightweight harm-detector to first identify whether the responses are harmful, and a detoxifier to correct the harmful contents in the response. Our method serves as a plug-and-play component that works in conjunction with any MLLMs. Notably, the components of MLLM-Protector can be trained independently, then be used directly during inference, which prevents hampering the MLLM\u2019s original capability while ensuring their safety. Report issue for preceding element",
+    "masked_text": "In this section, we introduce our novel defense paradigm termed MLLM-Protector, which addresses the challenges in defending MLLMs against malicious image inputs via a divide-and-conquer strategy. Specifically, we introduce a lightweight harm-detector to first identify whether the responses are harmful, and a detoxifier to correct the harmful contents in the response. Our method serves as a plug-and-play component that works in conjunction with any MLLMs. Notably, the components of MLLM-Protector can be trained independently, then be used directly during inference, which prevents hampering the MLLM\u2019s original capability while ensuring their safety.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.p2": {
+    "text": "In this section, we will first elaborate the model architecture of MLLM-Protector. Then, we introduce the objective and data used during training. Lastly, we illustrate how our MLLM-Protector can be incorporated with any MLLM during inference. Report issue for preceding element",
+    "masked_text": "In this section, we will first elaborate the model architecture of MLLM-Protector. Then, we introduce the objective and data used during training. Lastly, we illustrate how our MLLM-Protector can be incorporated with any MLLM during inference.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.SSS0.Px1.p1": {
+    "text": "This component is responsible for evaluating whether the output from the model contains harmful content. To achieve this, we adopt the pretrained LLM for the backbone architecture of harm detector, then adapt the model to the task of harmful content identification. Specifically, we replace the last language model head layer to a linear layer with one-dimensional output. LLMs with various sizes can be utilized to trade-off between efficiency and effectiveness. Meanwhile, since identification is much easier than generation, we only need to adopt a small LLM to reach satisfactory performance. Report issue for preceding element",
+    "masked_text": "This component is responsible for evaluating whether the output from the model contains harmful content. To achieve this, we adopt the pretrained LLM for the backbone architecture of harm detector, then adapt the model to the task of harmful content identification. Specifically, we replace the last language model head layer to a linear layer with one-dimensional output. LLMs with various sizes can be utilized to trade-off between efficiency and effectiveness. Meanwhile, since identification is much easier than generation, we only need to adopt a small LLM to reach satisfactory performance.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.SSS0.Px2.p1": {
+    "text": "A straightforward approach is to leverage a fixed sentence to replace the original harmful response, such as \u201cSorry, I can not answer this question\". However, this may result in inconsistency of the generated results and hamper the user experience. It is desirable for the responses to be harmless and also closely related to the original query. Therefore, we propose Response Detoxifier, which takes the text query and harmful response as input, and produce the corrected harmless response. To achieve this, we fine-tune a pretrained LLM with ( a a \u2062 c \u2062 c , a r \u2062 e \u2062 j , q ) subscript a \ud835\udc4e \ud835\udc50 \ud835\udc50 subscript a \ud835\udc5f \ud835\udc52 \ud835\udc57 q (\\textbf{a}_{acc},\\textbf{a}_{rej},\\textbf{q}) ( a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , q ) triplets. Report issue for preceding element",
+    "masked_text": "A straightforward approach is to leverage a fixed sentence to replace the original harmful response, such as \u201cSorry, I can not answer this question\". However, this may result in inconsistency of the generated results and hamper the user experience. It is desirable for the responses to be harmless and also closely related to the original query. Therefore, we propose Response Detoxifier, which takes the text query and harmful response as input, and produce the corrected harmless response. To achieve this, we fine-tune a pretrained LLM with (aa\u2062c\u2062c,ar\u2062e\u2062j,q)subscripta\ud835\udc4e\ud835\udc50\ud835\udc50subscripta\ud835\udc5f\ud835\udc52\ud835\udc57q(\\textbf{a}_{acc},\\textbf{a}_{rej},\\textbf{q})( a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , q ) triplets.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.SSS0.Px1.p1": {
+    "text": "The data used to train our MLLM-Protector main comes from three sources: 1) Inspired by previous works that leverage LLM to generate training data (Liu et\u00a0al., 2023a ; Zhu et\u00a0al., 2023 ) , we resort to the powerful ChatGPT to generate training data that covers diverse scenarios, and term the synthesized dataset Safe-Harm-10K. Specifically, we first set a few common scenarios e.g., malware generation, pornograph. Then, for each scenario, we prompt ChatGPT to generate a question, a safe response and a harmful response. To enable better instruction-following, we manually design in-context examples and provide them to the ChatGPT;\n2) We also utilize the pre-existing QA data that have annotations of both accepted and rejected answers for each question, e.g., SafeRLHF Dai et\u00a0al. ( 2023a ) ; 3) To prevent affecting regular image-based conversations, we collect a subset of the llava instruction tuning dataset Liu et\u00a0al. ( 2023a ) and label the responses as harmless to train the harm detector. We leave the detailed description for data generation in Section B . Report issue for preceding element",
+    "masked_text": "The data used to train our MLLM-Protector main comes from three sources: 1) Inspired by previous works that leverage LLM to generate training data [CITATION], we resort to the powerful ChatGPT to generate training data that covers diverse scenarios, and term the synthesized dataset Safe-Harm-10K. Specifically, we first set a few common scenarios e.g., malware generation, pornograph. Then, for each scenario, we prompt ChatGPT to generate a question, a safe response and a harmful response. To enable better instruction-following, we manually design in-context examples and provide them to the ChatGPT; 2) We also utilize the pre-existing QA data that have annotations of both accepted and rejected answers for each question, e.g., SafeRLHF [CITATION]; 3) To prevent affecting regular image-based conversations, we collect a subset of the llava instruction tuning dataset [CITATION] and label the responses as harmless to train the harm detector. We leave the detailed description for data generation in Section B.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhu et\u00a0al. (2023)",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Dai et\u00a0al. (2023a)",
+        "title": "Safe rlhf: Safe reinforcement learning from human feedback.",
+        "authors": "Josef Dai, Xuehai Pan, Ruiyang Sun, Jiaming Ji, Xinbo Xu, Mickel Liu, Yizhou Wang, and Yaodong Yang. 2023a.",
+        "journal": ""
+      }
+    ]
+  },
+  "S5.SS2.SSS0.Px1.p2": {
+    "text": "The training dataset has the form of: D = { ( q i , a a \u2062 c \u2062 c i , a r \u2062 e \u2062 j i ) } i = 1 N \ud835\udc37 superscript subscript superscript \ud835\udc5e \ud835\udc56 subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc4e \ud835\udc50 \ud835\udc50 subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc5f \ud835\udc52 \ud835\udc57 \ud835\udc56 1 \ud835\udc41 D=\\{(q^{i},a^{i}_{acc},a^{i}_{rej})\\}_{i=1}^{N} italic_D = { ( italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT ) } start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT , where q i subscript \ud835\udc5e \ud835\udc56 q_{i} italic_q start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , a a \u2062 c \u2062 c i subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc4e \ud835\udc50 \ud835\udc50 a^{i}_{acc} italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT and a r \u2062 e \u2062 j i subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc5f \ud835\udc52 \ud835\udc57 a^{i}_{rej} italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT stand for the i t \u2062 h superscript \ud835\udc56 \ud835\udc61 \u210e i^{th} italic_i start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT question, accepted answer and reject answer, respectively. Naturally, the accepted answer a a \u2062 c \u2062 c i subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc4e \ud835\udc50 \ud835\udc50 a^{i}_{acc} italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT is associated with harmlessness label h = 1 \u210e 1 h=1 italic_h = 1 , and for rejected answer a r \u2062 e \u2062 j i subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc5f \ud835\udc52 \ud835\udc57 a^{i}_{rej} italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , the label is h = 0 \u210e 0 h=0 italic_h = 0 . Report issue for preceding element",
+    "masked_text": "The training dataset has the form of: D={(qi,aa\u2062c\u2062ci,ar\u2062e\u2062ji)}i=1N\ud835\udc37superscriptsubscriptsuperscript\ud835\udc5e\ud835\udc56subscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc4e\ud835\udc50\ud835\udc50subscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc5f\ud835\udc52\ud835\udc57\ud835\udc561\ud835\udc41D=\\{(q^{i},a^{i}_{acc},a^{i}_{rej})\\}_{i=1}^{N}italic_D = { ( italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT ) } start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT, where qisubscript\ud835\udc5e\ud835\udc56q_{i}italic_q start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT, aa\u2062c\u2062cisubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc4e\ud835\udc50\ud835\udc50a^{i}_{acc}italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT and ar\u2062e\u2062jisubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc5f\ud835\udc52\ud835\udc57a^{i}_{rej}italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT stand for the it\u2062hsuperscript\ud835\udc56\ud835\udc61\u210ei^{th}italic_i start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT question, accepted answer and reject answer, respectively. Naturally, the accepted answer aa\u2062c\u2062cisubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc4e\ud835\udc50\ud835\udc50a^{i}_{acc}italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT is associated with harmlessness label h=1\u210e1h=1italic_h = 1, and for rejected answer ar\u2062e\u2062jisubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc5f\ud835\udc52\ud835\udc57a^{i}_{rej}italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT, the label is h=0\u210e0h=0italic_h = 0.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.SSS0.Px2.p1": {
+    "text": "We use the conventional binary cross entropy (BCE) loss to train the Harm Detector. We reformulate the dataset into the following format: D H \u2062 D = { ( q i , a i , h i ) } i = 1 2 \u2062 N subscript \ud835\udc37 \ud835\udc3b \ud835\udc37 superscript subscript superscript \ud835\udc5e \ud835\udc56 superscript \ud835\udc4e \ud835\udc56 superscript \u210e \ud835\udc56 \ud835\udc56 1 2 \ud835\udc41 D_{HD}=\\{(q^{i},a^{i},h^{i})\\}_{i=1}^{2N} italic_D start_POSTSUBSCRIPT italic_H italic_D end_POSTSUBSCRIPT = { ( italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) } start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT 2 italic_N end_POSTSUPERSCRIPT Report issue for preceding element \u2112 H \u2062 D \u2062 ( h , x ) subscript \u2112 \ud835\udc3b \ud835\udc37 h x \\displaystyle\\mathcal{L}_{HD}(\\textbf{h},\\textbf{x}) caligraphic_L start_POSTSUBSCRIPT italic_H italic_D end_POSTSUBSCRIPT ( h , x ) = \u2212 1 N \u2211 i = 1 2 \u2062 N [ h i log ( \u03d5 ( a i ) ) \\displaystyle=-\\frac{1}{N}\\sum_{i=1}^{2N}[h^{i}\\log(\\phi(\\text{a}^{i})) = - divide start_ARG 1 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT 2 italic_N end_POSTSUPERSCRIPT [ italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT roman_log ( italic_\u03d5 ( a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ) (1) + ( 1 \u2212 h i ) log ( 1 \u2212 \u03d5 ( a i ) ) ] , \\displaystyle\\left.+(1-h^{i})\\log(1-\\phi(\\text{a}^{i}))\\right], + ( 1 - italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) roman_log ( 1 - italic_\u03d5 ( a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ) ] , where h i \u2208 { 0 , 1 } superscript \u210e \ud835\udc56 0 1 h^{i}\\in\\{0,1\\} italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT \u2208 { 0 , 1 } is the harmfulness label associated with the answer a i superscript \ud835\udc4e \ud835\udc56 a^{i} italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , \u03d5 italic-\u03d5 \\phi italic_\u03d5 represents the harm detector. Note that we only use the MLLM\u2019s response as input to the harm detector. Report issue for preceding element",
+    "masked_text": "We use the conventional binary cross entropy (BCE) loss to train the Harm Detector. We reformulate the dataset into the following format: DH\u2062D={(qi,ai,hi)}i=12\u2062Nsubscript\ud835\udc37\ud835\udc3b\ud835\udc37superscriptsubscriptsuperscript\ud835\udc5e\ud835\udc56superscript\ud835\udc4e\ud835\udc56superscript\u210e\ud835\udc56\ud835\udc5612\ud835\udc41D_{HD}=\\{(q^{i},a^{i},h^{i})\\}_{i=1}^{2N}italic_D start_POSTSUBSCRIPT italic_H italic_D end_POSTSUBSCRIPT = { ( italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT , italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) } start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT 2 italic_N end_POSTSUPERSCRIPTReport issue for preceding element \u2112H\u2062D\u2062(h,x)subscript\u2112\ud835\udc3b\ud835\udc37hx\\displaystyle\\mathcal{L}_{HD}(\\textbf{h},\\textbf{x})caligraphic_L start_POSTSUBSCRIPT italic_H italic_D end_POSTSUBSCRIPT ( h , x ) =\u22121N\u2211i=12\u2062N[hilog(\u03d5(ai))\\displaystyle=-\\frac{1}{N}\\sum_{i=1}^{2N}[h^{i}\\log(\\phi(\\text{a}^{i}))= - divide start_ARG 1 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT 2 italic_N end_POSTSUPERSCRIPT [ italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT roman_log ( italic_\u03d5 ( a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ) (1) +(1\u2212hi)log(1\u2212\u03d5(ai))],\\displaystyle\\left.+(1-h^{i})\\log(1-\\phi(\\text{a}^{i}))\\right],+ ( 1 - italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) roman_log ( 1 - italic_\u03d5 ( a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ) ] , where hi\u2208{0,1}superscript\u210e\ud835\udc5601h^{i}\\in\\{0,1\\}italic_h start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT \u2208 { 0 , 1 } is the harmfulness label associated with the answer aisuperscript\ud835\udc4e\ud835\udc56a^{i}italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT, \u03d5italic-\u03d5\\phiitalic_\u03d5 represents the harm detector. Note that we only use the MLLM\u2019s response as input to the harm detector.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.SSS0.Px3.p1": {
+    "text": "To train the detoxifier, we use the auto-regressive language modeling loss, which aims at enabling the detoxifier to remove the harmful content from the original response. The training objective has the following formulation: Report issue for preceding element \u2112 Detox \u2062 ( a a \u2062 c \u2062 c , a r \u2062 e \u2062 j , q ) subscript \u2112 Detox subscript a \ud835\udc4e \ud835\udc50 \ud835\udc50 subscript a \ud835\udc5f \ud835\udc52 \ud835\udc57 q \\displaystyle\\mathcal{L_{\\text{Detox}}}(\\textbf{a}_{acc},\\textbf{a}_{rej},%\n\\textbf{q}) caligraphic_L start_POSTSUBSCRIPT Detox end_POSTSUBSCRIPT ( a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , q ) = \\displaystyle= = (2) \u2212 1 N \u2062 \u2211 i = 1 N \u2211 t = 1 L log \u2061 p 1 \ud835\udc41 superscript subscript \ud835\udc56 1 \ud835\udc41 subscript superscript \ud835\udc3f \ud835\udc61 1 \ud835\udc5d \\displaystyle-\\frac{1}{N}\\sum_{i=1}^{N}\\sum^{L}_{t=1}\\log p - divide start_ARG 1 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT \u2211 start_POSTSUPERSCRIPT italic_L end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_t = 1 end_POSTSUBSCRIPT roman_log italic_p [ a a \u2062 c \u2062 c i , t | \u2131 \u2062 ( a c \u2062 o \u2062 r \u2062 r i ( < t ) , a r \u2062 e \u2062 j i , q i ) ] , delimited-[] conditional subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc61 \ud835\udc4e \ud835\udc50 \ud835\udc50 \u2131 subscript superscript \ud835\udc4e annotated \ud835\udc56 absent \ud835\udc61 \ud835\udc50 \ud835\udc5c \ud835\udc5f \ud835\udc5f subscript superscript \ud835\udc4e \ud835\udc56 \ud835\udc5f \ud835\udc52 \ud835\udc57 superscript \ud835\udc5e \ud835\udc56 \\displaystyle\\left[a^{i,t}_{acc}|\\mathcal{F}(a^{i,(<t)}_{corr},a^{i}_{rej},q^{%\ni})\\right], [ italic_a start_POSTSUPERSCRIPT italic_i , italic_t end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT | caligraphic_F ( italic_a start_POSTSUPERSCRIPT italic_i , ( < italic_t ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_c italic_o italic_r italic_r end_POSTSUBSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ] , where \u2131 \u2131 \\mathcal{F} caligraphic_F is the detoxifier; a a \u2062 c \u2062 c subscript a \ud835\udc4e \ud835\udc50 \ud835\udc50 \\textbf{a}_{acc} a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT and a r \u2062 e \u2062 j subscript a \ud835\udc5f \ud835\udc52 \ud835\udc57 \\textbf{a}_{rej} a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT are the accepted and rejected answer, respectively. a c \u2062 o \u2062 r \u2062 r subscript \ud835\udc4e \ud835\udc50 \ud835\udc5c \ud835\udc5f \ud835\udc5f a_{corr} italic_a start_POSTSUBSCRIPT italic_c italic_o italic_r italic_r end_POSTSUBSCRIPT is the corrected answer generated by the detoxifier. The training aims at enabling the detoxifier to generate the harmless answer given the user query and the harmful answer. Report issue for preceding element",
+    "masked_text": "To train the detoxifier, we use the auto-regressive language modeling loss, which aims at enabling the detoxifier to remove the harmful content from the original response. The training objective has the following formulation:Report issue for preceding element \u2112Detox\u2062(aa\u2062c\u2062c,ar\u2062e\u2062j,q)subscript\u2112Detoxsubscripta\ud835\udc4e\ud835\udc50\ud835\udc50subscripta\ud835\udc5f\ud835\udc52\ud835\udc57q\\displaystyle\\mathcal{L_{\\text{Detox}}}(\\textbf{a}_{acc},\\textbf{a}_{rej},% \\textbf{q})caligraphic_L start_POSTSUBSCRIPT Detox end_POSTSUBSCRIPT ( a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT , a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , q ) =\\displaystyle== (2) \u22121N\u2062\u2211i=1N\u2211t=1Llog\u2061p1\ud835\udc41superscriptsubscript\ud835\udc561\ud835\udc41subscriptsuperscript\ud835\udc3f\ud835\udc611\ud835\udc5d\\displaystyle-\\frac{1}{N}\\sum_{i=1}^{N}\\sum^{L}_{t=1}\\log p- divide start_ARG 1 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT \u2211 start_POSTSUPERSCRIPT italic_L end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_t = 1 end_POSTSUBSCRIPT roman_log italic_p [aa\u2062c\u2062ci,t|\u2131\u2062(ac\u2062o\u2062r\u2062ri(<t),ar\u2062e\u2062ji,qi)],delimited-[]conditionalsubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc61\ud835\udc4e\ud835\udc50\ud835\udc50\u2131subscriptsuperscript\ud835\udc4eannotated\ud835\udc56absent\ud835\udc61\ud835\udc50\ud835\udc5c\ud835\udc5f\ud835\udc5fsubscriptsuperscript\ud835\udc4e\ud835\udc56\ud835\udc5f\ud835\udc52\ud835\udc57superscript\ud835\udc5e\ud835\udc56\\displaystyle\\left[a^{i,t}_{acc}|\\mathcal{F}(a^{i,(<t)}_{corr},a^{i}_{rej},q^{% i})\\right],[ italic_a start_POSTSUPERSCRIPT italic_i , italic_t end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT | caligraphic_F ( italic_a start_POSTSUPERSCRIPT italic_i , ( < italic_t ) end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_c italic_o italic_r italic_r end_POSTSUBSCRIPT , italic_a start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT , italic_q start_POSTSUPERSCRIPT italic_i end_POSTSUPERSCRIPT ) ] , where \u2131\u2131\\mathcal{F}caligraphic_F is the detoxifier; aa\u2062c\u2062csubscripta\ud835\udc4e\ud835\udc50\ud835\udc50\\textbf{a}_{acc}a start_POSTSUBSCRIPT italic_a italic_c italic_c end_POSTSUBSCRIPT and ar\u2062e\u2062jsubscripta\ud835\udc5f\ud835\udc52\ud835\udc57\\textbf{a}_{rej}a start_POSTSUBSCRIPT italic_r italic_e italic_j end_POSTSUBSCRIPT are the accepted and rejected answer, respectively. ac\u2062o\u2062r\u2062rsubscript\ud835\udc4e\ud835\udc50\ud835\udc5c\ud835\udc5f\ud835\udc5fa_{corr}italic_a start_POSTSUBSCRIPT italic_c italic_o italic_r italic_r end_POSTSUBSCRIPT is the corrected answer generated by the detoxifier. The training aims at enabling the detoxifier to generate the harmless answer given the user query and the harmful answer.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.SSS0.Px4.p1": {
+    "text": "During inference, the output from the MLLM is first passed to the harm detector to identify whether it contains harmful content. If the response is identified as harmful, it will then be passed to the response detoxifier, which will remove the harmful content from the response. The overall algorithm is illustrated as in Algorithm 1 . Report issue for preceding element",
+    "masked_text": "During inference, the output from the MLLM is first passed to the harm detector to identify whether it contains harmful content. If the response is identified as harmful, it will then be passed to the response detoxifier, which will remove the harmful content from the response. The overall algorithm is illustrated as in Algorithm 1.Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS1.p1": {
+    "text": "For the harm detector, we adopt Open-LLaMA-3B model from Geng and Liu ( 2023 ) . For the detoxifier, we utilize LLaMA-7B (Touvron et\u00a0al., 2023 ) . For the harm detector, we perform tuning for 3 epochs using LoRA with rank 32, batch size is set to 32, and the learning rate is set to 2 \u2062 e \u2212 5 2 superscript \ud835\udc52 5 2e^{-5} 2 italic_e start_POSTSUPERSCRIPT - 5 end_POSTSUPERSCRIPT ; For the detoxifier, we finetune the model for 3 epochs using LoRA with rank 128, batch size is set to 32, and the learning rate is set to 1 \u2062 e \u2212 4 1 superscript \ud835\udc52 4 1e^{-4} 1 italic_e start_POSTSUPERSCRIPT - 4 end_POSTSUPERSCRIPT . The components are both trained on 8 A40 GPUs using deepspeed with bfloat16. The training takes around 1 hour for harm detector and 3 hours for the detoxifier. Report issue for preceding element",
+    "masked_text": "For the harm detector, we adopt Open-LLaMA-3B model from [CITATION]. For the detoxifier, we utilize LLaMA-7B [CITATION]. For the harm detector, we perform tuning for 3 epochs using LoRA with rank 32, batch size is set to 32, and the learning rate is set to 2\u2062e\u221252superscript\ud835\udc5252e^{-5}2 italic_e start_POSTSUPERSCRIPT - 5 end_POSTSUPERSCRIPT; For the detoxifier, we finetune the model for 3 epochs using LoRA with rank 128, batch size is set to 32, and the learning rate is set to 1\u2062e\u221241superscript\ud835\udc5241e^{-4}1 italic_e start_POSTSUPERSCRIPT - 4 end_POSTSUPERSCRIPT. The components are both trained on 8 A40 GPUs using deepspeed with bfloat16. The training takes around 1 hour for harm detector and 3 hours for the detoxifier.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Geng and Liu (2023)",
+        "title": "Openllama: An open reproduction of llama.",
+        "authors": "Xinyang Geng and Hao Liu. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2302.13971."
+      }
+    ]
+  },
+  "S6.SS2.p1": {
+    "text": "We conduct our main experiments on the recently proposed MM-SafetyBench. Each question is associated four types of inputs: 1) text-only, which refers to using only textual prompts; 2) stable-diffusion (SD) images, which are images generated by the stable diffusion (Rombach et\u00a0al., 2022 ) that are related to the query; 3) OCR images with key words of the malicious query; 4) SD+OCR, which are stable diffusion-generated images subtitled by the OCR. We follow Rombach et\u00a0al. ( 2022 ) to use GPT for assessing whether the generate the responses contain harmful content. As demonstrated in Table 4 and Figure 2 , we show that our MLLM-Protector is able to significantly decrease the attack success rate (ASR) of the malicious queries. Specifically, for typical scenarios, such as illegal activity and hate speech, our method is able to almost completely prevent all harmful outputs. Report issue for preceding element",
+    "masked_text": "We conduct our main experiments on the recently proposed MM-SafetyBench. Each question is associated four types of inputs: 1) text-only, which refers to using only textual prompts; 2) stable-diffusion (SD) images, which are images generated by the stable diffusion [CITATION] that are related to the query; 3) OCR images with key words of the malicious query; 4) SD+OCR, which are stable diffusion-generated images subtitled by the OCR. We follow [CITATION] to use GPT for assessing whether the generate the responses contain harmful content. As demonstrated in Table 4 and Figure 2, we show that our MLLM-Protector is able to significantly decrease the attack success rate (ASR) of the malicious queries. Specifically, for typical scenarios, such as illegal activity and hate speech, our method is able to almost completely prevent all harmful outputs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Rombach et\u00a0al. (2022)",
+        "title": "High-resolution image synthesis with latent diffusion models.",
+        "authors": "Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj\u00f6rn Ommer. 2022.",
+        "journal": ""
+      }
+    ]
+  },
+  "S6.SS3.p1": {
+    "text": "Furthermore, we conducted experiments on the more challenging FigStep benchmark Gong et\u00a0al. ( 2023 ) . This benchmark is similar to the OCR task in MMSafetyBench, which represent harmful instructions using images and feed into MLLMs through the image encoder, and then uses benign text prompts to induce VLMs to output content that violates common AI safety policies. As shown in table 5 , the attack success rate is very high on both LLaVA-7B and LLaVA-13B, which even reaches nearly 100% in some scenarios. This result further illustrates the current limitation of MLLMs\u2019 defense agains malicious image queries.\nHowever, our MLLM-Protector demonstrates robust defense performance on this benchmark, effectively reducing the ASR to nearly zero for most scenarios. Report issue for preceding element",
+    "masked_text": "Furthermore, we conducted experiments on the more challenging FigStep benchmark [CITATION]. This benchmark is similar to the OCR task in MMSafetyBench, which represent harmful instructions using images and feed into MLLMs through the image encoder, and then uses benign text prompts to induce VLMs to output content that violates common AI safety policies. As shown in table 5, the attack success rate is very high on both LLaVA-7B and LLaVA-13B, which even reaches nearly 100% in some scenarios. This result further illustrates the current limitation of MLLMs\u2019 defense agains malicious image queries. However, our MLLM-Protector demonstrates robust defense performance on this benchmark, effectively reducing the ASR to nearly zero for most scenarios.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Gong et\u00a0al. (2023)",
+        "title": "Figstep: Jailbreaking large vision-language models via typographic visual prompts.",
+        "authors": "Yichen Gong, Delong Ran, Jinyuan Liu, Conglei Wang, Tianshuo Cong, Anyu Wang, Sisi Duan, and Xiaoyun Wang. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "S7.p1": {
+    "text": "In Table 6 , we use standard MLLM benchmarks, namely GQA (Hudson and Manning, 2019 ) and MMVet (Yu et\u00a0al., 2023 ) , to evaluate three variants of LLaVA: the original version, LLaVA after safety fine-tuning, and LLaVA with the MLLM protector. We find that safety fine-tuning significantly reduces the model\u2019s original capabilities. This is because the image modality for most MLLMs is incorporated only during the fine-tuning stage, which involves fewer training samples and iterations compared to text-based pretraining. Consequently, MLLMs are more susceptible to catastrophic forgetting of their image capabilities compared to LLMs\u2019 text capabilities. On the other hand, since our MLLM-Protector is a plug-and-play method that does not require training the MLLM, the potential performance degradation is successfully bypassed. Report issue for preceding element",
+    "masked_text": "In Table 6, we use standard MLLM benchmarks, namely GQA [CITATION] and MMVet [CITATION], to evaluate three variants of LLaVA: the original version, LLaVA after safety fine-tuning, and LLaVA with the MLLM protector. We find that safety fine-tuning significantly reduces the model\u2019s original capabilities. This is because the image modality for most MLLMs is incorporated only during the fine-tuning stage, which involves fewer training samples and iterations compared to text-based pretraining. Consequently, MLLMs are more susceptible to catastrophic forgetting of their image capabilities compared to LLMs\u2019 text capabilities. On the other hand, since our MLLM-Protector is a plug-and-play method that does not require training the MLLM, the potential performance degradation is successfully bypassed.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Mm-vet: Evaluating large multimodal models for integrated capabilities.",
+        "authors": "Weihao Yu, Zhengyuan Yang, Linjie Li, Jianfeng Wang, Kevin Lin, Zicheng Liu, Xinchao Wang, and Lijuan Wang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Hudson and Manning (2019)",
+        "title": "Gqa: A new dataset for real-world visual reasoning and compositional question answering.",
+        "authors": "Drew\u00a0A. Hudson and Christopher\u00a0D. Manning. 2019.",
+        "journal": ""
+      }
+    ]
+  },
+  "S8.p1": {
+    "text": "In this section, we study the performance of the harm detector, which is the key for the effectiveness of MLLM-Protector. We first combine our Safe-Harm-10K and the image-text instruction tuning data (as described in section 5.2 ) and refer to it as Image QA. Then, we separate the SafeRLHF and Image QA datasets into training and validation splits with ratio of 7:3. Afterwards, we train the harm detector using the combined training splits and conduct evaluation separately on two datasets. Report issue for preceding element",
+    "masked_text": "In this section, we study the performance of the harm detector, which is the key for the effectiveness of MLLM-Protector. We first combine our Safe-Harm-10K and the image-text instruction tuning data (as described in section 5.2) and refer to it as Image QA. Then, we separate the SafeRLHF and Image QA datasets into training and validation splits with ratio of 7:3. Afterwards, we train the harm detector using the combined training splits and conduct evaluation separately on two datasets.Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS0.SSS0.Px1.p1": {
+    "text": "We analyze the output harmlessness scores predicted by the harm detector using SafeRLHF and our own constructed Image QA dataset, which combines regular conversations with image inputs (labelled as harmless), as well as malicious query and harmful responses (labelled as harmful). As shown in figure 4 , the harm detector well distinguishes the harmful responses from the harmless ones. Report issue for preceding element",
+    "masked_text": "We analyze the output harmlessness scores predicted by the harm detector using SafeRLHF and our own constructed Image QA dataset, which combines regular conversations with image inputs (labelled as harmless), as well as malicious query and harmful responses (labelled as harmful). As shown in figure 4, the harm detector well distinguishes the harmful responses from the harmless ones.Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS0.SSS0.Px2.p1": {
+    "text": "We demonstrate the effect of pre-trained LLM\u2019s quality on the performance of the harm detector. As shown in Table 7 , we conduct experiments with LLMs including GPT-2 (Radford et\u00a0al., 2019 ) , Pythia-1.2B (Biderman et\u00a0al., 2023 ) , Open-LLaMA-3b (Geng and Liu, 2023 ) and LLaMA-7B (Touvron et\u00a0al., 2023 ) . We observe that stronger LLMs indeed leads to more accurate harm detector, while the extra gain in accuracy quickly diminishes as the size grows larger. This is because identification is a much easier task than direct generation, which does not require such a strong LLM to achieve a satisfactory result. Note that the harm detector is only forwarded once for each response, which introduces marginal inference cost. Report issue for preceding element",
+    "masked_text": "We demonstrate the effect of pre-trained LLM\u2019s quality on the performance of the harm detector. As shown in Table 7, we conduct experiments with LLMs including GPT-2 [CITATION], Pythia-1.2B [CITATION], Open-LLaMA-3b [CITATION] and LLaMA-7B [CITATION]. We observe that stronger LLMs indeed leads to more accurate harm detector, while the extra gain in accuracy quickly diminishes as the size grows larger. This is because identification is a much easier task than direct generation, which does not require such a strong LLM to achieve a satisfactory result. Note that the harm detector is only forwarded once for each response, which introduces marginal inference cost.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Biderman et\u00a0al. (2023)",
+        "title": "Pythia: A suite for analyzing large language models across training and scaling.",
+        "authors": "Stella Biderman, Hailey Schoelkopf, Quentin Anthony, Herbie Bradley, Kyle O\u2019Brien, Eric Hallahan, Mohammad\u00a0Aflah Khan, Shivanshu Purohit, USVSN\u00a0Sai Prashanth, Edward Raff, Aviya Skowron, Lintang Sutawika, and Oskar van\u00a0der Wal. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Geng and Liu (2023)",
+        "title": "Openllama: An open reproduction of llama.",
+        "authors": "Xinyang Geng and Hao Liu. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Radford et\u00a0al. (2019)",
+        "title": "Language models are unsupervised multitask learners.",
+        "authors": "Alec Radford, Jeff Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019.",
+        "journal": ""
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2302.13971."
+      }
+    ]
+  },
+  "S9.p1": {
+    "text": "This paper presents MLLM-Protector, a novel defense paradigm for MLLMs that solves the problem in a divide-and-conquer approach. By integrating a harm detector to itentify potentially harmful outputs and a detoxifier to amend them, this method serves as a plug-and-play module that ensures the safety of MLLMs without compromising their performance. We hope this work will draw attention to the critical safety issues surrounding MLLMs and inspire future research in this area. Report issue for preceding element",
+    "masked_text": "This paper presents MLLM-Protector, a novel defense paradigm for MLLMs that solves the problem in a divide-and-conquer approach. By integrating a harm detector to itentify potentially harmful outputs and a detoxifier to amend them, this method serves as a plug-and-play module that ensures the safety of MLLMs without compromising their performance. We hope this work will draw attention to the critical safety issues surrounding MLLMs and inspire future research in this area.Report issue for preceding element",
+    "citations": []
+  },
+  "S10.p1": {
+    "text": "Although MLLM-Protector is able to effectively lower the safety risks suffered by the MLLMs, it introduces additional inference cost. Since harm detector only needs to conduct one forward pass, the additional cost is negligible for identifying harmful responses. On the other hand, the detoxifier needs to rewrite the response if it is harmful, which introduces additional computational overhead. Therefore, it is promising to design more lightweight detoxifers with strong capabilities. Report issue for preceding element",
+    "masked_text": "Although MLLM-Protector is able to effectively lower the safety risks suffered by the MLLMs, it introduces additional inference cost. Since harm detector only needs to conduct one forward pass, the additional cost is negligible for identifying harmful responses. On the other hand, the detoxifier needs to rewrite the response if it is harmful, which introduces additional computational overhead. Therefore, it is promising to design more lightweight detoxifers with strong capabilities.Report issue for preceding element",
+    "citations": []
+  },
+  "S11.p1": {
+    "text": "Jailbreaking of LLMs has been an active area of research, which investigates ways to trick the LLM into generating harmful or sensitive contents, as well as the ways to defend against such malicious queries. This area is of great significance to ensure the safety of AI. Our paper aims at defending against malicious image queries from users to the MLLMs. Report issue for preceding element",
+    "masked_text": "Jailbreaking of LLMs has been an active area of research, which investigates ways to trick the LLM into generating harmful or sensitive contents, as well as the ways to defend against such malicious queries. This area is of great significance to ensure the safety of AI. Our paper aims at defending against malicious image queries from users to the MLLMs.Report issue for preceding element",
+    "citations": []
+  }
+}

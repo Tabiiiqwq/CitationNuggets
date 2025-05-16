@@ -1,0 +1,445 @@
+{
+  "paper_id": "How Johnny Can Persu",
+  "meta": {
+    "title": "How Johnny Can Persuade LLMs to Jailbreak Them:Rethinking Persuasion to Challenge AI Safety by Humanizing LLMsThis paper contains jailbreak contents that can be offensive in nature.",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models",
+      "An Empirical Study of OpenAI API Discussions on Stack Overflow",
+      "Defense Against the Dark Prompts: Mitigating Best-of-N Jailbreaking with Prompt Evaluation",
+      "JailbreaksOverTime: Detecting Jailbreak Attacks Under Distribution Shift",
+      "How Johnny Can Persuade LLMs to Jailbreak Them: Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Dillard and Knobloch (2011)",
+        "title": "Interpersonal influence.",
+        "authors": "James\u00a0Price Dillard and Leanne\u00a0K Knobloch. 2011.",
+        "journal": "The Sage handbook of interpersonal communication, pages 389\u2013422."
+      },
+      {
+        "tag": "Mozes et\u00a0al. (2023)",
+        "title": "Use of llms for illicit purposes: Threats, prevention measures, and vulnerabilities.",
+        "authors": "Maximilian Mozes, Xuanli He, Bennett Kleinberg, and Lewis\u00a0D Griffin. 2023.",
+        "journal": "arXiv preprint arXiv:2308.12833."
+      },
+      {
+        "tag": "Xiang (2023)",
+        "title": "\u201che would still be here\u201d: Man dies by suicide after talking with ai chatbot, widow says.",
+        "authors": "Chloe Xiang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Anthropic (2023)",
+        "title": "Model card and evaluations for claude models.",
+        "authors": "Anthropic. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Brader (2005)",
+        "title": "Striking a responsive chord: How political ads motivate and persuade voters by appealing to emotions.",
+        "authors": "Ted Brader. 2005.",
+        "journal": "American Journal of Political Science, 49(2):388\u2013405."
+      },
+      {
+        "tag": "Gass and Seiter (2022)",
+        "title": "Persuasion: Social influence and compliance gaining.",
+        "authors": "Robert\u00a0H Gass and John\u00a0S Seiter. 2022.",
+        "journal": "Routledge."
+      },
+      {
+        "tag": "DiFonzo and Bordia (2011)",
+        "title": "Rumors influence: Toward a dynamic social impact theory of rumor.",
+        "authors": "Nicholas DiFonzo and Prashant Bordia. 2011.",
+        "journal": "InThe science of social influence, pages 271\u2013295. Psychology Press."
+      },
+      {
+        "tag": "Raffel et\u00a0al. (2020)",
+        "title": "Exploring the limits of transfer learning with a unified text-to-text transformer.",
+        "authors": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter\u00a0J Liu, et\u00a0al. 2020.",
+        "journal": "J. Mach. Learn. Res."
+      },
+      {
+        "tag": "Narayanan et\u00a0al. (2020)",
+        "title": "Dark patterns: Past, present, and future: The evolution of tricky user interfaces.",
+        "authors": "Arvind Narayanan, Arunesh Mathur, Marshini Chetty, and Mihir Kshirsagar. 2020.",
+        "journal": "Queue, 18(2):67\u201392."
+      },
+      {
+        "tag": "Olson and Zanna (1990)",
+        "title": "Self-inference processes: The ontario symposium, vol. 6.",
+        "authors": "James\u00a0M Olson and Mark\u00a0P Zanna. 1990.",
+        "journal": "InThis volume consists of expanded versions of papers originally presented at the Sixth Ontario Symposium on Personality and Social Psychology held at the University of Western Ontario, Jun 4-5, 1988.Lawrence Erlbaum Associates, Inc."
+      },
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Johannesen and Larson (1989)",
+        "title": "Perspectives on ethics in persuasion.",
+        "authors": "Richard\u00a0L Johannesen and C\u00a0Larson. 1989.",
+        "journal": "Persuasion: Reception and responsibility, pages 39\u201370."
+      },
+      {
+        "tag": "Alon and Kamfonas (2023)",
+        "title": "Detecting language model attacks with perplexity.",
+        "authors": "Gabriel Alon and Michael Kamfonas. 2023.",
+        "journal": "arXiv preprint arXiv:2308.14132."
+      },
+      {
+        "tag": "Perloff (2017)",
+        "title": "The Dynamics of Persuasion: Communication and Attitudes in the 21st Century.",
+        "authors": "Richard\u00a0M.. Perloff. 2017.",
+        "journal": "Routledge."
+      },
+      {
+        "tag": "Bartsch et\u00a0al. (2010)",
+        "title": "Young children\u2019s persuasion in everyday conversation: Tactics and attunement to others\u2019 mental states.",
+        "authors": "Karen Bartsch, Jennifer\u00a0Cole Wright, and David Estes. 2010.",
+        "journal": "Social Development, 19(2):394\u2013416."
+      },
+      {
+        "tag": "Gehman et\u00a0al. (2020)",
+        "title": "Realtoxicityprompts: Evaluating neural toxic degeneration in language models.",
+        "authors": "Samuel Gehman, Suchin Gururangan, Maarten Sap, Yejin Choi, and Noah\u00a0A Smith. 2020.",
+        "journal": "arXiv preprint arXiv:2009.11462."
+      },
+      {
+        "tag": "Goffman (1974)",
+        "title": "Frame analysis: An essay on the organization of experience.",
+        "authors": "Erving Goffman. 1974.",
+        "journal": "Harvard University Press."
+      },
+      {
+        "tag": "O\u2019Keefe (2016)",
+        "title": "Evidence-based advertising using persuasion principles: Predictive validity and proof of concept.",
+        "authors": "Daniel O\u2019Keefe. 2016.",
+        "journal": "European Journal of Marketing, 50(1/2):294\u2013300."
+      },
+      {
+        "tag": "Yuan et\u00a0al. (2023)",
+        "title": "Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.",
+        "authors": "Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, Jen-tse Huang, Pinjia He, Shuming Shi, and Zhaopeng Tu. 2023.",
+        "journal": "arXiv preprint arXiv:2308.06463."
+      },
+      {
+        "tag": "O\u2019keefe (2018)",
+        "title": "Persuasion.",
+        "authors": "Daniel\u00a0J O\u2019keefe. 2018.",
+        "journal": "InThe Handbook of Communication Skills, pages 319\u2013335. Routledge."
+      },
+      {
+        "tag": "Griffin et\u00a0al. (2023b)",
+        "title": "Susceptibility to influence of large language models.",
+        "authors": "Lewis\u00a0D Griffin, Bennett Kleinberg, Maximilian Mozes, Kimberly\u00a0T Mai, Maria Vau, Matthew Caldwell, and Augustine Marvor-Parker. 2023b.",
+        "journal": "arXiv preprint arXiv:2303.06074."
+      },
+      {
+        "tag": "Wei et\u00a0al. (2023)",
+        "title": "Jailbreak and guard aligned language models with only few in-context demonstrations.",
+        "authors": "Zeming Wei, Yifei Wang, and Yisen Wang. 2023.",
+        "journal": "arXiv preprint arXiv:2310.06387."
+      },
+      {
+        "tag": "Petty et\u00a0al. (2003)",
+        "title": "Emotional factors in attitudes and persuasion.",
+        "authors": "Richard\u00a0E Petty, Leandre\u00a0R Fabrigar, and Duane\u00a0T Wegener. 2003.",
+        "journal": "Handbook of affective sciences, 752:772."
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2307.09288."
+      },
+      {
+        "tag": "Wilson et\u00a0al. (2013)",
+        "title": "Self-persuasion via self-reflection.",
+        "authors": "Timothy\u00a0D Wilson, JC\u00a0Olson, and MP\u00a0Zanna. 2013.",
+        "journal": "InSelf-Inference Processes: The Ontario Symposium, J. Olson, M. Zanna, Eds.(Erlbaum, Hillsdale, NJ, 1990), volume\u00a06, pages 43\u201367."
+      },
+      {
+        "tag": "Deng et\u00a0al. (2023b)",
+        "title": "Multilingual jailbreak challenges in large language models.",
+        "authors": "Yue Deng, Wenxuan Zhang, Sinno\u00a0Jialin Pan, and Lidong Bing. 2023b.",
+        "journal": "arXiv preprint arXiv:2310.06474."
+      },
+      {
+        "tag": "Rieh and Danielson (2007)",
+        "title": "Credibility: A multidisciplinary framework.",
+        "authors": "Soo\u00a0Young Rieh and David\u00a0R Danielson. 2007.",
+        "journal": ""
+      },
+      {
+        "tag": "Jones et\u00a0al. (2023)",
+        "title": "Automatically auditing large language models via discrete optimization.",
+        "authors": "Erik Jones, Anca Dragan, Aditi Raghunathan, and Jacob Steinhardt. 2023.",
+        "journal": "arXiv preprint arXiv:2303.04381."
+      },
+      {
+        "tag": "Bai et\u00a0al. (2022)",
+        "title": "Constitutional ai: Harmlessness from ai feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2212.08073."
+      },
+      {
+        "tag": "Kumar et\u00a0al. (2023)",
+        "title": "Certifying llm safety against adversarial prompting.",
+        "authors": "Aounon Kumar, Chirag Agarwal, Suraj Srinivas, Soheil Feizi, and Hima Lakkaraju. 2023.",
+        "journal": "arXiv preprint arXiv:2309.02705."
+      },
+      {
+        "tag": "Griffin et\u00a0al. (2023a)",
+        "title": "Large language models respond to influence like humans.",
+        "authors": "Lewis Griffin, Bennett Kleinberg, Maximilian Mozes, Kimberly Mai, Maria Do\u00a0Mar Vau, Matthew Caldwell, and Augustine Mavor-Parker. 2023a.",
+        "journal": "InProceedings of the First Workshop on Social Influence in Conversations (SICon 2023), pages 15\u201324."
+      },
+      {
+        "tag": "Izuma (2013)",
+        "title": "The neural basis of social influence and attitude change.",
+        "authors": "Keise Izuma. 2013.",
+        "journal": "Current opinion in neurobiology, 23(3):456\u2013462."
+      },
+      {
+        "tag": "Yang et\u00a0al. (2023)",
+        "title": "Shadow alignment: The ease of subverting safely-aligned language models.",
+        "authors": "Xianjun Yang, Xiao Wang, Qi\u00a0Zhang, Linda Petzold, William\u00a0Yang Wang, Xun Zhao, and Dahua Lin. 2023.",
+        "journal": "arXiv preprint arXiv:2310.02949."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Burgoon et\u00a0al. (1993)",
+        "title": "Adaptation in dyadic interaction: Defining and operationalizing patterns of reciprocity and compensation.",
+        "authors": "Judee\u00a0K Burgoon, Leesa Dillman, and Lesa\u00a0A Stem. 1993.",
+        "journal": "Communication Theory, 3(4):295\u2013316."
+      },
+      {
+        "tag": "Wang (2005)",
+        "title": "The effects of expert and consumer endorsements on audience response.",
+        "authors": "Alex Wang. 2005.",
+        "journal": "Journal of advertising research, 45(4):402\u2013412."
+      },
+      {
+        "tag": "Lapid et\u00a0al. (2023)",
+        "title": "Open sesame! universal black box jailbreaking of large language models.",
+        "authors": "Raz Lapid, Ron Langberg, and Moshe Sipper. 2023.",
+        "journal": "arXiv preprint arXiv:2309.01446."
+      },
+      {
+        "tag": "Shah et\u00a0al. (2023)",
+        "title": "Scalable and transferable black-box jailbreaks for language models via persona modulation.",
+        "authors": "Rusheb Shah, Quentin Feuillade-Montixi, Soroush Pour, Arush Tagade, Stephen Casper, and Javier Rando. 2023.",
+        "journal": "arXiv preprint arXiv:2311.03348."
+      },
+      {
+        "tag": "Schulhoff et\u00a0al. (2023)",
+        "title": "Ignore this title and hackaprompt: Exposing systemic vulnerabilities of llms through a global prompt hacking competition.",
+        "authors": "Sander Schulhoff, Jeremy Pinto, Anaum Khan, Louis-Fran\u00e7ois Bouchard, Chenglei Si, Svetlina Anati, Valen Tagliabue, Anson Kost, Christopher Carnahan, and Jordan Boyd-Graber. 2023.",
+        "journal": "InProceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 4945\u20134977."
+      },
+      {
+        "tag": "Chen and Yang (2021)",
+        "title": "Weakly-supervised hierarchical models for predicting persuasive strategies in good-faith textual requests.",
+        "authors": "Jiaao Chen and Diyi Yang. 2021.",
+        "journal": "InProceedings of the AAAI Conference on Artificial Intelligence, volume\u00a035, pages 12648\u201312656."
+      },
+      {
+        "tag": "Jain et\u00a0al. (2023)",
+        "title": "Baseline defenses for adversarial attacks against aligned language models.",
+        "authors": "Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas Geiping, and Tom Goldstein. 2023.",
+        "journal": "arXiv preprint arXiv:2309.00614."
+      },
+      {
+        "tag": "Taori et\u00a0al. (2023)",
+        "title": "Stanford alpaca: An instruction-following llama model.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B. Hashimoto. 2023.",
+        "journal": "https://github.com/tatsu-lab/stanford_alpaca."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Autodan: Generating stealthy jailbreak prompts on aligned large language models.",
+        "authors": "Xiaogeng Liu, Nan Xu, Muhao Chen, and Chaowei Xiao. 2023a.",
+        "journal": "arXiv preprint arXiv:2310.04451."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2023)",
+        "title": "Adversarial demonstration attacks on large language models.",
+        "authors": "Jiongxiao Wang, Zichen Liu, Keun\u00a0Hee Park, Muhao Chen, and Chaowei Xiao. 2023.",
+        "journal": "arXiv preprint arXiv:2305.14950."
+      },
+      {
+        "tag": "Elazar et\u00a0al. (2023)",
+        "title": "What\u2019s in my big data?",
+        "authors": "Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, Luca Soldaini, Sameer Singh, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2310.20707."
+      },
+      {
+        "tag": "Huang et\u00a0al. (2023)",
+        "title": "Catastrophic jailbreak of open-source llms via exploiting generation.",
+        "authors": "Yangsibo Huang, Samyak Gupta, Mengzhou Xia, Kai Li, and Danqi Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2310.06987."
+      },
+      {
+        "tag": "Bilandzic and Busselle (2013)",
+        "title": "Narrative persuasion.",
+        "authors": "Helena Bilandzic and Rick Busselle. 2013.",
+        "journal": "The SAGE handbook of persuasion: Developments in theory and practice, pages 200\u2013219."
+      },
+      {
+        "tag": "Pornpitakpan (2004)",
+        "title": "The persuasiveness of source credibility: A critical review of five decades\u2019 evidence.",
+        "authors": "Chanthika Pornpitakpan. 2004.",
+        "journal": "Journal of applied social psychology, 34(2):243\u2013281."
+      },
+      {
+        "tag": "Carlini et\u00a0al. (2023)",
+        "title": "Are aligned neural networks adversarially aligned?",
+        "authors": "Nicholas Carlini, Milad Nasr, Christopher\u00a0A Choquette-Choo, Matthew Jagielski, Irena Gao, Anas Awadalla, Pang\u00a0Wei Koh, Daphne Ippolito, Katherine Lee, Florian Tramer, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2306.15447."
+      },
+      {
+        "tag": "Yong et\u00a0al. (2023)",
+        "title": "Low-resource languages jailbreak gpt-4.",
+        "authors": "Zheng-Xin Yong, Cristina Menghini, and Stephen\u00a0H Bach. 2023.",
+        "journal": "arXiv preprint arXiv:2310.02446."
+      },
+      {
+        "tag": "Powers (2007)",
+        "title": "Persuasion and coercion: a critical review of philosophical and empirical approaches.",
+        "authors": "Penny Powers. 2007.",
+        "journal": "HEC F., 19:125."
+      },
+      {
+        "tag": "Aggarwal et\u00a0al. (2011)",
+        "title": "Scarcity messages.",
+        "authors": "Praveen Aggarwal, Sung\u00a0Youl Jun, and Jong\u00a0Ho Huh. 2011.",
+        "journal": "Journal of Advertising, 40(3):19\u201330."
+      },
+      {
+        "tag": "Mathur et\u00a0al. (2019)",
+        "title": "Dark patterns at scale: Findings from a crawl of 11k shopping websites.",
+        "authors": "Arunesh Mathur, Gunes Acar, Michael\u00a0J Friedman, Eli Lucherini, Jonathan Mayer, Marshini Chetty, and Arvind Narayanan. 2019.",
+        "journal": "Proceedings of the ACM on Human-Computer Interaction, 3(CSCW):1\u201332."
+      },
+      {
+        "tag": "Xu et\u00a0al. (2023)",
+        "title": "The earth is flat because\u2026: Investigating llms\u2019 belief towards misinformation via persuasive conversation.",
+        "authors": "Rongwu Xu, Brian Lin, Shujian Yang, Tianqi Zhang, Weiyan Shi, Tianwei Zhang, Zhixuan Fang, Wei Xu, and Han Qiu. 2023.",
+        "journal": "arXiv preprint arXiv:2312.09085."
+      },
+      {
+        "tag": "Luguri and Strahilevitz (2021)",
+        "title": "Shining a light on dark patterns.",
+        "authors": "Jamie Luguri and Lior\u00a0Jacob Strahilevitz. 2021.",
+        "journal": "Journal of Legal Analysis, 13(1):43\u2013109."
+      },
+      {
+        "tag": "OpenAI (2023)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Kang et\u00a0al. (2023)",
+        "title": "Exploiting programmatic behavior of llms: Dual-use through standard security attacks.",
+        "authors": "Daniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin, Matei Zaharia, and Tatsunori Hashimoto. 2023.",
+        "journal": "arXiv preprint arXiv:2302.05733."
+      },
+      {
+        "tag": "Qi et\u00a0al. (2023)",
+        "title": "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+        "authors": "Xiangyu Qi, Yi\u00a0Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and Peter Henderson. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Jailbreaking chatgpt via prompt engineering: An empirical study.",
+        "authors": "Yi\u00a0Liu, Gelei Deng, Zhengzi Xu, Yuekang Li, Yaowen Zheng, Ying Zhang, Lida Zhao, Tianwei Zhang, and Yang Liu. 2023b.",
+        "journal": "arXiv preprint arXiv:2305.13860."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Rain: Your language models can align themselves without finetuning.",
+        "authors": "Yuhui Li, Fangyun Wei, Jinjing Zhao, Chao Zhang, and Hongyang Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2309.07124."
+      },
+      {
+        "tag": "Cialdini and Goldstein (2004)",
+        "title": "Social influence: Compliance and conformity.",
+        "authors": "Robert\u00a0B Cialdini and Noah\u00a0J Goldstein. 2004.",
+        "journal": "Annu. Rev. Psychol., 55:591\u2013621."
+      },
+      {
+        "tag": "Cronkhite (1964)",
+        "title": "Logic, emotion, and the paradigm of persuasion.",
+        "authors": "Gary\u00a0Lynn Cronkhite. 1964.",
+        "journal": "Quarterly Journal of Speech, 50(1):13\u201318."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2019)",
+        "title": "Persuasion for good: Towards a personalized persuasive dialogue system for social good.",
+        "authors": "Xuewei Wang, Weiyan Shi, Richard Kim, Yoojung Oh, Sijia Yang, Jingwen Zhang, and Zhou Yu. 2019.",
+        "journal": "arXiv preprint arXiv:1906.06725."
+      },
+      {
+        "tag": "Deng et\u00a0al. (2023a)",
+        "title": "Jailbreaker: Automated jailbreak across multiple large language model chatbots.",
+        "authors": "Gelei Deng, Yi\u00a0Liu, Yuekang Li, Kailong Wang, Ying Zhang, Zefeng Li, Haoyu Wang, Tianwei Zhang, and Yang Liu. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.08715."
+      },
+      {
+        "tag": "Woodside et\u00a0al. (2008)",
+        "title": "When consumers and brands talk: Storytelling theory and research in psychology and marketing.",
+        "authors": "Arch\u00a0G Woodside, Suresh Sood, and Kenneth\u00a0E Miller. 2008.",
+        "journal": "Psychology & Marketing, 25(2):97\u2013145."
+      },
+      {
+        "tag": "Guo et\u00a0al. (2021)",
+        "title": "Gradient-based adversarial attacks against text transformers.",
+        "authors": "Chuan Guo, Alexandre Sablayrolles, Herv\u00e9 J\u00e9gou, and Douwe Kiela. 2021.",
+        "journal": "arXiv preprint arXiv:2104.13733."
+      },
+      {
+        "tag": "Cao et\u00a0al. (2023)",
+        "title": "Defending against alignment-breaking attacks via robustly aligned llm.",
+        "authors": "Bochuan Cao, Yuanpu Cao, Lu\u00a0Lin, and Jinghui Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2309.14348."
+      },
+      {
+        "tag": "Cialdini (2001)",
+        "title": "The science of persuasion.",
+        "authors": "Robert\u00a0B Cialdini. 2001.",
+        "journal": "Scientific American, 284(2):76\u201381."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

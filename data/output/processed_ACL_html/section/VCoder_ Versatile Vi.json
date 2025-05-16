@@ -1,0 +1,752 @@
+{
+  "S1": {
+    "title": "1Introduction",
+    "text": "{quoting} [\nindentfirst=true,\nleftmargin=rightmargin=] \u2018Perception is the soil; reasoning, the seed. Without fertile ground, the seed cannot flourish.\u2019 (GPT-4 [ 51 ] , 2023) Report issue for preceding element\nThe ability to think and reason is one of the most remarkable traits that help humans function daily. Generally, understanding the environment precedes the act of thinking and reasoning [ 30 ] . Following the success of ChatGPT-like instruction following AI agents [ 50 , 64 , 11 , 51 , 3 ] at language understanding and reasoning, researchers have leveraged LLMs to develop instruct frameworks [ 78 , 42 , 14 , 72 ] that can understand vision and language inputs in an effort to imitate human perception and reasoning ability. We refer to such systems as Multimodal LLMs (MLLM). Although MLLMs exhibit the ability to perform complex vision-language tasks like visual captioning [ 41 , 2 , 4 ] , image generation [ 61 , 29 , 27 ] , visual reasoning and grounding [ 76 , 54 , 23 ] , they often display sub-par performance at simple tasks like counting objects ( Fig. 1 ). As shown in Fig. 2 , MLLMs output incorrect object counts ( people, chairs ) and hallucinate about the presence ( handbag, couch ) of certain objects when prompted to identify entities in a visual input. The perception performance is much worse when the scenes are cluttered with many entities. Consequently, a natural question arises: \u201cHow to develop MLLM systems that respond to perception questions accurately?\u201d Report issue for preceding element\nThis work aims to improve Multimodal LLMs at the simple yet fundamental object-level perception skills, including counting. Our motivation stems from the intuition that one can only describe and reason about a visual scene with the correct understanding of the entities in the image. In our effort to develop an accurate Multimodal LLM perception system, we face three significant challenges: (i) the scarcity of a vision-language dataset focused on the object perception task; (ii) existing open-sourced Multimodal LLMs usually use the ViT from CLIP [ 55 ] with an RGB image as input as the visual component that majorly focuses only on salient objects, and (iii) the absence of evaluation metrics to quantitatively measure Multimodal LLMs\u2019 object perception and in particular, counting skills. We list our efforts to overcome the issues above in the following paragraphs. Report issue for preceding element\nThe contemporary vision-language models [ 55 , 36 , 14 ] owe their success to the availability of large-scale image-text datasets [ 53 , 60 , 7 ] . However, these datasets are more focused on image captioning [ 35 ] and VQA [ 1 ] tasks, making them unfit for training Multimodal LLMs for basic perception skills like object identification and counting. To overcome the scarcity of fundamental perception-focused image-text data, we leverage images from the COCO [ 38 ] dataset and use predictions from off-the-shelf visual perception models [ 26 , 52 , 57 ] to prepare a CO CO S egmentation T ext ( COST ) dataset comprising of question-answer pairs about the objects (background and foreground) present in each image. We provide more details in Sec. 3.1 . Report issue for preceding element\nInspired by diffusion models that add various perception \u201ccontrol\u201d or \u201ccontext\u201d images [ 74 , 71 , 70 , 48 ] as auxiliary inputs to aid image generation, we propose feeding extra perception modalities as control inputs through additional vision encoders, which we term as our Versatile vision enCoders ( VCoder ). In this work, we focus on the task of object perception and leverage a segmentation map, depth map, or both as the control inputs; however, the same design can be extended to other modalities. Our VCoder projects the control inputs\u2019 information into the LLM\u2019s space as shown in Fig. 4 . We hypothesize that this added control helps the MLLM improve its object perception ability. Report issue for preceding element\nLastly, owing to the absence of metrics to quantify the counting ability in MLLMs, we propose computing a count score ( CS ) using one-to-one matching of object words in the ground truth and MLLM\u2019s answer. We also compute a hallucination score ( HS ) based on the extra objects in the MLLM\u2019s response that are absent from the ground truth. Similarly, we introduce a depth score ( DS ) to quantify the object order prediction performance in MLLMs. Report issue for preceding element\nAmong the open-source MLLMs, we choose LLaVA-1.5 [ 41 ] as our base MLLM due to its impressive performance. Our extensive experimental analysis demonstrates the importance of our COST dataset and VCoder LLaVA-1.5\u2019s improved perception ability. To summarize, our contributions are as follows: Report issue for preceding element\n\u2022 We propose using extra (perception) control inputs and feeding those to a V ersatile en Coder ( VCoder ) for improved object perception performance. Report issue for preceding element \u2022 We introduce a COCO Segmentation Text ( COST ) dataset to train and evaluate Multimodal LLM systems on the fundamental object-level perception tasks of object identification, counting, and order prediction. Report issue for preceding element \u2022 Furthermore, to quantify the object perception ability in MLLMs, we propose calculating a count score ( CS ), a hallucination score ( HS ) and a depth score ( DS ). Our experiments show that the VCoder-adapted LLaVA-1.5 outperforms the baseline MLLMs on all metrics when validated on the COST dataset. Report issue for preceding element\nWe propose using extra (perception) control inputs and feeding those to a V ersatile en Coder ( VCoder ) for improved object perception performance. Report issue for preceding element\nWe introduce a COCO Segmentation Text ( COST ) dataset to train and evaluate Multimodal LLM systems on the fundamental object-level perception tasks of object identification, counting, and order prediction. Report issue for preceding element\nFurthermore, to quantify the object perception ability in MLLMs, we propose calculating a count score ( CS ), a hallucination score ( HS ) and a depth score ( DS ). Our experiments show that the VCoder-adapted LLaVA-1.5 outperforms the baseline MLLMs on all metrics when validated on the COST dataset. Report issue for preceding element",
+    "masked_text": "{quoting} [ indentfirst=true, leftmargin=rightmargin=] \u2018Perception is the soil; reasoning, the seed. Without fertile ground, the seed cannot flourish.\u2019 (GPT-4 [CITATION], 2023)Report issue for preceding element\nThe ability to think and reason is one of the most remarkable traits that help humans function daily. Generally, understanding the environment precedes the act of thinking and reasoning [CITATION]. Following the success of ChatGPT-like instruction following AI agents [CITATION] at language understanding and reasoning, researchers have leveraged LLMs to develop instruct frameworks [CITATION] that can understand vision and language inputs in an effort to imitate human perception and reasoning ability. We refer to such systems as Multimodal LLMs (MLLM). Although MLLMs exhibit the ability to perform complex vision-language tasks like visual captioning [CITATION], image generation [CITATION], visual reasoning and grounding [CITATION], they often display sub-par performance at simple tasks like counting objects (Fig. 1). As shown in Fig. 2, MLLMs output incorrect object counts (people, chairs) and hallucinate about the presence (handbag, couch) of certain objects when prompted to identify entities in a visual input. The perception performance is much worse when the scenes are cluttered with many entities. Consequently, a natural question arises: \u201cHow to develop MLLM systems that respond to perception questions accurately?\u201dReport issue for preceding element\nThis work aims to improve Multimodal LLMs at the simple yet fundamental object-level perception skills, including counting. Our motivation stems from the intuition that one can only describe and reason about a visual scene with the correct understanding of the entities in the image. In our effort to develop an accurate Multimodal LLM perception system, we face three significant challenges: (i) the scarcity of a vision-language dataset focused on the object perception task; (ii) existing open-sourced Multimodal LLMs usually use the ViT from CLIP [CITATION] with an RGB image as input as the visual component that majorly focuses only on salient objects, and (iii) the absence of evaluation metrics to quantitatively measure Multimodal LLMs\u2019 object perception and in particular, counting skills. We list our efforts to overcome the issues above in the following paragraphs.Report issue for preceding element\nThe contemporary vision-language models [CITATION] owe their success to the availability of large-scale image-text datasets [CITATION]. However, these datasets are more focused on image captioning [CITATION] and VQA [CITATION] tasks, making them unfit for training Multimodal LLMs for basic perception skills like object identification and counting. To overcome the scarcity of fundamental perception-focused image-text data, we leverage images from the COCO [CITATION] dataset and use predictions from off-the-shelf visual perception models [CITATION] to prepare a COCO Segmentation Text (COST) dataset comprising of question-answer pairs about the objects (background and foreground) present in each image. We provide more details in Sec. 3.1.Report issue for preceding element\nInspired by diffusion models that add various perception \u201ccontrol\u201d or \u201ccontext\u201d images [CITATION] as auxiliary inputs to aid image generation, we propose feeding extra perception modalities as control inputs through additional vision encoders, which we term as our Versatile vision enCoders (VCoder). In this work, we focus on the task of object perception and leverage a segmentation map, depth map, or both as the control inputs; however, the same design can be extended to other modalities. Our VCoder projects the control inputs\u2019 information into the LLM\u2019s space as shown in Fig. 4. We hypothesize that this added control helps the MLLM improve its object perception ability.Report issue for preceding element\nLastly, owing to the absence of metrics to quantify the counting ability in MLLMs, we propose computing a count score (CS) using one-to-one matching of object words in the ground truth and MLLM\u2019s answer. We also compute a hallucination score (HS) based on the extra objects in the MLLM\u2019s response that are absent from the ground truth. Similarly, we introduce a depth score (DS) to quantify the object order prediction performance in MLLMs.Report issue for preceding element\nAmong the open-source MLLMs, we choose LLaVA-1.5 [CITATION] as our base MLLM due to its impressive performance. Our extensive experimental analysis demonstrates the importance of our COST dataset and VCoder LLaVA-1.5\u2019s improved perception ability. To summarize, our contributions are as follows:Report issue for preceding element\n\u2022 We propose using extra (perception) control inputs and feeding those to a Versatile enCoder (VCoder) for improved object perception performance.Report issue for preceding element \u2022 We introduce a COCO Segmentation Text (COST) dataset to train and evaluate Multimodal LLM systems on the fundamental object-level perception tasks of object identification, counting, and order prediction.Report issue for preceding element \u2022 Furthermore, to quantify the object perception ability in MLLMs, we propose calculating a count score (CS), a hallucination score (HS) and a depth score (DS). Our experiments show that the VCoder-adapted LLaVA-1.5 outperforms the baseline MLLMs on all metrics when validated on the COST dataset.Report issue for preceding element\nWe propose using extra (perception) control inputs and feeding those to a Versatile enCoder (VCoder) for improved object perception performance.Report issue for preceding element\nWe introduce a COCO Segmentation Text (COST) dataset to train and evaluate Multimodal LLM systems on the fundamental object-level perception tasks of object identification, counting, and order prediction.Report issue for preceding element\nFurthermore, to quantify the object perception ability in MLLMs, we propose calculating a count score (CS), a hallucination score (HS) and a depth score (DS). Our experiments show that the VCoder-adapted LLaVA-1.5 outperforms the baseline MLLMs on all metrics when validated on the COST dataset.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Peng et\u00a0al. [2023]",
+        "title": "Kosmos-2: Grounding multimodal large language models to the world.",
+        "authors": "Zhiliang Peng, Wenhui Wang, Li Dong, Yaru Hao, Shaohan Huang, Shuming Ma, and Furu Wei.",
+        "journal": "ArXiv, abs/2306, 2023."
+      },
+      {
+        "tag": "Ranftl et\u00a0al. [2021]",
+        "title": "Vision transformers for dense prediction.",
+        "authors": "Ren\u00e9 Ranftl, Alexey Bochkovskiy, and Vladlen Koltun.",
+        "journal": "InICCV, 2021."
+      },
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C.\u00a0Lawrence Zitnick, and Piotr Doll\u00e1r.",
+        "journal": "InECCV, 2014."
+      },
+      {
+        "tag": "Koh et\u00a0al. [2023]",
+        "title": "Generating images with multimodal language models.",
+        "authors": "Jing\u00a0Yu Koh, Daniel Fried, and Ruslan Salakhutdinov.",
+        "journal": "NeurIPS, 2023."
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2023]",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, Dan Bikel, Lukas Blecher, Cristian\u00a0Canton Ferrer, Moya Chen, Guillem Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller, Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez, Madian Khabsa, Isabel Kloumann, Artem Korenev, Punit\u00a0Singh Koura, Marie-Anne Lachaux, Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier Martinet, Todor Mihaylov, Pushkar Mishra, Igor Molybog, Yixin Nie, Andrew Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan Silva, Eric\u00a0Michael Smith, Ranjan Subramanian, Xiaoqing\u00a0Ellen Tan, Binh Tang, Ross Taylor, Adina Williams, Jian\u00a0Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas\nScialom.",
+        "journal": "arXiv, 2023b."
+      },
+      {
+        "tag": "Almazrouei et\u00a0al. [2023]",
+        "title": "Falcon-40B: an open large language model with state-of-the-art performance.",
+        "authors": "Ebtesam Almazrouei, Hamza Alobeidli, Abdulaziz Alshamsi, Alessandro Cappelli, Ruxandra Cojocaru, Merouane Debbah, Etienne Goffinet, Daniel Heslow, Julien Launay, Quentin Malartic, Badreddine Noune, Baptiste Pannier, and Guilherme Penedo.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "OpenAI [2022]",
+        "title": "Chatgpt.",
+        "authors": "OpenAI.",
+        "journal": "https://chat.openai.com/, 2022."
+      },
+      {
+        "tag": "Chiang et\u00a0al. [2023]",
+        "title": "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality, 2023.",
+        "authors": "Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph\u00a0E. Gonzalez, Ion Stoica, and Eric\u00a0P. Xing.",
+        "journal": ""
+      },
+      {
+        "tag": "Awadalla et\u00a0al. [2023]",
+        "title": "Openflamingo: An open-source framework for training large autoregressive vision-language models.",
+        "authors": "Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang\u00a0Wei Koh, Gabriel Ilharco, Mitchell Wortsman, and Ludwig Schmidt.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Oquab et\u00a0al. [2023]",
+        "title": "Dinov2: Learning robust visual features without supervision, 2023.",
+        "authors": "Maxime Oquab, Timoth\u00e9e Darcet, Theo Moutakanni, Huy\u00a0V. Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Russell Howes, Po-Yao Huang, Hu Xu, Vasu Sharma, Shang-Wen Li, Wojciech Galuba, Mike Rabbat, Mido Assran, Nicolas Ballas, Gabriel Synnaeve, Ishan Misra, Herve Jegou, Julien Mairal, Patrick Labatut, Armand Joulin, and Piotr Bojanowski.",
+        "journal": ""
+      },
+      {
+        "tag": "Changpinyo et\u00a0al. [2021]",
+        "title": "Conceptual 12M: Pushing web-scale image-text pre-training to recognize long-tail visual concepts.",
+        "authors": "Soravit Changpinyo, Piyush Sharma, Nan Ding, and Radu Soricut.",
+        "journal": "InCVPR, 2021."
+      },
+      {
+        "tag": "Li et\u00a0al. [2022]",
+        "title": "Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation.",
+        "authors": "Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi.",
+        "journal": "InICML, 2022."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "InICML, 2023c."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhang et\u00a0al. [2023a]",
+        "title": "Adding conditional control to text-to-image diffusion models.",
+        "authors": "Lvmin Zhang, Anyi Rao, and Maneesh Agrawala.",
+        "journal": "InICCV, 2023a."
+      },
+      {
+        "tag": "Jin et\u00a0al. [2023]",
+        "title": "Unified language-vision pretraining in llm with dynamic discrete visual tokenization.",
+        "authors": "Yang Jin, Kun Xu, Kun Xu, Liwei Chen, Chao Liao, Jianchao Tan, Yadong Mu, et\u00a0al.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Mou et\u00a0al. [2023]",
+        "title": "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models.",
+        "authors": "Chong Mou, Xintao Wang, Liangbin Xie, Yanze Wu, Jian Zhang, Zhongang Qi, Ying Shan, and Xiaohu Qie.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "OpenAI [2023]",
+        "title": "Gpt-4 technical report, 2023.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Zheng et\u00a0al. [2023a]",
+        "title": "Minigpt-5: Interleaved vision-and-language generation via generative vokens.",
+        "authors": "Kaizhi Zheng, Xuehai He, and Xin\u00a0Eric Wang.",
+        "journal": "arXiv, 2023a."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning, 2023c.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": ""
+      },
+      {
+        "tag": "Agrawal et\u00a0al. [2015]",
+        "title": "Vqa: Visual question answering, 2015.",
+        "authors": "Aishwarya Agrawal, Jiasen Lu, Stanislaw Antol, Margaret Mitchell, C.\u00a0Lawrence Zitnick, Dhruv Batra, and Devi Parikh.",
+        "journal": ""
+      },
+      {
+        "tag": "Kuhn [1991]",
+        "title": "The Skills of Argument.",
+        "authors": "Deanna Kuhn.",
+        "journal": "Cambridge University Press, 1991."
+      },
+      {
+        "tag": "Ordonez et\u00a0al. [2011]",
+        "title": "Im2text: Describing images using 1 million captioned photographs.",
+        "authors": "Vicente Ordonez, Girish Kulkarni, and Tamara Berg.",
+        "journal": "InNeurIPS, 2011."
+      },
+      {
+        "tag": "Alayrac et\u00a0al. [2022]",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katie Millican, Malcolm Reynolds, Roman Ring, Eliza Rutherford, Serkan Cabi, Tengda Han, Zhitao Gong, Sina Samangooei, Marianne Monteiro, Jacob Menick, Sebastian Borgeaud, Andrew Brock, Aida Nematzadeh, Sahand Sharifzadeh, Mikolaj Binkowski, Ricardo Barreira, Oriol Vinyals, Andrew Zisserman, and Karen Simonyan.",
+        "journal": "InNeurIPS, 2022."
+      },
+      {
+        "tag": "Schuhmann et\u00a0al. [2021]",
+        "title": "Laion-400m: Open dataset of clip-filtered 400 million image-text pairs.",
+        "authors": "Christoph Schuhmann, Richard Vencu, Romain Beaumont, Robert Kaczmarczyk, Clayton Mullis, Aarush Katta, Theo Coombes, Jenia Jitsev, and Aran Komatsuzaki.",
+        "journal": "InNeurIPS Workshops 2021, 2021."
+      },
+      {
+        "tag": "Xu et\u00a0al. [2023b]",
+        "title": "Versatile diffusion: Text, images and variations all in one diffusion model.",
+        "authors": "Xingqian Xu, Zhangyang Wang, Eric Zhang, Kai Wang, and Humphrey Shi.",
+        "journal": "InICCV, 2023b."
+      },
+      {
+        "tag": "Huang et\u00a0al. [2023]",
+        "title": "Language is not all you need: Aligning perception with language models.",
+        "authors": "Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais\u00a0Khan Mohammed, Qiang Liu, Kriti Aggarwal, Zewen Chi, Johan Bjorck, Vishrav Chaudhary, Subhojit Som, Xia Song, and Furu Wei.",
+        "journal": "ArXiv, abs/2302.14045, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "InNeurIPS, 2023d."
+      },
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      },
+      {
+        "tag": "Xu et\u00a0al. [2023a]",
+        "title": "Prompt-free diffusion: Taking\u201d text\u201d out of text-to-image diffusion models.",
+        "authors": "Xingqian Xu, Jiayi Guo, Zhangyang Wang, Gao Huang, Irfan Essa, and Humphrey Shi.",
+        "journal": "arXiv preprint arXiv:2305.16223, 2023a."
+      },
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Generative pretraining in multimodality.",
+        "authors": "Quan Sun, Qiying Yu, Yufeng Cui, Fan Zhang, Xiaosong Zhang, Yueze Wang, Hongcheng Gao, Jingjing Liu, Tiejun Huang, and Xinlong Wang.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Ye et\u00a0al. [2023]",
+        "title": "mplug-owl: Modularization empowers large language models with multimodality, 2023.",
+        "authors": "Qinghao Ye, Haiyang Xu, Guohai Xu, Jiabo Ye, Ming Yan, Yiyang Zhou, Junyang Wang, Anwen Hu, Pengcheng Shi, Yaya Shi, Chaoya Jiang, Chenliang Li, Yuanhong Xu, Hehong Chen, Junfeng Tian, Qian Qi, Ji Zhang, and Fei Huang.",
+        "journal": ""
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021a]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, A. Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.",
+        "journal": "InICML, 2021a."
+      }
+    ]
+  },
+  "S2": {
+    "title": "2Related Work",
+    "text": "The fundamental nature of visual perception makes it a critical component in MLLM systems. The task of perception can be divided into sub-tasks, including dense prediction tasks like image segmentation [ 66 , 44 , 25 , 26 ] and depth estimation [ 16 , 57 , 18 ] , and sparse prediction tasks like object detection [ 67 , 6 ] and pose estimation [ 62 , 13 ] . In the deep learning era, initial methods tackled the perception task using CNN based methods [ 32 , 8 , 22 , 9 , 58 , 31 , 62 ] with recent methods shifting to the use of vision transformer based architectures [ 26 , 10 , 69 , 57 , 18 , 79 ] . In this work, we tackle the fundamental task of object-level perception, mainly focusing on predicting names, counts, and order of objects in an image using MLLMs. Report issue for preceding element\nUsing LLMs for vision applications is not a new concept. In a nutshell, developing Multimodal LLMs involves projecting [ 36 , 2 , 4 , 65 ] the features from a vision encoder [ 56 , 15 ] to the embedding space of a language model (LLM) [ 11 , 63 , 64 ] , and, instruction-tuning on a vision-language dialog dataset. Report issue for preceding element\nLLaVA [ 42 ] proposed a pipeline to convert existing image-text data into dialog format and then finetuned a CLIP [ 55 ] and LLaMA [ 63 ] model end-to-end on their collected dataset showing one of the earliest evidence of visual-language instruction tuning. Concurrent to LLaVA, MiniGPT-4 [ 78 ] used the visual encoder from BLIP2 [ 36 ] and used a linear layer for projecting visual features into Vicuna\u2019s [ 11 ] feature space. InstructBLIP [ 14 ] open-sourced a collection of 16 different datasets covering various vision tasks like VQA, reasoning, captioning, classification, etc., and finetuned a BLIP2 model on their dataset. mPLUG-Owl [ 72 ] proposed using a vision abstractor and finetuning the vision encoder. More recently, LLaVA-1.5 [ 41 ] proposed using an MLP as the projector and finetuned on academic instruction datasets to achieve state-of-the-art performance on various benchmarks [ 24 , 37 , 17 , 12 ] . Among various open-source MLLMs [ 5 , 23 , 73 , 34 , 33 ] , we chose LLaVA-1.5 as our baseline due to its superior performance. Report issue for preceding element\nSince the introduction of LLMs, there has been a comprehensive study about their ability to hallucinate [ 75 ] in the NLP community. However, the phenomenon of hallucination in Multimodal LLMs has received comparatively less attention. LRV-Instruction [ 40 ] introduced a new instruction-tuning dataset containing 400k visual instructions to prevent hallucination in MLLMs and measured performance treating responses from GPT-4 [ 51 ] as ground truths. More recently, HallusionBench [ 39 ] quantitatively benchmarked various failure modes in MLLMs that lead to hallucinations based primarily on logical consistency and reasoning. Unlike these works that tried to benchmark MLLMs mainly on VQA-type tasks, this paper focuses on the object-level hallucination in MLLMs. Report issue for preceding element\nThe two closest works to our objective are POPE [ 37 ] and CHAIR [ 59 ] . On the one hand, POPE [ 37 ] tried to measure hallucination in MLLMs using a binary \u201cYes\u201d-\u201cNo\u201d answer policy in response to questions based on the absence or presence of an object in the image. On the other hand, CHAIR [ 59 ] focused on measuring hallucination in image captioning based on only words and not counts for the objects. In our work, we consider not only object words but also the corresponding count to compute an object-level count score and hallucination score. Report issue for preceding element",
+    "masked_text": "The fundamental nature of visual perception makes it a critical component in MLLM systems. The task of perception can be divided into sub-tasks, including dense prediction tasks like image segmentation [CITATION] and depth estimation [CITATION], and sparse prediction tasks like object detection [CITATION] and pose estimation [CITATION]. In the deep learning era, initial methods tackled the perception task using CNN based methods [CITATION] with recent methods shifting to the use of vision transformer based architectures [CITATION]. In this work, we tackle the fundamental task of object-level perception, mainly focusing on predicting names, counts, and order of objects in an image using MLLMs.Report issue for preceding element\nUsing LLMs for vision applications is not a new concept. In a nutshell, developing Multimodal LLMs involves projecting [CITATION] the features from a vision encoder [CITATION] to the embedding space of a language model (LLM) [CITATION], and, instruction-tuning on a vision-language dialog dataset.Report issue for preceding element\nLLaVA [CITATION] proposed a pipeline to convert existing image-text data into dialog format and then finetuned a CLIP [CITATION] and LLaMA [CITATION] model end-to-end on their collected dataset showing one of the earliest evidence of visual-language instruction tuning. Concurrent to LLaVA, MiniGPT-4 [CITATION] used the visual encoder from BLIP2 [CITATION] and used a linear layer for projecting visual features into Vicuna\u2019s [CITATION] feature space. InstructBLIP [CITATION] open-sourced a collection of 16 different datasets covering various vision tasks like VQA, reasoning, captioning, classification, etc., and finetuned a BLIP2 model on their dataset. mPLUG-Owl [CITATION] proposed using a vision abstractor and finetuning the vision encoder. More recently, LLaVA-1.5 [CITATION] proposed using an MLP as the projector and finetuned on academic instruction datasets to achieve state-of-the-art performance on various benchmarks [CITATION]. Among various open-source MLLMs [CITATION], we chose LLaVA-1.5 as our baseline due to its superior performance.Report issue for preceding element\nSince the introduction of LLMs, there has been a comprehensive study about their ability to hallucinate [CITATION] in the NLP community. However, the phenomenon of hallucination in Multimodal LLMs has received comparatively less attention. LRV-Instruction [CITATION] introduced a new instruction-tuning dataset containing 400k visual instructions to prevent hallucination in MLLMs and measured performance treating responses from GPT-4 [CITATION] as ground truths. More recently, HallusionBench [CITATION] quantitatively benchmarked various failure modes in MLLMs that lead to hallucinations based primarily on logical consistency and reasoning. Unlike these works that tried to benchmark MLLMs mainly on VQA-type tasks, this paper focuses on the object-level hallucination in MLLMs.Report issue for preceding element\nThe two closest works to our objective are POPE [CITATION] and CHAIR [CITATION]. On the one hand, POPE [CITATION] tried to measure hallucination in MLLMs using a binary \u201cYes\u201d-\u201cNo\u201d answer policy in response to questions based on the absence or presence of an object in the image. On the other hand, CHAIR [CITATION] focused on measuring hallucination in image captioning based on only words and not counts for the objects. In our work, we consider not only object words but also the corresponding count to compute an object-level count score and hallucination score.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Contributors [2023]",
+        "title": "Opencompass: A universal evaluation platform for foundation models.",
+        "authors": "OpenCompass Contributors.",
+        "journal": "https://github.com/open-compass/opencompass, 2023."
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021b]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.",
+        "journal": "arXiv, 2021b."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2023]",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, Dan Bikel, Lukas Blecher, Cristian\u00a0Canton Ferrer, Moya Chen, Guillem Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller, Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez, Madian Khabsa, Isabel Kloumann, Artem Korenev, Punit\u00a0Singh Koura, Marie-Anne Lachaux, Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier Martinet, Todor Mihaylov, Pushkar Mishra, Igor Molybog, Yixin Nie, Andrew Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan Silva, Eric\u00a0Michael Smith, Ranjan Subramanian, Xiaoqing\u00a0Ellen Tan, Binh Tang, Ross Taylor, Adina Williams, Jian\u00a0Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas\nScialom.",
+        "journal": "arXiv, 2023b."
+      },
+      {
+        "tag": "Chiang et\u00a0al. [2023]",
+        "title": "Vicuna: An open-source chatbot impressing gpt-4 with 90%* chatgpt quality, 2023.",
+        "authors": "Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph\u00a0E. Gonzalez, Ion Stoica, and Eric\u00a0P. Xing.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhang et\u00a0al. [2023b]",
+        "title": "Siren\u2019s song in the ai ocean: A survey on hallucination in large language models.",
+        "authors": "Yue Zhang, Yafu Li, Leyang Cui, Deng Cai, Lemao Liu, Tingchen Fu, Xinting Huang, Enbo Zhao, Yu Zhang, Yulong Chen, Longyue Wang, Anh\u00a0Tuan Luu, Wei Bi, Freda Shi, and Shuming Shi.",
+        "journal": "arXiv, 2023b."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "InICML, 2023c."
+      },
+      {
+        "tag": "Carion et\u00a0al. [2020]",
+        "title": "End-to-end object detection with transformers.",
+        "authors": "Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko.",
+        "journal": "InECCV, 2020."
+      },
+      {
+        "tag": "Girdhar et\u00a0al. [2022]",
+        "title": "Omnivore: A Single Model for Many Visual Modalities.",
+        "authors": "Rohit Girdhar, Mannat Singh, Nikhila Ravi, Laurens van\u00a0der Maaten, Armand Joulin, and Ishan Misra.",
+        "journal": "InCVPR, 2022."
+      },
+      {
+        "tag": "Rohrbach et\u00a0al. [2018]",
+        "title": "Object hallucination in image captioning.",
+        "authors": "Anna Rohrbach, Lisa\u00a0Anne Hendricks, Kaylee Burns, Trevor Darrell, and Kate Saenko.",
+        "journal": "InEMNLP, 2018."
+      },
+      {
+        "tag": "OpenAI [2023]",
+        "title": "Gpt-4 technical report, 2023.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Cheng et\u00a0al. [2022]",
+        "title": "Masked-attention mask transformer for universal image segmentation.",
+        "authors": "Bowen Cheng, Ishan Misra, Alexander\u00a0G. Schwing, Alexander Kirillov, and Rohit Girdhar.",
+        "journal": "InCVPR, 2022."
+      },
+      {
+        "tag": "Viola and Jones [2001]",
+        "title": "Rapid object detection using a boosted cascade of simple features.",
+        "authors": "Paul Viola and Michael Jones.",
+        "journal": "InCVPR, 2001."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning, 2023c.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": ""
+      },
+      {
+        "tag": "Alayrac et\u00a0al. [2022]",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katie Millican, Malcolm Reynolds, Roman Ring, Eliza Rutherford, Serkan Cabi, Tengda Han, Zhitao Gong, Sina Samangooei, Marianne Monteiro, Jacob Menick, Sebastian Borgeaud, Andrew Brock, Aida Nematzadeh, Sahand Sharifzadeh, Mikolaj Binkowski, Ricardo Barreira, Oriol Vinyals, Andrew Zisserman, and Karen Simonyan.",
+        "journal": "InNeurIPS, 2022."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023a]",
+        "title": "Hallusionbench: You see what you think? or you think what you see? an image-context reasoning benchmark challenging for gpt-4v (ision), llava-1.5, and other multi-modality models.",
+        "authors": "Fuxiao Liu, Tianrui Guan, Zongxia Li, Lichang Chen, Yaser Yacoob, Dinesh Manocha, and Tianyi Zhou.",
+        "journal": "arXiv preprint arXiv:2310.14566, 2023a."
+      },
+      {
+        "tag": "He et\u00a0al. [2017]",
+        "title": "Mask r-cnn.",
+        "authors": "Kaiming He, Georgia Gkioxari, Piotr Doll\u00e1r, and Ross Girshick.",
+        "journal": "InICCV, 2017."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2023]",
+        "title": "Qwen technical report.",
+        "authors": "Jinze Bai, Shuai Bai, Yunfei Chu, Zeyu Cui, Kai Dang, Xiaodong Deng, Yang Fan, Wenbin Ge, Yu Han, Fei Huang, Binyuan Hui, Luo Ji, Mei Li, Junyang Lin, Runji Lin, Dayiheng Liu, Gao Liu, Chengqiang Lu, Keming Lu, Jianxin Ma, Rui Men, Xingzhang Ren, Xuancheng Ren, Chuanqi Tan, Sinan Tan, Jianhong Tu, Peng Wang, Shijie Wang, Wei Wang, Shengguang Wu, Benfeng Xu, Jin Xu, An Yang, Hao Yang, Jian Yang, Shusheng Yang, Yang Yao, Bowen Yu, Hongyi Yuan, Zheng Yuan, Jianwei Zhang, Xingxuan Zhang, Yichang Zhang, Zhenru Zhang, Chang Zhou, Jingren Zhou, Xiaohuan Zhou, and Tianhang Zhu.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Huang et\u00a0al. [2023]",
+        "title": "Language is not all you need: Aligning perception with language models.",
+        "authors": "Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais\u00a0Khan Mohammed, Qiang Liu, Kriti Aggarwal, Zewen Chi, Johan Bjorck, Vishrav Chaudhary, Subhojit Som, Xia Song, and Furu Wei.",
+        "journal": "ArXiv, abs/2302.14045, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "InNeurIPS, 2023d."
+      },
+      {
+        "tag": "Jain et\u00a0al. [2021]",
+        "title": "Semask: Semantically masking transformer backbones for effective semantic segmentation.",
+        "authors": "Jitesh Jain, Anukriti Singh, Nikita Orlov, Zilong Huang, Jiachen Li, Steven Walton, and Humphrey Shi.",
+        "journal": "arXiv, 2021."
+      },
+      {
+        "tag": "Xie et\u00a0al. [2021]",
+        "title": "Segformer: Simple and efficient design for semantic segmentation with transformers.",
+        "authors": "Enze Xie, Wenhai Wang, Zhiding Yu, Anima Anandkumar, Jose\u00a0M. Alvarez, and Ping Luo.",
+        "journal": "InNeurIPS, 2021."
+      },
+      {
+        "tag": "Ye et\u00a0al. [2023]",
+        "title": "mplug-owl: Modularization empowers large language models with multimodality, 2023.",
+        "authors": "Qinghao Ye, Haiyang Xu, Guohai Xu, Jiabo Ye, Ming Yan, Yiyang Zhou, Junyang Wang, Anwen Hu, Pengcheng Shi, Yaya Shi, Chaoya Jiang, Chenliang Li, Yuanhong Xu, Hehong Chen, Junfeng Tian, Qian Qi, Ji Zhang, and Fei Huang.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2020]",
+        "title": "Deformable detr: Deformable transformers for end-to-end object detection.",
+        "authors": "Xizhou Zhu, Weijie Su, Lewei Lu, Bin Li, Xiaogang Wang, and Jifeng Dai.",
+        "journal": "arXiv, 2020."
+      },
+      {
+        "tag": "Toshev and Szegedy [2014]",
+        "title": "Deeppose: Human pose estimation via deep neural networks.",
+        "authors": "Alexander Toshev and Christian Szegedy.",
+        "journal": "InProceedings of the IEEE conference on computer vision and pattern recognition, pages 1653\u20131660, 2014."
+      },
+      {
+        "tag": "Ranftl et\u00a0al. [2021]",
+        "title": "Vision transformers for dense prediction.",
+        "authors": "Ren\u00e9 Ranftl, Alexey Bochkovskiy, and Vladlen Koltun.",
+        "journal": "InICCV, 2021."
+      },
+      {
+        "tag": "Tsimpoukelli et\u00a0al. [2021]",
+        "title": "Multimodal few-shot learning with frozen language models.",
+        "authors": "Maria Tsimpoukelli, Jacob Menick, Serkan Cabi, S.\u00a0M.\u00a0Ali Eslami, Oriol Vinyals, and Felix Hill.",
+        "journal": "InNeurIPS, 2021."
+      },
+      {
+        "tag": "Zeng et\u00a0al. [2023]",
+        "title": "What matters in training a gpt4-style language model with multimodal inputs?",
+        "authors": "Yan Zeng, Hanbo Zhang, Jiani Zheng, Jiangnan Xia, Guoqiang Wei, Yang Wei, Yuchen Zhang, and Tao Kong.",
+        "journal": "arXiv preprint arXiv:2307.02469, 2023."
+      },
+      {
+        "tag": "Long et\u00a0al. [2015]",
+        "title": "Fully convolutional networks for semantic segmentation.",
+        "authors": "Jonathan Long, Evan Shelhamer, and Trevor Darrell.",
+        "journal": "InCVPR, 2015."
+      },
+      {
+        "tag": "Fu et\u00a0al. [2023]",
+        "title": "Mme: A comprehensive evaluation benchmark for multimodal large language models.",
+        "authors": "Chaoyou Fu, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Zhenyu Qiu, Wei Lin, Jinrui Yang, Xiawu Zheng, Ke Li, Xing Sun, and Rongrong Ji.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "[32]",
+        "title": "Gradient-based learning applied to document recognition.",
+        "authors": "Yann LeCun, L\u00e9on Bottou, Yoshua Bengio, and Patrick Haffner.",
+        "journal": "Proceedings of the IEEE."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023d]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "InEMNLP, 2023d."
+      },
+      {
+        "tag": "Laina et\u00a0al. [2016]",
+        "title": "Deeper depth prediction with fully convolutional residual networks.",
+        "authors": "Iro Laina, Christian Rupprecht, Vasileios Belagiannis, Federico Tombari, and Nassir Navab.",
+        "journal": "In2016 Fourth International Conference on 3D Vision (3DV), pages 239\u2013248. IEEE, 2016."
+      },
+      {
+        "tag": "Awadalla et\u00a0al. [2023]",
+        "title": "Openflamingo: An open-source framework for training large autoregressive vision-language models.",
+        "authors": "Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang\u00a0Wei Koh, Gabriel Ilharco, Mitchell Wortsman, and Ludwig Schmidt.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023a]",
+        "title": "Mimic-it: Multi-modal in-context instruction tuning.",
+        "authors": "Bo Li, Yuanhan Zhang, Liangyu Chen, Jinghao Wang, Fanyi Pu, Jingkang Yang, Chunyuan Li, and Ziwei Liu.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Hudson and Manning [2019]",
+        "title": "Gqa: A new dataset for real-world visual reasoning and compositional question answering.",
+        "authors": "Drew\u00a0A Hudson and Christopher\u00a0D Manning.",
+        "journal": "CVPR, 2019."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Dosovitskiy et\u00a0al. [2021]",
+        "title": "An image is worth 16x16 words: Transformers for image recognition at scale.",
+        "authors": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.",
+        "journal": "InICLR, 2021."
+      },
+      {
+        "tag": "Tu et\u00a0al. [2005]",
+        "title": "Image parsing: Unifying segmentation, detection, and recognition.",
+        "authors": "Z. Tu, Xiangrong Chen, Alan Yuille, and Song Zhu.",
+        "journal": "InIJCV, 2005."
+      },
+      {
+        "tag": "Eigen et\u00a0al. [2014]",
+        "title": "Depth map prediction from a single image using a multi-scale deep network.",
+        "authors": "David Eigen, Christian Puhrsch, and Rob Fergus.",
+        "journal": "InAdvances in neural information processing systems, pages 2366\u20132374, 2014."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023a]",
+        "title": "Llama: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timoth\u00e9e Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample.",
+        "journal": "arXiv, 2023a."
+      },
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      },
+      {
+        "tag": "Ren et\u00a0al. [2015]",
+        "title": "Faster R-CNN: Towards real-time object detection with region proposal networks.",
+        "authors": "Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.",
+        "journal": "arXiv, 2015."
+      },
+      {
+        "tag": "Chen et\u00a0al. [2015]",
+        "title": "Semantic image segmentation with deep convolutional nets and fully connected crfs.",
+        "authors": "Liang-Chieh Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan\u00a0L. Yuille.",
+        "journal": "InICLR, 2015."
+      },
+      {
+        "tag": "Cheng et\u00a0al. [2020]",
+        "title": "Panoptic-deeplab: A simple, strong, and fast baseline for bottom-up panoptic segmentation.",
+        "authors": "Bowen Cheng, Maxwell\u00a0D Collins, Yukun Zhu, Ting Liu, Thomas\u00a0S Huang, Hartwig Adam, and Liang-Chieh Chen.",
+        "journal": "InCVPR, 2020."
+      },
+      {
+        "tag": "Cootes et\u00a0al. [2001]",
+        "title": "Active appearance models.",
+        "authors": "Timothy\u00a0F Cootes, Gareth\u00a0J Edwards, and Christopher\u00a0J Taylor.",
+        "journal": "IEEE Transactions on pattern analysis and machine intelligence, 23(6):681\u2013685, 2001."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023b]",
+        "title": "Otter: A multi-modal model with in-context instruction tuning.",
+        "authors": "Bo Li, Yuanhan Zhang, Liangyu Chen, Jinghao Wang, Jingkang Yang, and Ziwei Liu.",
+        "journal": "arXiv preprint arXiv:2305.03726, 2023b."
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021a]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, A. Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.",
+        "journal": "InICML, 2021a."
+      }
+    ]
+  },
+  "S3": {
+    "title": "3Object Identification with MLLMs",
+    "text": "Suppose you are invited to a Halloween party and want to bring candies for every person at that party. You ask your friend to send you a picture ( Fig. 1 ) of the party room so that you can estimate the number of people and the number of candies you need to buy. In a hurry, you ask GPT-4V [ 51 ] : \u201c Can you count the number of people in the image? \u201d, and it responds: \u201c Yes, there are ten people visible in the image. \u201d. Excited, you arrive at the party with ten candies but wait, you see fourteen people! Confused, you look at the image your friend sent you, and you can count fourteen people in that image, realizing that GPT-4V fails at the simple task of counting the people in the picture. At the same time, it can accurately describe the happening of a Halloween party in the image ( Fig. 1 ). We refer to the phenomenon of Multimodal LLMs failing at simple visual perception tasks while succeeding at complex visual reasoning tasks as Moravec\u2019s Paradox [ 47 ] in perception. Report issue for preceding element\nWe hypothesize that one of the main reasons for the above phenomenon is the absence of conversations covering object identification for not only the salient objects but also the objects in the background from the instruction-tuning data for MLLMs. To overcome this issue, we prepare the COCO Segmentation Text ( COST ) dataset with COCO [ 38 ] images and create sentences using the output from an image segmentation model [ 26 ] to obtain an image-text dataset to train and evaluate MLLMs for object perception MLLMs. Moreover, we also introduce a segmentation map as a control image input to the MLLM for better performance and quantify object perception performance with a count score ( CS ) and a hallucination score ( HS ). Report issue for preceding element\nWe find that image segmentation methods [ 26 , 10 ] can accurately identify salient (foreground objects like people, cars, etc. ) and background objects (like sky, wall, etc. ) in a given scene. Guided by this finding, we use images from the COCO [ 38 ] dataset and obtain the corresponding segmentation outputs from OneFormer [ 26 ] , a state-of-the-art image segmentation model. Next, we extract the object (class) names and counts from the segmentation outputs and convert them into a sentence form for the ground-truth answer: \u201cThe objects present in the image are: [ \ud835\udc36\ud835\udc41\ud835\udc47 1 subscript \ud835\udc36\ud835\udc41\ud835\udc47 1 \\text{CNT}_{\\text{1}} CNT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ] [ \ud835\udc42\ud835\udc35\ud835\udc3d 1 subscript \ud835\udc42\ud835\udc35\ud835\udc3d 1 \\text{OBJ}_{\\text{1}} OBJ start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ], [ \ud835\udc36\ud835\udc41\ud835\udc47 2 subscript \ud835\udc36\ud835\udc41\ud835\udc47 2 \\text{CNT}_{\\text{2}} CNT start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ] [ \ud835\udc42\ud835\udc35\ud835\udc3d 2 subscript \ud835\udc42\ud835\udc35\ud835\udc3d 2 \\text{OBJ}_{\\text{2}} OBJ start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ], \u2026 normal-\u2026 \\ldots \u2026 , [ \ud835\udc36\ud835\udc41\ud835\udc47 \ud835\udc41 subscript \ud835\udc36\ud835\udc41\ud835\udc47 \ud835\udc41 \\text{CNT}_{\\text{N}} CNT start_POSTSUBSCRIPT N end_POSTSUBSCRIPT ] [ \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc41 subscript \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc41 \\text{OBJ}_{\\text{N}} OBJ start_POSTSUBSCRIPT N end_POSTSUBSCRIPT ].\u201d , with [ \ud835\udc42\ud835\udc35\ud835\udc3d i subscript \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc56 \\text{OBJ}_{i} OBJ start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ] representing the object name and [ C \u2062 N \u2062 T i \ud835\udc36 \ud835\udc41 subscript \ud835\udc47 \ud835\udc56 CNT_{i} italic_C italic_N italic_T start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ] representing the count (if greater than one) for the i t \u2062 h superscript \ud835\udc56 \ud835\udc61 \u210e i^{th} italic_i start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT object in the image. We prompt GPT-4 [ 51 ] to collect a bucket of questions for three different object identification tasks: semantic, instance, and panoptic, corresponding to the three different image segmentation tasks. Finally, as shown in Fig. 3 , we organize the images from COCO, segmentation maps from OneFormer, questions from GPT-4, and sentences containing object information into a question-answer format to construct our CO CO S egmentation T ext ( COST ) dataset for training and evaluating MLLMs on the object identification task. Report issue for preceding element\nStatistically, we prompt GPT-4 [ 51 ] to return 20 questions for each question bucket (panoptic, semantic, and instance). In total, we used 280k images from the train2017 , test2017 , and unlabeled2017 splits of the COCO [ 38 ] dataset and corresponding segmentation outputs from OneFormer [ 26 ] to form the visual component of the COST training dataset. Similarly, we prepare a COST validation split using the 5k images from the val2017 split of the COCO dataset. Report issue for preceding element\nNote that a similar approach can extend the COST dataset to other perception modalities. In this work, we incorporate the depth map modality into our COST dataset for the object order perception task. Particularly, we leverage the publicly available DINOv2 [ 52 ] DPT [ 57 ] model to obtain depth maps for COCO images and use the panoptic mask (from OneFormer [ 26 ] ) to estimate the depth order of objects in an image. We format the obtained ordering of objects into the text with the template: \u201cThe depth order for objects present in the image is: [ \ud835\udc42\ud835\udc35\ud835\udc3d 1 subscript \ud835\udc42\ud835\udc35\ud835\udc3d 1 \\text{OBJ}_{\\text{1}} OBJ start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ], [ \ud835\udc42\ud835\udc35\ud835\udc3d 2 subscript \ud835\udc42\ud835\udc35\ud835\udc3d 2 \\text{OBJ}_{\\text{2}} OBJ start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT ], \u2026 normal-\u2026 \\ldots \u2026 , [ \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc3d subscript \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc3d \\text{OBJ}_{\\text{J}} OBJ start_POSTSUBSCRIPT J end_POSTSUBSCRIPT ].\u201d , with [ \ud835\udc42\ud835\udc35\ud835\udc3d j subscript \ud835\udc42\ud835\udc35\ud835\udc3d \ud835\udc57 \\text{OBJ}_{j} OBJ start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT ] representing the j t \u2062 h superscript \ud835\udc57 \ud835\udc61 \u210e j^{th} italic_j start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT object name. To maintain relative ordering among objects belonging to the same class, we append a count number to the second and later objects, as shown in the bottom right of Fig. 3 for person and person-2 . Similar to the previous setting, we prompt GPT-4 [ 51 ] to return 20 questions for the object order perception task. We provide a detailed flow of obtaining ground-truth object orders in the appendix. Report issue for preceding element\nWe notice that existing open-source Multimodal LLMs generally use the ViT [ 15 ] from CLIP [ 56 ] as the image encoder (ImCoder) during instruction tuning. We reason that the ViT focuses mainly on salient objects because it is trained against captions, which leave out information about background regions. We argue that identifying objects in the background is critical for a Multimodal LLM to become skilled at perception. To overcome this limitation, we introduce a segmentation map as a control input [ 74 , 48 ] into our Multimodal LLM. Specifically, we use the segmentation map from OneFormer [ 26 ] and project it to the LLM\u2019s embedding space using a pretrained ViT [ 15 ] (from CLIP [ 56 ] ) as a SegCoder and a two-layer MLP [ 41 ] which we collectively refer to as our V ersatile en Coder ( VCoder ). This extra control from the segmentation map results in considerable performance gains on the object identification task. Report issue for preceding element\nAs shown in Fig. 4 a , our VCoder adapted MLLM takes three sets of inputs: perception modalities as control inputs fed into the VCoder, an RGB image fed into an Image enCoder (and MLP), and the question from the user. The RGB image and text are tokenized to the <img> and <query> tokens, respectively. VCoder is flexible at handling various perception modalities with a special token for each modality. For example, the segmentation map and depth map inputs are tokenized to <seg> and <depth> tokens, respectively. Similarly, one can incorporate more modalities with modality-specific tokens. Finally, all tokenized embeddings are concatenated and fed into the LLM to obtain the final answer. We only use the <seg> input for the object identification task. Report issue for preceding element\nWe treat our VCoder as an adapter, added to our base MLLM, LLaVA-1.5 [ 41 ] to obtain the final MLLM framework for experiments. Note that we only train the MLP components in the VCoder on the COST dataset. We decided to keep all other parameters fixed during training to keep the reasoning ability unaffected while achieving improved object perception performance. Report issue for preceding element\nDespite the availability of various metrics [ 37 , 59 , 45 ] to measure object hallucination in vision-language models, no existing metric considers the explicit object counts while calculating their hallucination scores. We argue that object counts returned by an MLLM are a critical component that should not be overlooked while evaluating object identification performance. Therefore, we propose evaluating object identification performance in MLLMs using two metrics: count-score ( \ud835\udc02\ud835\udc12 \ud835\udc02\ud835\udc12 \\mathbf{CS} bold_CS ) and hallucination-score ( \ud835\udc07\ud835\udc12 \ud835\udc07\ud835\udc12 \\mathbf{HS} bold_HS ). Report issue for preceding element\nG dict = { OBJ 1 G : CNT 1 G ; \u22ef ; OBJ N G : CNT N G } P dict = { OBJ 1 P : CNT 1 P ; \u22ef ; OBJ M P : CNT M P } subscript \ud835\udc3a dict conditional-set subscript superscript OBJ \ud835\udc3a 1 : subscript superscript CNT \ud835\udc3a 1 \u22ef subscript superscript OBJ \ud835\udc3a \ud835\udc41 subscript superscript CNT \ud835\udc3a \ud835\udc41 subscript \ud835\udc43 dict conditional-set subscript superscript OBJ \ud835\udc43 1 : subscript superscript CNT \ud835\udc43 1 \u22ef subscript superscript OBJ \ud835\udc43 \ud835\udc40 subscript superscript CNT \ud835\udc43 \ud835\udc40 \\begin{split}G_{\\text{dict}}&=\\{\\text{OBJ}^{G}_{1}:\\text{CNT}^{G}_{1};\\cdots;%\n\\text{OBJ}^{G}_{N}:\\text{CNT}^{G}_{N}\\}\\\\\nP_{\\text{dict}}&=\\{\\text{OBJ}^{P}_{1}:\\text{CNT}^{P}_{1};\\cdots;\\text{OBJ}^{P}%\n_{M}:\\text{CNT}^{P}_{M}\\}\\\\\n\\end{split} start_ROW start_CELL italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT end_CELL start_CELL = { OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ; \u22ef ; OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_N end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_N end_POSTSUBSCRIPT } end_CELL end_ROW start_ROW start_CELL italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT end_CELL start_CELL = { OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ; \u22ef ; OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_M end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_M end_POSTSUBSCRIPT } end_CELL end_ROW (1)\nAs shown in Fig. 5 , given a ground-truth sentence ( G \ud835\udc3a G italic_G ) and an MLLM predicted response ( P \ud835\udc43 P italic_P ), we first extract the object words (nouns) and their corresponding count from both text samples and represent them in a dictionary form with keys as the object noun and the value as the corresponding object\u2019s count as shown in Eq. 1 with N \ud835\udc41 N italic_N and M \ud835\udc40 M italic_M representing the number of different object nouns in the G \ud835\udc3a G italic_G and P \ud835\udc43 P italic_P respectively. Next, we perform one-to-one matching between the counts for keys with G dict subscript \ud835\udc3a dict G_{\\text{dict}} italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT and P dict subscript \ud835\udc43 dict P_{\\text{dict}} italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT as the reference for Count Score ( \ud835\udc02\ud835\udc12 \ud835\udc02\ud835\udc12 \\mathbf{CS} bold_CS ) and Hallucination Score ( \ud835\udc07\ud835\udc12 \ud835\udc07\ud835\udc12 \\mathbf{HS} bold_HS ), respectively, as shown in Eq. 2 . Report issue for preceding element\n\ud835\udc02\ud835\udc12 = 100 N \u2062 \u2211 i = 1 N { min \u2061 ( CNT i G , CNT i P ) max \u2061 ( CNT i G , CNT i P ) if \u2062 I \u2062 ( OBJ i G , P dict ) 0 otherwise \ud835\udc07\ud835\udc12 = 100 M \u2062 \u2211 j = 1 M { 1 \u2212 min \u2061 ( CNT j P , CNT j G ) max \u2061 ( CNT j P , CNT j G ) if \u2062 I \u2062 ( OBJ j P , G dict ) 1 otherwise I \u2062 ( OBJ , D ) = { True if OBJ is in \ud835\ude94\ud835\ude8e\ud835\udea2\ud835\ude9c \u2062 ( D ) False otherwise \ud835\udc02\ud835\udc12 100 \ud835\udc41 superscript subscript \ud835\udc56 1 \ud835\udc41 cases subscript superscript CNT \ud835\udc3a \ud835\udc56 subscript superscript CNT \ud835\udc43 \ud835\udc56 subscript superscript CNT \ud835\udc3a \ud835\udc56 subscript superscript CNT \ud835\udc43 \ud835\udc56 if \ud835\udc3c subscript superscript OBJ \ud835\udc3a \ud835\udc56 subscript \ud835\udc43 dict 0 otherwise \ud835\udc07\ud835\udc12 100 \ud835\udc40 superscript subscript \ud835\udc57 1 \ud835\udc40 cases 1 subscript superscript CNT \ud835\udc43 \ud835\udc57 subscript superscript CNT \ud835\udc3a \ud835\udc57 subscript superscript CNT \ud835\udc43 \ud835\udc57 subscript superscript CNT \ud835\udc3a \ud835\udc57 if \ud835\udc3c subscript superscript OBJ \ud835\udc43 \ud835\udc57 subscript \ud835\udc3a dict 1 otherwise \ud835\udc3c OBJ \ud835\udc37 cases True if OBJ is in \ud835\ude94\ud835\ude8e\ud835\udea2\ud835\ude9c \ud835\udc37 False otherwise \\begin{split}&\\mathbf{CS}=\\frac{100}{N}\\sum_{i=1}^{N}\\begin{cases}\\frac{\\min(%\n\\text{CNT}^{G}_{i},\\text{CNT}^{P}_{i})}{\\max(\\text{CNT}^{G}_{i},\\text{CNT}^{P}%\n_{i})}&\\text{if }I(\\text{OBJ}^{G}_{i},P_{\\text{dict}})\\\\\n0&\\text{otherwise}\\end{cases}\\\\\n&\\mathbf{HS}=\\frac{100}{M}\\sum_{j=1}^{M}\\begin{cases}1-\\frac{\\min(\\text{CNT}^{%\nP}_{j},\\text{CNT}^{G}_{j})}{\\max(\\text{CNT}^{P}_{j},\\text{CNT}^{G}_{j})}&\\text%\n{if }I(\\text{OBJ}^{P}_{j},G_{\\text{dict}})\\\\\n1&\\text{otherwise}\\end{cases}\\\\\n&I(\\text{OBJ},D)=\\begin{cases}\\text{True}&\\text{if }\\text{OBJ}\\text{ is in }%\n\\texttt{keys}(D)\\\\\n\\text{False}&\\text{otherwise}\\end{cases}\\\\\n\\end{split} start_ROW start_CELL end_CELL start_CELL bold_CS = divide start_ARG 100 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT { start_ROW start_CELL divide start_ARG roman_min ( CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ) end_ARG start_ARG roman_max ( CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ) end_ARG end_CELL start_CELL if italic_I ( OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT ) end_CELL end_ROW start_ROW start_CELL 0 end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL bold_HS = divide start_ARG 100 end_ARG start_ARG italic_M end_ARG \u2211 start_POSTSUBSCRIPT italic_j = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_M end_POSTSUPERSCRIPT { start_ROW start_CELL 1 - divide start_ARG roman_min ( CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT ) end_ARG start_ARG roman_max ( CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT ) end_ARG end_CELL start_CELL if italic_I ( OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT ) end_CELL end_ROW start_ROW start_CELL 1 end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL italic_I ( OBJ , italic_D ) = { start_ROW start_CELL True end_CELL start_CELL if roman_OBJ is in typewriter_keys ( italic_D ) end_CELL end_ROW start_ROW start_CELL False end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW (2) Count Score (CS) . It represents the percentage of correct object counts predicted by the MLLM with respect to the ground-truth sentence. The higher the CS , the better. Report issue for preceding element\nHallucination Score (HS) . It represents the percentage of extra object counts predicted by the MLLM that do not exist in the ground-truth sentence. The lower the HS , the better. Report issue for preceding element\nNote that due to the one-to-one word-matching nature of our evaluation, we manually define a mapping between the categories in COCO [ 38 ] and their synonyms [ 59 , 46 ] . For example, we replace words like man, woman, child, kid, boy, girl , etc. with the word person in the MLLM\u2019s response before evaluation. Report issue for preceding element",
+    "masked_text": "Suppose you are invited to a Halloween party and want to bring candies for every person at that party. You ask your friend to send you a picture (Fig. 1) of the party room so that you can estimate the number of people and the number of candies you need to buy. In a hurry, you ask GPT-4V [CITATION]: \u201cCan you count the number of people in the image?\u201d, and it responds: \u201cYes, there are ten people visible in the image.\u201d. Excited, you arrive at the party with ten candies but wait, you see fourteen people! Confused, you look at the image your friend sent you, and you can count fourteen people in that image, realizing that GPT-4V fails at the simple task of counting the people in the picture. At the same time, it can accurately describe the happening of a Halloween party in the image (Fig. 1). We refer to the phenomenon of Multimodal LLMs failing at simple visual perception tasks while succeeding at complex visual reasoning tasks as Moravec\u2019s Paradox [CITATION] in perception.Report issue for preceding element\nWe hypothesize that one of the main reasons for the above phenomenon is the absence of conversations covering object identification for not only the salient objects but also the objects in the background from the instruction-tuning data for MLLMs. To overcome this issue, we prepare the COCO Segmentation Text (COST) dataset with COCO [CITATION] images and create sentences using the output from an image segmentation model [CITATION] to obtain an image-text dataset to train and evaluate MLLMs for object perception MLLMs. Moreover, we also introduce a segmentation map as a control image input to the MLLM for better performance and quantify object perception performance with a count score (CS) and a hallucination score (HS).Report issue for preceding element\nWe find that image segmentation methods [CITATION] can accurately identify salient (foreground objects like people, cars, etc.) and background objects (like sky, wall, etc.) in a given scene. Guided by this finding, we use images from the COCO [CITATION] dataset and obtain the corresponding segmentation outputs from OneFormer [CITATION], a state-of-the-art image segmentation model. Next, we extract the object (class) names and counts from the segmentation outputs and convert them into a sentence form for the ground-truth answer:\u201cThe objects present in the image are: [\ud835\udc36\ud835\udc41\ud835\udc471subscript\ud835\udc36\ud835\udc41\ud835\udc471\\text{CNT}_{\\text{1}}CNT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT] [\ud835\udc42\ud835\udc35\ud835\udc3d1subscript\ud835\udc42\ud835\udc35\ud835\udc3d1\\text{OBJ}_{\\text{1}}OBJ start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT], [\ud835\udc36\ud835\udc41\ud835\udc472subscript\ud835\udc36\ud835\udc41\ud835\udc472\\text{CNT}_{\\text{2}}CNT start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT] [\ud835\udc42\ud835\udc35\ud835\udc3d2subscript\ud835\udc42\ud835\udc35\ud835\udc3d2\\text{OBJ}_{\\text{2}}OBJ start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT], \u2026normal-\u2026\\ldots\u2026, [\ud835\udc36\ud835\udc41\ud835\udc47\ud835\udc41subscript\ud835\udc36\ud835\udc41\ud835\udc47\ud835\udc41\\text{CNT}_{\\text{N}}CNT start_POSTSUBSCRIPT N end_POSTSUBSCRIPT] [\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc41subscript\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc41\\text{OBJ}_{\\text{N}}OBJ start_POSTSUBSCRIPT N end_POSTSUBSCRIPT].\u201d, with [\ud835\udc42\ud835\udc35\ud835\udc3disubscript\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc56\\text{OBJ}_{i}OBJ start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT] representing the object name and [C\u2062N\u2062Ti\ud835\udc36\ud835\udc41subscript\ud835\udc47\ud835\udc56CNT_{i}italic_C italic_N italic_T start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT] representing the count (if greater than one) for the it\u2062hsuperscript\ud835\udc56\ud835\udc61\u210ei^{th}italic_i start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT object in the image. We prompt GPT-4 [CITATION] to collect a bucket of questions for three different object identification tasks: semantic, instance, and panoptic, corresponding to the three different image segmentation tasks. Finally, as shown in Fig. 3, we organize the images from COCO, segmentation maps from OneFormer, questions from GPT-4, and sentences containing object information into a question-answer format to construct our COCO Segmentation Text (COST) dataset for training and evaluating MLLMs on the object identification task.Report issue for preceding element\nStatistically, we prompt GPT-4 [CITATION] to return 20 questions for each question bucket (panoptic, semantic, and instance). In total, we used 280k images from the train2017, test2017, and unlabeled2017 splits of the COCO [CITATION] dataset and corresponding segmentation outputs from OneFormer [CITATION] to form the visual component of the COST training dataset. Similarly, we prepare a COST validation split using the 5k images from the val2017 split of the COCO dataset.Report issue for preceding element\nNote that a similar approach can extend the COST dataset to other perception modalities. In this work, we incorporate the depth map modality into our COST dataset for the object order perception task. Particularly, we leverage the publicly available DINOv2 [CITATION] DPT [CITATION] model to obtain depth maps for COCO images and use the panoptic mask (from OneFormer [CITATION]) to estimate the depth order of objects in an image. We format the obtained ordering of objects into the text with the template: \u201cThe depth order for objects present in the image is: [\ud835\udc42\ud835\udc35\ud835\udc3d1subscript\ud835\udc42\ud835\udc35\ud835\udc3d1\\text{OBJ}_{\\text{1}}OBJ start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT], [\ud835\udc42\ud835\udc35\ud835\udc3d2subscript\ud835\udc42\ud835\udc35\ud835\udc3d2\\text{OBJ}_{\\text{2}}OBJ start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT], \u2026normal-\u2026\\ldots\u2026, [\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc3dsubscript\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc3d\\text{OBJ}_{\\text{J}}OBJ start_POSTSUBSCRIPT J end_POSTSUBSCRIPT].\u201d, with [\ud835\udc42\ud835\udc35\ud835\udc3djsubscript\ud835\udc42\ud835\udc35\ud835\udc3d\ud835\udc57\\text{OBJ}_{j}OBJ start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT] representing the jt\u2062hsuperscript\ud835\udc57\ud835\udc61\u210ej^{th}italic_j start_POSTSUPERSCRIPT italic_t italic_h end_POSTSUPERSCRIPT object name. To maintain relative ordering among objects belonging to the same class, we append a count number to the second and later objects, as shown in the bottom right of Fig. 3 for person and person-2. Similar to the previous setting, we prompt GPT-4 [CITATION] to return 20 questions for the object order perception task. We provide a detailed flow of obtaining ground-truth object orders in the appendix.Report issue for preceding element\nWe notice that existing open-source Multimodal LLMs generally use the ViT [CITATION] from CLIP [CITATION] as the image encoder (ImCoder) during instruction tuning. We reason that the ViT focuses mainly on salient objects because it is trained against captions, which leave out information about background regions. We argue that identifying objects in the background is critical for a Multimodal LLM to become skilled at perception. To overcome this limitation, we introduce a segmentation map as a control input [CITATION] into our Multimodal LLM. Specifically, we use the segmentation map from OneFormer [CITATION] and project it to the LLM\u2019s embedding space using a pretrained ViT [CITATION] (from CLIP [CITATION]) as a SegCoder and a two-layer MLP [CITATION] which we collectively refer to as our Versatile enCoder (VCoder). This extra control from the segmentation map results in considerable performance gains on the object identification task.Report issue for preceding element\nAs shown in Fig. 4a, our VCoder adapted MLLM takes three sets of inputs: perception modalities as control inputs fed into the VCoder, an RGB image fed into an Image enCoder (and MLP), and the question from the user. The RGB image and text are tokenized to the <img> and <query> tokens, respectively. VCoder is flexible at handling various perception modalities with a special token for each modality. For example, the segmentation map and depth map inputs are tokenized to <seg> and <depth> tokens, respectively. Similarly, one can incorporate more modalities with modality-specific tokens. Finally, all tokenized embeddings are concatenated and fed into the LLM to obtain the final answer. We only use the <seg> input for the object identification task.Report issue for preceding element\nWe treat our VCoder as an adapter, added to our base MLLM, LLaVA-1.5 [CITATION] to obtain the final MLLM framework for experiments. Note that we only train the MLP components in the VCoder on the COST dataset. We decided to keep all other parameters fixed during training to keep the reasoning ability unaffected while achieving improved object perception performance.Report issue for preceding element\nDespite the availability of various metrics [CITATION] to measure object hallucination in vision-language models, no existing metric considers the explicit object counts while calculating their hallucination scores. We argue that object counts returned by an MLLM are a critical component that should not be overlooked while evaluating object identification performance. Therefore, we propose evaluating object identification performance in MLLMs using two metrics: count-score (\ud835\udc02\ud835\udc12\ud835\udc02\ud835\udc12\\mathbf{CS}bold_CS) and hallucination-score (\ud835\udc07\ud835\udc12\ud835\udc07\ud835\udc12\\mathbf{HS}bold_HS).Report issue for preceding element\nGdict={OBJ1G:CNT1G;\u22ef;OBJNG:CNTNG}Pdict={OBJ1P:CNT1P;\u22ef;OBJMP:CNTMP}subscript\ud835\udc3adictconditional-setsubscriptsuperscriptOBJ\ud835\udc3a1:subscriptsuperscriptCNT\ud835\udc3a1\u22efsubscriptsuperscriptOBJ\ud835\udc3a\ud835\udc41subscriptsuperscriptCNT\ud835\udc3a\ud835\udc41subscript\ud835\udc43dictconditional-setsubscriptsuperscriptOBJ\ud835\udc431:subscriptsuperscriptCNT\ud835\udc431\u22efsubscriptsuperscriptOBJ\ud835\udc43\ud835\udc40subscriptsuperscriptCNT\ud835\udc43\ud835\udc40\\begin{split}G_{\\text{dict}}&=\\{\\text{OBJ}^{G}_{1}:\\text{CNT}^{G}_{1};\\cdots;% \\text{OBJ}^{G}_{N}:\\text{CNT}^{G}_{N}\\}\\\\ P_{\\text{dict}}&=\\{\\text{OBJ}^{P}_{1}:\\text{CNT}^{P}_{1};\\cdots;\\text{OBJ}^{P}% _{M}:\\text{CNT}^{P}_{M}\\}\\\\ \\end{split}start_ROW start_CELL italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT end_CELL start_CELL = { OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ; \u22ef ; OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_N end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_N end_POSTSUBSCRIPT } end_CELL end_ROW start_ROW start_CELL italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT end_CELL start_CELL = { OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT ; \u22ef ; OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_M end_POSTSUBSCRIPT : CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_M end_POSTSUBSCRIPT } end_CELL end_ROW (1)\nAs shown in Fig. 5, given a ground-truth sentence (G\ud835\udc3aGitalic_G) and an MLLM predicted response (P\ud835\udc43Pitalic_P), we first extract the object words (nouns) and their corresponding count from both text samples and represent them in a dictionary form with keys as the object noun and the value as the corresponding object\u2019s count as shown in Eq. 1 with N\ud835\udc41Nitalic_N and M\ud835\udc40Mitalic_M representing the number of different object nouns in the G\ud835\udc3aGitalic_G and P\ud835\udc43Pitalic_P respectively. Next, we perform one-to-one matching between the counts for keys with Gdictsubscript\ud835\udc3adictG_{\\text{dict}}italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT and Pdictsubscript\ud835\udc43dictP_{\\text{dict}}italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT as the reference for Count Score (\ud835\udc02\ud835\udc12\ud835\udc02\ud835\udc12\\mathbf{CS}bold_CS) and Hallucination Score (\ud835\udc07\ud835\udc12\ud835\udc07\ud835\udc12\\mathbf{HS}bold_HS), respectively, as shown in Eq. 2.Report issue for preceding element\n\ud835\udc02\ud835\udc12=100N\u2062\u2211i=1N{min\u2061(CNTiG,CNTiP)max\u2061(CNTiG,CNTiP)if \u2062I\u2062(OBJiG,Pdict)0otherwise\ud835\udc07\ud835\udc12=100M\u2062\u2211j=1M{1\u2212min\u2061(CNTjP,CNTjG)max\u2061(CNTjP,CNTjG)if \u2062I\u2062(OBJjP,Gdict)1otherwiseI\u2062(OBJ,D)={Trueif OBJ is in \ud835\ude94\ud835\ude8e\ud835\udea2\ud835\ude9c\u2062(D)Falseotherwise\ud835\udc02\ud835\udc12100\ud835\udc41superscriptsubscript\ud835\udc561\ud835\udc41casessubscriptsuperscriptCNT\ud835\udc3a\ud835\udc56subscriptsuperscriptCNT\ud835\udc43\ud835\udc56subscriptsuperscriptCNT\ud835\udc3a\ud835\udc56subscriptsuperscriptCNT\ud835\udc43\ud835\udc56if \ud835\udc3csubscriptsuperscriptOBJ\ud835\udc3a\ud835\udc56subscript\ud835\udc43dict0otherwise\ud835\udc07\ud835\udc12100\ud835\udc40superscriptsubscript\ud835\udc571\ud835\udc40cases1subscriptsuperscriptCNT\ud835\udc43\ud835\udc57subscriptsuperscriptCNT\ud835\udc3a\ud835\udc57subscriptsuperscriptCNT\ud835\udc43\ud835\udc57subscriptsuperscriptCNT\ud835\udc3a\ud835\udc57if \ud835\udc3csubscriptsuperscriptOBJ\ud835\udc43\ud835\udc57subscript\ud835\udc3adict1otherwise\ud835\udc3cOBJ\ud835\udc37casesTrueif OBJ is in \ud835\ude94\ud835\ude8e\ud835\udea2\ud835\ude9c\ud835\udc37Falseotherwise\\begin{split}&\\mathbf{CS}=\\frac{100}{N}\\sum_{i=1}^{N}\\begin{cases}\\frac{\\min(% \\text{CNT}^{G}_{i},\\text{CNT}^{P}_{i})}{\\max(\\text{CNT}^{G}_{i},\\text{CNT}^{P}% _{i})}&\\text{if }I(\\text{OBJ}^{G}_{i},P_{\\text{dict}})\\\\ 0&\\text{otherwise}\\end{cases}\\\\ &\\mathbf{HS}=\\frac{100}{M}\\sum_{j=1}^{M}\\begin{cases}1-\\frac{\\min(\\text{CNT}^{% P}_{j},\\text{CNT}^{G}_{j})}{\\max(\\text{CNT}^{P}_{j},\\text{CNT}^{G}_{j})}&\\text% {if }I(\\text{OBJ}^{P}_{j},G_{\\text{dict}})\\\\ 1&\\text{otherwise}\\end{cases}\\\\ &I(\\text{OBJ},D)=\\begin{cases}\\text{True}&\\text{if }\\text{OBJ}\\text{ is in }% \\texttt{keys}(D)\\\\ \\text{False}&\\text{otherwise}\\end{cases}\\\\ \\end{split}start_ROW start_CELL end_CELL start_CELL bold_CS = divide start_ARG 100 end_ARG start_ARG italic_N end_ARG \u2211 start_POSTSUBSCRIPT italic_i = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_N end_POSTSUPERSCRIPT { start_ROW start_CELL divide start_ARG roman_min ( CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ) end_ARG start_ARG roman_max ( CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT ) end_ARG end_CELL start_CELL if italic_I ( OBJ start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT , italic_P start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT ) end_CELL end_ROW start_ROW start_CELL 0 end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL bold_HS = divide start_ARG 100 end_ARG start_ARG italic_M end_ARG \u2211 start_POSTSUBSCRIPT italic_j = 1 end_POSTSUBSCRIPT start_POSTSUPERSCRIPT italic_M end_POSTSUPERSCRIPT { start_ROW start_CELL 1 - divide start_ARG roman_min ( CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT ) end_ARG start_ARG roman_max ( CNT start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , CNT start_POSTSUPERSCRIPT italic_G end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT ) end_ARG end_CELL start_CELL if italic_I ( OBJ start_POSTSUPERSCRIPT italic_P end_POSTSUPERSCRIPT start_POSTSUBSCRIPT italic_j end_POSTSUBSCRIPT , italic_G start_POSTSUBSCRIPT dict end_POSTSUBSCRIPT ) end_CELL end_ROW start_ROW start_CELL 1 end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL italic_I ( OBJ , italic_D ) = { start_ROW start_CELL True end_CELL start_CELL if roman_OBJ is in typewriter_keys ( italic_D ) end_CELL end_ROW start_ROW start_CELL False end_CELL start_CELL otherwise end_CELL end_ROW end_CELL end_ROW (2) Count Score (CS). It represents the percentage of correct object counts predicted by the MLLM with respect to the ground-truth sentence. The higher the CS, the better.Report issue for preceding element\nHallucination Score (HS). It represents the percentage of extra object counts predicted by the MLLM that do not exist in the ground-truth sentence. The lower the HS, the better.Report issue for preceding element\nNote that due to the one-to-one word-matching nature of our evaluation, we manually define a mapping between the categories in COCO [CITATION] and their synonyms [CITATION]. For example, we replace words like man, woman, child, kid, boy, girl, etc. with the word person in the MLLM\u2019s response before evaluation. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Dosovitskiy et\u00a0al. [2021]",
+        "title": "An image is worth 16x16 words: Transformers for image recognition at scale.",
+        "authors": "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.",
+        "journal": "InICLR, 2021."
+      },
+      {
+        "tag": "Moravec [1988]",
+        "title": "Mind children: The future of robot and human intelligence.",
+        "authors": "H. Moravec.",
+        "journal": "Harvard University Press, 1988."
+      },
+      {
+        "tag": "OpenAI [2023]",
+        "title": "Gpt-4 technical report, 2023.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Cheng et\u00a0al. [2022]",
+        "title": "Masked-attention mask transformer for universal image segmentation.",
+        "authors": "Bowen Cheng, Ishan Misra, Alexander\u00a0G. Schwing, Alexander Kirillov, and Rohit Girdhar.",
+        "journal": "InCVPR, 2022."
+      },
+      {
+        "tag": "Ranftl et\u00a0al. [2021]",
+        "title": "Vision transformers for dense prediction.",
+        "authors": "Ren\u00e9 Ranftl, Alexey Bochkovskiy, and Vladlen Koltun.",
+        "journal": "InICCV, 2021."
+      },
+      {
+        "tag": "Mou et\u00a0al. [2023]",
+        "title": "T2i-adapter: Learning adapters to dig out more controllable ability for text-to-image diffusion models.",
+        "authors": "Chong Mou, Xintao Wang, Liangbin Xie, Yanze Wu, Jian Zhang, Zhongang Qi, Ying Shan, and Xiaohu Qie.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C.\u00a0Lawrence Zitnick, and Piotr Doll\u00e1r.",
+        "journal": "InECCV, 2014."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning, 2023c.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": ""
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021b]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.",
+        "journal": "arXiv, 2021b."
+      },
+      {
+        "tag": "Lu et\u00a0al. [2018]",
+        "title": "Neural baby talk.",
+        "authors": "Jiasen Lu, Jianwei Yang, Dhruv Batra, and Devi Parikh.",
+        "journal": "InCVPR, 2018."
+      },
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      },
+      {
+        "tag": "Oquab et\u00a0al. [2023]",
+        "title": "Dinov2: Learning robust visual features without supervision, 2023.",
+        "authors": "Maxime Oquab, Timoth\u00e9e Darcet, Theo Moutakanni, Huy\u00a0V. Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Russell Howes, Po-Yao Huang, Hu Xu, Vasu Sharma, Shang-Wen Li, Wojciech Galuba, Mike Rabbat, Mido Assran, Nicolas Ballas, Gabriel Synnaeve, Ishan Misra, Herve Jegou, Julien Mairal, Patrick Labatut, Armand Joulin, and Piotr Bojanowski.",
+        "journal": ""
+      },
+      {
+        "tag": "Li et\u00a0al. [2023d]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "InEMNLP, 2023d."
+      },
+      {
+        "tag": "Lovenia et\u00a0al. [2023]",
+        "title": "Negative object presence evaluation (nope) to measure object hallucination in vision-language models.",
+        "authors": "Holy Lovenia, Wenliang Dai, Samuel Cahyawijaya, Ziwei Ji, and Pascale Fung.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Zhang et\u00a0al. [2023a]",
+        "title": "Adding conditional control to text-to-image diffusion models.",
+        "authors": "Lvmin Zhang, Anyi Rao, and Maneesh Agrawala.",
+        "journal": "InICCV, 2023a."
+      },
+      {
+        "tag": "Rohrbach et\u00a0al. [2018]",
+        "title": "Object hallucination in image captioning.",
+        "authors": "Anna Rohrbach, Lisa\u00a0Anne Hendricks, Kaylee Burns, Trevor Darrell, and Kate Saenko.",
+        "journal": "InEMNLP, 2018."
+      }
+    ]
+  },
+  "S4": {
+    "title": "4Experiments",
+    "text": "We use LLaVA-1.5 [ 41 ] as our base MLLM. LLaVA-1.5 uses CLIP-ViT-L-336px [ 56 ] as the image encoder (ImCoder) with a two-layer MLP as projection and Vicuna-1.5 [ 77 ] as the LLM. Inside our VCoder, we also use a CLIP-ViT-L-336px to encode the control inputs and project the features into the LLM embedding space using modality-specific two-layer MLPs. We resize the visual inputs to 336 \u00d7 \\times \u00d7 336 resolution (corresponds to 576 tokens) for our MLLM. During training, we load the instruction-tuned weights from LLaVA-1.5 and keep those frozen while only tuning the MLP component of our VCoder. We use the publicly available OneFormer [ 26 ] model trained on COCO [ 38 ] with DiNAT-L [ 19 , 20 ] backbone to obtain the segmentation map. For getting depth maps, we use the publicly available ViT-L/14 distilled variant of DINOv2 [ 52 ] DPT [ 57 ] trained on the NYUd [ 49 ] dataset. In this section, we discuss our results on the object identification task. Please refer to Sec. 5 for our results on the object order perception task. Report issue for preceding element\nTraining Details. We train our VCoder-adapted LLaVA-1.5 framework for two epochs on the COST training dataset with a batch size 256 and a learning rate of 1 e \u2212 3 superscript \ud835\udc52 3 e^{-3} italic_e start_POSTSUPERSCRIPT - 3 end_POSTSUPERSCRIPT . For other training hyperparameters, we follow the settings used during the instruction-tuning stage in LLaVA-1.5 [ 41 ] . Following [ 26 ] , we uniformly sample each object identification task (semantic, instance, and panoptic) during training. We also use the corresponding segmentation map from OneFormer [ 26 ] as input to the VCoder during training and inference. On 8 A100 GPUs, it takes 8 and 14 hours to train our VCoder with the 7b and 13b variants of LLaVA-1.5 as the base MLLM, respectively. Report issue for preceding element\nEvaluation Details. We evaluate all MLLMs on the COST validation set. We separately evaluate semantic, instance, and panoptic object identification tasks while randomly sampling questions from the corresponding task\u2019s question bucket. Note that for evaluating all off-the-shelf MLLMs, we experiment with various prompts and finally use the prompt: \u201c[QUESTION]. Return the answer in the paragraph format: \u2018The objects present in the image are: \u2026\u2019 and then list the objects with their count in word format (if greater than 1) in front of them, like \u2019two people\u2019.\u201d , where [QUESTION] is the randomly sampled question from the object identification task bucket. Report issue for preceding element\nBaselines. We compare the performance of VCoder to open-source Multimodal LLMs, namely, MiniGPT-4 [ 78 ] , InstructBLIP [ 14 ] , LLaVA-1.5 [ 41 ] , and CogVLM [ 68 ] on the COST validation set in Tab. 1 . Furthermore, we also provide three additional baselines, all trained for two epochs: Report issue for preceding element\nCOST IT LLaVA-1.5 : We mix the COST training data with the instruction tuning data used in LLaVA-1.5 [ 41 ] and finetune a LLaVA-1.5 model from scratch following the settings from Liu et al. [ 41 ] . Report issue for preceding element\nSoft-Prompted LLaVA-1.5 : We prepend 576 learnable tokens ( \u27e8 \u27e8 \\langle \u27e8 prompt \u27e9 normal-\u27e9 \\rangle \u27e9 ) to the LLM input and tune only the \u27e8 \u27e8 \\langle \u27e8 prompt \u27e9 normal-\u27e9 \\rangle \u27e9 parameters on the COST training dataset. Report issue for preceding element\nImCoder LLaVA-1.5 : We use an RGB image as the control input instead of a segmentation map and train VCoder on the COST training dataset. Report issue for preceding element\nAs shown in Tab. 1 , we notice that all existing MLLMs perform poorly on our COST validation set, demonstrating their inability to count and identify objects accurately. Note that existing MLLMs perform relatively better on instance object identification, reaffirming our claim that MLLMs are better at detecting salient objects than background objects. Although the baselines trained on the COST dataset perform relatively better, they still lag in performance compared to the VCoder. Notably, a segmentation map performs considerably better than using an RGB image as the control input, proving the segmentation map\u2019s vitality. Report issue for preceding element\nComparison to GPT-4V [ 51 ] . We utilize OpenAI\u2019s newly released gpt-4-vision-preview 1 1 1 https://platform.openai.com/docs/guides/vision API to obtain responses from GPT-4V. Our experiments show that GPT-4V\u2019s responses are consistent across all object identification tasks, closely aligning with the panoptic identification task. Therefore, we compare our VCoder to GPT-4V only on the panoptic object identification to reduce API requests due to a daily limit of 500 API requests during this project. As shown in Tab. 1 , GPT-4V [ 51 ] lags behind our VCoder by a considerable margin, reaffirming our claim that existing MLLMs cannot perform accurate object-level perception. Report issue for preceding element",
+    "masked_text": "We use LLaVA-1.5 [CITATION] as our base MLLM. LLaVA-1.5 uses CLIP-ViT-L-336px [CITATION] as the image encoder (ImCoder) with a two-layer MLP as projection and Vicuna-1.5 [CITATION] as the LLM. Inside our VCoder, we also use a CLIP-ViT-L-336px to encode the control inputs and project the features into the LLM embedding space using modality-specific two-layer MLPs. We resize the visual inputs to 336\u00d7\\times\u00d7336 resolution (corresponds to 576 tokens) for our MLLM. During training, we load the instruction-tuned weights from LLaVA-1.5 and keep those frozen while only tuning the MLP component of our VCoder. We use the publicly available OneFormer [CITATION] model trained on COCO [CITATION] with DiNAT-L [CITATION] backbone to obtain the segmentation map. For getting depth maps, we use the publicly available ViT-L/14 distilled variant of DINOv2 [CITATION] DPT [CITATION] trained on the NYUd [CITATION] dataset. In this section, we discuss our results on the object identification task. Please refer to Sec. 5 for our results on the object order perception task.Report issue for preceding element\nTraining Details. We train our VCoder-adapted LLaVA-1.5 framework for two epochs on the COST training dataset with a batch size 256 and a learning rate of 1e\u22123superscript\ud835\udc523e^{-3}italic_e start_POSTSUPERSCRIPT - 3 end_POSTSUPERSCRIPT. For other training hyperparameters, we follow the settings used during the instruction-tuning stage in LLaVA-1.5 [CITATION]. Following [CITATION], we uniformly sample each object identification task (semantic, instance, and panoptic) during training. We also use the corresponding segmentation map from OneFormer [CITATION] as input to the VCoder during training and inference. On 8 A100 GPUs, it takes 8 and 14 hours to train our VCoder with the 7b and 13b variants of LLaVA-1.5 as the base MLLM, respectively.Report issue for preceding element\nEvaluation Details. We evaluate all MLLMs on the COST validation set. We separately evaluate semantic, instance, and panoptic object identification tasks while randomly sampling questions from the corresponding task\u2019s question bucket. Note that for evaluating all off-the-shelf MLLMs, we experiment with various prompts and finally use the prompt: \u201c[QUESTION]. Return the answer in the paragraph format: \u2018The objects present in the image are: \u2026\u2019 and then list the objects with their count in word format (if greater than 1) in front of them, like \u2019two people\u2019.\u201d, where [QUESTION] is the randomly sampled question from the object identification task bucket.Report issue for preceding element\nBaselines. We compare the performance of VCoder to open-source Multimodal LLMs, namely, MiniGPT-4 [CITATION], InstructBLIP [CITATION], LLaVA-1.5 [CITATION], and CogVLM [CITATION] on the COST validation set in Tab. 1. Furthermore, we also provide three additional baselines, all trained for two epochs:Report issue for preceding element\nCOST IT LLaVA-1.5: We mix the COST training data with the instruction tuning data used in LLaVA-1.5 [CITATION] and finetune a LLaVA-1.5 model from scratch following the settings from Liu et al. [CITATION]. Report issue for preceding element\nSoft-Prompted LLaVA-1.5: We prepend 576 learnable tokens (\u27e8\u27e8\\langle\u27e8prompt\u27e9normal-\u27e9\\rangle\u27e9) to the LLM input and tune only the \u27e8\u27e8\\langle\u27e8prompt\u27e9normal-\u27e9\\rangle\u27e9 parameters on the COST training dataset.Report issue for preceding element\nImCoder LLaVA-1.5: We use an RGB image as the control input instead of a segmentation map and train VCoder on the COST training dataset.Report issue for preceding element\nAs shown in Tab. 1, we notice that all existing MLLMs perform poorly on our COST validation set, demonstrating their inability to count and identify objects accurately. Note that existing MLLMs perform relatively better on instance object identification, reaffirming our claim that MLLMs are better at detecting salient objects than background objects. Although the baselines trained on the COST dataset perform relatively better, they still lag in performance compared to the VCoder. Notably, a segmentation map performs considerably better than using an RGB image as the control input, proving the segmentation map\u2019s vitality.Report issue for preceding element\nComparison to GPT-4V [CITATION]. We utilize OpenAI\u2019s newly released gpt-4-vision-preview111https://platform.openai.com/docs/guides/vision API to obtain responses from GPT-4V. Our experiments show that GPT-4V\u2019s responses are consistent across all object identification tasks, closely aligning with the panoptic identification task. Therefore, we compare our VCoder to GPT-4V only on the panoptic object identification to reduce API requests due to a daily limit of 500 API requests during this project. As shown in Tab. 1, GPT-4V [CITATION] lags behind our VCoder by a considerable margin, reaffirming our claim that existing MLLMs cannot perform accurate object-level perception.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Hassani and Shi [2022]",
+        "title": "Dilated neighborhood attention transformer.",
+        "authors": "Ali Hassani and Humphrey Shi.",
+        "journal": "arXiv:2209.15001, 2022."
+      },
+      {
+        "tag": "Ranftl et\u00a0al. [2021]",
+        "title": "Vision transformers for dense prediction.",
+        "authors": "Ren\u00e9 Ranftl, Alexey Bochkovskiy, and Vladlen Koltun.",
+        "journal": "InICCV, 2021."
+      },
+      {
+        "tag": "OpenAI [2023]",
+        "title": "Gpt-4 technical report, 2023.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning, 2023c.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": ""
+      },
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C.\u00a0Lawrence Zitnick, and Piotr Doll\u00e1r.",
+        "journal": "InECCV, 2014."
+      },
+      {
+        "tag": "Nathan\u00a0Silberman and Fergus [2012]",
+        "title": "Indoor segmentation and support inference from rgbd images.",
+        "authors": "Pushmeet\u00a0Kohli Nathan\u00a0Silberman, Derek\u00a0Hoiem and Rob Fergus.",
+        "journal": "InECCV, 2012."
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021b]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.",
+        "journal": "arXiv, 2021b."
+      },
+      {
+        "tag": "Zheng et\u00a0al. [2023b]",
+        "title": "Judging llm-as-a-judge with mt-bench and chatbot arena, 2023b.",
+        "authors": "Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric.\u00a0P Xing, Hao Zhang, Joseph\u00a0E. Gonzalez, and Ion Stoica.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2023]",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      },
+      {
+        "tag": "Oquab et\u00a0al. [2023]",
+        "title": "Dinov2: Learning robust visual features without supervision, 2023.",
+        "authors": "Maxime Oquab, Timoth\u00e9e Darcet, Theo Moutakanni, Huy\u00a0V. Vo, Marc Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin El-Nouby, Russell Howes, Po-Yao Huang, Hu Xu, Vasu Sharma, Shang-Wen Li, Wojciech Galuba, Mike Rabbat, Mido Assran, Nicolas Ballas, Gabriel Synnaeve, Ishan Misra, Herve Jegou, Julien Mairal, Patrick Labatut, Armand Joulin, and Piotr Bojanowski.",
+        "journal": ""
+      },
+      {
+        "tag": "Wang et\u00a0al. [2023]",
+        "title": "Cogvlm: Visual expert for pretrained language models.",
+        "authors": "Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, Jiazheng Xu, Bin Xu, Juanzi Li, Yuxiao Dong, Ming Ding, and Jie Tang.",
+        "journal": "arXiv, 2023."
+      },
+      {
+        "tag": "Hassani et\u00a0al. [2023]",
+        "title": "Neighborhood attention transformer.",
+        "authors": "Ali Hassani, Steven Walton, Jiachen Li, Shen Li, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      }
+    ]
+  },
+  "S5": {
+    "title": "5Object Order Perception with MLLMs",
+    "text": "As shown in Fig. 4 , multiple perception modalities can be leveraged to improve object perception in MLLMs with our VCoder. This section presents our experiments with our VCoder using the segmentation and depth maps as the control inputs. We term the resulting MLLM as VCoder-DS LLaVA-1.5. Intuitively, predicting the object order implicitly means identifying the objects in an image. Therefore, for the object order perception task ( Fig. 4 b ), we use both <depth> and <seg> inputs, while only the <seg> input as the additional control for object identification. Report issue for preceding element\nDuring training, we use a mixture of datasets, including the object identification and object order perception components from the COST dataset. We also use about 200k image-conversation (along with the corresponding segmentation map obtained using OneFormer [ 26 ] ) pairs randomly sampled from the instruction tuning data used in LLaVA-1.5 [ 41 ] . We train our VCoder for one epoch following the same hyperparameter settings mentioned in Sec. 4 . Report issue for preceding element\nAs shown in Tab. 2 , our VCoder-DS LLaVA-1.5 significantly outperforms the base MLLM, LLaVA-1.5 [ 41 ] on the COST validation set. For quantitatively evaluating the performance of MLLMs on the depth order perception task, we calculate a depth score ( DS ) using the absolute difference between the position of objects in the ground truth and prediction. We provide more details about computing the depth score in the appendix. Report issue for preceding element",
+    "masked_text": "As shown in Fig. 4, multiple perception modalities can be leveraged to improve object perception in MLLMs with our VCoder. This section presents our experiments with our VCoder using the segmentation and depth maps as the control inputs. We term the resulting MLLM as VCoder-DS LLaVA-1.5. Intuitively, predicting the object order implicitly means identifying the objects in an image. Therefore, for the object order perception task (Fig. 4b), we use both <depth> and <seg> inputs, while only the <seg> input as the additional control for object identification.Report issue for preceding element\nDuring training, we use a mixture of datasets, including the object identification and object order perception components from the COST dataset. We also use about 200k image-conversation (along with the corresponding segmentation map obtained using OneFormer [CITATION]) pairs randomly sampled from the instruction tuning data used in LLaVA-1.5 [CITATION]. We train our VCoder for one epoch following the same hyperparameter settings mentioned in Sec. 4.Report issue for preceding element\nAs shown in Tab. 2, our VCoder-DS LLaVA-1.5 significantly outperforms the base MLLM, LLaVA-1.5 [CITATION] on the COST validation set. For quantitatively evaluating the performance of MLLMs on the depth order perception task, we calculate a depth score (DS) using the absolute difference between the position of objects in the ground truth and prediction. We provide more details about computing the depth score in the appendix.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning, 2023c.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": ""
+      }
+    ]
+  },
+  "S6": {
+    "title": "6Limitations",
+    "text": "Despite the improved object perception performance after training our VCoder on the COST dataset, certain limitations remain to be addressed for future work. Firstly, we build our COST dataset using OneFormer [ 26 ] , which can only perceive objects belonging to a limited number of categories due to being trained on a closed-set vocabulary dataset [ 38 ] . For real-world applications, it is imperative to develop an object perception benchmark for MLLMs covering many more classes with varying granularity than those in the COCO [ 38 ] . Secondly, the count, hallucination, and depth scores use one-to-one word matching, which requires manually defining a mapping between synonymous words. It will be promising to explore ways to overcome manually defined synonym mappings. Lastly, as shown in Fig. 6 , the inaccuracy in the segmentation map may result in the VCoder\u2019s failure. Exploring ways to reduce the over-dependency on control inputs to handle inaccurate context from the perception modalities would be interesting. Report issue for preceding element",
+    "masked_text": "Despite the improved object perception performance after training our VCoder on the COST dataset, certain limitations remain to be addressed for future work. Firstly, we build our COST dataset using OneFormer [CITATION], which can only perceive objects belonging to a limited number of categories due to being trained on a closed-set vocabulary dataset [CITATION]. For real-world applications, it is imperative to develop an object perception benchmark for MLLMs covering many more classes with varying granularity than those in the COCO [CITATION]. Secondly, the count, hallucination, and depth scores use one-to-one word matching, which requires manually defining a mapping between synonymous words. It will be promising to explore ways to overcome manually defined synonym mappings. Lastly, as shown in Fig. 6, the inaccuracy in the segmentation map may result in the VCoder\u2019s failure. Exploring ways to reduce the over-dependency on control inputs to handle inaccurate context from the perception modalities would be interesting.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, Lubomir Bourdev, Ross Girshick, James Hays, Pietro Perona, Deva Ramanan, C.\u00a0Lawrence Zitnick, and Piotr Doll\u00e1r.",
+        "journal": "InECCV, 2014."
+      },
+      {
+        "tag": "Jain et\u00a0al. [2023]",
+        "title": "OneFormer: One Transformer to Rule Universal Image Segmentation.",
+        "authors": "Jitesh Jain, Jiachen Li, MangTik Chiu, Ali Hassani, Nikita Orlov, and Humphrey Shi.",
+        "journal": "InCVPR, 2023."
+      }
+    ]
+  },
+  "S7": {
+    "title": "7Conclusion",
+    "text": "This work analyzes the object-level perception skills of Multimodal Large Language Models (VLMMs). Although MLLMs are good visual reasoners, they need to improve at the simple yet fundamental task of object perception. To improve object perception ability in MLLMs, we propose the COST dataset for training and evaluating MLLMs at the object perception task. We benchmark different off-the-shelf MLLMs and GPT-4V on our COST dataset and observe their lousy performance. Consequently, we propose using perception modalities as control inputs and a Versatile vision enCoders ( VCoder ) as an adapter for projecting the control inputs to the LLM embedding space. Our VCoder can easily be extended to leverage various modalities as the control inputs depending on the task. To quantify the object-level perception ability in MLLMs, we introduce a Count-Score ( CS ), a Hallucination-Score ( HS ), and a Depth-Score ( DS ). We adapted LLaVA-1.5 with VCoder, only trained the VCoder on our COST dataset, and demonstrated its improved performance at the object perception task while retaining the reasoning performance. We hope our work can inspire the research community to focus on developing object perception datasets for MLLMs and develop vision systems that are equally good at perception and reasoning in the future. Report issue for preceding element\nWe would like to extend our gratitude to Eric Zhang and Kai Wang (JJ\u2019s labmates) for an insightful discussion before the start of the project and valuable feedback on the design of Figure 2. We also thank the ML Center at Georgia Tech for generously supporting this work. Report issue for preceding element",
+    "masked_text": "This work analyzes the object-level perception skills of Multimodal Large Language Models (VLMMs). Although MLLMs are good visual reasoners, they need to improve at the simple yet fundamental task of object perception. To improve object perception ability in MLLMs, we propose the COST dataset for training and evaluating MLLMs at the object perception task. We benchmark different off-the-shelf MLLMs and GPT-4V on our COST dataset and observe their lousy performance. Consequently, we propose using perception modalities as control inputs and a Versatile vision enCoders (VCoder) as an adapter for projecting the control inputs to the LLM embedding space. Our VCoder can easily be extended to leverage various modalities as the control inputs depending on the task. To quantify the object-level perception ability in MLLMs, we introduce a Count-Score (CS), a Hallucination-Score (HS), and a Depth-Score (DS). We adapted LLaVA-1.5 with VCoder, only trained the VCoder on our COST dataset, and demonstrated its improved performance at the object perception task while retaining the reasoning performance. We hope our work can inspire the research community to focus on developing object perception datasets for MLLMs and develop vision systems that are equally good at perception and reasoning in the future.Report issue for preceding element\nWe would like to extend our gratitude to Eric Zhang and Kai Wang (JJ\u2019s labmates) for an insightful discussion before the start of the project and valuable feedback on the design of Figure 2. We also thank the ML Center at Georgia Tech for generously supporting this work. Report issue for preceding element",
+    "citations": []
+  }
+}

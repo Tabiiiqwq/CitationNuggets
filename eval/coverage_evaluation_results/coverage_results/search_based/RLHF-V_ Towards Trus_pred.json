@@ -1,0 +1,367 @@
+{
+  "paper_id": "RLHF-V_ Towards Trus",
+  "meta": {
+    "title": "RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment fromFine-grained Correctional Human Feedback",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "Large Multimodal Models: Notes on CVPR 2023 Tutorial",
+      "Training-Free Mitigation of Language Reasoning Degradation After Multimodal Instruction Tuning",
+      "Multimodal Large Language Models: A Survey",
+      "RLHF-V: Towards Trustworthy MLLMs via Behavior Alignment from Fine-grained Correctional Human Feedback",
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Wang et\u00a0al. [2023c]",
+        "title": "CogVLM: Visual expert for pretrained language models.",
+        "authors": "Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2311.03079, 2023c."
+      },
+      {
+        "tag": "Chiang et\u00a0al. [2023]",
+        "title": "Vicuna: An open-source chatbot impressing GPT-4 with 90%* ChatGPT quality, 2023.",
+        "authors": "Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph\u00a0E. Gonzalez, Ion Stoica, and Eric\u00a0P. Xing.",
+        "journal": ""
+      },
+      {
+        "tag": "Gunjal et\u00a0al. [2023]",
+        "title": "Detecting and preventing hallucinations in large vision language models.",
+        "authors": "Anisha Gunjal, Jihan Yin, and Erhan Bas.",
+        "journal": "arXiv preprint arXiv:2308.06394, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023e]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "arXiv preprint arXiv:2305.10355, 2023e."
+      },
+      {
+        "tag": "Wu et\u00a0al. [2023]",
+        "title": "Fine-grained human feedback gives better rewards for language model training.",
+        "authors": "Zeqiu Wu, Yushi Hu, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj Ammanabrolu, Noah\u00a0A Smith, Mari Ostendorf, and Hannaneh Hajishirzi.",
+        "journal": "arXiv preprint arXiv:2306.01693, 2023."
+      },
+      {
+        "tag": "[3]",
+        "title": "https://github.com/OpenBMB/OmniLMM.",
+        "authors": "Large multi-modal models for strong performance and efficient deployment.",
+        "journal": "Accessed: 2024-03-05."
+      },
+      {
+        "tag": "Chen et\u00a0al. [2022]",
+        "title": "PaLI: A jointly-scaled multilingual language-image model.",
+        "authors": "Xi Chen, Xiao Wang, Soravit Changpinyo, AJ Piergiovanni, Piotr Padlewski, Daniel Salz, Sebastian Goodman, Adam Grycner, Basil Mustafa, Lucas Beyer, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2209.06794, 2022."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2022a]",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2204.05862, 2022a."
+      },
+      {
+        "tag": "Lu et\u00a0al. [2023]",
+        "title": "MathVista: Evaluating mathematical reasoning of foundation models in visual contexts.",
+        "authors": "Pan Lu, Hritik Bansal, Tony Xia, Jiacheng Liu, Chunyuan Li, Hannaneh Hajishirzi, Hao Cheng, Kai-Wei Chang, Michel Galley, and Jianfeng Gao.",
+        "journal": "arXiv preprint arXiv:2310.02255, 2023."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2023]",
+        "title": "Qwen-VL: A frontier large vision-language model with versatile abilities.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou.",
+        "journal": "arXiv preprint arXiv:2308.12966, 2023."
+      },
+      {
+        "tag": "Goyal et\u00a0al. [2017]",
+        "title": "Making the v in vqa matter: Elevating the role of image understanding in visual question answering.",
+        "authors": "Yash Goyal, Tejas Khot, Douglas Summers-Stay, Dhruv Batra, and Devi Parikh.",
+        "journal": "InCVPR, pages 6904\u20136913, 2017."
+      },
+      {
+        "tag": "Yin et\u00a0al. [2023]",
+        "title": "Woodpecker: Hallucination correction for multimodal large language models.",
+        "authors": "Shukang Yin, Chaoyou Fu, Sirui Zhao, Tong Xu, Hao Wang, Dianbo Sui, Yunhang Shen, Ke Li, Xing Sun, and Enhong Chen.",
+        "journal": "arXiv preprint arXiv:2310.16045, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "arXiv preprint arXiv:2301.12597, 2023c."
+      },
+      {
+        "tag": "Huang et\u00a0al. [2023]",
+        "title": "Language is not all you need: Aligning perception with language models.",
+        "authors": "Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais\u00a0Khan Mohammed, Qiang Liu, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2302.14045, 2023."
+      },
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "LLaMA 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2307.09288, 2023b."
+      },
+      {
+        "tag": "Changpinyo et\u00a0al. [2021]",
+        "title": "Conceptual 12M: Pushing web-scale image-text pre-training to recognize long-tail visual concepts.",
+        "authors": "Soravit Changpinyo, Piyush Sharma, Nan Ding, and Radu Soricut.",
+        "journal": "InCVPR, pages 3558\u20133568, 2021."
+      },
+      {
+        "tag": "Radford et\u00a0al. [2021]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et\u00a0al.",
+        "journal": "InICML, pages 8748\u20138763. PMLR, 2021."
+      },
+      {
+        "tag": "Rohrbach et\u00a0al. [2018]",
+        "title": "Object hallucination in image captioning.",
+        "authors": "Anna Rohrbach, Lisa\u00a0Anne Hendricks, Kaylee Burns, Trevor Darrell, and Kate Saenko.",
+        "journal": "InEMNLP, pages 4035\u20134045, 2018."
+      },
+      {
+        "tag": "Taori et\u00a0al. [2023]",
+        "title": "Stanford Alpaca: An instruction-following LLaMA model, 2023.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B Hashimoto.",
+        "journal": ""
+      },
+      {
+        "tag": "Wang et\u00a0al. [2023b]",
+        "title": "Image as a foreign language: BEiT pretraining for vision and vision-language tasks.",
+        "authors": "Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu, Kriti Aggarwal, Owais\u00a0Khan Mohammed, Saksham Singhal, Subhojit Som, et\u00a0al.",
+        "journal": "InCVPR, pages 19175\u201319186, 2023b."
+      },
+      {
+        "tag": "Lightman et\u00a0al. [2023]",
+        "title": "Let\u2019s verify step by step.",
+        "authors": "Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe.",
+        "journal": "arXiv preprint arXiv:2305.20050, 2023."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      },
+      {
+        "tag": "Awadalla et\u00a0al. [2023]",
+        "title": "OpenFlamingo: An open-source framework for training large autoregressive vision-language models.",
+        "authors": "Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2308.01390, 2023."
+      },
+      {
+        "tag": "Kenton et\u00a0al. [2021]",
+        "title": "Alignment of language agents.",
+        "authors": "Zachary Kenton, Tom Everitt, Laura Weidinger, Iason Gabriel, Vladimir Mikulik, and Geoffrey Irving.",
+        "journal": "arXiv preprint arXiv:2103.14659, 2021."
+      },
+      {
+        "tag": "Rafailov et\u00a0al. [2023]",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D Manning, and Chelsea Finn.",
+        "journal": "arXiv preprint arXiv:2305.18290, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023a]",
+        "title": "Seed-bench: Benchmarking multimodal llms with generative comprehension.",
+        "authors": "Bohao Li, Rui Wang, Guangzhi Wang, Yuying Ge, Yixiao Ge, and Ying Shan.",
+        "journal": "arXiv preprint arXiv:2307.16125, 2023a."
+      },
+      {
+        "tag": "Schulman et\u00a0al. [2017]",
+        "title": "Proximal policy optimization algorithms.",
+        "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.",
+        "journal": "arXiv preprint arXiv:1707.06347, 2017."
+      },
+      {
+        "tag": "Zhang et\u00a0al. [2023]",
+        "title": "LLaMA-Adapter: Efficient fine-tuning of language models with zero-init attention.",
+        "authors": "Renrui Zhang, Jiaming Han, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, and Yu Qiao.",
+        "journal": "arXiv preprint arXiv:2303.16199, 2023."
+      },
+      {
+        "tag": "Zheng et\u00a0al. [2023]",
+        "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena, 2023.",
+        "authors": "Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric.\u00a0P Xing, Hao Zhang, Joseph\u00a0E. Gonzalez, and Ion Stoica.",
+        "journal": ""
+      },
+      {
+        "tag": "Yang et\u00a0al. [2023]",
+        "title": "The dawn of LMMs: Preliminary explorations with GPT-4V(ision).",
+        "authors": "Zhengyuan Yang, Linjie Li, Kevin Lin, Jianfeng Wang, Chung-Ching Lin, Zicheng Liu, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2309.17421, 9, 2023."
+      },
+      {
+        "tag": "Stiennon et\u00a0al. [2020]",
+        "title": "Learning to summarize with human feedback.",
+        "authors": "Nisan Stiennon, Long Ouyang, Jeffrey Wu, Daniel Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, and Paul\u00a0F Christiano.",
+        "journal": "NeurIPS, 33:3008\u20133021, 2020."
+      },
+      {
+        "tag": "OpenAI [2023b]",
+        "title": "GPT-4 technical report, 2023b.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Schuhmann et\u00a0al. [2022]",
+        "title": "LAION-5B: An open large-scale dataset for training next generation image-text models.",
+        "authors": "Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade Gordon, Ross Wightman, Mehdi Cherti, Theo Coombes, Aarush Katta, Clayton Mullis, Mitchell Wortsman, et\u00a0al.",
+        "journal": "NeurIPS, 35:25278\u201325294, 2022."
+      },
+      {
+        "tag": "Fu et\u00a0al. [2023]",
+        "title": "MME: A comprehensive evaluation benchmark for multimodal large language models.",
+        "authors": "Chaoyou Fu, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Zhenyu Qiu, Wei Lin, Jinrui Yang, Xiawu Zheng, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2306.13394, 2023."
+      },
+      {
+        "tag": "Wang et\u00a0al. [2023a]",
+        "title": "VIGC: Visual instruction generation and correction.",
+        "authors": "Bin Wang, Fan Wu, Xiao Han, Jiahui Peng, Huaping Zhong, Pan Zhang, Xiaoyi Dong, Weijia Li, Wei Li, Jiaqi Wang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2308.12714, 2023a."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023a]",
+        "title": "LLaMA: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timoth\u00e9e Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2302.13971, 2023a."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Alayrac et\u00a0al. [2022]",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, et\u00a0al.",
+        "journal": "NeurIPS, 35:23716\u201323736, 2022."
+      },
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft COCO: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll\u00e1r, and C\u00a0Lawrence Zitnick.",
+        "journal": "InECCV, pages 740\u2013755. Springer, 2014."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023a]",
+        "title": "HallusionBench: You see what you think? Or you think what you see? An image-context reasoning benchmark challenging for GPT-4V(ision), LLaVA-1.5, and other multi-modality models.",
+        "authors": "Fuxiao Liu, Tianrui Guan, Zongxia Li, Lichang Chen, Yaser Yacoob, Dinesh Manocha, and Tianyi Zhou.",
+        "journal": "arXiv preprint arXiv:2310.14566, 2023a."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Leike et\u00a0al. [2018]",
+        "title": "Scalable agent alignment via reward modeling: a research direction.",
+        "authors": "Jan Leike, David Krueger, Tom Everitt, Miljan Martic, Vishal Maini, and Shane Legg.",
+        "journal": "arXiv preprint arXiv:1811.07871, 2018."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023d]",
+        "title": "M3IT: A large-scale dataset towards multi-modal multilingual instruction tuning.",
+        "authors": "Lei Li, Yuwei Yin, Shicheng Li, Liang Chen, Peiyi Wang, Shuhuai Ren, Mukai Li, Yazheng Yang, Jingjing Xu, Xu Sun, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2306.04387, 2023d."
+      },
+      {
+        "tag": "Ding et\u00a0al. [2023]",
+        "title": "Enhancing chat language models by scaling high-quality instructional conversations.",
+        "authors": "Ning Ding, Yulin Chen, Bokai Xu, Yujia Qin, Zhi Zheng, Shengding Hu, Zhiyuan Liu, Maosong Sun, and Bowen Zhou.",
+        "journal": "arXiv preprint arXiv:2305.14233, 2023."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2023]",
+        "title": "MiniGPT-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv preprint arXiv:2304.10592, 2023."
+      },
+      {
+        "tag": "Driess et\u00a0al. [2023]",
+        "title": "PaLM-E: An embodied multimodal language model.",
+        "authors": "Danny Driess, Fei Xia, Mehdi\u00a0SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2303.03378, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023b]",
+        "title": "Otter: A multi-modal model with in-context instruction tuning.",
+        "authors": "Bo Li, Yuanhan Zhang, Liangyu Chen, Jinghao Wang, Jingkang Yang, and Ziwei Liu.",
+        "journal": "arXiv preprint arXiv:2305.03726, 2023b."
+      },
+      {
+        "tag": "Ye et\u00a0al. [2023]",
+        "title": "mPLUG-Owl: Modularization empowers large language models with multimodality.",
+        "authors": "Qinghao Ye, Haiyang Xu, Guohai Xu, Jiabo Ye, Ming Yan, Yiyang Zhou, Junyang Wang, Anwen Hu, Pengcheng Shi, Yaya Shi, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2304.14178, 2023."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2022b]",
+        "title": "Constitutional AI: Harmlessness from AI feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2212.08073, 2022b."
+      },
+      {
+        "tag": "Byeon et\u00a0al. [2022]",
+        "title": "COYO-700M: Image-text pair dataset, 2022.",
+        "authors": "Minwoo Byeon, Beomhee Park, Haecheon Kim, Sungjun Lee, Woonhyuk Baek, and Saehoon Kim.",
+        "journal": ""
+      },
+      {
+        "tag": "Cui et\u00a0al. [2023]",
+        "title": "Ultrafeedback: Boosting language models with high-quality feedback.",
+        "authors": "Ganqu Cui, Lifan Yuan, Ning Ding, Guanming Yao, Wei Zhu, Yuan Ni, Guotong Xie, Zhiyuan Liu, and Maosong Sun.",
+        "journal": "arXiv preprint arXiv:2310.01377, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2310.03744, 2023c."
+      },
+      {
+        "tag": "Wen et\u00a0al. [2023]",
+        "title": "On the road with GPT-4V (ision): Early explorations of visual-language model on autonomous driving.",
+        "authors": "Licheng Wen, Xuemeng Yang, Daocheng Fu, Xiaofeng Wang, Pinlong Cai, Xin Li, Tao Ma, Yingxuan Li, Linran Xu, Dengke Shang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2311.05332, 2023."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

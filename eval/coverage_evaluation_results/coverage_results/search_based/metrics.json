@@ -1,0 +1,17 @@
+{
+  "paper_coverage": 0.015945102648731682,
+  "section_coverage": 0,
+  "paragraph_coverage": 0,
+  "paper_gt_citations": 834,
+  "paper_pred_citations": 86,
+  "paper_covered_count": 9,
+  "section_gt_citations": 0,
+  "section_pred_citations": 0,
+  "section_covered_count": 0,
+  "paragraph_gt_citations": 0,
+  "paragraph_pred_citations": 0,
+  "paragraph_covered_count": 0,
+  "paper_count": 16,
+  "section_count": 0,
+  "paragraph_count": 0
+}

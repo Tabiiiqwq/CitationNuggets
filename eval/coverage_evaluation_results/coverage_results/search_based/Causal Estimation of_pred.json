@@ -1,0 +1,397 @@
+{
+  "paper_id": "Causal Estimation of",
+  "meta": {
+    "title": "Causal Estimation of Memorisation Profiles",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "Emergent and Predictable Memorization in Large Language Models",
+      "Demystifying Verbatim Memorization in Large Language Models",
+      "Strong Copyright Protection for Language Models via Adaptive Model Fusion",
+      "CO2Sum: Contrastive Learning for Factual-Consistent Abstractive Summarization",
+      "Tracking the Feature Dynamics in LLM Training: A Mechanistic Study"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Rubin (1974)",
+        "title": "Estimating causal effects of treatments in randomized and nonrandomized studies.",
+        "authors": "Donald\u00a0B. Rubin. 1974.",
+        "journal": "Journal of Educational Psychology, 66(5):688\u2013701."
+      },
+      {
+        "tag": "Cao et\u00a0al. (2022)",
+        "title": "Benign overfitting in two-layer convolutional neural networks.",
+        "authors": "Yuan Cao, Zixiang Chen, Misha Belkin, and Quanquan Gu. 2022.",
+        "journal": "Advances in Neural Information Processing Systems, 35:25237\u201325250."
+      },
+      {
+        "tag": "Cook and Weisberg (1980)",
+        "title": "Characterizations of an Empirical Influence Function for Detecting Influential Cases in Regression.",
+        "authors": "R.\u00a0Dennis Cook and Sanford Weisberg. 1980.",
+        "journal": "Technometrics, 22(4):495\u2013508."
+      },
+      {
+        "tag": "Hu et\u00a0al. (2022)",
+        "title": "Membership inference attacks on machine learning: A survey.",
+        "authors": "Hongsheng Hu, Zoran Salcic, Lichao Sun, Gillian Dobbie, Philip\u00a0S. Yu, and Xuyun Zhang. 2022.",
+        "journal": "ACM Comput. Surv., 54(11s)."
+      },
+      {
+        "tag": "Schioppa et\u00a0al. (2023)",
+        "title": "Theoretical and practical perspectives on what influence functions do.",
+        "authors": "Andrea Schioppa, Katja Filippova, Ivan Titov, and Polina Zablotskaia. 2023.",
+        "journal": "Advances in Neural Information Processing Systems, 36:27560\u201327581."
+      },
+      {
+        "tag": "Lee et\u00a0al. (2023)",
+        "title": "Do language models plagiarize?",
+        "authors": "Jooyoung Lee, Thai Le, Jinghui Chen, and Dongwon Lee. 2023.",
+        "journal": "InProceedings of the ACM Web Conference 2023, WWW \u201923, page 3637\u20133647, New York, NY, USA. Association for Computing Machinery."
+      },
+      {
+        "tag": "Arpit et\u00a0al. (2017)",
+        "title": "A closer look at memorization in deep networks.",
+        "authors": "Devansh Arpit, Stanis\u0142aw Jastrzundefinedbski, Nicolas Ballas, David Krueger, Emmanuel Bengio, Maxinder\u00a0S. Kanwal, Tegan Maharaj, Asja Fischer, Aaron Courville, Yoshua Bengio, and Simon Lacoste-Julien. 2017.",
+        "journal": "InProceedings of the 34th International Conference on Machine Learning - Volume 70, ICML\u201917, page 233\u2013242. JMLR.org."
+      },
+      {
+        "tag": "Zheng and Jiang (2022)",
+        "title": "An empirical study of memorization in NLP.",
+        "authors": "Xiaosen Zheng and Jing Jiang. 2022.",
+        "journal": "InProceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 6265\u20136278, Dublin, Ireland. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Callaway and Sant\u2019Anna (2021)",
+        "title": "Difference-in-Differences with multiple time periods.",
+        "authors": "Brantly Callaway and Pedro H.\u00a0C. Sant\u2019Anna. 2021.",
+        "journal": "Journal of Econometrics, 225(2):200\u2013230."
+      },
+      {
+        "tag": "Biderman et\u00a0al. (2022)",
+        "title": "Datasheet for the Pile.",
+        "authors": "Stella Biderman, Kieran Bicheno, and Leo Gao. 2022.",
+        "journal": "arXiv preprint 2201.07311."
+      },
+      {
+        "tag": "Tirumala et\u00a0al. (2022)",
+        "title": "Memorization without overfitting: Analyzing the training dynamics of large language models.",
+        "authors": "Kushal Tirumala, Aram\u00a0H. Markosyan, Luke Zettlemoyer, and Armen Aghajanyan. 2022.",
+        "journal": "InAdvances in Neural Information Processing Systems."
+      },
+      {
+        "tag": "Duchi et\u00a0al. (2011)",
+        "title": "Adaptive subgradient methods for online learning and stochastic optimization.",
+        "authors": "John Duchi, Elad Hazan, and Yoram Singer. 2011.",
+        "journal": "Journal of Machine Learning Research, 12(61):2121\u20132159."
+      },
+      {
+        "tag": "Cole and Frangakis (2009)",
+        "title": "The consistency statement in causal inference: A definition or an assumption?",
+        "authors": "Stephen\u00a0R. Cole and Constantine\u00a0E. Frangakis. 2009.",
+        "journal": "Epidemiology, 20(1)."
+      },
+      {
+        "tag": "Dey et\u00a0al. (2023)",
+        "title": "Cerebras-GPT: Open compute-optimal language models trained on the cerebras wafer-scale cluster.",
+        "authors": "Nolan Dey, Gurpreet Gosal, Zhiming, Chen, Hemant Khachane, William Marshall, Ribhu Pathria, Marvin Tom, and Joel Hestness. 2023.",
+        "journal": "arXiv preprint 2304.03208."
+      },
+      {
+        "tag": "Kiela et\u00a0al. (2021)",
+        "title": "Dynabench: Rethinking benchmarking in NLP.",
+        "authors": "Douwe Kiela, Max Bartolo, Yixin Nie, Divyansh Kaushik, Atticus Geiger, Zhengxuan Wu, Bertie Vidgen, Grusha Prasad, Amanpreet Singh, Pratik Ringshia, Zhiyi Ma, Tristan Thrush, Sebastian Riedel, Zeerak Waseem, Pontus Stenetorp, Robin Jia, Mohit Bansal, Christopher Potts, and Adina Williams. 2021.",
+        "journal": "InProceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 4110\u20134124, Online. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Basu et\u00a0al. (2020)",
+        "title": "Influence functions in deep learning are fragile.",
+        "authors": "Samyadeep Basu, Phil Pope, and Soheil Feizi. 2020.",
+        "journal": "InInternational Conference on Learning Representations."
+      },
+      {
+        "tag": "Hartmann et\u00a0al. (2023)",
+        "title": "SoK: Memorization in general-purpose large language models.",
+        "authors": "Valentin Hartmann, Anshuman Suri, Vincent Bindschaedler, David Evans, Shruti Tople, and Robert West. 2023.",
+        "journal": "arXiv preprint 2310.18362."
+      },
+      {
+        "tag": "Rae et\u00a0al. (2021)",
+        "title": "Scaling language models: Methods, analysis & insights from training gopher.",
+        "authors": "Jack\u00a0W Rae, Sebastian Borgeaud, Trevor Cai, Katie Millican, Jordan Hoffmann, Francis Song, John Aslanides, Sarah Henderson, Roman Ring, Susannah Young, et\u00a0al. 2021.",
+        "journal": "arXiv preprint 2112.11446."
+      },
+      {
+        "tag": "Black et\u00a0al. (2022)",
+        "title": "GPT-NeoX-20B: An open-source autoregressive language model.",
+        "authors": "Sidney Black, Stella Biderman, Eric Hallahan, Quentin Anthony, Leo Gao, Laurence Golding, Horace He, Connor Leahy, Kyle McDonell, Jason Phang, Michael Pieler, Usvsn\u00a0Sai Prashanth, Shivanshu Purohit, Laria Reynolds, Jonathan Tow, Ben Wang, and Samuel Weinbach. 2022.",
+        "journal": "InProceedings of BigScience Episode #5 \u2013 Workshop on Challenges & Perspectives in Creating Large Language Models, pages 95\u2013136, virtual+Dublin. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Lee et\u00a0al. (2022)",
+        "title": "Deduplicating training data makes language models better.",
+        "authors": "Katherine Lee, Daphne Ippolito, Andrew Nystrom, Chiyuan Zhang, Douglas Eck, Chris Callison-Burch, and Nicholas Carlini. 2022.",
+        "journal": "InProceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 8424\u20138445, Dublin, Ireland. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Lu et\u00a0al. (2018)",
+        "title": "Estimating individual treatment effect in observational data using random forest methods.",
+        "authors": "Min Lu, Saad Sadiq, Daniel\u00a0J Feaster, and Hemant Ishwaran. 2018.",
+        "journal": "Journal of Computational and Graphical Statistics, 27(1):209\u2013219."
+      },
+      {
+        "tag": "Pearl (2009)",
+        "title": "Causality: Models, Reasoning and Inference, 2nd edition.",
+        "authors": "Judea Pearl. 2009.",
+        "journal": "Cambridge University Press, USA."
+      },
+      {
+        "tag": "Anagnostidis et\u00a0al. (2023)",
+        "title": "The curious case of benign memorization.",
+        "authors": "Sotiris Anagnostidis, Gregor Bachmann, Lorenzo Noci, and Thomas Hofmann. 2023.",
+        "journal": "InThe Eleventh International Conference on Learning Representations."
+      },
+      {
+        "tag": "Ibeling and Icard (2023)",
+        "title": "Comparing causal frameworks: Potential outcomes, structural models, graphs, and abstractions.",
+        "authors": "Duligur Ibeling and Thomas Icard. 2023.",
+        "journal": "Advances in Neural Information Processing Systems, 36:80130\u201380141."
+      },
+      {
+        "tag": "Roth et\u00a0al. (2023)",
+        "title": "What\u2019s trending in difference-in-differences? A synthesis of the recent econometrics literature.",
+        "authors": "Jonathan Roth, Pedro H.\u00a0C. Sant\u2019Anna, Alyssa Bilinski, and John Poe. 2023.",
+        "journal": "Journal of Econometrics, 235(2):2218\u20132244."
+      },
+      {
+        "tag": "Angrist and Pischke (2015)",
+        "title": "Mastering \u2019Metrics: The Path from Cause to Effect.",
+        "authors": "Joshua Angrist and J\u00f6rn-Steffen Pischke. 2015.",
+        "journal": "Princeton University Press."
+      },
+      {
+        "tag": "McCloskey (2016)",
+        "title": "Counterfactuals, pages 1\u20135. Palgrave Macmillan UK, London.",
+        "authors": "Donald\u00a0N. McCloskey. 2016.",
+        "journal": ""
+      },
+      {
+        "tag": "Le\u00a0Scao et\u00a0al. (2022)",
+        "title": "What language model to train if you have one million GPU hours?",
+        "authors": "Teven Le\u00a0Scao, Thomas Wang, Daniel Hesslow, Stas Bekman, M\u00a0Saiful Bari, Stella Biderman, Hady Elsahar, Niklas Muennighoff, Jason Phang, Ofir Press, Colin Raffel, Victor Sanh, Sheng Shen, Lintang Sutawika, Jaesung Tae, Zheng\u00a0Xin Yong, Julien Launay, and Iz\u00a0Beltagy. 2022.",
+        "journal": "InFindings of the Association for Computational Linguistics: EMNLP 2022, pages 765\u2013782, Abu Dhabi, United Arab Emirates. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Feldman (2020)",
+        "title": "Does learning require memorization? A short tale about a long tail.",
+        "authors": "Vitaly Feldman. 2020.",
+        "journal": "InProceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing, STOC 2020, pages 954\u2013959, New York, NY, USA. Association for Computing Machinery."
+      },
+      {
+        "tag": "Bae et\u00a0al. (2022)",
+        "title": "If influence functions are the answer, then what is the question?",
+        "authors": "Juhan Bae, Nathan Ng, Alston Lo, Marzyeh Ghassemi, and Roger\u00a0B. Grosse. 2022.",
+        "journal": "Advances in Neural Information Processing Systems, 35:17953\u201317967."
+      },
+      {
+        "tag": "Feldman and Zhang (2020)",
+        "title": "What neural networks memorize and why: Discovering the long tail via influence estimation.",
+        "authors": "Vitaly Feldman and Chiyuan Zhang. 2020.",
+        "journal": "InAdvances in Neural Information Processing Systems, volume\u00a033, pages 2881\u20132891. Curran Associates, Inc."
+      },
+      {
+        "tag": "Lin et\u00a0al. (2022)",
+        "title": "Measuring the effect of training data on deep learning predictions via randomized experiments.",
+        "authors": "Jinkun Lin, Anqi Zhang, Mathias L\u00e9cuyer, Jinyang Li, Aurojit Panda, and Siddhartha Sen. 2022.",
+        "journal": "InProceedings of the 39th International Conference on Machine Learning, pages 13468\u201313504. PMLR."
+      },
+      {
+        "tag": "Godey et\u00a0al. (2024)",
+        "title": "Why do small language models underperform? Studying language model saturation via the softmax bottleneck.",
+        "authors": "Nathan Godey, \u00c9ric de la Clergerie, and Beno\u00eet Sagot. 2024.",
+        "journal": "arXiv preprint 2404.07647."
+      },
+      {
+        "tag": "Vyas et\u00a0al. (2023)",
+        "title": "On provable copyright protection for generative models.",
+        "authors": "Nikhil Vyas, Sham\u00a0M. Kakade, and Boaz Barak. 2023.",
+        "journal": "InInternational Conference on Machine Learning, volume 202 ofProceedings of Machine Learning Research, pages 35277\u201335299. PMLR."
+      },
+      {
+        "tag": "Maini et\u00a0al. (2023)",
+        "title": "Can neural network memorization be localized?",
+        "authors": "Pratyush Maini, Michael\u00a0C. Mozer, Hanie Sedghi, Zachary\u00a0C. Lipton, J.\u00a0Zico Kolter, and Chiyuan Zhang. 2023.",
+        "journal": "InProceedings of the 40th International Conference on Machine Learning, ICML\u201923. JMLR.org."
+      },
+      {
+        "tag": "Park et\u00a0al. (2023)",
+        "title": "TRAK: Attributing model behavior at scale.",
+        "authors": "Sung\u00a0Min Park, Kristian Georgiev, Andrew Ilyas, Guillaume Leclerc, and Aleksander Madry. 2023.",
+        "journal": "InProceedings of the 40th International Conference on Machine Learning, pages 27074\u201327113. PMLR."
+      },
+      {
+        "tag": "Splawa-Neyman (1923)",
+        "title": "On the application of probability theory to agricultural experiments. Essay on principles.",
+        "authors": "Jerzy Splawa-Neyman. 1923.",
+        "journal": "Annals of Agricultural Sciences, pages 1\u201351."
+      },
+      {
+        "tag": "Koh and Liang (2017)",
+        "title": "Understanding black-box predictions via influence functions.",
+        "authors": "Pang\u00a0Wei Koh and Percy Liang. 2017.",
+        "journal": "InProceedings of the 34th International Conference on Machine Learning, pages 1885\u20131894. PMLR."
+      },
+      {
+        "tag": "Lukasik et\u00a0al. (2024)",
+        "title": "What do larger image classifiers memorise?",
+        "authors": "Michal Lukasik, Vaishnavh Nagarajan, Ankit\u00a0Singh Rawat, Aditya\u00a0Krishna Menon, and Sanjiv Kumar. 2024.",
+        "journal": "Transactions on Machine Learning Research."
+      },
+      {
+        "tag": "Raffel et\u00a0al. (2020)",
+        "title": "Exploring the limits of transfer learning with a unified text-to-text transformer.",
+        "authors": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter\u00a0J. Liu. 2020.",
+        "journal": "Journal of Machine Learning Research, 21(140):1\u201367."
+      },
+      {
+        "tag": "Cohen (1992)",
+        "title": "Statistical power analysis.",
+        "authors": "Jacob Cohen. 1992.",
+        "journal": "Current Directions in Psychological Science, 1(3):98\u2013101."
+      },
+      {
+        "tag": "Penedo et\u00a0al. (2023)",
+        "title": "The RefinedWeb dataset for Falcon LLM: Outperforming curated corpora with web data, and web data only.",
+        "authors": "Guilherme Penedo, Quentin Malartic, Daniel Hesslow, Ruxandra Cojocaru, Alessandro Cappelli, Hamza Alobeidli, Baptiste Pannier, Ebtesam Almazrouei, and Julien Launay. 2023.",
+        "journal": "arXiv preprint 2306.01116."
+      },
+      {
+        "tag": "Imbens and Rubin (2015)",
+        "title": "Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction.",
+        "authors": "Guido\u00a0W. Imbens and Donald\u00a0B. Rubin. 2015.",
+        "journal": "Cambridge University Press."
+      },
+      {
+        "tag": "Kingma and Ba (2015)",
+        "title": "Adam: A method for stochastic optimization.",
+        "authors": "Diederik\u00a0P. Kingma and Jimmy Ba. 2015.",
+        "journal": "In3rd International Conference on Learning Representations."
+      },
+      {
+        "tag": "Bachmann et\u00a0al. (2022)",
+        "title": "Generalization through the lens of leave-one-out error.",
+        "authors": "Gregor Bachmann, Thomas Hofmann, and Aurelien Lucchi. 2022.",
+        "journal": "InInternational Conference on Learning Representations."
+      },
+      {
+        "tag": "Ilyas et\u00a0al. (2022)",
+        "title": "Datamodels: Understanding predictions with data and data with predictions.",
+        "authors": "Andrew Ilyas, Sung\u00a0Min Park, Logan Engstrom, Guillaume Leclerc, and Aleksander Madry. 2022.",
+        "journal": "InProceedings of the 39th International Conference on Machine Learning, pages 9525\u20139587. PMLR."
+      },
+      {
+        "tag": "Ishihara (2023)",
+        "title": "Training data extraction from pre-trained language models: A survey.",
+        "authors": "Shotaro Ishihara. 2023.",
+        "journal": "InProceedings of the 3rd Workshop on Trustworthy Natural Language Processing (TrustNLP 2023), pages 260\u2013275, Toronto, Canada. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Kandpal et\u00a0al. (2022)",
+        "title": "Deduplicating training data mitigates privacy risks in language models.",
+        "authors": "Nikhil Kandpal, Eric Wallace, and Colin Raffel. 2022.",
+        "journal": "InInternational Conference on Machine Learning, pages 10697\u201310707. PMLR."
+      },
+      {
+        "tag": "Gao et\u00a0al. (2020)",
+        "title": "The Pile: An 800GB dataset of diverse text for language modeling.",
+        "authors": "Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, Horace He, Anish Thite, Noa Nabeshima, Shawn Presser, and Connor Leahy. 2020.",
+        "journal": "arXiv preprint 2101.00027."
+      },
+      {
+        "tag": "Carlini et\u00a0al. (2019)",
+        "title": "The Secret Sharer: Evaluating and testing unintended memorization in neural networks.",
+        "authors": "Nicholas Carlini, Chang Liu, \u00dalfar Erlingsson, Jernej Kos, and Dawn Song. 2019.",
+        "journal": "InProceedings of the 28th USENIX Conference on Security Symposium, SEC\u201919, pages 267\u2013\u2013284, USA. USENIX Association."
+      },
+      {
+        "tag": "Carlini et\u00a0al. (2021)",
+        "title": "Extracting training data from large language models.",
+        "authors": "Nicholas Carlini, Florian Tram\u00e8r, Eric Wallace, Matthew Jagielski, Ariel Herbert-Voss, Katherine Lee, Adam Roberts, Tom Brown, Dawn Song, \u00dalfar Erlingsson, Alina Oprea, and Colin Raffel. 2021.",
+        "journal": "In30th USENIX Security Symposium (USENIX Security 21), pages 2633\u20132650. USENIX Association."
+      },
+      {
+        "tag": "Holland (1986)",
+        "title": "Statistics and causal inference.",
+        "authors": "Paul\u00a0W. Holland. 1986.",
+        "journal": "Journal of the American Statistical Association, 81(396):945\u2013960."
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, Dan Bikel, Lukas Blecher, Cristian\u00a0Canton Ferrer, Moya Chen, Guillem Cucurull, David Esiobu, Jude Fernandes, Jeremy Fu, Wenyin Fu, Brian Fuller, Cynthia Gao, Vedanuj Goswami, Naman Goyal, Anthony Hartshorn, Saghar Hosseini, Rui Hou, Hakan Inan, Marcin Kardas, Viktor Kerkez, Madian Khabsa, Isabel Kloumann, Artem Korenev, Punit\u00a0Singh Koura, Marie-Anne Lachaux, Thibaut Lavril, Jenya Lee, Diana Liskovich, Yinghai Lu, Yuning Mao, Xavier Martinet, Todor Mihaylov, Pushkar Mishra, Igor Molybog, Yixin Nie, Andrew Poulton, Jeremy Reizenstein, Rashi Rungta, Kalyan Saladi, Alan Schelten, Ruan Silva, Eric\u00a0Michael Smith, Ranjan Subramanian, Xiaoqing\u00a0Ellen Tan, Binh Tang, Ross Taylor, Adina Williams, Jian\u00a0Xiang Kuan, Puxin Xu, Zheng Yan, Iliyan Zarov, Yuchen Zhang, Angela Fan, Melanie Kambadur, Sharan Narang, Aurelien Rodriguez, Robert Stojnic, Sergey Edunov, and Thomas\nScialom. 2023.",
+        "journal": "arXiv preprint 2307.09288."
+      },
+      {
+        "tag": "Chang and Bergen (2024)",
+        "title": "Language model behavior: A comprehensive survey.",
+        "authors": "Tyler\u00a0A. Chang and Benjamin\u00a0K. Bergen. 2024.",
+        "journal": "Computational Linguistics, pages 1\u201358."
+      },
+      {
+        "tag": "Zhang et\u00a0al. (2023)",
+        "title": "Counterfactual memorization in neural language models.",
+        "authors": "Chiyuan Zhang, Daphne Ippolito, Katherine Lee, Matthew Jagielski, Florian Tram\u00e8r, and Nicholas Carlini. 2023.",
+        "journal": "InThirty-seventh Conference on Neural Information Processing Systems."
+      },
+      {
+        "tag": "Hampel (1974)",
+        "title": "The influence curve and its role in robust estimation.",
+        "authors": "Frank\u00a0R. Hampel. 1974.",
+        "journal": "Journal of the American Statistical Association, 69(346):383\u2013393."
+      },
+      {
+        "tag": "Stoehr et\u00a0al. (2024)",
+        "title": "Localizing paragraph memorization in language models.",
+        "authors": "Niklas Stoehr, Mitchell Gordon, Chiyuan Zhang, and Owen Lewis. 2024.",
+        "journal": "arxiv preprint 2403.19851."
+      },
+      {
+        "tag": "Biderman et\u00a0al. (2023a)",
+        "title": "Emergent and predictable memorization in large language models.",
+        "authors": "Stella Biderman, Usvsn Prashanth, Lintang Sutawika, Hailey Schoelkopf, Quentin Anthony, Shivanshu Purohit, and Edward Raff. 2023a.",
+        "journal": "Advances in Neural Information Processing Systems, 36:28072\u201328090."
+      },
+      {
+        "tag": "Biderman et\u00a0al. (2023b)",
+        "title": "Pythia: A suite for analyzing large language models across training and scaling.",
+        "authors": "Stella Biderman, Hailey Schoelkopf, Quentin Anthony, Herbie Bradley, Kyle O\u2019Brien, Eric Hallahan, Mohammad\u00a0Aflah Khan, Shivanshu Purohit, USVSN\u00a0Sai Prashanth, Edward Raff, Aviya Skowron, Lintang Sutawika, and Oskar Van Der\u00a0Wal. 2023b.",
+        "journal": "InProceedings of the 40th International Conference on Machine Learning, ICML\u201923."
+      },
+      {
+        "tag": "Carlini et\u00a0al. (2023)",
+        "title": "Quantifying memorization across neural language models.",
+        "authors": "Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian Tramer, and Chiyuan Zhang. 2023.",
+        "journal": "InThe Eleventh International Conference on Learning Representations."
+      },
+      {
+        "tag": "Jiang et\u00a0al. (2023)",
+        "title": "Mistral 7B.",
+        "authors": "Albert\u00a0Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra\u00a0Singh Chaplot, Diego de\u00a0las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, L\u00e9lio\u00a0Renard Lavaud, Marie-Anne Lachaux, Pierre Stock, Teven\u00a0Le Scao, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, and William\u00a0El Sayed. 2023.",
+        "journal": "arXiv preprint 2310.06825."
+      },
+      {
+        "tag": "Rubin (2005)",
+        "title": "Causal inference using potential outcomes.",
+        "authors": "Donald\u00a0B. Rubin. 2005.",
+        "journal": "Journal of the American Statistical Association, 100(469):322\u2013331."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

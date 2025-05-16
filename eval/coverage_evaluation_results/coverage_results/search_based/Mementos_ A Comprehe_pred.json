@@ -1,0 +1,327 @@
+{
+  "paper_id": "Mementos_ A Comprehe",
+  "meta": {
+    "title": "Mementos: A Comprehensive Benchmark for Multimodal Large Language Model Reasoning over Image Sequences",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "Red Teaming GPT-4V: Are GPT-4V Safe Against Uni/Multi-Modal Jailbreak Attacks?",
+      "Gemini in Reasoning: Unveiling Commonsense in Multimodal Large Language Models",
+      "NExT-QA:Next Phase of Question-Answering to Explaining Temporal Actions",
+      "ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis",
+      "A Comprehensive Gold Standard and Benchmark for Comics Text Detection and Recognition",
+      "Interpreting and Mitigating Hallucination in MLLMs through Multi-agent Debate",
+      "A Survey on Evaluation of Multimodal Large Language Models"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Jin et\u00a0al. (2023)",
+        "title": "Chat-univi: Unified visual representation empowers large language models with image and video understanding.",
+        "authors": "Peng Jin, Ryuichi Takanobu, Caiwan Zhang, Xiaochun Cao, and Li\u00a0Yuan. 2023.",
+        "journal": "arXiv preprint arXiv:2311.08046."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang. 2023b.",
+        "journal": "arXiv preprint arXiv:2306.14565."
+      },
+      {
+        "tag": "Rohrbach et\u00a0al. (2018)",
+        "title": "Object hallucination in image captioning.",
+        "authors": "Anna Rohrbach, Lisa\u00a0Anne Hendricks, Kaylee Burns, Trevor Darrell, and Kate Saenko. 2018.",
+        "journal": "arXiv preprint arXiv:1809.02156."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023b)",
+        "title": "Mm-vet: Evaluating large multimodal models for integrated capabilities.",
+        "authors": "Weihao Yu, Zhengyuan Yang, Linjie Li, Jianfeng Wang, Kevin Lin, Zicheng Liu, Xinchao Wang, and Lijuan Wang. 2023b.",
+        "journal": "arXiv preprint arXiv:2308.02490."
+      },
+      {
+        "tag": "Chen et\u00a0al. (2023a)",
+        "title": "Autoeval-video: An automatic benchmark for assessing large vision language models in open-ended video question answering.",
+        "authors": "Xiuyuan Chen, Yuan Lin, Yuchen Zhang, and Weiran Huang. 2023a.",
+        "journal": "arXiv preprint arXiv:2311.14906."
+      },
+      {
+        "tag": "Jiang et\u00a0al. (2023)",
+        "title": "Hallucination augmented contrastive learning for multimodal large language model.",
+        "authors": "Chaoya Jiang, Haiyang Xu, Mengfan Dong, Jiaxing Chen, Wei Ye, Ming Yan, Qinghao Ye, Ji\u00a0Zhang, Fei Huang, and Shikun Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2312.06968."
+      },
+      {
+        "tag": "Cui et\u00a0al. (2023)",
+        "title": "Holistic analysis of hallucination in gpt-4v (ision): Bias and interference challenges.",
+        "authors": "Chenhang Cui, Yiyang Zhou, Xinyu Yang, Shirley Wu, Linjun Zhang, James Zou, and Huaxiu Yao. 2023.",
+        "journal": "arXiv preprint arXiv:2311.03287."
+      },
+      {
+        "tag": "Xu et\u00a0al. (2023)",
+        "title": "Lvlm-ehub: A comprehensive evaluation benchmark for large vision-language models.",
+        "authors": "Peng Xu, Wenqi Shao, Kaipeng Zhang, Peng Gao, Shuo Liu, Meng Lei, Fanqing Meng, Siyuan Huang, Yu\u00a0Qiao, and Ping Luo. 2023.",
+        "journal": "arXiv preprint arXiv:2306.09265."
+      },
+      {
+        "tag": "Collaboration et\u00a0al. (2023)",
+        "title": "Open X-Embodiment: Robotic learning datasets and RT-X models.",
+        "authors": "Open X-Embodiment Collaboration, Abhishek Padalkar, Acorn Pooley, Ajinkya Jain, Alex Bewley, Alex Herzog, Alex Irpan, Alexander Khazatsky, Anant Rai, Anikait Singh, Anthony Brohan, Antonin Raffin, Ayzaan Wahid, Ben Burgess-Limerick, Beomjoon Kim, Bernhard Sch\u00f6lkopf, Brian Ichter, Cewu Lu, Charles Xu, Chelsea Finn, Chenfeng Xu, Cheng Chi, Chenguang Huang, Christine Chan, Chuer Pan, Chuyuan Fu, Coline Devin, Danny Driess, Deepak Pathak, Dhruv Shah, Dieter B\u00fcchler, Dmitry Kalashnikov, Dorsa Sadigh, Edward Johns, Federico Ceola, Fei Xia, Freek Stulp, Gaoyue Zhou, Gaurav\u00a0S. Sukhatme, Gautam Salhotra, Ge\u00a0Yan, Giulio Schiavi, Hao Su, Hao-Shu Fang, Haochen Shi, Heni\u00a0Ben Amor, Henrik\u00a0I Christensen, Hiroki Furuta, Homer Walke, Hongjie Fang, Igor Mordatch, Ilija Radosavovic, Isabel Leal, Jacky Liang, Jaehyung Kim, Jan Schneider, Jasmine Hsu, Jeannette Bohg, Jeffrey Bingham, Jiajun Wu, Jialin Wu, Jianlan Luo, Jiayuan Gu, Jie Tan, Jihoon Oh, Jitendra Malik, Jonathan Tompson, Jonathan Yang, Joseph\u00a0J. Lim, Jo\u00e3o\nSilv\u00e9rio, Junhyek Han, Kanishka Rao, Karl Pertsch, Karol Hausman, Keegan Go, Keerthana Gopalakrishnan, Ken Goldberg, Kendra Byrne, Kenneth Oslund, Kento Kawaharazuka, Kevin Zhang, Keyvan Majd, Krishan Rana, Krishnan Srinivasan, Lawrence\u00a0Yunliang Chen, Lerrel Pinto, Liam Tan, Lionel Ott, Lisa Lee, Masayoshi Tomizuka, Maximilian Du, Michael Ahn, Mingtong Zhang, Mingyu Ding, Mohan\u00a0Kumar Srirama, Mohit Sharma, Moo\u00a0Jin Kim, Naoaki Kanazawa, Nicklas Hansen, Nicolas Heess, Nikhil\u00a0J Joshi, Niko Suenderhauf, Norman\u00a0Di Palo, Nur Muhammad\u00a0Mahi Shafiullah, Oier Mees, Oliver Kroemer, Pannag\u00a0R Sanketi, Paul Wohlhart, Peng Xu, Pierre Sermanet, Priya Sundaresan, Quan Vuong, Rafael Rafailov, Ran Tian, Ria Doshi, Roberto Mart\u00edn-Mart\u00edn, Russell Mendonca, Rutav Shah, Ryan Hoque, Ryan Julian, Samuel Bustamante, Sean Kirmani, Sergey Levine, Sherry Moore, Shikhar Bahl, Shivin Dass, Shuran Song, Sichun Xu, Siddhant Haldar, Simeon Adebola, Simon Guist, Soroush Nasiriany, Stefan Schaal, Stefan Welker, Stephen Tian, Sudeep Dasari,\nSuneel Belkhale, Takayuki Osa, Tatsuya Harada, Tatsuya Matsushima, Ted Xiao, Tianhe Yu, Tianli Ding, Todor Davchev, Tony\u00a0Z. Zhao, Travis Armstrong, Trevor Darrell, Vidhi Jain, Vincent Vanhoucke, Wei Zhan, Wenxuan Zhou, Wolfram Burgard, Xi\u00a0Chen, Xiaolong Wang, Xinghao Zhu, Xuanlin Li, Yao Lu, Yevgen Chebotar, Yifan Zhou, Yifeng Zhu, Ying Xu, Yixuan Wang, Yonatan Bisk, Yoonyoung Cho, Youngwoon Lee, Yuchen Cui, Yueh hua Wu, Yujin Tang, Yuke Zhu, Yunzhu Li, Yusuke Iwasawa, Yutaka Matsuo, Zhuo Xu, and Zichen\u00a0Jeff Cui. 2023.",
+        "journal": "https://arxiv.org/abs/2310.08864."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Hallusionbench: You see what you think? or you think what you see? an image-context reasoning benchmark challenging for gpt-4v (ision), llava-1.5, and other multi-modality models.",
+        "authors": "Fuxiao Liu, Tianrui Guan, Zongxia Li, Lichang Chen, Yaser Yacoob, Dinesh Manocha, and Tianyi Zhou. 2023a.",
+        "journal": "arXiv preprint arXiv:2310.14566."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023d)",
+        "title": "C-disentanglement: Discovering causally-independent generative factors under an inductive bias of confounder.",
+        "authors": "Xiaoyu Liu, Jiaxin Yuan, Bang An, Yuancheng Xu, Yifan Yang, and Furong Huang. 2023d.",
+        "journal": "arXiv preprint arXiv:2310.17325."
+      },
+      {
+        "tag": "OpenAI (2023b)",
+        "title": "Gpt-4v(ision) system card.",
+        "authors": "OpenAI. 2023b.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023c)",
+        "title": "Improved baselines with visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee. 2023c.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhou et\u00a0al. (2023b)",
+        "title": "Scalable prompt generation for semi-supervised learning with language models.",
+        "authors": "Yuhang Zhou, Suraj Maharjan, and Beiye Liu. 2023b.",
+        "journal": "arXiv preprint arXiv:2302.09236."
+      },
+      {
+        "tag": "Hudson and Manning (2019)",
+        "title": "Gqa: A new dataset for real-world visual reasoning and compositional question answering.",
+        "authors": "Drew\u00a0A Hudson and Christopher\u00a0D Manning. 2019.",
+        "journal": "InProceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 6700\u20136709."
+      },
+      {
+        "tag": "Yue et\u00a0al. (2023)",
+        "title": "Mmmu: A massive multi-discipline multimodal understanding and reasoning benchmark for expert agi.",
+        "authors": "Xiang Yue, Yuansheng Ni, Kai Zhang, Tianyu Zheng, Ruoqi Liu, Ge\u00a0Zhang, Samuel Stevens, Dongfu Jiang, Weiming Ren, Yuxuan Sun, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2311.16502."
+      },
+      {
+        "tag": "Zhang et\u00a0al. (2023b)",
+        "title": "How language model hallucinations can snowball.",
+        "authors": "Muru Zhang, Ofir Press, William Merrill, Alisa Liu, and Noah\u00a0A. Smith. 2023b.",
+        "journal": ""
+      },
+      {
+        "tag": "Zhou et\u00a0al. (2023c)",
+        "title": "Explore spurious correlations at the concept level in language models for text classification.",
+        "authors": "Yuhang Zhou, Paiheng Xu, Xiaoyu Liu, Bang An, Wei Ai, and Furong Huang. 2023c.",
+        "journal": "arXiv preprint arXiv:2311.08648."
+      },
+      {
+        "tag": "Asadi et\u00a0al. (2019)",
+        "title": "Combating the compounding-error problem with a multi-step model.",
+        "authors": "Kavosh Asadi, Dipendra Misra, Seungchan Kim, and Michel\u00a0L. Littman. 2019.",
+        "journal": ""
+      },
+      {
+        "tag": "Sontakke et\u00a0al. (2023)",
+        "title": "Roboclip: One demonstration is enough to learn robot policies.",
+        "authors": "Sumedh\u00a0Anand Sontakke, Jesse Zhang, S\u00e9b Arnold, Karl Pertsch, Erdem Biyik, Dorsa Sadigh, Chelsea Finn, and Laurent Itti. 2023.",
+        "journal": "InThirty-seventh Conference on Neural Information Processing Systems."
+      },
+      {
+        "tag": "Baumli et\u00a0al. (2023)",
+        "title": "Vision-language models as a source of rewards.",
+        "authors": "Kate Baumli, Satinder Baveja, Feryal Behbahani, Harris Chan, Gheorghe Comanici, Sebastian Flennerhag, Maxime Gazeau, Kristian Holsheimer, Dan Horgan, Michael Laskin, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2312.09187."
+      },
+      {
+        "tag": "Zheng et\u00a0al. (2023)",
+        "title": "Minigpt-5: Interleaved vision-and-language generation via generative vokens.",
+        "authors": "Kaizhi Zheng, Xuehai He, and Xin\u00a0Eric Wang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023a)",
+        "title": "Hallucidoctor: Mitigating hallucinatory toxicity in visual instruction data.",
+        "authors": "Qifan Yu, Juncheng Li, Longhui Wei, Liang Pang, Wentao Ye, Bosheng Qin, Siliang Tang, Qi\u00a0Tian, and Yueting Zhuang. 2023a.",
+        "journal": "arXiv preprint arXiv:2311.13614."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023e)",
+        "title": "Mmbench: Is your multi-modal model an all-around player?",
+        "authors": "Yuan Liu, Haodong Duan, Yuanhan Zhang, Bo\u00a0Li, Songyang Zhang, Wangbo Zhao, Yike Yuan, Jiaqi Wang, Conghui He, Ziwei Liu, et\u00a0al. 2023e.",
+        "journal": "arXiv preprint arXiv:2307.06281."
+      },
+      {
+        "tag": "Chen et\u00a0al. (2023c)",
+        "title": "Mitigating hallucination in visual language models with visual supervision.",
+        "authors": "Zhiyang Chen, Yousong Zhu, Yufei Zhan, Zhaowen Li, Chaoyang Zhao, Jinqiao Wang, and Ming Tang. 2023c.",
+        "journal": "arXiv preprint arXiv:2311.16479."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023f)",
+        "title": "On the hidden mystery of ocr in large multimodal models.",
+        "authors": "Yuliang Liu, Zhang Li, Hongliang Li, Wenwen Yu, Mingxin Huang, Dezhi Peng, Mingyu Liu, Mingrui Chen, Chunyuan Li, Lianwen Jin, et\u00a0al. 2023f.",
+        "journal": "arXiv preprint arXiv:2305.07895."
+      },
+      {
+        "tag": "Zhang et\u00a0al. (2023a)",
+        "title": "Video-llama: An instruction-tuned audio-visual language model for video understanding.",
+        "authors": "Hang Zhang, Xin Li, and Lidong Bing. 2023a.",
+        "journal": "arXiv preprint arXiv:2306.02858."
+      },
+      {
+        "tag": "Marino et\u00a0al. (2019)",
+        "title": "Ok-vqa: A visual question answering benchmark requiring external knowledge.",
+        "authors": "Kenneth Marino, Mohammad Rastegari, Ali Farhadi, and Roozbeh Mottaghi. 2019.",
+        "journal": "InProceedings of the IEEE/cvf conference on computer vision and pattern recognition, pages 3195\u20133204."
+      },
+      {
+        "tag": "Zhao et\u00a0al. (2023)",
+        "title": "Beyond hallucinations: Enhancing lvlms through hallucination-aware direct preference optimization.",
+        "authors": "Zhiyuan Zhao, Bin Wang, Linke Ouyang, Xiaoyi Dong, Jiaqi Wang, and Conghui He. 2023.",
+        "journal": "arXiv preprint arXiv:2311.16839."
+      },
+      {
+        "tag": "Zhou et\u00a0al. (2023a)",
+        "title": "Analyzing and mitigating object hallucination in large vision-language models.",
+        "authors": "Yiyang Zhou, Chenhang Cui, Jaehong Yoon, Linjun Zhang, Zhun Deng, Chelsea Finn, Mohit Bansal, and Huaxiu Yao. 2023a.",
+        "journal": "arXiv preprint arXiv:2310.00754."
+      },
+      {
+        "tag": "Yin et\u00a0al. (2023)",
+        "title": "Lamm: Language-assisted multi-modal instruction-tuning dataset, framework, and benchmark.",
+        "authors": "Zhenfei Yin, Jiong Wang, Jianjian Cao, Zhelun Shi, Dingning Liu, Mukai Li, Lu\u00a0Sheng, Lei Bai, Xiaoshui Huang, Zhiyong Wang, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2306.06687."
+      },
+      {
+        "tag": "Zhang et\u00a0al. (2023c)",
+        "title": "Siren\u2019s song in the ai ocean: A survey on hallucination in large language models.",
+        "authors": "Yue Zhang, Yafu Li, Leyang Cui, Deng Cai, Lemao Liu, Tingchen Fu, Xinting Huang, Enbo Zhao, Yu\u00a0Zhang, Yulong Chen, et\u00a0al. 2023c.",
+        "journal": "arXiv preprint arXiv:2309.01219."
+      },
+      {
+        "tag": "Lin et\u00a0al. (2014)",
+        "title": "Microsoft coco: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll\u00e1r, and C\u00a0Lawrence Zitnick. 2014.",
+        "journal": "InComputer Vision\u2013ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13, pages 740\u2013755. Springer."
+      },
+      {
+        "tag": "Zhu et\u00a0al. (2023)",
+        "title": "Minigpt-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny. 2023.",
+        "journal": "arXiv preprint arXiv:2304.10592."
+      },
+      {
+        "tag": "Ye et\u00a0al. (2023)",
+        "title": "mplug-owl2: Revolutionizing multi-modal large language model with modality collaboration.",
+        "authors": "Qinghao Ye, Haiyang Xu, Jiabo Ye, Ming Yan, Haowei Liu, Qi\u00a0Qian, Ji\u00a0Zhang, Fei Huang, and Jingren Zhou. 2023.",
+        "journal": "arXiv preprint arXiv:2311.04257."
+      },
+      {
+        "tag": "Team (2023)",
+        "title": "Gemini: A family of highly capable multimodal models.",
+        "authors": "Gemini Team. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Wang et\u00a0al. (2023a)",
+        "title": "Evaluation and analysis of hallucination in large vision-language models.",
+        "authors": "Junyang Wang, Yiyang Zhou, Guohai Xu, Pengcheng Shi, Chenlin Zhao, Haiyang Xu, Qinghao Ye, Ming Yan, Ji\u00a0Zhang, Jihua Zhu, et\u00a0al. 2023a.",
+        "journal": "arXiv preprint arXiv:2308.15126."
+      },
+      {
+        "tag": "Chen et\u00a0al. (2023b)",
+        "title": "Hallucination detection: Robustly discerning reliable answers in large language models.",
+        "authors": "Yuyan Chen, Qiang Fu, Yichen Yuan, Zhihao Wen, Ge\u00a0Fan, Dayiheng Liu, Dongmei Zhang, Zhixu Li, and Yanghua Xiao. 2023b.",
+        "journal": "InProceedings of the 32nd ACM International Conference on Information and Knowledge Management, pages 245\u2013255."
+      },
+      {
+        "tag": "Xiao et\u00a0al. (2021)",
+        "title": "Next-qa: Next phase of question-answering to explaining temporal actions.",
+        "authors": "Junbin Xiao, Xindi Shang, Angela Yao, and Tat-Seng Chua. 2021.",
+        "journal": "InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 9777\u20139786."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2023b)",
+        "title": "Mitigating fine-grained hallucination by fine-tuning large vision-language models with caption rewrites.",
+        "authors": "Lei Wang, Jiabang He, Shenshen Li, Ning Liu, and Ee-Peng Lim. 2023b.",
+        "journal": "arXiv preprint arXiv:2312.01701."
+      },
+      {
+        "tag": "Ma et\u00a0al. (2023)",
+        "title": "Liv: Language-image representations and rewards for robotic control.",
+        "authors": "Yecheng\u00a0Jason Ma, William Liang, Vaidehi Som, Vikash Kumar, Amy Zhang, Osbert Bastani, and Dinesh Jayaraman. 2023.",
+        "journal": "arXiv preprint arXiv:2306.00958."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023a)",
+        "title": "Seed-bench: Benchmarking multimodal llms with generative comprehension.",
+        "authors": "Bohao Li, Rui Wang, Guangzhi Wang, Yuying Ge, Yixiao Ge, and Ying Shan. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.16125."
+      },
+      {
+        "tag": "Rocamonde et\u00a0al. (2023)",
+        "title": "Vision-language models are zero-shot reward models for reinforcement learning.",
+        "authors": "Juan Rocamonde, Victoriano Montesinos, Elvis Nava, Ethan Perez, and David Lindner. 2023.",
+        "journal": "arXiv preprint arXiv:2310.12921."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023b)",
+        "title": "Halueval: A large-scale hallucination evaluation benchmark for large language models.",
+        "authors": "Junyi Li, Xiaoxue Cheng, Wayne\u00a0Xin Zhao, Jian-Yun Nie, and Ji-Rong Wen. 2023b.",
+        "journal": "InProceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 6449\u20136464."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023c)",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen. 2023c.",
+        "journal": "arXiv preprint arXiv:2305.10355."
+      },
+      {
+        "tag": "OpenAI (2023a)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023a.",
+        "journal": ""
+      },
+      {
+        "tag": "Dai et\u00a0al. (2023)",
+        "title": "Instructblip: Towards general-purpose vision-language models with instruction tuning.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Huang et\u00a0al. (2023)",
+        "title": "Opera: Alleviating hallucination in multi-modal large language models via over-trust penalty and retrospection-allocation.",
+        "authors": "Qidong Huang, Xiaoyi Dong, Pan Zhang, Bin Wang, Conghui He, Jiaqi Wang, Dahua Lin, Weiming Zhang, and Nenghai Yu. 2023.",
+        "journal": "arXiv preprint arXiv:2311.17911."
+      },
+      {
+        "tag": "Leng et\u00a0al. (2023)",
+        "title": "Mitigating object hallucinations in large vision-language models through visual contrastive decoding.",
+        "authors": "Sicong Leng, Hang Zhang, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, and Lidong Bing. 2023.",
+        "journal": "arXiv preprint arXiv:2311.16922."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2023c)",
+        "title": "Coplanner: Plan to roll out conservatively but to explore optimistically for model-based rl.",
+        "authors": "Xiyao Wang, Ruijie Zheng, Yanchao Sun, Ruonan Jia, Wichayaporn Wongkamjan, Huazhe Xu, and Furong Huang. 2023c.",
+        "journal": ""
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

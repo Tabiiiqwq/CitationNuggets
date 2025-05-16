@@ -1,0 +1,159 @@
+{
+  "paper_id": "3dmvp",
+  "pred_citations": [
+    [
+      "Jigsaw-ViT: Learning Jigsaw Puzzles in Vision Transformer",
+      "JigsawGAN: Auxiliary Learning for Solving Jigsaw Puzzles with Generative Adversarial Networks",
+      "Learning Image Representations by Completing Damaged Jigsaw Puzzles"
+    ],
+    [
+      "Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders",
+      "From Centralized to Self-Supervised: Pursuing Realistic Multi-Agent Reinforcement Learning",
+      "Boarding for ISS: Imbalanced Self-Supervised: Discovery of a Scaled Autoencoder for Mixed Tabular Datasets"
+    ],
+    [
+      "Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders",
+      "From Centralized to Self-Supervised: Pursuing Realistic Multi-Agent Reinforcement Learning"
+    ],
+    [
+      "Masked Autoencoders Are Scalable Vision Learners",
+      "Masked Autoencoders As Spatiotemporal Learners",
+      "GD-MAE: Generative Decoder for MAE Pre-training on LiDAR Point Clouds"
+    ],
+    [
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation",
+      "RVT: Robotic View Transformer for 3D Object Manipulation"
+    ],
+    [
+      "Learned Camera Gain and Exposure Control for Improved Visual Feature Detection and Matching",
+      "myGym: Modular Toolkit for Visuomotor Robotic Tasks"
+    ],
+    [
+      "Improved Robustness of Vision Transformer via PreLayerNorm in Patch Embedding",
+      "EL-VIT: Probing Vision Transformer with Interactive Visualization"
+    ],
+    [
+      "RVT: Robotic View Transformer for 3D Object Manipulation",
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation"
+    ],
+    [
+      "RVT: Robotic View Transformer for 3D Object Manipulation",
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation"
+    ],
+    [
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation",
+      "RVT: Robotic View Transformer for 3D Object Manipulation"
+    ],
+    [
+      "Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation"
+    ],
+    [
+      "Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation"
+    ],
+    [
+      "Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation"
+    ],
+    [
+      "Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation"
+    ],
+    [
+      "RVT: Robotic View Transformer for 3D Object Manipulation",
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation"
+    ],
+    [
+      "Contrastive Imitation Learning for Language-guided Multi-Task Robotic Manipulation"
+    ],
+    [
+      "RVT: Robotic View Transformer for 3D Object Manipulation",
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation"
+    ],
+    [
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation",
+      "RVT: Robotic View Transformer for 3D Object Manipulation"
+    ],
+    [
+      "3D-MVP: 3D Multiview Pretraining for Robotic Manipulation",
+      "RVT: Robotic View Transformer for 3D Object Manipulation"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "Mehdi Noroozi and Paolo Favaro. Unsupervised learning of In Euro- visual representations by solving jigsaw puzzles. pean conference on computer vision, pages 69\u201384. Springer, 2016. 2"
+    ],
+    [
+      "Ting Chen, Simon Kornblith, Mohammad Norouzi, and Ge- offrey Hinton. A simple framework for contrastive learning of visual representations. In International conference on ma- chine learning, pages 1597\u20131607. PMLR, 2020. 2",
+      "Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. Momentum contrast for unsupervised visual rep- resentation learning. In Proceedings of the IEEE/CVF con- ference on computer vision and pattern recognition, pages 9729\u20139738, 2020. 2"
+    ],
+    [
+      "Mahmoud Assran, Mathilde Caron, Ishan Misra, Piotr Bo- janowski, Florian Bordes, Pascal Vincent, Armand Joulin, 8 InputGTPred Mike Rabbat, and Nicolas Ballas. Masked siamese networks for label-efficient learning. In European Conference on Com- puter Vision, pages 456\u2013473. Springer, 2022. 2",
+      "Mahmoud Assran, Quentin Duval, Ishan Misra, Piotr Bo- janowski, Pascal Vincent, Michael Rabbat, Yann LeCun, and Nicolas Ballas. Self-supervised learning from images with a joint-embedding predictive architecture. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 15619\u201315629, 2023. 2",
+      "Mathilde Caron, Ishan Misra, Julien Mairal, Priya Goyal, Pi- otr Bojanowski, and Armand Joulin. Unsupervised learning of visual features by contrasting cluster assignments. Ad- vances in neural information processing systems, 33:9912\u2013 9924, 2020. 2",
+      "Mathilde Caron, Hugo Touvron, Ishan Misra, Herv\u00b4e J\u00b4egou, Julien Mairal, Piotr Bojanowski, and Armand Joulin. Emerg- ing properties in self-supervised vision transformers. In Pro- ceedings of the IEEE/CVF international conference on com- puter vision, pages 9650\u20139660, 2021. 2",
+      "Jean-Bastien Grill, Florian Strub, Florent Altch\u00b4e, Corentin Tallec, Pierre Richemond, Elena Buchatskaya, Carl Doersch, Bernardo Avila Pires, Zhaohan Guo, Mohammad Ghesh- laghi Azar, et al. Bootstrap your own latent-a new approach to self-supervised learning. Advances in neural information processing systems, 33:21271\u201321284, 2020. 2",
+      "Jinghao Zhou, Chen Wei, Huiyu Wang, Wei Shen, Cihang Xie, Alan Yuille, and Tao Kong. ibot: Image bert pre-training arXiv preprint arXiv:2111.07832, with online tokenizer. 2021. 2"
+    ],
+    [
+      "Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Doll\u00b4ar, and Ross Girshick. Masked autoencoders are scalable vision learners. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 16000\u2013 16009, 2022. 1, 2, 8"
+    ],
+    [
+      "Roman Bachmann, David Mizrahi, Andrei Atanov, and Amir Zamir. Multimae: Multi-modal multi-task masked autoen- coders. In ECCV, 2022. 1, 2"
+    ],
+    [
+      "Dima Damen, Hazel Doughty, Giovanni Maria Farinella, Sanja Fidler, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, and Michael Wray. Scaling egocentric vision: The epic-kitchens dataset. In ECCV, 2018. 2, 7",
+      "Kristen Grauman, Andrew Westbury, Eugene Byrne, Zachary Chavis, Antonino Furnari, Rohit Girdhar, Jackson Hamburger, Hao Jiang, Miao Liu, Xingyu Liu, et al. Ego4d: Around the world in 3,000 hours of egocentric video. In Pro- ceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 18995\u201319012, 2022. 1, 2, 7",
+      "Dandan Shan, Jiaqi Geng, Michelle Shu, and David Fouhey. Understanding human hands in contact at internet scale. In CVPR, 2020. 1, 2, 7"
+    ],
+    [
+      "Sudeep Dasari, Mohan Kumar Srirama, Unnat Jain, and Ab- hinav Gupta. An unbiased look at datasets for visuo-motor pre-training. In Conference on Robot Learning, 2023. 1, 2, 7",
+      "Yecheng Jason Ma, Shagun Sodhani, Dinesh Jayaraman, Os- bert Bastani, Vikash Kumar, and Amy Zhang. Vip: Towards universal visual reward and representation via value-implicit pre-training. arXiv preprint arXiv:2210.00030, 2022. 2",
+      "Arjun Majumdar, Karmesh Yadav, Sergio Arnaud, Jason Ma, Claire Chen, Sneha Silwal, Aryan Jain, Vincent-Pierre Berges, Tingfan Wu, Jay Vakil, et al. Where are we in the search for an artificial visual cortex for embodied intelli- gence? Advances in Neural Information Processing Systems, 36, 2024.",
+      "Suraj Nair, Aravind Rajeswaran, Vikash Kumar, Chelsea R3m: A universal visual arXiv preprint Finn, and Abhinav Gupta. representation for robot manipulation. arXiv:2203.12601, 2022. 2, 6, 7",
+      "Ilija Radosavovic, Tete Xiao, Stephen James, Pieter Abbeel, Jitendra Malik, and Trevor Darrell. Real-world robot learn- ing with masked visual pre-training. In Conference on Robot Learning, pages 416\u2013426. PMLR, 2023. 1, 2, 7",
+      "Younggyo Seo, Junsu Kim, Stephen James, Kimin Lee, Jin- woo Shin, and Pieter Abbeel. Multi-view masked world In International models for visual robotic manipulation. Conference on Machine Learning, pages 30613\u201330632. PMLR, 2023. 2 10",
+      "Tete Xiao, Ilija Radosavovic, Trevor Darrell, and Jitendra Malik. Masked visual pre-training for motor control. arXiv preprint arXiv:2203.06173, 2022. 1, 2, 6, 7"
+    ],
+    [
+      "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In Proceed- ings of the IEEE conference on computer vision and pattern recognition, pages 770\u2013778, 2016. 2"
+    ],
+    [
+      "Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Syl- vain Gelly, et al. An image is worth 16x16 words: Trans- arXiv preprint formers for image recognition at scale. arXiv:2010.11929, 2020. 2, 3"
+    ],
+    [
+      "Ankit Goyal, Jie Xu, Yijie Guo, Valts Blukis, Yu-Wei Chao, and Dieter Fox. Rvt: Robotic view transformer for 3d object manipulation. In Conference on Robot Learning, pages 694\u2013 710. PMLR, 2023. 1, 2, 3, 4, 5, 6, 7"
+    ],
+    [
+      "Theophile Gervet, Zhou Xian, Nikolaos Gkanatsios, and Ka- terina Fragkiadaki. Act3d: Infinite resolution action detec- tion transformer for robotic manipulation. arXiv preprint arXiv:2306.17817, 2023. 2, 3"
+    ],
+    [
+      "Pierre-Louis Guhur, Shizhe Chen, Ricardo Garcia Pinel, Makarand Tapaswi, Ivan Laptev, and Cordelia Schmid. Instruction-driven history-aware policies for robotic manip- ulations. In Conference on Robot Learning, pages 175\u2013187. PMLR, 2023. 2",
+      "Hao Liu, Lisa Lee, Kimin Lee, and Pieter Abbeel. Instruction-following agents with jointly pre-trained vision- language models. 2022. 2",
+      "Nur Muhammad Shafiullah, Zichen Cui, Ariuntuya Arty Al- tanzaya, and Lerrel Pinto. Behavior transformers: Cloning k modes with one stone. Advances in neural information processing systems, 35:22955\u201322968, 2022. 2",
+      "Mohit Shridhar, Lucas Manuelli, and Dieter Fox. Perceiver- actor: A multi-task transformer for robotic manipulation. In Conference on Robot Learning, pages 785\u2013799. PMLR, 2023. 1, 2, 3, 5, 6",
+      "Anthony Simeonov, Ankit Goyal, Lucas Manuelli, Lin Yen- Chen, Alina Sarmiento, Alberto Rodriguez, Pulkit Agrawal, and Dieter Fox. Shelving, stacking, hanging: Relational pose arXiv preprint diffusion for multi-modal rearrangement. arXiv:2307.04751, 2023. 2"
+    ],
+    [
+      "Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Joseph Dabis, Chelsea Finn, Keerthana Gopalakr- ishnan, Karol Hausman, Alex Herzog, Jasmine Hsu, et al. Rt-1: Robotics transformer for real-world control at scale. arXiv preprint arXiv:2212.06817, 2022. 2"
+    ],
+    [
+      "Scott Reed, Konrad Zolna, Emilio Parisotto, Sergio Gomez Colmenarejo, Alexander Novikov, Gabriel Barth-Maron, Mai Gimenez, Yury Sulsky, Jackie Kay, Jost Tobias Sprin- arXiv preprint genberg, et al. A generalist agent. arXiv:2205.06175, 2022. 2"
+    ],
+    [
+      "Hao Liu, Lisa Lee, Kimin Lee, and Pieter Abbeel. Instruction-following agents with jointly pre-trained vision- language models. 2022. 2"
+    ],
+    [
+      "Mohit Shridhar, Lucas Manuelli, and Dieter Fox. Perceiver- actor: A multi-task transformer for robotic manipulation. In Conference on Robot Learning, pages 785\u2013799. PMLR, 2023. 1, 2, 3, 5, 6"
+    ],
+    [
+      "Stephen James, Kentaro Wada, Tristan Laidlow, and An- drew J Davison. Coarse-to-fine q-attention: Efficient learn- ing for visual robotic manipulation via discretisation. In CVPR, 2022. 3, 5, 6"
+    ],
+    [
+      "Ankit Goyal, Jie Xu, Yijie Guo, Valts Blukis, Yu-Wei Chao, and Dieter Fox. Rvt: Robotic view transformer for 3d object manipulation. In Conference on Robot Learning, pages 694\u2013 710. PMLR, 2023. 1, 2, 3, 4, 5, 6, 7"
+    ],
+    [
+      "Theophile Gervet, Zhou Xian, Nikolaos Gkanatsios, and Ka- terina Fragkiadaki. Act3d: Infinite resolution action detec- tion transformer for robotic manipulation. arXiv preprint arXiv:2306.17817, 2023. 2, 3"
+    ],
+    [
+      "Yanjie Ze, Ge Yan, Yueh-Hua Wu, Annabella Macaluso, Yuying Ge, Jianglong Ye, Nicklas Hansen, Li Erran Li, and Xiaolong Wang. Gnfactor: Multi-task real robot learning In Conference on with generalizable neural feature fields. Robot Learning, pages 284\u2013301. PMLR, 2023. 3"
+    ]
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "paper_id": "fireplace",
+  "pred_citations": [
+    [
+      "Learning 3D Semantic Scene Graphs from 3D Indoor Reconstructions",
+      "SGRec3D: Self-Supervised 3D Scene Graph Learning via Object-Level Scene Reconstruction"
+    ],
+    [
+      "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement",
+      "Gaussian Splatting is an Effective Data Generator for 3D Object Detection"
+    ],
+    [
+      "InseRF: Text-Driven Generative Object Insertion in Neural 3D Scenes",
+      "Invisible Stitch: Generating Smooth 3D Scenes with Depth Inpainting"
+    ],
+    [
+      "Back to 3D: Few-Shot 3D Keypoint Detection with Back-Projected 2D Features",
+      "VFusion3D: Learning Scalable 3D Generative Models from Video Diffusion Models"
+    ],
+    [
+      "OBJECT 3DIT: Language-guided 3D-aware Image Editing",
+      "BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing"
+    ],
+    [
+      "ClipFace: Text-guided Editing of Textured 3D Morphable Models",
+      "TEXTure: Text-Guided Texturing of 3D Shapes"
+    ],
+    [
+      "FreeAvatar: Robust 3D Facial Animation Transfer by Learning an Expression Foundation Model",
+      "I2V3D: Controllable image-to-video generation with 3D guidance"
+    ],
+    [
+      "ET3D: Efficient Text-to-3D Generation via Multi-View Distillation",
+      "MVD$^2$: Efficient Multiview 3D Reconstruction for Multiview Diffusion"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "Angel Chang, Angela Dai, Thomas Funkhouser, Maciej Halber, Matthias Niessner, Manolis Savva, Shuran Song, Andy Zeng, and Yinda Zhang. Matterport3d: Learning arXiv preprint from rgb-d data in indoor environments. arXiv:1709.06158, 2017. 3",
+      "Huan Fu, Bowen Cai, Lin Gao, Ling-Xiao Zhang, Jiaming Wang, Cao Li, Qixun Zeng, Chengyue Sun, Rongfei Jia, Bin- qiang Zhao, et al. 3d-front: 3d furnished rooms with layouts In Proceedings of the IEEE/CVF Interna- and semantics. tional Conference on Computer Vision, pages 10933\u201310942, 2021. 3",
+      "Alexander Raistrick, Lingjie Mei, Karhan Kayan, David Yan, Yiming Zuo, Beining Han, Hongyu Wen, Meenal Parakh, Stamatis Alexandropoulos, Lahav Lipson, et al. In- finigen indoors: Photorealistic indoor scenes using procedu- ral generation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 21783\u2013 21794, 2024. 3, 5",
+      "Mike Roberts, Jason Ramapuram, Anurag Ranjan, Atulit Kumar, Miguel Angel Bautista, Nathan Paczan, Russ Webb, and Joshua M. Susskind. Hypersim: A photorealistic syn- thetic dataset for holistic indoor scene understanding. In International Conference on Computer Vision (ICCV) 2021, 2021. 3",
+      "Shuran Song, Samuel P Lichtenberg, and Jianxiong Xiao. Sun rgb-d: A rgb-d scene understanding benchmark suite. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 567\u2013576, 2015. 3",
+      "Shuran Song, Fisher Yu, Andy Zeng, Angel X Chang, Mano- lis Savva, and Thomas Funkhouser. Semantic scene com- In Proceedings of the pletion from a single depth image. IEEE conference on computer vision and pattern recogni- tion, pages 1746\u20131754, 2017. 3"
+    ],
+    [
+      "Matthew Fisher, Daniel Ritchie, Manolis Savva, Thomas Funkhouser, and Pat Hanrahan. Example-based synthesis of 3d object arrangements. ACM Transactions on Graphics (TOG), 31(6):1\u201311, 2012. 3",
+      "Rui Ma, Akshay Gadi Patil, Matthew Fisher, Manyi Li, S\u00a8oren Pirk, Binh-Son Hua, Sai-Kit Yeung, Xin Tong, Leonidas Guibas, and Hao Zhang. Language-driven synthe- sis of 3d scenes from scene databases. ACM Transactions on Graphics (TOG), 37(6):1\u201316, 2018. 3",
+      "Despoina Paschalidou, Amlan Kar, Maria Shugrina, Karsten Kreis, Andreas Geiger, and Sanja Fidler. Atiss: Autoregres- sive transformers for indoor scene synthesis. Advances in Neural Information Processing Systems, 34:12013\u201312026, 2021. 2, 3",
+      "Daniel Ritchie, Kai Wang, and Yu-an Lin. Fast and flex- ible indoor scene synthesis via deep convolutional genera- In Proceedings of the IEEE/CVF Conference tive models. on Computer Vision and Pattern Recognition, pages 6182\u2013 6190, 2019. 3",
+      "Kai Wang, Yu-An Lin, Ben Weissmann, Manolis Savva, An- gel X Chang, and Daniel Ritchie. Planit: Planning and in- stantiating indoor scenes with relation graph and spatial prior networks. ACM Transactions on Graphics (TOG), 38(4):1\u2013 15, 2019. 3",
+      "Xinpeng Wang, Chandan Yeshwanth, and Matthias Nie\u00dfner. Sceneformer: Indoor scene generation with transformers. In 2021 International Conference on 3D Vision (3DV), pages 106\u2013115. IEEE, 2021.",
+      "Qiuhong Anna Wei, Sijie Ding, Jeong Joon Park, Rahul Sajnani, Adrien Poulenard, Srinath Sridhar, and Leonidas Guibas. Lego-net: Learning regular rearrangements of ob- jects in rooms. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 19037\u2013 19047, 2023. 2, 3",
+      "Yixuan Yang, Junru Lu, Zixiang Zhao, Zhen Luo, James JQ Yu, Victor Sanchez, and Feng Zheng. Llplace: The 3d in- door scene layout generation and editing via large language model. arXiv preprint arXiv:2406.03866, 2024. 2, 3"
+    ],
+    [
+      "Shen Chen, Jiale Zhou, Zhongyu Jiang, Tianfang Zhang, Zongkai Wu, Jenq-Neng Hwang, and Lei Li. Scalinggaus- sian: Enhancing 3d content creation with generative gaussian splatting. arXiv preprint arXiv:2407.19035, 2024. 3",
+      "Zhaoxi Chen, Guangcong Wang, and Ziwei Liu. Scene- dreamer: Unbounded 3d scene generation from 2d image collections. IEEE transactions on pattern analysis and ma- chine intelligence, 2023.",
+      "Jaeyoung Chung, Suyoung Lee, Hyeongjin Nam, Jaerin Lee, and Kyoung Mu Lee. Luciddreamer: Domain-free gen- arXiv preprint eration of 3d gaussian splatting scenes. arXiv:2311.13384, 2023. 3",
+      "Rafail Fridman, Amit Abecasis, Yoni Kasten, and Tali Dekel. Scenescape: Text-driven consistent scene generation. Ad- vances in Neural Information Processing Systems, 36, 2024. 3",
+      "Paul Henderson, Melonie de Almeida, Daniela Ivanova, Sampling 3d gaussian scenes arXiv preprint and Titas Anciukevi\u02c7cius. in seconds with latent diffusion models. arXiv:2406.13099, 2024. 3",
+      "Lukas H\u00a8ollein, Ang Cao, Andrew Owens, Justin Johnson, and Matthias Nie\u00dfner. Text2room: Extracting textured 3d In Proceedings of meshes from 2d text-to-image models. the IEEE/CVF International Conference on Computer Vi- sion, pages 7909\u20137920, 2023. 3",
+      "Yukun Huang, Jianan Wang, Ailing Zeng, Zheng-Jun Zha, Lei Zhang, and Xihui Liu. Dreamwaltz-g: Expressive 3d gaussian avatars from skeleton-guided 2d diffusion. arXiv preprint arXiv:2409.17145, 2024. 3",
+      "Xiaoliang Ju, Zhaoyang Huang, Yijin Li, Guofeng Zhang, Yu Qiao, and Hongsheng Li. Diffindscene: Diffusion-based 9 high-quality 3d indoor scene generation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 4526\u20134535, 2024. 3",
+      "Jumin Lee, Sebin Lee, Changho Jo, Woobin Im, Juhyeong Seon, and Sung-Eui Yoon. Semcity: Semantic scene genera- tion with triplane diffusion. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 28337\u201328347, 2024. 3",
+      "Pengzhi Li, Chengshuai Tang, Qinxuan Huang, and Zhi- heng Li. Art3d: 3d gaussian splatting for text-guided artistic scenes generation. arXiv preprint arXiv:2405.10508, 2024. 3",
+      "Andrew Liu, Richard Tucker, Varun Jampani, Ameesh Makadia, Noah Snavely, and Angjoo Kanazawa. Infinite na- ture: Perpetual view generation of natural scenes from a sin- In Proceedings of the IEEE/CVF International gle image. Conference on Computer Vision, pages 14458\u201314467, 2021. 3",
+      "Ryan Po and Gordon Wetzstein. Compositional 3d scene generation using locally conditioned diffusion. In 2024 In- ternational Conference on 3D Vision (3DV), pages 651\u2013663. IEEE, 2024. 3",
+      "Haozhe Xie, Zhaoxi Chen, Fangzhou Hong, and Ziwei Liu. Citydreamer: Compositional generative model of unbounded In Proceedings of the IEEE/CVF Conference 3d cities. on Computer Vision and Pattern Recognition, pages 9666\u2013 9675, 2024. 3",
+      "Taoran Yi, Jiemin Fang, Junjie Wang, Guanjun Wu, Lingxi Xie, Xiaopeng Zhang, Wenyu Liu, Qi Tian, and Xinggang Wang. Gaussiandreamer: Fast generation from text to 3d gaussians by bridging 2d and 3d diffusion models. In Pro- ceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 6796\u20136807, 2024. 3",
+      "Hong-Xing Yu, Haoyi Duan, Junhwa Hur, Kyle Sargent, Michael Rubinstein, William T Freeman, Forrester Cole, De- qing Sun, Noah Snavely, Jiajun Wu, et al. Wonderjourney: In Proceedings of Going from anywhere to everywhere. the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 6658\u20136667, 2024. 3",
+      "Xuening Yuan, Hongyu Yang, Yueming Zhao, and Di Huang. Dreamscape: 3d scene creation via gaussian splatting joint arXiv preprint arXiv:2404.09227, correlation modeling. 2024. 3"
+    ],
+    [
+      "Purvi Goel, Kuan-Chieh Wang, C Karen Liu, and Kayvon Iterative motion editing with natural language. Fatahalian. arXiv preprint arXiv:2312.11538, 2023. 2, 3",
+      "Ian Huang, Vrishab Krishna, Omoruyi Atekha, and Leonidas Guibas. Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions. arXiv:2306.06212, 2023. 2, 3",
+      "Ian Huang, Guandao Yang, and Leonidas Guibas. Blender- alchemy: Editing 3d graphics with vision-language models. arXiv preprint arXiv:2404.17672, 2024. 2, 3, 5",
+      "Peter Kulits, Haiwen Feng, Weiyang Liu, Victoria Abrevaya, and Michael J Black. Re-thinking inverse graphics with large language models. arXiv preprint arXiv:2404.15228, 2024. 2, 3",
+      "Zehao Wen, Zichen Liu, Srinath Sridhar, and Rao Fu. Any- home: Open-vocabulary generation of structured and tex- tured 3d homes. arXiv preprint arXiv:2312.06644, 2023. 2, 3 10"
+    ],
+    [
+      "Ian Huang, Guandao Yang, and Leonidas Guibas. Blender- alchemy: Editing 3d graphics with vision-language models. arXiv preprint arXiv:2404.17672, 2024. 2, 3, 5"
+    ],
+    [
+      "Ian Huang, Vrishab Krishna, Omoruyi Atekha, and Leonidas Guibas. Aladdin: Zero-shot hallucination of stylized 3d arXiv preprint assets from abstract scene descriptions. arXiv:2306.06212, 2023. 2, 3"
+    ],
+    [
+      "Purvi Goel, Kuan-Chieh Wang, C Karen Liu, and Kayvon Iterative motion editing with natural language. Fatahalian. arXiv preprint arXiv:2312.11538, 2023. 2, 3"
+    ],
+    [
+      "Weixi Feng, Wanrong Zhu, Tsu-jui Fu, Varun Jampani, Ar- jun Akula, Xuehai He, Sugato Basu, Xin Eric Wang, and William Yang Wang. Layoutgpt: Compositional visual plan- ning and generation with large language models. Advances in Neural Information Processing Systems, 36, 2024. 2, 3, 6"
+    ],
+    [
+      "Rio Aguina-Kang, Maxim Gumin, Do Heon Han, Stew- art Morris, Seung Jean Yoo, Aditya Ganeshan, R Kenny Jones, Qiuhong Anna Wei, Kailiang Fu, and Daniel Ritchie. Open-universe indoor scene generation using llm program synthesis and uncurated object databases. arXiv preprint arXiv:2403.09675, 2024. 2, 3",
+      "Ziniu Hu, Ahmet Iscen, Aashi Jain, Thomas Kipf, Yisong Yue, David A Ross, Cordelia Schmid, and Alireza Fathi. Scenecraft: An llm agent for synthesizing 3d scenes as blender code. In Forty-first International Conference on Ma- chine Learning, 2024. 2, 3, 5",
+      "Hou In Ivan Tam, Hou In Derek Pun, Austin T Wang, Angel X Chang, and Manolis Savva. Scenemotifcoder: Example-driven visual program learning for generating 3d arXiv preprint arXiv:2408.02211, object arrangements. 2024. 2, 3",
+      "Yue Yang, Fan-Yun Sun, Luca Weihs, Eli VanderBilt, Alvaro Herrasti, Winson Han, Jiajun Wu, Nick Haber, Ranjay Kr- ishna, Lingjie Liu, et al. Holodeck: Language guided genera- tion of 3d embodied ai environments. In The IEEE/CVF Con- ference on Computer Vision and Pattern Recognition (CVPR 2024), pages 20\u201325. IEEE/CVF, 2024. 2, 3, 5, 6"
+    ]
+  ]
+}

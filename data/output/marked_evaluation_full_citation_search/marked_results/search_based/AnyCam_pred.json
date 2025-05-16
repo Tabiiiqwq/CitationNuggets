@@ -1,0 +1,197 @@
+{
+  "paper_id": "AnyCam",
+  "pred_citations": [
+    [
+      "Distilling Monocular Foundation Model for Fine-grained Depth Completion",
+      "A Simple yet Effective Test-Time Adaptation for Zero-Shot Monocular Metric Depth Estimation",
+      "Unsupervised monocular stereo matching"
+    ],
+    [
+      "A Simple yet Effective Test-Time Adaptation for Zero-Shot Monocular Metric Depth Estimation",
+      "FusionDepth: Complement Self-Supervised Monocular Depth Estimation with Cost Volume",
+      "Error Diagnosis of Deep Monocular Depth Estimation Models"
+    ],
+    [
+      "SED-MVS: Segmentation-Driven and Edge-Aligned Deformation Multi-View Stereo with Depth Restoration and Occlusion Constraint",
+      "A Critical Synthesis of Uncertainty Quantification and Foundation Models in Monocular Depth Estimation"
+    ],
+    [
+      "Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image",
+      "Metric3Dv2: A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation",
+      "SharpDepth: Sharpening Metric Depth Predictions Using Diffusion Distillation"
+    ],
+    [
+      "Metric3Dv2: A Versatile Monocular Geometric Foundation Model for Zero-shot Metric Depth and Surface Normal Estimation",
+      "Metric3D: Towards Zero-shot Metric 3D Prediction from A Single Image"
+    ],
+    [
+      "SED-MVS: Segmentation-Driven and Edge-Aligned Deformation Multi-View Stereo with Depth Restoration and Occlusion Constraint",
+      "FusionDepth: Complement Self-Supervised Monocular Depth Estimation with Cost Volume"
+    ],
+    [
+      "FusionDepth: Complement Self-Supervised Monocular Depth Estimation with Cost Volume",
+      "Error Diagnosis of Deep Monocular Depth Estimation Models"
+    ],
+    [
+      "RAFT: Recurrent All-Pairs Field Transforms for Optical Flow"
+    ],
+    [
+      "GMFlow: Learning Optical Flow via Global Matching"
+    ],
+    [
+      "Unifying Flow, Stereo and Depth Estimation"
+    ],
+    [
+      "Unifying Flow, Stereo and Depth Estimation"
+    ],
+    [
+      "Structure-from-Motion Revisited",
+      "OpenMVG: An Open Multiple View Geometry library",
+      "Multiview Structure-from-Motion Made Easy"
+    ],
+    [
+      "COLMAP: A General-Purpose Structure-from-Motion and Multi-View Stereo"
+    ],
+    [
+      "ORB-SLAM: A Versatile and Accurate Monocular SLAM System",
+      "PTAM (Parallel Tracking and Mapping) with RGB-D Sensors"
+    ],
+    [
+      "Depth Map Prediction from a Single Image using a Multi-Scale Deep Network",
+      "Learning Depth from Single Images with Deep Neural Network Embedding Focal Points"
+    ],
+    [
+      "Depth Map Prediction from a Single Image using a Multi-Scale Deep Network",
+      "Learning a Discriminative Feature Network for Semantic Segmentation and Monocular Depth Estimation"
+    ],
+    [
+      "KITTI Vision Benchmark Suite"
+    ],
+    [
+      "Droid-SLAM: A Versatile and Accurate Visual SLAM System",
+      "DROID-SLAM with RGB-D: Distributed Real-Time Object Discovery"
+    ],
+    [
+      "RAFT: Recurrent All-Pairs Field Transforms for Optical Flow"
+    ],
+    [
+      "Particle SfM for 3D Reconstruction",
+      "Dense Object Repositioning using ParticleSfM coupled with local descriptors"
+    ],
+    [
+      "CasualSAM: Stochastic Spot and Motion Extraction Framework for 3D Object Interactions",
+      "Simultaneous Appearance and Motion Segmentation from Video Data"
+    ],
+    [
+      "Dust3R: Dynamic Unsupervised Structure-from-Motion Revisited",
+      "Comprehensive Dense Stereo Matching Using Deep Features and the Dust3R Framework"
+    ],
+    [
+      "Dense Monocular Motion Segmentation Using Optical Flow and Pseudo Depth Map: A Zero-Shot Approach",
+      "FlowMap: Fast Dense Optical Flow for 3D Scene Understanding"
+    ],
+    [
+      "LEAP-VO: Learning and Predicting Visual Odometry with Video Sequences",
+      "LEAP: Learning Articulated Motion and Pose Transitions"
+    ],
+    [
+      "Unsupervised Learning of Monocular Depth Prediction with Deferred Initialization"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "Alexey Dosovitskiy, Philipp Fischer, Eddy Ilg, Philip Hausser, Caner Hazirbas, Vladimir Golkov, Patrick Van Der Smagt, Daniel Cremers, and Thomas Brox. Flownet: Learning optical flow with convolutional networks. In Pro- ceedings of the IEEE international conference on computer vision, pages 2758\u20132766, 2015. 2",
+      "Cl\u00b4ement Godard, Oisin Mac Aodha, and Gabriel J Bros- tow. Unsupervised monocular depth estimation with left- In Proceedings of the IEEE conference right consistency. on computer vision and pattern recognition, pages 270\u2013279, 2017. 2",
+      "Cl\u00b4ement Godard, Oisin Mac Aodha, Michael Firman, and Gabriel J Brostow. Digging into self-supervised monocular In Proceedings of the IEEE/CVF inter- depth estimation. national conference on computer vision, pages 3828\u20133838, 2019. 2"
+    ],
+    [
+      "Lihe Yang, Bingyi Kang, Zilong Huang, Xiaogang Xu, Jiashi Feng, and Hengshuang Zhao. Depth anything: Unleashing the power of large-scale unlabeled data. In Proceedings of 10 the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 10371\u201310381, 2024. 2"
+    ],
+    [
+      "Lihe Yang, Bingyi Kang, Zilong Huang, Zhen Zhao, Xiao- gang Xu, Jiashi Feng, and Hengshuang Zhao. Depth any- thing v2. arXiv preprint arXiv:2406.09414, 2024. 2"
+    ],
+    [
+      "Wei Yin, Chi Zhang, Hao Chen, Zhipeng Cai, Gang Yu, Kaixuan Wang, Xiaozhi Chen, and Chunhua Shen. Metric3d: Towards zero-shot metric 3d prediction from a single image. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 9043\u20139053, 2023. 2"
+    ],
+    [
+      "Mu Hu, Wei Yin, Chi Zhang, Zhipeng Cai, Xiaoxiao Long, Hao Chen, Kaixuan Wang, Gang Yu, Chunhua Shen, and Shaojie Shen. Metric3d v2: A versatile monocular geomet- ric foundation model for zero-shot metric depth and surface normal estimation. arXiv preprint arXiv:2404.15506, 2024. 2"
+    ],
+    [
+      "Aleksei Bochkovskii, Ama\u00a8el Delaunoy, Hugo Germain, Marcel Santos, Yichao Zhou, Stephan R Richter, and Vladlen Koltun. Depth pro: Sharp monocular metric depth in less than a second. arXiv preprint arXiv:2410.02073, 2024. 2"
+    ],
+    [
+      "Wenbo Hu, Xiangjun Gao, Xiaoyu Li, Sijie Zhao, Xiaodong Cun, Yong Zhang, Long Quan, and Ying Shan. Depthcrafter: Generating consistent long depth sequences for open-world videos. arXiv preprint arXiv:2409.02095, 2024. 2"
+    ],
+    [
+      "Luigi Piccinelli, Yung-Hsu Yang, Christos Sakaridis, Mattia Segu, Siyuan Li, Luc Van Gool, and Fisher Yu. Unidepth: Universal monocular metric depth estimation. In Proceed- ings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 10106\u201310116, 2024. 2, 6"
+    ],
+    [
+      "Zachary Teed and Jia Deng. Raft: Recurrent all-pairs field In Computer Vision\u2013ECCV transforms for optical flow. 2020: 16th European Conference, Glasgow, UK, August 23\u2013 28, 2020, Proceedings, Part II 16, pages 402\u2013419. Springer, 2020. 2"
+    ],
+    [
+      "Haofei Xu, Jing Zhang, Jianfei Cai, Hamid Rezatofighi, and Dacheng Tao. Gmflow: Learning optical flow via global matching. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition, pages 8121\u20138130, 2022. 2"
+    ],
+    [
+      "Haofei Xu, Jing Zhang, Jianfei Cai, Hamid Rezatofighi, Fisher Yu, Dacheng Tao, and Andreas Geiger. Unifying flow, stereo and depth estimation. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023. 2, 6"
+    ],
+    [
+      "Richard Hartley and Andrew Zisserman. Multiple view ge- ometry in computer vision. Cambridge university press, 2003. 2",
+      "John Oliensis. A critique of structure-from-motion algo- rithms. Computer Vision and Image Understanding, 80(2): 172\u2013214, 2000. 2",
+      "Onur \u00a8Ozyes\u00b8il, Vladislav Voroninski, Ronen Basri, and Amit Singer. A survey of structure from motion*. Acta Numerica, 26:305\u2013364, 2017. 2 9"
+    ],
+    [
+      "Johannes L Schonberger and Jan-Michael Frahm. Structure- In Proceedings of the IEEE con- from-motion revisited. ference on computer vision and pattern recognition, pages 4104\u20134113, 2016. 1, 2"
+    ],
+    [
+      "Jakob Engel, Thomas Sch\u00a8ops, and Daniel Cremers. Lsd- slam: Large-scale direct monocular slam. In European con- ference on computer vision, pages 834\u2013849. Springer, 2014. 2",
+      "Jakob Engel, Vladlen Koltun, and Daniel Cremers. Direct sparse odometry. IEEE transactions on pattern analysis and machine intelligence, 40(3):611\u2013625, 2017. 2",
+      "Raul Mur-Artal and Juan D Tard\u00b4os. Orb-slam2: An open- source slam system for monocular, stereo, and rgb-d cam- eras. IEEE transactions on robotics, 33(5):1255\u20131262, 2017. 2",
+      "Raul Mur-Artal, Jose Maria Martinez Montiel, and Juan D Tardos. Orb-slam: a versatile and accurate monocular slam IEEE transactions on robotics, 31(5):1147\u20131163, system. 2015. 2"
+    ],
+    [
+      "Eric Brachmann, Alexander Krull, Sebastian Nowozin, Jamie Shotton, Frank Michel, Stefan Gumhold, and Carsten Rother. Dsac-differentiable ransac for camera localization. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 6684\u20136692, 2017. 2",
+      "Daniel DeTone, Tomasz Malisiewicz, and Andrew Rabi- novich. Superpoint: Self-supervised interest point detection and description. In Proceedings of the IEEE conference on computer vision and pattern recognition workshops, pages 224\u2013236, 2018. 2",
+      "Vincent Leroy, Yohann Cabon, and J\u00b4er\u02c6ome Revaud. Ground- arXiv preprint ing image matching in 3d with mast3r. arXiv:2406.09756, 2024. 2",
+      "Dominik Muhle, Lukas Koestler, Krishna Murthy Jatavallab- hula, and Daniel Cremers. Learning correspondence uncer- tainty via differentiable nonlinear least squares. In Proceed- ings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 13102\u201313112, 2023. 2",
+      "Ren\u00b4e Ranftl and Vladlen Koltun. Deep fundamental matrix estimation. In Proceedings of the European conference on computer vision (ECCV), pages 284\u2013299, 2018. 2",
+      "Paul-Edouard Sarlin, Daniel DeTone, Tomasz Malisiewicz, Superglue: Learning feature and Andrew Rabinovich. In Proceedings of matching with graph neural networks. the IEEE/CVF conference on computer vision and pattern recognition, pages 4938\u20134947, 2020.",
+      "Paul-Edouard Sarlin, Ajaykumar Unagar, Mans Larsson, Hugo Germain, Carl Toft, Viktor Larsson, Marc Pollefeys, Vincent Lepetit, Lars Hammarstrand, Fredrik Kahl, et al. Back to the feature: Learning robust camera localization from pixels to pose. In Proceedings of the IEEE/CVF con- ference on computer vision and pattern recognition, pages 3247\u20133257, 2021. 2",
+      "Nan Yang, Rui Wang, Jorg Stuckler, and Daniel Cremers. Deep virtual stereo odometry: Leveraging deep depth predic- tion for monocular direct sparse odometry. In Proceedings of the European conference on computer vision (ECCV), pages 817\u2013833, 2018. 2"
+    ],
+    [
+      "Richard I Hartley. In defense of the eight-point algorithm. IEEE Transactions on pattern analysis and machine intelli- gence, 19(6):580\u2013593, 1997. 2"
+    ],
+    [
+      "Jakob Engel, Vladlen Koltun, and Daniel Cremers. Direct sparse odometry. IEEE transactions on pattern analysis and machine intelligence, 40(3):611\u2013625, 2017. 2"
+    ],
+    [
+      "Holger Caesar, Varun Bankiti, Alex H Lang, Sourabh Vora, Venice Erin Liong, Qiang Xu, Anush Krishnan, Yu Pan, Gi- ancarlo Baldan, and Oscar Beijbom. nuscenes: A multi- In Proceedings of modal dataset for autonomous driving. the IEEE/CVF conference on computer vision and pattern recognition, pages 11621\u201311631, 2020. 2",
+      "Andreas Geiger, Philip Lenz, Christoph Stiller, and Raquel Urtasun. Vision meets robotics: The kitti dataset. The Inter- national Journal of Robotics Research, 32(11):1231\u20131237, 2013. 2",
+      "Pei Sun, Henrik Kretzschmar, Xerxes Dotiwalla, Aurelien Chouard, Vijaysai Patnaik, Paul Tsui, James Guo, Yin Zhou, Yuning Chai, Benjamin Caine, et al. Scalability in perception for autonomous driving: Waymo open dataset. In Proceed- ings of the IEEE/CVF conference on computer vision and pattern recognition, pages 2446\u20132454, 2020. 2"
+    ],
+    [
+      "Zachary Teed and Jia Deng. Droid-slam: Deep visual slam for monocular, stereo, and rgb-d cameras. Advances in neu- ral information processing systems, 34:16558\u201316569, 2021. 2, 6"
+    ],
+    [
+      "Zachary Teed and Jia Deng. Raft: Recurrent all-pairs field In Computer Vision\u2013ECCV transforms for optical flow. 2020: 16th European Conference, Glasgow, UK, August 23\u2013 28, 2020, Proceedings, Part II 16, pages 402\u2013419. Springer, 2020. 2"
+    ],
+    [
+      "Wang Zhao, Shaohui Liu, Hengkai Guo, Wenping Wang, and Yong-Jin Liu. Particlesfm: Exploiting dense point trajecto- ries for localizing moving cameras in the wild. In European Conference on Computer Vision, pages 523\u2013542. Springer, 2022. 2, 6"
+    ],
+    [
+      "Zhoutong Zhang, Forrester Cole, Zhengqi Li, Michael Ru- binstein, Noah Snavely, and William T Freeman. Structure and motion from casual videos. In European Conference on Computer Vision, pages 20\u201337. Springer, 2022. 2, 6"
+    ],
+    [
+      "Shuzhe Wang, Vincent Leroy, Yohann Cabon, Boris Chidlovskii, and Jerome Revaud. Dust3r: Geometric 3d vi- sion made easy. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 20697\u201320709, 2024. 1, 2"
+    ],
+    [
+      "Cameron Smith, David Charatan, Ayush Tewari, and Vin- cent Sitzmann. Flowmap: High-quality camera poses, in- arXiv preprint trinsics, and depth via gradient descent. arXiv:2404.15259, 2024. 2, 3, 4"
+    ],
+    [
+      "Weirong Chen, Le Chen, Rui Wang, and Marc Pollefeys. Leap-vo: Long-term effective any point tracking for visual In Proceedings of the IEEE/CVF Conference odometry. on Computer Vision and Pattern Recognition, pages 19844\u2013 19853, 2024. 2, 3, 6"
+    ],
+    [
+      "Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jam- pani, Trevor Darrell, Forrester Cole, Deqing Sun, and Ming- Hsuan Yang. Monst3r: A simple approach for estimat- arXiv preprint ing geometry in the presence of motion. arXiv:2410.03825, 2024. 3, 6"
+    ]
+  ]
+}

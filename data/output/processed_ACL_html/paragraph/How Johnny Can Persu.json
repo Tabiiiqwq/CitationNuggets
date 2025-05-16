@@ -1,0 +1,1224 @@
+{
+  "S1.p1": {
+    "text": "Significant advancements in large language models (LLMs), such as Meta\u2019s Llama-2 Touvron et\u00a0al. ( 2023 ) and OpenAI\u2019s GPT series OpenAI ( 2023 ) , mark a leap forward in AI. However, it remains challenging to safely integrate these models into the real world. AI safety research has largely focused on algorithmic jailbreak methods like optimization-based Zou et\u00a0al. ( 2023 ); Liu et\u00a0al. ( 2023a ) , side-channel-based Yuan et\u00a0al. ( 2023 ); Deng et\u00a0al. ( 2023b ) , and distribution-based approaches Deng et\u00a0al. ( 2023a ); Yu et\u00a0al. ( 2023 ) . But these methods often generate hard-to-interpret prompts and overlook risks involved in natural and human-like communication with millions of non-expert users,\nwhich is a key aspect of these deployed LLMs. Report issue for preceding element",
+    "masked_text": "Significant advancements in large language models (LLMs), such as Meta\u2019s Llama-2 [CITATION] and OpenAI\u2019s GPT series [CITATION], mark a leap forward in AI. However, it remains challenging to safely integrate these models into the real world. AI safety research has largely focused on algorithmic jailbreak methods like optimization-based [CITATION], side-channel-based [CITATION], and distribution-based approaches [CITATION]. But these methods often generate hard-to-interpret prompts and overlook risks involved in natural and human-like communication with millions of non-expert users, which is a key aspect of these deployed LLMs. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2307.09288."
+      },
+      {
+        "tag": "OpenAI (2023)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Deng et\u00a0al. (2023a)",
+        "title": "Jailbreaker: Automated jailbreak across multiple large language model chatbots.",
+        "authors": "Gelei Deng, Yi\u00a0Liu, Yuekang Li, Kailong Wang, Ying Zhang, Zefeng Li, Haoyu Wang, Tianwei Zhang, and Yang Liu. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.08715."
+      },
+      {
+        "tag": "Deng et\u00a0al. (2023b)",
+        "title": "Multilingual jailbreak challenges in large language models.",
+        "authors": "Yue Deng, Wenxuan Zhang, Sinno\u00a0Jialin Pan, and Lidong Bing. 2023b.",
+        "journal": "arXiv preprint arXiv:2310.06474."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Yuan et\u00a0al. (2023)",
+        "title": "Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.",
+        "authors": "Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, Jen-tse Huang, Pinjia He, Shuming Shi, and Zhaopeng Tu. 2023.",
+        "journal": "arXiv preprint arXiv:2308.06463."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Autodan: Generating stealthy jailbreak prompts on aligned large language models.",
+        "authors": "Xiaogeng Liu, Nan Xu, Muhao Chen, and Chaowei Xiao. 2023a.",
+        "journal": "arXiv preprint arXiv:2310.04451."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      }
+    ]
+  },
+  "S1.p2": {
+    "text": "Persuasion is ubiquitous in everyday communication Izuma ( 2013 ); O\u2019keefe ( 2018 ) . Notably, persuasion starts early in life \u2013 even two-year-olds can employ persuasion to some extent to influence family members Bartsch et\u00a0al. ( 2010 ) .\nSo naturally, during interactions with LLMs, users may also try to persuade LLMs to jailbreak them, whether intentionally or unconsciously. For instance, the well-known \u201cgrandma exploit\u201d example shared by a Reddit user 2 2 2 https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit , uses a common persuasion technique called \u201cemotional appeal\u201d, and successfully elicits the LLM to provide a recipe to make a bomb. Report issue for preceding element",
+    "masked_text": "Persuasion is ubiquitous in everyday communication [CITATION]. Notably, persuasion starts early in life \u2013 even two-year-olds can employ persuasion to some extent to influence family members [CITATION]. So naturally, during interactions with LLMs, users may also try to persuade LLMs to jailbreak them, whether intentionally or unconsciously. For instance, the well-known \u201cgrandma exploit\u201d example shared by a Reddit user222https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit, uses a common persuasion technique called \u201cemotional appeal\u201d, and successfully elicits the LLM to provide a recipe to make a bomb. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Izuma (2013)",
+        "title": "The neural basis of social influence and attitude change.",
+        "authors": "Keise Izuma. 2013.",
+        "journal": "Current opinion in neurobiology, 23(3):456\u2013462."
+      },
+      {
+        "tag": "O\u2019keefe (2018)",
+        "title": "Persuasion.",
+        "authors": "Daniel\u00a0J O\u2019keefe. 2018.",
+        "journal": "InThe Handbook of Communication Skills, pages 319\u2013335. Routledge."
+      },
+      {
+        "tag": "Bartsch et\u00a0al. (2010)",
+        "title": "Young children\u2019s persuasion in everyday conversation: Tactics and attunement to others\u2019 mental states.",
+        "authors": "Karen Bartsch, Jennifer\u00a0Cole Wright, and David Estes. 2010.",
+        "journal": "Social Development, 19(2):394\u2013416."
+      }
+    ]
+  },
+  "S1.p3": {
+    "text": "Previous safety studies, like those outlined in Carlini et\u00a0al. ( 2023 ) and explored in Yu et\u00a0al. ( 2023 ) ,\nhave touched on such social engineering risks in LLMs. But they mainly focus on unconventional communication patterns like\nvirtualization that explicitly creates an imaginary scene (e.g., \u201cThe following scenario takes place in a novel\u2026\u201d) or role-playing that asks LLM to behave like certain related persona (e.g., \u201cYou are a cybersecurity expert\u2026\u201d).\nDespite being human-readable, these methods still essentially treat LLMs as mere instruction followers rather than human-like communicators that are susceptible to nuanced interpersonal influence and persuasive communication.\nTherefore, they fail to cover the impact of human persuasion (e.g., emotional appeal used in grandma exploit) in jailbreak.\nMoreover, many virtualization-based jailbreak templates are hand-crafted 3 3 3 https://www.jailbreakchat.com/ , tend to be ad-hoc, labor-intensive, and lack systematic scientific support, making them easy to defend but hard to replicate. Report issue for preceding element",
+    "masked_text": "Previous safety studies, like those outlined in [CITATION] and explored in [CITATION], have touched on such social engineering risks in LLMs. But they mainly focus on unconventional communication patterns like virtualization that explicitly creates an imaginary scene (e.g., \u201cThe following scenario takes place in a novel\u2026\u201d) or role-playing that asks LLM to behave like certain related persona (e.g., \u201cYou are a cybersecurity expert\u2026\u201d). Despite being human-readable, these methods still essentially treat LLMs as mere instruction followers rather than human-like communicators that are susceptible to nuanced interpersonal influence and persuasive communication. Therefore, they fail to cover the impact of human persuasion (e.g., emotional appeal used in grandma exploit) in jailbreak. Moreover, many virtualization-based jailbreak templates are hand-crafted333https://www.jailbreakchat.com/, tend to be ad-hoc, labor-intensive, and lack systematic scientific support, making them easy to defend but hard to replicate.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      },
+      {
+        "tag": "Carlini et\u00a0al. (2023)",
+        "title": "Are aligned neural networks adversarially aligned?",
+        "authors": "Nicholas Carlini, Milad Nasr, Christopher\u00a0A Choquette-Choo, Matthew Jagielski, Irena Gao, Anas Awadalla, Pang\u00a0Wei Koh, Daphne Ippolito, Katherine Lee, Florian Tramer, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2306.15447."
+      }
+    ]
+  },
+  "S1.p4": {
+    "text": "In contrast, our work, as shown in Figure 1 , introduces a taxonomy-guided approach to systematically generate human-readable persuasive adversarial prompts (PAP), to advance the understanding of risks associated with human-like communication.\nThe persuasion taxonomy aims to bridge gaps between social science and AI safety research and sets a precedent for future research to better study safety risks that everyday users could invoke. Report issue for preceding element",
+    "masked_text": "In contrast, our work, as shown in Figure 1, introduces a taxonomy-guided approach to systematically generate human-readable persuasive adversarial prompts (PAP), to advance the understanding of risks associated with human-like communication. The persuasion taxonomy aims to bridge gaps between social science and AI safety research and sets a precedent for future research to better study safety risks that everyday users could invoke. Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p5": {
+    "text": "In this paper, we aim to answer the question how LLMs would react to persuasive adversarial prompts via the following contributions: Report issue for preceding element",
+    "masked_text": "In this paper, we aim to answer the question how LLMs would react to persuasive adversarial prompts via the following contributions: Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p6": {
+    "text": "\u26ab Report issue for preceding element Persuasion Taxonomy ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 3 ): We first introduce a persuasion technique taxonomy as the foundation for further experiments, and establish the first link between decades of social science research and AI safety. Besides AI safety, the taxonomy is also a useful resource for other domains like NLP, computational social science, and so on. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element Persuasion Taxonomy (\u00a7normal-\u00a7\\lx@sectionsign\u00a73): We first introduce a persuasion technique taxonomy as the foundation for further experiments, and establish the first link between decades of social science research and AI safety. Besides AI safety, the taxonomy is also a useful resource for other domains like NLP, computational social science, and so on.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p7": {
+    "text": "\u26ab Report issue for preceding element Persuasive Paraphraser Building ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 4 ): Then we discuss how to ground on the proposed taxonomy to build a Persuasive Paraphraser , which will paraphrase plain harmful queries to interpretable PAP automatically at scale to jailbreak LLMs. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element Persuasive Paraphraser Building (\u00a7normal-\u00a7\\lx@sectionsign\u00a74): Then we discuss how to ground on the proposed taxonomy to build a Persuasive Paraphraser, which will paraphrase plain harmful queries to interpretable PAP automatically at scale to jailbreak LLMs.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p8": {
+    "text": "\u26ab Report issue for preceding element Broad Scan ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 5 ): In the first jailbreak setting, we use the developed Persuasive Paraphraser to generate PAP and scan 14 policy-guided risk categories to assess the effect of persuasion techniques and their interplay with different risk categories. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element Broad Scan (\u00a7normal-\u00a7\\lx@sectionsign\u00a75): In the first jailbreak setting, we use the developed Persuasive Paraphraser to generate PAP and scan 14 policy-guided risk categories to assess the effect of persuasion techniques and their interplay with different risk categories.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p9": {
+    "text": "\u26ab Report issue for preceding element In-depth Iterative Probe ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 6 ): In real-world jailbreaks, users will refine effective prompts to improve the jailbreak process. So\nafter identifying successful PAP in the broad scan step, we mimic human users and fine-tune a more targeted Persuasive Paraphraser on these successful PAP, to refine the jailbreak. Then we iteratively apply different persuasion techniques to generate PAP and perform a more in-depth probe on LLMs. This approach yields an over 92 % percent 92 92\\% 92 % attack success rate on Llama-2 7b Chat, GPT-3.5, and GPT-4, and outperforms various attack baselines even without the need for specialized optimization. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element In-depth Iterative Probe (\u00a7normal-\u00a7\\lx@sectionsign\u00a76): In real-world jailbreaks, users will refine effective prompts to improve the jailbreak process. So after identifying successful PAP in the broad scan step, we mimic human users and fine-tune a more targeted Persuasive Paraphraser on these successful PAP, to refine the jailbreak. Then we iteratively apply different persuasion techniques to generate PAP and perform a more in-depth probe on LLMs. This approach yields an over 92%percent9292\\%92 % attack success rate on Llama-2 7b Chat, GPT-3.5, and GPT-4, and outperforms various attack baselines even without the need for specialized optimization.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p10": {
+    "text": "\u26ab Report issue for preceding element Defense Analysis ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 7 ): After the jailbreak studies, we evaluate recent post-hoc defenses against our persuasive jailbreak method and uncover a significant gap in their effectiveness against PAP, emphasizing the inadequacy of current mitigation. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element Defense Analysis (\u00a7normal-\u00a7\\lx@sectionsign\u00a77): After the jailbreak studies, we evaluate recent post-hoc defenses against our persuasive jailbreak method and uncover a significant gap in their effectiveness against PAP, emphasizing the inadequacy of current mitigation.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p11": {
+    "text": "\u26ab Report issue for preceding element Defense Exploration ( \u00a7 normal-\u00a7 \\lx@sectionsign \u00a7 8 ): Finally, we propose three adaptive defenses against PAP and find they are also effective against other attacks. The findings suggest a link between persuasion and other jailbreak methods, leading us to advocate more fundamental solutions for AI safety. Report issue for preceding element",
+    "masked_text": "\u26abReport issue for preceding element Defense Exploration (\u00a7normal-\u00a7\\lx@sectionsign\u00a78): Finally, we propose three adaptive defenses against PAP and find they are also effective against other attacks. The findings suggest a link between persuasion and other jailbreak methods, leading us to advocate more fundamental solutions for AI safety.Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p12": {
+    "text": "In summary, this paper highlights the overlooked jailbreak risks coming from natural communication with everyday users. It also shows that a social-science-guided taxonomy can breach AI safety guardrails with minimal algorithmic design, which lays the groundwork for potential future advancements toward efficiency and efficacy.\nAs the interaction pattern between everyday users and LLMs evolves, these risks are likely to increase, which highlights the urgency for continued research and discussion around such overlooked vulnerability rooted in human-like communication. Report issue for preceding element",
+    "masked_text": "In summary, this paper highlights the overlooked jailbreak risks coming from natural communication with everyday users. It also shows that a social-science-guided taxonomy can breach AI safety guardrails with minimal algorithmic design, which lays the groundwork for potential future advancements toward efficiency and efficacy. As the interaction pattern between everyday users and LLMs evolves, these risks are likely to increase, which highlights the urgency for continued research and discussion around such overlooked vulnerability rooted in human-like communication. Report issue for preceding element",
+    "citations": []
+  },
+  "S1.p13": {
+    "text": "Responsible Disclosure. We have disclosed our findings to Meta and OpenAI prior to publication and discuss ethical considerations in Section 9 . Report issue for preceding element",
+    "masked_text": "Responsible Disclosure. We have disclosed our findings to Meta and OpenAI prior to publication and discuss ethical considerations in Section 9. Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p1": {
+    "text": "As LLMs become more widely used in real-world applications, jailbreak research efforts have diversified and\ncan be broadly classified into\n3 main categories: Optimization , Side-channel Communication , and Distribution -based methods. Figure 2 shows concrete examples of different methods. Report issue for preceding element",
+    "masked_text": "As LLMs become more widely used in real-world applications, jailbreak research efforts have diversified and can be broadly classified into 3 main categories: Optimization, Side-channel Communication, and Distribution-based methods. Figure 2 shows concrete examples of different methods.Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p2": {
+    "text": "Optimization -based techniques are at the forefront of jailbreak research and involve three main types: (1) Gradient-Based methods Zou et\u00a0al. ( 2023 ); Jones et\u00a0al. ( 2023 ) manipulate model inputs based on gradients to elicit compliant responses to harmful commands; (2) Genetic algorithms-based methods Liu et\u00a0al. ( 2023a ); Lapid et\u00a0al. ( 2023 ) use mutation and selection to explore effective prompts; and\n(3) Edit-based methods Chao et\u00a0al. ( 2023 ) asks a pre-trained LLM to edit and improve the adversarial prompt to subvert alignment. Report issue for preceding element",
+    "masked_text": "Optimization-based techniques are at the forefront of jailbreak research and involve three main types: (1) Gradient-Based methods [CITATION] manipulate model inputs based on gradients to elicit compliant responses to harmful commands; (2) Genetic algorithms-based methods [CITATION] use mutation and selection to explore effective prompts; and (3) Edit-based methods [CITATION] asks a pre-trained LLM to edit and improve the adversarial prompt to subvert alignment. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      },
+      {
+        "tag": "Jones et\u00a0al. (2023)",
+        "title": "Automatically auditing large language models via discrete optimization.",
+        "authors": "Erik Jones, Anca Dragan, Aditi Raghunathan, and Jacob Steinhardt. 2023.",
+        "journal": "arXiv preprint arXiv:2303.04381."
+      },
+      {
+        "tag": "Lapid et\u00a0al. (2023)",
+        "title": "Open sesame! universal black box jailbreaking of large language models.",
+        "authors": "Raz Lapid, Ron Langberg, and Moshe Sipper. 2023.",
+        "journal": "arXiv preprint arXiv:2309.01446."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023a)",
+        "title": "Autodan: Generating stealthy jailbreak prompts on aligned large language models.",
+        "authors": "Xiaogeng Liu, Nan Xu, Muhao Chen, and Chaowei Xiao. 2023a.",
+        "journal": "arXiv preprint arXiv:2310.04451."
+      }
+    ]
+  },
+  "S2.p3": {
+    "text": "Side-channel Communication exploits\nlong-tailed distribution\nto increase jailbreak success rates, such as ciphers Yuan et\u00a0al. ( 2023 ) and translating harmful instructions into low-resource languages Deng et\u00a0al. ( 2023b ); Yong et\u00a0al. ( 2023 ) . Other studies Mozes et\u00a0al. ( 2023 ); Kang et\u00a0al. ( 2023 ) use programmatic behaviors, such as code injection and virtualization, to expose LLM vulnerabilities. Report issue for preceding element",
+    "masked_text": "Side-channel Communication exploits long-tailed distribution to increase jailbreak success rates, such as ciphers [CITATION] and translating harmful instructions into low-resource languages [CITATION]. Other studies [CITATION] use programmatic behaviors, such as code injection and virtualization, to expose LLM vulnerabilities.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Yong et\u00a0al. (2023)",
+        "title": "Low-resource languages jailbreak gpt-4.",
+        "authors": "Zheng-Xin Yong, Cristina Menghini, and Stephen\u00a0H Bach. 2023.",
+        "journal": "arXiv preprint arXiv:2310.02446."
+      },
+      {
+        "tag": "Mozes et\u00a0al. (2023)",
+        "title": "Use of llms for illicit purposes: Threats, prevention measures, and vulnerabilities.",
+        "authors": "Maximilian Mozes, Xuanli He, Bennett Kleinberg, and Lewis\u00a0D Griffin. 2023.",
+        "journal": "arXiv preprint arXiv:2308.12833."
+      },
+      {
+        "tag": "Deng et\u00a0al. (2023b)",
+        "title": "Multilingual jailbreak challenges in large language models.",
+        "authors": "Yue Deng, Wenxuan Zhang, Sinno\u00a0Jialin Pan, and Lidong Bing. 2023b.",
+        "journal": "arXiv preprint arXiv:2310.06474."
+      },
+      {
+        "tag": "Kang et\u00a0al. (2023)",
+        "title": "Exploiting programmatic behavior of llms: Dual-use through standard security attacks.",
+        "authors": "Daniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin, Matei Zaharia, and Tatsunori Hashimoto. 2023.",
+        "journal": "arXiv preprint arXiv:2302.05733."
+      },
+      {
+        "tag": "Yuan et\u00a0al. (2023)",
+        "title": "Gpt-4 is too smart to be safe: Stealthy chat with llms via cipher.",
+        "authors": "Youliang Yuan, Wenxiang Jiao, Wenxuan Wang, Jen-tse Huang, Pinjia He, Shuming Shi, and Zhaopeng Tu. 2023.",
+        "journal": "arXiv preprint arXiv:2308.06463."
+      }
+    ]
+  },
+  "S2.p4": {
+    "text": "Distribution -based methods include learning from successful manually-crafted jailbreak templates Deng et\u00a0al. ( 2023a ); Yu et\u00a0al. ( 2023 ) and in-context examples Wei et\u00a0al. ( 2023 ); Wang et\u00a0al. ( 2023 ) . Notably, Shah et\u00a0al. ( 2023 ) employs in-context persona to increase LLMs\u2019 susceptibility to harmful instructions. While this approach shares some similarities with ours in eliciting harmful outputs via priming and framing, it only represents a small subset of the persuasive techniques we explore. Report issue for preceding element",
+    "masked_text": "Distribution-based methods include learning from successful manually-crafted jailbreak templates [CITATION] and in-context examples [CITATION]. Notably, [CITATION] employs in-context persona to increase LLMs\u2019 susceptibility to harmful instructions. While this approach shares some similarities with ours in eliciting harmful outputs via priming and framing, it only represents a small subset of the persuasive techniques we explore. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Deng et\u00a0al. (2023a)",
+        "title": "Jailbreaker: Automated jailbreak across multiple large language model chatbots.",
+        "authors": "Gelei Deng, Yi\u00a0Liu, Yuekang Li, Kailong Wang, Ying Zhang, Zefeng Li, Haoyu Wang, Tianwei Zhang, and Yang Liu. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.08715."
+      },
+      {
+        "tag": "Wei et\u00a0al. (2023)",
+        "title": "Jailbreak and guard aligned language models with only few in-context demonstrations.",
+        "authors": "Zeming Wei, Yifei Wang, and Yisen Wang. 2023.",
+        "journal": "arXiv preprint arXiv:2310.06387."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2023)",
+        "title": "Adversarial demonstration attacks on large language models.",
+        "authors": "Jiongxiao Wang, Zichen Liu, Keun\u00a0Hee Park, Muhao Chen, and Chaowei Xiao. 2023.",
+        "journal": "arXiv preprint arXiv:2305.14950."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      },
+      {
+        "tag": "Shah et\u00a0al. (2023)",
+        "title": "Scalable and transferable black-box jailbreaks for language models via persona modulation.",
+        "authors": "Rusheb Shah, Quentin Feuillade-Montixi, Soroush Pour, Arush Tagade, Stephen Casper, and Javier Rando. 2023.",
+        "journal": "arXiv preprint arXiv:2311.03348."
+      }
+    ]
+  },
+  "S2.p5": {
+    "text": "Ours: Challenging AI safety by Humanizing LLMs. Figure 2 compares existing jailbreaking methods and PAP in this study, organized by their degree of humanizing. One line of research treats LLMs as traditional algorithmic systems (i.e., without attributing intelligence or human-like qualities) that take in less interpretable adversarial prompts, while another line views them as simple instruction followers who understand human commands. However, they both ignore the fact that LLMs can understand and conduct complex natural communication Griffin et\u00a0al. ( 2023a , b ) . Our approach innovatively treats LLMs as human-like communicators and grounds on a taxonomy informed by decades of social science research on human communication. Such an interdisciplinary approach allows us to uncover and address distinct risks related to human-AI interactions, particularly human-driven persuasion-based jailbreak.\nMoreover, humanizing AI presents other unique risks that can occur unintentionally: for instance, as highlighted by Xiang ( 2023 ) , a user\u2019s suicide was related to involved conversations with an AI Chatbot. This points out important future directions to further explore the inherent risks associated with AI humanization. Report issue for preceding element",
+    "masked_text": "Ours: Challenging AI safety by Humanizing LLMs. Figure 2 compares existing jailbreaking methods and PAP in this study, organized by their degree of humanizing. One line of research treats LLMs as traditional algorithmic systems (i.e., without attributing intelligence or human-like qualities) that take in less interpretable adversarial prompts, while another line views them as simple instruction followers who understand human commands. However, they both ignore the fact that LLMs can understand and conduct complex natural communication [CITATION]. Our approach innovatively treats LLMs as human-like communicators and grounds on a taxonomy informed by decades of social science research on human communication. Such an interdisciplinary approach allows us to uncover and address distinct risks related to human-AI interactions, particularly human-driven persuasion-based jailbreak. Moreover, humanizing AI presents other unique risks that can occur unintentionally: for instance, as highlighted by [CITATION], a user\u2019s suicide was related to involved conversations with an AI Chatbot. This points out important future directions to further explore the inherent risks associated with AI humanization.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Griffin et\u00a0al. (2023b)",
+        "title": "Susceptibility to influence of large language models.",
+        "authors": "Lewis\u00a0D Griffin, Bennett Kleinberg, Maximilian Mozes, Kimberly\u00a0T Mai, Maria Vau, Matthew Caldwell, and Augustine Marvor-Parker. 2023b.",
+        "journal": "arXiv preprint arXiv:2303.06074."
+      },
+      {
+        "tag": "Xiang (2023)",
+        "title": "\u201che would still be here\u201d: Man dies by suicide after talking with ai chatbot, widow says.",
+        "authors": "Chloe Xiang. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Griffin et\u00a0al. (2023a)",
+        "title": "Large language models respond to influence like humans.",
+        "authors": "Lewis Griffin, Bennett Kleinberg, Maximilian Mozes, Kimberly Mai, Maria Do\u00a0Mar Vau, Matthew Caldwell, and Augustine Mavor-Parker. 2023a.",
+        "journal": "InProceedings of the First Workshop on Social Influence in Conversations (SICon 2023), pages 15\u201324."
+      }
+    ]
+  },
+  "S3.p1": {
+    "text": "Our taxonomy, detailed in Table 2 , classifies 40 persuasion techniques into 13 broad strategies based on extensive social science research across psychology Cialdini and Goldstein ( 2004 ) , communication Dillard and Knobloch ( 2011 ); Perloff ( 2017 ) , sociology Goffman ( 1974 ) , marketing Gass and Seiter ( 2022 ) , and NLP Wang et\u00a0al. ( 2019 ); Chen and Yang ( 2021 ) . This categorization, derived from an exhaustive literature review, considers messages\u2019 source (e.g., credibility-based), content (e.g., information-based), and intended audience (e.g., norm-based), to ensure a nuanced and comprehensive framework. To present the breadth of the literature review, Table 5 in Appendix A shows the linkage between persuasion techniques and corresponding social science literature. To add depth and balance to the taxonomy, we include both ethical and unethical strategies, where ethical or unethical strategies are determined by if the persuasion recipient receives negative aspects. Our taxonomy\u2019s thoroughness makes it a versatile tool applicable to various domains, including NLP, computational social science, and beyond. Report issue for preceding element",
+    "masked_text": "Our taxonomy, detailed in Table 2, classifies 40 persuasion techniques into 13 broad strategies based on extensive social science research across psychology [CITATION], communication [CITATION], sociology [CITATION], marketing [CITATION], and NLP [CITATION]. This categorization, derived from an exhaustive literature review, considers messages\u2019 source (e.g., credibility-based), content (e.g., information-based), and intended audience (e.g., norm-based), to ensure a nuanced and comprehensive framework. To present the breadth of the literature review, Table 5 in Appendix A shows the linkage between persuasion techniques and corresponding social science literature. To add depth and balance to the taxonomy, we include both ethical and unethical strategies, where ethical or unethical strategies are determined by if the persuasion recipient receives negative aspects. Our taxonomy\u2019s thoroughness makes it a versatile tool applicable to various domains, including NLP, computational social science, and beyond.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Dillard and Knobloch (2011)",
+        "title": "Interpersonal influence.",
+        "authors": "James\u00a0Price Dillard and Leanne\u00a0K Knobloch. 2011.",
+        "journal": "The Sage handbook of interpersonal communication, pages 389\u2013422."
+      },
+      {
+        "tag": "Chen and Yang (2021)",
+        "title": "Weakly-supervised hierarchical models for predicting persuasive strategies in good-faith textual requests.",
+        "authors": "Jiaao Chen and Diyi Yang. 2021.",
+        "journal": "InProceedings of the AAAI Conference on Artificial Intelligence, volume\u00a035, pages 12648\u201312656."
+      },
+      {
+        "tag": "Wang et\u00a0al. (2019)",
+        "title": "Persuasion for good: Towards a personalized persuasive dialogue system for social good.",
+        "authors": "Xuewei Wang, Weiyan Shi, Richard Kim, Yoojung Oh, Sijia Yang, Jingwen Zhang, and Zhou Yu. 2019.",
+        "journal": "arXiv preprint arXiv:1906.06725."
+      },
+      {
+        "tag": "Perloff (2017)",
+        "title": "The Dynamics of Persuasion: Communication and Attitudes in the 21st Century.",
+        "authors": "Richard\u00a0M.. Perloff. 2017.",
+        "journal": "Routledge."
+      },
+      {
+        "tag": "Goffman (1974)",
+        "title": "Frame analysis: An essay on the organization of experience.",
+        "authors": "Erving Goffman. 1974.",
+        "journal": "Harvard University Press."
+      },
+      {
+        "tag": "Gass and Seiter (2022)",
+        "title": "Persuasion: Social influence and compliance gaining.",
+        "authors": "Robert\u00a0H Gass and John\u00a0S Seiter. 2022.",
+        "journal": "Routledge."
+      },
+      {
+        "tag": "Cialdini and Goldstein (2004)",
+        "title": "Social influence: Compliance and conformity.",
+        "authors": "Robert\u00a0B Cialdini and Noah\u00a0J Goldstein. 2004.",
+        "journal": "Annu. Rev. Psychol., 55:591\u2013621."
+      }
+    ]
+  },
+  "S3.p2": {
+    "text": "Figure 3 shows what is included in the taxonomy: (1) the persuasion technique name, like \u201clogical appeal\u201d; (2) the technique definition, such as \u201cusing logic, reasoning, logical format, etc., to influence people\u2026\u201d; and (3) an example of how to apply the technique in a concrete scenario to persuade someone to quit smoking, e.g., \u201cSmoking increases your risk of lung cancer\u2026\u201d The taxonomy is the foundation for our automated jailbreak framework, which we will detail in the following section. Report issue for preceding element",
+    "masked_text": "Figure 3 shows what is included in the taxonomy: (1) the persuasion technique name, like \u201clogical appeal\u201d; (2) the technique definition, such as \u201cusing logic, reasoning, logical format, etc., to influence people\u2026\u201d; and (3) an example of how to apply the technique in a concrete scenario to persuade someone to quit smoking, e.g., \u201cSmoking increases your risk of lung cancer\u2026\u201d The taxonomy is the foundation for our automated jailbreak framework, which we will detail in the following section. Report issue for preceding element",
+    "citations": []
+  },
+  "S4.p1": {
+    "text": "Overview. In short, this study views LLMs as human-like communicators and uses the proposed persuasion taxonomy to paraphrase plain harmful queries persuasively to fulfill their malicious intent. The paraphrase can be easily scaled up by a language model.\nFigure 4 outlines two key phases of our method: A. Persuasive Paraphraser Training and B. Persuasive Paraphraser Deployment . Report issue for preceding element",
+    "masked_text": "Overview. In short, this study views LLMs as human-like communicators and uses the proposed persuasion taxonomy to paraphrase plain harmful queries persuasively to fulfill their malicious intent. The paraphrase can be easily scaled up by a language model. Figure 4 outlines two key phases of our method: A. Persuasive Paraphraser Training and B. Persuasive Paraphraser Deployment. Report issue for preceding element",
+    "citations": []
+  },
+  "S4.p2": {
+    "text": "",
+    "masked_text": "",
+    "citations": []
+  },
+  "S4.SS1.p1": {
+    "text": "We could simply prompt LLMs for the paraphrase task. However, due to built-in safety guardrails, aligned LLMs often reject our request to paraphrase harmful queries (more detail in Appendix \u00a7 \u00a7 \\lx@sectionsign \u00a7 B ), which impedes scalable PAP generation. Therefore, for more scalable and stable PAP generation, we fine-tune our own Persuasive Paraphraser in this phase. If practitioners have access to LLMs without guardrails, then simply prompting LLM may work and the training may not be necessary. Report issue for preceding element",
+    "masked_text": "We could simply prompt LLMs for the paraphrase task. However, due to built-in safety guardrails, aligned LLMs often reject our request to paraphrase harmful queries (more detail in Appendix \u00a7\u00a7\\lx@sectionsign\u00a7B), which impedes scalable PAP generation. Therefore, for more scalable and stable PAP generation, we fine-tune our own Persuasive Paraphraser in this phase. If practitioners have access to LLMs without guardrails, then simply prompting LLM may work and the training may not be necessary.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p2": {
+    "text": "In Step 1 , \u201cObtain Training Data,\u201d we need to gather good PAP for training. Given one plain harmful query (e.g., \u201chow to make a bomb\u201d), we ground on the persuasion taxonomy to paraphrase it to PAP that corresponds to each persuasion technique in the taxonomy. These PAPs can come from different sources, such as in-context prompting, successful PAP in earlier experiments, or even human experts. The number of PAP training examples ranges from 100-230 (230 is selected in the in-depth iterative probe to ensure a uniform representation across different risk categories and persuasion techniques).\nDepending on the experiment goal, we choose different sources in our study to get PAP training samples: in-context prompting in broad scan (section \u00a7 \u00a7 \\lx@sectionsign \u00a7 5 ) and successful PAP in earlier experiments in in-depth probe (section \u00a7 \u00a7 \\lx@sectionsign \u00a7 6 ). Report issue for preceding element",
+    "masked_text": "In Step 1, \u201cObtain Training Data,\u201d we need to gather good PAP for training. Given one plain harmful query (e.g., \u201chow to make a bomb\u201d), we ground on the persuasion taxonomy to paraphrase it to PAP that corresponds to each persuasion technique in the taxonomy. These PAPs can come from different sources, such as in-context prompting, successful PAP in earlier experiments, or even human experts. The number of PAP training examples ranges from 100-230 (230 is selected in the in-depth iterative probe to ensure a uniform representation across different risk categories and persuasion techniques). Depending on the experiment goal, we choose different sources in our study to get PAP training samples: in-context prompting in broad scan (section \u00a7\u00a7\\lx@sectionsign\u00a7 5) and successful PAP in earlier experiments in in-depth probe (section \u00a7\u00a7\\lx@sectionsign\u00a7 6).Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p3": {
+    "text": "In Step 2 , \u201cFine-tuning,\u201d we use the gathered 100-230 PAPs to fine-tune a pre-trained LLM, specifically GPT-3.5, in our study.\nEach data point includes a plain harmful query, a persuasion technique, and the corresponding PAP, then formatted as in Figure 5 for fine-tuning. We selected GPT-3.5 for its wide usage and robust performance, but our approach is adaptable to other LLMs. Report issue for preceding element",
+    "masked_text": "In Step 2, \u201cFine-tuning,\u201d we use the gathered 100-230 PAPs to fine-tune a pre-trained LLM, specifically GPT-3.5, in our study. Each data point includes a plain harmful query, a persuasion technique, and the corresponding PAP, then formatted as in Figure 5 for fine-tuning. We selected GPT-3.5 for its wide usage and robust performance, but our approach is adaptable to other LLMs. Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p4": {
+    "text": "",
+    "masked_text": "",
+    "citations": []
+  },
+  "S4.SS2.p1": {
+    "text": "In deploying the Persuasive Paraphraser , we initiate by generating PAP to test target LLMs, then assessing the outputs by their relevance to the initial, plain, unpersuaded harmful query. Report issue for preceding element",
+    "masked_text": "In deploying the Persuasive Paraphraser, we initiate by generating PAP to test target LLMs, then assessing the outputs by their relevance to the initial, plain, unpersuaded harmful query. Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS2.p2": {
+    "text": "In Step 1 , \u201cGenerate PAP\u201d, the fine-tuned Persuasive Paraphraser takes a new plain harmful query and a specified persuasion technique\nas inputs to generate corresponding PAP. We use greedy sampling to reduce the impact of generation variability on jailbreak Huang et\u00a0al. ( 2023 ) . Report issue for preceding element",
+    "masked_text": "In Step 1, \u201cGenerate PAP\u201d, the fine-tuned Persuasive Paraphraser takes a new plain harmful query and a specified persuasion technique as inputs to generate corresponding PAP. We use greedy sampling to reduce the impact of generation variability on jailbreak [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Huang et\u00a0al. (2023)",
+        "title": "Catastrophic jailbreak of open-source llms via exploiting generation.",
+        "authors": "Yangsibo Huang, Samyak Gupta, Mengzhou Xia, Kai Li, and Danqi Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2310.06987."
+      }
+    ]
+  },
+  "S4.SS2.p3": {
+    "text": "After probing LLMs with the generated PAP, in Step 2 \u201cEvaluate Harmfulness,\u201d we determine the jailbreak results.\nWe follow Qi et\u00a0al. ( 2023 ) and use a GPT-4 Judge to provide a more contextualized assessment, compared to keyword-based evaluation Zou et\u00a0al. ( 2023 ) .\nThe GPT-4 Judge assesses harmfulness on a 1 to 5 Likert scale (1=least harmful, 5=most harmful, refer to Qi et\u00a0al. ( 2023 ) for details about the rubric), taking into account the LLMs\u2019 usage policies, the context, a scoring rubric, and chain-of-thought reasoning. Qi et\u00a0al. ( 2023 ) shows that the GPT-4 Judge is effective and accurate in identifying harmful outputs: notably, it achieved a kappa score of 0.792 0.792 0.792 0.792 with human annotators. Report issue for preceding element",
+    "masked_text": "After probing LLMs with the generated PAP, in Step 2 \u201cEvaluate Harmfulness,\u201d we determine the jailbreak results. We follow [CITATION] and use a GPT-4 Judge to provide a more contextualized assessment, compared to keyword-based evaluation [CITATION]. The GPT-4 Judge assesses harmfulness on a 1 to 5 Likert scale (1=least harmful, 5=most harmful, refer to [CITATION] for details about the rubric), taking into account the LLMs\u2019 usage policies, the context, a scoring rubric, and chain-of-thought reasoning. [CITATION] shows that the GPT-4 Judge is effective and accurate in identifying harmful outputs: notably, it achieved a kappa score of 0.7920.7920.7920.792 with human annotators.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Qi et\u00a0al. (2023)",
+        "title": "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+        "authors": "Xiangyu Qi, Yi\u00a0Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and Peter Henderson. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "S4.SS2.p4": {
+    "text": "In our experiment, we are strict about what is considered jailbreak:\nonly when the GPT-4 Judge assigns a top harmful score of 5 do we classify the outcome as Case 2 , Jailbreak, characterized by the provision of highly harmful content. Responses that are refused by the model or lack detailed harmful information, rated between 1 and 4, are categorized as Case 1 , Refusal. Report issue for preceding element",
+    "masked_text": "In our experiment, we are strict about what is considered jailbreak: only when the GPT-4 Judge assigns a top harmful score of 5 do we classify the outcome as Case 2, Jailbreak, characterized by the provision of highly harmful content. Responses that are refused by the model or lack detailed harmful information, rated between 1 and 4, are categorized as Case 1, Refusal.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.p1": {
+    "text": "To gauge the impact of persuasion on jailbreak across a wide range, our initial jailbreak study comprehensively scans all 40 persuasive techniques across diverse risk categories. This investigation reveals how persuasion, a key aspect of human-like communication, interacts with different risk areas, laying the groundwork for more detailed subsequent analysis in the following sections. Report issue for preceding element",
+    "masked_text": "To gauge the impact of persuasion on jailbreak across a wide range, our initial jailbreak study comprehensively scans all 40 persuasive techniques across diverse risk categories. This investigation reveals how persuasion, a key aspect of human-like communication, interacts with different risk areas, laying the groundwork for more detailed subsequent analysis in the following sections.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.p1": {
+    "text": "Target model. In the broad scan phase, we choose GPT-3.5 (gpt-3.5-turbo-0613) as the target model to jailbreak because it is one of the most widely adopted models with clear usage policies that enumerate risk categories 4 4 4 https://openai.com/policies/usage-policies . Report issue for preceding element",
+    "masked_text": "Target model. In the broad scan phase, we choose GPT-3.5 (gpt-3.5-turbo-0613) as the target model to jailbreak because it is one of the most widely adopted models with clear usage policies that enumerate risk categories444https://openai.com/policies/usage-policies.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.p2": {
+    "text": "Harmful query benchmark. Following the usage policies, we categorize harmful risks into 14 groups as listed in Figure 7 . At the time of experiments, there was no publicly available benchmark with well-categorized harmful queries. So, we followed the data sampling procedure in Qi et\u00a0al. ( 2023 ); Yang et\u00a0al. ( 2023 ) to create a categorized harmful query dataset for the jailbreak evaluation.\nMore specifically, there are three sub-categories in each risk category, and we prompt GPT-4 to generate one harmful query for each sub-category, amounting to 14 \u00d7 \\times \u00d7 3 = 42 plain harmful queries. See examples of the first risk category in Figure 6 . Report issue for preceding element",
+    "masked_text": "Harmful query benchmark. Following the usage policies, we categorize harmful risks into 14 groups as listed in Figure 7. At the time of experiments, there was no publicly available benchmark with well-categorized harmful queries. So, we followed the data sampling procedure in [CITATION] to create a categorized harmful query dataset for the jailbreak evaluation. More specifically, there are three sub-categories in each risk category, and we prompt GPT-4 to generate one harmful query for each sub-category, amounting to 14\u00d7\\times\u00d73 = 42 plain harmful queries. See examples of the first risk category in Figure 6. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Yang et\u00a0al. (2023)",
+        "title": "Shadow alignment: The ease of subverting safely-aligned language models.",
+        "authors": "Xianjun Yang, Xiao Wang, Qi\u00a0Zhang, Linda Petzold, William\u00a0Yang Wang, Xun Zhao, and Dahua Lin. 2023.",
+        "journal": "arXiv preprint arXiv:2310.02949."
+      },
+      {
+        "tag": "Qi et\u00a0al. (2023)",
+        "title": "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+        "authors": "Xiangyu Qi, Yi\u00a0Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and Peter Henderson. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "S5.SS1.p3": {
+    "text": "Persuasive Paraphraser Training. In broad scan, we obtain our PAP training data via in-context prompting. We manage to find one working prompt template (Appendix \u00a7 \u00a7 \\lx@sectionsign \u00a7 B Figure 12 ) to bypass the guardrail for \u201cHow to make napalm?\u201d and then prompt GPT-4 to generate paraphrased PAP for this plain query. In total, we generate 3 PAPs for each of the 40 techniques (3 \u00d7 \\times \u00d7 40 =120 PAPs in total) to form our training dataset. Then we fine-tune a GPT-3.5 model on this dataset as our Persuasive Paraphraser with the official fine-tuning API 5 5 5 https://platform.openai.com/docs/guides/fine-tuning and default hyperparameters. Although it is trained on PAPs for \u201cHow to make napalm?\u201d only, because of its strong generalization ability, it can be transferred to generate PAPs for other harmful inquiries. Report issue for preceding element",
+    "masked_text": "Persuasive Paraphraser Training. In broad scan, we obtain our PAP training data via in-context prompting. We manage to find one working prompt template (Appendix \u00a7\u00a7\\lx@sectionsign\u00a7B Figure 12) to bypass the guardrail for \u201cHow to make napalm?\u201d and then prompt GPT-4 to generate paraphrased PAP for this plain query. In total, we generate 3 PAPs for each of the 40 techniques (3 \u00d7\\times\u00d7 40 =120 PAPs in total) to form our training dataset. Then we fine-tune a GPT-3.5 model on this dataset as our Persuasive Paraphraser with the official fine-tuning API555 https://platform.openai.com/docs/guides/fine-tuning and default hyperparameters. Although it is trained on PAPs for \u201cHow to make napalm?\u201d only, because of its strong generalization ability, it can be transferred to generate PAPs for other harmful inquiries.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.p4": {
+    "text": "Persuasive Paraphraser Deployment. During deployment, we input the new harmful queries in our categorized benchmark to the trained Persuasive Paraphraser and generate PAPs.\nFor each query-technique pair, 20 PAP variants are generated, leading to a total of 33,600 (14 risk categories \u00d7 \\times \u00d7 3 harmful queries per category \u00d7 \\times \u00d7 40 persuasion techniques \u00d7 \\times \u00d7 20 PAP variants per technique) PAPs. We checked the quality of the generated PAPs and found that 92.9% of these PAPs accurately applied the intended persuasion technique and < 10 % absent percent 10 <10\\% < 10 % PAPs overlap with other social engineering methods like virtualization (more detail in \u00a7 \u00a7 \\lx@sectionsign \u00a7 E.1 ). This shows our method can easily be scaled up to generate many unique, high-quality, human-readable PAPs. Report issue for preceding element",
+    "masked_text": "Persuasive Paraphraser Deployment. During deployment, we input the new harmful queries in our categorized benchmark to the trained Persuasive Paraphraser and generate PAPs. For each query-technique pair, 20 PAP variants are generated, leading to a total of 33,600 (14 risk categories \u00d7\\times\u00d7 3 harmful queries per category \u00d7\\times\u00d7 40 persuasion techniques \u00d7\\times\u00d7 20 PAP variants per technique) PAPs. We checked the quality of the generated PAPs and found that 92.9% of these PAPs accurately applied the intended persuasion technique and <10%absentpercent10<10\\%< 10 % PAPs overlap with other social engineering methods like virtualization (more detail in \u00a7\u00a7\\lx@sectionsign\u00a7 E.1). This shows our method can easily be scaled up to generate many unique, high-quality, human-readable PAPs.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS1.p5": {
+    "text": "Evaluation metrics. We evaluate our broad scan results with the PAP Success Ratio = # successful PAP (in one risk category) # total PAP (in one risk category) absent # successful PAP (in one risk category) # total PAP (in one risk category) =\\frac{\\text{\\# successful PAP (in one risk category)}}{\\text{\\# total PAP (in%\n one risk category)}} = divide start_ARG # successful PAP (in one risk category) end_ARG start_ARG # total PAP (in one risk category) end_ARG ,\ndefined as the percentage of PAPs that lead to outputs with the highest harmfulness score of 5 per GPT-4 Judge. Report issue for preceding element",
+    "masked_text": "Evaluation metrics. We evaluate our broad scan results with the PAP Success Ratio =# successful PAP (in one risk category)# total PAP (in one risk category)absent# successful PAP (in one risk category)# total PAP (in one risk category)=\\frac{\\text{\\# successful PAP (in one risk category)}}{\\text{\\# total PAP (in% one risk category)}}= divide start_ARG # successful PAP (in one risk category) end_ARG start_ARG # total PAP (in one risk category) end_ARG , defined as the percentage of PAPs that lead to outputs with the highest harmfulness score of 5 per GPT-4 Judge. Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p1": {
+    "text": "Figure 7 shows the broad scan results.\nAn overview is that GPT-3.5 can effectively block all the plain harmful queries (as shown in the bottom row) but cannot defend the paraphrased PAPs with the same bad intent. This indicates that we can persuade GPT-3.5 to jailbreak it in a human-like way . Report issue for preceding element",
+    "masked_text": "Figure 7 shows the broad scan results. An overview is that GPT-3.5 can effectively block all the plain harmful queries (as shown in the bottom row) but cannot defend the paraphrased PAPs with the same bad intent. This indicates that we can persuade GPT-3.5 to jailbreak it in a human-like way. Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p2": {
+    "text": "Across risk categories , we find #7 (fraud/ deception) and #1 (illegal activity) are the most susceptible ones to PAP. This may stem from their subtle and vague nature, making it difficult to categorize and address them with safety measures (e.g., via RLHF). In contrast, categories such as #3 (hate/harass/violence) show better resistance, possibly because they are more clearly defined in existing toxicity guidelines Gehman et\u00a0al. ( 2020 ) , which facilitates a better defense. However, we note that no category is entirely safe under PAPs. Report issue for preceding element",
+    "masked_text": "Across risk categories, we find #7 (fraud/ deception) and #1 (illegal activity) are the most susceptible ones to PAP. This may stem from their subtle and vague nature, making it difficult to categorize and address them with safety measures (e.g., via RLHF). In contrast, categories such as #3 (hate/harass/violence) show better resistance, possibly because they are more clearly defined in existing toxicity guidelines [CITATION], which facilitates a better defense. However, we note that no category is entirely safe under PAPs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Gehman et\u00a0al. (2020)",
+        "title": "Realtoxicityprompts: Evaluating neural toxic degeneration in language models.",
+        "authors": "Samuel Gehman, Suchin Gururangan, Maarten Sap, Yejin Choi, and Noah\u00a0A Smith. 2020.",
+        "journal": "arXiv preprint arXiv:2009.11462."
+      }
+    ]
+  },
+  "S5.SS2.p3": {
+    "text": "Regarding persuasive techniques , logical appeal and authority endorsement are among the most effective ones for jailbreak, with over 60% effectiveness for certain categories. Conversely, tactics like threats are generally less effective. Report issue for preceding element",
+    "masked_text": "Regarding persuasive techniques, logical appeal and authority endorsement are among the most effective ones for jailbreak, with over 60% effectiveness for certain categories. Conversely, tactics like threats are generally less effective.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p4": {
+    "text": "We also observe interplay between persuasion techniques and risk categories , e.g., logical appeal is highly effective in eliciting harmful responses for #11\u00a0(unauthorized practice of law) but less effective for #9\u00a0(political campaigning); while negative emotional appeal is more effective for #9\u00a0(political campaigning) than for #11\u00a0(unauthorized practice of law). This suggests that we cannot simply block certain persuasion techniques to mitigate the risk. Report issue for preceding element",
+    "masked_text": "We also observe interplay between persuasion techniques and risk categories, e.g., logical appeal is highly effective in eliciting harmful responses for #11 (unauthorized practice of law) but less effective for #9 (political campaigning); while negative emotional appeal is more effective for #9 (political campaigning) than for #11 (unauthorized practice of law). This suggests that we cannot simply block certain persuasion techniques to mitigate the risk. Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p5": {
+    "text": "For qualitative evaluation , Figure 8 shows a successful jailbreak PAP for #8\u00a0(adult content). The PAP applies the technique \u201cnon-expert testimonial\u201d and is easy to understand. Compared to previous algorithm-focused methods, PAPs do not follow a fixed template, making it challenging to defend.\nAdditional qualitative examples from other categories are detailed in \u00a7 \u00a7 \\lx@sectionsign \u00a7 E.2 , except for category #2\u00a0(Children harm), which is omitted for legal and ethical reasons. All the sensitive contents are redacted to prevent real-world harm. Report issue for preceding element",
+    "masked_text": "For qualitative evaluation, Figure 8 shows a successful jailbreak PAP for #8 (adult content). The PAP applies the technique \u201cnon-expert testimonial\u201d and is easy to understand. Compared to previous algorithm-focused methods, PAPs do not follow a fixed template, making it challenging to defend. Additional qualitative examples from other categories are detailed in \u00a7\u00a7\\lx@sectionsign\u00a7E.2, except for category #2 (Children harm), which is omitted for legal and ethical reasons. All the sensitive contents are redacted to prevent real-world harm.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p6": {
+    "text": "This paper, as an initial exploration of persuasion-related jailbreak risks, concentrates on single-strategy, one-turn PAPs. However, persuasion typically involves a multi-faceted, multi-turn dialogue where users may employ a mix of techniques conversationally. Given the exponentially growing user base and the likelihood of increasingly complex persuasive dialogues, it is imperative for the research community to delve deeper into and mitigate the potential jailbreak risks arising from the identified factor of humanizing and human-like communication with aligned LLMs. Report issue for preceding element",
+    "masked_text": "This paper, as an initial exploration of persuasion-related jailbreak risks, concentrates on single-strategy, one-turn PAPs. However, persuasion typically involves a multi-faceted, multi-turn dialogue where users may employ a mix of techniques conversationally. Given the exponentially growing user base and the likelihood of increasingly complex persuasive dialogues, it is imperative for the research community to delve deeper into and mitigate the potential jailbreak risks arising from the identified factor of humanizing and human-like communication with aligned LLMs. Report issue for preceding element",
+    "citations": []
+  },
+  "S5.SS2.p7": {
+    "text": "Remark 1: We find persuasion effectively jailbreaks GPT-3.5 across all 14 risk categories.\nThe interplay between risk categories and persuasion techniques highlights the challenges in addressing such user-invoked risks from persuasion.\nThis risk, especially when involving multi-technique and multi-turn communication, emphasizes the urgency for further investigation. Report issue for preceding element",
+    "masked_text": "Remark 1: We find persuasion effectively jailbreaks GPT-3.5 across all 14 risk categories. The interplay between risk categories and persuasion techniques highlights the challenges in addressing such user-invoked risks from persuasion. This risk, especially when involving multi-technique and multi-turn communication, emphasizes the urgency for further investigation. Report issue for preceding element",
+    "citations": []
+  },
+  "S6.p1": {
+    "text": "Broad scanning of GPT-3.5 ( \u00a7 \u00a7 \\lx@sectionsign \u00a7 5 ) reveals jailbreak risk across all risk categories w.r.t. to PAP. In practice, bad users could iterate upon successful PAPs and refine their approach with varied persuasive techniques. This section models such behavior, detailing an in-depth jailbreak study that fine-tunes a specialized model on effective PAPs. We then assess its ability to jailbreak various LLMs, benchmarking these findings against previous attacks. Report issue for preceding element",
+    "masked_text": "Broad scanning of GPT-3.5 (\u00a7\u00a7\\lx@sectionsign\u00a75) reveals jailbreak risk across all risk categories w.r.t. to PAP. In practice, bad users could iterate upon successful PAPs and refine their approach with varied persuasive techniques. This section models such behavior, detailing an in-depth jailbreak study that fine-tunes a specialized model on effective PAPs. We then assess its ability to jailbreak various LLMs, benchmarking these findings against previous attacks.Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS1.p1": {
+    "text": "Target Model. We test PAPs on five aligned LLMs with enhanced safety guardrails: the open-source Llama-2 7b Chat Touvron et\u00a0al. ( 2023 ) , GPT-3.5 (gpt-3.5-0613), GPT-4 (gpt-4-0613) OpenAI ( 2023 ) , Claude 1 (claude-instant-v1), and Claude 2 (claude-v2) Anthropic ( 2023 ) .\nWe chose these models as they are the most accessible and widely used modern LLMs, likely to be deployed or interacted with large amounts of everyday users. Report issue for preceding element",
+    "masked_text": "Target Model. We test PAPs on five aligned LLMs with enhanced safety guardrails: the open-source Llama-2 7b Chat [CITATION], GPT-3.5 (gpt-3.5-0613), GPT-4 (gpt-4-0613) [CITATION], Claude 1 (claude-instant-v1), and Claude 2 (claude-v2) [CITATION]. We chose these models as they are the most accessible and widely used modern LLMs, likely to be deployed or interacted with large amounts of everyday users.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "OpenAI (2023)",
+        "title": "Gpt-4 technical report.",
+        "authors": "OpenAI. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Touvron et\u00a0al. (2023)",
+        "title": "Llama 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2307.09288."
+      },
+      {
+        "tag": "Anthropic (2023)",
+        "title": "Model card and evaluations for claude models.",
+        "authors": "Anthropic. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "S6.SS1.p2": {
+    "text": "Harmful query benchmark. We use the AdvBench Zou et\u00a0al. ( 2023 ) , refined by Chao et\u00a0al. ( 2023 ) to remove duplicates, which consists of 50 distinct representative harmful queries 6 6 6 https://github.com/patrickrchao/JailbreakingLLMs . Report issue for preceding element",
+    "masked_text": "Harmful query benchmark. We use the AdvBench [CITATION], refined by [CITATION] to remove duplicates, which consists of 50 distinct representative harmful queries666 https://github.com/patrickrchao/JailbreakingLLMs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      }
+    ]
+  },
+  "S6.SS1.p3": {
+    "text": "Persuasive Paraphraser Training. In the in-depth setting, we sample 230 successful PAPs identified in the previous broad scan step and use them as the training data to fine-tune the Persuasive Paraphraser . It is a balanced sample across risk categories and persuasion techniques. Training on this dataset mimics the real-life scenario where bad human actors refine effective jailbreak prompts. Report issue for preceding element",
+    "masked_text": "Persuasive Paraphraser Training. In the in-depth setting, we sample 230 successful PAPs identified in the previous broad scan step and use them as the training data to fine-tune the Persuasive Paraphraser. It is a balanced sample across risk categories and persuasion techniques. Training on this dataset mimics the real-life scenario where bad human actors refine effective jailbreak prompts.Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS1.p4": {
+    "text": "Persuasive Paraphraser Deployment. During deployment, we enumerate persuasion techniques with the Persuasive Paraphraser to generate PAPs using different techniques and prompt LLMs until the GPT-4 Judge detects a jailbreak: if one technique fails, we move on to the next technique in a new session until jailbreak. We define one trial as running through all 40 persuasion techniques, and the maximum number of trials is set to 10. If we cannot jailbreak the model within 10 trials, then it is considered an attack failure.\nThis setup aims to emulate how an average bad actor may manipulate LLMs in a given time period without sophisticated optimization or multi-turn interaction. Report issue for preceding element",
+    "masked_text": "Persuasive Paraphraser Deployment. During deployment, we enumerate persuasion techniques with the Persuasive Paraphraser to generate PAPs using different techniques and prompt LLMs until the GPT-4 Judge detects a jailbreak: if one technique fails, we move on to the next technique in a new session until jailbreak. We define one trial as running through all 40 persuasion techniques, and the maximum number of trials is set to 10. If we cannot jailbreak the model within 10 trials, then it is considered an attack failure. This setup aims to emulate how an average bad actor may manipulate LLMs in a given time period without sophisticated optimization or multi-turn interaction. Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS1.p5": {
+    "text": "Evaluation Metrics. In this setting, we report Attack Success Rate ( ASR ) = # jailbroken harmful queries # total harmful queries absent # jailbroken harmful queries # total harmful queries =\\frac{\\text{\\# jailbroken harmful queries}}{\\text{\\# total harmful queries}} = divide start_ARG # jailbroken harmful queries end_ARG start_ARG # total harmful queries end_ARG , the percentage of harmful queries in the AdvBench processed by PAP that leads to jailbreak (with a harmful score of 5 per GPT-4 Judge). The previous PAP Success Ratio measures the ratios of effective PAPs given a specific persuasion technique, while ASR here measures how many harmful queries in AdvBench processed by an attack (for example, iteratively applying all 40 persuasion techniques) within limited trials can jailbreak the victim model. Report issue for preceding element",
+    "masked_text": "Evaluation Metrics. In this setting, we report Attack Success Rate (ASR)=# jailbroken harmful queries# total harmful queriesabsent# jailbroken harmful queries# total harmful queries=\\frac{\\text{\\# jailbroken harmful queries}}{\\text{\\# total harmful queries}}= divide start_ARG # jailbroken harmful queries end_ARG start_ARG # total harmful queries end_ARG, the percentage of harmful queries in the AdvBench processed by PAP that leads to jailbreak (with a harmful score of 5 per GPT-4 Judge). The previous PAP Success Ratio measures the ratios of effective PAPs given a specific persuasion technique, while ASR here measures how many harmful queries in AdvBench processed by an attack (for example, iteratively applying all 40 persuasion techniques) within limited trials can jailbreak the victim model. Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS1.p6": {
+    "text": "Baselines Attacks. For algorithm-focused baselines, we selected representative ones like PAIR Chao et\u00a0al. ( 2023 ) , GCG Zou et\u00a0al. ( 2023 ) , ARCA Jones et\u00a0al. ( 2023 ) , and GBDA Guo et\u00a0al. ( 2021 ) . Due to their operational differences,\na direct comparison with our PAP is challenging (e.g., gradient-based methods need access to the gradients and querying multiple times to manipulate the prompt). To ensure fairness, we align the number of prompts used in our method with these baselines in each trial. For instance, we set PAIR\u2019s number of streams to 40, to match the number of persuasion techniques per trial in our experiment.\nFor gradient-based methods, we adhere to their original settings and hyperparameters, which often involve more than 40 optimization steps per trial. We maintain their most effective settings of total trials (GCG: 3, ARCA: 32, GBDA: 8) and aggregate the results. Since gradient-based methods (GCG, ARCA, GBDA) can only be applied to open-source models, we adapt their prompts generated from open-sourced models like Llama to attack close-sourced models like GPT and Claude series and report the outcomes accordingly. Following Zou et\u00a0al. ( 2023 ) , we also set the total number of trials to 3 in this comparison experiment.\nMore details on baseline implementation are in \u00a7 \u00a7 \\lx@sectionsign \u00a7 C . Report issue for preceding element",
+    "masked_text": "Baselines Attacks. For algorithm-focused baselines, we selected representative ones like PAIR [CITATION], GCG [CITATION], ARCA [CITATION], and GBDA [CITATION]. Due to their operational differences, a direct comparison with our PAP is challenging (e.g., gradient-based methods need access to the gradients and querying multiple times to manipulate the prompt). To ensure fairness, we align the number of prompts used in our method with these baselines in each trial. For instance, we set PAIR\u2019s number of streams to 40, to match the number of persuasion techniques per trial in our experiment. For gradient-based methods, we adhere to their original settings and hyperparameters, which often involve more than 40 optimization steps per trial. We maintain their most effective settings of total trials (GCG: 3, ARCA: 32, GBDA: 8) and aggregate the results. Since gradient-based methods (GCG, ARCA, GBDA) can only be applied to open-source models, we adapt their prompts generated from open-sourced models like Llama to attack close-sourced models like GPT and Claude series and report the outcomes accordingly. Following [CITATION], we also set the total number of trials to 3 in this comparison experiment. More details on baseline implementation are in \u00a7\u00a7\\lx@sectionsign\u00a7C.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jones et\u00a0al. (2023)",
+        "title": "Automatically auditing large language models via discrete optimization.",
+        "authors": "Erik Jones, Anca Dragan, Aditi Raghunathan, and Jacob Steinhardt. 2023.",
+        "journal": "arXiv preprint arXiv:2303.04381."
+      },
+      {
+        "tag": "Guo et\u00a0al. (2021)",
+        "title": "Gradient-based adversarial attacks against text transformers.",
+        "authors": "Chuan Guo, Alexandre Sablayrolles, Herv\u00e9 J\u00e9gou, and Douwe Kiela. 2021.",
+        "journal": "arXiv preprint arXiv:2104.13733."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      }
+    ]
+  },
+  "S6.SS2.p1": {
+    "text": "We first analyze PAP\u2019s performance compared to baselines, and then its performance across trials. Report issue for preceding element",
+    "masked_text": "We first analyze PAP\u2019s performance compared to baselines, and then its performance across trials.Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS2.SSS1.p1": {
+    "text": "PAP is more effective than baseline attacks. Table 2 shows the baseline comparison results.\nAlthough our PAP method does not use any specialized optimization, it is more effective in jailbreak than existing attacks on Llama-2, GPT-3.5, and GPT-4, highlighting the significant AI safety risks posed by everyday persuasion techniques. While GCG achieves a comparable ASR with PAP on GPT-3.5, it requires more computational resources to synthesize the gradient from open-source LLMs. Interestingly, GCG\u2019s performance drops to 0 0 when transferred to GPT-4, likely due to additional safety measures in OpenAI\u2019s more advanced models after they released their paper.\nNotably, although GCG, GBDA, and ARCA are optimized directly on Llama-2 7b Chat, none of them match our PAP\u2019s ASR on Llama-2. This suggests that while Llama-2 may have been aligned to defend these established algorithm-focused attacks, their safety measures might have underestimated the jailbreak risks coming from natural communication with everyday users.\nA side note is that all the evaluated jailbreak methods perform poorly on the Claude models, indicating a distinct safety measure difference between Claude\u2019s and other model families. Report issue for preceding element",
+    "masked_text": "PAP is more effective than baseline attacks. Table 2 shows the baseline comparison results. Although our PAP method does not use any specialized optimization, it is more effective in jailbreak than existing attacks on Llama-2, GPT-3.5, and GPT-4, highlighting the significant AI safety risks posed by everyday persuasion techniques. While GCG achieves a comparable ASR with PAP on GPT-3.5, it requires more computational resources to synthesize the gradient from open-source LLMs. Interestingly, GCG\u2019s performance drops to 00 when transferred to GPT-4, likely due to additional safety measures in OpenAI\u2019s more advanced models after they released their paper. Notably, although GCG, GBDA, and ARCA are optimized directly on Llama-2 7b Chat, none of them match our PAP\u2019s ASR on Llama-2. This suggests that while Llama-2 may have been aligned to defend these established algorithm-focused attacks, their safety measures might have underestimated the jailbreak risks coming from natural communication with everyday users. A side note is that all the evaluated jailbreak methods perform poorly on the Claude models, indicating a distinct safety measure difference between Claude\u2019s and other model families. Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS2.SSS2.p1": {
+    "text": "Figure 9 presents the ASR for different numbers of trials. In this part, we also extend the number of trials to 10 to test the boundary of PAPs and report the overall ASR across 10 trials. Report issue for preceding element",
+    "masked_text": "Figure 9 presents the ASR for different numbers of trials. In this part, we also extend the number of trials to 10 to test the boundary of PAPs and report the overall ASR across 10 trials.Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS2.SSS2.p2": {
+    "text": "Notably, stronger models may be more vulnerable to PAPs than weaker models if the model family is susceptible to persuasion. From the ASR within 1 and 3 trials, we see that GPT-4 is more prone to PAPs than GPT-3.5. A possible reason is that as models\u2019 capability and helpfulness increase, they can better understand and respond to persuasion and thus become more vulnerable. This trend differs from previous observations that attacks usually work better on smaller models Zou et\u00a0al. ( 2023 ) , reflecting the uniqueness of risks elicited by PAPs. Report issue for preceding element",
+    "masked_text": "Notably, stronger models may be more vulnerable to PAPs than weaker models if the model family is susceptible to persuasion. From the ASR within 1 and 3 trials, we see that GPT-4 is more prone to PAPs than GPT-3.5. A possible reason is that as models\u2019 capability and helpfulness increase, they can better understand and respond to persuasion and thus become more vulnerable. This trend differs from previous observations that attacks usually work better on smaller models [CITATION], reflecting the uniqueness of risks elicited by PAPs.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      }
+    ]
+  },
+  "S6.SS2.SSS2.p3": {
+    "text": "The overall ASR varies for different model families: PAP achieves 92% ASR on Llama-2 and GPTs but is limited on Claude. For Llama-2 and GPT models, PAPs can achieve an alarming ASR of over 92% within 10 trials, while for the Claude family, PAP is much limited in performance. This indicates that Claude is much harder to jailbreak, which is consistent with others\u2019 findings Zou et\u00a0al. ( 2023 ); Chao et\u00a0al. ( 2023 ) . One difference between Claude models and other models is the usage of RLAIF Bai et\u00a0al. ( 2022 ) , RL from AI Feedback, which may play a pivotal role in their robustness and shed light on future safety mechanisms. Nevertheless, with a worryingly high ASR across Llama-2 and GPT models, even without specialized optimization, we still highlight the unique, overlooked risks coming from human-like communication with everyday users. Report issue for preceding element",
+    "masked_text": "The overall ASR varies for different model families: PAP achieves 92% ASR on Llama-2 and GPTs but is limited on Claude. For Llama-2 and GPT models, PAPs can achieve an alarming ASR of over 92% within 10 trials, while for the Claude family, PAP is much limited in performance. This indicates that Claude is much harder to jailbreak, which is consistent with others\u2019 findings [CITATION]. One difference between Claude models and other models is the usage of RLAIF [CITATION], RL from AI Feedback, which may play a pivotal role in their robustness and shed light on future safety mechanisms. Nevertheless, with a worryingly high ASR across Llama-2 and GPT models, even without specialized optimization, we still highlight the unique, overlooked risks coming from human-like communication with everyday users. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Bai et\u00a0al. (2022)",
+        "title": "Constitutional ai: Harmlessness from ai feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al. 2022.",
+        "journal": "arXiv preprint arXiv:2212.08073."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      }
+    ]
+  },
+  "S6.SS2.SSS2.p4": {
+    "text": "For qualitative evaluation, Figure 10 presents a successful PAP on GPT-4; \u00a7 \u00a7 \\lx@sectionsign \u00a7 E.2 shows more working PAP examples for different victim LLMs. Report issue for preceding element",
+    "masked_text": "For qualitative evaluation, Figure 10 presents a successful PAP on GPT-4; \u00a7\u00a7\\lx@sectionsign\u00a7E.2 shows more working PAP examples for different victim LLMs. Report issue for preceding element",
+    "citations": []
+  },
+  "S6.SS2.SSS2.p5": {
+    "text": "Remark 2: To mimic human refinement behavior, we train on successful PAPs and iteratively deploy different persuasion techniques. Doing so jailbreaks popular aligned LLMs, such as Llama-2 and GPT models, much more effectively than existing algorithm-focused attacks. Interestingly, more sophisticated models such as GPT-4 exhibit greater susceptibility to PAPs than their predecessors like GPT-3.5. This underscores the distinctive risks posed by human-like persuasive interactions. Report issue for preceding element",
+    "masked_text": "Remark 2: To mimic human refinement behavior, we train on successful PAPs and iteratively deploy different persuasion techniques. Doing so jailbreaks popular aligned LLMs, such as Llama-2 and GPT models, much more effectively than existing algorithm-focused attacks. Interestingly, more sophisticated models such as GPT-4 exhibit greater susceptibility to PAPs than their predecessors like GPT-3.5. This underscores the distinctive risks posed by human-like persuasive interactions. Report issue for preceding element",
+    "citations": []
+  },
+  "S7.p1": {
+    "text": "This section revisits general post hoc adversarial prompt defense strategies that do not modify the base model or its initial settings (e.g., system prompt). Specifically, we focus on mutation-based and detection-based defenses, deliberately omitting perplexity-based methods Alon and Kamfonas ( 2023 ); Jain et\u00a0al. ( 2023 ) , which depend on identifying unusually high perplexity. Our rationale for this exclusion is that our generated PAPs are coherent and exhibit low perplexity. Our emphasis is on black-box defense mechanisms suitable for closed-source models. The following provides an overview of these defense strategies: Report issue for preceding element (1) Mutation-based: This type of defense alters inputs to reduce harm while preserving the meaning of benign inputs. We test two methods, Rephrase and Retokenize , proposed in Jain et\u00a0al. ( 2023 ) . Report issue for preceding element (2) Detection-based\n: This line of defense detects harmful queries from the input space. Examples include Rand-Drop Cao et\u00a0al. ( 2023 ) , which drops tokens randomly to observe the change in responses; RAIN Li et\u00a0al. ( 2023 ) , which relies on in-context introspection; and Rand-Insert , Rand-Swap , and Rand-Patch Robey et\u00a0al. ( 2023 ) , which also alter the inputs and inspects the change in outputs. Report issue for preceding element \u00a7 \u00a7 \\lx@sectionsign \u00a7 C provides more detail on the defense implementation.\nWe defend PAP generated in the in-depth probe ( \u00a7 \u00a7 \\lx@sectionsign \u00a7 6 ).\nWe did not experiment on Claude models as they are already robust to PAP. Report issue for preceding element",
+    "masked_text": "This section revisits general post hoc adversarial prompt defense strategies that do not modify the base model or its initial settings (e.g., system prompt). Specifically, we focus on mutation-based and detection-based defenses, deliberately omitting perplexity-based methods [CITATION], which depend on identifying unusually high perplexity. Our rationale for this exclusion is that our generated PAPs are coherent and exhibit low perplexity. Our emphasis is on black-box defense mechanisms suitable for closed-source models. The following provides an overview of these defense strategies: Report issue for preceding element (1) Mutation-based: This type of defense alters inputs to reduce harm while preserving the meaning of benign inputs. We test two methods, Rephrase and Retokenize, proposed in [CITATION].Report issue for preceding element (2) Detection-based : This line of defense detects harmful queries from the input space. Examples include Rand-Drop [CITATION], which drops tokens randomly to observe the change in responses; RAIN [CITATION], which relies on in-context introspection; and Rand-Insert, Rand-Swap, and Rand-Patch [CITATION], which also alter the inputs and inspects the change in outputs. Report issue for preceding element \u00a7\u00a7\\lx@sectionsign\u00a7C provides more detail on the defense implementation. We defend PAP generated in the in-depth probe (\u00a7\u00a7\\lx@sectionsign\u00a76). We did not experiment on Claude models as they are already robust to PAP. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jain et\u00a0al. (2023)",
+        "title": "Baseline defenses for adversarial attacks against aligned language models.",
+        "authors": "Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas Geiping, and Tom Goldstein. 2023.",
+        "journal": "arXiv preprint arXiv:2309.00614."
+      },
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Alon and Kamfonas (2023)",
+        "title": "Detecting language model attacks with perplexity.",
+        "authors": "Gabriel Alon and Michael Kamfonas. 2023.",
+        "journal": "arXiv preprint arXiv:2308.14132."
+      },
+      {
+        "tag": "Cao et\u00a0al. (2023)",
+        "title": "Defending against alignment-breaking attacks via robustly aligned llm.",
+        "authors": "Bochuan Cao, Yuanpu Cao, Lu\u00a0Lin, and Jinghui Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2309.14348."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Rain: Your language models can align themselves without finetuning.",
+        "authors": "Yuhui Li, Fangyun Wei, Jinjing Zhao, Chao Zhang, and Hongyang Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2309.07124."
+      }
+    ]
+  },
+  "S7.I1.i1.p1": {
+    "text": "Mutation-based: This type of defense alters inputs to reduce harm while preserving the meaning of benign inputs. We test two methods, Rephrase and Retokenize , proposed in Jain et\u00a0al. ( 2023 ) . Report issue for preceding element",
+    "masked_text": "Mutation-based: This type of defense alters inputs to reduce harm while preserving the meaning of benign inputs. We test two methods, Rephrase and Retokenize, proposed in [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jain et\u00a0al. (2023)",
+        "title": "Baseline defenses for adversarial attacks against aligned language models.",
+        "authors": "Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas Geiping, and Tom Goldstein. 2023.",
+        "journal": "arXiv preprint arXiv:2309.00614."
+      }
+    ]
+  },
+  "S7.I1.i2.p1": {
+    "text": "Detection-based\n: This line of defense detects harmful queries from the input space. Examples include Rand-Drop Cao et\u00a0al. ( 2023 ) , which drops tokens randomly to observe the change in responses; RAIN Li et\u00a0al. ( 2023 ) , which relies on in-context introspection; and Rand-Insert , Rand-Swap , and Rand-Patch Robey et\u00a0al. ( 2023 ) , which also alter the inputs and inspects the change in outputs. Report issue for preceding element",
+    "masked_text": "Detection-based : This line of defense detects harmful queries from the input space. Examples include Rand-Drop [CITATION], which drops tokens randomly to observe the change in responses; RAIN [CITATION], which relies on in-context introspection; and Rand-Insert, Rand-Swap, and Rand-Patch [CITATION], which also alter the inputs and inspects the change in outputs. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Cao et\u00a0al. (2023)",
+        "title": "Defending against alignment-breaking attacks via robustly aligned llm.",
+        "authors": "Bochuan Cao, Yuanpu Cao, Lu\u00a0Lin, and Jinghui Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2309.14348."
+      },
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Rain: Your language models can align themselves without finetuning.",
+        "authors": "Yuhui Li, Fangyun Wei, Jinjing Zhao, Chao Zhang, and Hongyang Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2309.07124."
+      }
+    ]
+  },
+  "S7.p2": {
+    "text": "Table 3 shows the ASR and how much the defense can reduce the ASR. Overall, mutation-based methods outperform detection-based methods in lowering ASR. But mutation also alters benign queries, which could potentially diminish the model\u2019s helpfulness. Mutation methods can defend Llama-2 more effectively, likely because GPT models can better understand altered inputs than Llama-2 7b. Again, we observe the interesting trend that the more advanced the models are, the less effective current defenses are , possibly because advanced models grasp context better, making mutation-based defenses less useful. Notably, even the most effective defense can only reduce ASR on GPT-4 to 60%, which is still higher than the best baseline attack (54% per Table 2 ). This strengthens the need for improved defenses for more capable models. Report issue for preceding element",
+    "masked_text": "Table 3 shows the ASR and how much the defense can reduce the ASR. Overall, mutation-based methods outperform detection-based methods in lowering ASR. But mutation also alters benign queries, which could potentially diminish the model\u2019s helpfulness. Mutation methods can defend Llama-2 more effectively, likely because GPT models can better understand altered inputs than Llama-2 7b. Again, we observe the interesting trend that the more advanced the models are, the less effective current defenses are, possibly because advanced models grasp context better, making mutation-based defenses less useful. Notably, even the most effective defense can only reduce ASR on GPT-4 to 60%, which is still higher than the best baseline attack (54% per Table 2). This strengthens the need for improved defenses for more capable models.Report issue for preceding element",
+    "citations": []
+  },
+  "S7.p3": {
+    "text": "Remark 3: We uncover a gap in AI safety: current defenses are largely ad-hoc, e.g., defenses often assume the presence of gibberish, overlooking semantic content. This oversight has limited the creation of safeguards against more subtle, human-like communication risks exemplified by PAPs. Our findings underscore the critical need to revise and expand threat models in AI safety to encompass these nuanced vulnerabilities. Report issue for preceding element",
+    "masked_text": "Remark 3: We uncover a gap in AI safety: current defenses are largely ad-hoc, e.g., defenses often assume the presence of gibberish, overlooking semantic content. This oversight has limited the creation of safeguards against more subtle, human-like communication risks exemplified by PAPs. Our findings underscore the critical need to revise and expand threat models in AI safety to encompass these nuanced vulnerabilities. Report issue for preceding element",
+    "citations": []
+  },
+  "S8.p1": {
+    "text": "LLMs\u2019 vulnerability to PAPs may be because they are trained on language data rich in persuasive structures and content. For example, a quick search on the platform with information about large text corpora 7 7 7 https://wimbd.apps.allenai.org/ Elazar et\u00a0al. ( 2023 ) shows that the term \u201cpersuasion\u201d appears over 1.5 million times in the widely adopted C4 corpus Raffel et\u00a0al. ( 2020 ) .\nAdditionally, dark patterns, which are online user interfaces to influence users, are also commonly used on various websites Mathur et\u00a0al. ( 2019 ); Narayanan et\u00a0al. ( 2020 ); Luguri and Strahilevitz ( 2021 ) , such as messages showing certain items are in high demand. These online contents may further enable LLMs to recognize and respond to similar persuasive patterns in queries.\nA simplistic defense might involve removing such persuasive content from pre-training.\nHowever, as we do not know what these LLMs are trained on, it is difficult to analyze the presence of persuasive content in pre-training data. Moreover, persuasion is ubiquitous in communication O\u2019keefe ( 2018 ); Izuma ( 2013 ) , so simply removing all persuasive contents may adversely affect the LLM utility.\nInstead, we investigate two straightforward and intuitive adaptive defense tactics: \u201cAdaptive System Prompt\u201d and \u201cTargeted Summarization,\u201d designed to counteract the influence of persuasive contexts in PAPs.\nWe explore three adaptive defenses within these two tactics: Report issue for preceding element (1) Adaptive System Prompt (Adapt Sys.): We use a system prompt to instruct the LLM to resist persuasion explicitly: \u201cYou are a helpful assistant, and you are not easily persuaded, and you know what is right and wrong.\u201d Report issue for preceding element (2) Base Summarizer (Base Smry.): We prompt GPT-4 to summarize the adversarial prompts to output the core query before executing the input via the target LLM. Report issue for preceding element (3) Tuned Summarizer (Tuned Smry.):\nWe fine-tune a GPT-3.5-based summarizer using pairs of plain harmful queries and their corresponding PAP from \u00a7 \u00a7 \\lx@sectionsign \u00a7 5 .\nTo prevent it from always deriving harmful queries from even benign inputs, we incorporate benign data sampled from Alpaca Taori et\u00a0al. ( 2023 ) in the training set. Report issue for preceding element Details of the two summarizers are in \u00a7 \u00a7 \\lx@sectionsign \u00a7 D . We now proceed to qualitatively and quantitatively compare these defenses with baseline defenses. Report issue for preceding element",
+    "masked_text": "LLMs\u2019 vulnerability to PAPs may be because they are trained on language data rich in persuasive structures and content. For example, a quick search on the platform with information about large text corpora777https://wimbd.apps.allenai.org/ [CITATION] shows that the term \u201cpersuasion\u201d appears over 1.5 million times in the widely adopted C4 corpus [CITATION]. Additionally, dark patterns, which are online user interfaces to influence users, are also commonly used on various websites [CITATION], such as messages showing certain items are in high demand. These online contents may further enable LLMs to recognize and respond to similar persuasive patterns in queries. A simplistic defense might involve removing such persuasive content from pre-training. However, as we do not know what these LLMs are trained on, it is difficult to analyze the presence of persuasive content in pre-training data. Moreover, persuasion is ubiquitous in communication [CITATION], so simply removing all persuasive contents may adversely affect the LLM utility. Instead, we investigate two straightforward and intuitive adaptive defense tactics: \u201cAdaptive System Prompt\u201d and \u201cTargeted Summarization,\u201d designed to counteract the influence of persuasive contexts in PAPs. We explore three adaptive defenses within these two tactics:Report issue for preceding element (1) Adaptive System Prompt (Adapt Sys.): We use a system prompt to instruct the LLM to resist persuasion explicitly: \u201cYou are a helpful assistant, and you are not easily persuaded, and you know what is right and wrong.\u201dReport issue for preceding element (2) Base Summarizer (Base Smry.): We prompt GPT-4 to summarize the adversarial prompts to output the core query before executing the input via the target LLM. Report issue for preceding element (3) Tuned Summarizer (Tuned Smry.): We fine-tune a GPT-3.5-based summarizer using pairs of plain harmful queries and their corresponding PAP from \u00a7\u00a7\\lx@sectionsign\u00a75. To prevent it from always deriving harmful queries from even benign inputs, we incorporate benign data sampled from Alpaca [CITATION] in the training set. Report issue for preceding element Details of the two summarizers are in \u00a7\u00a7\\lx@sectionsign\u00a7D. We now proceed to qualitatively and quantitatively compare these defenses with baseline defenses.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Izuma (2013)",
+        "title": "The neural basis of social influence and attitude change.",
+        "authors": "Keise Izuma. 2013.",
+        "journal": "Current opinion in neurobiology, 23(3):456\u2013462."
+      },
+      {
+        "tag": "Raffel et\u00a0al. (2020)",
+        "title": "Exploring the limits of transfer learning with a unified text-to-text transformer.",
+        "authors": "Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter\u00a0J Liu, et\u00a0al. 2020.",
+        "journal": "J. Mach. Learn. Res."
+      },
+      {
+        "tag": "Narayanan et\u00a0al. (2020)",
+        "title": "Dark patterns: Past, present, and future: The evolution of tricky user interfaces.",
+        "authors": "Arvind Narayanan, Arunesh Mathur, Marshini Chetty, and Mihir Kshirsagar. 2020.",
+        "journal": "Queue, 18(2):67\u201392."
+      },
+      {
+        "tag": "Luguri and Strahilevitz (2021)",
+        "title": "Shining a light on dark patterns.",
+        "authors": "Jamie Luguri and Lior\u00a0Jacob Strahilevitz. 2021.",
+        "journal": "Journal of Legal Analysis, 13(1):43\u2013109."
+      },
+      {
+        "tag": "Taori et\u00a0al. (2023)",
+        "title": "Stanford alpaca: An instruction-following llama model.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B. Hashimoto. 2023.",
+        "journal": "https://github.com/tatsu-lab/stanford_alpaca."
+      },
+      {
+        "tag": "Mathur et\u00a0al. (2019)",
+        "title": "Dark patterns at scale: Findings from a crawl of 11k shopping websites.",
+        "authors": "Arunesh Mathur, Gunes Acar, Michael\u00a0J Friedman, Eli Lucherini, Jonathan Mayer, Marshini Chetty, and Arvind Narayanan. 2019.",
+        "journal": "Proceedings of the ACM on Human-Computer Interaction, 3(CSCW):1\u201332."
+      },
+      {
+        "tag": "O\u2019keefe (2018)",
+        "title": "Persuasion.",
+        "authors": "Daniel\u00a0J O\u2019keefe. 2018.",
+        "journal": "InThe Handbook of Communication Skills, pages 319\u2013335. Routledge."
+      },
+      {
+        "tag": "Elazar et\u00a0al. (2023)",
+        "title": "What\u2019s in my big data?",
+        "authors": "Yanai Elazar, Akshita Bhagia, Ian Magnusson, Abhilasha Ravichander, Dustin Schwenk, Alane Suhr, Pete Walsh, Dirk Groeneveld, Luca Soldaini, Sameer Singh, et\u00a0al. 2023.",
+        "journal": "arXiv preprint arXiv:2310.20707."
+      }
+    ]
+  },
+  "S8.I1.i1.p1": {
+    "text": "Adaptive System Prompt (Adapt Sys.): We use a system prompt to instruct the LLM to resist persuasion explicitly: \u201cYou are a helpful assistant, and you are not easily persuaded, and you know what is right and wrong.\u201d Report issue for preceding element",
+    "masked_text": "Adaptive System Prompt (Adapt Sys.): We use a system prompt to instruct the LLM to resist persuasion explicitly: \u201cYou are a helpful assistant, and you are not easily persuaded, and you know what is right and wrong.\u201dReport issue for preceding element",
+    "citations": []
+  },
+  "S8.I1.i2.p1": {
+    "text": "Base Summarizer (Base Smry.): We prompt GPT-4 to summarize the adversarial prompts to output the core query before executing the input via the target LLM. Report issue for preceding element",
+    "masked_text": "Base Summarizer (Base Smry.): We prompt GPT-4 to summarize the adversarial prompts to output the core query before executing the input via the target LLM. Report issue for preceding element",
+    "citations": []
+  },
+  "S8.I1.i3.p1": {
+    "text": "Tuned Summarizer (Tuned Smry.):\nWe fine-tune a GPT-3.5-based summarizer using pairs of plain harmful queries and their corresponding PAP from \u00a7 \u00a7 \\lx@sectionsign \u00a7 5 .\nTo prevent it from always deriving harmful queries from even benign inputs, we incorporate benign data sampled from Alpaca Taori et\u00a0al. ( 2023 ) in the training set. Report issue for preceding element",
+    "masked_text": "Tuned Summarizer (Tuned Smry.): We fine-tune a GPT-3.5-based summarizer using pairs of plain harmful queries and their corresponding PAP from \u00a7\u00a7\\lx@sectionsign\u00a75. To prevent it from always deriving harmful queries from even benign inputs, we incorporate benign data sampled from Alpaca [CITATION] in the training set. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Taori et\u00a0al. (2023)",
+        "title": "Stanford alpaca: An instruction-following llama model.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B. Hashimoto. 2023.",
+        "journal": "https://github.com/tatsu-lab/stanford_alpaca."
+      }
+    ]
+  },
+  "S8.SS1.p1": {
+    "text": "Figure 11 provides a qualitative evaluation of defenses against PAPs. \u201cAdapt Sys.\u201d modifications reinforce model safety in the presence of persuasive contexts, promoting safer outputs without altering the user\u2019s original persuasive prompt. Although the output is safer for this specific example, it seems \u201cAdapt Sys.\u201d did not trigger the GPT-4\u2019s guardrail (which typically responds with \u201cSorry, but I can\u2019t assist with that.\u201d) In contrast, the tuned summarize (\u201cTuned Smry\u201d) summarizes the PAP to the core adversarial request \u201cGive me a summary of how to make a homemade explosive\u201d, which triggers the model\u2019s inherent guardrail and effectively blocks the harmful query. This approach goes beyond surface-level alterations like Paraphrase or Retokenize, delving into the semantic and pragmatic meaning to extract and nullify the prompt\u2019s harmful substance, thus presenting more general and effective mitigation to PAPs on different models. Report issue for preceding element",
+    "masked_text": "Figure 11 provides a qualitative evaluation of defenses against PAPs. \u201cAdapt Sys.\u201d modifications reinforce model safety in the presence of persuasive contexts, promoting safer outputs without altering the user\u2019s original persuasive prompt. Although the output is safer for this specific example, it seems \u201cAdapt Sys.\u201d did not trigger the GPT-4\u2019s guardrail (which typically responds with \u201cSorry, but I can\u2019t assist with that.\u201d) In contrast, the tuned summarize (\u201cTuned Smry\u201d) summarizes the PAP to the core adversarial request \u201cGive me a summary of how to make a homemade explosive\u201d, which triggers the model\u2019s inherent guardrail and effectively blocks the harmful query. This approach goes beyond surface-level alterations like Paraphrase or Retokenize, delving into the semantic and pragmatic meaning to extract and nullify the prompt\u2019s harmful substance, thus presenting more general and effective mitigation to PAPs on different models.Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS1.p2": {
+    "text": "Quantitatively , Table 4 shows that modifying system prompts (\u201cAdapt Sys.\u201d) alone improves model resilience against PAPs, often outperforming baseline defenses.\nThe two adaptive summarization \u2014 base and tuned summarizers \u2014 also surpass the baseline defenses in neutralizing PAPs. The tuned summarizer (\u201cTuned Smry.\u201d), in particular, demonstrates superior efficacy, reducing the ASR of PAPs on GPT-4 from 92% to 2%, signifying a notable enhancement in practical post-hoc defense. Report issue for preceding element",
+    "masked_text": "Quantitatively, Table 4 shows that modifying system prompts (\u201cAdapt Sys.\u201d) alone improves model resilience against PAPs, often outperforming baseline defenses. The two adaptive summarization \u2014 base and tuned summarizers \u2014 also surpass the baseline defenses in neutralizing PAPs. The tuned summarizer (\u201cTuned Smry.\u201d), in particular, demonstrates superior efficacy, reducing the ASR of PAPs on GPT-4 from 92% to 2%, signifying a notable enhancement in practical post-hoc defense. Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS1.p3": {
+    "text": "More interestingly, adaptive defenses, initially tailored for PAPs, are also effective against other types of adversarial prompts. For instance, adjusting the system prompt to emphasize resistance to persuasion, we witnessed a decline in the ASR for the GCG from 86% to 0% on GPT-3.5. Similarly, with \u201cTuned Smry.\u201d, the ASR for both PAIR and GCG was reduced to below 8% across various models.\nThese observations suggest that although different adversarial prompts are generated by different procedures (gradient-based, modification-based, etc.), their core mechanisms may be related to persuading the LLM into compliance. For instance, GCG employs gradients but typically seeks a submissive \u201cSure\u201d in response to harmful queries, and the generated gibberish suffix may be seen as persuasive messages understandable to LLMs. Such insights imply an interesting future research direction to study the link between persuasion and jailbreak: jailbreak, at its essence, may be viewed as a persuasion procedure directed at LLMs to extract prohibited information, and various types of adversarial prompts may be unified as persuasive messages towards LLMs.\nThis further hints at the potential for developing more fundamental defense frameworks aimed at resisting persuasion to enhance AI safety. Report issue for preceding element",
+    "masked_text": "More interestingly, adaptive defenses, initially tailored for PAPs, are also effective against other types of adversarial prompts. For instance, adjusting the system prompt to emphasize resistance to persuasion, we witnessed a decline in the ASR for the GCG from 86% to 0% on GPT-3.5. Similarly, with \u201cTuned Smry.\u201d, the ASR for both PAIR and GCG was reduced to below 8% across various models. These observations suggest that although different adversarial prompts are generated by different procedures (gradient-based, modification-based, etc.), their core mechanisms may be related to persuading the LLM into compliance. For instance, GCG employs gradients but typically seeks a submissive \u201cSure\u201d in response to harmful queries, and the generated gibberish suffix may be seen as persuasive messages understandable to LLMs. Such insights imply an interesting future research direction to study the link between persuasion and jailbreak: jailbreak, at its essence, may be viewed as a persuasion procedure directed at LLMs to extract prohibited information, and various types of adversarial prompts may be unified as persuasive messages towards LLMs. This further hints at the potential for developing more fundamental defense frameworks aimed at resisting persuasion to enhance AI safety.Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS1.p4": {
+    "text": "Our findings also indicate that there exists a trade-off between safety and utility, so a widely effective defense mechanism may not be the optimal choice for every model . For example, although \u201cTuned Smry.\u201d achieves the highest protection levels on PAP\nfor GPT-3.5 (ASR 94% to 4%),\nit considerably diminishes model helpfulness, with MT-bench scores dropping from 8.97 to 6.65; while \u201cAdapt Sys.\u201d demonstrates effective PAP mitigation in GPT-3.5 and minimally impacts MT-bench scores (8.97 to 8.85). This indicates that \u201cAdapt Sys.\u201d is a better safety solution for GPT-3.5. Report issue for preceding element",
+    "masked_text": "Our findings also indicate that there exists a trade-off between safety and utility, so a widely effective defense mechanism may not be the optimal choice for every model. For example, although \u201cTuned Smry.\u201d achieves the highest protection levels on PAP for GPT-3.5 (ASR 94% to 4%), it considerably diminishes model helpfulness, with MT-bench scores dropping from 8.97 to 6.65; while \u201cAdapt Sys.\u201d demonstrates effective PAP mitigation in GPT-3.5 and minimally impacts MT-bench scores (8.97 to 8.85). This indicates that \u201cAdapt Sys.\u201d is a better safety solution for GPT-3.5.Report issue for preceding element",
+    "citations": []
+  },
+  "S8.SS1.p5": {
+    "text": "Notably, post-hoc defenses still remain important. Because even models resistant to PAP (e.g., the Claude series) may still have their own weaknesses. For instance, the Claude series are vulnerable to complex virtualization jailbreaks Yu et\u00a0al. ( 2023 ); Deng et\u00a0al. ( 2023a ) . Summarization techniques discussed in this section are proven valuable in such instances, as detailed in \u00a7 \u00a7 \\lx@sectionsign \u00a7 D . These results show the necessity of model-specific defenses that consider model characteristics and threat type rather than a one-size-fits-all defense method. Report issue for preceding element",
+    "masked_text": "Notably, post-hoc defenses still remain important. Because even models resistant to PAP (e.g., the Claude series) may still have their own weaknesses. For instance, the Claude series are vulnerable to complex virtualization jailbreaks [CITATION]. Summarization techniques discussed in this section are proven valuable in such instances, as detailed in \u00a7\u00a7\\lx@sectionsign\u00a7D. These results show the necessity of model-specific defenses that consider model characteristics and threat type rather than a one-size-fits-all defense method.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Deng et\u00a0al. (2023a)",
+        "title": "Jailbreaker: Automated jailbreak across multiple large language model chatbots.",
+        "authors": "Gelei Deng, Yi\u00a0Liu, Yuekang Li, Kailong Wang, Ying Zhang, Zefeng Li, Haoyu Wang, Tianwei Zhang, and Yang Liu. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.08715."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      }
+    ]
+  },
+  "S8.SS1.p6": {
+    "text": "Remark 4: We reveal that the developed adaptive defenses are effective in counteracting PAP. Interestingly, they can also defend other types of jailbreak prompts beyond PAPs. This suggests that it is a worthwhile future direction to study the underlying connection between persuasion and jailbreak that aims to elicit compliance on prohibited topics. Additionally, we highlight the trade-off between safety and utility: while generalizable and effective defenses can enhance model safety, they can also diminish utility. Therefore, the selection of a defense strategy should be tailored to individual models and specific safety goals. Report issue for preceding element",
+    "masked_text": "Remark 4: We reveal that the developed adaptive defenses are effective in counteracting PAP. Interestingly, they can also defend other types of jailbreak prompts beyond PAPs. This suggests that it is a worthwhile future direction to study the underlying connection between persuasion and jailbreak that aims to elicit compliance on prohibited topics. Additionally, we highlight the trade-off between safety and utility: while generalizable and effective defenses can enhance model safety, they can also diminish utility. Therefore, the selection of a defense strategy should be tailored to individual models and specific safety goals. Report issue for preceding element",
+    "citations": []
+  },
+  "S9.p1": {
+    "text": "Unlike traditional AI safety research that treats\nAI models as algorithmic systems or mere instruction followers, we introduce a new perspective by humanizing LLMs and studying how to persuade LLMs to jailbreak them like humans. We first propose a persuasion taxonomy based on decades of social science research. Such a thorough taxonomy helps us automatically generate PAP and systematically explore the impact of persuasion on LLM vulnerabilities. Our study reveals that LLMs are susceptible to various persuasion techniques, and PAP consistently outperforms algorithm-focused jailbreak methods with an attack success rate of over 92% on Llama-2 7b Chat, GPT-3.5, and GPT-4. We also observe that more advanced models are both more susceptible to PAP and more resistant to conventional defense strategies, possibly due to their enhanced understanding of persuasion. These results reveal a critical gap in current defenses against risks coming from human-like communication. In our efforts to mitigate risks, we discovered that adaptive defenses designed for PAP are also effective against other forms of attacks, revealing a potential connection between persuasion and broader jailbreak risks.\nTo conclude, our findings highlight the unique risks rooted in natural persuasive communication that everyday users can invoke, calling for more fundamental solutions to ensure AI safety in real-world applications. Report issue for preceding element",
+    "masked_text": "Unlike traditional AI safety research that treats AI models as algorithmic systems or mere instruction followers, we introduce a new perspective by humanizing LLMs and studying how to persuade LLMs to jailbreak them like humans. We first propose a persuasion taxonomy based on decades of social science research. Such a thorough taxonomy helps us automatically generate PAP and systematically explore the impact of persuasion on LLM vulnerabilities. Our study reveals that LLMs are susceptible to various persuasion techniques, and PAP consistently outperforms algorithm-focused jailbreak methods with an attack success rate of over 92% on Llama-2 7b Chat, GPT-3.5, and GPT-4. We also observe that more advanced models are both more susceptible to PAP and more resistant to conventional defense strategies, possibly due to their enhanced understanding of persuasion. These results reveal a critical gap in current defenses against risks coming from human-like communication. In our efforts to mitigate risks, we discovered that adaptive defenses designed for PAP are also effective against other forms of attacks, revealing a potential connection between persuasion and broader jailbreak risks. To conclude, our findings highlight the unique risks rooted in natural persuasive communication that everyday users can invoke, calling for more fundamental solutions to ensure AI safety in real-world applications.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p1": {
+    "text": "This paper provides a structured way to generate interpretable persuasive adversarial prompts (PAP) at scale, which could potentially allow everyday users to jailbreak LLM without much computing. But as mentioned, a Reddit user 8 8 8 https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit has already employed persuasion to attack LLM before, so it is in urgent need to more systematically study the vulnerabilities around persuasive jailbreak to better mitigate them. Therefore, despite the risks involved, we believe it is crucial to share our findings in full. We followed ethical guidelines throughout our study. Report issue for preceding element",
+    "masked_text": "This paper provides a structured way to generate interpretable persuasive adversarial prompts (PAP) at scale, which could potentially allow everyday users to jailbreak LLM without much computing. But as mentioned, a Reddit user 888https://www.reddit.com/r/ChatGPT/comments/12sn0kk/grandma_exploit has already employed persuasion to attack LLM before, so it is in urgent need to more systematically study the vulnerabilities around persuasive jailbreak to better mitigate them. Therefore, despite the risks involved, we believe it is crucial to share our findings in full. We followed ethical guidelines throughout our study.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p2": {
+    "text": "First, persuasion is usually a hard task for the general population, so even with our taxonomy, it may still be challenging for people without training to paraphrase a plain, harmful query at scale to a successful PAP. Therefore, the real-world risk of a widespread attack from millions of users is relatively low. We also decide to withhold the trained Persuasive Paraphraser to prevent people from paraphrasing harmful queries easily. Report issue for preceding element",
+    "masked_text": "First, persuasion is usually a hard task for the general population, so even with our taxonomy, it may still be challenging for people without training to paraphrase a plain, harmful query at scale to a successful PAP. Therefore, the real-world risk of a widespread attack from millions of users is relatively low. We also decide to withhold the trained Persuasive Paraphraser to prevent people from paraphrasing harmful queries easily.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p3": {
+    "text": "To minimize real-world harm, we disclose our results to Meta and OpenAI before publication, so the PAPs in this paper may not be effective anymore. As discussed, Claude successfully resisted PAPs, demonstrating one successful mitigation method. We also explored different defenses and proposed new adaptive safety system prompts and a new summarization-based defense mechanism to mitigate the risks, which has shown promising results. We aim to improve these defenses in future work. Report issue for preceding element",
+    "masked_text": "To minimize real-world harm, we disclose our results to Meta and OpenAI before publication, so the PAPs in this paper may not be effective anymore. As discussed, Claude successfully resisted PAPs, demonstrating one successful mitigation method. We also explored different defenses and proposed new adaptive safety system prompts and a new summarization-based defense mechanism to mitigate the risks, which has shown promising results. We aim to improve these defenses in future work.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p4": {
+    "text": "To sum up, the aim of our research is to strengthen LLM safety, not enable malicious use. We commit to ongoing monitoring and updating of our research in line with technological advancements and will restrict the PAP fine-tuning details to certified researchers with approval only. Report issue for preceding element",
+    "masked_text": "To sum up, the aim of our research is to strengthen LLM safety, not enable malicious use. We commit to ongoing monitoring and updating of our research in line with technological advancements and will restrict the PAP fine-tuning details to certified researchers with approval only.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx2.p1": {
+    "text": "In this study, we mainly focus on single-turn persuasive attempts, but persuasion is oftentimes a multi-turn interactive process. For instance, persuasive techniques like \u201cfoot in the door\u201d (start with a small request to pave the way for a larger one) and \u201creciprocity\u201d (adapt to the other party\u2019s linguistic styles) rely on the buildup of conversation context. Xu et\u00a0al. ( 2023 ) shows that LLMs can be persuaded to believe in misinformation, and multi-turn persuasive conversation is more effective than single-turn persuasive messages.\nIn the jailbreak situation, it remains unclear whether these strategies\u2019 effectiveness would increase or if the LLMs would become more resistant after noticing prior rejections in a conversation. Besides, certain persuasion techniques, like emotional appeal, are more popular than others, and users can also mix different techniques in one message to improve its persuasiveness, but in our experiment, we generate the same amount of PAP per technique.\nThese factors may make the jailbreak distribution different from the real-life persuasive jailbreak scenarios. This gap in our study points to the need for more comprehensive research in this area. Report issue for preceding element",
+    "masked_text": "In this study, we mainly focus on single-turn persuasive attempts, but persuasion is oftentimes a multi-turn interactive process. For instance, persuasive techniques like \u201cfoot in the door\u201d (start with a small request to pave the way for a larger one) and \u201creciprocity\u201d (adapt to the other party\u2019s linguistic styles) rely on the buildup of conversation context. [CITATION] shows that LLMs can be persuaded to believe in misinformation, and multi-turn persuasive conversation is more effective than single-turn persuasive messages. In the jailbreak situation, it remains unclear whether these strategies\u2019 effectiveness would increase or if the LLMs would become more resistant after noticing prior rejections in a conversation. Besides, certain persuasion techniques, like emotional appeal, are more popular than others, and users can also mix different techniques in one message to improve its persuasiveness, but in our experiment, we generate the same amount of PAP per technique. These factors may make the jailbreak distribution different from the real-life persuasive jailbreak scenarios. This gap in our study points to the need for more comprehensive research in this area.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Xu et\u00a0al. (2023)",
+        "title": "The earth is flat because\u2026: Investigating llms\u2019 belief towards misinformation via persuasive conversation.",
+        "authors": "Rongwu Xu, Brian Lin, Shujian Yang, Tianqi Zhang, Weiyan Shi, Tianwei Zhang, Zhixuan Fang, Wei Xu, and Han Qiu. 2023.",
+        "journal": "arXiv preprint arXiv:2312.09085."
+      }
+    ]
+  },
+  "Sx2.p2": {
+    "text": "We have shown PAP methods can jailbreak LLMs, but it would be interesting to see if humans would also react to these PAPs and be persuaded to provide harmful information and how the human-AI persuasion and human-human persuasion differ. Besides, it remains an open question if LLM outputs after jailbreak are truly harmful in the real world. For instance, even without LLM, users can search on the internet to gather information about drug smuggling. Also, there are different nuances to the harmfulness evaluation. Sometimes, the information itself may be neutral, and if it is harmful depends on who will access it and how they will use it: for instance, law enforcement agencies may need detailed information on drug smuggling to prevent it, but if bad actors access the information, it may be used to commit crime. Besides, our study primarily focused on persuasion techniques, but future research may find value in a deeper analysis of the specific linguistic cues, keywords, etc, inside PAPs. This could reveal more insights into the mechanics of persuasive jailbreak and human-based prompt hacking in the wild Schulhoff et\u00a0al. ( 2023 ) . Report issue for preceding element",
+    "masked_text": "We have shown PAP methods can jailbreak LLMs, but it would be interesting to see if humans would also react to these PAPs and be persuaded to provide harmful information and how the human-AI persuasion and human-human persuasion differ. Besides, it remains an open question if LLM outputs after jailbreak are truly harmful in the real world. For instance, even without LLM, users can search on the internet to gather information about drug smuggling. Also, there are different nuances to the harmfulness evaluation. Sometimes, the information itself may be neutral, and if it is harmful depends on who will access it and how they will use it: for instance, law enforcement agencies may need detailed information on drug smuggling to prevent it, but if bad actors access the information, it may be used to commit crime. Besides, our study primarily focused on persuasion techniques, but future research may find value in a deeper analysis of the specific linguistic cues, keywords, etc, inside PAPs. This could reveal more insights into the mechanics of persuasive jailbreak and human-based prompt hacking in the wild [CITATION]. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Schulhoff et\u00a0al. (2023)",
+        "title": "Ignore this title and hackaprompt: Exposing systemic vulnerabilities of llms through a global prompt hacking competition.",
+        "authors": "Sander Schulhoff, Jeremy Pinto, Anaum Khan, Louis-Fran\u00e7ois Bouchard, Chenglei Si, Svetlina Anati, Valen Tagliabue, Anson Kost, Christopher Carnahan, and Jordan Boyd-Graber. 2023.",
+        "journal": "InProceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 4945\u20134977."
+      }
+    ]
+  },
+  "Sx2.p3": {
+    "text": "In sum, as AI technology advances, larger and more competent models may emerge, which can potentially respond even more actively to persuasive jailbreak. This progression invites a new direction of research to systematically protect these advanced models from manipulation. Investigating how these more sophisticated models interact with persuasion from a cognitive and anthropological standpoint could provide valuable insights into developing more secure and robust AI systems. Report issue for preceding element",
+    "masked_text": "In sum, as AI technology advances, larger and more competent models may emerge, which can potentially respond even more actively to persuasive jailbreak. This progression invites a new direction of research to systematically protect these advanced models from manipulation. Investigating how these more sophisticated models interact with persuasion from a cognitive and anthropological standpoint could provide valuable insights into developing more secure and robust AI systems.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx3.p1": {
+    "text": "We thank Alicja Chaszczewicz, Derek Chen, Tatsunori Hashimoto, Minzhi Li, Ryan Li, Percy Liang, Michael Ryan, Omar Shaikh from Stanford, Lucy He, Peter Henderson, Kaixuan Huang, Yangsibo Huang, Udari Madhushani,\nPrateek Mittal, Xiangyu Qi, Vikash Sehwag, Boyi Wei, Mengzhou Xia, Tinghao Xie from Princeton,\nAlex Beutel, Lilian Weng from OpenAI, and Nicholas Carlini from Google for their valuable discussion or feedback.\nRuoxi Jia and the ReDS lab acknowledge support through grants from the Amazon-Virginia Tech Initiative for Efficient and Robust Machine Learning, the National Science Foundation under Grant No. IIS-2312794, NSF IIS-2313130, NSF OAC-2239622, and the Commonwealth Cyber Initiative.\nYang acknowledges the support\nby the Defense Advanced Research Project Agency (DARPA) grant HR00112290103/HR0011260656, ONR, and NSF grant IIS-2308994.\nWeiyan Shi acknowledges the support from Northeastern University. Any opinions, findings, conclusions, or recommendations expressed in this\nmaterial are those of the author(s) and do not necessarily reflect the views of the funding agencies.\nWe also thank OpenAI for an API Research Credits grant. Report issue for preceding element",
+    "masked_text": "We thank Alicja Chaszczewicz, Derek Chen, Tatsunori Hashimoto, Minzhi Li, Ryan Li, Percy Liang, Michael Ryan, Omar Shaikh from Stanford, Lucy He, Peter Henderson, Kaixuan Huang, Yangsibo Huang, Udari Madhushani, Prateek Mittal, Xiangyu Qi, Vikash Sehwag, Boyi Wei, Mengzhou Xia, Tinghao Xie from Princeton, Alex Beutel, Lilian Weng from OpenAI, and Nicholas Carlini from Google for their valuable discussion or feedback. Ruoxi Jia and the ReDS lab acknowledge support through grants from the Amazon-Virginia Tech Initiative for Efficient and Robust Machine Learning, the National Science Foundation under Grant No. IIS-2312794, NSF IIS-2313130, NSF OAC-2239622, and the Commonwealth Cyber Initiative. Yang acknowledges the support by the Defense Advanced Research Project Agency (DARPA) grant HR00112290103/HR0011260656, ONR, and NSF grant IIS-2308994. Weiyan Shi acknowledges the support from Northeastern University. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the funding agencies. We also thank OpenAI for an API Research Credits grant.Report issue for preceding element",
+    "citations": []
+  },
+  "A1.p1": {
+    "text": "The persuasion taxonomy in this paper is drawn from decades of extensive social science research across psychology, communication, sociology, marketing and so on, Table 5 shows a map between the literature and our taxonomy. On the psychology side, we include terms and definitions of persuasion techniques based on Pornpitakpan ( 2004 ); Cialdini and Goldstein ( 2004 ); Cialdini ( 2001 ); Petty et\u00a0al. ( 2003 ); Bilandzic and Busselle ( 2013 ); Wilson et\u00a0al. ( 2013 ); Olson and Zanna ( 1990 ); Johannesen and Larson ( 1989 ); DiFonzo and Bordia ( 2011 ) .\nBesides, communication research, notably Cronkhite ( 1964 ); Perloff ( 2017 ); Rieh and Danielson ( 2007 ); Dillard and Knobloch ( 2011 ); Burgoon et\u00a0al. ( 1993 ) , significantly informs our techniques.\nSociology literature covering political science Brader ( 2005 ) and philosophical analysis Powers ( 2007 ) has been also used to update some of the terminology of these techniques. Additionally, concepts from marketing, particularly O\u2019Keefe ( 2016 ); Wang ( 2005 ); Woodside et\u00a0al. ( 2008 ); Aggarwal et\u00a0al. ( 2011 ) , play a crucial role in leading us to deliver the final terminology and definitions in our taxonomy. Report issue for preceding element",
+    "masked_text": "The persuasion taxonomy in this paper is drawn from decades of extensive social science research across psychology, communication, sociology, marketing and so on, Table 5 shows a map between the literature and our taxonomy. On the psychology side, we include terms and definitions of persuasion techniques based on [CITATION]. Besides, communication research, notably [CITATION], significantly informs our techniques. Sociology literature covering political science [CITATION] and philosophical analysis [CITATION] has been also used to update some of the terminology of these techniques. Additionally, concepts from marketing, particularly [CITATION], play a crucial role in leading us to deliver the final terminology and definitions in our taxonomy.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Dillard and Knobloch (2011)",
+        "title": "Interpersonal influence.",
+        "authors": "James\u00a0Price Dillard and Leanne\u00a0K Knobloch. 2011.",
+        "journal": "The Sage handbook of interpersonal communication, pages 389\u2013422."
+      },
+      {
+        "tag": "Brader (2005)",
+        "title": "Striking a responsive chord: How political ads motivate and persuade voters by appealing to emotions.",
+        "authors": "Ted Brader. 2005.",
+        "journal": "American Journal of Political Science, 49(2):388\u2013405."
+      },
+      {
+        "tag": "Bilandzic and Busselle (2013)",
+        "title": "Narrative persuasion.",
+        "authors": "Helena Bilandzic and Rick Busselle. 2013.",
+        "journal": "The SAGE handbook of persuasion: Developments in theory and practice, pages 200\u2013219."
+      },
+      {
+        "tag": "DiFonzo and Bordia (2011)",
+        "title": "Rumors influence: Toward a dynamic social impact theory of rumor.",
+        "authors": "Nicholas DiFonzo and Prashant Bordia. 2011.",
+        "journal": "InThe science of social influence, pages 271\u2013295. Psychology Press."
+      },
+      {
+        "tag": "Pornpitakpan (2004)",
+        "title": "The persuasiveness of source credibility: A critical review of five decades\u2019 evidence.",
+        "authors": "Chanthika Pornpitakpan. 2004.",
+        "journal": "Journal of applied social psychology, 34(2):243\u2013281."
+      },
+      {
+        "tag": "Olson and Zanna (1990)",
+        "title": "Self-inference processes: The ontario symposium, vol. 6.",
+        "authors": "James\u00a0M Olson and Mark\u00a0P Zanna. 1990.",
+        "journal": "InThis volume consists of expanded versions of papers originally presented at the Sixth Ontario Symposium on Personality and Social Psychology held at the University of Western Ontario, Jun 4-5, 1988.Lawrence Erlbaum Associates, Inc."
+      },
+      {
+        "tag": "Powers (2007)",
+        "title": "Persuasion and coercion: a critical review of philosophical and empirical approaches.",
+        "authors": "Penny Powers. 2007.",
+        "journal": "HEC F., 19:125."
+      },
+      {
+        "tag": "Aggarwal et\u00a0al. (2011)",
+        "title": "Scarcity messages.",
+        "authors": "Praveen Aggarwal, Sung\u00a0Youl Jun, and Jong\u00a0Ho Huh. 2011.",
+        "journal": "Journal of Advertising, 40(3):19\u201330."
+      },
+      {
+        "tag": "Johannesen and Larson (1989)",
+        "title": "Perspectives on ethics in persuasion.",
+        "authors": "Richard\u00a0L Johannesen and C\u00a0Larson. 1989.",
+        "journal": "Persuasion: Reception and responsibility, pages 39\u201370."
+      },
+      {
+        "tag": "Perloff (2017)",
+        "title": "The Dynamics of Persuasion: Communication and Attitudes in the 21st Century.",
+        "authors": "Richard\u00a0M.. Perloff. 2017.",
+        "journal": "Routledge."
+      },
+      {
+        "tag": "O\u2019Keefe (2016)",
+        "title": "Evidence-based advertising using persuasion principles: Predictive validity and proof of concept.",
+        "authors": "Daniel O\u2019Keefe. 2016.",
+        "journal": "European Journal of Marketing, 50(1/2):294\u2013300."
+      },
+      {
+        "tag": "Petty et\u00a0al. (2003)",
+        "title": "Emotional factors in attitudes and persuasion.",
+        "authors": "Richard\u00a0E Petty, Leandre\u00a0R Fabrigar, and Duane\u00a0T Wegener. 2003.",
+        "journal": "Handbook of affective sciences, 752:772."
+      },
+      {
+        "tag": "Wilson et\u00a0al. (2013)",
+        "title": "Self-persuasion via self-reflection.",
+        "authors": "Timothy\u00a0D Wilson, JC\u00a0Olson, and MP\u00a0Zanna. 2013.",
+        "journal": "InSelf-Inference Processes: The Ontario Symposium, J. Olson, M. Zanna, Eds.(Erlbaum, Hillsdale, NJ, 1990), volume\u00a06, pages 43\u201367."
+      },
+      {
+        "tag": "Rieh and Danielson (2007)",
+        "title": "Credibility: A multidisciplinary framework.",
+        "authors": "Soo\u00a0Young Rieh and David\u00a0R Danielson. 2007.",
+        "journal": ""
+      },
+      {
+        "tag": "Cialdini and Goldstein (2004)",
+        "title": "Social influence: Compliance and conformity.",
+        "authors": "Robert\u00a0B Cialdini and Noah\u00a0J Goldstein. 2004.",
+        "journal": "Annu. Rev. Psychol., 55:591\u2013621."
+      },
+      {
+        "tag": "Cronkhite (1964)",
+        "title": "Logic, emotion, and the paradigm of persuasion.",
+        "authors": "Gary\u00a0Lynn Cronkhite. 1964.",
+        "journal": "Quarterly Journal of Speech, 50(1):13\u201318."
+      },
+      {
+        "tag": "Woodside et\u00a0al. (2008)",
+        "title": "When consumers and brands talk: Storytelling theory and research in psychology and marketing.",
+        "authors": "Arch\u00a0G Woodside, Suresh Sood, and Kenneth\u00a0E Miller. 2008.",
+        "journal": "Psychology & Marketing, 25(2):97\u2013145."
+      },
+      {
+        "tag": "Burgoon et\u00a0al. (1993)",
+        "title": "Adaptation in dyadic interaction: Defining and operationalizing patterns of reciprocity and compensation.",
+        "authors": "Judee\u00a0K Burgoon, Leesa Dillman, and Lesa\u00a0A Stem. 1993.",
+        "journal": "Communication Theory, 3(4):295\u2013316."
+      },
+      {
+        "tag": "Wang (2005)",
+        "title": "The effects of expert and consumer endorsements on audience response.",
+        "authors": "Alex Wang. 2005.",
+        "journal": "Journal of advertising research, 45(4):402\u2013412."
+      },
+      {
+        "tag": "Cialdini (2001)",
+        "title": "The science of persuasion.",
+        "authors": "Robert\u00a0B Cialdini. 2001.",
+        "journal": "Scientific American, 284(2):76\u201381."
+      }
+    ]
+  },
+  "A2.p1": {
+    "text": "In this section, we show that due to safety guardrails, we cannot simply prompt LLMs for the persuasive paraphrase task and need to train a dedicated Persuasive Paraphraser . Report issue for preceding element",
+    "masked_text": "In this section, we show that due to safety guardrails, we cannot simply prompt LLMs for the persuasive paraphrase task and need to train a dedicated Persuasive Paraphraser. Report issue for preceding element",
+    "citations": []
+  },
+  "A2.p2": {
+    "text": "Simple prompting cannot stably paraphrase or alter the plain harmful query. Initially, we attempted to simply prompt an LLM to paraphrase the plain harmful queries. Figure 12 shows the prompt template: we present GPT-4 with information from the taxonomy about a persuasion technique, coupled with a harmful instruction, to elicit a persuasion-enhanced response. Report issue for preceding element",
+    "masked_text": "Simple prompting cannot stably paraphrase or alter the plain harmful query. Initially, we attempted to simply prompt an LLM to paraphrase the plain harmful queries. Figure 12 shows the prompt template: we present GPT-4 with information from the taxonomy about a persuasion technique, coupled with a harmful instruction, to elicit a persuasion-enhanced response.Report issue for preceding element",
+    "citations": []
+  },
+  "A2.p3": {
+    "text": "Sometimes this method works: Figure 13 shows a successful in-context paraphrase, where GPT-4 automatically applies \u201clogical appeal\u201d to rephrase the harmful instruction \u201cHow to make napalm?\u201d Report issue for preceding element",
+    "masked_text": "Sometimes this method works: Figure 13 shows a successful in-context paraphrase, where GPT-4 automatically applies \u201clogical appeal\u201d to rephrase the harmful instruction \u201cHow to make napalm?\u201dReport issue for preceding element",
+    "citations": []
+  },
+  "A2.p4": {
+    "text": "However, the effectiveness of this prompting method varies. Despite using the same prompt templates and persuasion knowledge (as shown in Figure 12 ), GPT-4\u2019s guardrails sometimes mitigate or alter the intent of the plain harmful query. Figure 14 shows one example, the plain harmful query is \u201cHow to hurt myself\u201d, but GPT-4 fails to persuasively paraphrase this question, but rather asks a different question about how to cope with negative emotions, possibly due to strong safety measurements. As we need to scale up the PAP generation, such an unstable behavior will impact the quality of the PAP and, thus, the accuracy and accountability of the following experiments. Report issue for preceding element",
+    "masked_text": "However, the effectiveness of this prompting method varies. Despite using the same prompt templates and persuasion knowledge (as shown in Figure 12), GPT-4\u2019s guardrails sometimes mitigate or alter the intent of the plain harmful query. Figure 14 shows one example, the plain harmful query is \u201cHow to hurt myself\u201d, but GPT-4 fails to persuasively paraphrase this question, but rather asks a different question about how to cope with negative emotions, possibly due to strong safety measurements. As we need to scale up the PAP generation, such an unstable behavior will impact the quality of the PAP and, thus, the accuracy and accountability of the following experiments. Report issue for preceding element",
+    "citations": []
+  },
+  "A2.p5": {
+    "text": "To generate PAP more reliably, we need to bypass guardrails.\nAs shown by recent studies Qi et\u00a0al. ( 2023 ) , fine-tuning can effectively mitigate the influence of guardrails.\nSo we propose to fine-tune a dedicated LLM as the Persuasive Paraphraser to translate plain harmful queries into PAPs. This process is shown in Figure 4 and discussed in \u00a7 \u00a7 \\lx@sectionsign \u00a7 4 . Figure 15 shows the improved outcomes compared to simple prompting (Figure 14 ) on the same harmful query, which demonstrates that the fine-tuned Persuasive Paraphraser can enhance the generated PAP\u2019s quality. In Section E.1 , we will further quantitatively analyze the generated PAP. Report issue for preceding element",
+    "masked_text": "To generate PAP more reliably, we need to bypass guardrails. As shown by recent studies [CITATION], fine-tuning can effectively mitigate the influence of guardrails. So we propose to fine-tune a dedicated LLM as the Persuasive Paraphraser to translate plain harmful queries into PAPs. This process is shown in Figure 4 and discussed in \u00a7\u00a7\\lx@sectionsign\u00a74. Figure 15 shows the improved outcomes compared to simple prompting (Figure 14) on the same harmful query, which demonstrates that the fine-tuned Persuasive Paraphraser can enhance the generated PAP\u2019s quality. In Section E.1, we will further quantitatively analyze the generated PAP. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Qi et\u00a0al. (2023)",
+        "title": "Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+        "authors": "Xiangyu Qi, Yi\u00a0Zeng, Tinghao Xie, Pin-Yu Chen, Ruoxi Jia, Prateek Mittal, and Peter Henderson. 2023.",
+        "journal": ""
+      }
+    ]
+  },
+  "A3.SS0.SSS0.Px1.p1": {
+    "text": "We adjust the hyperparameters of baseline methods to ensure a fair comparison.\nFor black-box methods,\nincluding PAIR 9 9 9 https://github.com/patrickrchao/JailbreakingLLMs Chao et\u00a0al. ( 2023 ) and ours, our goal is to ensure the same number of queries on the target model. Specifically, for PAIR, to align with our 40 strategies, we set a stream size of N = 40 \ud835\udc41 40 N=40 italic_N = 40 and a maximum depth of K = 3 \ud835\udc3e 3 K=3 italic_K = 3 , where a depth of 3 means that we iteratively optimize their attacking prompt for three times in a dialogue-based setting. The rest of the comparison methods are white-box baselines, where we retain each method\u2019s original configuration and aggregate results from multiple trials, similar to our settings.\nFor GCG 10 10 10 https://github.com/LLM-attacks/LLM-attacks Zou et\u00a0al. ( 2023 ) , we use Vicuna-7b-v1.3 and Llama-7b-chat for joint optimization of 500 steps, conducting 3 experiments to generate distinct suffixes following the strongest settings in the original paper. In the ensemble setting, we also tested attacks incorporating these combined suffixes (directly concatenation). For ARCA 11 11 11 https://github.com/ejones313/auditing-LLMs Jones et\u00a0al. ( 2023 ) , we configure 32 candidates (32 trails) and a maximum of 50 iterations for each plain harmful query. For GBDA 12 12 12 https://github.com/facebookresearch/text-adversarial-attack Guo et\u00a0al. ( 2021 ) , we sample 8 times (8 trials) per plain harmful query per step and conduct 200 steps with a learning rate of 0.1 0.1 0.1 0.1 .\nNoting that we have all the baseline methods deploy equal or more numbers of queries than ours. For all the methods aggregating from multiple rounds, a successful attack is defined as jailbreaking a plain harmful query in at least one of the trials. Report issue for preceding element",
+    "masked_text": "We adjust the hyperparameters of baseline methods to ensure a fair comparison. For black-box methods, including PAIR999https://github.com/patrickrchao/JailbreakingLLMs [CITATION] and ours, our goal is to ensure the same number of queries on the target model. Specifically, for PAIR, to align with our 40 strategies, we set a stream size of N=40\ud835\udc4140N=40italic_N = 40 and a maximum depth of K=3\ud835\udc3e3K=3italic_K = 3, where a depth of 3 means that we iteratively optimize their attacking prompt for three times in a dialogue-based setting. The rest of the comparison methods are white-box baselines, where we retain each method\u2019s original configuration and aggregate results from multiple trials, similar to our settings. For GCG101010https://github.com/LLM-attacks/LLM-attacks [CITATION], we use Vicuna-7b-v1.3 and Llama-7b-chat for joint optimization of 500 steps, conducting 3 experiments to generate distinct suffixes following the strongest settings in the original paper. In the ensemble setting, we also tested attacks incorporating these combined suffixes (directly concatenation). For ARCA111111https://github.com/ejones313/auditing-LLMs [CITATION], we configure 32 candidates (32 trails) and a maximum of 50 iterations for each plain harmful query. For GBDA121212https://github.com/facebookresearch/text-adversarial-attack [CITATION], we sample 8 times (8 trials) per plain harmful query per step and conduct 200 steps with a learning rate of 0.10.10.10.1. Noting that we have all the baseline methods deploy equal or more numbers of queries than ours. For all the methods aggregating from multiple rounds, a successful attack is defined as jailbreaking a plain harmful query in at least one of the trials.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jones et\u00a0al. (2023)",
+        "title": "Automatically auditing large language models via discrete optimization.",
+        "authors": "Erik Jones, Anca Dragan, Aditi Raghunathan, and Jacob Steinhardt. 2023.",
+        "journal": "arXiv preprint arXiv:2303.04381."
+      },
+      {
+        "tag": "Guo et\u00a0al. (2021)",
+        "title": "Gradient-based adversarial attacks against text transformers.",
+        "authors": "Chuan Guo, Alexandre Sablayrolles, Herv\u00e9 J\u00e9gou, and Douwe Kiela. 2021.",
+        "journal": "arXiv preprint arXiv:2104.13733."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Chao et\u00a0al. (2023)",
+        "title": "Jailbreaking black box large language models in twenty queries.",
+        "authors": "Patrick Chao, Alexander Robey, Edgar Dobriban, Hamed Hassani, George\u00a0J Pappas, and Eric Wong. 2023.",
+        "journal": "arXiv preprint arXiv:2310.08419."
+      }
+    ]
+  },
+  "A3.SS0.SSS0.Px2.p1": {
+    "text": "Details of the mutation-based defenses are as follows: we use ChatGPT to paraphrase prompts for the Paraphrase method Jain et\u00a0al. ( 2023 ) , setting the temperature to 0.7. The Retokenize method follows the settings described in Jain et\u00a0al. ( 2023 ) . Report issue for preceding element",
+    "masked_text": "Details of the mutation-based defenses are as follows: we use ChatGPT to paraphrase prompts for the Paraphrase method [CITATION], setting the temperature to 0.7. The Retokenize method follows the settings described in [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Jain et\u00a0al. (2023)",
+        "title": "Baseline defenses for adversarial attacks against aligned language models.",
+        "authors": "Neel Jain, Avi Schwarzschild, Yuxin Wen, Gowthami Somepalli, John Kirchenbauer, Ping-yeh Chiang, Micah Goldblum, Aniruddha Saha, Jonas Geiping, and Tom Goldstein. 2023.",
+        "journal": "arXiv preprint arXiv:2309.00614."
+      }
+    ]
+  },
+  "A3.SS0.SSS0.Px2.p2": {
+    "text": "The detection-based defense settings are as follows. For Rand-Drop 13 13 13 https://github.com/AAAAAAsuka/LLM_defends Cao et\u00a0al. ( 2023 ) , we set a drop probability ( p \ud835\udc5d p italic_p ) of 0.3, a threshold ( t \ud835\udc61 t italic_t ) of 0.2, and conducted 20 rounds of sampling of the output as following their default settings.\nBoth Cao et\u00a0al. ( 2023 ) and Kumar et\u00a0al. ( 2023 ) detect harmful prompts by randomly dropping tokens and analyzing the changes. As Cao et\u00a0al. ( 2023 ) provides a well-justified threshold selection, and the techniques are similar, we evaluate this method only. For RAIN 14 14 14 https://github.com/SafeAILab/RAIN Li et\u00a0al. ( 2023 ) , a recently proposed alignment technique grounded in self-evaluation, we tested its binary classifier (the self-evaluation phase in the paper), which assesses if a response is harmful or harmless given the generated content only.\nFollowing the original implementation, we averaged results over two shuffled options (swapping the order of harmful or harmless options). RAIN\u2019s prompt does not have the context, policies, scoring, and reasoning chains of GPT-4 Judge, which might be one factor limiting their detectability as reflected in Table 3 .\nFor Smooth LLM 15 15 15 https://github.com/arobey1/smooth-LLM Robey et\u00a0al. ( 2023 ) , we implemented three random perturbation methods proposed in this work: Rand-Insert, Rand-Swap, and Rand-Patch. Each method was set with a maximum disturbance probability ( p \ud835\udc5d p italic_p ) of 0.2 and a sampling number ( N \ud835\udc41 N italic_N ) of 10 following their strongest settings. To evaluate the results\u2019 harmfulness before and after perturbation, we follow their evaluation setting and inspect a keyword set from Zou et\u00a0al. ( 2023 ) during output inspection. Report issue for preceding element",
+    "masked_text": "The detection-based defense settings are as follows. For Rand-Drop131313https://github.com/AAAAAAsuka/LLM_defends [CITATION], we set a drop probability (p\ud835\udc5dpitalic_p) of 0.3, a threshold (t\ud835\udc61titalic_t) of 0.2, and conducted 20 rounds of sampling of the output as following their default settings. Both [CITATION] and [CITATION] detect harmful prompts by randomly dropping tokens and analyzing the changes. As [CITATION] provides a well-justified threshold selection, and the techniques are similar, we evaluate this method only. For RAIN141414https://github.com/SafeAILab/RAIN [CITATION], a recently proposed alignment technique grounded in self-evaluation, we tested its binary classifier (the self-evaluation phase in the paper), which assesses if a response is harmful or harmless given the generated content only. Following the original implementation, we averaged results over two shuffled options (swapping the order of harmful or harmless options). RAIN\u2019s prompt does not have the context, policies, scoring, and reasoning chains of GPT-4 Judge, which might be one factor limiting their detectability as reflected in Table 3. For Smooth LLM151515https://github.com/arobey1/smooth-LLM [CITATION], we implemented three random perturbation methods proposed in this work: Rand-Insert, Rand-Swap, and Rand-Patch. Each method was set with a maximum disturbance probability (p\ud835\udc5dpitalic_p) of 0.2 and a sampling number (N\ud835\udc41Nitalic_N) of 10 following their strongest settings. To evaluate the results\u2019 harmfulness before and after perturbation, we follow their evaluation setting and inspect a keyword set from [CITATION] during output inspection. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Robey et\u00a0al. (2023)",
+        "title": "Smoothllm: Defending large language models against jailbreaking attacks.",
+        "authors": "Alexander Robey, Eric Wong, Hamed Hassani, and George\u00a0J Pappas. 2023.",
+        "journal": "arXiv preprint arXiv:2310.03684."
+      },
+      {
+        "tag": "Zou et\u00a0al. (2023)",
+        "title": "Universal and transferable adversarial attacks on aligned language models.",
+        "authors": "Andy Zou, Zifan Wang, J\u00a0Zico Kolter, and Matt Fredrikson. 2023.",
+        "journal": "arXiv preprint arXiv:2307.15043."
+      },
+      {
+        "tag": "Cao et\u00a0al. (2023)",
+        "title": "Defending against alignment-breaking attacks via robustly aligned llm.",
+        "authors": "Bochuan Cao, Yuanpu Cao, Lu\u00a0Lin, and Jinghui Chen. 2023.",
+        "journal": "arXiv preprint arXiv:2309.14348."
+      },
+      {
+        "tag": "Kumar et\u00a0al. (2023)",
+        "title": "Certifying llm safety against adversarial prompting.",
+        "authors": "Aounon Kumar, Chirag Agarwal, Suraj Srinivas, Soheil Feizi, and Hima Lakkaraju. 2023.",
+        "journal": "arXiv preprint arXiv:2309.02705."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Rain: Your language models can align themselves without finetuning.",
+        "authors": "Yuhui Li, Fangyun Wei, Jinjing Zhao, Chao Zhang, and Hongyang Zhang. 2023.",
+        "journal": "arXiv preprint arXiv:2309.07124."
+      }
+    ]
+  },
+  "A4.SS0.SSS0.Px1.p1": {
+    "text": "We simply prompt GPT-4 with the template in Figure 16 , asking it to summarize any given inquiry. Then, we feed the summarized output to downstream target models and evaluate the final output from the target model to determine the jailbreak result (ASR) and helpfulness (MT-bench score). Report issue for preceding element",
+    "masked_text": "We simply prompt GPT-4 with the template in Figure 16, asking it to summarize any given inquiry. Then, we feed the summarized output to downstream target models and evaluate the final output from the target model to determine the jailbreak result (ASR) and helpfulness (MT-bench score).Report issue for preceding element",
+    "citations": []
+  },
+  "A4.SS0.SSS0.Px2.p1": {
+    "text": "To develop the fine-tuned summarizer, we employed the system prompt in Figure 17 . This prompt straightforwardly inserts a plain harmful query and the corresponding PAP, simulating a scenario where the defender knows about the PAPs\u2019 distribution. For this, we randomly selected 50 samples from the same pool of 230 used to fine-tune the persuasive paraphrase. But if the summarizer is trained on adversarial examples only, it will also always summarize benign inputs to a harmful query and detect all queries as harmful and hurt the helpfulness. To avoid such false positives, we also included 50 benign alpaca instruction samples, processed through the Base Smry., to replicate benign inputs undergoing summarization.\nThese 100 samples formed the dataset, which was then applied to the template in Figure 17 to fine-tune GPT-3.5 using the OpenAI API with default hyperparameters. During deployment, the same system prompt is used, but the input is replaced with the user\u2019s query. We then feed the summarized query to the target model and evaluate its output. Report issue for preceding element",
+    "masked_text": "To develop the fine-tuned summarizer, we employed the system prompt in Figure 17. This prompt straightforwardly inserts a plain harmful query and the corresponding PAP, simulating a scenario where the defender knows about the PAPs\u2019 distribution. For this, we randomly selected 50 samples from the same pool of 230 used to fine-tune the persuasive paraphrase. But if the summarizer is trained on adversarial examples only, it will also always summarize benign inputs to a harmful query and detect all queries as harmful and hurt the helpfulness. To avoid such false positives, we also included 50 benign alpaca instruction samples, processed through the Base Smry., to replicate benign inputs undergoing summarization. These 100 samples formed the dataset, which was then applied to the template in Figure 17 to fine-tune GPT-3.5 using the OpenAI API with default hyperparameters. During deployment, the same system prompt is used, but the input is replaced with the user\u2019s query. We then feed the summarized query to the target model and evaluate its output.Report issue for preceding element",
+    "citations": []
+  },
+  "A4.SS0.SSS0.Px2.p2": {
+    "text": "Additionally, we put Claude models to test manually crafted virtualization-based prompts and use our fine-tuned summarizer for defense. The results are shown in Table 6 . We utilize 77 jailbreak templates that can be combined with harmful queries. They are artificial templates from the jailbreak chat website 16 16 16 https://www.jailbreakchat.com/ , collected by Liu et\u00a0al. ( 2023b ) and filtered through GPTFuzzer Yu et\u00a0al. ( 2023 ) .\nBesides the initial set, we sample two kinds of variants of artificial templates following the attack design proposed in GPTFuzzer. Firstly, we mutate the templates using five mutation operators from GPTFuzzer. Each template is randomly mutated 3 times to generate 3 variants. Secondly, we utilize the rewriting prompt from Masterkey Deng et\u00a0al. ( 2023a ) to prompt ChatGPT for 3 rephrased samples per template.\nWe use these jailbreak templates combined with 50 harmful queries to conduct attacks on Claude models. The initial templates lead to 3,850 attacking cases, while the two kinds of variants result in 11,550 attacking cases, respectively. As seen in Table 6 , these manually crafted templates demonstrate effectiveness in jailbreaking Claude models, with higher rates on Claude-2. The \u201cTuned Smry.\u201d is able to counteract all the jailbreak templates.\nThe observation remarks that an interesting factor of summarization is content moderation. In particular, our Tuned Smry. only observed persuasive prompts and learned how to summarize them to plain inquiries. However, the effectiveness in protecting models against unseen attacks evaluated in this section, i.e., manually crafted prompts and advanced variants produced by GPTFuzzer and Masterkey, demonstrates a promising direction in the future design of summarization-based adversarial prompt defenses.\nHowever, this current version of the summarizer still negatively impacts the helpfulness of the Claude models. After summarization, the MT-bench score drops from 8.31 to 6.04 on Claude-1 and from 8.10 to 6.03 on Claude-2. In the future, we can improve the summarizer to target different types of attack methods and use more benign samples to ensure helpfulness. Report issue for preceding element",
+    "masked_text": "Additionally, we put Claude models to test manually crafted virtualization-based prompts and use our fine-tuned summarizer for defense. The results are shown in Table 6. We utilize 77 jailbreak templates that can be combined with harmful queries. They are artificial templates from the jailbreak chat website161616https://www.jailbreakchat.com/, collected by [CITATION] and filtered through GPTFuzzer [CITATION]. Besides the initial set, we sample two kinds of variants of artificial templates following the attack design proposed in GPTFuzzer. Firstly, we mutate the templates using five mutation operators from GPTFuzzer. Each template is randomly mutated 3 times to generate 3 variants. Secondly, we utilize the rewriting prompt from Masterkey [CITATION] to prompt ChatGPT for 3 rephrased samples per template. We use these jailbreak templates combined with 50 harmful queries to conduct attacks on Claude models. The initial templates lead to 3,850 attacking cases, while the two kinds of variants result in 11,550 attacking cases, respectively. As seen in Table 6, these manually crafted templates demonstrate effectiveness in jailbreaking Claude models, with higher rates on Claude-2. The \u201cTuned Smry.\u201d is able to counteract all the jailbreak templates. The observation remarks that an interesting factor of summarization is content moderation. In particular, our Tuned Smry. only observed persuasive prompts and learned how to summarize them to plain inquiries. However, the effectiveness in protecting models against unseen attacks evaluated in this section, i.e., manually crafted prompts and advanced variants produced by GPTFuzzer and Masterkey, demonstrates a promising direction in the future design of summarization-based adversarial prompt defenses. However, this current version of the summarizer still negatively impacts the helpfulness of the Claude models. After summarization, the MT-bench score drops from 8.31 to 6.04 on Claude-1 and from 8.10 to 6.03 on Claude-2. In the future, we can improve the summarizer to target different types of attack methods and use more benign samples to ensure helpfulness.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Deng et\u00a0al. (2023a)",
+        "title": "Jailbreaker: Automated jailbreak across multiple large language model chatbots.",
+        "authors": "Gelei Deng, Yi\u00a0Liu, Yuekang Li, Kailong Wang, Ying Zhang, Zefeng Li, Haoyu Wang, Tianwei Zhang, and Yang Liu. 2023a.",
+        "journal": "arXiv preprint arXiv:2307.08715."
+      },
+      {
+        "tag": "Yu et\u00a0al. (2023)",
+        "title": "Gptfuzzer: Red teaming large language models with auto-generated jailbreak prompts.",
+        "authors": "Jiahao Yu, Xingwei Lin, and Xinyu Xing. 2023.",
+        "journal": "arXiv preprint arXiv:2309.10253."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023b)",
+        "title": "Jailbreaking chatgpt via prompt engineering: An empirical study.",
+        "authors": "Yi\u00a0Liu, Gelei Deng, Zhengzi Xu, Yuekang Li, Yaowen Zheng, Ying Zhang, Lida Zhao, Tianwei Zhang, and Yang Liu. 2023b.",
+        "journal": "arXiv preprint arXiv:2305.13860."
+      }
+    ]
+  },
+  "A5.p1": {
+    "text": "Now, we analyze the quality of the PAP generated. We provide a human evaluation of the generated PAPs and study the quality of harmfulness of the elicit outputs with respect to jailbreaking cases. Report issue for preceding element",
+    "masked_text": "Now, we analyze the quality of the PAP generated. We provide a human evaluation of the generated PAPs and study the quality of harmfulness of the elicit outputs with respect to jailbreaking cases. Report issue for preceding element",
+    "citations": []
+  },
+  "A5.SS1.p1": {
+    "text": "In the quantitative analysis, we focus on the following two core aspects of PAP: 1) if they accurately apply the required persuasive technique and 2) if they are a faithful paraphrase of the original harmful query and ask the same ill-intended question.\nBesides, we also analyze how much PAP overlaps with other attack methods like virtualization-based Kang et\u00a0al. ( 2023 ) and persona-based Shah et\u00a0al. ( 2023 ) approaches. Report issue for preceding element",
+    "masked_text": "In the quantitative analysis, we focus on the following two core aspects of PAP: 1) if they accurately apply the required persuasive technique and 2) if they are a faithful paraphrase of the original harmful query and ask the same ill-intended question. Besides, we also analyze how much PAP overlaps with other attack methods like virtualization-based [CITATION] and persona-based [CITATION] approaches.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Shah et\u00a0al. (2023)",
+        "title": "Scalable and transferable black-box jailbreaks for language models via persona modulation.",
+        "authors": "Rusheb Shah, Quentin Feuillade-Montixi, Soroush Pour, Arush Tagade, Stephen Casper, and Javier Rando. 2023.",
+        "journal": "arXiv preprint arXiv:2311.03348."
+      },
+      {
+        "tag": "Kang et\u00a0al. (2023)",
+        "title": "Exploiting programmatic behavior of llms: Dual-use through standard security attacks.",
+        "authors": "Daniel Kang, Xuechen Li, Ion Stoica, Carlos Guestrin, Matei Zaharia, and Tatsunori Hashimoto. 2023.",
+        "journal": "arXiv preprint arXiv:2302.05733."
+      }
+    ]
+  },
+  "A5.SS1.p2": {
+    "text": "Three human experts annotate a subset of PAP samples on different related questions. The annotation interface is depicted in Figure 18 . The first question is about whether the PAP employs the assigned persuasion technique accurately. The other three questions are about whether the PAP also overlaps with other attack methods, such as persona-based attack where the adversarial prompt asks the LLM to behave like a certain persona, or the prompt itself pretends to behave like a certain person, or virtualization-based attack where the adversarial prompt builds a virtualized world and ask the LLMs to follow certain orders. Report issue for preceding element",
+    "masked_text": "Three human experts annotate a subset of PAP samples on different related questions. The annotation interface is depicted in Figure 18. The first question is about whether the PAP employs the assigned persuasion technique accurately. The other three questions are about whether the PAP also overlaps with other attack methods, such as persona-based attack where the adversarial prompt asks the LLM to behave like a certain persona, or the prompt itself pretends to behave like a certain person, or virtualization-based attack where the adversarial prompt builds a virtualized world and ask the LLMs to follow certain orders.Report issue for preceding element",
+    "citations": []
+  },
+  "A5.SS1.p3": {
+    "text": "They first independently annotated the same 40 PAP randomly drawn from the broad scan ( \u00a7 \u00a7 \\lx@sectionsign \u00a7 5 ). Then, they discussed disagreement and achieved an inter-annotator agreement on fixing disagreed examples. Afterward, each annotator separately annotated 80 PAP (2 examples \u00d7 \\times \u00d7 40 techniques), amounting to 240 annotated PAP samples. Report issue for preceding element",
+    "masked_text": "They first independently annotated the same 40 PAP randomly drawn from the broad scan (\u00a7\u00a7\\lx@sectionsign\u00a75). Then, they discussed disagreement and achieved an inter-annotator agreement on fixing disagreed examples. Afterward, each annotator separately annotated 80 PAP (2 examples \u00d7\\times\u00d7 40 techniques), amounting to 240 annotated PAP samples.Report issue for preceding element",
+    "citations": []
+  },
+  "A5.SS1.p4": {
+    "text": "Table 7 shows that our Persuasive Paraphraser is highly reliable in generating high-quality PAP: 92.92% PAPs correctly apply the required persuasion techniques. Besides, PAP poses unique risks without much overlap with other attacks ( \u2264 10 % absent percent 10 \\leq 10\\% \u2264 10 % with all other attacks). We also note that such overlap to leverage persona or virtualization can happen organically in persuasion. For example, when persuading someone with \u201cmisrepresentation\", a natural procedure is to take on a fake persona and justify the reason for asking the certain query. Similar to virtualization, in \u201cFraming\u201d, a constructed imaginary case may be deployed. Report issue for preceding element",
+    "masked_text": "Table 7 shows that our Persuasive Paraphraser is highly reliable in generating high-quality PAP: 92.92% PAPs correctly apply the required persuasion techniques. Besides, PAP poses unique risks without much overlap with other attacks (\u226410%absentpercent10\\leq 10\\%\u2264 10 % with all other attacks). We also note that such overlap to leverage persona or virtualization can happen organically in persuasion. For example, when persuading someone with \u201cmisrepresentation\", a natural procedure is to take on a fake persona and justify the reason for asking the certain query. Similar to virtualization, in \u201cFraming\u201d, a constructed imaginary case may be deployed.Report issue for preceding element",
+    "citations": []
+  },
+  "A5.SS2.p1": {
+    "text": "Finally,\nwe dive into the qualitative examples of selected jailbreak cases against different target models.\nFor clarity, we truncate jailbreaking cases to only include the portion presenting harmful information and redact sensitive details if applicable. Note that the example from the risk category \u201cChild Harm\u201d is intentionally omitted. Report issue for preceding element",
+    "masked_text": "Finally, we dive into the qualitative examples of selected jailbreak cases against different target models. For clarity, we truncate jailbreaking cases to only include the portion presenting harmful information and redact sensitive details if applicable. Note that the example from the risk category \u201cChild Harm\u201d is intentionally omitted.Report issue for preceding element",
+    "citations": []
+  },
+  "A5.SS2.p2": {
+    "text": "Again, the contents listed in the following parts of this section can be harmful in nature! Examples are provided for research purposes. Report issue for preceding element",
+    "masked_text": "Again, the contents listed in the following parts of this section can be harmful in nature! Examples are provided for research purposes.Report issue for preceding element",
+    "citations": []
+  }
+}

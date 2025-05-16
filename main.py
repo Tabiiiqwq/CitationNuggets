@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import List, Optional, Union, Tuple
 
 from src.dataset_construction.paper_processor import PaperProcessor
-from src.dataset_construction.dataset_builder import CitationDatasetBuilder
+from src.dataset_construction.dataset_builder_coverage import CitationDatasetBuilder
 from src.evaluation.metrics import CitationEvaluator
 from src.evaluation.evaluator import CitationMethodEvaluator
 

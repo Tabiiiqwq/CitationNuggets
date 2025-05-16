@@ -1,0 +1,973 @@
+{
+  "S1.p1": {
+    "text": "The recent success of Multimodal Large Language Models (MLLMs) marks a significant milestone in AI research [ 37 , 4 , 27 , 35 , 63 , 6 , 14 , 54 , 16 ] . By connecting visual signals and Large Language Models (LLMs), MLLMs show unprecedented capabilities in multimodal understanding, reasoning, and interaction [ 37 , 57 , 36 ] . The models are typically pre-trained on large-scale image-text data to learn the foundational multimodal knowledge and capabilities [ 4 , 16 , 27 , 6 ] . To steer the model behavior, most MLLMs are further fine-tuned with instruction tuning (also known as supervised fine-tuning), which supervises models to clone the behavior from demonstration data, enabling MLLMs to engage users in various open-world tasks [ 35 , 14 , 33 , 6 , 60 ] . Report issue for preceding element",
+    "masked_text": "The recent success of Multimodal Large Language Models (MLLMs) marks a significant milestone in AI research [CITATION]. By connecting visual signals and Large Language Models (LLMs), MLLMs show unprecedented capabilities in multimodal understanding, reasoning, and interaction [CITATION]. The models are typically pre-trained on large-scale image-text data to learn the foundational multimodal knowledge and capabilities [CITATION]. To steer the model behavior, most MLLMs are further fine-tuned with instruction tuning (also known as supervised fine-tuning), which supervises models to clone the behavior from demonstration data, enabling MLLMs to engage users in various open-world tasks [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Wang et\u00a0al. [2023c]",
+        "title": "CogVLM: Visual expert for pretrained language models.",
+        "authors": "Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2311.03079, 2023c."
+      },
+      {
+        "tag": "Yang et\u00a0al. [2023]",
+        "title": "The dawn of LMMs: Preliminary explorations with GPT-4V(ision).",
+        "authors": "Zhengyuan Yang, Linjie Li, Kevin Lin, Jianfeng Wang, Chung-Ching Lin, Zicheng Liu, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2309.17421, 9, 2023."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Lu et\u00a0al. [2023]",
+        "title": "MathVista: Evaluating mathematical reasoning of foundation models in visual contexts.",
+        "authors": "Pan Lu, Hritik Bansal, Tony Xia, Jiacheng Liu, Chunyuan Li, Hannaneh Hajishirzi, Hao Cheng, Kai-Wei Chang, Michel Galley, and Jianfeng Gao.",
+        "journal": "arXiv preprint arXiv:2310.02255, 2023."
+      },
+      {
+        "tag": "Zhu et\u00a0al. [2023]",
+        "title": "MiniGPT-4: Enhancing vision-language understanding with advanced large language models.",
+        "authors": "Deyao Zhu, Jun Chen, Xiaoqian Shen, Xiang Li, and Mohamed Elhoseiny.",
+        "journal": "arXiv preprint arXiv:2304.10592, 2023."
+      },
+      {
+        "tag": "Driess et\u00a0al. [2023]",
+        "title": "PaLM-E: An embodied multimodal language model.",
+        "authors": "Danny Driess, Fei Xia, Mehdi\u00a0SM Sajjadi, Corey Lynch, Aakanksha Chowdhery, Brian Ichter, Ayzaan Wahid, Jonathan Tompson, Quan Vuong, Tianhe Yu, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2303.03378, 2023."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Alayrac et\u00a0al. [2022]",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, et\u00a0al.",
+        "journal": "NeurIPS, 35:23716\u201323736, 2022."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2023]",
+        "title": "Qwen-VL: A frontier large vision-language model with versatile abilities.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou.",
+        "journal": "arXiv preprint arXiv:2308.12966, 2023."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "arXiv preprint arXiv:2301.12597, 2023c."
+      }
+    ]
+  },
+  "S1.p2": {
+    "text": "However, current MLLM behaviors are not well aligned with human preferences. A glaring issue is their tendency to produce hallucinations \u2014 responses that are not factually grounded in the associated images [ 37 , 48 , 33 , 29 ] . This typically includes descriptions of non-existing visual contents and errors in descriptions. As shown in Figure 1 , current MLLMs can hallucinate about objects, attributes, numbers, positions, actions, etc. Quantitatively, our human evaluation shows that the problem is prevalent among state-of-the-art MLLMs, where even the most advanced GPT-4V [ 37 ] contains obvious hallucinations in 45.9% responses. The problem makes existing MLLMs untrustworthy and thus impractical in real-world (especially high-stakes) applications, such as guiding visually impaired individuals [ 37 ] or autonomous driving systems [ 55 ] . Report issue for preceding element",
+    "masked_text": "However, current MLLM behaviors are not well aligned with human preferences. A glaring issue is their tendency to produce hallucinations \u2014 responses that are not factually grounded in the associated images [CITATION]. This typically includes descriptions of non-existing visual contents and errors in descriptions. As shown in Figure 1, current MLLMs can hallucinate about objects, attributes, numbers, positions, actions, etc. Quantitatively, our human evaluation shows that the problem is prevalent among state-of-the-art MLLMs, where even the most advanced GPT-4V [CITATION] contains obvious hallucinations in 45.9% responses. The problem makes existing MLLMs untrustworthy and thus impractical in real-world (especially high-stakes) applications, such as guiding visually impaired individuals [CITATION] or autonomous driving systems [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023e]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "arXiv preprint arXiv:2305.10355, 2023e."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Wen et\u00a0al. [2023]",
+        "title": "On the road with GPT-4V (ision): Early explorations of visual-language model on autonomous driving.",
+        "authors": "Licheng Wen, Xuemeng Yang, Daocheng Fu, Xiaofeng Wang, Pinlong Cai, Xin Li, Tao Ma, Yingxuan Li, Linran Xu, Dengke Shang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2311.05332, 2023."
+      }
+    ]
+  },
+  "S1.p3": {
+    "text": "We argue that the problem arises from the lack of positive/negative human feedback in instruction-tuned models, making it challenging to learn the precise behavior boundaries to exclude hallucination. To address the problem, we propose RLHF-V, a novel framework that aligns MLLM behavior by learning from human feedback. A straightforward way is to employ the traditional Reinforcement Learning from Human Feedback (RLHF) method in state-of-the-art LLMs [ 51 , 38 ] , which involves human annotators ranking model responses, and utilizing a reward model to guide the policy LLM learning. However, this approach is fraught with two key challenges: (1) Annotation ambiguity . Helpful and engaging responses about rich image content are typically long and complex, making it usually non-obvious to decide which response is preferable. As shown in Figure 1 (responses A and B), annotators usually face dilemmas when presenting responses with respective advantages and flaws. Besides, even if labeled with a clear preference, the optimal response remains unknown (e.g., the exact time of the clock). (2) Learning efficiency . The coarse-grained ranking feedback makes it difficult to accurately allocate credit to the desirable behaviors. Considering the linguistic complexity and variance of responses, the desirable behavior often requires a large amount of labeled data to learn [ 13 , 48 , 39 ] . Moreover, misallocation of credit to the non-robust bias correlated with the data usually leads to reward hacking and behavior degeneration problems [ 7 , 51 ] . Report issue for preceding element",
+    "masked_text": "We argue that the problem arises from the lack of positive/negative human feedback in instruction-tuned models, making it challenging to learn the precise behavior boundaries to exclude hallucination. To address the problem, we propose RLHF-V, a novel framework that aligns MLLM behavior by learning from human feedback. A straightforward way is to employ the traditional Reinforcement Learning from Human Feedback (RLHF) method in state-of-the-art LLMs [CITATION], which involves human annotators ranking model responses, and utilizing a reward model to guide the policy LLM learning. However, this approach is fraught with two key challenges: (1) Annotation ambiguity. Helpful and engaging responses about rich image content are typically long and complex, making it usually non-obvious to decide which response is preferable. As shown in Figure 1 (responses A and B), annotators usually face dilemmas when presenting responses with respective advantages and flaws. Besides, even if labeled with a clear preference, the optimal response remains unknown (e.g., the exact time of the clock). (2) Learning efficiency. The coarse-grained ranking feedback makes it difficult to accurately allocate credit to the desirable behaviors. Considering the linguistic complexity and variance of responses, the desirable behavior often requires a large amount of labeled data to learn [CITATION]. Moreover, misallocation of credit to the non-robust bias correlated with the data usually leads to reward hacking and behavior degeneration problems [CITATION]. Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "LLaMA 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2307.09288, 2023b."
+      },
+      {
+        "tag": "OpenAI [2023b]",
+        "title": "GPT-4 technical report, 2023b.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      },
+      {
+        "tag": "Cui et\u00a0al. [2023]",
+        "title": "Ultrafeedback: Boosting language models with high-quality feedback.",
+        "authors": "Ganqu Cui, Lifan Yuan, Ning Ding, Guanming Yao, Wei Zhu, Yuan Ni, Guotong Xie, Zhiyuan Liu, and Maosong Sun.",
+        "journal": "arXiv preprint arXiv:2310.01377, 2023."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2022a]",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2204.05862, 2022a."
+      }
+    ]
+  },
+  "S1.p4": {
+    "text": "RLHF-V addresses these challenges by introducing two key innovations: (1) At the data level, we propose to collect human feedback in the form of fine-grained segment-level corrections. As shown in Figure 1 , we ask human annotators to directly correct the hallucinated segments from model responses, providing a clear, dense, and fine-grained human preference, as well as optimal responses. This strategy also avoids linguistic variance and non-robust bias, ensuring that the feedback is accurately allocated to the desirable behaviors, thereby enhancing learning efficiency and preventing reward hacking problems. (2) At the method level, we propose dense direct preference optimization (DDPO), a new variant of DPO [ 42 ] that addresses the traditional RLHF objective in an equivalent simple and efficient supervised fashion. DDPO directly optimizes the policy model against dense and fine-grained segment-level preference, where the hallucinated segments receive stronger feedback to be factually grounded. Report issue for preceding element",
+    "masked_text": "RLHF-V addresses these challenges by introducing two key innovations: (1) At the data level, we propose to collect human feedback in the form of fine-grained segment-level corrections. As shown in Figure 1, we ask human annotators to directly correct the hallucinated segments from model responses, providing a clear, dense, and fine-grained human preference, as well as optimal responses. This strategy also avoids linguistic variance and non-robust bias, ensuring that the feedback is accurately allocated to the desirable behaviors, thereby enhancing learning efficiency and preventing reward hacking problems. (2) At the method level, we propose dense direct preference optimization (DDPO), a new variant of DPO [CITATION] that addresses the traditional RLHF objective in an equivalent simple and efficient supervised fashion. DDPO directly optimizes the policy model against dense and fine-grained segment-level preference, where the hallucinated segments receive stronger feedback to be factually grounded.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Rafailov et\u00a0al. [2023]",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D Manning, and Chelsea Finn.",
+        "journal": "arXiv preprint arXiv:2305.18290, 2023."
+      }
+    ]
+  },
+  "S1.p5": {
+    "text": "Comprehensive experiments on five benchmarks show that, RLHF-V can substantially enhance the trustworthiness of MLLMs with promising data and computation efficiency. Using 1.4k preference data, RLHF-V significantly reduces the object hallucination rate of the base MLLM by 34.8%, surpassing the concurrent LLaVA-RLHF [ 48 ] trained on 10k preference data. We also show that RLHF-V achieves better robustness than the strong GPT-4V [ 37 ] in preventing hallucinations aroused from over-generalization. Report issue for preceding element",
+    "masked_text": "Comprehensive experiments on five benchmarks show that, RLHF-V can substantially enhance the trustworthiness of MLLMs with promising data and computation efficiency. Using 1.4k preference data, RLHF-V significantly reduces the object hallucination rate of the base MLLM by 34.8%, surpassing the concurrent LLaVA-RLHF [CITATION] trained on 10k preference data. We also show that RLHF-V achieves better robustness than the strong GPT-4V [CITATION] in preventing hallucinations aroused from over-generalization.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      }
+    ]
+  },
+  "S1.p6": {
+    "text": "The contribution of this work can be summarized as threefold: (1) We present RLHF-V, a novel framework that aligns MLLM behavior through fine-grained correctional human feedback. (2) We collect high-quality human preference data to provide human-aligned learning signals for MLLMs. (3) We conduct comprehensive experiments to demonstrate the effectiveness of the proposed framework, achieving state-of-the-art performance in trustworthiness among open-source MLLMs. All the code, data, and model weights are open-sourced at https://github.com/RLHF-V/RLHF-V . Report issue for preceding element",
+    "masked_text": "The contribution of this work can be summarized as threefold: (1) We present RLHF-V, a novel framework that aligns MLLM behavior through fine-grained correctional human feedback. (2) We collect high-quality human preference data to provide human-aligned learning signals for MLLMs. (3) We conduct comprehensive experiments to demonstrate the effectiveness of the proposed framework, achieving state-of-the-art performance in trustworthiness among open-source MLLMs. All the code, data, and model weights are open-sourced at https://github.com/RLHF-V/RLHF-V.Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p1": {
+    "text": "The goal of human preference data is to distinguish human-preferred high-quality responses from inferior ones, providing human-aligned learning signals to steer the MLLM behaviors. We first provide an analysis of underlying factors of human preference data, based on which we motivate the human preference collection procedure of RLHF-V. Report issue for preceding element",
+    "masked_text": "The goal of human preference data is to distinguish human-preferred high-quality responses from inferior ones, providing human-aligned learning signals to steer the MLLM behaviors. We first provide an analysis of underlying factors of human preference data, based on which we motivate the human preference collection procedure of RLHF-V.Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p2": {
+    "text": "Human Preference Data: Underlying Factors and Challenges. Given the input x \ud835\udc65 x italic_x (including the image and the prompt), denote the difference between a preferred output y w subscript \ud835\udc66 \ud835\udc64 y_{w} italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT and an inferior output y l subscript \ud835\udc66 \ud835\udc59 y_{l} italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT as Y \ud835\udc4c Y italic_Y . The difference Y \ud835\udc4c Y italic_Y can be essentially decomposed into three factors: Report issue for preceding element Y = Y p + Y s + Y n , \ud835\udc4c subscript \ud835\udc4c \ud835\udc5d subscript \ud835\udc4c \ud835\udc60 subscript \ud835\udc4c \ud835\udc5b Y=Y_{p}+Y_{s}+Y_{n}, italic_Y = italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT + italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT + italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT , (1) where Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT is the truly preferred behavior such as being trustworthy and helpful, Y s subscript \ud835\udc4c \ud835\udc60 Y_{s} italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT denotes the shallow non-robust bias correlated with the data but unrelated to human judgment (e.g., y w subscript \ud835\udc66 \ud835\udc64 y_{w} italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT contains more usage of specific words), and Y n subscript \ud835\udc4c \ud835\udc5b Y_{n} italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT is the random noise factor denoting the linguistic variance of natural language (e.g., different ways of expressing the same meaning). Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT is the factor we want to learn from the difference Y \ud835\udc4c Y italic_Y , while fitting to Y s subscript \ud835\udc4c \ud835\udc60 Y_{s} italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT can lead to reward hacking problems and thus should be avoided. The linguistic variance Y n subscript \ud835\udc4c \ud835\udc5b Y_{n} italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT does not bias the preference learning but makes the learning more difficult, demanding more labeled data to learn to the preferred factor Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT , and thus should also be avoided if possible. Report issue for preceding element",
+    "masked_text": "Human Preference Data: Underlying Factors and Challenges. Given the input x\ud835\udc65xitalic_x (including the image and the prompt), denote the difference between a preferred output ywsubscript\ud835\udc66\ud835\udc64y_{w}italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT and an inferior output ylsubscript\ud835\udc66\ud835\udc59y_{l}italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT as Y\ud835\udc4cYitalic_Y. The difference Y\ud835\udc4cYitalic_Y can be essentially decomposed into three factors:Report issue for preceding element Y=Yp+Ys+Yn,\ud835\udc4csubscript\ud835\udc4c\ud835\udc5dsubscript\ud835\udc4c\ud835\udc60subscript\ud835\udc4c\ud835\udc5bY=Y_{p}+Y_{s}+Y_{n},italic_Y = italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT + italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT + italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT , (1) where Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT is the truly preferred behavior such as being trustworthy and helpful, Yssubscript\ud835\udc4c\ud835\udc60Y_{s}italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT denotes the shallow non-robust bias correlated with the data but unrelated to human judgment (e.g., ywsubscript\ud835\udc66\ud835\udc64y_{w}italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT contains more usage of specific words), and Ynsubscript\ud835\udc4c\ud835\udc5bY_{n}italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT is the random noise factor denoting the linguistic variance of natural language (e.g., different ways of expressing the same meaning). Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT is the factor we want to learn from the difference Y\ud835\udc4cYitalic_Y, while fitting to Yssubscript\ud835\udc4c\ud835\udc60Y_{s}italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT can lead to reward hacking problems and thus should be avoided. The linguistic variance Ynsubscript\ud835\udc4c\ud835\udc5bY_{n}italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT does not bias the preference learning but makes the learning more difficult, demanding more labeled data to learn to the preferred factor Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT, and thus should also be avoided if possible.Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p3": {
+    "text": "The common RLHF practices in LLMs collect human preference Y \ud835\udc4c Y italic_Y in the form of ranking labels, indicating the overall relative quality of responses [ 51 , 39 , 38 ] . According to the above analysis, the practice faces several key challenges: (1) Annotation ambiguity. It can be non-obvious to annotate which response is superior using an overall ranking label due to the fine-grained nature of Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT , especially for complex responses. As shown in Figure 1 , annotators usually cannot agree on assigning an overall ranking to different responses with respective advantages and flaws. We observe the issue leads to unsatisfactory annotation quality of existing RLHF data. Moreover, even if labeled with a clear preference, the optimal responses for the questions typically remain unknown. (2) Learning efficiency. During reinforcement learning, it can be challenging and data-demanding to precisely allocate the sparse and coarse-grained credit from Y \ud835\udc4c Y italic_Y through the linguistic variance Y n subscript \ud835\udc4c \ud835\udc5b Y_{n} italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT to the preferred behavior Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT . Misallocation to the non-robust bias factor Y s subscript \ud835\udc4c \ud835\udc60 Y_{s} italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT will lead models to collapse to exploit trivial rewards [ 7 , 51 ] . Report issue for preceding element",
+    "masked_text": "The common RLHF practices in LLMs collect human preference Y\ud835\udc4cYitalic_Y in the form of ranking labels, indicating the overall relative quality of responses [CITATION]. According to the above analysis, the practice faces several key challenges: (1) Annotation ambiguity. It can be non-obvious to annotate which response is superior using an overall ranking label due to the fine-grained nature of Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT, especially for complex responses. As shown in Figure 1, annotators usually cannot agree on assigning an overall ranking to different responses with respective advantages and flaws. We observe the issue leads to unsatisfactory annotation quality of existing RLHF data. Moreover, even if labeled with a clear preference, the optimal responses for the questions typically remain unknown. (2) Learning efficiency. During reinforcement learning, it can be challenging and data-demanding to precisely allocate the sparse and coarse-grained credit from Y\ud835\udc4cYitalic_Y through the linguistic variance Ynsubscript\ud835\udc4c\ud835\udc5bY_{n}italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT to the preferred behavior Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT. Misallocation to the non-robust bias factor Yssubscript\ud835\udc4c\ud835\udc60Y_{s}italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT will lead models to collapse to exploit trivial rewards [CITATION].Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "OpenAI [2023b]",
+        "title": "GPT-4 technical report, 2023b.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Bai et\u00a0al. [2022a]",
+        "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback.",
+        "authors": "Yuntao Bai, Andy Jones, Kamal Ndousse, Amanda Askell, Anna Chen, Nova DasSarma, Dawn Drain, Stanislav Fort, Deep Ganguli, Tom Henighan, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2204.05862, 2022a."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "LLaMA 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2307.09288, 2023b."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      }
+    ]
+  },
+  "S2.p4": {
+    "text": "Fine-grained Correctional Human Preference Collection. To address the challenges, we propose to collect fine-grained human preferences in the form of segment-level corrections. As shown in Figure 1 , given a flawed output y l subscript \ud835\udc66 \ud835\udc59 y_{l} italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT from MLLMs, we ask human annotators to directly correct the hallucinated segments, resulting in a factually optimal output y w subscript \ud835\udc66 \ud835\udc64 y_{w} italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT . The annotation simultaneously yields a segment-level incremental preference pair ( y w subscript \ud835\udc66 \ud835\udc64 y_{w} italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT , y l subscript \ud835\udc66 \ud835\udc59 y_{l} italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ). The simple procedure effectively addresses the challenges: (1) The annotation of incremental correction in segments is clearer and more operable for human labelers. (2) The dense and fine-grained feedback is directly allocated to the preferred behavior Y p subscript \ud835\udc4c \ud835\udc5d Y_{p} italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT , excluding the linguistic variance Y n subscript \ud835\udc4c \ud835\udc5b Y_{n} italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT and the non-robust bias Y s subscript \ud835\udc4c \ud835\udc60 Y_{s} italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT , therefore improving learning efficiency and preventing reward hacking problems. In experiments, we find that the procedure greatly improves the annotation quality and data efficiency, enabling our model to surpass concurrent models trained on an order of magnitude more labeled preference data (see Section 4.3 ). Report issue for preceding element",
+    "masked_text": "Fine-grained Correctional Human Preference Collection. To address the challenges, we propose to collect fine-grained human preferences in the form of segment-level corrections. As shown in Figure 1, given a flawed output ylsubscript\ud835\udc66\ud835\udc59y_{l}italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT from MLLMs, we ask human annotators to directly correct the hallucinated segments, resulting in a factually optimal output ywsubscript\ud835\udc66\ud835\udc64y_{w}italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT. The annotation simultaneously yields a segment-level incremental preference pair (ywsubscript\ud835\udc66\ud835\udc64y_{w}italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT, ylsubscript\ud835\udc66\ud835\udc59y_{l}italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT). The simple procedure effectively addresses the challenges: (1) The annotation of incremental correction in segments is clearer and more operable for human labelers. (2) The dense and fine-grained feedback is directly allocated to the preferred behavior Ypsubscript\ud835\udc4c\ud835\udc5dY_{p}italic_Y start_POSTSUBSCRIPT italic_p end_POSTSUBSCRIPT, excluding the linguistic variance Ynsubscript\ud835\udc4c\ud835\udc5bY_{n}italic_Y start_POSTSUBSCRIPT italic_n end_POSTSUBSCRIPT and the non-robust bias Yssubscript\ud835\udc4c\ud835\udc60Y_{s}italic_Y start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT, therefore improving learning efficiency and preventing reward hacking problems. In experiments, we find that the procedure greatly improves the annotation quality and data efficiency, enabling our model to surpass concurrent models trained on an order of magnitude more labeled preference data (see Section 4.3).Report issue for preceding element",
+    "citations": []
+  },
+  "S2.p5": {
+    "text": "In practice, we obtain a total of 1.4k prompts as input from existing instruction tuning dataset [ 60 ] and image description prompts generated by GPT-4, and get the responses from Muffin [ 60 ] for human annotation. The responses after annotation contain 64.4 words and 2.65 corrected segments on average. We observe that the corrections are diverse in hallucination types, including objects (41.2%), positions (20.3%), numbers (16.5%), attributes (10.0%), actions (5.3%) and miscellaneous types (6.8%). Report issue for preceding element",
+    "masked_text": "In practice, we obtain a total of 1.4k prompts as input from existing instruction tuning dataset [CITATION] and image description prompts generated by GPT-4, and get the responses from Muffin [CITATION] for human annotation. The responses after annotation contain 64.4 words and 2.65 corrected segments on average. We observe that the corrections are diverse in hallucination types, including objects (41.2%), positions (20.3%), numbers (16.5%), attributes (10.0%), actions (5.3%) and miscellaneous types (6.8%).Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      }
+    ]
+  },
+  "S3.p1": {
+    "text": "We introduce the RLHF-V approach that learns the fine-grained correctional human feedback by dense direct preference optimization. In addition, we also mitigate existing sources of hallucination in MLLM training by addressing the vision-language mismatch problem. Report issue for preceding element",
+    "masked_text": "We introduce the RLHF-V approach that learns the fine-grained correctional human feedback by dense direct preference optimization. In addition, we also mitigate existing sources of hallucination in MLLM training by addressing the vision-language mismatch problem.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS1.p1": {
+    "text": "To leverage the dense and fine-grained human feedback, we present DDPO, a new variant of direct preference optimization [ 42 ] for directly optimizing the MLLM policy against dense human preference. The prevalent RLHF approaches involve fitting a reward model on the preference data, and then training the critique, policy and value models to maximize the reward without deviating too far from the reference model [ 51 , 39 , 13 ] . This procedure requires training multiple LLMs with extensive sampling and training, which suffers from complex procedures and high computation cost. Report issue for preceding element",
+    "masked_text": "To leverage the dense and fine-grained human feedback, we present DDPO, a new variant of direct preference optimization [CITATION] for directly optimizing the MLLM policy against dense human preference. The prevalent RLHF approaches involve fitting a reward model on the preference data, and then training the critique, policy and value models to maximize the reward without deviating too far from the reference model [CITATION]. This procedure requires training multiple LLMs with extensive sampling and training, which suffers from complex procedures and high computation cost.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Cui et\u00a0al. [2023]",
+        "title": "Ultrafeedback: Boosting language models with high-quality feedback.",
+        "authors": "Ganqu Cui, Lifan Yuan, Ning Ding, Guanming Yao, Wei Zhu, Yuan Ni, Guotong Xie, Zhiyuan Liu, and Maosong Sun.",
+        "journal": "arXiv preprint arXiv:2310.01377, 2023."
+      },
+      {
+        "tag": "Rafailov et\u00a0al. [2023]",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D Manning, and Chelsea Finn.",
+        "journal": "arXiv preprint arXiv:2305.18290, 2023."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "LLaMA 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2307.09288, 2023b."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      }
+    ]
+  },
+  "S3.SS1.p2": {
+    "text": "Direct Preference Optimization (DPO) [ 42 ] solves this reinforcement learning objective in a simpler equivalent supervised fashion. Here we briefly introduce the DPO method, and refer readers to the original paper for more details. The key observation of DPO is that the reward function r \u2062 ( x , y ) \ud835\udc5f \ud835\udc65 \ud835\udc66 r(x,y) italic_r ( italic_x , italic_y ) can be analytically expressed by its optimal policy model \u03c0 * \u2062 ( y | x ) subscript \ud835\udf0b conditional \ud835\udc66 \ud835\udc65 \\pi_{*}(y|x) italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) and reference model \u03c0 ref \u2062 ( y | x ) subscript \ud835\udf0b ref conditional \ud835\udc66 \ud835\udc65 \\pi_{\\text{ref}}(y|x) italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ) , and therefore we can directly optimize the policy model under proper forms on the preference data. Specifically, the reward model r \u2062 ( x , y ) \ud835\udc5f \ud835\udc65 \ud835\udc66 r(x,y) italic_r ( italic_x , italic_y ) can be represented as: Report issue for preceding element",
+    "masked_text": "Direct Preference Optimization (DPO) [CITATION] solves this reinforcement learning objective in a simpler equivalent supervised fashion. Here we briefly introduce the DPO method, and refer readers to the original paper for more details. The key observation of DPO is that the reward function r\u2062(x,y)\ud835\udc5f\ud835\udc65\ud835\udc66r(x,y)italic_r ( italic_x , italic_y ) can be analytically expressed by its optimal policy model \u03c0*\u2062(y|x)subscript\ud835\udf0bconditional\ud835\udc66\ud835\udc65\\pi_{*}(y|x)italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) and reference model \u03c0ref\u2062(y|x)subscript\ud835\udf0brefconditional\ud835\udc66\ud835\udc65\\pi_{\\text{ref}}(y|x)italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ), and therefore we can directly optimize the policy model under proper forms on the preference data. Specifically, the reward model r\u2062(x,y)\ud835\udc5f\ud835\udc65\ud835\udc66r(x,y)italic_r ( italic_x , italic_y ) can be represented as:Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Rafailov et\u00a0al. [2023]",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D Manning, and Chelsea Finn.",
+        "journal": "arXiv preprint arXiv:2305.18290, 2023."
+      }
+    ]
+  },
+  "S3.SS1.p3": {
+    "text": "r \u2062 ( x , y ) = \u03b2 \u2062 log \u2061 \u03c0 * \u2062 ( y | x ) \u03c0 ref \u2062 ( y | x ) + \u03b2 \u2062 log \u2061 Z \u2062 ( x ) , \ud835\udc5f \ud835\udc65 \ud835\udc66 \ud835\udefd subscript \ud835\udf0b conditional \ud835\udc66 \ud835\udc65 subscript \ud835\udf0b ref conditional \ud835\udc66 \ud835\udc65 \ud835\udefd \ud835\udc4d \ud835\udc65 \\small r(x,y)=\\beta\\log\\frac{\\pi_{*}(y|x)}{\\pi_{\\text{ref}}(y|x)}+\\beta\\log Z(%\nx), italic_r ( italic_x , italic_y ) = italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ) end_ARG + italic_\u03b2 roman_log italic_Z ( italic_x ) , (2) where \u03b2 \ud835\udefd \\beta italic_\u03b2 is a constant and Z \u2062 ( x ) \ud835\udc4d \ud835\udc65 Z(x) italic_Z ( italic_x ) is the partition function. Based on this observation, the policy model can be directly optimized on the human feedback data: Report issue for preceding element \u2112 = \u2212 \ud835\udd3c ( x , y w , y l ) \u2062 [ log \u2061 \u03c3 \u2062 ( r \u2062 ( x , y w ) \u2212 r \u2062 ( x , y l ) ) ] = \u2212 \ud835\udd3c ( x , y w , y l ) \u2062 [ log \u2061 \u03c3 \u2062 ( \u03b2 \u2062 log \u2061 \u03c0 * \u2062 ( y w | x ) \u03c0 ref \u2062 ( y w | x ) \u2212 \u03b2 \u2062 log \u2061 \u03c0 * \u2062 ( y l | x ) \u03c0 ref \u2062 ( y l | x ) ) ] , \u2112 absent subscript \ud835\udd3c \ud835\udc65 subscript \ud835\udc66 \ud835\udc64 subscript \ud835\udc66 \ud835\udc59 delimited-[] \ud835\udf0e \ud835\udc5f \ud835\udc65 subscript \ud835\udc66 \ud835\udc64 \ud835\udc5f \ud835\udc65 subscript \ud835\udc66 \ud835\udc59 missing-subexpression absent subscript \ud835\udd3c \ud835\udc65 subscript \ud835\udc66 \ud835\udc64 subscript \ud835\udc66 \ud835\udc59 delimited-[] \ud835\udf0e \ud835\udefd subscript \ud835\udf0b conditional subscript \ud835\udc66 \ud835\udc64 \ud835\udc65 subscript \ud835\udf0b ref conditional subscript \ud835\udc66 \ud835\udc64 \ud835\udc65 \ud835\udefd subscript \ud835\udf0b conditional subscript \ud835\udc66 \ud835\udc59 \ud835\udc65 subscript \ud835\udf0b ref conditional subscript \ud835\udc66 \ud835\udc59 \ud835\udc65 \\begin{aligned} \\mathcal{L}&=-\\mathbb{E}_{(x,y_{w},y_{l})}\\bigl{[}\\log\\sigma(r%\n(x,y_{w})-r(x,y_{l}))\\bigr{]}\\\\\n&=-\\mathbb{E}_{(x,y_{w},y_{l})}\\bigl{[}\\log\\sigma(\\beta\\log\\frac{\\pi_{*}(y_{w}%\n|x)}{\\pi_{\\text{ref}}(y_{w}|x)}-\\beta\\log\\frac{\\pi_{*}(y_{l}|x)}{\\pi_{\\text{%\nref}}(y_{l}|x)})\\bigr{]},\\end{aligned} start_ROW start_CELL caligraphic_L end_CELL start_CELL = - blackboard_E start_POSTSUBSCRIPT ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) end_POSTSUBSCRIPT [ roman_log italic_\u03c3 ( italic_r ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT ) - italic_r ( italic_x , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) ) ] end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL = - blackboard_E start_POSTSUBSCRIPT ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) end_POSTSUBSCRIPT [ roman_log italic_\u03c3 ( italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT | italic_x ) end_ARG - italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT | italic_x ) end_ARG ) ] , end_CELL end_ROW Report issue for preceding element (3) where the reference model \u03c0 ref \u2062 ( y | x ) subscript \ud835\udf0b ref conditional \ud835\udc66 \ud835\udc65 \\pi_{\\text{ref}}(y|x) italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ) is usually implemented by an instruction-tuned base model we want to improve, and is kept fixed during DPO training. Only the policy model \u03c0 * \u2062 ( y | x ) subscript \ud835\udf0b conditional \ud835\udc66 \ud835\udc65 \\pi_{*}(y|x) italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) is updated. We note that DPO is more simple, efficient and stable in aligning MLLM behaviors compared with traditional RLHF approaches. Report issue for preceding element",
+    "masked_text": "r\u2062(x,y)=\u03b2\u2062log\u2061\u03c0*\u2062(y|x)\u03c0ref\u2062(y|x)+\u03b2\u2062log\u2061Z\u2062(x),\ud835\udc5f\ud835\udc65\ud835\udc66\ud835\udefdsubscript\ud835\udf0bconditional\ud835\udc66\ud835\udc65subscript\ud835\udf0brefconditional\ud835\udc66\ud835\udc65\ud835\udefd\ud835\udc4d\ud835\udc65\\small r(x,y)=\\beta\\log\\frac{\\pi_{*}(y|x)}{\\pi_{\\text{ref}}(y|x)}+\\beta\\log Z(% x),italic_r ( italic_x , italic_y ) = italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ) end_ARG + italic_\u03b2 roman_log italic_Z ( italic_x ) , (2) where \u03b2\ud835\udefd\\betaitalic_\u03b2 is a constant and Z\u2062(x)\ud835\udc4d\ud835\udc65Z(x)italic_Z ( italic_x ) is the partition function. Based on this observation, the policy model can be directly optimized on the human feedback data: Report issue for preceding element \u2112=\u2212\ud835\udd3c(x,yw,yl)\u2062[log\u2061\u03c3\u2062(r\u2062(x,yw)\u2212r\u2062(x,yl))]=\u2212\ud835\udd3c(x,yw,yl)\u2062[log\u2061\u03c3\u2062(\u03b2\u2062log\u2061\u03c0*\u2062(yw|x)\u03c0ref\u2062(yw|x)\u2212\u03b2\u2062log\u2061\u03c0*\u2062(yl|x)\u03c0ref\u2062(yl|x))],\u2112absentsubscript\ud835\udd3c\ud835\udc65subscript\ud835\udc66\ud835\udc64subscript\ud835\udc66\ud835\udc59delimited-[]\ud835\udf0e\ud835\udc5f\ud835\udc65subscript\ud835\udc66\ud835\udc64\ud835\udc5f\ud835\udc65subscript\ud835\udc66\ud835\udc59missing-subexpressionabsentsubscript\ud835\udd3c\ud835\udc65subscript\ud835\udc66\ud835\udc64subscript\ud835\udc66\ud835\udc59delimited-[]\ud835\udf0e\ud835\udefdsubscript\ud835\udf0bconditionalsubscript\ud835\udc66\ud835\udc64\ud835\udc65subscript\ud835\udf0brefconditionalsubscript\ud835\udc66\ud835\udc64\ud835\udc65\ud835\udefdsubscript\ud835\udf0bconditionalsubscript\ud835\udc66\ud835\udc59\ud835\udc65subscript\ud835\udf0brefconditionalsubscript\ud835\udc66\ud835\udc59\ud835\udc65\\begin{aligned} \\mathcal{L}&=-\\mathbb{E}_{(x,y_{w},y_{l})}\\bigl{[}\\log\\sigma(r% (x,y_{w})-r(x,y_{l}))\\bigr{]}\\\\ &=-\\mathbb{E}_{(x,y_{w},y_{l})}\\bigl{[}\\log\\sigma(\\beta\\log\\frac{\\pi_{*}(y_{w}% |x)}{\\pi_{\\text{ref}}(y_{w}|x)}-\\beta\\log\\frac{\\pi_{*}(y_{l}|x)}{\\pi_{\\text{% ref}}(y_{l}|x)})\\bigr{]},\\end{aligned}start_ROW start_CELL caligraphic_L end_CELL start_CELL = - blackboard_E start_POSTSUBSCRIPT ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) end_POSTSUBSCRIPT [ roman_log italic_\u03c3 ( italic_r ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT ) - italic_r ( italic_x , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) ) ] end_CELL end_ROW start_ROW start_CELL end_CELL start_CELL = - blackboard_E start_POSTSUBSCRIPT ( italic_x , italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT , italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT ) end_POSTSUBSCRIPT [ roman_log italic_\u03c3 ( italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_w end_POSTSUBSCRIPT | italic_x ) end_ARG - italic_\u03b2 roman_log divide start_ARG italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT | italic_x ) end_ARG start_ARG italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y start_POSTSUBSCRIPT italic_l end_POSTSUBSCRIPT | italic_x ) end_ARG ) ] , end_CELL end_ROWReport issue for preceding element (3) where the reference model \u03c0ref\u2062(y|x)subscript\ud835\udf0brefconditional\ud835\udc66\ud835\udc65\\pi_{\\text{ref}}(y|x)italic_\u03c0 start_POSTSUBSCRIPT ref end_POSTSUBSCRIPT ( italic_y | italic_x ) is usually implemented by an instruction-tuned base model we want to improve, and is kept fixed during DPO training. Only the policy model \u03c0*\u2062(y|x)subscript\ud835\udf0bconditional\ud835\udc66\ud835\udc65\\pi_{*}(y|x)italic_\u03c0 start_POSTSUBSCRIPT * end_POSTSUBSCRIPT ( italic_y | italic_x ) is updated. We note that DPO is more simple, efficient and stable in aligning MLLM behaviors compared with traditional RLHF approaches.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS1.p4": {
+    "text": "Leveraging dense and fine-grained segment-level feedback essentially requires the model to evaluate the reward of segment-level actions. However, DPO is designed for learning preference in the form of overall response ranking labels. Specifically, the action score of DPO is given by the likelihood of the holistic response in practice, where different segments are equally treated: Report issue for preceding element",
+    "masked_text": "Leveraging dense and fine-grained segment-level feedback essentially requires the model to evaluate the reward of segment-level actions. However, DPO is designed for learning preference in the form of overall response ranking labels. Specifically, the action score of DPO is given by the likelihood of the holistic response in practice, where different segments are equally treated:Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS1.p5": {
+    "text": "log \u2061 \u03c0 \u2062 ( y | x ) = \u2211 y i \u2208 y log \u2061 p \u2062 ( y i | x , y < i ) , \ud835\udf0b conditional \ud835\udc66 \ud835\udc65 subscript subscript \ud835\udc66 \ud835\udc56 \ud835\udc66 \ud835\udc5d conditional subscript \ud835\udc66 \ud835\udc56 \ud835\udc65 subscript \ud835\udc66 absent \ud835\udc56 \\small\\log\\pi(y|x)=\\sum\\limits_{y_{i}\\in y}\\log p(y_{i}|x,y_{<i}), roman_log italic_\u03c0 ( italic_y | italic_x ) = \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) , (4) where y i subscript \ud835\udc66 \ud835\udc56 y_{i} italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT is the i \ud835\udc56 i italic_i -th token of the response y \ud835\udc66 y italic_y . We argue that compared with unchanged segments y u subscript \ud835\udc66 \ud835\udc62 y_{u} italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT , corrected segments y c subscript \ud835\udc66 \ud835\udc50 y_{c} italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT more directly reveal human judgment in hallucination, and thus should contribute more to the overall action evaluation. Therefore, we propose to score the response as a weighted aggregation of the fine-grained segments: 1 1 1 For denotation simplicity, without confusion we also use y u subscript \ud835\udc66 \ud835\udc62 y_{u} italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT and y c subscript \ud835\udc66 \ud835\udc50 y_{c} italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT to denote the set of tokens in unchanged and corrected segments respectively. Report issue for preceding element",
+    "masked_text": "log\u2061\u03c0\u2062(y|x)=\u2211yi\u2208ylog\u2061p\u2062(yi|x,y<i),\ud835\udf0bconditional\ud835\udc66\ud835\udc65subscriptsubscript\ud835\udc66\ud835\udc56\ud835\udc66\ud835\udc5dconditionalsubscript\ud835\udc66\ud835\udc56\ud835\udc65subscript\ud835\udc66absent\ud835\udc56\\small\\log\\pi(y|x)=\\sum\\limits_{y_{i}\\in y}\\log p(y_{i}|x,y_{<i}),roman_log italic_\u03c0 ( italic_y | italic_x ) = \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) , (4) where yisubscript\ud835\udc66\ud835\udc56y_{i}italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT is the i\ud835\udc56iitalic_i-th token of the response y\ud835\udc66yitalic_y. We argue that compared with unchanged segments yusubscript\ud835\udc66\ud835\udc62y_{u}italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT, corrected segments ycsubscript\ud835\udc66\ud835\udc50y_{c}italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT more directly reveal human judgment in hallucination, and thus should contribute more to the overall action evaluation. Therefore, we propose to score the response as a weighted aggregation of the fine-grained segments:111For denotation simplicity, without confusion we also use yusubscript\ud835\udc66\ud835\udc62y_{u}italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT and ycsubscript\ud835\udc66\ud835\udc50y_{c}italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT to denote the set of tokens in unchanged and corrected segments respectively.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS1.p6": {
+    "text": "log \u2061 \u03c0 \u2062 ( y | x ) = 1 N \u2062 [ \u2211 y i \u2208 y u log \u2061 p \u2062 ( y i | x , y < i ) + \u03b3 \u2062 \u2211 y i \u2208 y c log \u2061 p \u2062 ( y i | x , y < i ) ] , \ud835\udf0b conditional \ud835\udc66 \ud835\udc65 1 \ud835\udc41 delimited-[] subscript subscript \ud835\udc66 \ud835\udc56 subscript \ud835\udc66 \ud835\udc62 \ud835\udc5d conditional subscript \ud835\udc66 \ud835\udc56 \ud835\udc65 subscript \ud835\udc66 absent \ud835\udc56 \ud835\udefe subscript subscript \ud835\udc66 \ud835\udc56 subscript \ud835\udc66 \ud835\udc50 \ud835\udc5d conditional subscript \ud835\udc66 \ud835\udc56 \ud835\udc65 subscript \ud835\udc66 absent \ud835\udc56 \\log\\pi(y|x)=\\frac{1}{N}\\bigl{[}\\sum\\limits_{y_{i}\\in y_{u}}\\log p(y_{i}|x,y_{%\n<i})+\\gamma\\sum\\limits_{y_{i}\\in y_{c}}\\log p(y_{i}|x,y_{<i})\\bigr{]}, roman_log italic_\u03c0 ( italic_y | italic_x ) = divide start_ARG 1 end_ARG start_ARG italic_N end_ARG [ \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) + italic_\u03b3 \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) ] , Report issue for preceding element (5) where \u03b3 > 1 \ud835\udefe 1 \\gamma>1 italic_\u03b3 > 1 is a weighting hyperprameter, and larger \u03b3 \ud835\udefe \\gamma italic_\u03b3 means more contribution from the corrected segments. N = | y u | + \u03b3 \u2062 | y c | \ud835\udc41 subscript \ud835\udc66 \ud835\udc62 \ud835\udefe subscript \ud835\udc66 \ud835\udc50 N=|y_{u}|+\\gamma|y_{c}| italic_N = | italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT | + italic_\u03b3 | italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT | is a normalizing factor, preventing longer responses from getting higher scores. In this way, corrected segments are highlighted to receive stronger human preference feedback to be factually grounded. In experiments, we find that DDPO can better exploit the fine-grained human feedback, leading to more trustworthy responses. Report issue for preceding element",
+    "masked_text": "log\u2061\u03c0\u2062(y|x)=1N\u2062[\u2211yi\u2208yulog\u2061p\u2062(yi|x,y<i)+\u03b3\u2062\u2211yi\u2208yclog\u2061p\u2062(yi|x,y<i)],\ud835\udf0bconditional\ud835\udc66\ud835\udc651\ud835\udc41delimited-[]subscriptsubscript\ud835\udc66\ud835\udc56subscript\ud835\udc66\ud835\udc62\ud835\udc5dconditionalsubscript\ud835\udc66\ud835\udc56\ud835\udc65subscript\ud835\udc66absent\ud835\udc56\ud835\udefesubscriptsubscript\ud835\udc66\ud835\udc56subscript\ud835\udc66\ud835\udc50\ud835\udc5dconditionalsubscript\ud835\udc66\ud835\udc56\ud835\udc65subscript\ud835\udc66absent\ud835\udc56\\log\\pi(y|x)=\\frac{1}{N}\\bigl{[}\\sum\\limits_{y_{i}\\in y_{u}}\\log p(y_{i}|x,y_{% <i})+\\gamma\\sum\\limits_{y_{i}\\in y_{c}}\\log p(y_{i}|x,y_{<i})\\bigr{]},roman_log italic_\u03c0 ( italic_y | italic_x ) = divide start_ARG 1 end_ARG start_ARG italic_N end_ARG [ \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) + italic_\u03b3 \u2211 start_POSTSUBSCRIPT italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT \u2208 italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT end_POSTSUBSCRIPT roman_log italic_p ( italic_y start_POSTSUBSCRIPT italic_i end_POSTSUBSCRIPT | italic_x , italic_y start_POSTSUBSCRIPT < italic_i end_POSTSUBSCRIPT ) ] ,Report issue for preceding element (5) where \u03b3>1\ud835\udefe1\\gamma>1italic_\u03b3 > 1 is a weighting hyperprameter, and larger \u03b3\ud835\udefe\\gammaitalic_\u03b3 means more contribution from the corrected segments. N=|yu|+\u03b3\u2062|yc|\ud835\udc41subscript\ud835\udc66\ud835\udc62\ud835\udefesubscript\ud835\udc66\ud835\udc50N=|y_{u}|+\\gamma|y_{c}|italic_N = | italic_y start_POSTSUBSCRIPT italic_u end_POSTSUBSCRIPT | + italic_\u03b3 | italic_y start_POSTSUBSCRIPT italic_c end_POSTSUBSCRIPT | is a normalizing factor, preventing longer responses from getting higher scores. In this way, corrected segments are highlighted to receive stronger human preference feedback to be factually grounded. In experiments, we find that DDPO can better exploit the fine-grained human feedback, leading to more trustworthy responses.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS2.p1": {
+    "text": "DDPO reduces hallucination by learning from human feedback. From another cause-and-effect view, we examine the mainstream MLLM training paradigm, and identify sources of hallucinations in training MLLMs. Based on the observations, we motivate a more trustworthy training recipe. Report issue for preceding element",
+    "masked_text": "DDPO reduces hallucination by learning from human feedback. From another cause-and-effect view, we examine the mainstream MLLM training paradigm, and identify sources of hallucinations in training MLLMs. Based on the observations, we motivate a more trustworthy training recipe.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS2.p2": {
+    "text": "In general, current MLLMs learn multimodal capabilities in a supervised learning paradigm, where the model outputs are supervised against the ground-truth text associated with the image. In such a paradigm, hallucinations can be introduced by mismatches between images and text data. In practice, the mismatch can come from: (1) low-quality text in pre-training and instruction tuning data, and (2) careless image augmentation during training. We specify the issues and solutions in the following. Report issue for preceding element",
+    "masked_text": "In general, current MLLMs learn multimodal capabilities in a supervised learning paradigm, where the model outputs are supervised against the ground-truth text associated with the image. In such a paradigm, hallucinations can be introduced by mismatches between images and text data. In practice, the mismatch can come from: (1) low-quality text in pre-training and instruction tuning data, and (2) careless image augmentation during training. We specify the issues and solutions in the following.Report issue for preceding element",
+    "citations": []
+  },
+  "S3.SS2.p3": {
+    "text": "Addressing Low-quality Text Influence. Current pre-training data of MLLMs are automatically crawled from the Web [ 44 , 9 , 10 ] , which inevitably suffers from severe noise in the text even after extensive post-processing. Supervising MLLMs against such data is essentially teaching them to hallucinate (e.g., describing elements not present in the image, or producing inconsistent descriptions with the image). Similarly, most existing visual instruction tuning datasets are generated by ChatGPT/GPT-4 according to intermediate text annotations [ 35 , 33 , 60 ] , which inevitably introduces hallucination into instruction data. While it can be difficult to repair existing pre-training and instruction-tuning data, we find that the influence can be countered by simply post-training MLLMs on high-quality visual question-answering datasets. Intuitively, human-labeled datasets can provide accurate learning signals to calibrate model behaviors from hallucinations, and also enhance instruction-following capabilities. In our experiments, we find that simply fine-tuning the model on VQAv2 [ 18 ] can significantly reduce the hallucination rate (see Section 4.3 ). Report issue for preceding element",
+    "masked_text": "Addressing Low-quality Text Influence. Current pre-training data of MLLMs are automatically crawled from the Web [CITATION], which inevitably suffers from severe noise in the text even after extensive post-processing. Supervising MLLMs against such data is essentially teaching them to hallucinate (e.g., describing elements not present in the image, or producing inconsistent descriptions with the image). Similarly, most existing visual instruction tuning datasets are generated by ChatGPT/GPT-4 according to intermediate text annotations [CITATION], which inevitably introduces hallucination into instruction data. While it can be difficult to repair existing pre-training and instruction-tuning data, we find that the influence can be countered by simply post-training MLLMs on high-quality visual question-answering datasets. Intuitively, human-labeled datasets can provide accurate learning signals to calibrate model behaviors from hallucinations, and also enhance instruction-following capabilities. In our experiments, we find that simply fine-tuning the model on VQAv2 [CITATION] can significantly reduce the hallucination rate (see Section 4.3).Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Changpinyo et\u00a0al. [2021]",
+        "title": "Conceptual 12M: Pushing web-scale image-text pre-training to recognize long-tail visual concepts.",
+        "authors": "Soravit Changpinyo, Piyush Sharma, Nan Ding, and Radu Soricut.",
+        "journal": "InCVPR, pages 3558\u20133568, 2021."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Schuhmann et\u00a0al. [2022]",
+        "title": "LAION-5B: An open large-scale dataset for training next generation image-text models.",
+        "authors": "Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade Gordon, Ross Wightman, Mehdi Cherti, Theo Coombes, Aarush Katta, Clayton Mullis, Mitchell Wortsman, et\u00a0al.",
+        "journal": "NeurIPS, 35:25278\u201325294, 2022."
+      },
+      {
+        "tag": "Byeon et\u00a0al. [2022]",
+        "title": "COYO-700M: Image-text pair dataset, 2022.",
+        "authors": "Minwoo Byeon, Beomhee Park, Haecheon Kim, Sungjun Lee, Woonhyuk Baek, and Saehoon Kim.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Goyal et\u00a0al. [2017]",
+        "title": "Making the v in vqa matter: Elevating the role of image understanding in visual question answering.",
+        "authors": "Yash Goyal, Tejas Khot, Douglas Summers-Stay, Dhruv Batra, and Devi Parikh.",
+        "journal": "InCVPR, pages 6904\u20136913, 2017."
+      }
+    ]
+  },
+  "S3.SS2.p4": {
+    "text": "Mitigating Untrustworthy Image Augmentation. The vision-language mismatch can also come from the image domain. Data augmentation is widely adopted to improve the data diversity and model robustness in various multimodal models [ 41 , 27 , 14 , 60 , 53 ] . However, we note that such augmentation must be performed with care in training MLLMs. The key problem is that some image augmentation operations can significantly change the semantics of images, which may make the augmented image inconsistent with the associated text. For example, during augmentation, random cropping can make the objects mentioned in the text absent from the image. This can make the model describe non-existing objects, with wrong numbers, and in wrong positions. In our model training, we exclude image cropping in data augmentation, which improves the trustworthiness of MLLMs (see Section 4.3 ). Report issue for preceding element",
+    "masked_text": "Mitigating Untrustworthy Image Augmentation. The vision-language mismatch can also come from the image domain. Data augmentation is widely adopted to improve the data diversity and model robustness in various multimodal models [CITATION]. However, we note that such augmentation must be performed with care in training MLLMs. The key problem is that some image augmentation operations can significantly change the semantics of images, which may make the augmented image inconsistent with the associated text. For example, during augmentation, random cropping can make the objects mentioned in the text absent from the image. This can make the model describe non-existing objects, with wrong numbers, and in wrong positions. In our model training, we exclude image cropping in data augmentation, which improves the trustworthiness of MLLMs (see Section 4.3).Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Radford et\u00a0al. [2021]",
+        "title": "Learning transferable visual models from natural language supervision.",
+        "authors": "Alec Radford, Jong\u00a0Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et\u00a0al.",
+        "journal": "InICML, pages 8748\u20138763. PMLR, 2021."
+      },
+      {
+        "tag": "Wang et\u00a0al. [2023b]",
+        "title": "Image as a foreign language: BEiT pretraining for vision and vision-language tasks.",
+        "authors": "Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu, Kriti Aggarwal, Owais\u00a0Khan Mohammed, Saksham Singhal, Subhojit Som, et\u00a0al.",
+        "journal": "InCVPR, pages 19175\u201319186, 2023b."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "arXiv preprint arXiv:2301.12597, 2023c."
+      }
+    ]
+  },
+  "S4.p1": {
+    "text": "In this section, we empirically investigate the effectiveness of RLHF-V in aligning MLLM behaviors. In addition to evaluating the trustworthiness and helpfulness of conversation, we also analyze the data efficiency and scalability as well as the robustness. We refer readers to the appendix for more details on benchmarks, baselines and results. Report issue for preceding element",
+    "masked_text": "In this section, we empirically investigate the effectiveness of RLHF-V in aligning MLLM behaviors. In addition to evaluating the trustworthiness and helpfulness of conversation, we also analyze the data efficiency and scalability as well as the robustness. We refer readers to the appendix for more details on benchmarks, baselines and results.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p1": {
+    "text": "We first introduce the experimental settings, including evaluation, baselines, and implementation details. Report issue for preceding element",
+    "masked_text": "We first introduce the experimental settings, including evaluation, baselines, and implementation details.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p2": {
+    "text": "Evaluation. We evaluate the models from two perspectives, including trustworthiness reflecting the hallucination degree, and helpfulness reflecting the general interaction quality. Similar to [ 48 ] , we find binary classification evaluation (i.e., answering yes/no) [ 29 , 17 ] cannot well reflect the MLLM behaviors in open-ended long-form interactions. We thus adopt benchmarks that directly evaluate the long-form responses, which are more closely related to the practical usage scenarios of MLLMs. For trustworthiness, we perform evaluation on three benchmarks: Report issue for preceding element",
+    "masked_text": "Evaluation. We evaluate the models from two perspectives, including trustworthiness reflecting the hallucination degree, and helpfulness reflecting the general interaction quality. Similar to [CITATION], we find binary classification evaluation (i.e., answering yes/no) [CITATION] cannot well reflect the MLLM behaviors in open-ended long-form interactions. We thus adopt benchmarks that directly evaluate the long-form responses, which are more closely related to the practical usage scenarios of MLLMs. For trustworthiness, we perform evaluation on three benchmarks:Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Li et\u00a0al. [2023e]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "arXiv preprint arXiv:2305.10355, 2023e."
+      },
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Fu et\u00a0al. [2023]",
+        "title": "MME: A comprehensive evaluation benchmark for multimodal large language models.",
+        "authors": "Chaoyou Fu, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Zhenyu Qiu, Wei Lin, Jinrui Yang, Xiawu Zheng, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2306.13394, 2023."
+      }
+    ]
+  },
+  "S4.SS1.p3": {
+    "text": "(1) Object HalBench [ 43 ] is a widely adopted benchmark for assessing object hallucination in detailed image descriptions. It compares the objects in the model output with object labels exhaustively annotated for COCO images [ 31 ] to detect object hallucination. To improve the evaluation stability, we augment the benchmark with 8 diverse prompts for detailed image descriptions. We report the response-level hallucination rate (i.e., the percentage of responses that have hallucinations), as well as the mention-level hallucination rate (i.e., the percentage of hallucinated object mentions among all object mentions). Report issue for preceding element",
+    "masked_text": "(1) Object HalBench [CITATION] is a widely adopted benchmark for assessing object hallucination in detailed image descriptions. It compares the objects in the model output with object labels exhaustively annotated for COCO images [CITATION] to detect object hallucination. To improve the evaluation stability, we augment the benchmark with 8 diverse prompts for detailed image descriptions. We report the response-level hallucination rate (i.e., the percentage of responses that have hallucinations), as well as the mention-level hallucination rate (i.e., the percentage of hallucinated object mentions among all object mentions).Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Rohrbach et\u00a0al. [2018]",
+        "title": "Object hallucination in image captioning.",
+        "authors": "Anna Rohrbach, Lisa\u00a0Anne Hendricks, Kaylee Burns, Trevor Darrell, and Kate Saenko.",
+        "journal": "InEMNLP, pages 4035\u20134045, 2018."
+      },
+      {
+        "tag": "Lin et\u00a0al. [2014]",
+        "title": "Microsoft COCO: Common objects in context.",
+        "authors": "Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll\u00e1r, and C\u00a0Lawrence Zitnick.",
+        "journal": "InECCV, pages 740\u2013755. Springer, 2014."
+      }
+    ]
+  },
+  "S4.SS1.p4": {
+    "text": "(2) MMHal-Bench [ 48 ] evaluates hallucinations and response informativeness. It employs GPT-4 to compare model output with human response and several object labels to decide the scores. In experiments, we find that GPT-4 cannot reliably detect hallucinations due to the incompleteness of MMHal-Bench text annotations. We therefore only report the informativeness score from GPT-4, and assess response-level hallucination rate by human evaluation. Report issue for preceding element",
+    "masked_text": "(2) MMHal-Bench [CITATION] evaluates hallucinations and response informativeness. It employs GPT-4 to compare model output with human response and several object labels to decide the scores. In experiments, we find that GPT-4 cannot reliably detect hallucinations due to the incompleteness of MMHal-Bench text annotations. We therefore only report the informativeness score from GPT-4, and assess response-level hallucination rate by human evaluation.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      }
+    ]
+  },
+  "S4.SS1.p5": {
+    "text": "(3) MHumanEval. The above evaluations are either limited to common object hallucination or dominated by short-form question answering (i.e., questions that can be sufficiently answered by a few words). To provide a more reliable and comprehensive evaluation over diverse hallucination types, we present MHumanEval benchmark, which covers both long-form image descriptions, and short-form questions. The benchmark contains 146 samples collected from Object HalBench (50) and MMHal-Bench (96). Given model responses, we ask human annotators to label the hallucinated segments and hallucination types of the segments, including objects, positions, numbers and others. We report the response-level hallucination rate on these types. Report issue for preceding element",
+    "masked_text": "(3) MHumanEval. The above evaluations are either limited to common object hallucination or dominated by short-form question answering (i.e., questions that can be sufficiently answered by a few words). To provide a more reliable and comprehensive evaluation over diverse hallucination types, we present MHumanEval benchmark, which covers both long-form image descriptions, and short-form questions. The benchmark contains 146 samples collected from Object HalBench (50) and MMHal-Bench (96). Given model responses, we ask human annotators to label the hallucinated segments and hallucination types of the segments, including objects, positions, numbers and others. We report the response-level hallucination rate on these types.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS1.p6": {
+    "text": "For helpfulness, we adopt two benchmarks: (1) LLaVA Bench [ 35 ] is a widely adopted benchmark for assessing multimodal conversation, detailed description and complex reasoning capabilities. It scores model output against reference response via GPT-4. (2) VQAv2 [ 18 ] is a popular dataset for short-form visual question answering. Report issue for preceding element",
+    "masked_text": "For helpfulness, we adopt two benchmarks: (1) LLaVA Bench [CITATION] is a widely adopted benchmark for assessing multimodal conversation, detailed description and complex reasoning capabilities. It scores model output against reference response via GPT-4. (2) VQAv2 [CITATION] is a popular dataset for short-form visual question answering.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Goyal et\u00a0al. [2017]",
+        "title": "Making the v in vqa matter: Elevating the role of image understanding in visual question answering.",
+        "authors": "Yash Goyal, Tejas Khot, Douglas Summers-Stay, Dhruv Batra, and Devi Parikh.",
+        "journal": "InCVPR, pages 6904\u20136913, 2017."
+      }
+    ]
+  },
+  "S4.SS1.p7": {
+    "text": "Baselines. We compare our model with state-of-the-art baselines. (1) General baselines. We adopt Qwen-VL-Chat [ 6 ] , LLaVA [ 35 ] , LLaVA 1.5 [ 34 ] , Muffin [ 60 ] , and InstructBLIP [ 14 ] as representative general baselines. These models are mostly pre-trained on large-scale multimodal data, and fine-tuned on high-quality instruction data, achieving strong performance across various multimodal tasks. (2) Baselines tailored for hallucination problems. LRV [ 33 ] is fine-tuned on 400k instruction data generated by GPT-4, and mitigates hallucination by limiting the response length. The concurrent LLaVA-RLHF [ 48 ] employs the strong 13B Vicuna v1.5 [ 62 ] (fine-tuned from LLaMA-2 [ 51 ] ) as LLM backbone. It trains the reward model on 10k human-labeled preference data, and performs proximal policy optimization [ 45 ] on 72k factually augmented data. (3) Commercial Baseline. We also include GPT-4V [ 37 ] as a strong reference, evaluating the gap between the open-source models and state-of-the-art commercial models. Report issue for preceding element",
+    "masked_text": "Baselines. We compare our model with state-of-the-art baselines. (1) General baselines. We adopt Qwen-VL-Chat [CITATION], LLaVA [CITATION], LLaVA 1.5 [CITATION], Muffin [CITATION], and InstructBLIP [CITATION] as representative general baselines. These models are mostly pre-trained on large-scale multimodal data, and fine-tuned on high-quality instruction data, achieving strong performance across various multimodal tasks. (2) Baselines tailored for hallucination problems. LRV [CITATION] is fine-tuned on 400k instruction data generated by GPT-4, and mitigates hallucination by limiting the response length. The concurrent LLaVA-RLHF [CITATION] employs the strong 13B Vicuna v1.5 [CITATION] (fine-tuned from LLaMA-2 [CITATION]) as LLM backbone. It trains the reward model on 10k human-labeled preference data, and performs proximal policy optimization [CITATION] on 72k factually augmented data. (3) Commercial Baseline. We also include GPT-4V [CITATION] as a strong reference, evaluating the gap between the open-source models and state-of-the-art commercial models.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Zheng et\u00a0al. [2023]",
+        "title": "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena, 2023.",
+        "authors": "Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, Eric.\u00a0P Xing, Hao Zhang, Joseph\u00a0E. Gonzalez, and Ion Stoica.",
+        "journal": ""
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023b]",
+        "title": "LLaMA 2: Open foundation and fine-tuned chat models.",
+        "authors": "Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2307.09288, 2023b."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Schulman et\u00a0al. [2017]",
+        "title": "Proximal policy optimization algorithms.",
+        "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.",
+        "journal": "arXiv preprint arXiv:1707.06347, 2017."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2310.03744, 2023c."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2023]",
+        "title": "Qwen-VL: A frontier large vision-language model with versatile abilities.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou.",
+        "journal": "arXiv preprint arXiv:2308.12966, 2023."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      }
+    ]
+  },
+  "S4.SS1.p8": {
+    "text": "Implementation Details. We implement the RLHF-V framework based on Muffin [ 60 ] . The model uses BEiT-3 [ 53 ] as the visual module, and 13B Vicuna v1.0 [ 12 ] (fine-tuned from LLaMA [ 50 ] ) as the LLM backbone. The hyperparameter \u03b2 \ud835\udefd \\beta italic_\u03b2 is 0.5, and the weighting coefficient \u03b3 \ud835\udefe \\gamma italic_\u03b3 is 5. We train the model with DDPO for 7 epochs, with image resolution 448, learning rate 5e-7 and batch size 32. The training of RLHF-V is computationally efficient, which takes less than 1 hour on 8 A100 GPUs in total. Report issue for preceding element",
+    "masked_text": "Implementation Details. We implement the RLHF-V framework based on Muffin [CITATION]. The model uses BEiT-3 [CITATION] as the visual module, and 13B Vicuna v1.0 [CITATION] (fine-tuned from LLaMA [CITATION]) as the LLM backbone. The hyperparameter \u03b2\ud835\udefd\\betaitalic_\u03b2 is 0.5, and the weighting coefficient \u03b3\ud835\udefe\\gammaitalic_\u03b3 is 5. We train the model with DDPO for 7 epochs, with image resolution 448, learning rate 5e-7 and batch size 32. The training of RLHF-V is computationally efficient, which takes less than 1 hour on 8 A100 GPUs in total.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Wang et\u00a0al. [2023b]",
+        "title": "Image as a foreign language: BEiT pretraining for vision and vision-language tasks.",
+        "authors": "Wenhui Wang, Hangbo Bao, Li Dong, Johan Bjorck, Zhiliang Peng, Qiang Liu, Kriti Aggarwal, Owais\u00a0Khan Mohammed, Saksham Singhal, Subhojit Som, et\u00a0al.",
+        "journal": "InCVPR, pages 19175\u201319186, 2023b."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Chiang et\u00a0al. [2023]",
+        "title": "Vicuna: An open-source chatbot impressing GPT-4 with 90%* ChatGPT quality, 2023.",
+        "authors": "Wei-Lin Chiang, Zhuohan Li, Zi Lin, Ying Sheng, Zhanghao Wu, Hao Zhang, Lianmin Zheng, Siyuan Zhuang, Yonghao Zhuang, Joseph\u00a0E. Gonzalez, Ion Stoica, and Eric\u00a0P. Xing.",
+        "journal": ""
+      },
+      {
+        "tag": "Touvron et\u00a0al. [2023a]",
+        "title": "LLaMA: Open and efficient foundation language models.",
+        "authors": "Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timoth\u00e9e Lacroix, Baptiste Rozi\u00e8re, Naman Goyal, Eric Hambro, Faisal Azhar, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2302.13971, 2023a."
+      }
+    ]
+  },
+  "S4.SS2.p1": {
+    "text": "The main experimental results are reported in Table 2 , from which we observe that: (1) RLHF-V achieves state-of-the-art performance in trustworthiness among open-source models, outperforming strong general models and models tailored for hallucination. The framework significantly reduces the hallucination rate of the base model Muffin by 75.8% relative points for common objects on Object HalBench, and by 34.8% for overall objects on MHumanEval. The improvement is consistent in different granularities including response-level and mention-level hallucinations, and different hallucination types including objects, positions, and numbers. The reduction is more significant on the more challenging long-form answers on Object HalBench and MHumanEval. The results show that RLHF-V can effectively learn from fine-grained correctional human feedback to enable more trustworthy MLLM behaviors. (2) RLHF-V achieves promising performance in response helpfulness, where the results on MMHalBench, LLaVA Bench and VQAv2 are strong and comparable to the base model. This shows that RLHF-V can enhance the trustworthiness of MLLMs without sacrificing their helpfulness. Report issue for preceding element",
+    "masked_text": "The main experimental results are reported in Table 2, from which we observe that: (1) RLHF-V achieves state-of-the-art performance in trustworthiness among open-source models, outperforming strong general models and models tailored for hallucination. The framework significantly reduces the hallucination rate of the base model Muffin by 75.8% relative points for common objects on Object HalBench, and by 34.8% for overall objects on MHumanEval. The improvement is consistent in different granularities including response-level and mention-level hallucinations, and different hallucination types including objects, positions, and numbers. The reduction is more significant on the more challenging long-form answers on Object HalBench and MHumanEval. The results show that RLHF-V can effectively learn from fine-grained correctional human feedback to enable more trustworthy MLLM behaviors. (2) RLHF-V achieves promising performance in response helpfulness, where the results on MMHalBench, LLaVA Bench and VQAv2 are strong and comparable to the base model. This shows that RLHF-V can enhance the trustworthiness of MLLMs without sacrificing their helpfulness.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p1": {
+    "text": "In this section, we conduct analyses on the framework considering the following research questions: (1) How does RLHF-V\u2019s performance scale with feedback data amount? (2)\u00a0What is the advantage of fine-grained correctional preference data over traditional overall ranking data? (3) Can RLHF-V\u2019s data and method be adopted to enhance the trustworthiness of other MLLMs? (4) How does human feedback alleviate hallucinations intuitively? Report issue for preceding element",
+    "masked_text": "In this section, we conduct analyses on the framework considering the following research questions: (1) How does RLHF-V\u2019s performance scale with feedback data amount? (2) What is the advantage of fine-grained correctional preference data over traditional overall ranking data? (3) Can RLHF-V\u2019s data and method be adopted to enhance the trustworthiness of other MLLMs? (4) How does human feedback alleviate hallucinations intuitively?Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p2": {
+    "text": "Scaling feedback data leads to promising results. We report the hallucination rate and numbers of hallucinated segments on MHumanEval under different amounts of feedback data in Figure 2 . We observe that the hallucination rate and number of RLHF-V show a significant and rapid decrease as the data amount grows. This shows that fine-grained correctional human feedback provides effective and efficient learning signals for MLLM behavior alignment. Based on this tendency, we expect better performance can be achieved with an increasing amount of feedback data. We leave this for future work. Report issue for preceding element",
+    "masked_text": "Scaling feedback data leads to promising results. We report the hallucination rate and numbers of hallucinated segments on MHumanEval under different amounts of feedback data in Figure 2. We observe that the hallucination rate and number of RLHF-V show a significant and rapid decrease as the data amount grows. This shows that fine-grained correctional human feedback provides effective and efficient learning signals for MLLM behavior alignment. Based on this tendency, we expect better performance can be achieved with an increasing amount of feedback data. We leave this for future work.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p3": {
+    "text": "Fine-grained correctional human feedback enables better learning efficiency. To quantify the advantage of fine-grained correctional human feedback, we replace our data with the 2.2k human preference data on hallucination from LLaVA-RLHF, which gives overall ranking labels following common RLHF practices. From the experimental results in Figure 2 , we observe that model equipped with our data shows a more significant and rapid reduction in hallucination rate and number. Notably, using only 200 preference data, our model achieves comparable hallucination rate to the model that uses an order of magnitude more labeled data from LLaVA-RLHF. The superior data efficiency is due to (1) better data quality since label ambiguity is minimized, and (2) more direct feedback on hallucinated segments, excluding non-robust bias and linguistic variance. Report issue for preceding element",
+    "masked_text": "Fine-grained correctional human feedback enables better learning efficiency. To quantify the advantage of fine-grained correctional human feedback, we replace our data with the 2.2k human preference data on hallucination from LLaVA-RLHF, which gives overall ranking labels following common RLHF practices. From the experimental results in Figure 2, we observe that model equipped with our data shows a more significant and rapid reduction in hallucination rate and number. Notably, using only 200 preference data, our model achieves comparable hallucination rate to the model that uses an order of magnitude more labeled data from LLaVA-RLHF. The superior data efficiency is due to (1) better data quality since label ambiguity is minimized, and (2) more direct feedback on hallucinated segments, excluding non-robust bias and linguistic variance.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p4": {
+    "text": "RLHF-V generalizes to enhance other MLLMs. To investigate the generalization capability of the framework, we adopt RLHF-V\u2019s data and approach to align the behavior of LLaVA [ 35 ] , a representative and widely used MLLM. Experimental results show that RLHF-V effectively reduces the hallucination count of LLaVA by 13.8 relative points, as well as the hallucination rate by 5.9 relative points. We also apply RLHF-V to stronger base models and build the OmniLMM-12B [ 3 ] which achieves new SoTA results on multiple hallucination benchmarks. For example, OmniLMM-12B exhibits only 4.5% mention-level hallucination on the Object HalBench. Moreover, OmniLMM-12B also shows leading performance among comparable-sized models on multiple benchmarks (1637 on MME-Perception [ 17 ] , 71.1 on SeedBench-I [ 25 ] ). The results demonstrate that RLHF-V is applicable across different MLLMs to improve trustworthiness. Report issue for preceding element",
+    "masked_text": "RLHF-V generalizes to enhance other MLLMs. To investigate the generalization capability of the framework, we adopt RLHF-V\u2019s data and approach to align the behavior of LLaVA [CITATION], a representative and widely used MLLM. Experimental results show that RLHF-V effectively reduces the hallucination count of LLaVA by 13.8 relative points, as well as the hallucination rate by 5.9 relative points. We also apply RLHF-V to stronger base models and build the OmniLMM-12B [CITATION] which achieves new SoTA results on multiple hallucination benchmarks. For example, OmniLMM-12B exhibits only 4.5% mention-level hallucination on the Object HalBench. Moreover, OmniLMM-12B also shows leading performance among comparable-sized models on multiple benchmarks (1637 on MME-Perception [CITATION], 71.1 on SeedBench-I [CITATION]). The results demonstrate that RLHF-V is applicable across different MLLMs to improve trustworthiness.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Li et\u00a0al. [2023a]",
+        "title": "Seed-bench: Benchmarking multimodal llms with generative comprehension.",
+        "authors": "Bohao Li, Rui Wang, Guangzhi Wang, Yuying Ge, Yixiao Ge, and Ying Shan.",
+        "journal": "arXiv preprint arXiv:2307.16125, 2023a."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "[3]",
+        "title": "https://github.com/OpenBMB/OmniLMM.",
+        "authors": "Large multi-modal models for strong performance and efficient deployment.",
+        "journal": "Accessed: 2024-03-05."
+      },
+      {
+        "tag": "Fu et\u00a0al. [2023]",
+        "title": "MME: A comprehensive evaluation benchmark for multimodal large language models.",
+        "authors": "Chaoyou Fu, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Zhenyu Qiu, Wei Lin, Jinrui Yang, Xiawu Zheng, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2306.13394, 2023."
+      }
+    ]
+  },
+  "S4.SS3.p5": {
+    "text": "RLHF-V reduces hallucination from correlation and over-generalization. LLMs possess rich world knowledge and strong generalization capabilities. Without proper positive/negative human feedback, MLLMs can over-generalize to produce highly correlated and plausible concepts, which leads to hallucinations. For example, a prevalent hallucination case observed across different MLLMs is claiming the presence of person as long as they see an image of street . To quantify the problem, we select a set of representative scenes { living room , \ud835\udc58\ud835\udc56\ud835\udc61\ud835\udc50\u210e\ud835\udc52\ud835\udc5b , \ud835\udc4f\ud835\udc4e\ud835\udc61\u210e\ud835\udc5f\ud835\udc5c\ud835\udc5c\ud835\udc5a , \ud835\udc60\ud835\udc61\ud835\udc5f\ud835\udc52\ud835\udc52\ud835\udc61 } living room \ud835\udc58\ud835\udc56\ud835\udc61\ud835\udc50\u210e\ud835\udc52\ud835\udc5b \ud835\udc4f\ud835\udc4e\ud835\udc61\u210e\ud835\udc5f\ud835\udc5c\ud835\udc5c\ud835\udc5a \ud835\udc60\ud835\udc61\ud835\udc5f\ud835\udc52\ud835\udc52\ud835\udc61 \\{\\textit{living room},\\textit{kitchen},\\textit{bathroom},\\textit{street}\\} { living room , kitchen , bathroom , street } . For each scene, we identify the corresponding images in COCO by lexically matching the captions with the scene name. Then we obtain the top 10 frequent objects in the scene from the COCO object annotations. We compare the response-level hallucination rate for these objects (1) on average across all test samples, and (2) on samples under the target scene. Models prone to over-generalization will expect a significant increase in the hallucination rate ( \u0394 \u0394 \\Delta roman_\u0394 ). Report issue for preceding element",
+    "masked_text": "RLHF-V reduces hallucination from correlation and over-generalization. LLMs possess rich world knowledge and strong generalization capabilities. Without proper positive/negative human feedback, MLLMs can over-generalize to produce highly correlated and plausible concepts, which leads to hallucinations. For example, a prevalent hallucination case observed across different MLLMs is claiming the presence of person as long as they see an image of street. To quantify the problem, we select a set of representative scenes {living room,\ud835\udc58\ud835\udc56\ud835\udc61\ud835\udc50\u210e\ud835\udc52\ud835\udc5b,\ud835\udc4f\ud835\udc4e\ud835\udc61\u210e\ud835\udc5f\ud835\udc5c\ud835\udc5c\ud835\udc5a,\ud835\udc60\ud835\udc61\ud835\udc5f\ud835\udc52\ud835\udc52\ud835\udc61}living room\ud835\udc58\ud835\udc56\ud835\udc61\ud835\udc50\u210e\ud835\udc52\ud835\udc5b\ud835\udc4f\ud835\udc4e\ud835\udc61\u210e\ud835\udc5f\ud835\udc5c\ud835\udc5c\ud835\udc5a\ud835\udc60\ud835\udc61\ud835\udc5f\ud835\udc52\ud835\udc52\ud835\udc61\\{\\textit{living room},\\textit{kitchen},\\textit{bathroom},\\textit{street}\\}{ living room , kitchen , bathroom , street }. For each scene, we identify the corresponding images in COCO by lexically matching the captions with the scene name. Then we obtain the top 10 frequent objects in the scene from the COCO object annotations. We compare the response-level hallucination rate for these objects (1) on average across all test samples, and (2) on samples under the target scene. Models prone to over-generalization will expect a significant increase in the hallucination rate (\u0394\u0394\\Deltaroman_\u0394).Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p6": {
+    "text": "From the experimental results in Table 2 , we observe that: (1) All models including GPT-4V show a substantial increase in the hallucination rate, which demonstrates the over-generalization hypothesis. (2) RLHF-V exhibits the smallest change in the hallucination rate, which is even more robust than GPT-4V. The reason for the robustness is that RLHF-V provides crucial positive/negative fine-grained correctional human feedback for MLLMs, which helps to learn clear behavior boundaries between reasonable generalizations and over-generalizations. (3) RLHF-V achieves the lowest hallucination rates for these common objects both on average and especially under common scenes. This makes RLHF-V preferable in practical real-world applications. Report issue for preceding element",
+    "masked_text": "From the experimental results in Table 2, we observe that: (1) All models including GPT-4V show a substantial increase in the hallucination rate, which demonstrates the over-generalization hypothesis. (2) RLHF-V exhibits the smallest change in the hallucination rate, which is even more robust than GPT-4V. The reason for the robustness is that RLHF-V provides crucial positive/negative fine-grained correctional human feedback for MLLMs, which helps to learn clear behavior boundaries between reasonable generalizations and over-generalizations. (3) RLHF-V achieves the lowest hallucination rates for these common objects both on average and especially under common scenes. This makes RLHF-V preferable in practical real-world applications.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p7": {
+    "text": "Ablation Study. To investigate the contribution of each component, we perform an ablation study. From the experimental results in Table 3 , we can observe that: (1) Learning human feedback with vanilla DPO leads to performance degrades, showing the advantage of DDPO in exploiting the fine-grained human preference. (2) Fine-tuning on VQAv2 leads to a significant reduction in hallucination rates compared with the base model. This reveals the value of traditional human-annotated datasets from a new perspective of hallucination mitigation. (3) Including untrustworthy data augmentation (i.e., image cropping) in training hurts the performance on both hallucination and VQAv2. This shows that careless data augmentation can be a double-edged sword in training MLLMs. Report issue for preceding element",
+    "masked_text": "Ablation Study. To investigate the contribution of each component, we perform an ablation study. From the experimental results in Table 3, we can observe that: (1) Learning human feedback with vanilla DPO leads to performance degrades, showing the advantage of DDPO in exploiting the fine-grained human preference. (2) Fine-tuning on VQAv2 leads to a significant reduction in hallucination rates compared with the base model. This reveals the value of traditional human-annotated datasets from a new perspective of hallucination mitigation. (3) Including untrustworthy data augmentation (i.e., image cropping) in training hurts the performance on both hallucination and VQAv2. This shows that careless data augmentation can be a double-edged sword in training MLLMs.Report issue for preceding element",
+    "citations": []
+  },
+  "S4.SS3.p8": {
+    "text": "Case Study. To provide an intuitive understanding and comparison of different models, we provide qualitative results in Figure 3 . We show cases in two representative scenarios: (1) Short-form QA (i.e., questions that can be sufficiently answered in a few words). Our model typically maintains a good balance between helpfulness, engagement and clarity. In comparison, LLaVA-RLHF is usually far more engaging, introducing lengthy extensions however that can be less reasonable or relevant. (2) Long-form QA (i.e., questions that require long text to answer). We observe that MLLMs are significantly more prone to hallucinations in long-form QA, since it typically requires more comprehensive capabilities from multiple perspectives. For example, InstructBLIP and LLaVA-RLHF can confidently describe non-existing objects in a large proportion of their responses, whereas RLHF-V introduces significantly fewer hallucinations while delivering a comparable amount of effective information. We refer readers to the appendix for more qualitative results. Report issue for preceding element",
+    "masked_text": "Case Study. To provide an intuitive understanding and comparison of different models, we provide qualitative results in Figure 3. We show cases in two representative scenarios: (1) Short-form QA (i.e., questions that can be sufficiently answered in a few words). Our model typically maintains a good balance between helpfulness, engagement and clarity. In comparison, LLaVA-RLHF is usually far more engaging, introducing lengthy extensions however that can be less reasonable or relevant. (2) Long-form QA (i.e., questions that require long text to answer). We observe that MLLMs are significantly more prone to hallucinations in long-form QA, since it typically requires more comprehensive capabilities from multiple perspectives. For example, InstructBLIP and LLaVA-RLHF can confidently describe non-existing objects in a large proportion of their responses, whereas RLHF-V introduces significantly fewer hallucinations while delivering a comparable amount of effective information. We refer readers to the appendix for more qualitative results.Report issue for preceding element",
+    "citations": []
+  },
+  "S5.p1": {
+    "text": "Multimodal Large Language Models. Recent trends in multimodal learning have witnessed the success of building MLLMs by connecting visual encoders with powerful LLMs [ 61 , 58 , 11 , 20 , 26 ] . The current MLLM training paradigm typically involves two stages: (1) Pretraining. Models are pretrained on large-scale image-text pairs [ 6 , 54 , 14 , 27 , 60 ] or interleaved data [ 4 , 20 , 5 ] to learn the semantic mapping between visual and text signals. (2) Instruction Tuning. To enable the model with instruction-following capability, MLLMs are further fine-tuned on visual instruction data, including collections of existing human-annotated datasets [ 14 , 28 , 34 ] , and generated data from ChatGPT/GPT-4 [ 35 , 60 , 33 , 28 ] . Despite the success, current MLLMs suffer from serious hallucination problems [ 33 , 32 , 48 , 29 ] . Notably, even after extensive efforts, GPT-4V has still been found to be prone to hallucinations, making basic factual errors confidently [ 37 ] . The problem undermines practical applications of MLLMs especially in high-stakes scenarios, which has recently drawn increasing attention from the community. Report issue for preceding element",
+    "masked_text": "Multimodal Large Language Models. Recent trends in multimodal learning have witnessed the success of building MLLMs by connecting visual encoders with powerful LLMs [CITATION]. The current MLLM training paradigm typically involves two stages: (1) Pretraining. Models are pretrained on large-scale image-text pairs [CITATION] or interleaved data [CITATION] to learn the semantic mapping between visual and text signals. (2) Instruction Tuning. To enable the model with instruction-following capability, MLLMs are further fine-tuned on visual instruction data, including collections of existing human-annotated datasets [CITATION], and generated data from ChatGPT/GPT-4 [CITATION]. Despite the success, current MLLMs suffer from serious hallucination problems [CITATION]. Notably, even after extensive efforts, GPT-4V has still been found to be prone to hallucinations, making basic factual errors confidently [CITATION]. The problem undermines practical applications of MLLMs especially in high-stakes scenarios, which has recently drawn increasing attention from the community.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Wang et\u00a0al. [2023c]",
+        "title": "CogVLM: Visual expert for pretrained language models.",
+        "authors": "Weihan Wang, Qingsong Lv, Wenmeng Yu, Wenyi Hong, Ji Qi, Yan Wang, Junhui Ji, Zhuoyi Yang, Lei Zhao, Xixuan Song, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2311.03079, 2023c."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023e]",
+        "title": "Evaluating object hallucination in large vision-language models.",
+        "authors": "Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne\u00a0Xin Zhao, and Ji-Rong Wen.",
+        "journal": "arXiv preprint arXiv:2305.10355, 2023e."
+      },
+      {
+        "tag": "Chen et\u00a0al. [2022]",
+        "title": "PaLI: A jointly-scaled multilingual language-image model.",
+        "authors": "Xi Chen, Xiao Wang, Soravit Changpinyo, AJ Piergiovanni, Piotr Padlewski, Daniel Salz, Sebastian Goodman, Adam Grycner, Basil Mustafa, Lucas Beyer, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2209.06794, 2022."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2023]",
+        "title": "Qwen-VL: A frontier large vision-language model with versatile abilities.",
+        "authors": "Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang Lin, Chang Zhou, and Jingren Zhou.",
+        "journal": "arXiv preprint arXiv:2308.12966, 2023."
+      },
+      {
+        "tag": "Huang et\u00a0al. [2023]",
+        "title": "Language is not all you need: Aligning perception with language models.",
+        "authors": "Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, Tengchao Lv, Lei Cui, Owais\u00a0Khan Mohammed, Qiang Liu, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2302.14045, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023c]",
+        "title": "BLIP-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.",
+        "authors": "Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.",
+        "journal": "arXiv preprint arXiv:2301.12597, 2023c."
+      },
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Awadalla et\u00a0al. [2023]",
+        "title": "OpenFlamingo: An open-source framework for training large autoregressive vision-language models.",
+        "authors": "Anas Awadalla, Irena Gao, Josh Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2308.01390, 2023."
+      },
+      {
+        "tag": "Zhang et\u00a0al. [2023]",
+        "title": "LLaMA-Adapter: Efficient fine-tuning of language models with zero-init attention.",
+        "authors": "Renrui Zhang, Jiaming Han, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, and Yu Qiao.",
+        "journal": "arXiv preprint arXiv:2303.16199, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023a]",
+        "title": "HallusionBench: You see what you think? Or you think what you see? An image-context reasoning benchmark challenging for GPT-4V(ision), LLaVA-1.5, and other multi-modality models.",
+        "authors": "Fuxiao Liu, Tianrui Guan, Zongxia Li, Lichang Chen, Yaser Yacoob, Dinesh Manocha, and Tianyi Zhou.",
+        "journal": "arXiv preprint arXiv:2310.14566, 2023a."
+      },
+      {
+        "tag": "OpenAI [2023a]",
+        "title": "GPT-4V(ision) system card.",
+        "authors": "OpenAI.",
+        "journal": "2023a."
+      },
+      {
+        "tag": "Alayrac et\u00a0al. [2022]",
+        "title": "Flamingo: a visual language model for few-shot learning.",
+        "authors": "Jean-Baptiste Alayrac, Jeff Donahue, Pauline Luc, Antoine Miech, Iain Barr, Yana Hasson, Karel Lenc, Arthur Mensch, Katherine Millican, Malcolm Reynolds, et\u00a0al.",
+        "journal": "NeurIPS, 35:23716\u201323736, 2022."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023d]",
+        "title": "Visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Qingyang Wu, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2304.08485, 2023d."
+      },
+      {
+        "tag": "Dai et\u00a0al. [2023]",
+        "title": "InstructBLIP: Towards general-purpose vision-language models with instruction tuning, 2023.",
+        "authors": "Wenliang Dai, Junnan Li, Dongxu Li, Anthony Meng\u00a0Huat Tiong, Junqi Zhao, Weisheng Wang, Boyang Li, Pascale Fung, and Steven Hoi.",
+        "journal": ""
+      },
+      {
+        "tag": "Li et\u00a0al. [2023d]",
+        "title": "M3IT: A large-scale dataset towards multi-modal multilingual instruction tuning.",
+        "authors": "Lei Li, Yuwei Yin, Shicheng Li, Liang Chen, Peiyi Wang, Shuhuai Ren, Mukai Li, Yazheng Yang, Jingjing Xu, Xu Sun, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2306.04387, 2023d."
+      },
+      {
+        "tag": "Yu et\u00a0al. [2023]",
+        "title": "Reformulating vision-language foundation models and datasets towards universal multimodal assistants.",
+        "authors": "Tianyu Yu, Jinyi Hu, Yuan Yao, Haoye Zhang, Yue Zhao, Chongyi Wang, Shan Wang, Yinxv Pan, Jiao Xue, Dahai Li, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2310.00653, 2023."
+      },
+      {
+        "tag": "Li et\u00a0al. [2023b]",
+        "title": "Otter: A multi-modal model with in-context instruction tuning.",
+        "authors": "Bo Li, Yuanhan Zhang, Liangyu Chen, Jinghao Wang, Jingkang Yang, and Ziwei Liu.",
+        "journal": "arXiv preprint arXiv:2305.03726, 2023b."
+      },
+      {
+        "tag": "Ye et\u00a0al. [2023]",
+        "title": "mPLUG-Owl: Modularization empowers large language models with multimodality.",
+        "authors": "Qinghao Ye, Haiyang Xu, Guohai Xu, Jiabo Ye, Ming Yan, Yiyang Zhou, Junyang Wang, Anwen Hu, Pengcheng Shi, Yaya Shi, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2304.14178, 2023."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023c]",
+        "title": "Improved baselines with visual instruction tuning.",
+        "authors": "Haotian Liu, Chunyuan Li, Yuheng Li, and Yong\u00a0Jae Lee.",
+        "journal": "arXiv preprint arXiv:2310.03744, 2023c."
+      }
+    ]
+  },
+  "S5.p2": {
+    "text": "Behavior Alignment for LLMs. Aligning language agent behaviors with human preference has emerged as a promising research direction [ 24 , 22 ] . Pivotal approaches in LLMs include instruction tuning (or supervised fine-tuning) and RLHF [ 47 , 39 ] . While supervised fine-tuning is suitable for basic behavior alignment [ 49 , 15 ] , due to the mismatch between likelihood maximization objective and human preference, it may introduce or amplify hallucination [ 39 , 38 ] . Therefore, RLHF is widely accepted for further behavior and preference alignment [ 38 , 8 , 13 ] , where proximal policy optimization (PPO) [ 45 ] is recognized as the major technique. Later adaptations attempt to stabilize the optimization process [ 42 ] and enclose more fine-grained signals [ 30 , 56 ] .\nHowever, RLHF has rarely been explored in MLLMs to align model behaviors with humans. Report issue for preceding element",
+    "masked_text": "Behavior Alignment for LLMs. Aligning language agent behaviors with human preference has emerged as a promising research direction [CITATION]. Pivotal approaches in LLMs include instruction tuning (or supervised fine-tuning) and RLHF [CITATION]. While supervised fine-tuning is suitable for basic behavior alignment [CITATION], due to the mismatch between likelihood maximization objective and human preference, it may introduce or amplify hallucination [CITATION]. Therefore, RLHF is widely accepted for further behavior and preference alignment [CITATION], where proximal policy optimization (PPO) [CITATION] is recognized as the major technique. Later adaptations attempt to stabilize the optimization process [CITATION] and enclose more fine-grained signals [CITATION]. However, RLHF has rarely been explored in MLLMs to align model behaviors with humans.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Ding et\u00a0al. [2023]",
+        "title": "Enhancing chat language models by scaling high-quality instructional conversations.",
+        "authors": "Ning Ding, Yulin Chen, Bokai Xu, Yujia Qin, Zhi Zheng, Shengding Hu, Zhiyuan Liu, Maosong Sun, and Bowen Zhou.",
+        "journal": "arXiv preprint arXiv:2305.14233, 2023."
+      },
+      {
+        "tag": "Stiennon et\u00a0al. [2020]",
+        "title": "Learning to summarize with human feedback.",
+        "authors": "Nisan Stiennon, Long Ouyang, Jeffrey Wu, Daniel Ziegler, Ryan Lowe, Chelsea Voss, Alec Radford, Dario Amodei, and Paul\u00a0F Christiano.",
+        "journal": "NeurIPS, 33:3008\u20133021, 2020."
+      },
+      {
+        "tag": "OpenAI [2023b]",
+        "title": "GPT-4 technical report, 2023b.",
+        "authors": "OpenAI.",
+        "journal": ""
+      },
+      {
+        "tag": "Taori et\u00a0al. [2023]",
+        "title": "Stanford Alpaca: An instruction-following LLaMA model, 2023.",
+        "authors": "Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori\u00a0B Hashimoto.",
+        "journal": ""
+      },
+      {
+        "tag": "Lightman et\u00a0al. [2023]",
+        "title": "Let\u2019s verify step by step.",
+        "authors": "Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe.",
+        "journal": "arXiv preprint arXiv:2305.20050, 2023."
+      },
+      {
+        "tag": "Wu et\u00a0al. [2023]",
+        "title": "Fine-grained human feedback gives better rewards for language model training.",
+        "authors": "Zeqiu Wu, Yushi Hu, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj Ammanabrolu, Noah\u00a0A Smith, Mari Ostendorf, and Hannaneh Hajishirzi.",
+        "journal": "arXiv preprint arXiv:2306.01693, 2023."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      },
+      {
+        "tag": "Kenton et\u00a0al. [2021]",
+        "title": "Alignment of language agents.",
+        "authors": "Zachary Kenton, Tom Everitt, Laura Weidinger, Iason Gabriel, Vladimir Mikulik, and Geoffrey Irving.",
+        "journal": "arXiv preprint arXiv:2103.14659, 2021."
+      },
+      {
+        "tag": "Rafailov et\u00a0al. [2023]",
+        "title": "Direct preference optimization: Your language model is secretly a reward model.",
+        "authors": "Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher\u00a0D Manning, and Chelsea Finn.",
+        "journal": "arXiv preprint arXiv:2305.18290, 2023."
+      },
+      {
+        "tag": "Bai et\u00a0al. [2022b]",
+        "title": "Constitutional AI: Harmlessness from AI feedback.",
+        "authors": "Yuntao Bai, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, Anna Goldie, Azalia Mirhoseini, Cameron McKinnon, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2212.08073, 2022b."
+      },
+      {
+        "tag": "Schulman et\u00a0al. [2017]",
+        "title": "Proximal policy optimization algorithms.",
+        "authors": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.",
+        "journal": "arXiv preprint arXiv:1707.06347, 2017."
+      },
+      {
+        "tag": "Cui et\u00a0al. [2023]",
+        "title": "Ultrafeedback: Boosting language models with high-quality feedback.",
+        "authors": "Ganqu Cui, Lifan Yuan, Ning Ding, Guanming Yao, Wei Zhu, Yuan Ni, Guotong Xie, Zhiyuan Liu, and Maosong Sun.",
+        "journal": "arXiv preprint arXiv:2310.01377, 2023."
+      },
+      {
+        "tag": "Leike et\u00a0al. [2018]",
+        "title": "Scalable agent alignment via reward modeling: a research direction.",
+        "authors": "Jan Leike, David Krueger, Tom Everitt, Miljan Martic, Vishal Maini, and Shane Legg.",
+        "journal": "arXiv preprint arXiv:1811.07871, 2018."
+      }
+    ]
+  },
+  "S5.p3": {
+    "text": "Reducing Hallucination for MLLMs. Some preliminary efforts have been made to alleviate hallucination problems in MLLMs. LRV [ 33 ] generates instruction data with negative responses, and mitigates hallucination by limiting the response length. However, limiting the response length does not essentially address the problem, and also undermines the response helpfulness. VIGC [ 52 ] iteratively refines the instruction data for better instruction tuning. Woodpecker [ 59 ] proposes to post-edit hallucinations by merging the output of MLLMs and a more accurate expert VQA model using GPT-3.5. The post-editing procedure involves external tools and LLMs much larger than the target MLLM online in multiple stages, which leads to high inference costs and delays. Gunjal et al . [ 19 ] distinguishes the inaccurate parts in responses via human annotation, and internally discourages the hallucinated parts by direct preference optimization. However, the positive behaviors for hallucinated parts are unknown, making the human feedback not complete enough to learn the behavior boundary. The concurrent LLaVA-RLHF [ 48 ] employs the traditional RLHF approach [ 39 ] on MLLMs, and augments the reward model with rich additional text descriptions. It is therefore similarly challenged with label ambiguity, learning efficiency, and complex training. In comparison, RLHF-V presents the first fine-grained correctional human feedback learning framework for behavior alignment, and systematically addresses different hallucination sources in training MLLMs, achieving strong performance in trustworthiness. Report issue for preceding element",
+    "masked_text": "Reducing Hallucination for MLLMs. Some preliminary efforts have been made to alleviate hallucination problems in MLLMs. LRV [CITATION] generates instruction data with negative responses, and mitigates hallucination by limiting the response length. However, limiting the response length does not essentially address the problem, and also undermines the response helpfulness. VIGC [CITATION] iteratively refines the instruction data for better instruction tuning. Woodpecker [CITATION] proposes to post-edit hallucinations by merging the output of MLLMs and a more accurate expert VQA model using GPT-3.5. The post-editing procedure involves external tools and LLMs much larger than the target MLLM online in multiple stages, which leads to high inference costs and delays. Gunjal et al. [CITATION] distinguishes the inaccurate parts in responses via human annotation, and internally discourages the hallucinated parts by direct preference optimization. However, the positive behaviors for hallucinated parts are unknown, making the human feedback not complete enough to learn the behavior boundary. The concurrent LLaVA-RLHF [CITATION] employs the traditional RLHF approach [CITATION] on MLLMs, and augments the reward model with rich additional text descriptions. It is therefore similarly challenged with label ambiguity, learning efficiency, and complex training. In comparison, RLHF-V presents the first fine-grained correctional human feedback learning framework for behavior alignment, and systematically addresses different hallucination sources in training MLLMs, achieving strong performance in trustworthiness.Report issue for preceding element",
+    "citations": [
+      {
+        "tag": "Sun et\u00a0al. [2023]",
+        "title": "Aligning large multimodal models with factually augmented RLHF.",
+        "authors": "Zhiqing Sun, Sheng Shen, Shengcao Cao, Haotian Liu, Chunyuan Li, Yikang Shen, Chuang Gan, Liang-Yan Gui, Yu-Xiong Wang, Yiming Yang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2309.14525, 2023."
+      },
+      {
+        "tag": "Gunjal et\u00a0al. [2023]",
+        "title": "Detecting and preventing hallucinations in large vision language models.",
+        "authors": "Anisha Gunjal, Jihan Yin, and Erhan Bas.",
+        "journal": "arXiv preprint arXiv:2308.06394, 2023."
+      },
+      {
+        "tag": "Ouyang et\u00a0al. [2022]",
+        "title": "Training language models to follow instructions with human feedback.",
+        "authors": "Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et\u00a0al.",
+        "journal": "NeurIPS, 35:27730\u201327744, 2022."
+      },
+      {
+        "tag": "Wang et\u00a0al. [2023a]",
+        "title": "VIGC: Visual instruction generation and correction.",
+        "authors": "Bin Wang, Fan Wu, Xiao Han, Jiahui Peng, Huaping Zhong, Pan Zhang, Xiaoyi Dong, Weijia Li, Wei Li, Jiaqi Wang, et\u00a0al.",
+        "journal": "arXiv preprint arXiv:2308.12714, 2023a."
+      },
+      {
+        "tag": "Liu et\u00a0al. [2023b]",
+        "title": "Aligning large multi-modal model with robust instruction tuning.",
+        "authors": "Fuxiao Liu, Kevin Lin, Linjie Li, Jianfeng Wang, Yaser Yacoob, and Lijuan Wang.",
+        "journal": "arXiv preprint arXiv:2306.14565, 2023b."
+      },
+      {
+        "tag": "Yin et\u00a0al. [2023]",
+        "title": "Woodpecker: Hallucination correction for multimodal large language models.",
+        "authors": "Shukang Yin, Chaoyou Fu, Sirui Zhao, Tong Xu, Hao Wang, Dianbo Sui, Yunhang Shen, Ke Li, Xing Sun, and Enhong Chen.",
+        "journal": "arXiv preprint arXiv:2310.16045, 2023."
+      }
+    ]
+  },
+  "S6.p1": {
+    "text": "Hallucination is a critical problem preventing practical applications of MLLMs in real-world scenarios. In this work, we present RLHF-V, a novel framework that enhances the trustworthiness of MLLMs by behavior alignment from fine-grained correctional human feedback. Comprehensive experimental results show that our model achieves state-of-the-art performance in trustworthiness especially in challenging long-form responses while maintaining strong helpfulness. In this work, we collect correctional feedback from human annotators. In future, with the progress of more trustworthy and capable MLLMs, we will explore collecting accurate preferences from MLLMs, which can facilitate large-scale preference learning for stronger behavior alignment. Besides, we note that the framework of RLHF-V can potentially also help reduce the hallucinations in LLMs, which we will explore in future. Report issue for preceding element",
+    "masked_text": "Hallucination is a critical problem preventing practical applications of MLLMs in real-world scenarios. In this work, we present RLHF-V, a novel framework that enhances the trustworthiness of MLLMs by behavior alignment from fine-grained correctional human feedback. Comprehensive experimental results show that our model achieves state-of-the-art performance in trustworthiness especially in challenging long-form responses while maintaining strong helpfulness. In this work, we collect correctional feedback from human annotators. In future, with the progress of more trustworthy and capable MLLMs, we will explore collecting accurate preferences from MLLMs, which can facilitate large-scale preference learning for stronger behavior alignment. Besides, we note that the framework of RLHF-V can potentially also help reduce the hallucinations in LLMs, which we will explore in future.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p1": {
+    "text": "The authors\u2019 contributions can be outlined as follows: Report issue for preceding element",
+    "masked_text": "The authors\u2019 contributions can be outlined as follows:Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.p2": {
+    "text": "\u2022 In initializing the project, Yuan Yao and Tianyu Yu design the framework to collect correctional human feedback. Tianyu Yu devise the DDPO algorithm. Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer invaluable guidance in project design. Report issue for preceding element \u2022 In data collection, Taiwen He, Haoye Zhang, Tianyu Yu and Yuan Yao take charge of the annotation process to ensure the data quality. Report issue for preceding element \u2022 In model training and evaluation, Tianyu Yu implements the training framework. Tianyu Yu, Haoye Zhang and Yuan Yao design the evaluation framework. Tianyu Yu and Haoye Zhang implement the evaluation codebase. Report issue for preceding element \u2022 In paper writing, Yuan Yao and Tianyu Yu write the paper. Haoye Zhang, Taiwen He, Yifeng Han, Ganqu Cui, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer suggestions to polish the writing. Report issue for preceding element \u2022 For public usability, Tianyu Yu, Yifeng Han, Jinyi Hu and Yuan Yao promote the open-source project. Report issue for preceding element \u2022 Throughout the project, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua provide invaluable guidance and advice. Report issue for preceding element",
+    "masked_text": "\u2022 In initializing the project, Yuan Yao and Tianyu Yu design the framework to collect correctional human feedback. Tianyu Yu devise the DDPO algorithm. Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer invaluable guidance in project design.Report issue for preceding element \u2022 In data collection, Taiwen He, Haoye Zhang, Tianyu Yu and Yuan Yao take charge of the annotation process to ensure the data quality.Report issue for preceding element \u2022 In model training and evaluation, Tianyu Yu implements the training framework. Tianyu Yu, Haoye Zhang and Yuan Yao design the evaluation framework. Tianyu Yu and Haoye Zhang implement the evaluation codebase.Report issue for preceding element \u2022 In paper writing, Yuan Yao and Tianyu Yu write the paper. Haoye Zhang, Taiwen He, Yifeng Han, Ganqu Cui, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer suggestions to polish the writing.Report issue for preceding element \u2022 For public usability, Tianyu Yu, Yifeng Han, Jinyi Hu and Yuan Yao promote the open-source project.Report issue for preceding element \u2022 Throughout the project, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua provide invaluable guidance and advice.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i1.p1": {
+    "text": "In initializing the project, Yuan Yao and Tianyu Yu design the framework to collect correctional human feedback. Tianyu Yu devise the DDPO algorithm. Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer invaluable guidance in project design. Report issue for preceding element",
+    "masked_text": "In initializing the project, Yuan Yao and Tianyu Yu design the framework to collect correctional human feedback. Tianyu Yu devise the DDPO algorithm. Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer invaluable guidance in project design.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i2.p1": {
+    "text": "In data collection, Taiwen He, Haoye Zhang, Tianyu Yu and Yuan Yao take charge of the annotation process to ensure the data quality. Report issue for preceding element",
+    "masked_text": "In data collection, Taiwen He, Haoye Zhang, Tianyu Yu and Yuan Yao take charge of the annotation process to ensure the data quality.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i3.p1": {
+    "text": "In model training and evaluation, Tianyu Yu implements the training framework. Tianyu Yu, Haoye Zhang and Yuan Yao design the evaluation framework. Tianyu Yu and Haoye Zhang implement the evaluation codebase. Report issue for preceding element",
+    "masked_text": "In model training and evaluation, Tianyu Yu implements the training framework. Tianyu Yu, Haoye Zhang and Yuan Yao design the evaluation framework. Tianyu Yu and Haoye Zhang implement the evaluation codebase.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i4.p1": {
+    "text": "In paper writing, Yuan Yao and Tianyu Yu write the paper. Haoye Zhang, Taiwen He, Yifeng Han, Ganqu Cui, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer suggestions to polish the writing. Report issue for preceding element",
+    "masked_text": "In paper writing, Yuan Yao and Tianyu Yu write the paper. Haoye Zhang, Taiwen He, Yifeng Han, Ganqu Cui, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua offer suggestions to polish the writing.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i5.p1": {
+    "text": "For public usability, Tianyu Yu, Yifeng Han, Jinyi Hu and Yuan Yao promote the open-source project. Report issue for preceding element",
+    "masked_text": "For public usability, Tianyu Yu, Yifeng Han, Jinyi Hu and Yuan Yao promote the open-source project.Report issue for preceding element",
+    "citations": []
+  },
+  "Sx1.I1.i6.p1": {
+    "text": "Throughout the project, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua provide invaluable guidance and advice. Report issue for preceding element",
+    "masked_text": "Throughout the project, Zhiyuan Liu, Hai-Tao Zheng, Maosong Sun and Tat-Seng Chua provide invaluable guidance and advice.Report issue for preceding element",
+    "citations": []
+  }
+}

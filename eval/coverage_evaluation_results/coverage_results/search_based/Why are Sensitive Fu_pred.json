@@ -1,0 +1,294 @@
+{
+  "paper_id": "Why are Sensitive Fu",
+  "meta": {
+    "title": "Why are Sensitive Functions Hard for Transformers?",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "Simplicity Bias in Transformers and their Ability to Learn Sparse Boolean Functions",
+      "Why are Sensitive Functions Hard for Transformers?",
+      "Orthogonal polynomials and M\u00f6bius transformations",
+      "Learning Linear Attention in Polynomial Time"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "De\u00a0Wolf (2008)",
+        "title": "A brief introduction to fourier analysis on the boolean cube.",
+        "authors": "Ronald De\u00a0Wolf. 2008.",
+        "journal": "Theory of Computing, pages 1\u201320."
+      },
+      {
+        "tag": "Hahn et\u00a0al. (2021)",
+        "title": "Sensitivity as a complexity measure for sequence classification tasks.",
+        "authors": "Michael Hahn, Dan Jurafsky, and Richard Futrell. 2021.",
+        "journal": "Transactions of the Association for Computational Linguistics,\n9:891\u2013908."
+      },
+      {
+        "tag": "Loshchilov and Hutter (2017)",
+        "title": "Decoupled\nweight decay regularization.",
+        "authors": "Ilya Loshchilov and Frank Hutter. 2017.",
+        "journal": "InInternational Conference on Learning Representations."
+      },
+      {
+        "tag": "Strobl et\u00a0al. (2023)",
+        "title": "Transformers as\nrecognizers of formal languages: A survey on expressivity.",
+        "authors": "Lena Strobl, William Merrill, Gail Weiss, David Chiang, and Dana Angluin. 2023.",
+        "journal": "CoRR, abs/2311.00208."
+      },
+      {
+        "tag": "Andriushchenko et\u00a0al. (2023)",
+        "title": "A\nmodern look at the relationship between sharpness and generalization.",
+        "authors": "Maksym Andriushchenko, Francesco Croce, Maximilian M\u00fcller, Matthias Hein,\nand Nicolas Flammarion. 2023.",
+        "journal": "InInternational Conference on Machine Learning, ICML 2023,\n23-29 July 2023, Honolulu, Hawaii, USA, volume 202 ofProceedings of\nMachine Learning Research, pages 840\u2013902. PMLR."
+      },
+      {
+        "tag": "Damian et\u00a0al. (2023)",
+        "title": "Self-stabilization:\nThe implicit bias of gradient descent at the edge of stability.",
+        "authors": "Alex Damian, Eshaan Nichani, and Jason\u00a0D. Lee. 2023.",
+        "journal": "InThe Eleventh International Conference on Learning\nRepresentations, ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net."
+      },
+      {
+        "tag": "Bhattamishra et\u00a0al. (2020)",
+        "title": "On the\nability and limitations of transformers to recognize formal languages.",
+        "authors": "Satwik Bhattamishra, Kabir Ahuja, and Navin Goyal. 2020.",
+        "journal": "InProceedings of the 2020 Conference on Empirical Methods in\nNatural Language Processing, EMNLP 2020, Online, November 16-20, 2020,\npages 7096\u20137116. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Rahaman et\u00a0al. (2019)",
+        "title": "On the\nspectral bias of neural networks.",
+        "authors": "Nasim Rahaman, Aristide Baratin, Devansh Arpit, Felix Draxler, Min Lin, Fred\nHamprecht, Yoshua Bengio, and Aaron Courville. 2019.",
+        "journal": "InProceedings of the 36th International Conference on Machine\nLearning, volume\u00a097 ofProceedings of Machine Learning Research,\npages 5301\u20135310. PMLR."
+      },
+      {
+        "tag": "Ba et\u00a0al. (2016)",
+        "title": "Layer normalization.",
+        "authors": "Lei\u00a0Jimmy Ba, Jamie\u00a0Ryan Kiros, and Geoffrey\u00a0E. Hinton. 2016.",
+        "journal": "CoRR, abs/1607.06450."
+      },
+      {
+        "tag": "Hao et\u00a0al. (2022)",
+        "title": "Formal language recognition by hard attention transformers:\nPerspectives from circuit complexity.",
+        "authors": "Yiding Hao, Dana Angluin, and Robert Frank. 2022.",
+        "journal": "Transactions of the Association for Computational Linguistics,\n10:800\u2013810."
+      },
+      {
+        "tag": "Hahn (2020)",
+        "title": "Theoretical limitations of self-attention in neural sequence models.",
+        "authors": "Michael Hahn. 2020.",
+        "journal": "Transactions of the Association for Computational Linguistics,\n8:156\u2013171."
+      },
+      {
+        "tag": "Li et\u00a0al. (2023)",
+        "title": "Transformers\nas algorithms: Generalization and stability in in-context learning.",
+        "authors": "Yingcong Li, Muhammed\u00a0Emrullah Ildiz, Dimitris Papailiopoulos, and Samet Oymak.\n2023.",
+        "journal": "InProceedings of the 40th International Conference on Machine\nLearning, volume 202 ofProceedings of Machine Learning Research,\npages 19565\u201319594. PMLR."
+      },
+      {
+        "tag": "Hatami et\u00a0al. (2010)",
+        "title": "Variations on the sensitivity conjecture.",
+        "authors": "Pooya Hatami, Raghav Kulkarni, and Denis Pankratov. 2010.",
+        "journal": "Theory of Computing, 4:1\u201327."
+      },
+      {
+        "tag": "Chiang et\u00a0al. (2023)",
+        "title": "Tighter\nbounds on the expressivity of transformer encoders.",
+        "authors": "David Chiang, Peter Cholak, and Anand Pillay. 2023.",
+        "journal": "InInternational Conference on Machine Learning, ICML 2023,\n23-29 July 2023, Honolulu, Hawaii, USA, volume 202 ofProceedings of\nMachine Learning Research, pages 5544\u20135562. PMLR."
+      },
+      {
+        "tag": "Takase et\u00a0al. (2022)",
+        "title": "On layer normalizations and residual connections in transformers.",
+        "authors": "Sho Takase, Shun Kiyono, Sosuke Kobayashi, and Jun Suzuki. 2022.",
+        "journal": "arXiv preprint arXiv:2206.00330."
+      },
+      {
+        "tag": "Weiss et\u00a0al. (2021)",
+        "title": "Thinking like transformers.",
+        "authors": "Gail Weiss, Yoav Goldberg, and Eran Yahav. 2021.",
+        "journal": "InInternational Conference on Machine Learning, pages\n11080\u201311090. PMLR."
+      },
+      {
+        "tag": "Abbe et\u00a0al. (2023)",
+        "title": "Generalization on the unseen, logic reasoning and degree curriculum.",
+        "authors": "Emmanuel Abbe, Samy Bengio, Aryo Lotfi, and Kevin Rizk. 2023.",
+        "journal": "InInternational Conference on Machine Learning, ICML 2023,\n23-29 July 2023, Honolulu, Hawaii, USA, volume 202 ofProceedings of\nMachine Learning Research, pages 31\u201360. PMLR."
+      },
+      {
+        "tag": "Merrill and Sabharwal (2023a)",
+        "title": "The expressive\npower of transformers with chain of thought.",
+        "authors": "William Merrill and Ashish Sabharwal. 2023a.",
+        "journal": "InNeurIPS 2023 Workshop on Mathematics of Modern Machine\nLearning."
+      },
+      {
+        "tag": "Ahn et\u00a0al. (2023)",
+        "title": "Linear attention is (maybe)\nall you need (to understand transformer optimization).",
+        "authors": "Kwangjun Ahn, Xiang Cheng, Minhak Song, Chulhee Yun, Ali Jadbabaie, and Suvrit\nSra. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Yun et\u00a0al. (2019)",
+        "title": "Are transformers universal\napproximators of sequence-to-sequence functions?",
+        "authors": "Chulhee Yun, Srinadh Bhojanapalli, Ankit\u00a0Singh Rawat, Sashank\u00a0J. Reddi, and\nSanjiv Kumar. 2019.",
+        "journal": ""
+      },
+      {
+        "tag": "Strobl (2023)",
+        "title": "Average-hard\nattention transformers are constant-depth uniform threshold circuits.",
+        "authors": "Lena Strobl. 2023.",
+        "journal": "CoRR, abs/2308.03212."
+      },
+      {
+        "tag": "Jiang et\u00a0al. (2020)",
+        "title": "Fantastic\ngeneralization measures and where to find them.",
+        "authors": "Yiding Jiang, Behnam Neyshabur*, Hossein Mobahi, Dilip Krishnan, and Samy\nBengio. 2020.",
+        "journal": "InInternational Conference on Learning Representations."
+      },
+      {
+        "tag": "Anil et\u00a0al. (2022)",
+        "title": "Exploring length generalization in large language models.",
+        "authors": "Cem Anil, Yuhuai Wu, Anders Andreassen, Aitor Lewkowycz, Vedant Misra, Vinay\nRamasesh, Ambrose Slone, Guy Gur-Ari, Ethan Dyer, and Behnam Neyshabur. 2022.",
+        "journal": "Advances in Neural Information Processing Systems,\n35:38546\u201338556."
+      },
+      {
+        "tag": "Jukna (2012)",
+        "title": "Boolean Function Complexity: Advances and Frontiers.",
+        "authors": "Stasys Jukna. 2012.",
+        "journal": ""
+      },
+      {
+        "tag": "Kaur et\u00a0al. (2023)",
+        "title": "On the maximum hessian eigenvalue and generalization.",
+        "authors": "Simran Kaur, Jeremy Cohen, and Zachary\u00a0Chase Lipton. 2023.",
+        "journal": "InProceedings on, pages 51\u201365. PMLR."
+      },
+      {
+        "tag": "Yao et\u00a0al. (2021)",
+        "title": "Self-attention\nnetworks can process bounded hierarchical languages.",
+        "authors": "Shunyu Yao, Binghui Peng, Christos Papadimitriou, and Karthik Narasimhan. 2021.",
+        "journal": "InProceedings of the 59th Annual Meeting of the Association\nfor Computational Linguistics and the 11th International Joint Conference on\nNatural Language Processing (Volume 1: Long Papers). Association for\nComputational Linguistics."
+      },
+      {
+        "tag": "Zhou et\u00a0al. (2023)",
+        "title": "What algorithms can transformers learn? a study in length\ngeneralization.",
+        "authors": "Hattie Zhou, Arwen Bradley, Etai Littwin, Noam Razin, Omid Saremi, Josh\nSusskind, Samy Bengio, and Preetum Nakkiran. 2023.",
+        "journal": "arXiv preprint arXiv:2310.16028."
+      },
+      {
+        "tag": "Sanford et\u00a0al. (2023)",
+        "title": "Representational\nstrengths and limitations of transformers.",
+        "authors": "Clayton Sanford, Daniel Hsu, and Matus Telgarsky. 2023.",
+        "journal": "CoRR, abs/2306.02896."
+      },
+      {
+        "tag": "Wen et\u00a0al. (2022)",
+        "title": "How does\nsharpness-aware minimization minimize sharpness?",
+        "authors": "Kaiyue Wen, Tengyu Ma, and Zhiyuan Li. 2022.",
+        "journal": "CoRR, abs/2211.05729."
+      },
+      {
+        "tag": "Fridovich-Keil et\u00a0al. (2022)",
+        "title": "Spectral bias in practice: The role of function frequency in\ngeneralization.",
+        "authors": "Sara Fridovich-Keil, Raphael Gontijo\u00a0Lopes, and Rebecca Roelofs. 2022.",
+        "journal": "InAdvances in Neural Information Processing Systems,\nvolume\u00a035, pages 7368\u20137382. Curran Associates, Inc."
+      },
+      {
+        "tag": "Merrill and Sabharwal (2023c)",
+        "title": "The parallelism tradeoff: Limitations of log-precision transformers.",
+        "authors": "William Merrill and Ashish Sabharwal. 2023c.",
+        "journal": "Transactions of the Association for Computational Linguistics,\n11:531\u2013545."
+      },
+      {
+        "tag": "Ruoss et\u00a0al. (2023)",
+        "title": "Randomized positional\nencodings boost length generalization of transformers.",
+        "authors": "Anian Ruoss, Gr\u00e9goire Del\u00e9tang, Tim Genewein, Jordi Grau-Moya, R\u00f3bert\nCsord\u00e1s, Mehdi Bennani, Shane Legg, and Joel Veness. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Angluin et\u00a0al. (2023)",
+        "title": "Masked hard-attention transformers and boolean rasp recognize exactly\nthe star-free languages.",
+        "authors": "Dana Angluin, David Chiang, and Andy Yang. 2023.",
+        "journal": "arXiv preprint arXiv:2310.13897."
+      },
+      {
+        "tag": "Merrill and Sabharwal (2023b)",
+        "title": "A logic for expressing log-precision transformers.",
+        "authors": "William Merrill and Ashish Sabharwal. 2023b.",
+        "journal": "InThirty-seventh Conference on Neural Information Processing\nSystems."
+      },
+      {
+        "tag": "Merrill et\u00a0al. (2022)",
+        "title": "Saturated transformers are constant-depth threshold circuits.",
+        "authors": "William Merrill, Ashish Sabharwal, and Noah\u00a0A. Smith. 2022.",
+        "journal": "Trans. Assoc. Comput. Linguistics, 10:843\u2013856."
+      },
+      {
+        "tag": "Paszke et\u00a0al. (2019)",
+        "title": "Pytorch: An imperative style, high-performance deep learning library.",
+        "authors": "Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory\nChanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban\nDesmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan\nTejani, Sasank Chilamkurthy, Benoit Steiner, Lu\u00a0Fang, Junjie Bai, and Soumith\nChintala. 2019.",
+        "journal": "InAdvances in Neural Information Processing Systems,\nvolume\u00a032. Curran Associates, Inc."
+      },
+      {
+        "tag": "Edelman et\u00a0al. (2022)",
+        "title": "Inductive biases and variable creation in self-attention mechanisms.",
+        "authors": "Benjamin\u00a0L Edelman, Surbhi Goel, Sham Kakade, and Cyril Zhang. 2022.",
+        "journal": "InInternational Conference on Machine Learning, pages\n5793\u20135831. PMLR."
+      },
+      {
+        "tag": "Kahn et\u00a0al. (1988)",
+        "title": "The influence of variables on boolean functions.",
+        "authors": "J.\u00a0Kahn, G.\u00a0Kalai, and N.\u00a0Linial. 1988.",
+        "journal": "In[Proceedings 1988] 29th Annual Symposium on Foundations of\nComputer Science, pages 68\u201380."
+      },
+      {
+        "tag": "Liu et\u00a0al. (2023)",
+        "title": "Transformers\nlearn shortcuts to automata.",
+        "authors": "Bingbin Liu, Jordan\u00a0T. Ash, Surbhi Goel, Akshay Krishnamurthy, and Cyril Zhang.\n2023.",
+        "journal": "InThe Eleventh International Conference on Learning\nRepresentations."
+      },
+      {
+        "tag": "Feng et\u00a0al. (2023)",
+        "title": "Towards revealing\nthe mystery behind chain of thought: A theoretical perspective.",
+        "authors": "Guhao Feng, Bohang Zhang, Yuntian Gu, Haotian Ye, Di\u00a0He, and Liwei Wang. 2023.",
+        "journal": "InThirty-seventh Conference on Neural Information Processing\nSystems."
+      },
+      {
+        "tag": "Foret et\u00a0al. (2020)",
+        "title": "Sharpness-aware minimization for efficiently improving\ngeneralization.",
+        "authors": "Pierre Foret, Ariel Kleiner, Hossein Mobahi, and Behnam Neyshabur. 2020.",
+        "journal": "arXiv preprint arXiv:2010.01412."
+      },
+      {
+        "tag": "Bhattamishra et\u00a0al. (2023)",
+        "title": "Simplicity\nbias in transformers and their ability to learn sparse boolean functions.",
+        "authors": "Satwik Bhattamishra, Arkil Patel, Varun Kanade, and Phil Blunsom. 2023.",
+        "journal": "InProceedings of the 61st Annual Meeting of the Association\nfor Computational Linguistics (Volume 1: Long Papers), ACL 2023, Toronto,\nCanada, July 9-14, 2023, pages 5767\u20135791. Association for Computational\nLinguistics."
+      },
+      {
+        "tag": "Chiang and Cholak (2022)",
+        "title": "Overcoming a\ntheoretical limitation of self-attention.",
+        "authors": "David Chiang and Peter Cholak. 2022.",
+        "journal": "InProceedings of the 60th Annual Meeting of the Association\nfor Computational Linguistics (Volume 1: Long Papers), ACL 2022, Dublin,\nIreland, May 22-27, 2022, pages 7654\u20137664. Association for Computational\nLinguistics."
+      },
+      {
+        "tag": "Del\u00e9tang et\u00a0al. (2023)",
+        "title": "Neural networks\nand the chomsky hierarchy.",
+        "authors": "Gr\u00e9goire Del\u00e9tang, Anian Ruoss, Jordi Grau-Moya, Tim Genewein,\nLi\u00a0Kevin Wenliang, Elliot Catt, Chris Cundy, Marcus Hutter, Shane Legg, Joel\nVeness, and Pedro\u00a0A. Ortega. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "O\u2019Donnell (2014)",
+        "title": "Analysis of Boolean Functions.",
+        "authors": "Ryan O\u2019Donnell. 2014.",
+        "journal": "Cambridge University Press."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}

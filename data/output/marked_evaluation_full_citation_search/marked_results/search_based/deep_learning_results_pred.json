@@ -1,0 +1,171 @@
+{
+  "paper_id": "deep_learning_results",
+  "pred_citations": [
+    [
+      "Human Motion Generation: A Survey",
+      "TokenMotion: Decoupled Motion Control via Token Disentanglement for Human-centric Video Generation"
+    ],
+    [
+      "Make-An-Animation: Large-Scale Text-conditional 3D Human Motion Generation",
+      "MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model"
+    ],
+    [
+      "MultiAct: Long-Term 3D Human Motion Generation from Multiple Action Labels",
+      "Weakly-supervised Action Transition Learning for Stochastic Human Motion Prediction"
+    ],
+    [
+      "Freeform Body Motion Generation from Speech",
+      "Generating Holistic 3D Human Motion from Speech"
+    ],
+    [
+      "MIDGET: Music Conditioned 3D Dance Generation",
+      "Bidirectional Autoregressive Diffusion Model for Dance Generation"
+    ],
+    [
+      "MotionChain: Conversational Motion Controllers via Multimodal Prompts",
+      "MagicAvatar: Multimodal Avatar Generation and Animation"
+    ],
+    [
+      "Video Motion Graphs",
+      "Ego-Body Pose Estimation via Ego-Head Pose Estimation"
+    ],
+    [
+      "AMG: Avatar Motion Guided Video Generation",
+      "Move-in-2D: 2D-Conditioned Human Motion Generation"
+    ],
+    [
+      "AMASS: Archive of Motion Capture as Surface Shapes"
+    ],
+    [
+      "Motion-X: Realistic and Diverse 3D Human Motion Generation",
+      "MotionBank: A Benchmark for Human Motion Analysis"
+    ],
+    [
+      "Motion-X: Realistic and Diverse 3D Human Motion Generation",
+      "MotionBank: A Benchmark for Human Motion Analysis"
+    ],
+    [
+      "Generating Holistic 3D Human Motion from Speech"
+    ],
+    [
+      "VisualTTS: TTS with Accurate Lip-Speech Synchronization for Automatic Voice Over"
+    ],
+    [
+      "AMG: Avatar Motion Guided Video Generation"
+    ],
+    [
+      "Orientation-Aware Leg Movement Learning for Action-Driven Human Motion Prediction"
+    ],
+    [
+      "Action-Conditioned 3D Human Motion Synthesis with Transformer VAE"
+    ]
+  ],
+  "gt_citations": [
+    [
+      "Emad Barsoum, John Kender, and Zicheng Liu. HP-GAN: Probabilistic 3D human motion prediction via GAN. In CVPR Workshops, 2018. 2",
+      "Pablo Cervantes, Yusuke Sekikawa, Ikuro Sato, and Koichi Shinoda. Implicit neural representations for variable length human motion generation. In ECCV, 2022. 2",
+      "B. Chopin, N. Otberdout, M. Daoudi, and A. Bartolo. Human motion prediction using manifold-aware wasserstein gan. In FG, 2021. 2",
+      "Setareh Cohan, Guy Tevet, Daniele Reda, Xue Bin Peng, and Michiel van de Panne. Flexible motion in-betweening with diffusion models. SIGGRAPH, 2024.",
+      "Wenxun Dai, Ling-Hao Chen, Jingbo Wang, Jinpeng Liu, Bo Dai, and Yansong Tang. Motionlcm: Real-time controllable motion generation via latent consistency model. In ECCV, 2024. 2",
+      "Chuan Guo, Yuxuan Mu, Muhammad Gohar Javed, Sen Wang, and Li Cheng. Momask: Generative masked mod- eling of 3d human motions. 2023. 2",
+      "Ikhsanul Habibie, Daniel Holden, Jonathan Schwarz, Joe Yearsley, and Taku Komura. A recurrent variational autoen- coder for human motion synthesis. In BMVC, 2017. 2",
+      "Chengan He, Jun Saito, James Zachary, Holly Rushmeier, and Yi Zhou. Nemf: Neural motion fields for kinematic ani- mation. In NeurIPS, 2022. 2",
+      "Gustav Eje Henter, Simon Alexanderson, and Jonas Beskow. MoGlow: Probabilistic and controllable motion synthesis using normalising flows. ACM Transactions on Graphics (TOG), 2020. 2",
+      "Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, and Chen Chen. Mmm: Generative masked motion model. In CVPR, 2024. 2",
+      "Ekkasit Pinyoanuntapong, Pu Wang, Minwoo Lee, and Chen Chen. Mmm: Generative masked motion model. In CVPR, 2024. 2",
+      "Davis Rempe, Tolga Birdal, Aaron Hertzmann, Jimei Yang, Srinath Sridhar, and Leonidas J. Guibas. Humor: 3d human motion model for robust pose estimation. In ICCV, 2021. 2, 5 10",
+      "Ayumi Shiobara and Makoto Murakami. Human motion gen- eration using wasserstein GAN. In International Conference on Digital Signal Processing (ICDSP), 2021. 2",
+      "Guy Tevet, Sigal Raab, Brian Gordon, Yonatan Shafir, Daniel Cohen-Or, and Amit H Bermano. Human motion dif- fusion model. In ICLR, 2023. 2, 5, 6, 7, 8, 13",
+      "Guillermo Valle-P\u00b4erez, Gustav Eje Henter, Jonas Beskow, Andr\u00b4e Holzapfel, Pierre-Yves Oudeyer, and Simon Alexan- derson. Transflower: probabilistic autoregressive dance gen- eration with multimodal attention. ACM Transactions on Graphics (TOG), 2021. 2",
+      "Liang Xu, Ziyang Song, Dongliang Wang, Jing Su, Zhicheng Fang, Chenjing Ding, Weihao Gan, Yichao Yan, Xin Jin, Xiaokang Yang, Wenjun Zeng, and Wei Wu. ActFormer: A gan-based transformer towards general action-conditioned 3d human motion generation. In ICCV, 2023. 2",
+      "Mingyuan Zhang, Zhongang Cai, Liang Pan, Fangzhou Hong, Xinying Guo, Lei Yang, and Ziwei Liu. Motiondif- fuse: Text-driven human motion generation with diffusion model. arXiv preprint arXiv:2208.15001, 2022. 2",
+      "Mingyuan Zhang, Xinying Guo, Liang Pan, Zhongang Cai, Fangzhou Hong, Huirong Li, Lei Yang, and Ziwei Liu. Re- modiffuse: Retrieval-augmented motion diffusion model. In arXiv preprint arXiv:2304.01116, 2023. 2",
+      "Wentao Zhu, Xiaoxuan Ma, Dongwoo Ro, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, and Yizhou Wang. Human motion generation: A survey. TPAMI, 2023. 2"
+    ],
+    [
+      "Xin Chen, Biao Jiang, Wen Liu, Zilong Huang, Bin Fu, Tao Chen, Jingyi Yu, and Gang Yu. Executing your commands via motion diffusion in latent space. In CVPR, 2023. 2",
+      "Anindita Ghosh, Noshaba Cheema, Cennet Oguz, Christian Theobalt, and Philipp Slusallek. Synthesis of compositional animations from textual descriptions. In ICCV, 2021. 2",
+      "Chuan Guo, Xinxin Zuo, Sen Wang, and Li Cheng. TM2T: Stochastic and tokenized modeling for the reciprocal gener- ation of 3d human motions and texts. In ECCV, 2022. 2",
+      "Peng Jin, Yang Wu, Yanbo Fan, Zhongqian Sun, Yang Wei, and Li Yuan. Act as you wish: Fine-grained control of mo- tion diffusion model with hierarchical semantic graphs. In NeurIPs, 2023. 2"
+    ],
+    [
+      "Chuan Guo, Xinxin Zuo, Sen Wang, Shihao Zou, Qingyao Sun, Annan Deng, Minglun Gong, and Li Cheng. Ac- tion2Motion: Conditioned generation of 3D human mo- In ACM International Conference on Multimedia tions. (ACMMM), 2020. 2"
+    ],
+    [
+      "Simon Alexanderson, Rajmund Nagy, Jonas Beskow, and Gustav Eje Henter. Listen, denoise, action! audio-driven motion synthesis with diffusion models. ACM Transactions on Graphics (TOG), 2023. 2",
+      "Lingting Zhu, Xian Liu, Xuanyu Liu, Rui Qian, Ziwei Liu, and Lequan Yu. Taming diffusion models for audio-driven co-speech gesture generation. In CVPR, 2023. 2"
+    ],
+    [
+      "Ruilong Li, Shan Yang, David A Ross, and Angjoo Kanazawa. Ai choreographer: Music conditioned 3d dance generation with aist++. In ICCV, 2021. 2, 6, 7, 12, 13",
+      "Li Siyao, Weijiang Yu, Tianpei Gu, Chunze Lin, Quan Wang, Chen Qian, Chen Change Loy, and Ziwei Liu. Bailando: 3d dance generation by actor-critic gpt with choreographic In Proceedings of the IEEE/CVF Conference on memory. Computer Vision and Pattern Recognition, pages 11050\u2013 11059, 2022. 2, 7, 13",
+      "Jiangxin Sun, Chunyu Wang, Huang Hu, Hanjiang Lai, Zhi Jin, and Jian-Fang Hu. You never stop dancing: Non- freezing dance generation via bank-constrained manifold projection. In NeurIPS, 2022. 2",
+      "Taoran Tang, Jia Jia, and Hanyang Mao. Dance with melody: An LSTM-autoencoder approach to music-oriented dance synthesis. In ACM International Conference on Multimedia (ACMMM), 2018. 2",
+      "Jonathan Tseng, Rodrigo Castellon, and Karen Liu. Edge: In Proceedings of Editable dance generation from music. the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 448\u2013458, 2023. 2, 6, 7, 12, 13",
+      "Guillermo Valle-P\u00b4erez, Gustav Eje Henter, Jonas Beskow, Andr\u00b4e Holzapfel, Pierre-Yves Oudeyer, and Simon Alexan- derson. Transflower: probabilistic autoregressive dance gen- eration with multimodal attention. ACM Transactions on Graphics (TOG), 2021. 2"
+    ],
+    [
+      "Mohamed Hassan, Duygu Ceylan, Ruben Villegas, Jun Saito, Jimei Yang, Yi Zhou, and Michael J Black. Stochastic scene-aware motion prediction. In ICCV, 2021. 2",
+      "Nilesh Kulkarni, Davis Rempe, Kyle Genova, Abhijit Kundu, Justin Johnson, David Fouhey, and Leonidas Guibas. NIFTY: Neural object interaction fields for guided human motion synthesis. arXiv:2307.07511, 2023. 2",
+      "Zan Wang, Yixin Chen, Tengyu Liu, Yixin Zhu, Wei Liang, and Siyuan Huang. HUMANISE: Language-conditioned hu- man motion generation in 3d scenes. In Neural Information Processing Systems (NeurIPS), 2022. 3",
+      "Hongwei Yi, Justus Thies, Michael J Black, Xue Bin Peng, and Davis Rempe. Generating human interaction motions in scenes with text control. In European Conference on Com- puter Vision, pages 246\u2013263. Springer, 2024. 3",
+      "Xiaohan Zhang, Bharat Lal Bhatnagar, Sebastian Starke, Ilya A. Petrov, Vladimir Guzov, Helisa Dhamo, Eduardo P\u00b4erez Pellitero, and Gerard Pons-Moll. Force: Dataset and method for intuitive physics guided human-object interac- tion. In International Conference on 3D Vision (3DV), 2025. 3"
+    ],
+    [
+      "Yuxuan Bian, Ailing Zeng, Xuan Ju, Xian Liu, Zhaoyang Zhang, Wei Liu, and Qiang Xu. Motioncraft: Crafting whole-body motion with plug-and-play multimodal controls. arXiv preprint arXiv:2407.21136, 2024. 3",
+      "Mingshuang Luo, Ruibing Hou, Zhuo Li, Hong Chang, Zimo Liu, Yaowei Wang, and Shiguang Shan. M3gpt: An ad- vanced multimodal, multitask framework for motion com- prehension and generation. In NeurIPs, 2024. 3",
+      "Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, et al. Large motion model for unified multi-modal motion generation. In ECCV, 2024. 3",
+      "Zixiang Zhou and Baoyuan Wang. Ude: A unified driving engine for human motion generation. In CVPR, 2023. 3"
+    ],
+    [
+      "Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, et al. Large motion model for unified multi-modal motion generation. In ECCV, 2024. 3"
+    ],
+    [
+      "Nikos Athanasiou, Mathis Petrovich, Michael J. Black, and G\u00a8ul Varol. TEACH: Temporal action composition for 3D humans. In International Conference on 3D Vision (3DV), 2022. 3",
+      "Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, G\u00a8ul Varol, Xue Bin Peng, and Davis Rempe. Multi-track timeline control for text-driven 3d human motion generation. In CVPR Workshop on Human Motion Generation, 2024. 3",
+      "Yijun Qian, Jack Urbanek, Alexander G. Hauptmann, and Jungdam Won. Breaking the limits of text-conditioned 3D In ICCV, motion synthesis with elaborative descriptions. 2023. 3",
+      "Qinsheng Zhang, Jiaming Song, Xun Huang, Yongxin Chen, and Ming yu Liu. Diffcollage: Parallel generation of large content with diffusion models. In CVPR, 2023. 3"
+    ],
+    [
+      "Naureen Mahmood, Nima Ghorbani, Nikolaus F. Troje, Ger- ard Pons-Moll, and Michael J. Black. AMASS: Archive of motion capture as surface shapes. In ICCV, 2019. 3, 6, 12"
+    ],
+    [
+      "Jing Lin, Ailing Zeng, Shunlin Lu, Yuanhao Cai, Ruimao Zhang, Haoqian Wang, and Lei Zhang. Motion-x: A large- scale 3d expressive whole-body human motion dataset. In NeurIPS, 2023. 2, 3, 6, 7, 12, 13"
+    ],
+    [
+      "Liang Xu, Shaoyang Hua, Zili Lin, Yifan Liu, Feipeng Ma, Yichao Yan, Xin Jin, Xiaokang Yang, and Wenjun Zeng. Mo- tionbank: A large-scale video motion benchmark with disen- tangled rule-based annotations, 2024. 3"
+    ],
+    [
+      "Soyong Shin, Juyong Kim, Eni Halilaj, and Michael J Black. Wham: Reconstructing world-grounded humans with accu- rate 3d motion. In CVPR, 2024. 3, 7, 12",
+      "Ye Yuan, Umar Iqbal, Pavlo Molchanov, Kris Kitani, and Jan Kautz. Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras. In CVPR, 2022. 3, 7"
+    ],
+    [
+      "Angjoo Kanazawa, Michael J. Black, David W. Jacobs, and Jitendra Malik. End-to-end recovery of human shape and pose. In CVPR, 2018. 3",
+      "Jiefeng Li, Chao Xu, Zhicun Chen, Siyuan Bian, Lixin Yang, and Cewu Lu. Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation. In CVPR, 2021. 3, 7, 12, 13",
+      "Istv\u00b4an S\u00b4ar\u00b4andi and Gerard Pons-Moll. Neural localizer fields for continuous 3d human pose and shape estimation. 2024. 3"
+    ],
+    [
+      "Hongsuk Choi, Gyeongsik Moon, and Kyoung Mu Lee. Be- yond static features for temporally consistent 3d human pose and shape from a video. In CVPR, 2021. 3",
+      "Shubham Goel, Georgios Pavlakos, Jathushan Rajasegaran, Angjoo Kanazawa, and Jitendra Malik. Humans in 4d: Re- In constructing and tracking humans with transformers. Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 14783\u201314794, 2023. 3, 7",
+      "Muhammed Kocabas, Nikos Athanasiou, and Michael J Black. VIBE: Video inference for human body pose and shape estimation. In CVPR, 2020. 3, 7, 13"
+    ],
+    [
+      "Jiye Lee and Hanbyul Joo. Mocap everyone everywhere: Lightweight motion capture with smartwatches and a head- mounted camera. In Proceedings of the IEEE/CVF Confer- ence on Computer Vision and Pattern Recognition (CVPR), 2024. 3",
+      "Jose Luis Ponton, Haoran Yun, Andreas Aristidou, Carlos Andujar, and Nuria Pelechano. Sparseposer: Real-time full- body motion reconstruction from sparse data. ACM Trans- actions on Graphics, 2023. 3",
+      "Xinyu Yi, Yuxiao Zhou, and Feng Xu. Transpose: Real-time 3d human translation and pose estimation with six inertial sensors. ACM Transactions on Graphics, 2021. 3"
+    ],
+    [
+      "Muhammed Kocabas, Ye Yuan, Pavlo Molchanov, Yunrong Guo, Michael J. Black, Otmar Hilliges, Jan Kautz, and Umar Iqbal. PACE: Human and motion estimation from in-the- wild videos. In 3DV, 2024. 2, 3, 7",
+      "Jiefeng Li, Ye Yuan, Davis Rempe, Haotian Zhang, Pavlo Molchanov, Cewu Lu, Jan Kautz, and Umar Iqbal. Coin: Control-inpainting diffusion prior for human and camera In ECCV, pages 426\u2013446. Springer, motion estimation. 2024. 2, 3, 7",
+      "Soyong Shin, Juyong Kim, Eni Halilaj, and Michael J Black. Wham: Reconstructing world-grounded humans with accu- rate 3d motion. In CVPR, 2024. 3, 7, 12",
+      "Yufu Wang, Ziyun Wang, Lingjie Liu, and Kostas Daniilidis. Tram: Global trajectory and motion of 3d humans from in- the-wild videos. In European Conference on Computer Vi- sion, pages 467\u2013487. Springer, 2024. 3, 6, 7, 12",
+      "Vickie Ye, Georgios Pavlakos, Jitendra Malik, and Angjoo Kanazawa. Decoupling human and camera motion from videos in the wild. In CVPR, 2023. 2, 3, 7",
+      "Ye Yuan, Umar Iqbal, Pavlo Molchanov, Kris Kitani, and Jan Kautz. Glamr: Global occlusion-aware human mesh recov- ery with dynamic cameras. In CVPR, 2022. 3, 7"
+    ],
+    [
+      "Zehong Shen, Huaijin Pi, Yan Xia, Zhi Cen, Sida Peng, Zechen Hu, Hujun Bao, Ruizhen Hu, and Xiaowei Zhou. World-grounded human motion recovery via gravity-view coordinates. In SIGGRAPH Asia 2024 Conference Papers, pages 1\u201311, 2024. 3, 7, 12",
+      "Soyong Shin, Juyong Kim, Eni Halilaj, and Michael J Black. Wham: Reconstructing world-grounded humans with accu- rate 3d motion. In CVPR, 2024. 3, 7, 12",
+      "Yufu Wang, Ziyun Wang, Lingjie Liu, and Kostas Daniilidis. Tram: Global trajectory and motion of 3d humans from in- the-wild videos. In European Conference on Computer Vi- sion, pages 467\u2013487. Springer, 2024. 3, 6, 7, 12",
+      "Siwei Zhang, Bharat Lal Bhatnagar, Yuanlu Xu, Alexan- der Winkler, Petr Kadlecek, Siyu Tang, and Federica Bogo. Rohm: Robust human motion reconstruction via diffusion. In CVPR, 2024. 3 11"
+    ]
+  ]
+}

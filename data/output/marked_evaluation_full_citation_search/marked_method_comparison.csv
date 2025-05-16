@@ -1,0 +1,2 @@
+Method,Position Accuracy,Paper F1,Corpus F1,Paper Precision,Paper Recall,Corpus Precision,Corpus Recall,Total Positions,Total GT Papers,Total Pred Papers,Total Correct Papers
+search_based,0.09090909090909091,0.046838407494145196,0.048913043478260865,0.06289308176100629,0.03731343283582089,0.07377049180327869,0.036585365853658534,110,268,159,10

@@ -1,0 +1,167 @@
+{
+  "paper_id": "DialectBench_ A NLP ",
+  "meta": {
+    "title": "DialectBench:A NLP Benchmark for Dialects, Varieties, and Closely-Related Languages",
+    "section_ids": [],
+    "paragraph_ids": []
+  },
+  "paper_pred": [
+    [
+      "XTREME-R: Towards More Challenging and Nuanced Multilingual Evaluation",
+      "XGLUE: A New Benchmark Dataset for Cross-lingual Pre-training, Understanding and Generation",
+      "CreoleVal: Multilingual Multitask Benchmarks for Creoles"
+    ]
+  ],
+  "paper_gt": [
+    [
+      {
+        "tag": "Blodgett et\u00a0al. (2018)",
+        "title": "Twitter Universal Dependency parsing for African-American and mainstream American English.",
+        "authors": "Su\u00a0Lin Blodgett, Johnny Wei, and Brendan O\u2019Connor. 2018.",
+        "journal": "InProceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1415\u20131425, Melbourne, Australia. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Jiang et\u00a0al. (2023)",
+        "title": "Mistral 7B.",
+        "authors": "Albert\u00a0Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra\u00a0Singh Chaplot, Diego de\u00a0las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, L\u00e9lio\u00a0Renard Lavaud, Marie-Anne Lachaux, Pierre Stock, Teven\u00a0Le Scao, Thibaut Lavril, Thomas Wang, Timoth\u00e9e Lacroix, and William\u00a0El Sayed. 2023.",
+        "journal": "arXiv:2310.06825."
+      },
+      {
+        "tag": "Conneau et\u00a0al. (2018)",
+        "title": "XNLI: Evaluating cross-lingual sentence representations.",
+        "authors": "Alexis Conneau, Ruty Rinott, Guillaume Lample, Adina Williams, Samuel Bowman, Holger Schwenk, and Veselin Stoyanov. 2018.",
+        "journal": "InProceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 2475\u20132485, Brussels, Belgium. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Khanuja et\u00a0al. (2020)",
+        "title": "GLUECoS: An evaluation benchmark for code-switched NLP.",
+        "authors": "Simran Khanuja, Sandipan Dandapat, Anirudh Srinivasan, Sunayana Sitaram, and Monojit Choudhury. 2020.",
+        "journal": "InProceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 3575\u20133585, Online. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Blasi et\u00a0al. (2022)",
+        "title": "Systematic inequalities in language technology performance across the world\u2019s languages.",
+        "authors": "Damian Blasi, Antonios Anastasopoulos, and Graham Neubig. 2022.",
+        "journal": "InProceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 5486\u20135505, Dublin, Ireland. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Ahuja et\u00a0al. (2023)",
+        "title": "Megaverse: Benchmarking large language models across languages, modalities, models and tasks.",
+        "authors": "Sanchit Ahuja, Divyanshu Aggarwal, Varun Gumma, Ishaan Watts, Ashutosh Sathe, Millicent Ochieng, Rishav Hada, Prachi Jain, Maxamed Axmed, Kalika Bali, and Sunayana Sitaram. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Lent et\u00a0al. (2023)",
+        "title": "CreoleVal: Multilingual multitask benchmarks for creoles.",
+        "authors": "Heather Lent, Kushal Tatariya, Raj Dabre, Yiyi Chen, Marcell Fekete, Esther Ploeger, Li\u00a0Zhou, Hans\u00a0Erik Heje, Diptesh Kanojia, Paul Belony, Marcel Bollmann, Lo\u00efc Grobol, Miryam de\u00a0Lhoneux, Daniel Hershcovich, Michel DeGraff, Anders S\u00f8gaard, and Johannes Bjerva. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Littauer (n.d.)",
+        "title": "Low resource languages: Resources for conservation, development, and documentation of low resource (human) languages.",
+        "authors": "Richard Littauer. n.d.",
+        "journal": "https://github.com/RichardLitt/low-resource-languages."
+      },
+      {
+        "tag": "Alam et\u00a0al. (2023)",
+        "title": "CODET: A benchmark for contrastive dialectal evaluation of machine translation.",
+        "authors": "Md\u00a0Mahfuz\u00a0Ibn Alam, Sina Ahmadi, and Antonios Anastasopoulos. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Hammarstr\u00f6m and Forkel (2022)",
+        "title": "Glottocodes: Identifiers linking families, languages and dialects to comprehensive reference information.",
+        "authors": "Harald Hammarstr\u00f6m and Robert Forkel. 2022.",
+        "journal": "Semantic Web Journal, 13(6):917\u2013924."
+      },
+      {
+        "tag": "Chambers and Trudgill (1998)",
+        "title": "Dialectology.",
+        "authors": "Jack\u00a0K. Chambers and Peter Trudgill. 1998.",
+        "journal": "Cambridge University Press."
+      },
+      {
+        "tag": "Faisal et\u00a0al. (2021)",
+        "title": "SD-QA: Spoken dialectal question answering for the real world.",
+        "authors": "Fahim Faisal, Sharlina Keshava, Md\u00a0Mahfuz\u00a0Ibn Alam, and Antonios Anastasopoulos. 2021.",
+        "journal": "InFindings of the Association for Computational Linguistics: EMNLP 2021, pages 3296\u20133315, Punta Cana, Dominican Republic. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Devlin et\u00a0al. (2019)",
+        "title": "BERT: Pre-training of deep bidirectional transformers for language understanding.",
+        "authors": "Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019.",
+        "journal": "InProceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 4171\u20134186, Minneapolis, Minnesota. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Ruder et\u00a0al. (2023)",
+        "title": "XTREME-UP: A user-centric scarce-data benchmark for under-represented languages.",
+        "authors": "Sebastian Ruder, Jonathan\u00a0H. Clark, Alexander Gutkin, Mihir Kale, Min Ma, Massimo Nicosia, Shruti Rijhwani, Parker Riley, Jean-Michel\u00a0A. Sarr, Xinyi Wang, John Wieting, Nitish Gupta, Anna Katanova, Christo Kirov, Dana\u00a0L. Dickinson, Brian Roark, Bidisha Samanta, Connie Tao, David\u00a0I. Adelani, Vera Axelrod, Isaac Caswell, Colin Cherry, Dan Garrette, Reeve Ingle, Melvin Johnson, Dmitry Panteleev, and Partha Talukdar. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "NLLB Team et\u00a0al. (2022)",
+        "title": "No Language Left Behind: Scaling human-centered machine translation.",
+        "authors": "NLLB Team, Marta\u00a0R. Costa-juss\u00e0, James Cross, Onur \u00c7elebi, Maha Elbayad, Kenneth Heafield, Kevin Heffernan, Elahe Kalbassi, Janice Lam, Daniel Licht, Jean Maillard, Anna Sun, Skyler Wang, Guillaume Wenzek, Al\u00a0Youngblood, Bapi Akula, Loic Barrault, Gabriel\u00a0Mejia Gonzalez, Prangthip Hansanti, John Hoffman, Semarley Jarrett, Kaushik\u00a0Ram Sadagopan, Dirk Rowe, Shannon Spruit, Chau Tran, Pierre Andrews, Necip\u00a0Fazil Ayan, Shruti Bhosale, Sergey Edunov, Angela Fan, Cynthia Gao, Vedanuj Goswami, Francisco Guzm\u00e1n, Philipp Koehn, Alexandre Mourachko, Christophe Ropers, Safiyyah Saleem, Holger Schwenk, and Jeff Wang. 2022.",
+        "journal": "arXiv:2207.04672."
+      },
+      {
+        "tag": "Bandarkar et\u00a0al. (2023)",
+        "title": "The Belebele benchmark: a parallel reading comprehension dataset in 122 language variants.",
+        "authors": "Lucas Bandarkar, Davis Liang, Benjamin Muller, Mikel Artetxe, Satya\u00a0Narayan Shukla, Donald Husa, Naman Goyal, Abhinandan Krishnan, Luke Zettlemoyer, and Madian Khabsa. 2023.",
+        "journal": "arXiv preprint arXiv:2308.16884."
+      },
+      {
+        "tag": "Ruder et\u00a0al. (2021)",
+        "title": "XTREME-R: Towards more challenging and nuanced multilingual evaluation.",
+        "authors": "Sebastian Ruder, Noah Constant, Jan Botha, Aditya Siddhant, Orhan Firat, Jinlan Fu, Pengfei Liu, Junjie Hu, Dan Garrette, Graham Neubig, and Melvin Johnson. 2021.",
+        "journal": "InProceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pages 10215\u201310245, Online and Punta Cana, Dominican Republic. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Song et\u00a0al. (2023)",
+        "title": "GlobalBench: A benchmark for global progress in natural language processing.",
+        "authors": "Yueqi Song, Catherine Cui, Simran Khanuja, Pengfei Liu, Fahim Faisal, Alissa Ostapenko, Genta\u00a0Indra Winata, Alham\u00a0Fikri Aji, Samuel Cahyawijaya, Yulia Tsvetkov, Antonios Anastasopoulos, and Graham Neubig. 2023.",
+        "journal": ""
+      },
+      {
+        "tag": "Conneau et\u00a0al. (2020)",
+        "title": "Unsupervised cross-lingual representation learning at scale.",
+        "authors": "Alexis Conneau, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzm\u00e1n, Edouard Grave, Myle Ott, Luke Zettlemoyer, and Veselin Stoyanov. 2020.",
+        "journal": "InProceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 8440\u20138451, Online. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Hu et\u00a0al. (2020)",
+        "title": "XTREME: A massively multilingual multi-task benchmark for evaluating cross-lingual generalisation.",
+        "authors": "Junjie Hu, Sebastian Ruder, Aditya Siddhant, Graham Neubig, Orhan Firat, and Melvin Johnson. 2020.",
+        "journal": "InProceedings of the 37th International Conference on Machine Learning, volume 119 ofProceedings of Machine Learning Research, pages 4411\u20134421. PMLR."
+      },
+      {
+        "tag": "Nordhoff (2012)",
+        "title": "Linked data for linguistic diversity research: Glottolog/langdoc and asjp.",
+        "authors": "Sebastian Nordhoff. 2012.",
+        "journal": "In Christian Chiarcos, Sebastian Nordhoff, and Sebastian Hellmann, editors,Linked Data in Linguistics. Representing and Connecting Language Data and Language Metadata, pages 191\u2013200. Springer, Heidelberg."
+      },
+      {
+        "tag": "Hedderich et\u00a0al. (2021)",
+        "title": "A survey on recent approaches for natural language processing in low-resource scenarios.",
+        "authors": "Michael\u00a0A. Hedderich, Lukas Lange, Heike Adel, Jannik Str\u00f6tgen, and Dietrich Klakow. 2021.",
+        "journal": "InProceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 2545\u20132568, Online. Association for Computational Linguistics."
+      },
+      {
+        "tag": "Rademaker et\u00a0al. (2017)",
+        "title": "Universal Dependencies for Portuguese.",
+        "authors": "Alexandre Rademaker, Fabricio Chalub, Livy Real, Cl\u00e1udia Freitas, Eckhard Bick, and Valeria de\u00a0Paiva. 2017.",
+        "journal": "InProceedings of the Fourth International Conference on Dependency Linguistics (Depling), pages 197\u2013206, Pisa, Italy."
+      },
+      {
+        "tag": "Liang et\u00a0al. (2020)",
+        "title": "XGLUE: A new benchmark dataset for cross-lingual pre-training, understanding and generation.",
+        "authors": "Yaobo Liang, Nan Duan, Yeyun Gong, Ning Wu, Fenfei Guo, Weizhen Qi, Ming Gong, Linjun Shou, Daxin Jiang, Guihong Cao, Xiaodong Fan, Ruofei Zhang, Rahul Agrawal, Edward Cui, Sining Wei, Taroon Bharti, Ying Qiao, Jiun-Hung Chen, Winnie Wu, Shuguang Liu, Fan Yang, Daniel Campos, Rangan Majumder, and Ming Zhou. 2020.",
+        "journal": "InProceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 6008\u20136018, Online. Association for Computational Linguistics."
+      }
+    ]
+  ],
+  "section_preds": [],
+  "section_gts": [],
+  "paragraph_preds": [],
+  "paragraph_gts": []
+}
