@@ -534,7 +534,45 @@ class CoverageCitationEvaluator:
             self._visualize_comparison(comparison_df)
 
 
-# def eval_with_
+def eval_with_json_result(json_path: Union[str, Path], 
+                          output_dir: Union[str, Path], 
+                          test_data_path: Union[str, Path],
+                          test_tasks: List[TestTaskType],
+                          method_name: str = "json_method"):
+    # Convert string task names to TestTaskType enum values
+    if test_tasks is None:
+        test_tasks = ["PAPER", "SECTION", "PARAGRAPH"]
+        
+    
+    # Initialize evaluator
+    evaluator = CoverageCitationEvaluator(
+        test_data_path=test_data_path,
+        output_dir=output_dir,
+        test_tasks=test_tasks
+    )
+    
+    # Create method results directory
+    method_dir = Path(output_dir) / "coverage_results" / method_name
+    method_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Load predictions from JSON file
+    logger.info(f"Loading predictions from {json_path}")
+    with open(json_path, 'r', encoding='utf-8') as f:
+        predictions = json.load(f)
+    if not isinstance(predictions, list):
+        predictions = [predictions]
+    
+    # Calculate metrics
+    logger.info(f"Calculating metrics for predictions from {json_path}")
+    metrics = evaluator._calculate_metrics(predictions)
+    
+    # Save metrics
+    with open(method_dir / "metrics.json", 'w', encoding='utf-8') as f:
+        json.dump(metrics, f, indent=2)
+        
+    logger.info(f"Evaluation complete. Results saved to {method_dir}")
+    
+    return metrics
     
 
 

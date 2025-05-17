@@ -15,10 +15,9 @@ import logging
 from pathlib import Path
 from typing import List, Optional, Union, Tuple
 
-from src.dataset_construction.paper_processor import PaperProcessor
+from src.dataset_construction.html_paper_processor import PaperProcessor
 from src.dataset_construction.dataset_builder_coverage import CitationDatasetBuilder
-from src.evaluation.metrics import CitationEvaluator
-from src.evaluation.evaluator import CitationMethodEvaluator
+from src.evaluation.coverage_evaluator import CoverageCitationEvaluator, TestTaskType, eval_with_json_result
 
 # Configure logging
 logging.basicConfig(
@@ -32,15 +31,15 @@ class CitationFillinCLI:
     
     def process_papers(self, 
                       input_dir: str, 
-                      output_dir: str = "data/output/processed",
-                      file_pattern: str = "*.pdf") -> None:
+                      output_dir: str = "data/output/processed_ACL_html",
+                      file_pattern: str = "*.html") -> None:
         """
         Process academic papers to extract citations and create different versions.
         
         Args:
             input_dir: Directory containing papers to process
             output_dir: Directory to save processed papers
-            file_pattern: File pattern to match (e.g., *.pdf)
+            file_pattern: File pattern to match (e.g., *.html)
         """
         logger.info(f"Processing papers from {input_dir}")
         
@@ -59,9 +58,9 @@ class CitationFillinCLI:
         processor = PaperProcessor(output_path)
         
         # Process papers
-        if input_path.is_file() and str(input_path).lower().endswith(".pdf"):
+        if input_path.is_file() and str(input_path).lower().endswith(".html"):
             # Process a single paper
-            processor.process_pdf(input_path)
+            processor.process_html(input_path)
             logger.info(f"Processed {input_path.name}")
         else:
             # Process all papers in the directory
@@ -108,56 +107,118 @@ class CitationFillinCLI:
         logger.info(f"Dataset built with {sum(len(df) for df in splits.values())} papers")
         logger.info(f"Train: {len(splits['train'])}, Val: {len(splits['val'])}, Test: {len(splits['test'])}")
     
-    def evaluate_paper(self, 
-                     ground_truth_path: str, 
-                     predictions_path: str) -> None:
+    def evaluate_coverage_json(self,
+                             json_path: str,
+                             output_dir: str,
+                             test_data_path: str,
+                             method_name: str = "json_method",
+                             task_levels: List[str] = None) -> None:
         """
-        Evaluate citation predictions for a single paper.
+        Evaluate citation predictions using a JSON file of predictions.
         
         Args:
-            ground_truth_path: Path to ground truth data JSON file
-            predictions_path: Path to predictions data JSON file
+            json_path: Path to the JSON file containing predictions
+            output_dir: Directory to save evaluation results
+            test_data_path: Path to test data
+            method_name: Name of the method (for reporting)
+            task_levels: Levels to evaluate (PAPER, SECTION, PARAGRAPH)
         """
-        logger.info(f"Evaluating paper predictions")
+        logger.info(f"Evaluating coverage from JSON file: {json_path}")
         
-        # Initialize evaluator
-        evaluator = CitationEvaluator(ground_truth_path)
+        # Convert string task levels to TestTaskType enum values
+        if task_levels is None:
+            task_levels = ["PAPER", "SECTION", "PARAGRAPH"]
+            
+        test_tasks = [TestTaskType[level] for level in task_levels]
         
-        # Evaluate predictions
-        metrics = evaluator.evaluate(predictions_path)
+        # Run evaluation
+        metrics = eval_with_json_result(
+            json_path=json_path,
+            output_dir=output_dir,
+            test_data_path=test_data_path,
+            test_tasks=test_tasks,
+            method_name=method_name
+        )
         
-        # Print metrics
-        print("\n===== Evaluation Results =====")
-        print(f"Citation Coverage (Recall): {metrics['citation_recall']:.4f}")
-        print(f"Citation Precision: {metrics['citation_precision']:.4f}")
-        print(f"Citation F1 Score: {metrics['citation_f1']:.4f}")
-        print(f"Position Precision: {metrics['position_precision']:.4f}")
-        print(f"Position Recall: {metrics['position_recall']:.4f}")
-        print(f"Position F1 Score: {metrics['position_f1']:.4f}")
-        print(f"Average Position Error: {metrics['avg_position_error']:.2f} characters")
+        # Print key metrics
+        print("\n===== Coverage Evaluation Results =====")
+        if "paper_coverage" in metrics:
+            print(f"Paper Coverage: {metrics['paper_coverage']:.4f}")
+        if "section_coverage" in metrics:
+            print(f"Section Coverage: {metrics['section_coverage']:.4f}")
+        if "paragraph_coverage" in metrics:
+            print(f"Paragraph Coverage: {metrics['paragraph_coverage']:.4f}")
+        
+        logger.info(f"Evaluation results saved to {Path(output_dir) / 'coverage_results' / method_name}")
     
-    def compare_methods(self, 
-                       test_data_path: str, 
-                       results_dir: str, 
-                       method_names: List[str]) -> None:
+    def run_coverage_evaluation(self,
+                              test_data_path: str,
+                              output_dir: str,
+                              methods: List[str] = None,
+                              task_levels: List[str] = None,
+                              n_papers: int = None) -> None:
         """
-        Compare multiple citation prediction methods.
+        Run coverage evaluation for one or more citation prediction methods.
         
         Args:
-            test_data_path: Path to test data directory
-            results_dir: Directory containing method results
-            method_names: List of method names to compare
+            test_data_path: Path to test data
+            output_dir: Directory to save evaluation results
+            methods: List of method names to evaluate
+            task_levels: Levels to evaluate (PAPER, SECTION, PARAGRAPH)
+            n_papers: Number of papers to evaluate (None for all)
         """
-        logger.info(f"Comparing methods: {', '.join(method_names)}")
+        logger.info(f"Running citation coverage evaluation")
+        
+        # Set default methods if none provided
+        if methods is None:
+            methods = ["dummy"]
+        
+        # Convert string task levels to TestTaskType enum values
+        if task_levels is None:
+            task_levels = ["PAPER", "SECTION", "PARAGRAPH"]
+            
+        test_tasks = [TestTaskType[level] for level in task_levels]
         
         # Initialize evaluator
-        evaluator = CitationMethodEvaluator(test_data_path, results_dir)
+        results_path = Path(output_dir)
+        results_path.mkdir(parents=True, exist_ok=True)
+        
+        evaluator = CoverageCitationEvaluator(
+            test_data_path=test_data_path,
+            output_dir=results_path,
+            test_tasks=test_tasks
+        )
+        
+        # Import methods dynamically
+        method_functions = {}
+        
+        if "dummy" in methods:
+            from src.methods.dummy import dummy_method
+            method_functions["dummy"] = dummy_method
+            
+        if "search_based" in methods:
+            from src.methods.search_based_coverage import predict_search_based
+            method_functions["search_based"] = predict_search_based
+            
+        if "naive_llm_based" in methods:
+            from src.methods.naive_llm_based import predict_pure_llm
+            method_functions["naive_llm_based"] = predict_pure_llm
+        
+        # Evaluate methods
+        for method_name, method_func in method_functions.items():
+            logger.info(f"Evaluating method: {method_name}")
+            metrics = evaluator.evaluate_method(
+                method_name=method_name,
+                method_func=method_func,
+                n_papers=n_papers
+            )
+            
+            logger.info(f"Method {method_name} evaluation completed")
         
         # Compare methods
-        evaluator.compare_methods(method_names)
+        evaluator.compare_methods(list(method_functions.keys()))
         
-        logger.info(f"Comparison results saved to {Path(results_dir) / 'method_comparison.csv'}")
-        logger.info(f"Comparison plots saved to {Path(results_dir) / 'plots'}")
+        logger.info(f"Coverage comparison results saved to {results_path}")
 
 if __name__ == "__main__":
     fire.Fire(CitationFillinCLI)

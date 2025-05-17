@@ -54,9 +54,10 @@ def run_coverage_evaluation():
     
     # Define methods to evaluate
     methods = {
-        # "dummy": dummy_method,
+        "dummy": dummy_method,
         "naive_llm_based": predict_pure_llm,
         "search_based": predict_search_based,
+        # "ours": predict_ours,
     }
     
     # Evaluate methods

@@ -1,8 +1,0 @@
-{
-  "dataset_size": 8,
-  "split_sizes": {
-    "train": 0,
-    "val": 0,
-    "test": 8
-  }
-}
