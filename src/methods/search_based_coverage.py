@@ -32,7 +32,7 @@ For each masked citation, you need to identify the most likely paper **titles** 
 
 # IMPORTANT NOTES:
 - Each [CITATION] may represent MULTIPLE papers cited together
-- Focus on quality over quantity in your search results
+- You can focus more on quantity in your search results, since there could be multiple relevant papers!
 - Use exact paper titles in your output
 - Some citations might be seminal/classic papers in the field
 - Pay attention to chronology (papers can't cite future work)

@@ -359,7 +359,7 @@ class CoverageCitationEvaluator:
     def evaluate_method(self, 
                        method_name: str, 
                        method_func: Callable[[str], List[str]],
-                       n_workers: int = 4) -> Dict[str, Any]:
+                       n_papers=None) -> Dict[str, Any]:
         """
         Evaluate a citation prediction method on the test set.
         This method works with marked citation text, where each [CITATION] tag needs to be replaced.
@@ -368,7 +368,6 @@ class CoverageCitationEvaluator:
             method_name: Name of the method
             method_func: Function that takes marked text and returns list of citations
             parallel: Whether to process papers in parallel
-            n_workers: Number of parallel workers
             
         Returns:
             Dictionary containing evaluation results
@@ -384,7 +383,10 @@ class CoverageCitationEvaluator:
         
         # Process sequentially
         for idx, paper in tqdm(enumerate(self.test_papers), desc=f"Evaluating {method_name}"):
-            # if idx == 1: break
+
+            if n_papers is not None and idx >= n_papers:
+                break
+            
             try:
                 paper_id = paper["paper_id"]
                 # logger.info(f"Processing: {paper_id} ({idx + 1}/{len(self.test_papers)})")
@@ -531,6 +533,8 @@ class CoverageCitationEvaluator:
         if len(comparison_data) > 0:
             self._visualize_comparison(comparison_df)
 
+
+# def eval_with_
     
 
 

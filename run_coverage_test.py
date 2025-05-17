@@ -15,6 +15,8 @@ from src.evaluation.coverage_evaluator import CoverageCitationEvaluator, TestTas
 
 from src.methods.dummy import dummy_method
 from src.methods.search_based_coverage import predict_search_based  # Replace with actual method import
+from src.methods.naive_llm_based import predict_pure_llm
+
 
 # Configure logging
 logging.basicConfig(
@@ -33,14 +35,14 @@ def run_coverage_evaluation():
     
     # Setup paths
     test_data_path = Path("data/output/dataset_coverage")
-    results_dir = Path("eval/coverage_evaluation_results")
+    results_dir = Path("eval/coverage_evaluation_results_search_based")
     results_dir.mkdir(parents=True, exist_ok=True)
     
     # Define test tasks to evaluate (paper, section, paragraph level)
     test_tasks = [
         TestTaskType.PAPER, 
-        # TestTaskType.SECTION,
-        # TestTaskType.PARAGRAPH
+        TestTaskType.SECTION,
+        TestTaskType.PARAGRAPH
     ]
     
     # Initialize evaluator
@@ -53,6 +55,7 @@ def run_coverage_evaluation():
     # Define methods to evaluate
     methods = {
         # "dummy": dummy_method,
+        "naive_llm_based": predict_pure_llm,
         "search_based": predict_search_based,
     }
     
@@ -63,7 +66,7 @@ def run_coverage_evaluation():
         metrics = evaluator.evaluate_method(
             method_name=method_name,
             method_func=method_func,
-            n_workers=4  # Adjust based on your system
+            n_papers=4
         )
         
         method_metrics[method_name] = metrics
