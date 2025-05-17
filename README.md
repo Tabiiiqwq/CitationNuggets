@@ -2,7 +2,7 @@
 Free-Form,Graph-Enhanced QA on Academic Community & A toolset for academic citation fill-in research and evaluation.
 
 ---
-[Sihan Ren*]() | [Siyuan Xie]() | [Xiaoyuan Liu]()
+[Sihan Ren*]() | [Siyuan Xie]() | [Xiaoyuan Liu]() |
 [📄 Paper](https://github.com/Tabiiiqwq/CitationNuggets) | [🎥 Video](https://drive.google.com/file/d/1u2jQzKAtWvAdZCUxks5R9zMw1yJFmAOu/view?usp=drive_link) | [📊 Slides](https://drive.google.com/file/d/19gIjVqUL8W3gXb0Yeq1PK_DZJcrVBJbT/view?usp=drive_link)
 
 ![pipeline](pipeline.png)
